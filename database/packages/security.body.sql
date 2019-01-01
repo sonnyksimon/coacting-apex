@@ -91,12 +91,12 @@ create or replace PACKAGE BODY security AS
 
                         Username: '||i.email||'<br />
                         Password: password<br /><br />
-                        <a href="'||f_get_config('BASE_URL')||'f?p=farmersmarket:login:99999999999999::NO::P2_CODE:'||v_reset_code||'">Reset Account</a>';
+                        <a href="'||f_get_config('BASE_URL')||'f?p=146:login:99999999999999::NO::P13_CODE:'||v_reset_code||'">Reset Account</a>';
 
           APEX_MAIL.SEND(
             p_to        => ''||lower(i.email)||'',
             p_from      => 'app@farmersmarket.gy',
-            p_subj      => 'FarmersMarket.GY - Password Reset' ,
+            p_subj      => 'coacting.org - Password Reset' ,
             p_body      => ' ',
             p_body_html => v_message);
 
