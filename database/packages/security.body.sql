@@ -95,7 +95,7 @@ create or replace PACKAGE BODY security AS
 
           APEX_MAIL.SEND(
             p_to        => ''||lower(i.email)||'',
-            p_from      => 'app@farmersmarket.gy',
+            p_from      => 'bot@coacting.org',
             p_subj      => 'coacting.org - Password Reset' ,
             p_body      => ' ',
             p_body_html => v_message);
