@@ -1,0 +1,54 @@
+@import "_variables";
+
+// @comment_BG: contrast(@g_Region-BG, darken(@g_Region-BG,   3%), lighten(@g_Region-BG,   3%),  43%);
+@comment_icon_bg: contrast(@g_Region-BG, darken(@g_Region-BG,   5%), lighten(@g_Region-BG,   5%),  43%);
+// @comment_FG:  fade(contrast(@comment_BG, desaturate(darken(@comment_BG,  100%), 100%), desaturate(lighten(@comment_BG,  100%), 50%)), 100%);
+
+
+
+@comment_BGX: contrast(@g_Accent-BG, darken(@g_Accent-BG,   57%), lighten(@g_Accent-BG,   57%),  43%);
+@comment_BGY:  desaturate(@comment_BGX,48%);
+@comment_BG:  darken(@comment_BGY,3%);
+@comment_FG:  fade(contrast(@comment_BG, desaturate(darken(@comment_BG,  100%), 100%), desaturate(lighten(@comment_BG,  100%), 50%)), 100%);
+
+@comment_basic_BG: contrast(@g_Region-BG, darken(@g_Region-BG,   1.5%), lighten(@g_Region-BG,   1.5%),  43%);
+
+
+@active_comment_BGX: contrast(@g_Accent-BG, darken(@g_Accent-BG,   57%), lighten(@g_Accent-BG,   57%),  43%);
+@active_comment_BGY:  desaturate(@active_comment_BGX,48%);
+@active_comment_BG:  darken(@active_comment_BGY,12%);
+@active_comment_FG:  fade(contrast(@active_comment_BG, desaturate(darken(@active_comment_BG,  100%), 100%), desaturate(lighten(@active_comment_BG,  100%), 50%)), 100%);
+
+
+.t-Comments--chat {
+  .t-Comments-comment {
+    background-color: @comment_BG;
+    color: @comment_FG;
+    &:after {
+      border-right-color: @comment_BG;
+    }
+  }
+  .t-Comments-item.is-active .t-Comments-comment {
+    background-color: @active_comment_BG;
+    color: @active_comment_FG;
+    &:after {
+      border-right-color: @active_comment_BG;
+    }
+  }
+}
+
+.t-Comments--basic {
+  .t-Comments-item.is-active {
+    background-color: @comment_basic_BG;
+  }
+}
+
+.t-Comments-item.is-systemMessage {
+  background-color: contrast(@comment_BG, darken(@comment_BG,   5%), lighten(@comment_BG,   5%),  43%);
+}
+.t-Comments-info {
+  color: fade(contrast(@comment_BG, desaturate(darken(@comment_BG,  60%), 100%), desaturate(lighten(@comment_BG,  60%), 50%)), 100%);
+}
+.t-Comments-comment {
+  color: fade(contrast(@comment_BG, desaturate(darken(@comment_BG,  100%), 100%), desaturate(lighten(@comment_BG,  100%), 50%)), 100%);
+}

@@ -1,0 +1,48 @@
+@import "../_variables";
+@import "../jquery_ui_theme";
+
+body .ui-dialog {
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.45);
+  .ui-dialog-title {
+    color: #333;
+    font-weight: bold;
+  }
+}
+body .ui-dialog .ui-dialog-buttonpane {
+	border-top-color: #F0F0F0;
+}
+
+body .ui-widget-overlay {
+  background: #a0a0a0;
+  opacity: .3;
+}
+
+body .ui-icon-circle-triangle-e:before, body .ui-icon-circle-triangle-w:before, body .ui-icon-closethick:before {
+  // font-size: 20px;
+}
+span.ui-button-icon-primary.ui-icon.ui-icon-closethick {
+  // margin-top: -10px;
+  // margin-left: -10px;
+}
+
+body .ui-dialog.t-Dialog--wizard .ui-dialog-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+body .ui-dialog.t-Dialog--wizard .ui-dialog-content {
+  border-width: none;
+}
+
+
+body .ui-button.ui-state-default.ui-dialog-titlebar-close {
+  background-color: transparent;
+  background: none;
+  border-width: 0;
+  box-shadow: none;
+  color: #878C90;
+  &.ui-state-active {
+    background-color: @ui-State-Active-BG;
+    background-image: none;
+    color: @ui-State-Active-FG;    
+  }
+}

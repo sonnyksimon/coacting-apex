@@ -1,0 +1,102 @@
+/** Import Compass */
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Report --- Report Templates (Classic and Interactive) ========================================================================== */
+.t-Report-pagination, .t-Report-pagination table, .t-Report-report { border-collapse: collapse; table-layout: auto; border-spacing: 0; }
+
+/* ========================================================================== Report Container ========================================================================== */
+.t-Report { display: block; }
+
+.t-Report:before, .t-Report:after { content: " "; display: table; }
+
+.t-Report:after { clear: both; }
+
+/* ========================================================================== Report Pagination ========================================================================== */
+.t-Report-pagination { width: 100%; }
+
+.t-Report-pagination td.pagination { padding: 8px 4px; }
+
+.t-Report-pagination td:empty { display: none; }
+
+.u-RTL .t-Report-pagination, .u-RTL .t-Report-pagination table { float: left; }
+
+.t-Report-paginationText { font-size: 1.2rem; line-height: 1.6rem; padding: 4px 8px; }
+
+.t-Report-paginationText a, .t-Report-paginationText b { display: inline-block; vertical-align: top; border-radius: 2px; padding: 4px 8px; }
+
+/** Bottom Pagination */
+/** Pagination Link */
+.t-Report-paginationLink { display: inline-block; font-size: 1.2rem; line-height: 1.6rem; }
+
+.t-Report-paginationLink--prev { margin-left: 4px; }
+
+.t-Report-paginationLink--next { margin-right: 4px; }
+
+/* ========================================================================== Report Links --- External link and CSV link ========================================================================== */
+.t-Report-links { clear: both; display: block; border: 1px solid #F0F0F0; border-top-width: 0; padding: 8px; background: #FAFAFA; }
+
+.t-Report-links:empty { display: none; }
+
+/* ========================================================================== Report Wrapper ========================================================================== */
+.t-Report-wrap { float: left; }
+
+.u-RTL .t-Report-wrap { float: right; }
+
+.t-Report--stretch .t-Report-wrap { float: none; }
+
+/* ========================================================================== Report ========================================================================== */
+/** Column Header */
+.t-Report-colHead { vertical-align: bottom; padding: 12px; font-weight: bold; }
+
+/** Table Cell */
+.t-Report-cell { padding: 8px 12px; transition: background-color .1s; }
+
+.t-Report-colHead, .t-Report-cell { font-size: 1.2rem; line-height: 1.6rem; border-right-width: 0; }
+
+.u-RTL .t-Report-colHead, .u-RTL .t-Report-cell { border-right-width: 1px; border-left-width: 0; }
+
+/* ========================================================================== .t-Report--noBorders --- Borderless Report ========================================================================== */
+.t-Report--noBorders .t-Report-links, .t-Report--noBorders .t-Report-cell, .t-Report--noBorders .t-Report-colHead { border-width: 0; }
+
+.t-Report--noBorders .t-Report-report tr .t-Report-cell:last-child, .t-Report--noBorders .t-Report-report tr .t-Report-colHead:last-child { border-right-width: 0; }
+
+.t-Report--noBorders .t-Report-report tr:last-child .t-Report-cell { border-bottom-width: 0; }
+
+/* ========================================================================== .t-Report--stretch --- Stertch report to 100% width of container ========================================================================== */
+.t-Report--stretch .t-Report-wrap, .t-Report--stretch .t-Report-report { width: 100%; }
+
+.t-Report-colHead { transition: background-color .2s; }
+
+/* ========================================================================== .t-Report--inline --- ========================================================================== */
+.t-Region--noPadding .t-Report--horizontalBorders .t-Report-links, .t-Report--inline .t-Report-links { border-left-width: 0; border-right-width: 0; }
+
+.t-Region--noPadding .t-Report--horizontalBorders .t-Report-colHead, .t-Report--inline .t-Report-colHead { border-top-width: 0; }
+
+.t-Region--noPadding .t-Report--horizontalBorders .is-stuck .t-Report-colHead, .t-Report--inline .is-stuck .t-Report-colHead { background-color: rgba(255, 255, 255, 0.95); border-bottom: 1px solid #F0F0F0; }
+
+.t-Region--noPadding .t-Report--horizontalBorders .t-Report-report tr .t-Report-cell:first-child, .t-Region--noPadding .t-Report--horizontalBorders .t-Report-report tr .t-Report-colHead:first-child, .t-Report--inline .t-Report-report tr .t-Report-cell:first-child, .t-Report--inline .t-Report-report tr .t-Report-colHead:first-child { border-left-width: 0; }
+
+.u-RTL .t-Region--noPadding .t-Report--horizontalBorders .t-Report-report tr .t-Report-cell:first-child, .u-RTL .t-Region--noPadding .t-Report--horizontalBorders .t-Report-report tr .t-Report-colHead:first-child, .u-RTL .t-Report--inline .t-Report-report tr .t-Report-cell:first-child, .u-RTL .t-Report--inline .t-Report-report tr .t-Report-colHead:first-child { border-left-width: 1px; border-right-width: 0; }
+
+.t-Region--noPadding .t-Report--horizontalBorders .t-Report-report tr .t-Report-cell:last-child, .t-Region--noPadding .t-Report--horizontalBorders .t-Report-report tr .t-Report-colHead:last-child, .t-Report--inline .t-Report-report tr .t-Report-cell:last-child, .t-Report--inline .t-Report-report tr .t-Report-colHead:last-child { border-right-width: 0; }
+
+.u-RTL .t-Region--noPadding .t-Report--horizontalBorders .t-Report-report tr .t-Report-cell:last-child, .u-RTL .t-Region--noPadding .t-Report--horizontalBorders .t-Report-report tr .t-Report-colHead:last-child, .u-RTL .t-Report--inline .t-Report-report tr .t-Report-cell:last-child, .u-RTL .t-Report--inline .t-Report-report tr .t-Report-colHead:last-child { border-right-width: 1px; border-left-width: 0; }
+
+/* ========================================================================== .t-Report--staticRowColors --- Stertch report to 100% width of container ========================================================================== */
+/* ========================================================================== .t-Report--altRowsDefault --- Alternate Report Rows ========================================================================== */
+/* ========================================================================== .t-Report--horizontalBorders --- Stertch report to 100% width of container ========================================================================== */
+.t-Report--horizontalBorders .t-Report-cell, .t-Report--horizontalBorders .t-Report-colHead { border-left-width: 0; border-right-width: 0; }
+
+.t-Report--horizontalBorders .t-Report-report tr .t-Report-cell:first-child, .t-Report--horizontalBorders .t-Report-report tr .t-Report-colHead:first-child { border-left-width: 1px; }
+
+.t-Report--horizontalBorders .t-Report-report tr .t-Report-cell:last-child, .t-Report--horizontalBorders .t-Report-report tr .t-Report-colHead:last-child { border-right-width: 1px; }
+
+/* ========================================================================== .t-Report--verticalBorders --- Stertch report to 100% width of container ========================================================================== */
+.t-Report--verticalBorders .t-Report-cell { border-top-width: 0; border-bottom-width: 0; }
+
+.t-Report--verticalBorders .t-Report-report tr:first-child .t-Report-cell { border-top-width: 1px; }
+
+/* ========================================================================== .t-Report--rowHighlight --- Stertch report to 100% width of container ========================================================================== */
+/* ========================================================================== Percent Chart ========================================================================== */
+/* Fix for IE Bug where IRR table headers get cropped ========================================================================== */
+.t-fht-wrapper { z-index: 1; }

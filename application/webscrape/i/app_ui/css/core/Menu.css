@@ -1,0 +1,114 @@
+/**  Import Compass */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Menu Bar ========================================================================== */
+.a-MenuBar ul { margin: 0; padding: 0; list-style: none; }
+
+.a-MenuBar-item { display: inline-block; border: 1px solid; margin-right: -1px; }
+
+.a-MenuBar-item > .a-Menu-subMenuCol { display: inline-block; }
+
+.a-MenuBar-item.a-Menu--split > .a-Menu-subMenuCol { border-left: 1px solid; }
+
+.a-MenuBar.u-RTL .a-MenuBar-item.a-Menu--split > .a-Menu-subMenuCol { border-right: 1px solid; border-left: none; }
+
+.a-MenuBar-item.is-focused, .a-MenuBar-item.is-expanded { outline: 1px dotted; }
+
+.a-Menu--split.a-MenuBar-item > .a-MenuBar-label { padding-right: 4px; }
+
+.a-Menu--split.a-MenuBar-item > .a-Menu-subMenuCol { padding: 8px 8px 8px 4px; }
+
+.a-MenuBar-label { padding: 8px; display: inline-block; text-decoration: none; }
+
+.a-MenuBar-label:focus { outline: none; }
+
+/* ========================================================================== Menu  ========================================================================== */
+.a-Menu { z-index: 2010; border: none; display: none; outline: none; background-color: transparent; }
+
+.a-Menu * { box-sizing: border-box; }
+
+.a-Menu.a-Menu--top > .a-Menu-content { border-top: 0; border-top-right-radius: 0; border-top-left-radius: 0; }
+
+.a-Menu-content { position: relative; background-color: #FFFFFF; border: 1px solid; }
+
+.a-Menu ul { margin: 0; padding: 0; line-height: inherit; list-style: none; }
+
+.a-Menu .a-Menu-item { list-style: none; display: block; margin: 0; padding: 0; float: none; white-space: nowrap; line-height: 32px; font-size: 12px; }
+
+.a-Menu-itemSep .a-Menu-labelContainer { float: none !important; margin-right: 0; }
+
+.a-Menu-itemSep .a-Menu-statusCol, .a-Menu-itemSep .a-Menu-accelContainer { display: none; }
+
+.a-Menu-hSeparator { display: block; padding-right: 0 !important; border-top: 1px solid; margin-top: 2px; padding-bottom: 2px; }
+
+.a-Menu-statusCol { display: -moz-inline-stack; display: inline-block; width: 24px; line-height: 16px; padding: 8px 4px; vertical-align: top; cursor: pointer; }
+
+/*  Classes to handle menus without explicit widths + paddings */
+.a-Menu-inner { overflow: hidden; display: table; width: 100%; }
+
+.a-Menu-labelContainer, .a-Menu-accelContainer { display: table-cell; white-space: nowrap; -webkit-font-smoothing: antialiased; }
+
+.a-Menu-accelContainer { text-align: right; }
+
+.u-RTL .a-Menu-labelContainer { text-align: right; }
+
+.u-RTL .a-Menu-accelContainer { text-align: left; }
+
+.a-Menu-content .a-Menu-statusCol { padding: 8px; width: 32px; }
+
+.a-Menu-item.is-focused, .a-Menu-item.is-expanded { background-color: #D0D0D0; }
+
+.a-Menu-item { color: #404040; }
+
+.a-Menu .a-Menu-item a, .a-Menu .a-Menu-item a:hover, .a-Menu .a-Menu-item a:active, .a-Menu .a-Menu-item a:visited, .a-Menu .a-Menu-item label, .a-Menu .a-Menu-label { display: -moz-inline-stack; display: inline-block; padding: 0 12px 0 0; outline: none; color: inherit; text-decoration: none; -moz-user-select: none; cursor: pointer; }
+
+.a-Menu button.a-Menu-label, .a-MenuBar button.a-MenuBar-label { border: none; background-color: transparent; text-align: inherit; }
+
+.a-Menu button.a-Menu-label { line-height: 32px; }
+
+.a-Menu .a-Menu-item.is-disabled { cursor: default !important; }
+
+.a-Menu .a-Menu-item.is-disabled .a-Menu-label, .a-Menu .a-Menu-item.is-disabled .a-Menu-accel { color: #A0A0A0; color: rgba(64, 64, 64, 0.5); }
+
+.a-Menu .a-Menu-item.is-disabled .a-Menu-statusCol { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
+
+.a-Menu .a-Menu-item.is-disabled.is-focused { background-color: transparent; border-color: #F0F0F0; }
+
+.a-Menu .a-Menu-item.is-disabled.is-focused .a-Menu-subMenuCol { color: #A0A0A0; cursor: default; }
+
+.a-Menu-item input, .a-Menu-item label { outline: none; margin: 0; }
+
+.a-Menu-item input { position: absolute; top: 0; left: -99999px; }
+
+.a-Menu-item .a-Menu-subMenuCol { display: -moz-inline-stack; display: inline-block; width: 20px; height: 32px; padding: 8px 4px 8px 0; line-height: 16px; vertical-align: top; cursor: pointer; }
+
+.a-MenuBar.u-RTL .a-MenuBar-item .a-Menu-subMenuCol { padding-right: 0; padding-left: 4px; }
+
+.a-Menu-accel { color: #767676; }
+
+/* ========================================================================== Scrolling Buttons ========================================================================== */
+.a-Menu-content.a-Menu--scrollable { padding: 0; }
+
+.a-Menu-scroll { overflow: hidden; }
+
+.a-Menu-scrollBtn { width: 100%; margin: 0; padding: 0; cursor: pointer; }
+
+.a-Menu-scrollBtn .a-Icon { margin: 0 auto; display: block; }
+
+/* ========================================================================== Menubar Overflow ========================================================================== */
+.a-MenuBar.a-MenuBar--overflow { overflow: hidden; width: 100%; height: 40px; }
+
+.a-MenuBar-item--overflow { float: right; }
+
+.u-RTL .a-MenuBar-item--overflow { float: left; }
+
+/* ========================================================================== Menu RTL Fixes ========================================================================== */
+.u-RTL .a-Menu .a-Menu-item a, .u-RTL .a-Menu .a-Menu-item a:hover, .u-RTL .a-Menu .a-Menu-item a:active, .u-RTL .a-Menu .a-Menu-item a:visited, .u-RTL .a-Menu .a-Menu-item label, .u-RTL .a-Menu .a-Menu-label { padding: 0 0 0 12px; }
+
+.u-RTL .a-Menu-accelContainer { float: left; margin-left: 0; margin-right: -20px; text-align: left; }
+
+.u-RTL .a-Menu-labelContainer { float: right; margin-left: 20px; margin-right: 0; text-align: right; }

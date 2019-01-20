@@ -1,0 +1,75 @@
+{
+  "build_root": "1.2/",
+  "log": "none",
+  "server_root": "../../../",
+  "dir": {
+    "core": {
+      "src":  [
+        "modules/**/*.scss",
+        "core/*.scss",
+        "core/**/*.scss"
+      ],
+      "name": "Core",
+      "watch": ["**/*.scss","!theme/**/*.scss"],
+      "paths": [
+        [".*modules/(.*)", "core/$1"],
+        [".*util", "core"]
+      ]
+    },
+    "vita": {
+      "src": [
+        "theme/vita/_variables.scss",
+        "theme/vita/**/*.scss"
+      ],
+      "name": "Vita",
+      "less": true
+    },
+    "vita-slate": {
+      "src": [
+        "theme/vita-slate/**/*.scss"
+      ],
+      "name": "Vita-Slate",
+      "less": true,
+      "override": "vita"
+    },
+    "vita-red": {
+      "src": [
+        "theme/vita-red/**/*.scss"
+      ],
+      "name": "Vita-Red",
+      "less": true,
+      "override": "vita"
+    },
+    "vita-dark": {
+      "src": [
+        "theme/vita-dark/**/*.scss"
+      ],
+      "name": "Vita-Dark",
+      "less": true,
+      "override": "vita"
+    },
+    "vista": {
+      "src": [
+        "theme/vista/_variables-vista.scss",
+        "theme/vista/**/*.scss"
+      ],
+      "name": "Vista",
+      "less": true
+    },
+    "demo": {
+      "src": [
+        "demo/*.scss"
+      ],
+      "name": "Demo",
+      "watch": ["demo/*.scss"],
+      "clean": ["../css/demo/"]
+    }
+  },
+  "scripts": {
+    "src": "js/src/theme42_controller.js",
+    "modules": [
+      "js/src/modules/**/*.js",
+      "!js/src/modules/**/*.min.js"
+    ]
+  }
+}

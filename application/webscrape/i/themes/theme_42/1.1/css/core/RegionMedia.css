@@ -1,0 +1,9 @@
+/**  Import Compass */
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Region Media Block --- This structure and style is used when a region image is specified. ========================================================================== */
+.t-RegionImage { display: block; }
+
+.t-RegionImage-graphic { float: left; margin-right: 8px; }
+
+.t-RegionImage-content { overflow: hidden; _overflow: visible; zoom: 1; }

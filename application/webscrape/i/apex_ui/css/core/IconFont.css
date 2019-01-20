@@ -1,0 +1,768 @@
+/** Import Compass */
+/******************************************************************************
+
+File Name:    FontIcon.scss
+Purpose:      Custom APEX 5 Font Icon
+
+******************************************************************************/
+.a-Icon.a-Icon--circle { border-radius: 100%; background-color: #A0A0A0; color: #FFF; }
+
+.a-Icon.a-Icon--dangerBG { background-color: red; color: #FFF; }
+
+.a-Icon.icon-up-arrow:before { content: "\e127"; }
+
+.a-Icon.icon-left-arrow:before { content: "\e002"; }
+
+.a-Icon.icon-required:before, .a-Icon--requiredField:before { content: "\E081"; color: red; }
+
+.a-GridLayout-pageItem > h3 > .a-Icon:before, .a-Gallery-pageItem .a-Icon:before, .a-Icon.icon-page-item:before, .a-Icon.icon-tree-item:before { content: "\e00a"; }
+
+.a-Icon.icon-cm-autocomplete:before { content: "\e060"; }
+
+.a-Icon.icon-region:before, .a-Icon.icon-tree-region:before { content: "\e00c"; }
+
+.a-Icon.icon-page:before { content: "\e00d"; }
+
+.a-Icon.icon-button:before { content: "\e00e"; }
+
+.a-GridLayout-button > h3 > .a-Icon:before, .a-Icon.icon-tree-button:before { content: "\e087"; }
+
+.a-Icon.icon-error:before { content: "\e010"; }
+
+.a-Icon.icon-gear-alt:before { content: "\e00b"; }
+
+.a-Icon.icon-three-col:before { content: "\e018"; }
+
+.a-Icon.icon-page-designer:before { content: "\e01c"; }
+
+.a-Icon.icon-expand-all:before { content: "\e01f"; }
+
+.a-Icon.icon-goto-group:before { content: "\e0a5"; }
+
+.a-Icon.icon-collapse-all:before { content: "\e020"; }
+
+.a-Icon.icon-users:before, .a-Icon.icon-team-dev:before { content: "\e027"; }
+
+.a-Icon.icon-page-select:before { content: "\e02b"; }
+
+.a-Icon.icon-unlock:before { content: "\e02f"; }
+
+.a-Icon.icon-lock:before, .a-Icon.icon-tree-security:before { content: "\e031"; }
+
+.a-Icon.icon-run-script:before, .a-Icon.icon-run-page:before { content: "\e034"; }
+
+.a-Icon.icon-lock-user:before { content: "\e035"; }
+
+.a-Icon.icon-alert:before, .a-Icon.icon-comments:before, .a-Icon.icon-system-message:before, .a-Icon.icon-announcement:before { content: "\e036"; }
+
+.a-Icon.icon-edit:before { content: "\e046"; }
+
+.a-Icon.icon-shared-components:before, .a-Icon.icon-pd-shared-components:before { content: "\e048"; }
+
+/******************************************************************************
+Region Icons
+******************************************************************************/
+.a-Gallery-region .a-Icon:before, .a-Icon.icon-template-region:before, .a-Icon.icon-region-native:before { content: "\e06e"; }
+
+.a-Icon.icon-template-breadcrumb:before, .a-Icon.icon-sc-breadcrumb:before, .a-Icon.icon-region-native-breadcrumb:before { content: "\e06f"; }
+
+.a-Icon.icon-region-native-data-upload-column-mapping:before, .a-Icon.icon-util-data-unload:before { content: "\e072"; }
+
+.a-Icon.icon-region-native-display-selector:before { content: "\e073"; }
+
+.a-Icon.icon-page-chart:before, .a-Icon.icon-region-native-flash-chart5:before { content: "\e074"; }
+
+.a-Icon.icon-page-map:before, .a-Icon.icon-region-native-flash-map:before { content: "\e075"; }
+
+.a-Icon.icon-region-native-fnc-report:before { content: "\e076"; }
+
+.a-Icon.icon-region-native-help-text:before { content: "\e077"; }
+
+.a-Icon.icon-page-ir:before, .a-Icon.icon-region-native-ir:before { content: "\e078"; }
+
+.a-Icon.icon-region-native-ig:before { content: "\e1Ad"; }
+
+.a-Icon.icon-template-popup:before, .a-Icon.icon-region-native-jqm-column-toggle:before { content: "\e08e"; }
+
+.a-Icon.icon-region-native-jqm-list-view:before { content: "\e079"; }
+
+.a-Icon.icon-region-native-jqm-reflow:before { content: "\e07a"; }
+
+.a-Icon.icon-page-tree:before, .a-Icon.icon-region-native-jstree:before, .a-Icon.icon-sc-tree:before { content: "\e098"; }
+
+.a-Icon.icon-template-list:before, .a-Icon.icon-util-component-counts:before, .a-Icon.icon-region-native-list:before, .a-Icon.icon-sc-list:before { content: "\e07b"; }
+
+.a-Icon.icon-region-native-plsql:before { content: "\e07c"; }
+
+.a-Icon.icon-template-report:before, .a-Icon.icon-saved-reports:before, .a-Icon.icon-cross-app-reports:before, .a-Icon.icon-region-native-sql-report:before, .a-Icon.icon-page-report:before, .a-Icon.icon-utilities-methods-tables:before, .a-Icon.icon-sc-report-query:before { content: "\e07d"; }
+
+.a-Icon.icon-page-static:before, .a-Icon.icon-region-native-static:before { content: "\e07e"; }
+
+.a-Icon.icon-template-field:before, .a-Icon.icon-page-form:before { content: "\e083"; }
+
+.a-Icon.icon-page-form-tabular:before, .a-Icon.icon-region-native-tabform:before { content: "\e044"; }
+
+.a-Icon.icon-region-native-url:before { content: "\e084"; }
+
+.a-Icon.icon-region-plugin-tag-cloud:before { content: "\e085"; }
+
+/******************************************************************************
+Button Component Icons
+******************************************************************************/
+.a-Icon.icon-button-hot:before { content: "\e00b"; }
+
+.a-Icon.icon-template-button:before, .a-Icon.icon-button-normal:before { content: "\e00e"; }
+
+/******************************************************************************
+Item Component Icons
+******************************************************************************/
+.a-Icon.icon-item-native-auto-complete:before { content: "\e018"; }
+
+.a-Icon.icon-item-native-checkbox:before { content: "\e01c"; }
+
+.a-Icon.icon-util-theme-summary:before, .a-Icon.icon-util-workspace-themes:before, .a-Icon.icon-sc-theme:before, .a-Icon.icon-sc-ui:before { content: "\e02a"; }
+
+.a-Icon.icon-item-native-color-picker:before { content: "\e14c"; }
+
+.a-Icon.icon-item-native-display-image:before { content: "\e02d"; }
+
+.a-Icon.icon-util-news:before, .a-Icon.icon-item-native-display-only:before { content: "\e02e"; }
+
+.a-Icon.icon-item-native-file:before { content: "\e032"; }
+
+.a-Icon.icon-item-native-hidden:before { content: "\e099"; }
+
+.a-Icon.icon-manage-focus-areas:before, .a-Icon.icon-feature-utilities:before { content: "\e07b"; }
+
+.a-Icon.icon-item-native-list-manager:before { content: "\e038"; }
+
+.a-Icon.icon-item-native-number-field:before { content: "\e039"; }
+
+.a-Icon.icon-item-native-popup-lov:before { content: "\e03b"; }
+
+.a-Icon.icon-util-build-options:before, .a-Icon.icon-item-native-radiogroup:before { content: "\e03c"; }
+
+.a-Icon.icon-item-native-rich-text-editor:before { content: "\e03d"; }
+
+.a-Icon.icon-item-native-select-list:before { content: "\e03e"; }
+
+.a-Icon.icon-item-native-shuttle:before { content: "\e03f"; }
+
+.a-Icon.icon-item-native-slider:before { content: "\e040"; }
+
+.a-Icon.icon-template-label:before, .a-Icon.icon-item-native-pct-graph:before, .a-Icon.icon-item-native-text-field:before { content: "\e041"; }
+
+.a-Icon.icon-item-native-textarea:before { content: "\e042"; }
+
+.a-Icon.icon-item-native-yes-no:before { content: "\e043"; }
+
+.a-Icon.icon-item-plugin-masked-field:before { content: "\e045"; }
+
+.a-Icon.icon-item-plugin-search-box:before { content: "\e06c"; }
+
+.a-Icon.icon-item-plugin-tags:before { content: "\e06d"; }
+
+/******************************************************************************
+Plugin Component Icons
+******************************************************************************/
+.a-Icon.icon-item-plugin:before, .a-Icon.icon-region-plugin:before, .a-Icon.icon-sc-plugin:before { content: "\e082"; }
+
+/******************************************************************************
+Date Picker + Calendar Icons
+******************************************************************************/
+.a-Icon.icon-util-comments-calendar:before, .a-Icon.icon-page-calendar:before, .a-Icon.icon-region-native-css-calendar:before, .a-Icon.icon-item-native-date-picker:before, .a-Icon.icon-item-native-date-picker-html5:before { content: "\e071"; }
+
+.a-Icon.icon-user-round:before { content: "\e019"; }
+
+.a-Icon.icon-workspace:before, .a-Icon.icon-database:before { content: "\e04e"; }
+
+.a-Icon.icon-page-cache:before { content: "\e053"; }
+
+.a-Icon.icon-edit-app:before { content: "\e051"; }
+
+.a-Icon.icon-gears-alt:before { content: "\e059"; }
+
+.a-Icon.icon-sql-workshop:before { content: "\e05a"; }
+
+.a-Icon.icon-variable:before { content: "\e068"; }
+
+.a-Icon.icon-zoom-page:before { content: "\e101"; }
+
+.a-Icon.icon-zoom-region:before { content: "\e100"; }
+
+.a-Icon.icon-test:before { content: "\E06F"; }
+
+.a-Icon.icon-app-database:before { content: "\e089"; }
+
+.a-Icon.icon-app-websheet:before { content: "\e08a"; }
+
+.a-Icon.icon-page-form-procedure:before { content: "\e08b"; }
+
+.a-Icon.icon-page-form-table:before { content: "\e08c"; }
+
+.a-Icon.icon-page-form-table-report:before { content: "\e08c"; }
+
+.a-Icon.icon-util-security-profiles:before, .a-Icon.icon-page-access-control:before, .a-Icon.icon-login-password:before { content: "\e08f"; }
+
+.a-Icon.icon-util-script:before, .a-Icon.icon-page-blank:before, .a-Icon.icon-sc-css:before, .a-Icon.icon-template-page:before, .a-Icon.icon-sc-file:before { content: "\e090"; }
+
+.a-Icon.icon-page-data-loading:before, .a-Icon.icon-sc-data-loading:before, .a-Icon.icon-util-data-load:before, .a-Icon.icon-sc-data-references:before { content: "\e091"; }
+
+.a-Icon.icon-util-comments:before, .a-Icon.icon-page-feedback:before { content: "\e092"; }
+
+.a-Icon.icon-page-form-master-detail:before { content: "\e094"; }
+
+.a-Icon.icon-utilities-page-views:before, .a-Icon.icon-utilities-object-reports:before, .a-Icon.icon-util-page-group:before, .a-Icon.icon-page-multiple:before { content: "\e095"; }
+
+.a-Icon.icon-page-wizard:before { content: "\e096"; }
+
+.a-Icon.icon-util-app-groups:before, .a-Icon.icon-pkg-apps:before { content: "\e097"; }
+
+.a-Icon.icon-page-dashboard:before { content: "\e15c"; }
+
+.a-Icon.icon-page-side-md:before { content: "\e1af"; }
+
+.a-Icon.icon-page-one-md:before { content: "\e1ae"; }
+
+.a-Icon.icon-page-two-md:before { content: "\e1c1"; }
+
+.a-Icon.icon-page-master-detail:before { content: "\e1c2"; }
+
+.a-Icon.icon-ui-desktop:before { content: "\e09a"; }
+
+.a-Icon.icon-page-form-webservice:before, .a-Icon.icon-page-form-report-webservice:before { content: "\e09b"; }
+
+.a-Icon.icon-util-password:before, .a-Icon.icon-page-login:before, .a-Icon.icon-item-native-password:before { content: "\e0e7"; }
+
+.a-Icon.icon-page-form-sql:before { content: "\e09d"; }
+
+.a-Icon.icon-util-release-summary:before, .a-Icon.icon-util-application-attributes:before, .a-Icon.icon-page-form-summary:before { content: "\e09e"; }
+
+.a-Icon.icon-ui-mobile:before, .a-Icon.icon-ui-jqm:before { content: "\e09f"; }
+
+.a-Icon.icon-page-global:before { content: "\e0a0"; }
+
+.a-Icon.icon-util-webservice:before, .a-Icon.icon-page-webservice:before, .a-Icon.icon-page-report-webservice:before { content: "\e0a1"; }
+
+.a-Icon.icon-sc-app-computation:before { content: "\e0a4"; }
+
+.a-Icon.icon-sc-app-item:before { content: "\e0a7"; }
+
+.a-Icon.icon-sc-app-process:before { content: "\e06b"; }
+
+.a-Icon.icon-sc-component-settings:before { content: "\e0c0"; }
+
+.a-Icon.icon-util-auth-scheme:before, .a-Icon.icon-sc-authorization-scheme:before, .a-Icon.icon-utilities-update-assignees:before { content: "\e0a8"; }
+
+.a-Icon.icon-page-global:before, .a-Icon.icon-sc-globalization:before { content: "\e0c1"; }
+
+.a-Icon.icon-sc-build-option-off:before, .a-Icon.icon-sc-authentication-scheme-off:before { content: "\e0a9"; }
+
+.a-Icon.icon-sc-tabs:before { content: "\e0aa"; }
+
+.a-Icon.icon-report-subscriptions:before, .a-Icon.icon-sc-shortcut:before { content: "\e0ab"; }
+
+.a-Icon.icon-sc-security:before { content: "\e0ac"; }
+
+.a-Icon.icon-sc-reports:before { content: "\e0ad"; }
+
+.a-Icon.icon-sc-report-layout:before { content: "\e011"; }
+
+.a-Icon.icon-util-links:before, .a-Icon.icon-page-url:before, .a-Icon.icon-sc-nav-bar:before { content: "\e011"; }
+
+.a-Icon.icon-page-nav:before, .a-Icon.icon-sc-nav:before { content: "\e0af"; }
+
+.a-Icon.icon-sc-lov:before { content: "\e0b0"; }
+
+.a-Icon.icon-util-gear:before, .a-Icon.icon-sc-logic:before, .a-Icon.icon-utilities-features:before, .a-Icon.icon-utilities-team-dev:before { content: "\e0b1"; }
+
+.a-Icon.icon-sc-page-group:before, .a-Icon.icon-folder-files:before, .a-Icon.icon-sc-files:before { content: "\e0b2"; }
+
+.a-Icon.icon-sc-build-option-on:before, .a-Icon.icon-sc-authentication-scheme-on:before { content: "\e0b3"; }
+
+.a-Icon.icon-sc-web-service:before { content: "\e0b4"; }
+
+.a-Icon.icon-util-apex-views:before, .a-Icon.icon-util-workspace-actions:before { content: "\e0b5"; }
+
+.a-Icon.icon-admin-workspace-utilization:before, .a-Icon.icon-utilities-database-monitor:before, .a-Icon.icon-utilities-activity:before, .a-Icon.icon-util-app-dashboard:before { content: "\e0b6"; }
+
+.a-Icon.icon-util-change-history:before { content: "\e0b7"; }
+
+.a-Icon.icon-util-export-app:before { content: "\e0b8"; }
+
+.a-Icon.icon-enable-files:before, .a-Icon.icon-util-export-repository:before { content: "\e0b9"; }
+
+.a-Icon.icon-util-import-app:before { content: "\e0ba"; }
+
+.a-Icon.icon-util-recent-pages:before { content: "\e0bb"; }
+
+.a-Icon.icon-util-upgrade-app:before, .a-Icon.icon-util-upgrade-scripts:before { content: "\e0bc"; }
+
+.a-Icon.icon-util-bugs:before, .a-Icon.icon-util-debug-messages:before { content: "\e0bd"; }
+
+.a-Icon.icon-app-status:before, .a-Icon.icon-util-advisor:before { content: "\e0bf"; }
+
+.a-Icon.icon-util-app-compare:before, .a-Icon.icon-util-attribute-dictionary:before { content: "\e0be"; }
+
+.a-Icon.icon-database-object:before, .a-Icon.icon-util-object-dependencies:before { content: "\e02c"; }
+
+.a-Icon.icon-tree-branch:before { content: "\e0c3"; }
+
+.a-Icon.icon-tree-breadcrumb:before { content: "\e0c4"; }
+
+.a-Icon.icon-tree-button:before { content: "\e087"; }
+
+.a-Icon.icon-tree-item:before { content: "\e149"; }
+
+.a-Icon.icon-tree-list:before { content: "\e12d"; }
+
+.a-Icon.icon-tree-lov:before { content: "\e0c9"; }
+
+.a-Icon.icon-tree-page:before { content: "\e00d"; }
+
+.a-Icon.icon-tree-region:before { content: "\e00c"; }
+
+.a-Icon.icon-page-home:before, .a-Icon.icon-util-home:before { content: "\e0cd"; }
+
+.a-Icon.icon-tree-tabs:before { content: "\e0ce"; }
+
+.a-Icon.icon-tree-templates:before { content: "\e0cf"; }
+
+.a-Icon.icon-tree-validation:before, .a-Icon.icon-cm-validate:before { content: "\e0d0"; }
+
+.a-Icon.icon-tree-folder:before, .a-TreeView-node.is-expandable > .a-TreeView-content > .a-Icon.icon-tree-folder:before { content: "\e0da"; }
+
+.a-Icon.icon-tree-folder-open:before, .a-TreeView-node.is-collapsible > .a-TreeView-content > .a-Icon.icon-tree-folder:before { content: "\e0d7"; }
+
+.a-Icon.icon-tree-folder-filled:before, .a-TreeView-node.is-expandable > .a-TreeView-content.is-selected > .a-Icon.icon-tree-folder:before { content: "\e0d1"; }
+
+.a-Icon.icon-tree-folder-open-filled:before, .a-TreeView-node.is-collapsible > .a-TreeView-content.is-selected > .a-Icon.icon-tree-folder:before { content: "\e0d9"; }
+
+.a-Icon.icon-tree-authorization:before { content: "\e0d2"; }
+
+.a-Icon.icon-tree-build-option:before { content: "\e0d3"; }
+
+.a-Icon.icon-tree-plugin:before { content: "\e0d4"; }
+
+.a-Icon.icon-tree-data-load-table:before { content: "\e0d5"; }
+
+.a-Icon.icon-tree-web-service:before { content: "\e0d6"; }
+
+.a-Icon.icon-tree-col-group:before { content: "\e12a"; }
+
+.a-Icon.icon-tree-map-series:before { content: "\e12b"; }
+
+.a-Icon.icon-tree-chart-series:before { content: "\e128"; }
+
+.a-Icon.icon-admin-edit-announcement:before { content: "\e0dc"; }
+
+.a-Icon.icon-admin-service-request:before { content: "\e0dd"; }
+
+.a-Icon.icon-page-dynamic:before { content: "\e0de"; }
+
+.a-Icon.icon-page-dynamic-form:before { content: "\e0df"; }
+
+.a-Icon.icon-util-ords-rest:before, .a-Icon.icon-admin-workspace-preferences:before, .a-Icon.icon-util-session-state-management:before { content: "\e0e0"; }
+
+.a-Icon.icon-request-termination:before { content: "\e0e1"; }
+
+.a-Icon.icon-request-storage:before { content: "\e0e2"; }
+
+.a-Icon.icon-request-schema:before { content: "\e0e3"; }
+
+.a-Icon.icon-utilites-recycle-bin:before, .a-Icon.icon-utilites-purge-data:before { content: "\e04b"; }
+
+.a-Icon.icon-utilites-schema-comparison:before { content: "\e05a"; }
+
+.a-Icon.icon-utilities-about-database:before { content: "\e05b"; }
+
+.a-Icon.icon-utilities-data-workshop:before { content: "\e05f"; }
+
+.a-Icon.icon-utilities-query-builder:before { content: "\e088"; }
+
+.a-Icon.icon-util-team-dev-settings:before, .a-Icon.icon-utilities-ui-defaults:before, .a-Icon.icon-util-installation-scripts:before, .a-Icon.icon-util-deinstallation-scripts:before { content: "\e09c"; }
+
+.a-Icon.icon-utilities-generate-ddl:before { content: "\e02c"; }
+
+.a-Icon.icon-twitter:before { content: "\e0c6"; }
+
+.a-Icon.icon-gplus:before { content: "\e0e8"; }
+
+.a-Icon.icon-facebook:before { content: "\e0eb"; }
+
+.a-Icon.icon-linkedin:before { content: "\e0ed"; }
+
+.a-Icon.icon-youtube:before { content: "\e1a7"; }
+
+.a-Icon.icon-apex-user:before, .a-Icon.icon-login-username:before { content: "\e0f5"; }
+
+.a-Icon.icon-login-workspace:before, .a-Icon.icon-util-workspace:before { content: "\e0f6"; }
+
+.a-Icon.icon-envelope:before, .a-Icon.icon-login-mail:before { content: "\e03a"; }
+
+.a-Icon.icon-translate-text:before { content: "\e10d"; }
+
+.a-Icon.icon-util-developer-activity:before { content: "\e10e"; }
+
+.a-Icon.icon-util-download-xlif-translation:before, .a-Icon.icon-util-install:before { content: "\e10f"; }
+
+.a-Icon.icon-util-environment-reports:before { content: "\e110"; }
+
+.a-Icon.icon-util-login-attempts:before { content: "\e111"; }
+
+.a-Icon.icon-teachers:before, .a-Icon.icon-util-logs:before { content: "\e112"; }
+
+.a-Icon.icon-util-manage-dynamic-translation:before, .a-Icon.icon-util-manage:before { content: "\e113"; }
+
+.a-Icon.icon-util-manually-edit-translation:before { content: "\e114"; }
+
+.a-Icon.icon-util-map-primary-language:before { content: "\e115"; }
+
+.a-Icon.icon-util-create-manage-text:before { content: "\e116"; }
+
+.a-Icon.icon-util-calendar-reports:before { content: "\e117"; }
+
+.a-Icon.icon-util-validate-websheet-database:before, .a-Icon.icon-check-circle:before { content: "\e118"; }
+
+.a-Icon.icon-util-subscriptions:before { content: "\e119"; }
+
+.a-Icon.icon-util-seed-translatable-text:before { content: "\e11a"; }
+
+.a-Icon.icon-util-report-session-state:before { content: "\e11b"; }
+
+.a-Icon.icon-util-recent-sessions:before { content: "\e11c"; }
+
+.a-Icon.icon-util-session-state-statistics:before, .a-Icon.icon-util-purge-sessions-age:before { content: "\e11d"; }
+
+.a-Icon.icon-util-publish-translated-applications:before { content: "\e11e"; }
+
+.a-Icon.icon-util-preferences-by-user:before { content: "\e11f"; }
+
+.a-Icon.icon-util-page-views:before { content: "\e120"; }
+
+.a-Icon.icon-upload-apply-xliff:before { content: "\e121"; }
+
+.a-Icon.icon-util-shared-components:before { content: "\e122"; }
+
+.a-Icon.icon-tree-process:before, .a-Icon.icon-pd-processing:before { content: "\e04a"; }
+
+.a-Icon.icon-pd-dynact:before, .a-Icon.icon-tree-da-event:before { content: "\e047"; }
+
+.a-Icon.icon-tree-da-action:before { content: "\e001"; }
+
+.a-Icon.icon-pd-rendering:before { content: "\e030"; }
+
+.a-Icon.icon-cm-query-builder:before { content: "\e061"; }
+
+.a-Icon.icon-page-designer:before { content: "\e054"; }
+
+.a-Icon.icon-comp-view:before { content: "\e052"; }
+
+.a-Icon.icon-pd-comp-type:before { content: "\e055"; }
+
+.a-Icon.icon-pd-proc-order:before { content: "\e056"; }
+
+.a-Icon.icon-feedback:before { content: "\e05e"; }
+
+.a-Icon.icon-add-comment:before { content: "\e062"; }
+
+.a-Icon.icon-menu:before { content: "\e066"; }
+
+.a-Icon.icon-find:before { content: "\e06a"; }
+
+.a-Icon.icon-language:before { content: "\e129"; }
+
+.a-Icon.icon-region-legacy:before { content: "\e003"; }
+
+.a-Icon.icon-item-native-row-action:before { content: "\e033"; }
+
+.a-Icon.icon-item-native-link:before { content: "\e011"; }
+
+.a-Icon.icon-item-native-html-expression:before { content: "\e07e"; }
+
+.a-Icon.icon-students:before, .a-Icon.icon-item-native-row-selector:before { content: "\e093"; }
+
+/* Create Application from Spreadsheet */
+.a-Icon.icon-clipboard:before { content: "\E18E"; }
+
+.a-Icon.icon-file-upload:before { content: "\E13F"; }
+
+.a-Icon.icon-sample-dataset:before, .a-Icon.icon-sample-data:before { content: "\E12F"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-breadcrumb:before, .a-GridLayout .a-Icon.icon-region-native-breadcrumb:before { content: "\e138"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-calendar:before, .a-TreeView-content .a-Icon.icon-region-native-css-calendar:before, .a-GridLayout .a-Icon.icon-region-native-calendar:before, .a-GridLayout .a-Icon.icon-region-native-css-calendar:before { content: "\e137"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-display-selector:before, .a-GridLayout .a-Icon.icon-region-native-display-selector:before { content: "\e136"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-flash-chart5:before, .a-GridLayout .a-Icon.icon-region-native-flash-chart5:before { content: "\e0e9"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-flash-map:before, .a-GridLayout .a-Icon.icon-region-native-flash-map:before { content: "\e135"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-fnc-report:before, .a-GridLayout .a-Icon.icon-region-native-fnc-report:before { content: "\e134"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-help-text:before, .a-GridLayout .a-Icon.icon-region-native-help-text:before { content: "\e04f"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-ir:before, .a-GridLayout .a-Icon.icon-region-native-ir:before { content: "\e139"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-ig:before, .a-GridLayout .a-Icon.icon-region-native-ig:before { content: "\e182"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-jqm-column-toggle:before, .a-GridLayout .a-Icon.icon-region-native-jqm-column-toggle:before { content: "\e070"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-jqm-list-view:before, .a-GridLayout .a-Icon.icon-region-native-jqm-list-view:before { content: "\e086"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-jqm-reflow:before, .a-GridLayout .a-Icon.icon-region-native-jqm-reflow:before { content: "\e0e6"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-jstree:before, .a-GridLayout .a-Icon.icon-region-native-jstree:before { content: "\e12c"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-list:before, .a-GridLayout .a-Icon.icon-region-native-list:before { content: "\e12d"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-plsql:before, .a-GridLayout .a-Icon.icon-region-native-plsql:before { content: "\e12e"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-sql-report:before, .a-GridLayout .a-Icon.icon-region-native-sql-report:before { content: "\e12f"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-static:before, .a-GridLayout .a-Icon.icon-region-native-static:before { content: "\e130"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-tabform:before, .a-GridLayout .a-Icon.icon-region-native-tabform:before { content: "\e131"; }
+
+.a-TreeView-content .a-Icon.icon-region-native-url:before, .a-GridLayout .a-Icon.icon-region-native-url:before { content: "\e132"; }
+
+.a-TreeView-content .a-Icon.icon-region-plugin:before, .a-GridLayout .a-Icon.icon-region-plugin:before { content: "\e133"; }
+
+.a-TreeView-content .a-Icon.icon-button-hot:before, .a-GridLayout .a-Icon.icon-button-hot:before { content: "\e151"; }
+
+.a-TreeView-content .a-Icon.icon-button-normal:before, .a-GridLayout .a-Icon.icon-button-normal:before { content: "\e152"; }
+
+.a-Icon.icon-tree-attributes:before { content: "\E13C"; }
+
+.a-GridLayout .a-Icon.icon-item-native-auto-complete:before, .a-TreeView-content .a-Icon.icon-item-native-auto-complete:before { content: "\e13b"; }
+
+.a-GridLayout .a-Icon.icon-item-native-checkbox:before, .a-TreeView-content .a-Icon.icon-item-native-checkbox:before { content: "\e13c"; }
+
+.a-GridLayout .a-Icon.icon-item-native-color-picker:before, .a-TreeView-content .a-Icon.icon-item-native-color-picker:before { content: "\e063"; }
+
+.a-GridLayout .a-Icon.icon-item-native-date-picker:before, .a-GridLayout .a-Icon.icon-item-native-date-picker-html5:before, .a-TreeView-content .a-Icon.icon-item-native-date-picker:before, .a-TreeView-content .a-Icon.icon-item-native-date-picker-html5:before { content: "\e137"; }
+
+.a-GridLayout .a-Icon.icon-item-native-display-image:before, .a-TreeView-content .a-Icon.icon-item-native-display-image:before { content: "\e13d"; }
+
+.a-GridLayout .a-Icon.icon-item-native-display-only:before, .a-TreeView-content .a-Icon.icon-item-native-display-only:before { content: "\e13e"; }
+
+.a-GridLayout .a-Icon.icon-item-native-file:before, .a-TreeView-content .a-Icon.icon-item-native-file:before { content: "\e13f"; }
+
+.a-GridLayout .a-Icon.icon-item-native-hidden:before, .a-TreeView-content .a-Icon.icon-item-native-hidden:before { content: "\e140"; }
+
+.a-GridLayout .a-Icon.icon-item-native-list-manager:before, .a-TreeView-content .a-Icon.icon-item-native-list-manager:before { content: "\e12d"; }
+
+.a-GridLayout .a-Icon.icon-item-native-number-field:before, .a-TreeView-content .a-Icon.icon-item-native-number-field:before { content: "\e141"; }
+
+.a-GridLayout .a-Icon.icon-item-native-password:before, .a-TreeView-content .a-Icon.icon-item-native-password:before { content: "\e142"; }
+
+.a-GridLayout .a-Icon.icon-item-native-popup-lov:before, .a-TreeView-content .a-Icon.icon-item-native-popup-lov:before { content: "\e143"; }
+
+.a-GridLayout .a-Icon.icon-item-native-radiogroup:before, .a-TreeView-content .a-Icon.icon-item-native-radiogroup:before { content: "\e144"; }
+
+.a-GridLayout .a-Icon.icon-item-native-rich-text-editor:before, .a-TreeView-content .a-Icon.icon-item-native-rich-text-editor:before { content: "\e145"; }
+
+.a-GridLayout .a-Icon.icon-item-native-select-list:before, .a-TreeView-content .a-Icon.icon-item-native-select-list:before { content: "\e146"; }
+
+.a-GridLayout .a-Icon.icon-item-native-shuttle:before, .a-TreeView-content .a-Icon.icon-item-native-shuttle:before { content: "\e147"; }
+
+.a-GridLayout .a-Icon.icon-item-native-slider:before, .a-TreeView-content .a-Icon.icon-item-native-slider:before { content: "\e148"; }
+
+.a-GridLayout .a-Icon.icon-item-native-text-field:before, .a-TreeView-content .a-Icon.icon-item-native-text-field:before { content: "\e149"; }
+
+.a-GridLayout .a-Icon.icon-item-native-textarea:before, .a-TreeView-content .a-Icon.icon-item-native-textarea:before { content: "\e14a"; }
+
+.a-GridLayout .a-Icon.icon-item-native-yes-no:before, .a-TreeView-content .a-Icon.icon-item-native-yes-no:before { content: "\e14b"; }
+
+.a-GridLayout .a-Icon.icon-item-native-row-action:before, .a-TreeView-content .a-Icon.icon-item-native-row-action:before { content: "\e04c"; }
+
+.a-GridLayout .a-Icon.icon-item-native-link:before, .a-TreeView-content .a-Icon.icon-item-native-link:before { content: "\e132"; }
+
+.a-GridLayout .a-Icon.icon-item-native-html-expression:before, .a-TreeView-content .a-Icon.icon-item-native-html-expression:before { content: "\e130"; }
+
+.a-GridLayout .a-Icon.icon-item-native-row-selector:before, .a-TreeView-content .a-Icon.icon-item-native-row-selector:before { content: "\e07f"; }
+
+/******************************************************************************
+Chart Icons
+******************************************************************************/
+.a-Icon.icon-region-chart-area:before { content: "\e158"; }
+
+.a-Icon.icon-region-chart-bar:before { content: "\e164"; }
+
+.a-Icon.icon-region-chart-bubble:before { content: "\e15a"; }
+
+.a-Icon.icon-region-native-jet-chart:before, .a-Icon.icon-region-chart-column:before { content: "\e159"; }
+
+.a-Icon.icon-region-chart-combo:before { content: "\e15b"; }
+
+.a-Icon.icon-region-chart-dial:before { content: "\e15c"; }
+
+.a-Icon.icon-region-chart-donut:before { content: "\e166"; }
+
+.a-Icon.icon-region-chart-funnel:before { content: "\e15d"; }
+
+.a-Icon.icon-region-chart-gantt:before { content: "\e165"; }
+
+.a-Icon.icon-region-chart-line-area:before { content: "\e053"; }
+
+.a-Icon.icon-region-chart-line:before { content: "\e156"; }
+
+.a-Icon.icon-region-chart-pie:before { content: "\e15f"; }
+
+.a-Icon.icon-region-chart-polar:before { content: "\e160"; }
+
+.a-Icon.icon-region-chart-radar:before { content: "\e161"; }
+
+.a-Icon.icon-region-chart-range-area:before { content: "\e162"; }
+
+.a-Icon.icon-region-chart-range-bar:before { content: "\e163"; }
+
+.a-Icon.icon-region-chart-scatter:before { content: "\e15e"; }
+
+.a-Icon.icon-region-chart-stock:before { content: "\e157"; }
+
+.a-Icon.icon-region-chart-pyramid:before { content: "\e18b"; }
+
+.a-Icon.icon-region-chart-box-plot:before { content: "\e18a"; }
+
+.a-Icon.icon-major-axis:before { content: "\E1A0"; }
+
+.a-Icon.icon-minor-axis:before { content: "\E1A1"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-area:before, .a-TreeView-content .a-Icon.icon-region-chart-area:before { content: "\e168"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-bar:before, .a-TreeView-content .a-Icon.icon-region-chart-bar:before { content: "\e16A"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-bubble:before, .a-TreeView-content .a-Icon.icon-region-chart-bubble:before { content: "\e16b"; }
+
+.a-GridLayout .a-Icon.icon-region-native-jet-chart:before, .a-GridLayout .a-Icon.icon-region-chart-column:before, .a-TreeView-content .a-Icon.icon-region-native-jet-chart:before, .a-TreeView-content .a-Icon.icon-region-chart-column:before { content: "\e169"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-combo:before, .a-TreeView-content .a-Icon.icon-region-chart-combo:before { content: "\e16C"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-dial:before, .a-TreeView-content .a-Icon.icon-region-chart-dial:before { content: "\e16D"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-donut:before, .a-TreeView-content .a-Icon.icon-region-chart-donut:before { content: "\e16e"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-funnel:before, .a-TreeView-content .a-Icon.icon-region-chart-funnel:before { content: "\e16F"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-gantt:before, .a-TreeView-content .a-Icon.icon-region-chart-gantt:before { content: "\e170"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-line-area:before, .a-TreeView-content .a-Icon.icon-region-chart-line-area:before { content: "\e171"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-line:before, .a-TreeView-content .a-Icon.icon-region-chart-line:before { content: "\e172"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-pie:before, .a-TreeView-content .a-Icon.icon-region-chart-pie:before { content: "\e173"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-polar:before, .a-TreeView-content .a-Icon.icon-region-chart-polar:before { content: "\e174"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-radar:before, .a-TreeView-content .a-Icon.icon-region-chart-radar:before { content: "\e175"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-range-area:before, .a-TreeView-content .a-Icon.icon-region-chart-range-area:before { content: "\e176"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-range-bar:before, .a-TreeView-content .a-Icon.icon-region-chart-range-bar:before { content: "\e177"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-scatter:before, .a-TreeView-content .a-Icon.icon-region-chart-scatter:before { content: "\e178"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-stock:before, .a-TreeView-content .a-Icon.icon-region-chart-stock:before { content: "\e179"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-pyramid:before, .a-TreeView-content .a-Icon.icon-region-chart-pyramid:before { content: "\e189"; }
+
+.a-GridLayout .a-Icon.icon-region-chart-box-plot:before, .a-TreeView-content .a-Icon.icon-region-chart-box-plot:before { content: "\e188"; }
+
+.a-Icon.icon-x-axis:before { content: "\e17a"; }
+
+.a-Icon.icon-y-axis:before { content: "\e17d"; }
+
+.a-Icon.icon-y1-axis:before { content: "\e17b"; }
+
+.a-Icon.icon-y2-axis:before { content: "\e17c"; }
+
+/* ========================================================================== Page Designer Tabs and Icons ========================================================================== */
+.a-Icon.icon-pd-messages:before { content: "\e0c5"; }
+
+.a-Icon.icon-pd-layout:before { content: "\e0c7"; }
+
+.a-Icon.icon-align-start:before { content: "\E1A3"; }
+
+.a-Icon.icon-align-center:before { content: "\e1a2"; }
+
+.a-Icon.icon-align-end:before { content: "\e1a4"; }
+
+.a-Icon.icon-load-sample:before { content: "\e0e6"; }
+
+/* ========================================================================== ORDS REST Web Services ========================================================================== */
+.a-Icon.icon-rest-services:before { content: '\E19A'; }
+
+.a-Icon.icon-rest-modules:before { content: '\E196'; }
+
+.a-Icon.icon-rest-module:before { content: '\E195'; }
+
+.a-Icon.icon-rest-template:before { content: '\E19C'; }
+
+.a-Icon.icon-rest-handler:before { content: '\E19B'; }
+
+.a-Icon.icon-rest-parameter:before { content: '\E19E'; }
+
+.a-Icon.icon-rest-privileges:before { content: '\E198'; }
+
+.a-Icon.icon-rest-privilege:before { content: '\E199'; }
+
+.a-Icon.icon-rest-roles:before { content: '\E19D'; }
+
+.a-Icon.icon-rest-role:before { content: '\E024'; }
+
+.a-Icon.icon-rest-object:before { content: '\E197'; }
+
+/* ========================================================================== Page Designer - Edit Quick Pick Icons ========================================================================== */
+.icon-apex-edit-page, .icon-apex-edit-pencil-alt, .icon-apex-edit-pencil, .icon-apex-edit-view { width: 16px; height: 16px; display: inline-block; vertical-align: top; background-size: 100%; background-repeat: no-repeat; }
+
+.icon-apex-edit-page { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACDUlEQVR4Ab2WA6wdQRSGb+xkY6dmUNu2bUdlUAa17aiK0/a9Fz0Ez7atPtuoe3r+ZDbp7C0m3dmZ5L++831zztlkfaZW9pQhFicyb+rQSn7eawxswxmc2T13FH2cN5qKpw0lSBiHf54/GjEnUVBQYBUXF2f2Xj1lwyUJtMM7+KshVnF+aubHjx8J6+vNc5IAKoKZ8A7+Zmjmx7h1TO4GX5IAHG1Be7yDh40iihhNlLJekkA7TMERSQLtwEz4wesamtZyKjn0H3n1V7gI2oGZwGD+Dk5ewvE5vsfvfM5ln7yxuYU6urqpt69fNe7hQoAQ83CHgHm4LGAA7l4g0wXctUAHZ2BBxHWr4N0yZTiuEl0CJ/BbFrjflvOMKG2LEpxDOgQiBXzuh8R7RNVvEEnCCcesYE9dAmNRek7ll4qXgEsSfSEj/eAc0iVwQZz+QkvWE0CloB2YCSdcj4CY+glLd46NDLoigVEJtAMzwZHhGgXmCoHMJTuPUWnScwIclUA7MBMCPBCyHNIpcF/AL0xdc4hmbT5GkEAl0I5fTn1CXKKkW2AgwwdOXL67Y+bGIwQJVALtEOCxnEgnVKeABdikFXsIEqiE/XsMphPmhcAJewBRCQGea/fahACC/lpiyO6rgnUKyPFaQNyQaAn2UhVQuCVTT09vH/bAXrZApYrAWg55lLVgqEpUagRXqsJ/AozpK+rTdiebAAAAAElFTkSuQmCC"); }
+
+.icon-apex-edit-pencil-alt { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAh1BMVEUAAABRk8jWwI/RRDLRRDIzSFzWwI/RRDLWRjPWwI+qsaLRRDIzSFzZRzS1qIXLzM0zSFyOsMuiucv/5ao2TGH3UDrw8fLy8/S51+/13KPex5RUmM/Vn5jZRjTD0cTlSzfBzsK2r5TS09Rgr+7gyZZfrew7U2r5UTv846g9Vm672vLbxZL1tq+TnpcMAAAAE3RSTlMAYCBgMCCfIO9gYECf759gQGBgYNTtjgAAAKRJREFUeAHdzDUSxDAQRFGZmZmZff/z7UixNM73p6+riTDVMQiW0g2minp2ZJ6K+oEsghacLkyD69GcvwdrcHguNWVRsEXWqVzflhsW1BWBL2yBOV3kLeJQOQeob0384dIfuv3hVj2iLj9n0iNO9CpJYCF0eQWnC+rCA2gERw6Ss7YJN79iXtUW37V0orzqMuHn7teEMBxce+qLGArT1NUIVojzDw9UIqxALyvwAAAAAElFTkSuQmCC"); }
+
+.icon-apex-edit-pencil { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAh1BMVEUAAADWnyPWwI/RRDLRRDIzSFzWwI/RRDLWRjPWwI/WtWvRRDIzSFzZRzS1qIXLzM0zSFzRtnjPvZT/5ao2TGH3UDrw8fLy8/T03ab13KP/1nrepSTVn5jZRjTex5TlSzf81Hi2r5TS09T/virgyZb8vCo7U2o9Vm75UTv846jbxZL1tq/336j99yaoAAAAE3RSTlMAYCBgMCCfIO9gYECf759gQGBgYNTtjgAAAKRJREFUeAHdzDWWxUAMRNE2MzMze//rG/2O1XI+L711iglTHYNRKd1gqqRnZ+appJ/EImjBocw0UI/m/Dl5g4O51JRFwRdZp6K+LS8sfq4IfOELwvkibwmHyjkgfWviD5f+odsfbvUj6fJ9JTXhTK+SBBZCl1dwWHAXHkAjOHGQXL3N0PyKe9VbuGvp9ONVlxmeux8TwXBw7KmPMy9MU1djVCHNf1i7IsDvqi3tAAAAAElFTkSuQmCC"); }
+
+.icon-apex-edit-view { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAS1BMVEVldYRldYRmdoVldYRldYRldYRldYRldYRmdoVldYRldYRzhZZpeYn29/j///9qe4tvgJCfq7eWpLCFlKPL0dhyhJVwgZJoeIdrfIzqU/E8AAAAC3RSTlNAn98wACC/UO8Qr8mgHwUAAADBSURBVHjapdPbDoMgEEVRLkVsz4DgBf3/Ly3hBbBmNOl+ZSUKDOJ103MgpKKckvoSmIECSoEG8wvsmADMOQBptGdg9w3L6nzOrQu23fbAjBtiWS4kYhtNB4aE6Jsi0tACTVhcC9wCEg2QAavvWhFkAxTgeuAA1QDC7E/NoArefwL+E/xPPt+muDoofXfU/GXhkOx15ybJDcxRBDNycqqiDq1uhraKCtqqKIATBfAiA06QzoATEwOyoOnDP16tn7zuL+7VH8w/d0Q2AAAAAElFTkSuQmCC"); }
+
+.icon-get-started { width: 32px; height: 32px; background-size: 16px; background-repeat: no-repeat; background-position: 50%; background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMjQuNzQ4IDE4LjMzNmwtMTYtMThjLS4yNzYtLjMxLS43MTQtLjQxNi0xLjEwNC0uMjctLjM4OC4xNDYtLjY0NC41MTgtLjY0NC45MzRsLjAxNCAyNGMwIC4zOS4yMjguNzQ2LjU4NC45MDhsLjQxNi4wOTJjLjIzNCAwIC40NjYtLjA4NC42NTItLjI0Mmw1Ljk0Mi01LjEwNCA0LjQ3IDEwLjczYy4xNi4zODQuNTMuNjE2LjkyMi42MTZsLjM4NC0uMDc4Yy41MS0uMjEyLjc1LS43OTguNTM4LTEuMzA4bC00LjQyMi0xMC42MTRoNy41Yy4zOTQgMCAuNzUtLjIzMi45MTItLjU5LjE2Mi0uMzYuMDk2LS43OC0uMTY0LTEuMDc0eiIvPjwvc3ZnPg=="); display: inline-block; vertical-align: top; border-radius: 100%; }
+
+/* ========================================================================== Navigation Menu Position Icons ========================================================================== */
+.a-Icon.icon-nav-top:before { content: "\e155"; }
+
+.a-Icon.icon-nav-side:before { content: "\e150"; }
+
+.a-Icon.icon-nav-none:before { content: "\e14f"; }
+
+.a-Icon.icon-pin:before { content: "\E194"; }
+
+/* ========================================================================== ORDS REST UI ========================================================================== */
+.a-Icon.icon-status-failure:before { content: "\e0a2"; }
+
+.a-Icon.icon-status-success:before { content: "\e007"; }
+
+.a-Icon.icon-status-warning:before { content: "\e017"; }
+
+/* Feedback Icons ========================================================================== */
+.a-Icon.icon-feedback-neutral:before { content: "\E1A8"; color: #888; }
+
+.a-Icon.icon-feedback-negative:before { content: "\E1A9"; color: #E74C3C; }
+
+.a-Icon.icon-feedback-positive:before { content: "\E1AA"; color: #2ECC71; }
+
+/* Dashboard and Master Delay Icons for Create page Wizard ========================================================================== */
+.icon--page-layout { background-repeat: no-repeat; background-position: 50%; background-size: 96px 72px; background-color: #D7DBDD; }
+
+.icon-dashboard-1-top-2-bottom { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA3MiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmY7fS5jbHMtMntmaWxsOiM2ZWI2ZjA7fS5jbHMtM3tmaWxsOiNmYmNlNGE7fS5jbHMtNHtmaWxsOiNmZjliNWM7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5kYXNoYm9hcmQtZmVhdHVyZS0yLWNvbDwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNCA0aDg4djMwaC04OHoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04NiAxMGwtOCA3LTgtNC03IDMtOS02LTggNy04IDEtOC04LTggNi02LTMtNiA1djZsMiAxaDczbDEtMTB2LTV6TTg2IDE2bC04IDktOC01LTcgNC05LTctOCA2LTggMi04LTQtOCA0LTYtMS02IDF2Mmg3NnYtMTF6Ii8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNODYgMTVsLTggOS04LTUtNyA0LTktNy04IDYtOCAyLTgtNC04IDQtNi0xLTYgMXY0aDc2di0xM3oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00IDM4aDQydjMwaC00MnpNNTAgMzhoNDJ2MzBoLTQyeiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI1IDQ0YTkgOSAwIDEgMCA2LjM2NCAxNS4zNjR6Ii8+PHBhdGggY2xhc3M9ImNscy00IiBkPSJNMzMuMzE0IDQ5LjU1NmE5IDkgMCAwIDAtOC4zMTQtNS41NTZ2OXoiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0zMy4zMTQgNDkuNTU2bC04LjMxNCAzLjQ0NCA2LjM2NCA2LjM2NGE5IDkgMCAwIDAgMS45NS05LjgwOHoiLz48cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Ik02NyA0OGgzdjE0aC0zeiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTYyIDQ0aDN2MThoLTN6Ii8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNzIgNTJoM3YxMGgtM3oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik03NyA1NmgzdjZoLTN6Ii8+PC9zdmc+"); }
+
+.icon-dashboard-1-top-3-bottom { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA3MiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmY7fS5jbHMtMntmaWxsOiM2ZWI2ZjA7fS5jbHMtM3tmaWxsOiNmZjliNWM7fS5jbHMtNHtmaWxsOiNmYmNlNGE7fS5jbHMtNXtmaWxsOiNkN2RiZGQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5kYXNoYm9hcmQtMy1jb2w8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTM1IDM4aDI2djMwaC0yNnpNNCAzOGgyN3YzMGgtMjd6Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTcuNSA0NS41YTcuNSA3LjUgMCAxIDAgNS4zIDEyLjh6Ii8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMjQuNDI5IDUwLjEzYTcuNSA3LjUgMCAwIDAtNi45MjktNC42M3Y3LjV6Ii8+PHBhdGggY2xhc3M9ImNscy00IiBkPSJNMjQuNDI5IDUwLjEzbC02LjkyOSAyLjg3IDUuMyA1LjNhNy41IDcuNSAwIDAgMCAxLjYyNi04LjE3M3oiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik00NSA0OWgydjExaC0yeiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQxIDQ2aDJ2MTRoLTJ6Ii8+PHBhdGggY2xhc3M9ImNscy00IiBkPSJNNDkgNTJoMnY4aC0yeiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTUzIDU1aDJ2NWgtMnoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik02NSAzOGgyN3YzMGgtMjd6Ii8+PHBhdGggY2xhc3M9ImNscy01IiBkPSJNNzIuOTQ3IDU4LjcyNGwtLjg5NC0uNDQ4IDQuMzQ5LTguNjk5IDQgNSAzLjY1MS03LjMwMS44OTQuNDQ4LTQuMzQ5IDguNjk5LTQtNS0zLjY1MSA3LjMwMXoiLz48Y2lyY2xlIGNsYXNzPSJjbHMtMiIgY3g9IjgwLjUiIGN5PSI1NS41IiByPSIxLjUiLz48Y2lyY2xlIGNsYXNzPSJjbHMtMiIgY3g9Ijg0LjUiIGN5PSI0Ny41IiByPSIxLjUiLz48Y2lyY2xlIGNsYXNzPSJjbHMtMiIgY3g9IjcyLjUiIGN5PSI1OC41IiByPSIxLjUiLz48Y2lyY2xlIGNsYXNzPSJjbHMtMiIgY3g9Ijc2LjUiIGN5PSI1MC41IiByPSIxLjUiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00IDRoODh2MzBoLTg4eiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg2IDEwbC04IDctOC00LTcgMy05LTYtOCA3LTggMS04LTgtOCA2LTYtMy02IDV2NmwyIDFoNzNsMS0xMHYtNXpNODYgMTZsLTggOS04LTUtNyA0LTktNy04IDYtOCAyLTgtNC04IDQtNi0xLTYgMXYyaDc2di0xMXoiLz48cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Ik04NiAxNWwtOCA5LTgtNS03IDQtOS03LTggNi04IDItOC00LTggNC02LTEtNiAxdjRoNzZ2LTEzeiIvPjwvc3ZnPg=="); }
+
+.icon-dashboard-2-top-2-bottom { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA3MiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmY7fS5jbHMtMntmaWxsOiNmZjliNWM7fS5jbHMtM3tmaWxsOiM2ZWI2ZjA7fS5jbHMtNHtmaWxsOiNmYmNlNGE7fS5jbHMtNXtmaWxsOiNkN2RiZGQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5kYXNoYmFyZC0yeDItZ3JpZDwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNCA0aDQydjMwaC00MnpNNCAzOGg0MnYzMGgtNDJ6Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjEgNDhoM3YxNGgtM3oiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xNiA0NGgzdjE4aC0zeiIvPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0iTTI2IDUyaDN2MTBoLTN6Ii8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMzEgNTZoM3Y2aC0zeiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTUwIDM4aDQydjMwaC00MnoiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0zMy42IDE1LjQyOWwtMy42LTMuNDI5LTQuMTUgNS4wNzEtNC4wNS03LjA3MS01LjQgNi43ODYtNi40LTEuMzU3djYuNzg1bDMuNyA0LjA3MmgyMi42bDMuNy04LjE0M3YtOC4xNDNsLTYuNCA1LjQyOXoiLz48cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Ik0zNC4wOTEgMjAuODU3bC00LjA5MS0xLjg1Ny00LjI3MyA0Ljg1Ny00LjkwOS01LjcxNC00LjkwOSA0LjA3MS01LjkwOS0xLjM1N3Y3LjE0M2gzMHYtMTEuMjE0bC01LjkwOSA0LjA3MXoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik01MCA0aDQydjMwaC00MnoiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik03MSAxMGE5IDkgMCAxIDAgNi4zNjQgMTUuMzY0eiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTc5LjMxNCAxNS41NTZhOSA5IDAgMCAwLTguMzE0LTUuNTU2djl6Ii8+PHBhdGggY2xhc3M9ImNscy00IiBkPSJNNzkuMzE0IDE1LjU1NmwtOC4zMTQgMy40NDQgNi4zNjQgNi4zNjRhOSA5IDAgMCAwIDEuOTUtOS44MDh6Ii8+PHBhdGggY2xhc3M9ImNscy01IiBkPSJNNTguMzU0IDU5LjM1NGwtLjcwOC0uNzA4IDguMjE5LTguMjE4IDkuMDE5IDMuMDA3IDguNzg0LTcuODA5LjY2NC43NDgtOS4yMTYgOC4xOTEtOC45ODEtMi45OTMtNy43ODEgNy43ODJ6Ii8+PGNpcmNsZSBjbGFzcz0iY2xzLTMiIGN4PSI3NSIgY3k9IjU0IiByPSIyIi8+PGNpcmNsZSBjbGFzcz0iY2xzLTMiIGN4PSI4NCIgY3k9IjQ2IiByPSIyIi8+PGNpcmNsZSBjbGFzcz0iY2xzLTMiIGN4PSI1OCIgY3k9IjU5IiByPSIyIi8+PGNpcmNsZSBjbGFzcz0iY2xzLTMiIGN4PSI2NiIgY3k9IjUxIiByPSIyIi8+PC9zdmc+"); }
+
+.icon-dashboard-3-top-3-bottom { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA3MiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmY7fS5jbHMtMntmaWxsOiM2ZWI2ZjA7fS5jbHMtM3tmaWxsOiNmYmNlNGE7fS5jbHMtNHtmaWxsOiNmZjliNWM7fS5jbHMtNXtmaWxsOiNkN2RiZGQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5kYXNoYm9hcmQtM3gyLWdyaWQ8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTQgNGgyN3YzMGgtMjd6Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjEgMTVsLTQtMy0zIDQtNC0xdjVsMiAzaDExbDItNnYtNmwtNCA0eiIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTIxLjM2NCAyMGwtNC43MjgtMi0yLjYzNiAzLTQtMXY3aDE1di0xMGwtMy42MzYgM3oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zNSAzOGgyNnYzMGgtMjZ6Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNTEgNDlsLTMtMy0zIDQtNC0xdjVsMiAzaDEwbDItNnYtNmwtNCA0eiIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTUxLjM2NCA1NGwtMy43MjgtMi0yLjYzNiAzLTQtMXY3aDE0di0xMGwtMy42MzYgM3oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik02NSAzOGgyN3YzMGgtMjd6Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNzguNSA0NS41YTcuNSA3LjUgMCAxIDAgNS4zIDEyLjh6Ii8+PHBhdGggY2xhc3M9ImNscy00IiBkPSJNODUuNDI5IDUwLjEzYTcuNSA3LjUgMCAwIDAtNi45MjktNC42M3Y3LjV6Ii8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNODUuNDI5IDUwLjEzbC02LjkyOSAyLjg3IDUuMyA1LjNhNy41IDcuNSAwIDAgMCAxLjYyNi04LjE3M3oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00IDM4aDI3djMwaC0yN3oiLz48cGF0aCBjbGFzcz0iY2xzLTUiIGQ9Ik0xMS45NDcgNTguNzI0bC0uODk0LS40NDggNC4zNDktOC42OTkgNCA1IDMuNjUxLTcuMzAxLjg5NC40NDgtNC4zNDkgOC42OTktNC01LTMuNjUxIDcuMzAxeiIvPjxjaXJjbGUgY2xhc3M9ImNscy0yIiBjeD0iMTkuNSIgY3k9IjU1LjUiIHI9IjEuNSIvPjxjaXJjbGUgY2xhc3M9ImNscy0yIiBjeD0iMjMuNSIgY3k9IjQ3LjUiIHI9IjEuNSIvPjxjaXJjbGUgY2xhc3M9ImNscy0yIiBjeD0iMTEuNSIgY3k9IjU4LjUiIHI9IjEuNSIvPjxjaXJjbGUgY2xhc3M9ImNscy0yIiBjeD0iMTUuNSIgY3k9IjUwLjUiIHI9IjEuNSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTY1IDRoMjd2MzBoLTI3ek0zNSA0aDI2djMwaC0yNnoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00OCAxMS41YTcuNSA3LjUgMCAxIDAgNS4zIDEyLjh6Ii8+PHBhdGggY2xhc3M9ImNscy00IiBkPSJNNTQuOTI5IDE2LjEzYTcuNSA3LjUgMCAwIDAtNi45MjktNC42M3Y3LjV6Ii8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNTQuOTI5IDE2LjEzbC02LjkyOSAyLjg3IDUuMyA1LjNhNy41IDcuNSAwIDAgMCAxLjYyNi04LjE3M3oiLz48cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Ik03NiAxNWgydjExaC0yeiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTcyIDEyaDJ2MTRoLTJ6Ii8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNODAgMThoMnY4aC0yeiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg0IDIxaDJ2NWgtMnoiLz48L3N2Zz4="); }
+
+.icon-md-side-by-side { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA3MiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmY7fS5jbHMtMntmaWxsOiM2ZWI2ZjA7fS5jbHMtM3tmaWxsOiNkN2RiZGQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5tZC1zaWRlLWJ5LXNpZGU8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTI4IDRoNjR2MThoLTY0ek00IDRoMjB2NmgtMjB6Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNCAxNGgyMHY2aC0yMHoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00IDI0aDIwdjZoLTIwek00IDM0aDIwdjZoLTIwek00IDQ0aDIwdjZoLTIweiIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTMyIDhoNTZ2MmgtNTZ6TTMyIDEyaDI4djJoLTI4ek0zMiAxNmgyOHYyaC0yOHoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yOCAyNmg2NHYzNmgtNjR6Ii8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMzIgMzBoNTZ2NGgtNTZ6TTM4IDM2aDIxdjRoLTIxek02MSAzNmgyN3Y0aC0yN3pNMzIgMzZoNHY0aC00ek0zOCA0MmgyMXY0aC0yMXpNNjEgNDJoMjd2NGgtMjd6TTMyIDQyaDR2NGgtNHpNMzggNDhoMjF2NGgtMjF6TTYxIDQ4aDI3djRoLTI3ek0zMiA0OGg0djRoLTR6TTM4IDU0aDIxdjRoLTIxek02MSA1NGgyN3Y0aC0yN3pNMzIgNTRoNHY0aC00eiIvPjwvc3ZnPg=="); }
+
+.icon-md-stacked { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA3MiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmY7fS5jbHMtMntmaWxsOiNkN2RiZGQ7fS5jbHMtM3tmaWxsOiM2ZWI2ZjA7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5tZC1zdGFja2VkPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00IDRoODh2MjRoLTg4eiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTggOGg4MHY0aC04MHoiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik04IDE0aDI1djRoLTI1ek02MyAxNGgyNXY0aC0yNXoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00IDMyaDg4djMwaC04OHoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik04IDM2aDgwdjRoLTgwek04IDQyaDI1djRoLTI1ek02MyA0MmgyNXY0aC0yNXpNMzUgNDJoMjZ2NGgtMjZ6TTggNDhoMjV2NGgtMjV6TTYzIDQ4aDI1djRoLTI1ek0zNSA0OGgyNnY0aC0yNnpNOCA1NGgyNXY0aC0yNXpNNjMgNTRoMjV2NGgtMjV6TTM1IDU0aDI2djRoLTI2eiIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTM1IDE0aDI2djRoLTI2eiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTggMjBoMjV2NGgtMjV6TTYzIDIwaDI1djRoLTI1ek0zNSAyMGgyNnY0aC0yNnoiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik01MCAzMHYtMTBoLTR2MTBoLTNsNSA1IDUtNWgtM3oiLz48L3N2Zz4="); }
+
+.icon-md-drill-down { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA3MiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmY7fS5jbHMtMntmaWxsOiNkN2RiZGQ7fS5jbHMtM3tmaWxsOiM2ZWI2ZjA7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5tZC1kcmlsbC1kb3duPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik01NiAzOGgzNnYzMGgtMzZ6TTU2IDIwaDM2djE0aC0zNnoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02MCA0MmgyOHY0aC0yOHpNNjAgMjRoMjZ2MmgtMjZ6TTYwIDI4aDE0djJoLTE0ek02MCA0OGgxM3Y0aC0xM3pNNjAgNTRoMTN2NGgtMTN6TTc1IDQ4aDEzdjRoLTEzek03NSA1NGgxM3Y0aC0xM3pNNjAgNjBoMTN2NGgtMTN6TTc1IDYwaDEzdjRoLTEzeiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTQgNGgzNnY0OGgtMzZ6Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNOCA4aDI4djRoLTI4ek04IDE0aDEzdjRoLTEzek0yMyAxNGgxM3Y0aC0xM3oiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0zNiAzMGgtMTN2LTRoMTN6TTIxIDMwaC0xM3YtNGgxM3oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNiAyNGgtMTN2LTRoMTN6TTIxIDI0aC0xM3YtNGgxM3pNOCAzMmgxM3Y0aC0xM3pNMjMgMzJoMTN2NGgtMTN6TTggMzhoMTN2NGgtMTN6TTIzIDM4aDEzdjRoLTEzek04IDQ0aDEzdjRoLTEzek0yMyA0NGgxM3Y0aC0xM3oiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik00OSAyNmgtN3Y0aDd2M2w1LTUtNS01djN6Ii8+PC9zdmc+"); }

@@ -1,0 +1,36 @@
+/** 
+ * Import Compass and Theme Variables
+ */
+
+@import "_variables";
+
+/* ==========================================================================
+   Region
+   ========================================================================== */
+
+
+.a-TagCloud-link {
+  border-color: contrast(@g_Region-BG, darken(@g_Region-BG,   5%), lighten(@g_Region-BG,   5%),  43%);
+  border-radius: 2px;
+  background: contrast(@g_Region-BG, darken(@g_Region-BG,   2%), lighten(@g_Region-BG,   2%),  43%);
+  transition: background-color .2s, border-color .2s, box-shadow .2s, color .2s;
+  color: darken(@g_Link-Base,1%);
+}
+.a-TagCloud-link span {
+  transition: color .2s;
+}
+.a-TagCloud-link:hover {
+  text-decoration: none;
+  background-color: @g_Accent-BG;
+  border-color: @g_Accent-BG;
+  color: @g_Accent-FG;
+  box-shadow: 0 0 0 2px @g_Accent-BG inset;
+}
+.a-TagCloud-link:hover span {
+  color: @g_Accent-FG;
+}
+
+.a-TagCloud-count {
+  color: fade(contrast(@g_Region-BG, desaturate(darken(@g_Region-BG, 60%), 100%), desaturate(lighten(@g_Region-BG, 60%), 50%)), 100%);
+  font-weight: 500;
+}

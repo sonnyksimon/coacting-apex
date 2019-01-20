@@ -1,0 +1,886 @@
+/*
+{
+  "translate": true,
+  "groups":[
+  {
+    "name": "UTR.LESS.GLOBAL_COLORS",
+    "common": true,
+    "sequence": 1
+  },
+  {
+    "name": "UTR.LESS.CONTAINERS",
+    "common": true,
+    "sequence": 2
+  },
+  {
+  "name": "UTR.LESS.REGIONS",
+  "common": true,
+  "sequence": 3
+  },
+  {
+  "name": "UTR.LESS.BUTTONS",
+  "common": false,
+  "sequence": 4
+  },
+  {
+  "name": "UTR.LESS.FORMS",
+  "common": false,
+  "sequence": 5
+  },
+  {
+  "name": "UTR.LESS.STATES",
+  "common": false,
+  "sequence": 6
+  },
+  {
+    "name": "UTR.LESS.PALETTE",
+    "common": false,
+    "sequence": 7
+  },
+  {
+  "name": "UTR.LESS.NAVIGATION",
+  "common": false,
+  "sequence": 8
+  },
+  {
+  "name": "UTR.LESS.INTERACTIVE_REPORTS",
+  "common": false,
+  "sequence": 9
+  },
+  {
+  "name": "UTR.LESS.LAYOUT",
+  "common": false,
+  "sequence": 10
+  }
+  ]
+}
+*/
+
+
+/*
+{
+  "var" : "@g_Accent-BG",
+  "name" : "UTR.LESS.HEADER_ACCENT",
+  "type" : "color",
+  "group": "UTR.LESS.GLOBAL_COLORS"
+}
+*/
+@g_Accent-BG:                   rgb(247, 247, 247);
+
+/*
+{
+  "var" : "@g_Accent-OG",
+  "name" : "UTR.LESS.BODY_ACCENT",
+  "type" : "color",
+  "group": "UTR.LESS.GLOBAL_COLORS"
+}
+*/
+@g_Accent-OG:                  rgb(240, 240, 240);
+
+@g_Accent-FG:                  contrast(@g_Accent-BG, darken(@g_Accent-BG,   75%), lighten(@g_Accent-BG,   75%),  43%);
+
+/*
+{
+  "var" : "@g_Link-Base",
+  "name" : "UTR.LESS.LINK_COLOR",
+  "type" : "color",
+  "group": "UTR.LESS.GLOBAL_COLORS"
+}
+*/
+@g_Link-Base:                #0572ce;
+
+
+/*
+{
+  "var" : "@g_Body-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.CONTAINERS",
+  "subgroup": "UTR.LESS.BODY"
+}
+*/
+@g_Body-BG:                     @g_Accent-OG;
+
+/*
+{
+  "var" : "@g_Body-Text",
+  "name" : "UTR.LESS.TEXT",
+  "type" : "color",
+  "group": "UTR.LESS.CONTAINERS",
+  "subgroup": "UTR.LESS.BODY"
+}
+*/
+@g_Body-Text:                    fade(contrast(@g_Body-BG, desaturate(darken(@g_Body-BG,  75%), 100%), desaturate(lighten(@g_Body-BG,  75%), 50%)), 100%);
+
+
+/*
+{
+  "var" : "@g_Actions-Col-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.CONTAINERS",
+  "subgroup": "UTR.LESS.ACTIONS_COLUMN"
+}
+*/
+// @g_Actions-Col-BG:                contrast(@g_Accent-OG, darken(@g_Accent-OG,   2.5%), lighten(@g_Accent-OG,   2.5%),  43%);
+@g_Actions-Col-BG:                #F5F5F5;
+
+/*
+{
+  "var" : "@g_Actions-Col-Text",
+  "name" : "UTR.LESS.TEXT",
+  "type" : "color",
+  "group": "UTR.LESS.CONTAINERS",
+  "subgroup": "UTR.LESS.ACTIONS_COLUMN"
+}
+*/
+@g_Actions-Col-Text:                fade(contrast(@g_Accent-OG, desaturate(darken(@g_Accent-OG,  75%), 100%), desaturate(lighten(@g_Accent-OG,  75%), 50%)), 100%);
+
+/*
+{
+  "var" : "@g_Body-Title-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.CONTAINERS",
+  "subgroup": "UTR.LESS.TITLE_BAR"
+}
+*/
+// @g_Body-Title-BG:               contrast(@g_Accent-BG, darken(@g_Accent-BG,  5%), lighten(@g_Accent-BG,  5%),  43%);
+@g_Body-Title-BG:               #FFF;
+
+/*
+{
+  "var" : "@g_Body-Title-FG",
+  "name" : "UTR.LESS.TEXT",
+  "type" : "color",
+  "group": "UTR.LESS.CONTAINERS",
+  "subgroup": "UTR.LESS.TITLE_BAR"
+}
+*/
+@g_Body-Title-FG:                fade(contrast(@g_Body-Title-BG, desaturate(darken(@g_Body-Title-BG,  75%), 100%), desaturate(lighten(@g_Body-Title-BG,  75%), 50%)), 100%);
+
+/*
+{
+  "var" : "@g_Container-BorderRadius",
+  "name" : "UTR.LESS.CONTAINER_BORDER_RADIUS",
+  "type" : "number",
+  "units": "px",
+  "range": {
+    "min": 0,
+    "max": 30,
+    "increment": 2
+  },
+  "group": "UTR.LESS.CONTAINERS"
+}
+*/
+@g_Container-BorderRadius:         0px;
+
+
+/*
+{
+  "var" : "@g_Color-Palette-1",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_1"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-1-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_1"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-2",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup" : "UTR.LESS.COLOR_2"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-2-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup" : "UTR.LESS.COLOR_2"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-3",
+  "name" : "UTR.LESS.COLOR_3",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup" : "UTR.LESS.COLOR_3"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-3-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup" : "UTR.LESS.COLOR_3"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-4",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_4"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-4-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_4"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-5",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_5"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-5-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_5"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-6",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_6"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-6-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_6"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-7",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_7"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-7-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_7"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-8",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_8"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-8-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_8"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-9",
+  "name" : "UTR.LESS.COLOR_9",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_9"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-9-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_9"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-10",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_10"
+}
+*/
+/*
+{
+  "var" : "@g_Color-Palette-10-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.PALETTE",
+  "subgroup": "UTR.LESS.COLOR_10"
+}
+*/
+
+@g_Color-Palette-1:     #309FDB;
+@g_Color-Palette-2:     #13B6CF;
+@g_Color-Palette-3:     #2EBFBC;
+@g_Color-Palette-4:     #3CAF85;
+@g_Color-Palette-5:     #81BB5F;
+@g_Color-Palette-6:     #DDDE53;
+@g_Color-Palette-7:     #FBCE4A;
+@g_Color-Palette-8:     #ED813E;
+@g_Color-Palette-9:     #E95B54;
+@g_Color-Palette-10:    #E85D88;
+@g_Color-Palette-11:    #CA589D;
+@g_Color-Palette-12:    #854E9B;
+@g_Color-Palette-13:    #5A68AD;
+@g_Color-Palette-14:    #AFBAC5;
+@g_Color-Palette-15:    #6E8598;
+
+@g_Color-Palette-1-FG:  fade(contrast(@g_Color-Palette-1, darken(@g_Color-Palette-1,  50%), lighten(@g_Color-Palette-1,  50%)), 100%);
+@g_Color-Palette-2-FG:  fade(contrast(@g_Color-Palette-2, darken(@g_Color-Palette-2,  50%), lighten(@g_Color-Palette-2,  50%)), 100%);
+@g_Color-Palette-3-FG:  fade(contrast(@g_Color-Palette-3, darken(@g_Color-Palette-3,  50%), lighten(@g_Color-Palette-3,  50%)), 100%);
+@g_Color-Palette-4-FG:  fade(contrast(@g_Color-Palette-4, darken(@g_Color-Palette-4,  50%), lighten(@g_Color-Palette-4,  50%)), 100%);
+@g_Color-Palette-5-FG:  fade(contrast(@g_Color-Palette-5, darken(@g_Color-Palette-5,  50%), lighten(@g_Color-Palette-5,  50%)), 100%);
+@g_Color-Palette-6-FG:  fade(contrast(@g_Color-Palette-6, darken(@g_Color-Palette-6,  50%), lighten(@g_Color-Palette-6,  50%)), 100%);
+@g_Color-Palette-7-FG:  fade(contrast(@g_Color-Palette-7, darken(@g_Color-Palette-7,  50%), lighten(@g_Color-Palette-7,  50%)), 100%);
+@g_Color-Palette-8-FG:  fade(contrast(@g_Color-Palette-8, darken(@g_Color-Palette-8,  50%), lighten(@g_Color-Palette-8,  50%)), 100%);
+@g_Color-Palette-9-FG:  fade(contrast(@g_Color-Palette-9, darken(@g_Color-Palette-9,  50%), lighten(@g_Color-Palette-9,  50%)), 100%);
+@g_Color-Palette-10-FG: fade(contrast(@g_Color-Palette-10, darken(@g_Color-Palette-10,  50%), lighten(@g_Color-Palette-10,  50%)), 100%);
+@g_Color-Palette-11-FG: fade(contrast(@g_Color-Palette-11, darken(@g_Color-Palette-11,  50%), lighten(@g_Color-Palette-11,  50%)), 100%);
+@g_Color-Palette-12-FG: fade(contrast(@g_Color-Palette-12, darken(@g_Color-Palette-12,  50%), lighten(@g_Color-Palette-12,  50%)), 100%);
+@g_Color-Palette-13-FG: fade(contrast(@g_Color-Palette-13, darken(@g_Color-Palette-13,  50%), lighten(@g_Color-Palette-13,  50%)), 100%);
+@g_Color-Palette-14-FG: fade(contrast(@g_Color-Palette-14, darken(@g_Color-Palette-14,  50%), lighten(@g_Color-Palette-14,  50%)), 100%);
+@g_Color-Palette-15-FG: fade(contrast(@g_Color-Palette-15, darken(@g_Color-Palette-15,  50%), lighten(@g_Color-Palette-15,  50%)), 100%);
+
+@_colors: @g_Color-Palette-1,
+          @g_Color-Palette-2,
+          @g_Color-Palette-3,
+          @g_Color-Palette-4,
+          @g_Color-Palette-5,
+          @g_Color-Palette-6,
+          @g_Color-Palette-7,
+          @g_Color-Palette-8,
+          @g_Color-Palette-9,
+          @g_Color-Palette-10,
+          @g_Color-Palette-11,
+          @g_Color-Palette-12,
+          @g_Color-Palette-13,
+          @g_Color-Palette-14,
+          @g_Color-Palette-15,
+          mix(#FFF,@g_Color-Palette-1,20%), 
+          mix(#FFF,@g_Color-Palette-2,20%), 
+          mix(#FFF,@g_Color-Palette-3,20%), 
+          mix(#FFF,@g_Color-Palette-4,20%), 
+          mix(#FFF,@g_Color-Palette-5,20%), 
+          mix(#FFF,@g_Color-Palette-6,20%), 
+          mix(#FFF,@g_Color-Palette-7,20%), 
+          mix(#FFF,@g_Color-Palette-8,20%), 
+          mix(#FFF,@g_Color-Palette-9,20%), 
+          mix(#FFF,@g_Color-Palette-10,20%),
+          mix(#FFF,@g_Color-Palette-11,20%),
+          mix(#FFF,@g_Color-Palette-12,20%),
+          mix(#FFF,@g_Color-Palette-13,20%),
+          mix(#FFF,@g_Color-Palette-14,20%),
+          mix(#FFF,@g_Color-Palette-15,20%),
+          mix(#000,@g_Color-Palette-1,10%), 
+          mix(#000,@g_Color-Palette-2,10%),
+          mix(#000,@g_Color-Palette-3,10%), 
+          mix(#000,@g_Color-Palette-4,10%),
+          mix(#000,@g_Color-Palette-5,10%), 
+          mix(#000,@g_Color-Palette-6,10%),
+          mix(#000,@g_Color-Palette-7,10%), 
+          mix(#000,@g_Color-Palette-8,10%),
+          mix(#000,@g_Color-Palette-9,10%), 
+          mix(#000,@g_Color-Palette-10,10%),
+          mix(#000,@g_Color-Palette-11,10%), 
+          mix(#000,@g_Color-Palette-12,10%),
+          mix(#000,@g_Color-Palette-13,10%), 
+          mix(#000,@g_Color-Palette-14,10%),
+          mix(#000,@g_Color-Palette-15,10%);
+
+@_colors_FG: @g_Color-Palette-1-FG,
+          @g_Color-Palette-2-FG,
+          @g_Color-Palette-3-FG,
+          @g_Color-Palette-4-FG,
+          @g_Color-Palette-5-FG,
+          @g_Color-Palette-6-FG,
+          @g_Color-Palette-7-FG,
+          @g_Color-Palette-8-FG,
+          @g_Color-Palette-9-FG,
+          @g_Color-Palette-10-FG,
+          @g_Color-Palette-11-FG,
+          @g_Color-Palette-12-FG,
+          @g_Color-Palette-13-FG,
+          @g_Color-Palette-14-FG,
+          @g_Color-Palette-15-FG,
+          mix(#FFF,@g_Color-Palette-1-FG,20%), 
+          mix(#FFF,@g_Color-Palette-2-FG,20%), 
+          mix(#FFF,@g_Color-Palette-3-FG,20%), 
+          mix(#FFF,@g_Color-Palette-4-FG,20%), 
+          mix(#FFF,@g_Color-Palette-5-FG,20%), 
+          mix(#FFF,@g_Color-Palette-6-FG,20%), 
+          mix(#FFF,@g_Color-Palette-7-FG,20%), 
+          mix(#FFF,@g_Color-Palette-8-FG,20%), 
+          mix(#FFF,@g_Color-Palette-9-FG,20%), 
+          mix(#FFF,@g_Color-Palette-10-FG,20%),
+          mix(#FFF,@g_Color-Palette-11-FG,20%),
+          mix(#FFF,@g_Color-Palette-12-FG,20%),
+          mix(#FFF,@g_Color-Palette-13-FG,20%),
+          mix(#FFF,@g_Color-Palette-14-FG,20%),
+          mix(#FFF,@g_Color-Palette-15-FG,20%),
+          mix(#000,@g_Color-Palette-1-FG,10%), 
+          mix(#000,@g_Color-Palette-2-FG,10%),
+          mix(#000,@g_Color-Palette-3-FG,10%), 
+          mix(#000,@g_Color-Palette-4-FG,10%),
+          mix(#000,@g_Color-Palette-5-FG,10%), 
+          mix(#000,@g_Color-Palette-6-FG,10%),
+          mix(#000,@g_Color-Palette-7-FG,10%), 
+          mix(#000,@g_Color-Palette-8-FG,10%),
+          mix(#000,@g_Color-Palette-9-FG,10%), 
+          mix(#000,@g_Color-Palette-10-FG,10%),
+          mix(#000,@g_Color-Palette-11-FG,10%), 
+          mix(#000,@g_Color-Palette-12-FG,10%),
+          mix(#000,@g_Color-Palette-13-FG,10%), 
+          mix(#000,@g_Color-Palette-14-FG,10%),
+          mix(#000,@g_Color-Palette-15-FG,10%);
+
+/* State Colors
+========================================================================== */
+
+/*
+{
+  "var" : "@g_Disabled-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.STATES",
+  "subgroup": "UTR.LESS.DISABLED"
+}
+*/
+@g_Disabled-BG:                   #707070;
+
+
+/*
+{
+  "var" : "@g_Disabled-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.STATES",
+  "subgroup": "UTR.LESS.DISABLED"
+}
+*/
+@g_Disabled-FG:                   #FFFFFF;
+
+/*
+{
+  "var" : "@g_Primary-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.STATES",
+  "subgroup": "UTR.LESS.PRIMARY"
+}
+*/
+@g_Primary-BG:                   #E7EBED;
+
+/*
+{
+  "var" : "@g_Primary-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.STATES",
+  "subgroup": "UTR.LESS.PRIMARY"
+}
+*/
+@g_Primary-FG:                   contrast(@g_Primary-BG, darken(@g_Primary-BG,   75%), lighten(@g_Primary-BG,   75%),  43%);
+
+/*
+{
+  "var" : "@g_Success-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.STATES",
+  "subgroup": "UTR.LESS.SUCCESS"
+}
+*/
+@g_Success-BG:                   #5EA774;
+
+/*
+{
+  "var" : "@g_Success-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.STATES",
+  "subgroup": "UTR.LESS.SUCCESS"
+}
+*/
+@g_Success-FG:                   contrast(@g_Success-BG, darken(@g_Success-BG,   50%), lighten(@g_Success-BG,   50%),  43%);
+
+/*
+{
+  "var" : "@g_Info-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.STATES",
+  "subgroup": "UTR.LESS.INFO"
+}
+*/
+@g_Info-BG:                   #0572CE;
+
+/*
+{
+  "var" : "@g_Info-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.STATES",
+  "subgroup": "UTR.LESS.INFO"
+}
+*/
+@g_Info-FG:                   contrast(@g_Info-BG, darken(@g_Info-BG,   75%), lighten(@g_Info-BG,   75%),  43%);
+
+/*
+{
+  "var" : "@g_Warning-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.STATES",
+  "subgroup": "UTR.LESS.WARNING"
+}
+*/
+@g_Warning-BG:                   #ffcc00;
+
+/*
+{
+"var" : "@g_Warning-FG",
+"name" : "UTR.LESS.FOREGROUND",
+"type" : "color",
+"group": "UTR.LESS.STATES",
+"subgroup": "UTR.LESS.WARNING"
+}
+*/
+@g_Warning-FG:                  contrast(@g_Warning-BG, darken(@g_Warning-BG,   50%), lighten(@g_Warning-BG,   50%),  43%);
+
+/*
+{
+  "var" : "@g_Danger-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.STATES",
+  "subgroup": "UTR.LESS.DANGER"
+}
+*/
+@g_Danger-BG:                  #CA4D50;
+
+/*
+{
+"var" : "@g_Danger-FG",
+"name" : "UTR.LESS.FOREGROUND",
+"type" : "color",
+"group": "UTR.LESS.STATES",
+"subgroup": "UTR.LESS.DANGER"
+}
+*/
+@g_Danger-FG:                   contrast(@g_Danger-BG, darken(@g_Danger-BG,   50%), lighten(@g_Danger-BG,   50%),  43%);
+
+
+/*
+{
+  "var" : "@g_Header-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.CONTAINERS",
+  "subgroup": "UTR.LESS.HEADER"
+}
+*/
+@g_Header-BG: @g_Accent-BG;
+
+/*
+{
+  "var" : "@g_Header-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.CONTAINERS",
+  "subgroup": "UTR.LESS.HEADER"
+}
+*/
+@g_Header-FG: @g_Link-Base;
+
+
+
+
+// BEGIN REGION COLORS HERE
+
+/*
+{
+"var" : "@g_Region-Header-BG",
+"name" : "UTR.LESS.BACKGROUND",
+"type" : "color",
+"group": "UTR.LESS.REGIONS",
+"subgroup": "UTR.LESS.REGION_HEADER"
+}
+*/
+@g_Region-Header-BG:         lighten(@g_Accent-OG, 15%);
+
+
+/*
+{
+"var" : "@g_Region-Header-FG",
+"name" : "UTR.LESS.FOREGROUND",
+"type" : "color",
+"group": "UTR.LESS.REGIONS",
+"subgroup": "UTR.LESS.REGION_HEADER"
+}
+*/
+@g_Region-Header-FG:         fade(contrast(@g_Region-Header-BG, desaturate(darken(@g_Region-Header-BG,  75%), 100%), desaturate(lighten(@g_Region-Header-BG,  75%), 50%)), 100%);
+
+
+/*
+{
+  "var" : "@g_Region-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.REGIONS",
+  "subgroup": "UTR.LESS.BODY"
+}
+*/
+@g_Region-BG:         lighten(@g_Region-Header-BG, 20%);
+
+/*
+{
+  "var" : "@g_Region-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.REGIONS",
+  "subgroup": "UTR.LESS.BODY"
+}
+*/
+@g_Region-FG:         fade(contrast(@g_Region-BG, desaturate(darken(@g_Region-BG,  75%), 100%), desaturate(lighten(@g_Region-BG,  75%), 50%)), 100%);
+
+
+@g_Region-FG-Light:         fade(contrast(@g_Region-BG, desaturate(darken(@g_Region-BG,  55%), 100%), desaturate(lighten(@g_Region-BG,  55%), 50%)), 100%);
+@g_Region-FG-Extra-Light:         fade(contrast(@g_Region-BG, desaturate(darken(@g_Region-BG,  25%), 100%), desaturate(lighten(@g_Region-BG,  25%), 50%)), 100%);
+
+
+@g_Alta-Border: #d6dfe6;
+
+
+// BEGIN NAVIGATION
+
+/*
+{
+  "var" : "@g_Nav-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.NAVIGATION",
+  "subgroup": "UTR.LESS.BODY"
+}
+*/
+@g_Nav-BG:                     darken(@g_Accent-OG, .05%);
+
+
+/*
+{
+  "var" : "@g_Nav-FG",
+  "name" : "UTR.LESS.FOREGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.NAVIGATION",
+  "subgroup": "UTR.LESS.BODY"
+}
+*/
+@g_Nav-FG:                     #0572ce;
+
+
+/*
+{
+  "var" : "@g_Nav-Icon",
+  "name" : "UTR.LESS.NORMAL",
+  "type" : "color",
+  "group": "UTR.LESS.NAVIGATION",
+  "subgroup": "UTR.LESS.ICON",
+  "checkContrast": false
+}
+*/
+@g_Nav-Icon:                   @g_Nav-FG;
+
+
+/*
+{
+  "var" : "@g_Nav-Active-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.NAVIGATION",
+  "subgroup": "UTR.LESS.SELECTED_STATE"
+}
+*/
+@g_Nav-Active-BG:              darken(@g_Accent-BG,5%);
+
+/*
+{
+  "var" : "@g_Nav-Active-FG",
+  "name" : "UTR.LESS.TEXT",
+  "type" : "color",
+  "group": "UTR.LESS.NAVIGATION",
+  "subgroup": "UTR.LESS.SELECTED_STATE"
+}
+*/
+@g_Nav-Active-FG:              contrast(@g_Nav-Active-BG, darken(@g_Nav-Active-BG,   75%), lighten(@g_Nav-Active-BG,   75%),  43%);
+
+/*
+{
+  "var" : "@g_Nav-Icon-Active",
+  "name" : "UTR.LESS.ACTIVE_STATE",
+  "type" : "color",
+  "group": "UTR.LESS.NAVIGATION",
+  "subgroup": "UTR.LESS.ICON",
+  "checkContrast": false
+}
+*/
+@g_Nav-Icon-Active:            @g_Nav-Active-FG;
+
+
+
+
+/*
+{
+  "var" : "@g_Focus",
+  "name" : "UTR.LESS.FOCUS_OUTLINE",
+  "type" : "color",
+  "group": "UTR.LESS.GLOBAL_COLORS"
+}
+*/
+@g_Focus: @g_Link-Base;
+
+/*
+* BEGIN MIXINS
+*/
+.region-hover() {
+  background-color: contrast(@g_Region-BG, darken(@g_Region-BG,   5%), lighten(@g_Region-BG,   5%),  43%);
+}
+
+.text-combo(@percent) {
+  .t-Body & {
+    color: fade(contrast(@g_Body-BG, desaturate(darken(@g_Body-BG,  @percent), 100%), desaturate(lighten(@g_Body-BG,  @percent), 50%)), 100%);
+  }
+  .t-Body-title & {
+    color: fade(contrast(@g_Body-Title-BG, desaturate(darken(@g_Body-Title-BG,  @percent), 100%), desaturate(lighten(@g_Body-Title-BG,  @percent), 50%)), 100%);
+  }
+  .t-Body-info & {
+    color: fade(contrast(@g_Body-Title-BG, desaturate(darken(@g_Body-Title-BG,  @percent), 100%), desaturate(lighten(@g_Body-Title-BG,  @percent), 50%)), 100%);
+  }
+  .t-Region &,
+  .t-ButtonRegion & {
+    color: fade(contrast(@g_Region-BG, desaturate(darken(@g_Region-BG,  @percent), 100%), desaturate(lighten(@g_Region-BG,  @percent), 50%)), 100%);
+  }
+}
+
+.text-black-white() {
+  .text-combo(100%);
+}
+
+//#404040
+.text-dark() {
+  color: #333;
+}
+
+//#707070
+.text-normal() {
+  color: #666;
+  // .text-combo(50%);
+}
+
+.text-light() {
+  color: #999;
+}
+
+.transform-less(@string) {
+  // -webkit-transform:  @string;
+  // -ms-transform:      @string;
+  transform:          @string;
+
+}
+
+.translate3d-less(@x, @y: 0, @z: 0) {
+  // -webkit-transform:  translate3d(@x, @y, @z);
+  // -ms-transform:      translate(@x);
+  transform:          translate3d(@x, @y, @z);
+}
+
+.apex-direction-left(@val) {
+  :not(.u-RTL) & {
+    left: @val;
+  }
+  .u-RTL & {
+    right: @val;
+  }
+}
+
+.apex-direction-margin-left(@val) {
+    :not(.u-RTL) & {
+      margin-left: @val;
+    }
+    .u-RTL & {
+        margin-right: @val;
+    }
+}
+
+.apex-direction-right(@val) {
+  :not(.u-RTL) & {
+    right: @val;
+  }
+  .u-RTL & {
+    left: @val;
+  }
+}
+
+.apex-direction-margin-right(@val) {
+  :not(.u-RTL) & {
+    margin-right: @val;
+  }
+  .u-RTL & {
+    margin-left: @val;
+  }
+}
+
+.apex-direction-translate(@val) {
+  :not(.u-RTL) & {
+    .translate3d-less(@val, 0, 0);
+  }
+  .u-RTL & {
+      .translate3d-less(-@val, 0,0 );
+  }
+}

@@ -1,0 +1,367 @@
+@import "_variables";
+
+@focusBg: lighten(@g_Form-Item-BG, 10%);
+@hoverBg: lighten(@g_Form-Item-BG, 5%);
+@formBG: contrast(@g_Form-Item-BG, darken(@g_Form-Item-BG,   10%), lighten(@g_Form-Item-BG,   10%),  43%);
+
+.t-Form-inputContainer:before {
+  color: @g_Form-Item-FG;
+}
+
+.apex-item-textarea,
+.apex-item-text,
+.apex-item-select {
+  color: @g_Form-Item-FG;
+  background-color: @g_Form-Item-BG;
+  border-color: contrast(@g_Form-Item-BG, darken(@g_Form-Item-BG,   10%), lighten(@g_Form-Item-BG,   10%),  43%);
+  &.apex-page-item-error {
+    &:required:valid {
+      border-color: contrast(@g_Form-Item-BG, darken(@g_Form-Item-BG,   10%), lighten(@g_Form-Item-BG,   10%),  43%);
+    }
+    border-color: contrast(@g_Danger-BG, darken(@g_Danger-BG,   10%), lighten(@g_Danger-BG,   10%),  43%);
+  }
+}
+
+.t-Form-fieldContainer--floatingLabel .t-Form-inputContainer .apex-item-display-only {
+  color: @g_Form-Item-FG;
+  background-color: @hoverBg;
+  border-color: @formBG;
+  border-style: dashed;
+}
+
+/* File Upload */
+.apex-item-file-dropzone-label {
+  background-color: @hoverBg;
+  color: fade(@g_Form-Item-FG,70%);
+  border-radius: @g_Form-BorderRadius 0 0 @g_Form-BorderRadius;
+  .u-RTL & {
+    border-radius: 0 @g_Form-BorderRadius @g_Form-BorderRadius 0;
+  }
+}
+.apex-item-file-dropzone-icon {
+  background-color: @g_Form-Item-BG;
+  border-radius: 0 @g_Form-BorderRadius @g_Form-BorderRadius 0;
+  .u-RTL & {
+    border-radius: @g_Form-BorderRadius 0 0 @g_Form-BorderRadius;
+  }
+}
+.apex-item-file:hover + .apex-item-file-dropzone  {
+  .apex-item-file-dropzone-label {
+    color: @g_Form-Item-FG;
+  }
+  .apex-item-file-dropzone-icon {
+    background-color: @focusBg;
+    color: @g_Form-Item-FG;
+  }
+}
+.apex-item-file:focus + .apex-item-file-dropzone  {
+  .apex-item-file-dropzone-label {
+    border-color: @g_Focus;
+    color: @g_Form-Item-FG;
+  }
+  .apex-item-file-dropzone-icon {
+    border-color: @g_Focus;
+    background-color: @g_Focus;
+    color: @g_Focus-FG;
+  }
+}
+
+.apex-item-textarea:focus,
+.apex-item-text:focus,
+.apex-item-select:focus {
+    background-color: @focusBg !important;
+    border-color: @g_Focus !important;
+}
+
+.apex-item-textarea:hover,
+.apex-item-text:hover,
+.apex-item-select:hover  {
+  background-color: @hoverBg;
+}
+
+.t-Form-inputContainer input::-webkit-input-placeholder{
+  color: contrast(@g_Form-Item-BG, darken(@g_Form-Item-BG,  100%), lighten(@g_Form-Item-BG,  100%),  43%);
+  opacity: .4;
+}
+.t-Form-inputContainer input::-moz-placeholder{
+  color: contrast(@g_Form-Item-BG, darken(@g_Form-Item-BG,  100%), lighten(@g_Form-Item-BG,  100%),  43%);
+  opacity: .4;
+}
+.t-Form-inputContainer input:-ms-input-placeholder{
+  color: contrast(@g_Form-Item-BG, darken(@g_Form-Item-BG,  100%), lighten(@g_Form-Item-BG,  100%),  43%);
+  opacity: .4;
+}
+
+.t-Form input.file {
+  color: @g_Form-Item-FG;
+}
+.t-Form-inputContainer span.display_only {
+  border-color: transparent;
+  background-color: transparent;
+}
+.t-Form-select,
+.t-Form-inputContainer select.selectlist,
+.t-Form-inputContainer select.yes_no {
+  color: @g_Form-Item-FG;
+  border-color: contrast(@g_Form-Item-BG, darken(@g_Form-Item-BG,   10%), lighten(@g_Form-Item-BG,   10%),  43%);
+}
+.t-Form-field--readOnly {
+  background-color: transparent;
+}
+.t-Form-radioLabel,
+.t-Form-inputContainer .radio_group label,
+.t-Form-checkboxLabel,
+.t-Form-inputContainer .checkbox_group label,
+.t-Form-label {
+  color: @g_Form-Label;
+  // .text-dark();
+}
+.t-Form-error {
+  color: @g_Danger-BG;
+}
+// .has-icon:required:valid + .apex-item-icon {
+//   color: @g_Form-Item-FG;
+// }
+
+.t-Form-postText {
+  color: fade(contrast(@g_Form-Label, desaturate(darken(@g_Form-Label, 50%), 100%), desaturate(lighten(@g_Form-Label, 50%), 50%)), 100%);
+}
+.t-Form--search {
+  input.t-Form-searchField {
+    background-color: @g_Form-Item-BG;
+    color: contrast(@g_Form-Item-BG, darken(@g_Form-Item-BG,   75%), lighten(@g_Form-Item-BG,   75%),  43%);
+  }
+}
+
+.a-Button.a-Button--calendar,
+.a-Button.a-Button--popupLOV {
+  border-radius: 0 @g_Form-BorderRadius @g_Form-BorderRadius 0;
+  .u-RTL & {
+    border-radius: @g_Form-BorderRadius 0 0 @g_Form-BorderRadius;
+  }
+}
+
+.t-Form-inputContainer input.hasDatepicker,
+.t-Form-inputContainer input.popup_lov {
+  border-radius: @g_Form-BorderRadius 0 0 @g_Form-BorderRadius;
+  .u-RTL & {
+    border-radius: 0 @g_Form-BorderRadius @g_Form-BorderRadius 0;
+  }
+}
+
+
+/******************************************************************************
+Checkbox + Radio Buttons
+******************************************************************************/
+.checkbox_group input,
+.radio_group input {
+  & + label {
+    &:before {
+      background-color: @g_Form-Item-BG;
+    }
+  }
+/* Focus
+   ========================================================================== */
+  &:focus + label:before {
+    border-color: @g_Focus;
+  }
+  &:focus:checked + label:before {
+    border-color: @g_Focus;
+    background-color: @g_Focus;
+    box-shadow: 0 0 0 1px @g_Form-Item-BG inset;
+  }
+/* Checked
+   ========================================================================== */
+  &:checked {
+    & + label:before {
+      border-color: @g_Focus;
+      background-color: @g_Focus;
+    }
+  }
+}
+
+/******************************************************************************
+Radio Specific
+******************************************************************************/
+.radio_group input {
+  & + label {
+    &:after {
+      background-color: @g_Form-Item-BG;
+    }
+  }
+}
+
+/******************************************************************************
+Radio Button Pills with Checkbox + Radio Buttons
+******************************************************************************/
+.t-Form-fieldContainer--radioButtonGroup .checkbox_group input {
+  & + label {
+    &:before {
+      background-color: darken(@g_Form-Item-BG,7.5%);
+      border-color: transparent;
+    }
+  }
+/* Focus
+   ========================================================================== */
+  &:focus + label:before {
+    border-color: @g_Focus;
+  }
+  &:focus:checked + label:before {
+    border-color: @g_Form-Item-BG;
+    background-color: @g_Form-Item-BG;
+    box-shadow: 0 0 0 1px @g_Focus inset;
+  }
+
+  &:focus:checked + label:after {
+    color: @g_Focus;
+  }
+/* Checked
+   ========================================================================== */
+  &:checked {
+    & + label:before {
+      border-color: @g_Form-Item-BG;
+      background-color: @g_Form-Item-BG;
+    }
+
+    & + label:after {
+      color: @g_Focus;
+    }
+  }
+}
+
+/* Pre and Post Text Styles
+   ========================================================================== */
+.t-Form-fieldContainer--preTextBlock .t-Form-itemText--pre,
+.t-Form-fieldContainer--postTextBlock .t-Form-itemText--post {
+  background-color: @g_Form-Item-BG;
+  box-shadow: 0 0 0 .1rem contrast(@g_Form-Item-BG, darken(@g_Form-Item-BG,   10%), lighten(@g_Form-Item-BG,   10%),  43%) inset;
+  border-radius: @g_Form-BorderRadius;
+}
+
+.t-Form-fieldContainer--preTextBlock {
+  .t-Form-itemText--pre {
+    border-radius: @g_Form-BorderRadius 0 0 @g_Form-BorderRadius;
+    .u-RTL & {
+      border-radius: 0 @g_Form-BorderRadius @g_Form-BorderRadius 0;
+    }
+  }
+}
+.t-Form-fieldContainer--postTextBlock {
+  .t-Form-itemText--post {
+    border-radius: 0 @g_Form-BorderRadius @g_Form-BorderRadius 0;
+    .u-RTL & {
+      border-radius: @g_Form-BorderRadius 0 0 @g_Form-BorderRadius;
+    }
+  }
+}
+
+/* Icon Focus State
+   ========================================================================== */
+.apex-item-has-icon:focus + .apex-item-icon {
+  color: @g_Focus;
+}
+
+/* ==========================================================================
+   Floating Labels
+   ========================================================================== */
+.t-Form-fieldContainer--floatingLabel {
+  .apex-item-icon {
+    // background-color: mix(@formBG,transparent);
+    color: fade(contrast(@g_Form-Label, desaturate(darken(@g_Form-Label, 10%), 100%), desaturate(lighten(@g_Form-Label, 10%), 50%)), 100%);
+    box-shadow: -.1rem 0 0 @formBG inset;
+    border-radius: @g_Form-BorderRadius 0 0 @g_Form-BorderRadius;
+    .u-RTL & {
+      box-shadow: .1rem 0 0 @formBG inset;
+      border-radius: 0 @g_Form-BorderRadius @g_Form-BorderRadius 0;
+    }
+  }
+  .apex-item-has-icon:focus + .apex-item-icon {
+    box-shadow: none;
+  }
+}
+
+/* Help Button
+   ========================================================================== */
+ .t-Form-helpButton {
+    &:focus .a-Icon {
+      color: @g_Focus;
+    }
+ }
+
+/* Pill Buttons
+   ========================================================================== */
+
+/* Vertical Pills */
+.t-Form-fieldContainer--radioButtonGroup .t-Form-itemWrapper > .apex-item-group {
+  & > .apex-item-option:first-of-type label {
+    border-radius: @g_Form-BorderRadius @g_Form-BorderRadius 0 0;
+  }
+  & > .apex-item-option:last-of-type label {
+    border-radius: 0 0 @g_Form-BorderRadius @g_Form-BorderRadius;
+  }
+}
+
+/* Horizontal Pills */
+.t-Form-fieldContainer--radioButtonGroup .apex-item-grid .apex-item-grid-row:only-child {
+  .apex-item-option:first-of-type label {
+    border-radius: @g_Form-BorderRadius 0 0 @g_Form-BorderRadius;
+  }
+  .apex-item-option:last-of-type label {
+    border-radius: 0 @g_Form-BorderRadius @g_Form-BorderRadius 0;
+  }
+}
+
+.u-RTL {
+  .t-Form-fieldContainer--radioButtonGroup .apex-item-grid .apex-item-grid-row:only-child {
+    .apex-item-option:first-of-type label {
+      border-radius: 0 @g_Form-BorderRadius @g_Form-BorderRadius 0;
+    }
+    .apex-item-option:last-of-type label {
+      border-radius: @g_Form-BorderRadius 0 0 @g_Form-BorderRadius;
+    }
+  }
+}
+
+/*
+// Fieldsets
+apex-item-fieldset
+  apex-item-fieldset--popup-lov
+  apex-item-fieldset--shuttle
+  apex-item-fieldset--switch
+  apex-item-fieldset--textarea
+
+// Item Icon
+apex-item-has-icon
+apex-item-icon
+
+// Item Types
+apex-item-checkbox
+apex-item-datepicker
+apex-item-popup-lov
+apex-item-radio
+apex-item-select
+apex-item-switch
+apex-item-switch--no
+apex-item-switch--yes
+apex-item-text
+apex-item-textarea
+
+// Item Wrappers
+apex-item-wrapper
+  apex-item-wrapper--checkbox
+  apex-item-wrapper--date-picker
+  apex-item-wrapper--has-icon
+  apex-item-wrapper--popup-lov
+  apex-item-wrapper--radiogroup
+  apex-item-wrapper--select-list
+  apex-item-wrapper--shuttle
+  apex-item-wrapper--text-field
+  apex-item-wrapper--textarea
+  apex-item-wrapper--yes-no
+
+// Item Layout
+.apex-item-grid > .apex-item-grid-row * 3 > .apex-item-option
+
+apex-item-input-wrap
+apex-item-input-wrap
+*/

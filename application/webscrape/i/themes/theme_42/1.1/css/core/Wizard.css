@@ -1,0 +1,98 @@
+/** Import Compass */
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Wizard Container ========================================================================== */
+.t-Wizard-buttons { vertical-align: middle; white-space: nowrap; }
+
+.t-Wizard-buttons--center { text-align: center; }
+
+.t-Wizard-body { background-repeat: no-repeat !important; background-size: 100% 16px, 100% 16px, 100% 8px, 100% 8px !important; background-attachment: local, local, scroll, scroll !important; }
+
+/* ========================================================================== Modifier: Default ========================================================================== */
+.t-Wizard { max-width: 1260px; margin: 0 auto 16px auto; padding: 0; border: 1px solid; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); background-clip: padding-box; }
+
+.t-Wizard .t-Wizard-controls { padding: 16px; }
+
+.t-Wizard .t-Wizard-title { font-weight: normal; font-weight: 200; font-size: 3.2rem; line-height: 1; margin: 0; padding: 24px 0 16px 0; text-align: center; }
+
+.t-Wizard .t-Wizard-body { padding: 24px 16px; }
+
+/* ========================================================================== Modifier: Show Title ========================================================================== */
+.t-Wizard .t-Wizard-title { display: none; }
+
+.t-Wizard .t-Wizard-controls { padding: 24px 16px; }
+
+.t-Wizard--showTitle .t-Wizard-title { display: block; }
+
+/* ========================================================================== Modifier: Header Background ========================================================================== */
+/* ========================================================================== Modifier: Hide Steps ========================================================================== */
+
+/* ========================================================================== Wizard Steps ========================================================================== */
+.t-WizardSteps { margin: 0; padding: 0; list-style: none; display: table; table-layout: fixed; width: 100%; }
+
+.t-WizardSteps--displayCurrentLabelOnly .t-WizardSteps-label { display: none; }
+
+.t-WizardSteps--displayCurrentLabelOnly .t-WizardSteps-step.is-active .t-WizardSteps-label { display: block; }
+
+.t-WizardSteps--hideLabels .t-WizardSteps-label { border: 0; clip: rect(0, 0, 0, 0); height: 0; overflow: hidden; padding: 0; }
+
+.t-WizardSteps-step { display: table-cell; vertical-align: top; }
+
+.t-WizardSteps-wrap { float: left; width: 100%; height: 100%; position: relative; }
+
+.t-WizardSteps-wrap:after { content: ''; position: absolute; width: 100%; top: 16px; height: 2px; margin-top: -1px; }
+
+.t-WizardSteps-step:first-child .t-WizardSteps-wrap:after { left: 50%; right: 0; width: 50%; }
+
+.u-RTL .t-WizardSteps-step:first-child .t-WizardSteps-wrap:after { right: 50%; left: 0; }
+
+.t-WizardSteps-step:last-child .t-WizardSteps-wrap:after { right: 50%; left: 0; width: 50%; }
+
+.u-RTL .t-WizardSteps-step:last-child .t-WizardSteps-wrap:after { left: 50%; right: 0; }
+
+.t-WizardSteps-step .t-WizardSteps-marker { display: block; text-align: center; width: 12px; height: 12px; margin-top: -6px; margin-left: -6px; top: 16px; left: 50%; position: absolute; z-index: 1; border: none; padding: 0; border-radius: 100%; cursor: default; transition: -webkit-transform .2s ease-in-out; transition: transform .2s ease-in-out; transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
+
+.t-WizardSteps-step .t-WizardSteps-marker .t-Icon { display: none; }
+
+.t-WizardSteps-step.is-complete .t-WizardSteps-marker, .t-WizardSteps-step.is-active .t-WizardSteps-marker { display: block; text-align: center; width: 20px; height: 20px; margin-top: -10px; margin-left: -10px; top: 16px; left: 50%; position: absolute; z-index: 1; padding: 2px; border-radius: 100%; }
+
+.t-WizardSteps-step.is-complete .t-WizardSteps-marker .t-Icon, .t-WizardSteps-step.is-active .t-WizardSteps-marker .t-Icon { display: block; line-height: 1.6rem; }
+
+.t-WizardSteps-label { display: block; text-align: center; margin-top: 32px; padding: 4px 8px 0 8px; line-height: 18px; font-size: 1.2rem; cursor: default; overflow: hidden; text-overflow: ellipsis; }
+
+.t-WizardSteps-step.is-active .t-WizardSteps-label { font-weight: bold; }
+
+.t-WizardSteps-labelState { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* ========================================================================== Modifier: Vertical Steps ========================================================================== */
+.t-WizardSteps--vertical { /* Connecting Lines ========================================================================== */ }
+
+.t-WizardSteps--vertical .t-WizardSteps-step { display: block; float: none; }
+
+.t-WizardSteps--vertical .t-WizardSteps-step .t-WizardSteps-marker { margin: 8px 0; width: 20px; height: 20px; }
+
+.t-WizardSteps--vertical .t-WizardSteps-wrap { display: flex; float: none; width: auto; height: auto; align-items: center; }
+
+.t-WizardSteps--vertical .t-WizardSteps-wrap:after { height: 100%; width: 2px; margin-left: 1px; left: 8px; top: 0; }
+
+.u-RTL .t-WizardSteps--vertical .t-WizardSteps-wrap:after { right: 8px; left: auto; }
+
+.t-WizardSteps--vertical .t-WizardSteps-wrap .t-WizardSteps-marker { position: static; }
+
+.t-WizardSteps--vertical .t-WizardSteps-step:first-child .t-WizardSteps-wrap:after { left: 8px; right: auto; width: 2px; top: 50%; height: 100%; }
+
+.u-RTL .t-WizardSteps--vertical .t-WizardSteps-step:first-child .t-WizardSteps-wrap:after { right: 8px; left: auto; }
+
+.t-WizardSteps--vertical .t-WizardSteps-step:last-child .t-WizardSteps-wrap:after { left: 8px; right: auto; width: 2px; height: 50%; }
+
+.u-RTL .t-WizardSteps--vertical .t-WizardSteps-step:last-child .t-WizardSteps-wrap:after { right: 8px; left: auto; }
+
+.t-WizardSteps--vertical .t-WizardSteps-label { margin: 8px 0 8px 8px; line-height: 20px; padding: 0; flex: 1; text-align: left; }
+
+.u-RTL .t-WizardSteps--vertical .t-WizardSteps-label { text-align: right; margin-right: 8px; margin-left: 0; }
+
+@media only screen and (max-width: 768px) { .t-Wizard--hideSteps--small .t-WizardSteps:not(.t-WizardSteps--vertical) { display: none; } }
+
+@media only screen and (max-width: 480px) { .t-Wizard--hideSteps--xsmall .t-WizardSteps:not(.t-WizardSteps--vertical) { display: none; } .t-WizardSteps:not(.t-WizardSteps--vertical) { margin: 6px 0; } .t-WizardSteps:not(.t-WizardSteps--vertical) .t-WizardSteps-label { visibility: hidden; line-height: 0; padding: 0; } }
+
+@media only screen and (min-width: 1201px) { .t-WizardSteps-step .t-WizardSteps-marker { -webkit-transform: scale(1.2); transform: scale(1.2); } }

@@ -1,0 +1,125 @@
+@import "_variables";
+
+
+/**
+ * Colorized Background
+ */
+.t-Alert--wizard,
+.t-Alert--horizontal {
+  border-radius: @g_Container-BorderRadius
+}
+.t-Alert--colorBG {
+  &.t-Alert--warning,
+  &.t-Alert--yellow {
+    @bg: lighten(@g_Warning-BG,30%);
+    background-color: @bg;
+    color: fade(contrast( @bg, desaturate(darken( @bg,  100%), 100%), desaturate(lighten( @bg,  100%), 50%)), 100%);
+  }
+  &.t-Alert--success {
+    @bgx: lighten(@g_Success-BG,55%);
+    @bg: desaturate(@bgx,20%);
+    background-color: @bg;
+    color: fade(contrast( @bg, desaturate(darken( @bg,  100%), 100%), desaturate(lighten( @bg,  100%), 50%)), 100%);
+  }
+  &.t-Alert--danger,
+  &.t-Alert--red {
+    @bg: lighten(@g_Danger-BG,40%);
+    background-color: @bg;
+    color: fade(contrast( @bg, desaturate(darken( @bg,  100%), 100%), desaturate(lighten( @bg,  100%), 50%)), 100%);
+  }
+  &.t-Alert--info {
+    @bg: lighten(@g_Info-BG,55%);
+    background-color: @bg;
+    color: fade(contrast( @bg, desaturate(darken( @bg,  100%), 100%), desaturate(lighten( @bg,  100%), 50%)), 100%);
+  }
+}
+
+.t-Alert-icon .t-Icon {
+  color: #FFF;
+}
+
+
+/**
+ * Modifier: Warning
+ */
+.t-Alert--warning,
+.t-Alert--yellow {
+  .t-Alert-icon .t-Icon {
+    background-color: @g_Warning-BG;
+  }
+  &.t-Alert--horizontal .t-Alert-icon {
+    background-color: fadeout(@g_Warning-BG,85%);
+  }
+}
+
+
+/**
+ * Modifier: Success
+ */
+.t-Alert--success {
+  .t-Alert-icon .t-Icon {
+    background-color: @g_Success-BG;
+  }
+  &.t-Alert--horizontal .t-Alert-icon {
+    background-color: fadeout(@g_Success-BG,85%);
+  }
+}
+
+/**
+ * Modifier: Information
+ */
+.t-Alert--info {
+  .t-Alert-icon .t-Icon {
+    background-color: @g_Info-BG;
+  }
+  &.t-Alert--horizontal .t-Alert-icon {
+    background-color: fadeout(@g_Info-BG,85%);
+  }
+}
+
+/**
+ * Modifier: Success
+ */
+.t-Alert--danger,
+.t-Alert--red {
+  .t-Alert-icon .t-Icon {
+    background-color: @g_Danger-BG;
+  }
+  &.t-Alert--horizontal .t-Alert-icon {
+    background-color: fadeout(@g_Danger-BG,85%);
+  }
+}
+
+
+.t-Alert--wizard {
+  .t-Alert-inset {
+    border-radius: @g_Container-BorderRadius;
+  }
+}
+
+.t-Alert--horizontal, .t-Alert--wizard {
+  background-color: @g_Region-BG;
+  color: @g_Region-FG;
+}
+.t-Alert--page {
+  &.t-Alert--success {
+    background-color: fadeout(@g_Success-BG,10%);
+    color: @g_Success-FG;
+    .t-Alert-icon {
+      background-color: transparent;
+      color: @g_Success-FG;
+    }
+    .t-Button--closeAlert {
+      color: @g_Success-FG !important;
+    }
+    .t-Alert-content {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    // .t-Icon,
+    // .t-Alert-title {
+    //   color: @g_Success-FG;
+    // }
+  }
+}
+

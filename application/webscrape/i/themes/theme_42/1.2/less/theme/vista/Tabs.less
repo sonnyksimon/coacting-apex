@@ -1,0 +1,143 @@
+/**
+ * Import Compass and Theme Variables
+ */
+
+@import "_variables";
+
+/* ==========================================================================
+  Tabs Configuration
+  ========================================================================== */
+
+
+/* Tab Variables
+ ========================================================================== */
+@l_Tab-Highlight: @g_Link-Base;
+
+/* Region Display Selector
+ ========================================================================== */
+.t-Tabs--simple .t-Tabs-item.is-active .t-Tabs-link {
+  box-shadow: 0 3px 0 @l_Tab-Highlight inset;
+  background-color: #FFF;
+  border-right: 1px solid #D6DFE6;
+  border-left: 1px solid #D6DFE6;
+  font-weight: bold;
+}
+
+.t-TabsRegion-mod--simple .t-Tabs--simple {
+  box-shadow: 0 -1px 0 #D6DFE6 inset;
+}
+.t-TabsRegion-mod--simple > .t-TabsRegion-items > .a-Region-carouselItems {
+  padding: 8px;
+  background-color: #FFF;
+  border: 1px solid #D6DFE6;
+  border-top-width: 0;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.t-TabsRegion-items > .a-Region-carouselControl {
+  margin-bottom: 0 !important;
+}
+
+.t-TabsRegion-items .t-Region,
+.t-TabsRegion-items .t-Wizard {
+  margin-bottom: 0;
+}
+
+.t-Tabs--simple .t-Tabs-link:focus {
+
+}
+
+.apex-rds .apex-rds-selected a span {
+  box-shadow: 0 -3px 0 @l_Tab-Highlight inset;
+}
+.apex-rds a:focus {
+  box-shadow: 0 0 0 1px @l_Tab-Highlight inset;
+}
+
+body {
+  .apex-rds-selected a {
+    font-weight: bold;
+    color: @l_Tab-Highlight;
+  }
+  .t-Tabs-link, .apex-rds a {
+    font-size: 1.3rem;
+  }
+
+}
+
+.t-Tabs--pill {
+  background: linear-gradient(@g_Accent-OG,#F4F4F4);
+  border-radius: 2px;
+  .t-Icon {
+    color: #333;
+  }
+  .t-Tabs-link {
+    .text-dark();
+    &:hover {
+      background-color: #FFF;
+    }
+    &:focus {
+      border-color: #4696FC;
+    }
+    &:active {
+      background-color: #F0F0F0;
+    }
+  }
+  .t-Tabs-item:first-child .t-Tabs-link {
+    border-radius: 2px 0 0 2px;
+  }
+  .t-Tabs-item.is-active {
+    .t-Tabs-link {
+      background-color: #FFF;
+    }
+  }
+}
+
+.t-Tabs--simple .t-Icon {
+  color: @g_Region-FG;
+}
+.t-Tabs--simple .t-Tabs-link,.apex-rds a {
+  color: fade(contrast(@g_Body-Title-BG, desaturate(darken(@g_Body-Title-BG,  75%), 100%), desaturate(lighten(@g_Body-Title-BG,  75%), 50%)), 100%);
+  &:hover {
+    background-color: rgba(0,0,0,.025);
+  }
+  &:active {
+    background-color: rgba(0,0,0,.15);
+  }
+  .t-Body-title & {
+    color: @g_Body-Title-FG;
+  }
+}
+
+
+.apex-rds-hover.left {
+  a {
+    background: -moz-linear-gradient(left,  @g_Body-Title-BG 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, @g_Body-Title-BG), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  @g_Body-Title-BG 50%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  @g_Body-Title-BG 50%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  @g_Body-Title-BG 50%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to right,  @g_Body-Title-BG 50%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+  }
+}
+
+.apex-rds-hover.right {
+  a {
+    background: -moz-linear-gradient(left,   @g_Body-Title-BG 0%, rgba(255,255,255,0) 1%,  @g_Body-Title-BG 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, @g_Body-Title-BG),  color-stop(1%,rgba(255,255,255,0.06)), color-stop(50%, @g_Body-Title-BG)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,   @g_Body-Title-BG 0%,rgba(255,255,255,0.0) 1%, @g_Body-Title-BG 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,   @g_Body-Title-BG 0%,rgba(255,255,255,0.0) 1%, @g_Body-Title-BG 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,   @g_Body-Title-BG 0%,rgba(255,255,255,0.0) 1%, @g_Body-Title-BG 50%); /* IE10+ */
+    background: linear-gradient(to right,   @g_Body-Title-BG 0%,rgba(255,255,255,0.0) 1%, @g_Body-Title-BG 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+  }
+}
+
+
+
+.t-Tabs--large {
+  .t-Tabs-link {
+    font-size: 1.3rem;
+  }
+}

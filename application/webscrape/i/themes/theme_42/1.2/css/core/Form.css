@@ -1,0 +1,704 @@
+/** Import Compass */
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Forms ========================================================================== */
+.t-Form-fieldContainer { border-spacing: 0; width: auto; clear: both; /* display the icon to the left of the input field */ }
+
+.col > .t-Form-fieldContainer { margin-right: -.8rem; margin-left: -.8rem; }
+
+.t-Form-fieldContainer .apex-item-icon { float: none; position: relative; padding: .4rem; pointer-events: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; left: 2.4rem; margin-left: -2.4rem; }
+
+.u-RTL .t-Form-fieldContainer .apex-item-icon { left: auto; right: 2.4rem; }
+
+.u-RTL .t-Form-fieldContainer .apex-item-icon { margin-left: 0px; margin-right: -2.4rem; }
+
+.t-Form-fieldContainer .apex-item-has-icon { text-indent: 2.0rem; }
+
+.t-Form-fieldContainer .apex-item-has-icon:focus + .apex-item-icon { z-index: 2; }
+
+.t-Form-labelContainer, .t-Form-inputContainer { padding: .8rem; }
+
+.t-Form-labelContainer { text-align: right; float: left; }
+
+.u-RTL .t-Form-labelContainer { text-align: left; }
+
+.t-Form-inputContainer { position: relative; overflow: hidden; }
+
+.t-Form-itemWrapper { display: flex; align-items: flex-start; flex-wrap: nowrap; }
+
+/* Generic Form Containers ========================================================================== */
+.apex-item-group:focus { outline: none; }
+
+/* Input Field Ordering Necessary for proper item icon positioning ========================================================================== */
+.t-Form-itemText--pre { order: 1; }
+
+.t-Form-inputContainer input, .t-Form-inputContainer select, .t-Form-inputContainer textarea, .t-Form-inputContainer .a-Button--calendar, .t-Form-inputContainer .a-Button--popupLOV, .t-Form-inputContainer .apex-item-display-only { order: 3; }
+
+.t-Form-itemWrapper .apex-item-icon, .t-Form-itemWrapper fieldset, .t-Form-itemWrapper .apex-item-group { order: 2; }
+
+.t-Form-itemText--post { order: 4; }
+
+.t-Form-helpButton { order: 5; }
+
+.t-Form-itemWrapper .apex-quick-picks { order: 6; }
+
+.t-Form-itemWrapper .u-Processing--inline { order: 999; }
+
+/* Responsive Handling ========================================================================== */
+.t-Form-label { padding: .4rem 0; line-height: 1.6rem; display: inline-block; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; font-size: 1.2rem; }
+
+.apex-item-text { height: 2.4rem; }
+
+.apex-item-select[size="1"] { min-height: 2.4rem; max-height: 2.4rem; }
+
+/* Remove extra Firefox text indent */
+@-moz-document url-prefix() { .apex-item-select { text-indent: -2px; } }
+
+.apex-item-display-only { min-height: 2.4rem; box-shadow: none; font-weight: bold; line-height: 24px; }
+
+.apex-item-text, .apex-item-select, .apex-item-textarea { display: inline-block; font-size: 1.2rem; vertical-align: top; line-height: 1.6rem; padding: .3rem; border: .1rem solid; border-radius: 0.2rem; max-width: 100%; transition: background-color .1s ease, border .1s ease; }
+
+.apex-item-text:focus, .apex-item-select:focus, .apex-item-textarea:focus { z-index: 1; outline: none; }
+
+.t-Form input.file { display: inline-block; font-size: 1.4rem; vertical-align: middle; line-height: 1.6rem; }
+
+/* Text Area ========================================================================== */
+.apex-item-textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; min-height: 6.4rem; font-family: 'Menlo', 'Consolas', monospace, serif; }
+
+/* Select List ========================================================================== */
+.apex-item-select.apex-item-has-icon { text-indent: 2.0rem; }
+
+.a-IRR-selectList[size="1"], .apex-item-select[size="1"] { -webkit-appearance: none; -moz-appearance: none; text-indent: 0 0.1rem; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSItOTkuNSAwLjUgNDAwIDIwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAtOTkuNSAwLjUgNDAwIDIwMCI+PHBhdGggZmlsbD0iIzQ0NCIgZD0iTTE1Ni4yNSA3My43YzAgMS42LS42MTIgMy4yLTEuODI1IDQuNDI1bC01NC40MjUgNTQuNDI1LTU0LjQyNS01NC40MjVjLTIuNDM4LTIuNDM4LTIuNDM4LTYuNCAwLTguODM3czYuNC0yLjQzOCA4LjgzNyAwbDQ1LjU4OCA0NS41NzQgNDUuNTc1LTQ1LjU3NWMyLjQzOC0yLjQzOCA2LjM5OS0yLjQzOCA4LjgzNyAwIDEuMjI2IDEuMjI2IDEuODM4IDIuODI1IDEuODM4IDQuNDEzeiIvPjwvc3ZnPg==); background-repeat: no-repeat; background-position: 100% 50%; background-size: 3.2rem 1.6rem; padding-right: 3.2rem; }
+
+.u-RTL .a-IRR-selectList[size="1"], .u-RTL .apex-item-select[size="1"] { background-position: 0 50%; padding-right: 0.8rem; padding-left: 3.2rem; }
+
+.a-IRR-selectList[size="1"]:focus, .apex-item-select[size="1"]:focus { outline: none; }
+
+.a-IRR-selectList[size="1"]:-moz-focusring, .a-IRR-selectList[size="1"]::-moz-focus-inner, .apex-item-select[size="1"]:-moz-focusring, .apex-item-select[size="1"]::-moz-focus-inner { outline: none; }
+
+body:not(:-moz-handler-blocked) .t-Form-select { padding: .2rem 1.2rem .2rem .2rem; }
+
+/* Read Only Item ========================================================================== */
+.t-Form-field--readOnly { border: none; box-shadow: none; font-weight: bold; }
+
+/* Radio and Checkboxes ========================================================================== */
+.u-TF-item--radio, .u-TF-item--checkbox { margin-right: .4rem; }
+
+.apex-item-group--rc input + label { font-size: 1.2rem; line-height: 1.6rem; }
+
+.apex-item-group--rc input:checked + label { font-weight: bold; }
+
+/* File Upload ========================================================================== */
+.apex-item-group--file { position: relative; }
+
+.apex-item-file { cursor: pointer; position: relative; z-index: 1; opacity: 0; height: 2.4rem; width: 100%; }
+
+.apex-item-file + .apex-item-file-dropzone { display: flex; font-size: 1.2rem; pointer-events: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; align-items: flex-start; }
+
+.apex-item-file + .apex-item-file-dropzone + a { font-size: 11px; display: inline-block; vertical-align: top; }
+
+.apex-item-file-dropzone-label, .apex-item-file-dropzone-icon { vertical-align: top; line-height: 1.6rem; padding: .3rem .8rem; border-color: #D0D0D0; }
+
+.apex-item-file-dropzone-label { border-width: .1rem 0 .1rem .1rem; border-style: solid; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-grow: 1; }
+
+.apex-item-file-dropzone-icon { flex-shrink: 0; border-width: .1rem; border-style: solid; }
+
+/* File Upload Download Link */
+.apex-item-file-upload + a { order: 10; display: block; font-size: 1.2rem; }
+
+/* ========================================================================== Validations ========================================================================== */
+.a-Form-error, .t-Form-error { font-size: 1.1rem; line-height: 1.6rem; display: block; margin-top: .4rem; flex-basis: 100%; order: 1; }
+
+.a-Form-error:empty, .t-Form-error:empty { display: none; }
+
+/* ========================================================================== APEX Generated UI Buttons for Forms (Popup LOV) ========================================================================== */
+.t-Form-inputContainer .a-Button, .t-Form-inputContainer .t-Button { vertical-align: top; }
+
+span.lov, .u-TF-itemWrap { white-space: nowrap; }
+
+.t-Form-inputContainer fieldset.lov .a-Button, .t-Form-inputContainer .a-Button--calendar, .u-TF-item--datepicker + .a-Button--calendar, .a-Button.a-Button--popupLOV { margin-left: -.1rem; }
+
+.u-RTL .t-Form-inputContainer fieldset.lov .a-Button, .u-RTL .t-Form-inputContainer .a-Button--calendar, .u-RTL .u-TF-item--datepicker + .a-Button--calendar, .u-RTL .a-Button.a-Button--popupLOV { margin-left: 0; margin-right: -0.1rem; }
+
+.t-Form-inputContainer .apex-item-group .a-Button { vertical-align: top; }
+
+.u-TF-item--datepicker + .a-Button--calendar, .a-Button.a-Button--popupLOV { vertical-align: top; }
+
+/* ========================================================================== Help Button ========================================================================== */
+.t-Form-helpButton { -webkit-appearance: none; padding: .4rem; border-width: 0; background-color: transparent; cursor: pointer; display: flex; }
+
+.t-Form-helpButton .a-Icon { opacity: .25; }
+
+.t-Form-helpButton:hover .a-Icon { opacity: .75; }
+
+.t-Form-helpButton:focus { outline: none; }
+
+.t-Form-helpButton:focus .a-Icon { opacity: 1; }
+
+/* ========================================================================== Hidden Label (using 0 label column span) ========================================================================== */
+
+.t-Form-labelContainer.col-0:not(.t-Form-labelContainer--hiddenLabel) { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; padding: 0; }
+
+.t-Form-labelContainer--hiddenLabel.col-0, .t-Form-labelContainer--hiddenLabel.col-null { padding: 0 !important; height: 0 !important; width: 0 !important; min-height: 0; min-width: 0; float: none; }
+
+.t-Form-fieldContainer--hiddenLabel > .t-Form-inputContainer.col-null { width: 100%; float: none; }
+
+.t-Form-fieldContainer--hiddenLabel.t-Form-fieldContainer--noLabelSpacing.rel-col { margin-right: 0; margin-left: 0; }
+
+.t-Form-fieldContainer--hiddenLabel.t-Form-fieldContainer--noLabelSpacing.rel-col > .t-Form-labelContainer--hiddenLabel.col { min-width: 0; width: 0; padding: 0; }
+
+.t-Form-fieldContainer--hiddenLabel.t-Form-fieldContainer--noLabelSpacing.rel-col > .t-Form-inputContainer.col { width: 100%; }
+
+.t-Form-labelContainer--hiddenLabel { min-height: 3.2rem; padding: .0rem; min-width: 0; }
+
+/* ========================================================================== No Grid Support (Default Widths) --- Apply this grid for Optional / Required label templates when they are placed in a Display Position that does not support Grids ========================================================================== */
+.t-Form-labelContainer.col-null { width: 25%; }
+
+.t-Form-inputContainer.col-null { width: 75%; }
+
+/* ========================================================================== Field Modifiers ========================================================================== */
+.apex-item-text.stretch, .apex-item-select.stretch { width: 100%; }
+
+/* ========================================================================== List Manager ========================================================================== */
+fieldset.listmanager table { border-collapse: collapse; }
+
+fieldset.listmanager td { padding: 0 !important; }
+
+fieldset.listmanager select.listmanager { margin-top: .8rem; }
+
+/* ========================================================================== Shuttles ========================================================================== */
+.apex-item-group--shuttle { width: 100%; }
+
+.apex-item-group--shuttle table.shuttle { width: 100%; border-collapse: collapse; }
+
+.apex-item-group--shuttle td { vertical-align: top; }
+
+.apex-item-group--shuttle .shuttleControl, .apex-item-group--shuttle .shuttleSort2 { width: 1%; }
+
+.apex-item-group--shuttle .shuttleSelect1, .apex-item-group--shuttle .shuttleSelect2 { width: 49%; }
+
+.apex-item-group--shuttle select.shuttle_left, .apex-item-group--shuttle select.shuttle_right { width: 100%; min-height: 14.0rem; margin: .4rem 0; }
+
+/* ========================================================================== Form Alignment ========================================================================== */
+.t-Form--alignLeft .col { width: auto; }
+
+.t-Form--alignLeft .t-Form-fieldContainer { width: auto; display: inline-block; vertical-align: top; }
+
+.t-Form--alignLeft .t-Form-labelContainer { width: auto; min-width: 0; }
+
+.t-Form--floatLeft { overflow: hidden; }
+
+.t-Form--floatLeft .col { width: auto !important; }
+
+.u-RTL .t-Form--floatLeft .col { float: right; }
+
+.t-Form--floatLeft .t-Form-fieldContainer { width: auto; float: left; clear: none; }
+
+.u-RTL .t-Form--floatLeft .t-Form-fieldContainer { float: right; }
+
+.t-Form--floatLeft .t-Form-labelContainer { min-width: 0; width: auto; }
+
+.t-Form--floatLeft .t-Form-inputContainer select { max-width: 100%; }
+
+.t-Form--leftLabels .t-Form-labelContainer { text-align: left; }
+
+.u-RTL .t-Form--leftLabels .t-Form-labelContainer { text-align: right; }
+
+.t-Form--fixedLabels .t-Form-labelContainer { width: 16.0rem; }
+
+.apex-tabular-form-error { border-color: #E92020 !important; }
+
+.apex-tabular-form-error + .a-Button { box-shadow: 0 0 0 .1rem #E92020 inset; }
+
+.apex-tabular-highlight { border-color: #ffcc00 !important; }
+
+.apex-tabular-highlight + .a-Button { box-shadow: 0 0 0 .1rem #ffcc00 inset; }
+
+/******************************************************************************
+Checkbox + Radio Buttons
+******************************************************************************/
+.apex-item-group--rc input { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; /* Disabled State ========================================================================== */ /* Focus ========================================================================== */ }
+
+.apex-item-group--rc input + label { position: relative; padding-left: 2.0rem; padding-right: .8rem; cursor: pointer; display: inline-block; margin: .4rem 0; vertical-align: top; min-height: 1.6rem; }
+
+.u-RTL .apex-item-group--rc input + label { padding-right: 2.0rem; padding-left: .8rem; }
+
+.apex-item-group--rc input + label:before, .apex-item-group--rc input + label:after { width: 1.6rem; height: 1.6rem; position: absolute; top: 0; left: 0; display: block; content: ''; transition: .25s ease; }
+
+.u-RTL .apex-item-group--rc input + label:before, .u-RTL .apex-item-group--rc input + label:after { right: 0; left: auto; }
+
+.apex-item-group--rc input + label:before { border: 0.1rem solid rgba(0, 0, 0, 0.2); z-index: 90; }
+
+.apex-item-group--rc input + label:after { z-index: 100; opacity: 0; }
+
+.apex-item-group--rc input:disabled + label { opacity: .5; cursor: default; pointer-events: none; }
+
+.apex-item-group--rc input:disabled + label:before { opacity: .5; }
+
+.apex-item-group--rc input:focus + label:before { box-shadow: rgba(0, 0, 0, 0.1) 0 0.1rem 0.1rem; }
+
+.apex-item-group--rc input:hover:checked + label:after .apex-item-group--rc input:focus:checked + label:after { opacity: 1; }
+
+/******************************************************************************
+Checkbox Specific
+******************************************************************************/
+.apex-item-checkbox input { /* Unchecked ========================================================================== */ /* Checked ========================================================================== */ }
+
+.apex-item-checkbox input + label:before { border-radius: 0.2rem; }
+
+.apex-item-checkbox input + label:after { background-size: 1.6rem; background-position: 50%; background-repeat: no-repeat; }
+
+.apex-item-checkbox input:hover + label:after, .apex-item-checkbox input:focus + label:after { -webkit-transform: scale(0); transform: scale(0); opacity: 0; }
+
+@-webkit-keyframes checkmark { 0% { -webkit-transform: scale(0); transform: scale(0); }
+  75% { -webkit-transform: scale(1.25); transform: scale(1.25); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
+
+@keyframes checkmark { 0% { -webkit-transform: scale(0); transform: scale(0); }
+  75% { -webkit-transform: scale(1.25); transform: scale(1.25); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
+
+.apex-item-checkbox input:checked + label:after { font-family: "apex-5-icon-font" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: '\e007'; color: white; font-size: 1.4rem; width: 1.4rem; height: 1.4rem; padding: .1rem; opacity: 1; -webkit-animation: checkmark .25s ease-in-out 1 forwards; animation: checkmark .25s ease-in-out 1 forwards; }
+
+/******************************************************************************
+Radio Specific
+******************************************************************************/
+@-webkit-keyframes radio { 0% { -webkit-transform: scale(3); transform: scale(3); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
+@keyframes radio { 0% { -webkit-transform: scale(3); transform: scale(3); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
+
+.apex-item-radio input { /* Unchecked ========================================================================== */ /* Checked ========================================================================== */ }
+
+.apex-item-radio input + label:before { border-radius: 1.6rem; }
+
+.apex-item-radio input + label:after { width: .6rem; height: .6rem; margin: .5rem; border-radius: 100%; }
+
+.apex-item-radio input:checked + label:after { opacity: 1; -webkit-animation: radio .15s ease-in-out 1 forwards; animation: radio .15s ease-in-out 1 forwards; }
+
+/* ========================================================================== Inline Help --- Display help text immediately below the input field. ========================================================================== */
+/* Hide Inline Help ========================================================================== */
+.t-Form-inlineHelp { display: block; width: 100%; font-size: 1.1rem; line-height: 1.6rem; margin-top: .4rem; }
+
+/* Same Column Item and Button Alignment ========================================================================== */
+.t-Form-inputContainer-col .t-Form-labelContainer, .t-Form-inputContainer-col .t-Form-inputContainer { padding-top: 0; padding-bottom: 0; display: block; padding-right: 0; }
+
+.t-Form-inputContainer-col .t-Form-labelContainer { padding-right: 0; }
+
+/* ========================================================================== Form Items in Side Columns ========================================================================== */
+.t-Body-side .t-Form-fieldContainer:not(:first-child) { margin-top: 1.6rem; }
+
+.t-Body-side .t-Form-labelContainer, .t-Body-side .t-Form-inputContainer, .t-Body-side .t-Form-fieldContainer.t-Form-fieldContainer--floatingLabel, .t-Body-side .t-Form-labelContainer.col, .t-Body-side .t-Form-inputContainer.col { padding: 0; }
+
+/* ========================================================================== Pre and Post Text Styles ========================================================================== */
+.t-Form-itemText { flex-shrink: 0; line-height: 2.4rem; font-size: 1.2rem; min-height: 2.4rem; display: flex; align-items: center; }
+
+.t-Form-itemText:empty { display: none; }
+
+.t-Form-fieldContainer--preTextBlock .t-Form-itemText--pre, .t-Form-fieldContainer--postTextBlock .t-Form-itemText--post { padding: 0 .8rem; z-index: 2; /* Fix when label is large and overlaps on top of post text */ }
+
+.t-Form-fieldContainer--preTextBlock .t-Form-itemText--pre { margin-right: -.1rem; }
+
+.u-RTL .t-Form-fieldContainer--preTextBlock .t-Form-itemText--pre { margin-right: 0; margin-left: -.1rem; }
+
+.t-Form-fieldContainer--postTextBlock .t-Form-itemText--post { margin-left: -.1rem; }
+
+.u-RTL .t-Form-fieldContainer--postTextBlock .t-Form-itemText--post { margin-right: -.1rem; margin-left: 0; }
+
+/* APEX Button Group (for Switch and Pill Buttons) ========================================================================== */
+.apex-button-group { display: flex; }
+
+.apex-button-group .a-Button { padding-right: 1.2rem; padding-left: 1.2rem; }
+
+/* Quick Picks ========================================================================== */
+.apex-quick-picks { font-size: 1.1rem; line-height: 1.6rem; flex-basis: 100%; }
+
+.apex-quick-picks a:hover { text-decoration: underline; }
+
+/* ========================================================================== Floating Labels ========================================================================== */
+.t-Form-fieldContainer--floatingLabel { /* Base Defaults ========================================================================== */ /* Help Button ========================================================================== */ /* Label ========================================================================== */ /* Items where Labels are always small */ /* Help Button ========================================================================== */ /* Item ========================================================================== */ /* Generic Input Styling (Text, Select, Textarea) ========================================================================== */ /* Generic Non Floating Label Item ========================================================================== */ /* Yes / No Switch Item ========================================================================== */ /* Rich Text Editor ========================================================================== */ /* Display Only Item ========================================================================== */ /* File Upload ========================================================================== */ /* Shuttle ========================================================================== */ /* Button Groups ========================================================================== */ /* Buttons (Date Picker, Popup LOV) */ /* Radio / Checkbox Button Groups ========================================================================== */ /* Popup LOV ========================================================================== */ /* Text Areas ========================================================================== */ /* Item has Icon ========================================================================== */ /* Pre and Post Text ========================================================================== */ /* Fieldset ========================================================================== */ /* Modifier: Large ========================================================================== */ /* End Modifier: Large */ /* Modifier: XLarge ========================================================================== */ /* End Modifier: XLarge */ }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer { display: flex; padding: .8rem; align-items: flex-start; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer.rel-col > .col { width: auto !important; float: none; }
+
+.t-Form-fieldContainer--floatingLabel .t-Form-helpButton { padding-top: 0; padding-bottom: 0; }
+
+.t-Form-fieldContainer--floatingLabel .t-Form-labelContainer { order: 2; padding: 0; position: relative; }
+
+.t-Form-fieldContainer--floatingLabel.is-required { position: relative; /* Hide the asterisk for required as we have a triangle */ }
+
+.t-Form-fieldContainer--floatingLabel.is-required:before { position: absolute; content: ''; border-width: 3px; border-color: red transparent transparent red; border-style: solid; z-index: 2; border-top-left-radius: 2px; }
+
+.u-RTL .t-Form-fieldContainer--floatingLabel.is-required:before { border-color: red red transparent transparent; }
+
+.t-Form-fieldContainer--floatingLabel.is-required .t-Form-label:before, .t-Form-fieldContainer--floatingLabel.is-required .t-Form-label:after { opacity: 0; position: absolute; }
+
+.t-Form-fieldContainer--floatingLabel .t-Form-label { position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none; text-align: left; line-height: 4.8rem; white-space: nowrap; padding: 0 .8rem; font-size: 1.4rem; transition: .2s ease; color: rgba(0, 0, 0, 0.55); }
+
+.u-RTL .t-Form-fieldContainer--floatingLabel .t-Form-label { right: 0; left: auto; }
+
+.u-RTL .t-Form-fieldContainer--floatingLabel .t-Form-label { text-align: right; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .t-Form-label, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox .t-Form-label, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup .t-Form-label, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .t-Form-label, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--display-only .t-Form-label, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file .t-Form-label, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--rich-text-editor .t-Form-label, .t-Form-fieldContainer--floatingLabel.is-active .t-Form-label, .t-Form-fieldContainer--floatingLabel.js-show-label .t-Form-label { line-height: 2.0rem; font-size: 1.1rem; padding-top: .4rem; /* change this when field is taller */ }
+
+.t-Form-fieldContainer--floatingLabel .t-Form-inputContainer { order: 3; padding: 0; flex-grow: 1; flex-wrap: wrap; }
+
+.t-Form-fieldContainer--floatingLabel .t-Form-itemWrapper { align-items: stretch; width: 100%; }
+
+.t-Form-fieldContainer--floatingLabel .apex-item-text, .t-Form-fieldContainer--floatingLabel .apex-item-select, .t-Form-fieldContainer--floatingLabel .apex-item-textarea { min-height: 4.8rem; padding: 2.2rem .8rem .6rem .8rem; line-height: 2.0rem; flex-grow: 1; }
+
+.t-Form-fieldContainer--floatingLabel .apex-item-select[size="1"] { min-height: 4.8rem; max-height: 4.8rem; padding-bottom: 4px; }
+
+.t-Form-fieldContainer--floatingLabel .apex-item-text, .t-Form-fieldContainer--floatingLabel .apex-item-select { font-size: 1.4rem; }
+
+.t-Form-fieldContainer--floatingLabel .apex-item-group--textarea { flex-grow: 1; }
+
+.t-Form-fieldContainer--floatingLabel .apex-item-textarea { font-size: 1.2rem; width: 100%; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no.is-required:before, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox.is-required:before, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup.is-required:before, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle.is-required:before, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file.is-required:before { display: none; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no.is-required .t-Form-label:before, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox.is-required .t-Form-label:before, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup.is-required .t-Form-label:before, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle.is-required .t-Form-label:before, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file.is-required .t-Form-label:before { display: none; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no.is-required .t-Form-label:after, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox.is-required .t-Form-label:after, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup.is-required .t-Form-label:after, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle.is-required .t-Form-label:after, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file.is-required .t-Form-label:after { display: inline-block; opacity: 1; position: static; line-height: 1; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .t-Form-label, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox .t-Form-label, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup .t-Form-label, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .t-Form-label, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file .t-Form-label { padding-left: 0; padding-right: 0; pointer-events: initial; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .t-Form-helpButton, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox .t-Form-helpButton, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup .t-Form-helpButton, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .t-Form-helpButton, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file .t-Form-helpButton { margin-top: 24px; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .apex-item-group, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--display-only .apex-item-group, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox .apex-item-group, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup .apex-item-group { padding: 2.4rem 0 0 0; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .apex-item-group, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file .apex-item-group { margin-top: 2.4rem; padding-top: 0; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--rich-text-editor .t-Form-itemWrapper { padding-top: 2.4rem; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--display-only.apex-item-wrapper--yes-no .t-Form-label { padding-left: 0.8rem; padding-right: 0.8rem; }
+
+.t-Form-fieldContainer--floatingLabel .apex-item-display-only { display: block; width: 100%; padding: 2.2rem .8rem .6rem .8rem; border-radius: 0.2rem; flex-grow: 0; line-height: 2.0rem; font-weight: normal; border: 1px solid; min-height: 4.8rem; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file .apex-item-group { width: 100%; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .apex-item-select { margin: 0; padding-top: 0.8rem; padding-bottom: 0.8rem; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .a-Button--shuttle { margin-top: 0; margin-bottom: 4px; }
+
+.t-Form-fieldContainer--floatingLabel .apex-button-group .a-Button { padding: 0.4rem 2.4rem; }
+
+.t-Form-fieldContainer--floatingLabel .a-Button { padding-right: 1.2rem; padding-left: 1.2rem; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--radioButtonGroup .t-Form-itemWrapper { align-items: center; }
+
+.t-Form-fieldContainer--floatingLabel .apex-item-group--popup-lov { flex-grow: 1; }
+
+.t-Form-fieldContainer--floatingLabel .apex-item-group--popup-lov .apex-item-icon { position: absolute; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--textarea .t-Form-itemWrapper { align-items: flex-start; }
+
+.t-Form-fieldContainer--floatingLabel.apex-item-wrapper--has-icon .t-Form-label { padding-left: 4.0rem; }
+
+.u-RTL .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--has-icon .t-Form-label { padding-right: 4.0rem; padding-left: 0rem; }
+
+.t-Form-fieldContainer--floatingLabel .apex-item-icon { left: 3.2rem; line-height: 4.8rem; margin-left: -3.2rem; width: 3.2rem; text-align: center; margin-top: 0; margin-bottom: 0; padding: 0; transition: 0.2s ease; flex-shrink: 0; }
+
+.u-RTL .t-Form-fieldContainer--floatingLabel .apex-item-icon { margin-left: 0; margin-right: -3.2rem; left: auto; right: 3.2rem; }
+
+.t-Form-fieldContainer--floatingLabel .apex-item-has-icon { text-indent: 3.1rem; }
+
+.t-Form-fieldContainer--floatingLabel .apex-item-has-icon:focus + .apex-item-icon { background-color: #0572CE; color: #FFF; }
+
+.t-Form-fieldContainer--floatingLabel .t-Form-itemText { line-height: 4.8rem; min-height: 4.8rem; justify-content: center; }
+
+.t-Form-fieldContainer--floatingLabel .apex-item-fieldset { width: auto; flex-grow: 1; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large, .t-Form--large .t-Form-fieldContainer--floatingLabel { /* Items where Labels are always small */ /* Generic Non Floating Label Item ========================================================================== */ /* File Upload ========================================================================== */ /* Shuttle ========================================================================== */ /* Rich Text Editor ========================================================================== */ /* Button Groups ========================================================================== */ /* Item has Icon ========================================================================== */ /* Pre / Post Text ========================================================================== */ /* Shuttle ========================================================================== */ /* Display Only ========================================================================== */ }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel .t-Form-label { font-size: 16px; line-height: 56px; padding: 0 12px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--yes-no .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--checkbox .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--radiogroup .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--shuttle .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--display-only .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--file .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--rich-text-editor .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.is-active .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.js-show-label .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--display-only .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--rich-text-editor .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.is-active .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.js-show-label .t-Form-label { /* Total should be half of line height */ line-height: 18px; font-size: 12px; padding-top: 10px; /* change this when field is taller */ }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-text, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-select, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-textarea, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-text, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-select, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-textarea { min-height: 56px; line-height: 22px; padding: 24px 12px 10px 12px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-select[size="1"], .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-select[size="1"] { min-height: 56px; max-height: 56px; padding-bottom: 6px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-text, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-select, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-text, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-select { font-size: 16px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-textarea, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-textarea { font-size: 14px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--yes-no .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--checkbox .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--radiogroup .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--shuttle .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--file .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file .t-Form-label { padding-left: 0; padding-right: 0; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--yes-no .t-Form-helpButton, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--checkbox .t-Form-helpButton, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--radiogroup .t-Form-helpButton, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--shuttle .t-Form-helpButton, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--file .t-Form-helpButton, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .t-Form-helpButton, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox .t-Form-helpButton, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup .t-Form-helpButton, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .t-Form-helpButton, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file .t-Form-helpButton { margin-top: 28px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--yes-no .apex-item-group, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--display-only .apex-item-group, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--checkbox .apex-item-group, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--radiogroup .apex-item-group, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .apex-item-group, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--display-only .apex-item-group, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox .apex-item-group, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup .apex-item-group { padding: 28px 0 0 0; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--shuttle .apex-item-group, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--file .apex-item-group, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .apex-item-group, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file .apex-item-group { margin-top: 28px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-file, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-file { height: 2.8rem; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-file-dropzone-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-file-dropzone-icon, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-file-dropzone-label, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-file-dropzone-icon { padding-top: .5rem; padding-bottom: 0.5rem; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--shuttle .apex-item-select, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .apex-item-select { padding-top: 12px; padding-bottom: 12px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--rich-text-editor .t-Form-itemWrapper, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--rich-text-editor .t-Form-itemWrapper { padding-top: 2.8rem; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-button-group .a-Button, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-button-group .a-Button { padding: 6px 24px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-group--rc, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-group--rc { margin: 0; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--has-icon .t-Form-label, .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--has-icon .t-Form-label { padding-left: 44px; }
+
+.u-RTL .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.apex-item-wrapper--has-icon .t-Form-label, .u-RTL .t-Form--large .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--has-icon .t-Form-label { padding-right: 44px; padding-left: 0px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-icon, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-icon { line-height: 56px; padding: 0; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-has-icon, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-has-icon { text-indent: 3.1rem; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .t-Form-itemText, .t-Form--large .t-Form-fieldContainer--floatingLabel .t-Form-itemText { line-height: 56px; min-height: 56px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-group--shuttle .apex-item-select, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-group--shuttle .apex-item-select { min-height: 180px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large .apex-item-display-only, .t-Form--large .t-Form-fieldContainer--floatingLabel .apex-item-display-only { line-height: 2.0rem; padding-bottom: 6px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel { /* Items where Labels are always small */ /* Generic Non Floating Label Item ========================================================================== */ /* File Upload ========================================================================== */ /* Shuttle ========================================================================== */ /* Rich Text Editor ========================================================================== */ /* Button Groups ========================================================================== */ /* Item has Icon ========================================================================== */ /* Pre / Post Text ========================================================================== */ /* Shuttle ========================================================================== */ /* Display Only ========================================================================== */ }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .t-Form-label { font-size: 16px; line-height: 64px; padding: 0 12px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--yes-no .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--checkbox .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--radiogroup .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--shuttle .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--display-only .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--file .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--rich-text-editor .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.is-active .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.js-show-label .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--display-only .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--rich-text-editor .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.is-active .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.js-show-label .t-Form-label { /* Total should be half of line height */ line-height: 22px; font-size: 14px; padding-top: 6px; /* change this when field is taller */ }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-text, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-select, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-textarea, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-text, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-select, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-textarea { min-height: 64px; line-height: 22px; padding: 24px 12px 10px 12px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-select[size="1"], .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-select[size="1"] { min-height: 64px; max-height: 64px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-text, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-select, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-text, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-select { font-size: 16px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-textarea, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-textarea { font-size: 14px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--yes-no .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--display-only .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--checkbox .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--radiogroup .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--shuttle .t-Form-label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--file .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--display-only .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file .t-Form-label { padding-left: 0; padding-right: 0; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--yes-no .t-Form-helpButton, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--display-only .t-Form-helpButton, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--checkbox .t-Form-helpButton, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--radiogroup .t-Form-helpButton, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--shuttle .t-Form-helpButton, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--file .t-Form-helpButton, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .t-Form-helpButton, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--display-only .t-Form-helpButton, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox .t-Form-helpButton, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup .t-Form-helpButton, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .t-Form-helpButton, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file .t-Form-helpButton { margin-top: 28px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--yes-no .apex-item-group, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--display-only .apex-item-group, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--checkbox .apex-item-group, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--radiogroup .apex-item-group, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .apex-item-group, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--display-only .apex-item-group, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--checkbox .apex-item-group, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--radiogroup .apex-item-group { padding: 28px 0 0 0; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--shuttle .apex-item-group, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--file .apex-item-group, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .apex-item-group, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--file .apex-item-group { margin-top: 28px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-file, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-file { height: 3.2rem; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-file-dropzone-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-file-dropzone-label { padding-top: .5rem; padding-bottom: 0.5rem; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-file-dropzone-icon, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-file-dropzone-icon { padding-top: .7rem; padding-bottom: 0.7rem; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--shuttle .apex-item-select, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--shuttle .apex-item-select { padding-top: 12px; padding-bottom: 12px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--rich-text-editor .t-Form-itemWrapper, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--rich-text-editor .t-Form-itemWrapper { padding-top: 2.8rem; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-button-group .a-Button, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-button-group .a-Button { padding: 10px 24px; font-size: 14px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-group--rc, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-group--rc { margin: 0; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--has-icon .t-Form-label, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--has-icon .t-Form-label { padding-left: 48px; }
+
+.u-RTL .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge.apex-item-wrapper--has-icon .t-Form-label, .u-RTL .t-Form--xlarge .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--has-icon .t-Form-label { padding-right: 48px; padding-left: 0px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-icon, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-icon { left: 3.6rem; line-height: 64px; margin-left: -3.6rem; width: 3.6rem; padding: 0; }
+
+.u-RTL .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-icon, .u-RTL .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-icon { margin-left: 0; margin-right: -3.6rem; left: auto; right: 3.6rem; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-has-icon, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-has-icon { text-indent: 3.5rem; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .t-Form-itemText, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .t-Form-itemText { line-height: 64px; min-height: 64px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-group--shuttle .apex-item-select, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-group--shuttle .apex-item-select { min-height: 240px; }
+
+.t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-display-only, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-display-only { line-height: 2.4rem; padding-bottom: 8px; }
+
+/* End Floating Labels */
+/* ========================================================================== JET Autocomplete Item ========================================================================== */
+.t-Form--stretchInputs .apex-item-group--auto-complete, .t-Form-fieldContainer--floatingLabel .apex-item-group--auto-complete { width: 100%; }
+
+.apex-item-group--auto-complete .apex-item-auto-complete::-webkit-input-placeholder { font-style: normal; color: #000; opacity: .35; }
+
+.apex-item-group--auto-complete .apex-item-auto-complete:-ms-input-placeholder { font-style: normal; color: #000; opacity: .35; }
+
+.apex-item-group--auto-complete .apex-item-auto-complete::-ms-input-placeholder { font-style: normal; color: #000; opacity: .35; }
+
+.apex-item-group--auto-complete .apex-item-auto-complete::placeholder { font-style: normal; color: #000; opacity: .35; }
+
+.apex-item-group--auto-complete .oj-form-control { margin: 0; display: block; }
+
+.apex-item-group--auto-complete .oj-inputsearch-choice { height: auto; border: 0; padding: 0; margin: 0; }
+
+.apex-item-group--auto-complete .oj-inputsearch-input { flex-basis: auto; }
+
+/* ========================================================================== Large Form ========================================================================== */
+.t-Form--large, .t-Form-fieldContainer--large { /* Pre / Post Text */ /* Item Icon */ /* Item Label */ }
+
+.t-Form--large .t-Form-itemText, .t-Form-fieldContainer--large .t-Form-itemText { line-height: 3.2rem; font-size: 1.4rem; }
+
+.t-Form--large .apex-item-icon, .t-Form-fieldContainer--large .apex-item-icon { padding: .8rem; left: 3.2rem; margin-left: -3.2rem; }
+
+.u-RTL .t-Form--large .apex-item-icon, .u-RTL .t-Form-fieldContainer--large .apex-item-icon { left: auto; right: 3.2rem; }
+
+.u-RTL .t-Form--large .apex-item-icon, .u-RTL .t-Form-fieldContainer--large .apex-item-icon { margin-left: 0px; margin-right: -3.2rem; }
+
+.t-Form--large .apex-item-has-icon, .t-Form-fieldContainer--large .apex-item-has-icon { text-indent: 2.0rem; }
+
+.t-Form--large .t-Form-label, .t-Form-fieldContainer--large .t-Form-label { padding: .8rem 0; line-height: 1.6rem; font-size: 1.4rem; }
+
+.t-Form--large .apex-item-text, .t-Form--large .apex-item-select, .t-Form--large .apex-item-textarea, .t-Form-fieldContainer--large .apex-item-text, .t-Form-fieldContainer--large .apex-item-select, .t-Form-fieldContainer--large .apex-item-textarea { font-size: 1.4rem; padding: .7rem; }
+
+.t-Form--large .apex-item-file, .t-Form-fieldContainer--large .apex-item-file { height: 3.2rem; }
+
+.t-Form--large .apex-item-file-dropzone-label, .t-Form--large .apex-item-file-dropzone-icon, .t-Form-fieldContainer--large .apex-item-file-dropzone-label, .t-Form-fieldContainer--large .apex-item-file-dropzone-icon { font-size: 1.4rem; }
+
+.t-Form--large .apex-item-file-dropzone-label, .t-Form-fieldContainer--large .apex-item-file-dropzone-label { padding: .7rem; }
+
+.t-Form--large .apex-item-file-dropzone-icon, .t-Form-fieldContainer--large .apex-item-file-dropzone-icon { padding: .7rem 1.2rem; }
+
+.t-Form--large .apex-item-text, .t-Form-fieldContainer--large .apex-item-text { height: 3.2rem; }
+
+.t-Form--large .apex-item-select[size="1"], .t-Form-fieldContainer--large .apex-item-select[size="1"] { min-height: 3.2rem; max-height: 3.2rem; padding-right: 4.0rem; }
+
+.t-Form--large .a-Button.a-Button--calendar, .t-Form--large .t-Form-inputContainer .a-Button, .t-Form-fieldContainer--large .a-Button.a-Button--calendar, .t-Form-fieldContainer--large .t-Form-inputContainer .a-Button { padding: .8rem 1.2rem; }
+
+.t-Form--large .apex-item-group--rc, .t-Form-fieldContainer--large .apex-item-group--rc { margin: 0.2rem 0; /* align first input label with item label */ }
+
+.t-Form--large .apex-item-group--rc input + label, .t-Form-fieldContainer--large .apex-item-group--rc input + label { font-size: 1.4rem; line-height: 2.0rem; padding-left: 2.4rem; }
+
+.t-Form--large .apex-item-group--rc input + label:before, .t-Form-fieldContainer--large .apex-item-group--rc input + label:before { width: 2.0rem; height: 2.0rem; }
+
+.t-Form--large .apex-item-checkbox input + label:after, .t-Form-fieldContainer--large .apex-item-checkbox input + label:after { width: 1.6rem; height: 1.6rem; font-size: 1.6rem; padding: 0; margin: 0.2rem; }
+
+.t-Form--large .apex-item-radio input + label:after, .t-Form-fieldContainer--large .apex-item-radio input + label:after { width: .8rem; height: .8rem; margin: .6rem; }
+
+.t-Form--large .apex-item-display-only, .t-Form-fieldContainer--large .apex-item-display-only { font-size: 1.4rem; line-height: 3.2rem; }
+
+/* Large Form -- Labels Above ========================================================================== */
+.t-Form--large.t-Form--labelsAbove .t-Form-fieldContainer .t-Form-labelContainer--hiddenLabel, .t-Form-fieldContainer--stacked.t-Form--fieldContainer--large .t-Form-labelContainer--hiddenLabel { height: 4.0rem; }
+
+/* Button Groups for Radio Buttons */
+.t-Form--large .t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc input + label, .t-Form-fieldContainer--large.t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc input + label, .t-Form--large .apex-button-group .apex-item-group--rc input + label, .t-Form-fieldContainer--large .apex-button-group .apex-item-group--rc input + label { padding: .8rem 1.2rem; line-height: 1.6rem; font-size: 1.2rem; }
+
+/* Radio Button Pills with Checkbox */
+.t-Form--large .t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc.apex-item-checkbox input + label, .t-Form-fieldContainer--large.t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc.apex-item-checkbox input + label { padding-left: 3.2rem; }
+
+.t-Form--large .t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc.apex-item-checkbox input + label:before, .t-Form--large .t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc.apex-item-checkbox input + label:after, .t-Form-fieldContainer--large.t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc.apex-item-checkbox input + label:before, .t-Form-fieldContainer--large.t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc.apex-item-checkbox input + label:after { display: block; top: 6px; left: 6px; }
+
+.t-Form--large .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc input + label, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--large.t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc input + label { padding-top: 0.6rem; padding-bottom: 0.6rem; }
+
+/* ========================================================================== X Large Form ========================================================================== */
+.t-Form--xlarge .t-Form-itemText, .t-Form-fieldContainer--xlarge .t-Form-itemText { line-height: 4.0rem; font-size: 1.6rem; }
+
+.t-Form--xlarge .apex-item-icon, .t-Form-fieldContainer--xlarge .apex-item-icon { padding: 1.2rem .8rem 1.2rem 1.2rem; left: 3.6rem; margin-left: -3.6rem; }
+
+.t-Form--xlarge .apex-item-has-icon, .t-Form-fieldContainer--xlarge .apex-item-has-icon { text-indent: 2.4rem; }
+
+.t-Form--xlarge .t-Form-label, .t-Form-fieldContainer--xlarge .t-Form-label { padding: 1.2rem 0; line-height: 1.6rem; font-size: 1.6rem; }
+
+.t-Form--xlarge .apex-item-textarea, .t-Form--xlarge .apex-item-text, .t-Form--xlarge .apex-item-select, .t-Form-fieldContainer--xlarge .apex-item-textarea, .t-Form-fieldContainer--xlarge .apex-item-text, .t-Form-fieldContainer--xlarge .apex-item-select { font-size: 1.6rem; padding: .9rem; }
+
+.t-Form--xlarge .apex-item-file-dropzone-label, .t-Form-fieldContainer--xlarge .apex-item-file-dropzone-label { font-size: 1.6rem; line-height: 2.0rem; padding: 0.9rem; }
+
+.t-Form--xlarge .apex-item-file-dropzone-icon, .t-Form-fieldContainer--xlarge .apex-item-file-dropzone-icon { padding: 1.1rem 1.6rem; }
+
+.t-Form--xlarge .apex-item-file, .t-Form-fieldContainer--xlarge .apex-item-file { height: 4.0rem; }
+
+.t-Form--xlarge .apex-item-text, .t-Form-fieldContainer--xlarge .apex-item-text { height: 4.0rem; }
+
+.t-Form--xlarge .apex-item-select[size="1"], .t-Form-fieldContainer--xlarge .apex-item-select[size="1"] { min-height: 4.0rem; max-height: 4.0rem; }
+
+.t-Form--xlarge .apex-item-select, .t-Form-fieldContainer--xlarge .apex-item-select { line-height: 2rem; padding-right: 4.8rem; }
+
+.t-Form--xlarge .apex-item-group--rc input + label, .t-Form-fieldContainer--xlarge .apex-item-group--rc input + label { font-size: 1.6rem; line-height: 3.2rem; }
+
+.t-Form--xlarge .t-Form-inputContainer .a-Button, .t-Form--xlarge .t-Form-inputContainer .t-Button, .t-Form-fieldContainer--xlarge .t-Form-inputContainer .a-Button, .t-Form-fieldContainer--xlarge .t-Form-inputContainer .t-Button { padding: 1.2rem; }
+
+.t-Form--xlarge .apex-item-group--rc, .t-Form-fieldContainer--xlarge .apex-item-group--rc { margin: .4rem 0; /* align first input label with item label */ }
+
+.t-Form--xlarge .apex-item-group--rc input + label, .t-Form-fieldContainer--xlarge .apex-item-group--rc input + label { font-size: 1.6rem; line-height: 2.4rem; padding-left: 3.2rem; }
+
+.t-Form--xlarge .apex-item-group--rc input + label:before, .t-Form-fieldContainer--xlarge .apex-item-group--rc input + label:before { width: 2.4rem; height: 2.4rem; }
+
+.t-Form--xlarge .apex-item-checkbox input + label:after, .t-Form-fieldContainer--xlarge .apex-item-checkbox input + label:after { width: 2.0rem; height: 2.0rem; font-size: 1.6rem; padding: 0; margin: .4rem; }
+
+.t-Form--xlarge .apex-item-radio input + label:after, .t-Form-fieldContainer--xlarge .apex-item-radio input + label:after { width: 1.0rem; height: 1.0rem; margin: .7rem; }
+
+.t-Form--xlarge .apex-item-display-only, .t-Form-fieldContainer--xlarge .apex-item-display-only { font-size: 1.6rem; line-height: 4rem; }
+
+.t-Form--xlarge.t-Form--labelsAbove .t-Form-fieldContainer .t-Form-labelContainer--hiddenLabel, .t-Form-fieldContainer--stacked.t-Form--fieldContainer--xlarge .t-Form-labelContainer--hiddenLabel { height: 4.8rem; }
+
+.t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-text, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-select, .t-Form--xlarge .t-Form-fieldContainer--floatingLabel .apex-item-textarea, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-text, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-select, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--xlarge .apex-item-textarea { min-height: 64px; line-height: 2.4rem; padding: 2.8rem 1.2rem 1.2rem 1.2rem; }
+
+/* Button Groups for Radio Buttons */
+.t-Form--xlarge .t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc input + label, .t-Form-fieldContainer--xlarge.t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc input + label, .t-Form--xlarge .apex-button-group .apex-item-group--rc input + label, .t-Form-fieldContainer--xlarge .apex-button-group .apex-item-group--rc input + label { padding: 1.2rem; font-size: 1.4rem; line-height: 1.6rem; }
+
+/* Radio Button Pills with Checkbox */
+.t-Form--xlarge .t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc.apex-item-checkbox input + label, .t-Form-fieldContainer--xlarge.t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc.apex-item-checkbox input + label { padding-left: 4rem; }
+
+.t-Form--xlarge .t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc.apex-item-checkbox input + label:before, .t-Form--xlarge .t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc.apex-item-checkbox input + label:after, .t-Form-fieldContainer--xlarge.t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc.apex-item-checkbox input + label:before, .t-Form-fieldContainer--xlarge.t-Form-fieldContainer--radioButtonGroup .apex-item-group--rc.apex-item-checkbox input + label:after { display: block; top: 8px; left: 8px; }
+
+/* ========================================================================== No Padding ========================================================================== */
+.t-Form--noPadding .t-Form-inputContainer, .t-Form--noPadding .t-Form-labelContainer { padding-top: 0; padding-bottom: 0; }
+
+/* ========================================================================== Slim Padding ========================================================================== */
+.t-Form--slimPadding .t-Form-inputContainer, .t-Form--slimPadding .t-Form-labelContainer { padding-top: 0.4rem; padding-bottom: 0.4rem; }
+
+/* ========================================================================== Labels Above ========================================================================== */
+.t-Form--labelsAbove .t-Form-fieldContainer.rel-col > .col, .t-Form-fieldContainer--stacked.rel-col > .col { width: auto !important; float: none; display: block; }
+
+.t-Form--labelsAbove .t-Form-fieldContainer .t-Form-labelContainer, .t-Form-fieldContainer--stacked .t-Form-labelContainer { width: auto; text-align: left; float: none; padding-bottom: 0; }
+
+.u-RTL .t-Form--labelsAbove .t-Form-fieldContainer .t-Form-labelContainer, .u-RTL .t-Form-fieldContainer--stacked .t-Form-labelContainer { text-align: right; }
+
+.t-Form--labelsAbove .t-Form-fieldContainer .t-Form-labelContainer--hiddenLabel, .t-Form-fieldContainer--stacked .t-Form-labelContainer--hiddenLabel { height: 3.2rem; }
+
+.t-Form--labelsAbove .t-Form-fieldContainer .t-Form-inputContainer, .t-Form-fieldContainer--stacked .t-Form-inputContainer { padding-top: 0; }
+
+.t-Form--labelsAbove .t-Form-fieldContainer .apex-item-select, .t-Form-fieldContainer--stacked .apex-item-select { max-width: 100%; }
+
+.t-Form--labelsAbove .t-Form-fieldContainer .t-Form-radio, .t-Form-fieldContainer--stacked .t-Form-radio { display: block; margin-left: 2.4rem; }
+
+.t-Form--labelsAbove .t-Form-fieldContainer .t-Form-helpButton, .t-Form-fieldContainer--stacked .t-Form-helpButton { display: inline-block; vertical-align: top; line-height: 1.6rem; }
+
+/* ========================================================================== Stretch Inputs ========================================================================== */
+.t-Form--stretchInputs .t-Form-fieldContainer .t-Form-itemWrapper, .t-Form--stretchInputs .t-Form-fieldContainer .t-Form-itemWrapper .apex-item-group--textarea, .t-Form--stretchInputs .t-Form-fieldContainer .apex-item-group--file, .t-Form-fieldContainer--stretchInputs .t-Form-itemWrapper, .t-Form-fieldContainer--stretchInputs .t-Form-itemWrapper .apex-item-group--textarea, .t-Form-fieldContainer--stretchInputs .apex-item-group--file { width: 100%; }
+
+.t-Form--stretchInputs .t-Form-fieldContainer .apex-item-text, .t-Form--stretchInputs .t-Form-fieldContainer .apex-item-select, .t-Form-fieldContainer--stretchInputs .apex-item-text, .t-Form-fieldContainer--stretchInputs .apex-item-select { flex-grow: 1; min-width: 0; }
+
+.t-Form--stretchInputs .t-Form-fieldContainer .apex-item-grid, .t-Form--stretchInputs .t-Form-fieldContainer fieldset, .t-Form--stretchInputs .t-Form-fieldContainer textarea, .t-Form--stretchInputs .t-Form-fieldContainer table, .t-Form--stretchInputs .t-Form-fieldContainer td.lov, .t-Form--stretchInputs .t-Form-fieldContainer input.popup_lov, .t-Form-fieldContainer--stretchInputs .apex-item-grid, .t-Form-fieldContainer--stretchInputs fieldset, .t-Form-fieldContainer--stretchInputs textarea, .t-Form-fieldContainer--stretchInputs table, .t-Form-fieldContainer--stretchInputs td.lov, .t-Form-fieldContainer--stretchInputs input.popup_lov { width: 100%; }
+
+.t-Form--stretchInputs .t-Form-fieldContainer .apex-item-group, .t-Form-fieldContainer--stretchInputs .apex-item-group { flex-grow: 1; }
+
+.t-Form-fieldContainer.is-required .t-Form-label:before, .t-Form-fieldContainer.is-required .t-Form-label:after { content: "\e058"; font-family: "apex-5-icon-font" !important; font-size: 1.6rem; line-height: 1.2rem; vertical-align: bottom; color: red; }
+
+.t-Form-fieldContainer.is-required .t-Form-label:after { display: none; margin-left: -4px; }
+
+.t-Form--labelsAbove .t-Form-fieldContainer.is-required .t-Form-label:before, .t-Form-fieldContainer--stacked.is-required .t-Form-label:before { display: none; }
+
+.t-Form--labelsAbove .t-Form-fieldContainer.is-required .t-Form-label:after, .t-Form-fieldContainer--stacked.is-required .t-Form-label:after { display: inline-block; }
+
+.t-Form--leftLabels .t-Form-fieldContainer.is-required .t-Form-label:before, .t-Form--stretchInputs .t-Form-fieldContainer.is-required .t-Form-label:before { display: none; }
+
+.t-Form--leftLabels .t-Form-fieldContainer.is-required .t-Form-label:after, .t-Form--stretchInputs .t-Form-fieldContainer.is-required .t-Form-label:after { display: inline-block; margin-left: -.4rem; }
+
+.u-RTL .t-Form-fieldContainer.is-required .t-Form-label:before { display: inline-block; }
+
+.u-RTL .t-Form-fieldContainer.is-required .t-Form-label:after { display: none; }
+
+.u-RTL .t-Form-fieldContainer--stacked.is-required .t-Form-label:before, .u-RTL .t-Form--labelsAbove .t-Form-fieldContainer.is-required .t-Form-label:before, .u-RTL .t-Form--leftLabels .t-Form-fieldContainer.is-required .t-Form-label:before, .u-RTL .t-Form-fieldContainer--floatingLabel.is-required .t-Form-label:before { display: none; }
+
+.u-RTL .t-Form-fieldContainer--stacked.is-required .t-Form-label:after, .u-RTL .t-Form--labelsAbove .t-Form-fieldContainer.is-required .t-Form-label:after, .u-RTL .t-Form--leftLabels .t-Form-fieldContainer.is-required .t-Form-label:after, .u-RTL .t-Form-fieldContainer--floatingLabel.is-required .t-Form-label:after { display: inline-block; }
+
+/* Button Groups ========================================================================== */
+.t-Form--stretchInputs .t-Form-fieldContainer .apex-button-group .apex-item-option, .t-Form-fieldContainer--stretchInputs .apex-button-group .apex-item-option, .t-Form-fieldContainer--floatingLabel .apex-button-group .apex-item-option { width: 100%; }
+
+.t-Form--stretchInputs .t-Form-fieldContainer.t-Form-fieldContainer--radioButtonGroup .apex-item-grid, .t-Form-fieldContainer--stretchInputs.t-Form-fieldContainer--radioButtonGroup .apex-item-grid, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--radioButtonGroup .apex-item-grid { table-layout: fixed; }
+
+.t-Form--stretchInputs .t-Form-fieldContainer.t-Form-fieldContainer--radioButtonGroup .apex-item-option, .t-Form-fieldContainer--stretchInputs.t-Form-fieldContainer--radioButtonGroup .apex-item-option, .t-Form-fieldContainer--floatingLabel.t-Form-fieldContainer--radioButtonGroup .apex-item-option { white-space: nowrap; }
+
+@media (max-width: 640px) { .t-Form-labelContainer { text-align: left; }
+  .u-RTL .t-Form-labelContainer { text-align: right; } .t-Form-labelContainer--hiddenLabel { min-height: 0 !important; height: 0 !important; padding: 0; } .t-Form-inputContainer { display: flex; flex-wrap: wrap; }
+  .apex-item-text, .apex-item-select, .apex-item-group { flex-grow: 1; }
+  .apex-item-grid, fieldset, textarea, table, td.lov, input.popup_lov { width: 100%; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .a-IRR-selectList::-ms-expand, .apex-item-select[size="1"]::-ms-expand { display: none !important; } }
+
+@media (max-width: 480px) { .container > .row > .col:first-child > .t-Form-fieldContainer--hiddenLabel { margin-top: .8rem; } }

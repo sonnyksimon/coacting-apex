@@ -1,0 +1,134 @@
+/**
+ * Import Compass and Theme Variables
+ */
+
+@import "_variables";
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.t-Header {
+  background-color: @g_Header-BG;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+  border-bottom: 1px solid #FFF;
+  // padding: 0 20px;
+}
+
+.t-Header-branding {
+  box-shadow: none;
+  background: transparent;
+  position: static;
+  float: left;
+  .u-RTL & {
+    float: right;
+  }
+}
+
+.apex-top-nav {
+  // add max width so that text in header does not push menu bar all the way to right
+  .t-Header-branding {
+    max-width: 80%;
+  }
+  .t-Header-controls,
+  .t-Header-logo {
+    margin-top: 26px;
+  }
+}
+.apex-side-nav,
+.t-PageBody--noNav {
+  .t-Header-controls,
+  .t-Header-logo {
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+}
+
+.t-Header-logo {
+  .apex-direction-margin-left(8px);
+}
+
+.t-Header-logo-link {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: top;
+  color: @g_Header-FG;
+  &:hover {
+    text-decoration: none;
+  }
+  img {
+    display: inline-block;
+  }
+}
+.t-Header-logo-link {
+  padding-left: 0;
+  padding-right: 0;
+  &:focus,
+  &:active:focus {
+    outline: none;
+    box-shadow:
+    0 0 0 1px lighten(@g_Focus,15%) inset,
+    0 0 1px 2px fade(lighten(@g_Focus,15%), 25%) !important;
+  }
+}
+.t-Header-logo-link {
+  font-size: 1.8rem;
+  color: black;
+}
+
+
+.t-Header-nav {
+  text-align: right;
+  .u-RTL {
+    text-align: left;
+    .a-MenuBar-item {
+      float: left !important;
+    }
+    .a-Menu--split.a-MenuBar-item > .a-MenuBar-label {
+      padding-right: 20px;
+      padding-left: 4px;
+    }
+  }
+  margin-top: 34px;
+//  background-color: @g_Nav-BG;
+}
+
+.t-Header-navBar  {
+  margin-top: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 13px;
+  margin: 3px 20px 3px 0;
+  .u-RTL & {
+    right: auto;
+    left: 0;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+
+.apex-side-nav,
+.t-PageBody--noNav {
+  .t-Header-navBar {
+    height: 30px;
+    margin: 13px 20px 13px 0;
+    .u-RTL & {
+      margin-right: 0;
+      margin-left: 20px;
+    }
+  }
+}
+
+.apex-side-nav {
+  .t-Header-branding {
+    width: 100%;
+  }
+  .t-Header-navBar {
+    position: static;
+    margin-right: 0;
+  }
+}
+
+

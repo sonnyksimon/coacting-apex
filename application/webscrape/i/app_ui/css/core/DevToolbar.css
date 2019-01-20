@@ -1,0 +1,174 @@
+/** Import Compass */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Developer Bar --- Developer Toolbar Styles ========================================================================== */
+.a-DevToolbar { position: fixed; z-index: 1000; line-height: 0; /* To remove excess line-height from showing list as inline block */ }
+
+.a-DevToolbar-list { display: inline-block; list-style: none; text-align: center; margin: 0; font-size: 0; }
+
+.a-DevToolbar-list li { display: inline-block; }
+
+/* ========================================================================== Left and Right Positions ========================================================================== */
+.a-DevToolbar--left { left: 0; }
+
+.a-DevToolbar--right { right: 0; }
+
+.a-DevToolbar--left, .a-DevToolbar--right { top: 20%; }
+
+.a-DevToolbar--left.a-DevToolbar--iconsOnly .a-DevToolbar-buttonLabel, .a-DevToolbar--right.a-DevToolbar--iconsOnly .a-DevToolbar-buttonLabel { display: none; }
+
+.a-DevToolbar--left .a-Button.a-Button--devToolbar, .a-DevToolbar--right .a-Button.a-Button--devToolbar { box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25) inset; margin-bottom: -1px; width: 100%; text-align: left; }
+
+.a-DevToolbar--left .a-DevToolbar-list, .a-DevToolbar--right .a-DevToolbar-list { display: block; }
+
+.a-DevToolbar--left .a-DevToolbar-list li, .a-DevToolbar--right .a-DevToolbar-list li { display: block; width: 100%; }
+
+.a-DevToolbar--left .a-DevToolbar-list li:first-child .a-Button--devToolbar, .a-DevToolbar--right .a-DevToolbar-list li:first-child .a-Button--devToolbar { border-top-left-radius: 2px; border-top-right-radius: 2px; }
+
+.a-DevToolbar--left .a-DevToolbar-list li:last-child .a-Button--devToolbar, .a-DevToolbar--right .a-DevToolbar-list li:last-child .a-Button--devToolbar { border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; margin-bottom: 0; }
+
+/* Errors Button ========================================================================== */
+#apexDevToolbarErrors { background-color: #EA1818; color: #FFF; }
+
+#apexDevToolbarErrors:hover, #apexDevToolbarErrors:focus, #apexDevToolbarErrors:active { background-color: #EA1818 !important; }
+
+/* ========================================================================== Top and Bottom Positions ========================================================================== */
+.a-DevToolbar--top { top: 0; }
+
+.a-DevToolbar--bottom { bottom: 0; }
+
+.a-DevToolbar--top .a-Button.a-Button--devToolbar, .a-DevToolbar--bottom .a-Button.a-Button--devToolbar { box-shadow: none; margin-right: -1px; }
+
+.a-DevToolbar--top .a-DevToolbar-list, .a-DevToolbar--bottom .a-DevToolbar-list { width: 100%; text-align: center; }
+
+.a-DevToolbar--top .a-DevToolbar-list li, .a-DevToolbar--bottom .a-DevToolbar-list li { display: inline-block; }
+
+.a-DevToolbar--top .a-DevToolbar-list li:last-child .a-Button--devToolbar, .a-DevToolbar--bottom .a-DevToolbar-list li:last-child .a-Button--devToolbar { margin-right: 0; }
+
+/* ========================================================================== Buttons ========================================================================== */
+.a-Button.a-Button--devToolbar { text-shadow: none; border-radius: 0; padding: 8px; transition: none; }
+
+.a-DevToolbar-buttonLabel { line-height: 16px; margin-left: 4px; }
+
+/* ========================================================================== Auto Hide ========================================================================== */
+.a-DevToolbar--autoHide { transition: -webkit-transform .1s ease-in-out; transition: transform .1s ease-in-out; transition: transform .1s ease-in-out, -webkit-transform .1s ease-in-out; }
+
+.a-DevToolbar--left.a-DevToolbar--autoHide { -webkit-transform: translateX(-90%); transform: translateX(-90%); }
+
+.a-DevToolbar--right.a-DevToolbar--autoHide { -webkit-transform: translateX(90%); transform: translateX(90%); }
+
+.a-DevToolbar--left.a-DevToolbar--iconsOnly.a-DevToolbar--autoHide { -webkit-transform: translateX(-80%); transform: translateX(-80%); }
+
+.a-DevToolbar--right.a-DevToolbar--iconsOnly.a-DevToolbar--autoHide { -webkit-transform: translateX(80%); transform: translateX(80%); }
+
+.a-DevToolbar--autoHide.a-DevToolbar--left.is-active, .a-DevToolbar--autoHide.a-DevToolbar--right.is-active { -webkit-transform: translateX(0); transform: translateX(0); }
+
+.a-DevToolbar--autoHide.a-DevToolbar--top { -webkit-transform: translateY(-70%); transform: translateY(-70%); }
+
+.a-DevToolbar--autoHide.a-DevToolbar--bottom { -webkit-transform: translateY(70%); transform: translateY(70%); }
+
+.a-DevToolbar--autoHide.a-DevToolbar--top.is-active, .a-DevToolbar--autoHide.a-DevToolbar--bottom.is-active { -webkit-transform: translateY(0); transform: translateY(0); }
+
+.a-DevToolbar--left.a-DevToolbar--autoHide { left: 0; }
+
+.a-DevToolbar--left.a-DevToolbar--autoHide.is-active, .a-DevToolbar--left.a-DevToolbar--autoHide:hover { width: auto; }
+
+/* ========================================================================== Icon Only ========================================================================== */
+.a-DevToolbar--iconsOnly .a-Icon + .a-DevToolbar-buttonLabel { display: none; }
+
+.a-DevToolbar--iconsOnly .a-Button.a-Button--devToolbar { padding: 8px 16px; }
+
+.a-DevToolbar-uiSelector { border: 2px solid; background: transparent; position: absolute; z-index: 1010; }
+
+/* ========================================================================== Page Load Timing ========================================================================== */
+.apex-timeline.ui-dialog { padding: 8px; background-color: #222; background: #606060; background-color: rgba(0, 0, 0, 0.5); border-color: #303030 !important; border-color: rgba(0, 0, 0, 0.25) !important; border-radius: 2px; box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2); }
+
+.apex-timeline.ui-dialog .ui-dialog-titlebar { background: #202020; border: 0; border-radius: 0; }
+
+.apex-timeline.ui-dialog .ui-dialog-title { color: #eee; }
+
+#apex-timeline { background-color: #404040; color: #eee; font-size: 12px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.apex-timeline-rule { position: absolute; width: 1px; left: 100px; top: 0; background-color: #eee; }
+
+.apex-timeline-time { position: absolute; background-color: rgba(25, 25, 25, 0.75); padding: 4px; top: 0; border-radius: 2px; }
+
+.apex-timeline-entry { white-space: nowrap; }
+
+.apex-timeline-box { height: 8px; vertical-align: middle; background-color: #B22222; display: inline-block; }
+
+.apex-timeline-label { vertical-align: middle; padding: 2px 4px; }
+
+#apex-timeline .apex-timeline { margin: 0; list-style-type: none; }
+
+#apex-timeline .apex-timeline-entry { white-space: nowrap; margin: 0; }
+
+/* Timeline Colors ========================================================================== */
+.c-tl-page { background-color: lightgray; }
+
+.c-tl-redir { background-color: blue; }
+
+.c-tl-unload { background-color: blue; }
+
+.c-tl-cache { background-color: lightgray; }
+
+.c-tl-dns { background-color: lightblue; }
+
+.c-tl-conn { background-color: orange; }
+
+.c-tl-req { background-color: green; }
+
+.c-tl-resp { background-color: blue; }
+
+.c-tl-proc { background-color: #8A2BE2; }
+
+.c-tl-d1 { background-color: #9966CC; }
+
+.c-tl-d2 { background-color: #9370DB; }
+
+.c-tl-d3 { background-color: maroon; }
+
+.c-tl-measure { background-color: red; }
+
+.c-tl-mark { background-color: yellow; }
+
+.c-tl-res { background-color: brown; }
+
+.c-tl-load { background-color: maroon; }
+
+/* HUD Dialog ========================================================================== */
+body .ui-widget.ui-dialog--hud { padding: 8px; background: #606060; background-color: rgba(0, 0, 0, 0.5); border-color: #303030 !important; border-color: rgba(0, 0, 0, 0.25) !important; border-radius: 2px; box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2); }
+
+body .ui-widget.ui-dialog--hud .ui-accordion .ui-accordion-content { border-radius: 0px; border: none !important; padding: 12px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+body .ui-widget.ui-dialog.ui-dialog--hud .ui-dialog-titlebar { background: #202020; border-color: #333; border-top: solid 1px #333; border-left: solid 1px #333; border-right: solid 1px #333; padding: 12px; position: relative; border: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-top-left-radius: 2px; border-top-right-radius: 2px; box-sizing: border-box; }
+
+body .ui-widget.ui-dialog.ui-dialog--hud .ui-dialog-title { color: #EEE !important; float: left; margin: 0; line-height: 24px; font-size: 16px; font-weight: normal; white-space: nowrap; width: 90%; overflow: hidden; text-overflow: ellipsis; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+body .ui-widget.ui-dialog.ui-dialog--hud .ui-dialog-title .a-Icon { margin-top: 4px; }
+
+body .ui-widget.ui-dialog.ui-dialog--hud .ui-widget-content { color: #EEE; background: none #606060; border-bottom: solid 1px #333; border-left: solid 1px #333; border-right: solid 1px #333; font-size: 12px; }
+
+body .ui-widget.ui-dialog.ui-dialog--hud .ui-dialog-buttonset .ui-button { display: inline-block; text-decoration: none; padding: 5px 8px; margin: 0px 0px 0px 8px; border: solid 1px #333; background: #606060; color: #EEE !important; border-radius: 2px; }
+
+body .ui-widget.ui-dialog.ui-dialog--hud .ui-dialog-buttonset .ui-button:hover { background: #808080; }
+
+body .ui-widget.ui-dialog.ui-dialog--hud .ui-dialog-buttonset .ui-button--hot, body .ui-widget.ui-dialog.ui-dialog--hud .ui-dialog-buttonset .ui-button--hot:hover { background: #0572CE; }
+
+body .ui-widget.ui-dialog.ui-dialog--hud .ui-dialog-buttonset .ui-button span { padding: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+body .ui-widget.ui-dialog.ui-dialog--hud .ui-dialog-buttonpane { background: #404040; border-top: none; padding: inherit; margin: 0px; line-height: 16px; }
+
+body .ui-widget.ui-dialog.ui-dialog--hud .ui-dialog-titlebar-close { color: #fff; font-size: 16px; position: absolute; right: 12px; top: 15px; width: 16px; height: 16px !important; margin: 0; padding: 0; background: transparent; border: none; box-shadow: none; }
+
+body .ui-widget.ui-dialog.ui-dialog--hud .ui-dialog-titlebar-close.a-Icon:before { font-size: inherit; }
+
+body .ui-widget.ui-dialog.ui-dialog--hud .ui-slider-handle { border: 1px solid #404040; background: #CCC; border-radius: 100%; }
+
+@media only screen and (min-width: 1280px) { .a-Button.a-Button--devToolbar { padding: 8px 16px; } }
+
+@media only screen and (max-width: 768px) { .a-DevToolbar--top .a-Button.a-Button--devToolbar, .a-DevToolbar--bottom .a-Button.a-Button--devToolbar { padding: 8px 16px; } .a-DevToolbar--top .a-DevToolbar-buttonLabel, .a-DevToolbar--bottom .a-DevToolbar-buttonLabel { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; } }

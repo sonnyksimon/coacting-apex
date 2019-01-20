@@ -1,0 +1,38 @@
+/**  Import Compass and Theme Variables */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/******************************************************************************
+Icon List
+******************************************************************************/
+.a-IconList { margin: 4px; }
+
+.a-IconList-item { padding: 8px 4px; margin: 0 4px 4px 0; color: #6F6F6F; border-radius: 3px; }
+
+.a-IconList-item:hover { color: #444444; background-color: #FFFFFF; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) inset; }
+
+.a-IconList-item:focus { outline: none; box-shadow: X0 0 0 1px #0572ce inset; }
+
+.a-IconList-item.is-selected { background-color: #F2F2F2; box-shadow: 0 0 0 1px #e4e4e4 inset; }
+
+.a-IconList-item.is-selected.is-focused { color: #444444; box-shadow: 0 0 0 1px #0572ce inset, 0 1px 2px rgba(0, 0, 0, 0.1); outline: none; background-color: #FFF; }
+
+.a-IconList-item a { display: block; }
+
+.a-IconList-item a:hover { text-decoration: none; }
+
+.a-IconList-iconName { font-size: 11px; line-height: 14px; text-align: center; height: 42px; }
+
+.u-HCM .a-IconList-item.is-selected { border: 1px solid !important; }
+
+.u-HCM .a-IconList-item.is-focused { outline: 1px dotted !important; }

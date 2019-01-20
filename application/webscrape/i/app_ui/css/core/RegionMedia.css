@@ -1,0 +1,13 @@
+/**  Import Compass */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Region Media Block --- This structure and style is used when a region image is specified. ========================================================================== */
+.a-RegionMedia { display: block; }
+
+.a-RegionMedia-graphic { float: left; margin-right: 8px; }
+
+.a-RegionMedia-content { overflow: hidden; _overflow: visible; zoom: 1; }

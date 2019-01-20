@@ -1,0 +1,184 @@
+/** Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/******************************************************************************
+Properties
+******************************************************************************/
+.a-Property-buttonContainer, .a-Property-labelContainer, .a-Property-fieldContainer, .a-Property-unitContainer { padding: 4px 8px; }
+
+/******************************************************************************
+Property Error
+******************************************************************************/
+.a-Property.is-error { /* Make the text red when it is not focused to bring more attention */ }
+
+.a-Property.is-error .a-Property-label { color: #4C4242; }
+
+.a-Property.is-error .a-Property-field:not(:focus) { color: #FC181B; }
+
+.a-Property.is-error .icon-error { margin-right: 4px; color: #FC181B !important; }
+
+/******************************************************************************
+Property Warning
+******************************************************************************/
+.a-Property.is-warning .a-Property-label { color: #463403; }
+
+.a-Property.is-warning .icon-warning { margin-right: 4px; color: #F69F00 !important; }
+
+/******************************************************************************
+Label and Pre / Post Text
+******************************************************************************/
+.a-Property-label, .a-Property-setItemsHeader-header, .a-Property-unit { font-size: 12px; line-height: 16px; padding: 4px 0; color: rgba(0, 0, 0, 0.65); }
+
+.a-Property-checkbox-label, .a-Property-radio { font-size: 12px; line-height: 16px; color: #404040; }
+
+.a-Property-unit { font-size: 11px; }
+
+.a-Property-label--withIcon { line-height: 16px; padding: 4px 0; }
+
+/******************************************************************************
+Property Field - Used for property editor
+******************************************************************************/
+.a-Property-field { font-size: 12px; line-height: 16px; padding: 4px; height: 24px; background-color: transparent; color: #404040; border-radius: 0; }
+
+.a-Property-field:focus { border-color: #0572CE !important; background-color: #FFF; outline: none; border-radius: 2px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+.a-Property-field:not(.a-Property-field--textarea) { box-shadow: 4px 0 0 0 #FFF inset, -4px 0 0 0 #FFF inset, 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset; transition: box-shadow 0.1s ease; }
+
+.a-Property-field:not(.a-Property-field--textarea):focus, .a-Property.is-active .a-Property-field:not(.a-Property-field--textarea):focus { box-shadow: 0 0 0 1px #0572CE inset, 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+.a-Property.is-error.is-active .a-Property-field:not(.a-Property-field--textarea):focus { box-shadow: 0 0 0 1px #FC181B inset, 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+.a-Property.is-shadow.is-active .a-Property-field:not(.a-Property-field--textarea):focus { box-shadow: 0 0 0 1px #FC181B inset, 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+.a-PropertyEditor-propertyGroup:focus-within .a-Property-field:not(.a-Property-field--textarea) { box-shadow: 4px 0 0 0 #f3faff inset, -4px 0 0 0 #f3faff inset, 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset; }
+
+.a-Property.is-variable .a-Icon.icon-variable { color: #7FBEF2; margin-right: 4px; }
+
+.a-Property.is-variable .a-Property-field { box-shadow: 0 0 0 1px rgba(127, 190, 242, 0.5) inset; background-color: rgba(127, 190, 242, 0.05); border-radius: 2px; }
+
+.a-Property.is-warning .a-Property-field--textarea:focus { border-color: #FDB309 !important; }
+
+.a-Property.is-error .a-Property-field--textarea:focus { border-color: #FC181B !important; }
+
+/* Property Editor Select List ========================================================================== */
+.a-Property-field--select { -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; background-repeat: no-repeat; background-position: 100% 0; background-size: 32px 24px; color: inherit; padding-right: 30px; text-overflow: ' '; overflow: hidden; }
+
+body:not(:-moz-handler-blocked) .a-Property-field--select { padding: 2px 24px 2px 2px; }
+
+/* Text Area ========================================================================== */
+.a-Property-field--textarea, body .ui-widget .a-Property-field--textarea { line-height: 14px; font-size: 11px; height: auto; max-height: 320px; font-family: 'Consolas', 'Menlo', monospace; border: 1px solid #E0E0E0; background-color: #FFF; padding: 4px; }
+
+.a-Property-readOnly { font-size: 12px; line-height: 2; font-weight: bold; color: rgba(0, 0, 0, 0.65); }
+
+.a-Property-field--readOnly { box-shadow: none !important; }
+
+.a-Property-field--readOnly:focus { box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset !important; }
+
+.a-Property-setItemsTable-header { font-weight: normal; }
+
+.a-Property-setItemsTable .a-Property-field { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+
+/******************************************************************************
+Property Editor in Dialogs
+******************************************************************************/
+/******************************************************************************
+Combo Box Styles
+******************************************************************************/
+.a-Property-buttonContainer--comboBox .a-Button { margin-left: 8px; }
+
+/******************************************************************************
+Property Editor Buttons
+******************************************************************************/
+.a-Property-buttonContainer .a-Button { background-color: #FFF; }
+
+/******************************************************************************
+Checkbox + Radio Buttons
+******************************************************************************/
+@-webkit-keyframes checkmark { 0% { -webkit-transform: scale(0); transform: scale(0); }
+  75% { -webkit-transform: scale(1.25); transform: scale(1.25); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
+@keyframes checkmark { 0% { -webkit-transform: scale(0); transform: scale(0); }
+  75% { -webkit-transform: scale(1.25); transform: scale(1.25); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
+
+.a-Property-checkbox-input[type="checkbox"], .a-Property-radio-input[type="radio"] { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; /* Disabled State ========================================================================== */ /* Focus ========================================================================== */ }
+
+.a-Property-checkbox-input[type="checkbox"] + label, .a-Property-radio-input[type="radio"] + label { position: relative; padding-left: 20px; padding-right: 8px; cursor: pointer; }
+
+.a-Property-checkbox-input[type="checkbox"] + label:before, .a-Property-checkbox-input[type="checkbox"] + label:after, .a-Property-radio-input[type="radio"] + label:before, .a-Property-radio-input[type="radio"] + label:after { width: 14px; height: 14px; position: absolute; top: 3px; left: 0; display: block; content: ''; transition: .25s ease; }
+
+.a-Property-checkbox-input[type="checkbox"] + label:before, .a-Property-radio-input[type="radio"] + label:before { background-color: #FFFFFF; border: 1px solid rgba(0, 0, 0, 0.2); z-index: 90; }
+
+.a-Property-checkbox-input[type="checkbox"] + label:after, .a-Property-radio-input[type="radio"] + label:after { z-index: 100; opacity: 0; }
+
+.a-Property-checkbox-input[type="checkbox"]:disabled + label, .a-Property-radio-input[type="radio"]:disabled + label { opacity: .5; cursor: default; pointer-events: none; }
+
+.a-Property-checkbox-input[type="checkbox"]:disabled + label:before, .a-Property-radio-input[type="radio"]:disabled + label:before { opacity: .5; }
+
+.a-Property-checkbox-input[type="checkbox"]:focus + label:before, .a-Property-radio-input[type="radio"]:focus + label:before { border-color: #39f; box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px; }
+
+.a-Property-checkbox-input[type="checkbox"]:focus:checked + label:before, .a-Property-radio-input[type="radio"]:focus:checked + label:before { border-color: #39f; background-color: #39f; }
+
+.a-Property-checkbox-input[type="checkbox"]:hover:checked + label:after .a-Property-checkbox-input[type="checkbox"]:focus:checked + label:after, .a-Property-radio-input[type="radio"]:hover:checked + label:after .a-Property-checkbox-input[type="checkbox"]:focus:checked + label:after, .a-Property-checkbox-input[type="checkbox"]:hover:checked + label:after .a-Property-radio-input[type="radio"]:focus:checked + label:after, .a-Property-radio-input[type="radio"]:hover:checked + label:after .a-Property-radio-input[type="radio"]:focus:checked + label:after { opacity: 1; }
+
+/******************************************************************************
+Checkbox Specific
+******************************************************************************/
+.a-Property-checkbox-input[type="checkbox"] { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; /* Unchecked ========================================================================== */ /* Checked ========================================================================== */ }
+
+.a-Property-checkbox-input[type="checkbox"] + label:before { border-radius: 2px; }
+
+.a-Property-checkbox-input[type="checkbox"] + label:after { background-size: 16px; background-position: 50%; background-repeat: no-repeat; }
+
+.a-Property-checkbox-input[type="checkbox"]:hover + label:after, .a-Property-checkbox-input[type="checkbox"]:focus + label:after { -webkit-transform: scale(0); transform: scale(0); opacity: 0; }
+
+.a-Property-checkbox-input[type="checkbox"]:checked + label:before { border-color: #606060; background-color: #606060; }
+
+.a-Property-checkbox-input[type="checkbox"]:checked + label:after { background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCA0IDQiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0yLjc4NyAxLjI4N2wtMS4xNjIgMS4xNjEtLjQxMi0uNDExYy0uMDQ5LS4wNDktLjEyOC0uMDQ5LS4xNzcgMHMtLjA0OS4xMjggMCAuMTc3bC41LjUuMDg5LjAzNi4wODgtLjAzNyAxLjI1LTEuMjVjLjA0OS0uMDQ5LjA0OS0uMTI4IDAtLjE3N3MtLjEyNy0uMDQ4LS4xNzYuMDAxeiIvPjwvc3ZnPg==); opacity: 1; -webkit-transform: scale(1); transform: scale(1); -webkit-animation: checkmark .25s ease-in-out; animation: checkmark .25s ease-in-out; animation-film-mode: forwards; }
+
+/******************************************************************************
+Radio Specific
+******************************************************************************/
+@-webkit-keyframes radio { 0% { -webkit-transform: scale(3); transform: scale(3); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
+@keyframes radio { 0% { -webkit-transform: scale(3); transform: scale(3); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
+
+.a-Property-radio-input[type="radio"] { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; /* Unchecked ========================================================================== */ /* Checked ========================================================================== */ }
+
+.a-Property-radio-input[type="radio"] + label:before { border-radius: 16px; }
+
+.a-Property-radio-input[type="radio"] + label:after { width: 4px; height: 4px; margin: 5px; background-color: #FFF; border-radius: 100%; }
+
+.a-Property-radio-input[type="radio"]:checked + label:before { border-color: #606060; background-color: #606060; }
+
+.a-Property-radio-input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale(1); transform: scale(1); -webkit-animation: radio .15s ease-in-out; animation: radio .15s ease-in-out; animation-film-mode: forwards; }
+
+/******************************************************************************
+Yes / No Buttons
+******************************************************************************/
+.a-PropertyEditor--stacked .a-Property-radioGroup--buttonSet { padding: 0 4px; }
+
+.a-Property-radioGroup--buttonSet .a-Property-radio { margin-right: -1px; }
+
+.a-Property-radioGroup--buttonSet .a-Property-radio-input { /* Unchecked */ /* Checked */ /* Focused */ }
+
+.a-Property-radioGroup--buttonSet .a-Property-radio-input + label { transition: background-color .15s ease; padding: 2px 8px; }
+
+.a-Property-radioGroup--buttonSet .a-Property-radio-input + label:before, .a-Property-radioGroup--buttonSet .a-Property-radio-input + label:after { content: initial; }
+
+.a-Property-radioGroup--buttonSet .a-Property-radio-input:checked + label { background-color: #E8E8E8; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 2px 1px rgba(0, 0, 0, 0.05) inset; font-weight: bold; }
+
+.a-Property-radioGroup--buttonSet .a-Property-radio-input:focus + label { border-color: #0572CE !important; background-color: #E8E8E8; outline: none; border-radius: 2px; box-shadow: 0 0 0 1px #0572CE inset, 0 1px 2px rgba(0, 0, 0, 0.1); z-index: 1; }
+
+.a-Property-radioGroup--buttonSet .a-Property-radio-input:not(:checked):hover + label { box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+.a-Property-radioGroup--buttonSet .a-Property-radio-input:hover:active + label { box-shadow: 0 0 0 1px #0572CE inset, 0 1px 2px rgba(0, 0, 0, 0.1); background-color: #E0E0E0; }
+
+@media only screen and (max-width: 1024px) { .a-Property-buttonContainer, .a-Property-labelContainer, .a-Property-fieldContainer, .a-Property-unitContainer { padding: 2px 8px; } }

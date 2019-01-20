@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/** Import Compass */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/******************************************************************************
+
+File Name:    RecordView.scss
+Purpose:      Base styles for Record View (used in Interactive Grid component)
+
+******************************************************************************/
+/* Container ========================================================================== */
+.a-RV { font-size: 12px; line-height: 16px; box-sizing: border-box; }
+
+.a-GV * { box-sizing: inherit; }
+
+/* Toolbar -- Based on the Toolbar Component ========================================================================== */
+.a-RV-toolbar { padding: 8px; border-bottom: 1px solid; }
+
+.a-RV-toolbar .a-Toolbar-group { margin-bottom: 0; }
+
+/* Toolbar Static Content (Used for Record Number) ========================================================================== */
+.a-RV-toolbar .a-Toolbar-static { font-size: 11px; line-height: 24px; padding: 0 8px; }
+
+.a-RV-body { padding: 4px 0; }
+
+/* Read Only Checkbox (Temporary, needs refactoring) ========================================================================== */
+.ro-checkbox.is-checked::before { opacity: 1; }
+
+.ro-checkbox::before { content: ""; display: block; font-size: 12px; height: 12px; opacity: 0; position: absolute; transition: opacity 0.1s ease 0s; width: 12px; color: #404040; }
+
+.ro-checkbox.is-checked { border-color: rgba(0, 0, 0, 0.2); }
+
+.ro-checkbox { background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 2px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset; display: inline-block; font-family: "apex-5-icon-font" !important; font-style: normal !important; font-variant: normal !important; font-weight: normal !important; height: 16px; line-height: 1; padding: 1px; position: relative; text-transform: none !important; vertical-align: top; width: 16px; }
+
+.a-RV.a-RV--excludeNull .u-Form-fieldContainer.a-RV-field--null, .a-RV.a-RV--excludeHidden .u-Form-fieldContainer.a-RV-field--hidden { display: none; }
+
+.a-RV.a-RV--excludeNull .u-Form-fieldContainer.a-RV-field--null.is-required { display: block; }
+
+.a-RV-w-scroll { overflow: auto; }
+
+.a-Form-groupHeading { background-color: #f8f8f8; border-bottom: 1px solid #e8e8e8; font-size: 12px; line-height: 16px; margin: 0; padding: 6px; }
+
+.a-Form-groupHeading button { border: none; background-color: transparent; width: 100%; display: block; text-align: left; padding: 0; }
+
+.a-RV .is-deleted .u-Form-inputContainer { text-decoration: line-through; }
+
+.a-RV .a-Form-fieldContainer.is-required .a-Form-label:before { font-family: "apex-5-icon-font" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\e058"; color: red; vertical-align: top; }
+
+.a-RV .a-Form-labelContainer, .a-RV .a-Form-inputContainer { padding: 4px 8px; }
+
+.a-RV .a-Form-labelContainer:focus, .a-RV .a-Form-inputContainer:focus { outline: none; }
+
+.a-RV .a-Form-inputContainer { line-height: 24px; }
+
+.a-RV .a-GV-columnItem .a-Button--calendar { vertical-align: top; }
+
+/* Errors in Single Row View ========================================================================== */
+.a-RV .is-error .t-Alert { padding: 8px; color: #EA0000; }
+
+/* Record View Dialog ========================================================================== */
+.a-RVDialog-scroll { overflow: auto; }
+
+/* Splitter Support ========================================================================== */
+.a-IGDialog-body.a-Splitter { display: block; }
+
+.a-IGDialog-body.a-Splitter, .a-IGDialog-main, .a-IGDialog-body.a-Splitter, .a-IGDialog-side { display: block; min-width: inherit; }
+
+/* Icon List ========================================================================== */
+.a-RVDialog-list.a-IconList { box-sizing: border-box; padding: 0; margin: 0; }
+
+.a-RVDialog-list.a-IconList *, .a-RVDialog-list.a-IconList *:before, .a-RVDialog-list.a-IconList *:after { box-sizing: inherit; }
+
+.a-RVDialog-list.a-IconList .a-IconList-item { width: 100%; padding: 8px; line-height: 16px; margin: 0; border-radius: 0; }
+
+.a-RVDialog-list.a-IconList .a-IconList-label { font-size: 12px; line-height: 16px; margin-left: 4px; display: inline-block; vertical-align: top; }
+
+/* Yes No in Single Row View ========================================================================== */
+.a-RV .a-GV-columnItem .apex-button-group { max-width: 128px; min-height: 24px; }
+
+/* Radios and Checkboxes in Single Row View ========================================================================== */
+.a-RV .apex-item-radio input[type="radio"] { vertical-align: top; margin-right: 4px; }
+
+.a-RV .apex-item-checkbox input[type="checkbox"] { vertical-align: top; margin-right: 4px; }
+
+/* Removal of generic focus state in Single Row View ========================================================================== */
+.a-RV .u-Form-fieldContainer.is-focused { outline: none; background-color: #ecf3ff; }

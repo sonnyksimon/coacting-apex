@@ -1,0 +1,425 @@
+/* line 1, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList {
+  overflow: visible;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 6, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList a {
+  text-decoration: none;
+  display: block;
+}
+
+/* line 12, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-item {
+  overflow: visible;
+  position: relative;
+}
+/* line 15, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-item:focus {
+  outline: none;
+}
+/* line 17, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-item:focus .a-DetailedContentList-header {
+  box-shadow: 0 0 0 1px #2580D4 inset;
+}
+
+/* line 23, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-header:hover {
+  background-color: #F4F4F4;
+}
+
+/* line 27, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-icon, .a-DetailedContentList-title, .a-DetailedContentList-badge, .a-DetailedContentList-triggerOuter {
+  display: table-cell !important;
+  vertical-align: middle;
+  line-height: 16px;
+}
+
+/* line 33, ../scss/a-DetailedContentList.scss */
+body .a-DetailedContentList-icon {
+  width: 1%;
+  text-align: center;
+  color: #D0D0D0;
+  padding-left: 12px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+/* line 46, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-title {
+  width: 90%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #404040;
+  padding-left: 12px;
+}
+
+/* line 54, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-badge {
+  -webkit-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-align: right;
+  font-size: 11px;
+  color: #707070;
+  white-space: nowrap;
+  padding-right: 12px;
+  width: 15%;
+}
+
+/* line 67, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-triggerOuter {
+  text-align: right;
+  width: 1%;
+  padding-right: 12px;
+}
+
+/* line 73, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList--tooltip .a-DetailedContentList-triggerOuter {
+  display: none;
+}
+
+/* line 77, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-trigger {
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  padding-left: 1px;
+  padding-top: 3px;
+  box-shadow: 0 0 0 1px inset;
+  background: #FFF;
+  color: #A0A0A0;
+}
+/* line 87, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-trigger:hover {
+  color: #2580D4;
+}
+/* line 90, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-trigger:focus {
+  color: #2580D4;
+  box-shadow: 0 0 0 2px inset;
+  outline: none;
+}
+
+/* line 97, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-body {
+  background-color: whitesmoke;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 16px;
+  box-shadow: 6px 6px 6px -6px rgba(0, 0, 0, 0.025) inset, 6px -6px 6px -6px rgba(0, 0, 0, 0.025) inset;
+}
+
+/* line 108, ../scss/a-DetailedContentList.scss */
+.content-tooltip .a-DetailedContentList-body {
+  background-color: #164c7d;
+}
+
+/* line 112, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-body-layout {
+  width: 100%;
+  display: table;
+}
+
+/* line 117, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-body-header {
+  padding: 10px;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  background: #aaaaaa;
+}
+
+/* line 125, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-body-row {
+  display: table-row;
+}
+/* line 128, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-body-row:last-of-type .a-DetailedContentList-body-row-label, .a-DetailedContentList-body-row:last-of-type .a-DetailedContentList-body-row-content {
+  border-bottom-width: 0;
+}
+
+/* line 134, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-body-row-label, .a-DetailedContentList-body-row-content {
+  display: table-cell;
+  padding: 8px 12px;
+}
+
+/* line 139, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-body-row-label {
+  width: 45%;
+  color: black;
+}
+
+/* line 144, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-body-row-content {
+  color: gray;
+}
+
+/* line 149, ../scss/a-DetailedContentList.scss */
+.content-tooltip .a-DetailedContentList-body-row-label {
+  color: white;
+}
+/* line 152, ../scss/a-DetailedContentList.scss */
+.content-tooltip .a-DetailedContentList-body-row-content {
+  color: #abc7e2;
+}
+
+/* line 157, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-item.is-expanded .a-DetailedContentList-trigger {
+  background-color: #AAA;
+  box-shadow: 0 0 0 1px #AAA inset;
+  color: #FFF;
+}
+/* line 161, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-item.is-expanded .a-DetailedContentList-trigger:focus {
+  background-color: #2580D4;
+  box-shadow: 0 0 0 1px #2580D4 inset;
+}
+
+/* line 168, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList.a-DetailedContentList--tooltip .a-DetailedContentList-item {
+  position: relative;
+}
+/* line 170, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList.a-DetailedContentList--tooltip .a-DetailedContentList-item:last-of-type .a-DetailedContentList-body {
+  margin-top: 0;
+}
+/* line 174, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList.a-DetailedContentList--tooltip .a-DetailedContentList-header {
+  margin-right: 0px;
+}
+/* line 176, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList.a-DetailedContentList--tooltip .a-DetailedContentList-header:hover + .a-DetailedContentList-body {
+  /*display: block;*/
+}
+/* line 180, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList.a-DetailedContentList--tooltip .a-DetailedContentList-trigger {
+  display: none;
+}
+/* line 183, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList.a-DetailedContentList--tooltip .a-DetailedContentList-body {
+  width: 98%;
+  margin: 0 1%;
+  margin-top: -1px;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+}
+/* line 191, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList.a-DetailedContentList--tooltip .a-DetailedContentList-body-header {
+  display: block;
+}
+/* line 195, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList.a-DetailedContentList--tooltip .a-DetailedContentList-body:after {
+  border-color: #dddddd transparent;
+  border-style: solid;
+  border-width: 10px;
+  height: 0px;
+  width: 0px;
+  content: "";
+  border-top-width: 0;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  z-index: 1000;
+}
+/* line 208, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList.a-DetailedContentList--tooltip .a-DetailedContentList-body:before {
+  border-color: #aaaaaa transparent;
+  border-style: solid;
+  border-width: 11px;
+  height: 0px;
+  width: 0px;
+  content: "";
+  border-top-width: 0;
+  position: absolute;
+  top: -11px;
+  left: 19px;
+}
+
+/* line 223, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip {
+  padding: 0px;
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 0px;
+}
+/* line 232, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .a-DetailedContentList-body {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 239, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: 0px;
+}
+/* line 245, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.right {
+  left: 100%;
+  margin-left: -20px;
+}
+/* line 249, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.left {
+  height: 20px;
+  left: 0%;
+  margin-left: -30px;
+  top: 0px;
+}
+/* line 255, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.right.bottom, .ui-tooltip.content-tooltip .arrow.left.bottom {
+  top: auto;
+  bottom: 15px;
+}
+/* line 259, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.bottom:before {
+  border-color: #aaaaaa transparent;
+  border-style: solid;
+  border-width: 11px;
+  height: 0px;
+  width: 0px;
+  content: "";
+  border-bottom-width: 0;
+  bottom: -11px;
+  position: absolute;
+  left: 19px;
+}
+/* line 272, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.top:before {
+  border-color: #aaaaaa transparent;
+  border-style: solid;
+  border-width: 11px;
+  height: 0px;
+  width: 0px;
+  content: "";
+  border-top-width: 0;
+  top: -11px;
+  position: absolute;
+  left: 19px;
+}
+/* line 284, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.top:after {
+  border-color: #dddddd transparent;
+  border-style: solid;
+  border-width: 10px;
+  height: 0px;
+  width: 0px;
+  content: "";
+  border-top-width: 0;
+  top: -10px;
+}
+/* line 296, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.bottom:after {
+  border-color: #dddddd transparent;
+  border-style: solid;
+  border-width: 10px;
+  height: 0px;
+  width: 0px;
+  content: "";
+  border-bottom-width: 0;
+  bottom: -10px;
+}
+/* line 306, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.bottom.light:after {
+  border-color: #eaeaea transparent;
+}
+/* line 310, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.left:before {
+  border-color: #aaaaaa transparent;
+  border-style: solid;
+  border-width: 11px;
+  height: 0px;
+  width: 0px;
+  content: "";
+  border-left-width: 0;
+  border-color: transparent #aaaaaa transparent transparent;
+  bottom: -11px;
+  position: absolute;
+  left: 19px;
+}
+/* line 324, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.right:before {
+  /*border-color: #aaaaaa transparent;*/
+  border-style: solid;
+  border-width: 11px;
+  height: 0px;
+  width: 0px;
+  content: "";
+  border-right-width: 0;
+  border-color: transparent transparent transparent #D0D0D0;
+  top: 5px;
+  position: absolute;
+  left: 20px;
+}
+/* line 337, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.right:after {
+  border-style: solid;
+  border-width: 10px;
+  height: 0px;
+  width: 0px;
+  content: "";
+  border-right-width: 0;
+  border-color: transparent transparent transparent #164c7d;
+  top: 6px;
+}
+/* line 348, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.left:after {
+  border-color: #dddddd transparent;
+  border-style: solid;
+  border-width: 10px;
+  height: 0px;
+  width: 0px;
+  content: "";
+  border-left-width: 0;
+  border-color: transparent #164c7d transparent transparent;
+  bottom: -10px;
+}
+/* line 359, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow:after {
+  position: absolute;
+  left: 20px;
+  z-index: 1000;
+}
+
+/* line 367, ../scss/a-DetailedContentList.scss */
+.ui-helper-hidden-accessible {
+  display: none;
+}
+
+/* line 371, ../scss/a-DetailedContentList.scss */
+a.a-DetailedContentList-header {
+  display: table;
+}
+
+/* line 375, ../scss/a-DetailedContentList.scss */
+.a-DetailedContentList-header {
+  overflow: hidden;
+  display: table;
+  width: 100%;
+}
+
+/* line 382, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.right.bottom {
+  height: auto;
+  bottom: 38px;
+}
+/* line 386, ../scss/a-DetailedContentList.scss */
+.ui-tooltip.content-tooltip .arrow.left.bottom {
+  height: auto;
+  bottom: 38px;
+  bottom: 22px;
+}

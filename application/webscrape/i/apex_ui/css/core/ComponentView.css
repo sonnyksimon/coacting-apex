@@ -1,0 +1,117 @@
+/** Import Compass */
+/* ========================================================================== Component View (in Page Designer) ========================================================================== */
+/* Variables ========================================================================== */
+.temp-wrapper { -webkit-font-smoothing: antialiased; }
+
+/* Container and Columns ========================================================================== */
+.a-CV { background-color: #DADADA; table-layout: fixed; }
+
+.a-CV.u-Table { padding: 4px; }
+
+.a-CV-colWrap { background-color: #DADADA; height: 50vh; }
+
+.a-CV-colWrap.u-Table-fit { padding: 4px; }
+
+.a-CV-colWrap--pr { width: 40%; }
+
+.a-CV-colWrap--pp { width: 30%; }
+
+.a-CV-colWrap--sc { width: 30%; }
+
+.a-CV-col { background-color: #FFFFFF; border-radius: 2px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+
+.a-CV-colHeader { margin: 0; padding: 12px; font-size: 16px; font-weight: normal; line-height: 20px; }
+
+/* Groups ========================================================================== */
+.a-CV-group { border-width: 1px 0; border-style: solid; border-color: #E0E0E0; }
+
+.a-CV-group + .a-CV-group { border-top-width: 0; }
+
+.a-CV-group:last-child { border-bottom-width: 0; }
+
+.a-CV-groupHeader { background-color: #F4F4F4; *zoom: 1; position: relative; }
+
+.a-CV-groupHeader:before, .a-CV-groupHeader:after { content: " "; display: table; }
+
+.a-CV-groupHeader:after { clear: both; }
+
+.a-CV-groupHeader .a-Button--regionHeader { position: absolute; color: #A0A0A0; right: 0; top: 0; }
+
+.a-CV-groupHeader:hover .a-Button--regionHeader { color: #505050; }
+
+.a-CV-groupTitle { padding: 8px 40px 8px 12px; margin: 0; font-size: 12px; line-height: 16px; font-weight: normal; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.a-CV-groupBody { border-top: 1px solid #E0E0E0; }
+
+.a-CV-groupBody:empty { display: none; }
+
+/* Component Group ========================================================================== */
+.a-CV-componentGroup:first-child .a-CV-componentGroupTitle { border-top-width: 0; }
+
+.a-CV-componentGroupTitle { margin: 0; padding: 8px 12px 0 12px; font-size: 11px; color: #404040; font-weight: normal; border-top: 1px solid #E0E0E0; }
+
+.a-CV-componentGroupTitle-context { color: #707070; margin-right: 8px; }
+
+/* Component List ========================================================================== */
+.a-CV-components { list-style: none; margin: 0; padding: 8px 0; }
+
+.a-CV-components--page { width: 50%; display: table-cell; }
+
+.a-CV-components--page .a-CV-component:hover { background-color: inherit; }
+
+.a-CV-component { font-size: 10px; line-height: 14px; padding: 4px; color: #707070; display: table; width: 100%; table-layout: fixed; /** Hover State */ /** Is Conditional */ }
+
+.a-CV-component:hover { background-color: rgba(0, 0, 0, 0.05); }
+
+.a-CV-component.is-conditional { font-style: italic; }
+
+.a-CV-component.is-conditional .a-CV-icon { position: relative; }
+
+.a-CV-component.is-conditional .a-CV-icon:after { position: absolute; left: 0; display: inline-block; width: 6px; height: 6px; margin: 9px 0 0 9px; content: ''; border: 1px solid #fff; border-radius: 100%; background-color: rgba(143, 63, 175, 0.65); box-shadow: 0 0 0 1px rgba(143, 63, 175, 0.65); }
+
+/* Component Columns ========================================================================== */
+.a-CV-cell { display: table-cell; padding: 0 4px; text-overflow: ellipsis; vertical-align: top; }
+
+.a-CV-cell--seq { width: 24px; text-overflow: clip; }
+
+.a-CV-cell--primary { width: 50%; }
+
+.a-CV-cell--secondary { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.a-CV-cell--label { width: 30%; padding-left: 8px; text-align: right; }
+
+/* Component Name Cell ========================================================================== */
+.a-CV-cellWrap { display: table; width: 100%; table-layout: auto; }
+
+.a-CV-cellWrap .a-CV-icon { width: 20px; display: table-cell; padding-right: 4px; }
+
+.a-CV-cellWrap .a-CV-icon[class*="icon-region-"] { color: #7FBEF2; }
+
+.a-CV-cellWrap .a-CV-icon[class*="icon-item-"] { color: #979C9F; }
+
+.a-CV-cellWrap .a-CV-icon[class*="icon-button-"] { color: #56D49A; }
+
+.a-CV-cellWrap .a-CV-icon:before { vertical-align: top; }
+
+.a-CV-cellWrap .a-CV-cellLabel { line-height: 16px; display: inline-block; }
+
+.a-CV-indent { display: table-cell; width: 16px; position: relative; }
+
+.a-CV-indent:before { content: ''; opacity: .25; position: absolute; left: 0; top: -3px; width: 8px; border-right: 1px dotted; bottom: -4px; }
+
+.a-CV-icon { margin-right: 4px; color: #B0B0B0; }
+
+/* Active / Error States ========================================================================== */
+.a-CV-componentGroup, .a-CV-component { /** Error State */ /** Warning State */ }
+
+.a-CV-componentGroup.is-error, .a-CV-component.is-error { background-color: #FFEFEF; color: #4C4242; }
+
+.a-CV-componentGroup.is-warning, .a-CV-component.is-warning { background-color: #FFF8DF; color: #463403; }
+
+.a-CV-component { /** Selected State */ }
+
+.a-CV-component.is-selected { background-color: #0572CE  !important; color: #FFF !important; }
+
+.a-CV-component.is-selected a, .a-CV-component.is-selected .a-CV-icon { color: #FFF !important; }
+
+.a-CV-component.is-selected .a-CV-icon:after { background-color: #FFF; border-color: #0572CE; box-shadow: 0 0 0 1px #FFF; }

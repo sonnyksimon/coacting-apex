@@ -1,0 +1,86 @@
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Table Widget (used for Reflow Report + Toggle Column) ========================================================================== */
+/* Stroke Modifier ========================================================================== */
+.a-Table.u-Report td, .a-Table.u-Report th { border-color: transparent; }
+
+.a-Table.u-Report.table-stroke td, .a-Table.u-Report.table-stroke th { border-color: #E8E8E8; }
+
+/* Stripe Modifier ========================================================================== */
+.a-Table.u-Report tr:nth-child(even) td, .a-Table.u-Report tr:nth-child(even) th[scope="row"] { background-color: #FFF; }
+
+.a-Table.u-Report.table-stripe tr:nth-child(even) td, .a-Table.u-Report.table-stripe tr:nth-child(even) th[scope="row"] { background-color: #FAFAFA; }
+
+/* ========================================================================== Responsive tables should have 100% width ========================================================================== */
+.a-Table--reflow, .a-Table--columntoggle { width: 100%; }
+
+/* ========================================================================== Column Toggle ========================================================================== */
+/* Styles for the table columntoggle mode */
+button.a-Table-columntoggleBtn { float: right; margin-bottom: 12px; }
+
+.u-RTL button.a-Table-columntoggleBtn { float: left; }
+
+/* Remove top/bottom margins around the fieldcontain on check list */
+.a-Table-columntogglePopup { margin: 8px; }
+
+.a-Table--columntoggle { clear: both; }
+
+/* Hide all prioritized columns by default */
+
+/* Preset breakpoints if ".ui-responsive" class added to table */
+/* Show priority 1 at 320px (20em x 16px) */
+
+/* Show priority 2 at 480px (30em x 16px) */
+
+/* Show priority 3 at 640px (40em x 16px) */
+
+/* Show priority 4 at 800px (50em x 16px) */
+
+/* Show priority 5 at 960px (60em x 16px) */
+
+/* Show priority 6 at 1,120px (70em x 16px) */
+
+/* Unchecked manually: Always hide */
+.a-Table--columntoggle th.ui-table-cell-hidden, .a-Table--columntoggle td.ui-table-cell-hidden, .a-Table--columntoggle.ui-responsive th.ui-table-cell-hidden, .a-Table--columntoggle.ui-responsive td.ui-table-cell-hidden { display: none !important; }
+
+/* Checked manually: Always show */
+.a-Table--columntoggle th.ui-table-cell-visible, .a-Table--columntoggle td.ui-table-cell-visible, .a-Table--columntoggle.ui-responsive th.ui-table-cell-visible, .a-Table--columntoggle.ui-responsive td.ui-table-cell-visible { display: table-cell; }
+
+/* Styles for the table columntoggle mode */
+.a-Table--columntoggle.ui-responsive td .a-Table-cellLabel, .a-Table--columntoggle.ui-responsive th .a-Table-cellLabel { display: none; }
+
+/* ========================================================================== Reflow Report ========================================================================== */
+/* Mobile first styles: Begin with the stacked presentation at narrow widths */
+
+/* Breakpoint to show as a standard table at 560px (35em x 16px) or wider */
+
+/* Hack to make IE9 and WP7.5 treat cells like block level elements, scoped to ui-responsive class */
+/* Applied in a max-width media query up to the table layout breakpoint so we don't need to negate this*/
+@media only all { th.ui-table-priority-6, td.ui-table-priority-6, th.ui-table-priority-5, td.ui-table-priority-5, th.ui-table-priority-4, td.ui-table-priority-4, th.ui-table-priority-3, td.ui-table-priority-3, th.ui-table-priority-2, td.ui-table-priority-2, th.ui-table-priority-1, td.ui-table-priority-1 { display: none; } /* Hide the table headers */
+  .a-Table--reflow.ui-responsive thead td, .a-Table--reflow.ui-responsive thead th { display: none; }
+  /* Show the table cells as a block level element */
+  .a-Table--reflow.ui-responsive td, .a-Table--reflow.ui-responsive th { text-align: left; display: block; }
+  /* Add a fair amount of top margin to visually separate each row when stacked */
+  .a-Table--reflow.ui-responsive tbody tr + tr > td:first-child, .a-Table--reflow.ui-responsive tbody tr + tr > th:first-child { margin-top: 2.4rem; border-top-width: 1px; }
+  /* Make the label elements a percentage width */
+  .a-Table--reflow.ui-responsive td .a-Table-cellLabel, .a-Table--reflow.ui-responsive th .a-Table-cellLabel { padding: 6px; min-width: 30%; display: inline-block; margin: -6px 16px -6px -6px; }
+  /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
+  .a-Table--reflow.ui-responsive th .a-Table-cellLabel-top, .a-Table--reflow.ui-responsive td .a-Table-cellLabel-top { display: block; padding: 6px 0; margin: 6px 0; text-transform: uppercase; font-size: 12px; font-weight: normal; } }
+@media screen and (min-width: 320px) { .a-Table--columntoggle.ui-responsive th.ui-table-priority-1, .a-Table--columntoggle.ui-responsive td.ui-table-priority-1 { display: table-cell; } }
+@media screen and (min-width: 480px) { .a-Table--columntoggle.ui-responsive th.ui-table-priority-2, .a-Table--columntoggle.ui-responsive td.ui-table-priority-2 { display: table-cell; } }
+@media screen and (min-width: 640px) { .a-Table--columntoggle.ui-responsive th.ui-table-priority-3, .a-Table--columntoggle.ui-responsive td.ui-table-priority-3 { display: table-cell; } }
+@media screen and (min-width: 800px) { .a-Table--columntoggle.ui-responsive th.ui-table-priority-4, .a-Table--columntoggle.ui-responsive td.ui-table-priority-4 { display: table-cell; } }
+@media screen and (min-width: 960px) { .a-Table--columntoggle.ui-responsive th.ui-table-priority-5, .a-Table--columntoggle.ui-responsive td.ui-table-priority-5 { display: table-cell; } }
+@media screen and (min-width: 1120px) { .a-Table--columntoggle.ui-responsive th.ui-table-priority-6, .a-Table--columntoggle.ui-responsive td.ui-table-priority-6 { display: table-cell; } }
+@media (min-width: 560px) { /* Show the table header rows */
+  .a-Table--reflow.ui-responsive td, .a-Table--reflow.ui-responsive th, .a-Table--reflow.ui-responsive tbody th, .a-Table--reflow.ui-responsive tbody td, .a-Table--reflow.ui-responsive thead td, .a-Table--reflow.ui-responsive thead th { display: table-cell; margin: 0; }
+  /* Hide the labels in each cell */
+  .a-Table--reflow.ui-responsive td .a-Table-cellLabel, .a-Table--reflow.ui-responsive th .a-Table-cellLabel { display: none; } }
+@media (max-width: 560px) { .a-Table--reflow.ui-responsive td, .a-Table--reflow.ui-responsive th { width: 100%; box-sizing: border-box; float: left; clear: left; text-align: left !important; border-bottom-color: rgba(0, 0, 0, 0.05); border-top-width: 0; }
+  .u-RTL .a-Table--reflow.ui-responsive td, .u-RTL .a-Table--reflow.ui-responsive th { text-align: right; }
+  .a-Table--reflow.ui-responsive tr:first-child td:first-child { border-top-width: 1px; }
+  .a-Table--reflow.ui-responsive tr td:last-child { border-bottom-width: 1px; } }

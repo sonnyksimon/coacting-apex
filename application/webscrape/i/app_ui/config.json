@@ -1,0 +1,19 @@
+{
+  "build_root": "app_ui/",
+  "dir": {
+    "core": {
+      "src":  ["modules/*.scss", "core/**/*.scss"],
+      "name": "Core",
+      "watch": ["core/**/*.scss", "modules/**/*.scss", "util/**/*.scss"],
+      "paths": [
+        [".*\/modules\/(.*)", "core/$1"]
+    ]
+    },
+    "theme": {
+      "src":  ["theme/**/*.scss"],
+      "shouldFlatten": true,
+      "name": "Theme-Standard",
+      "watch": ["theme/**/*.scss"]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "_variables";
+
+.a-BarChart {
+  .a-BarChart-item {
+    &:hover {
+      .region-hover();
+    }
+    .a-BarChart-value {
+      .text-normal();
+//      .slight-text-contrast(@g_Region-BG);
+    }
+  }
+
+  .a-BarChart-item img {
+    border-radius: 2px;
+  }
+  .a-BarChart-bar {
+    background-color: rgba(0,0,0,.025);
+  }
+}
+.a-BarChart--classic {
+  .a-BarChart-bar,  .a-BarChart-filled {
+    border-radius: 1px;
+  }
+  .a-BarChart-item:hover .a-BarChart-bar {
+    background-color: rgba(0,0,0,.05);
+  }
+}
+.a-BarChart--modern {
+  .a-BarChart-bar,  .a-BarChart-filled {
+    border-radius: 1px;
+  }
+  .a-BarChart-item:hover .a-BarChart-bar {
+    background-color: rgba(0,0,0,.05);
+  }
+}
+
+.a-BarChart-filled {
+  background-color: @g_Accent-BG;
+}

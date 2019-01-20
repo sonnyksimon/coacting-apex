@@ -1,0 +1,157 @@
+@import "_variables";
+
+/**
+ * Colorized Background
+ */
+.t-Alert--wizard {
+  border-radius: @g_Container-BorderRadius
+}
+.t-Alert--colorBG {
+  &.t-Alert--warning,
+  &.t-Alert--yellow {
+    @bg: lighten(@g_Warning-BG,45%);
+    background-color: @bg;
+    //    background-color: lighten(#FFCB3D,32%);
+    h2, h3 {
+      color: fade(contrast( @bg, desaturate(darken( @bg,  75%), 100%), desaturate(lighten( @bg,  75%), 50%)), 100%);
+    }
+    .t-Alert-body {
+      color: fade(contrast( @bg, desaturate(darken( @bg,  50%), 100%), desaturate(lighten( @bg,  50%), 50%)), 100%);
+    }
+  }
+  &.t-Alert--success {
+    @bg: lighten(@g_Success-BG,38%);
+    background-color: @bg;
+    h2, h3 {
+      color: fade(contrast( @bg, desaturate(darken( @bg,  75%), 100%), desaturate(lighten( @bg,  75%), 50%)), 100%);
+    }
+    .t-Alert-body {
+      color: fade(contrast( @bg, desaturate(darken( @bg,  50%), 100%), desaturate(lighten( @bg,  50%), 50%)), 100%);
+    }
+  }
+  &.t-Alert--danger,
+  &.t-Alert--red {
+    @bg: lighten(@g_Danger-BG,50%);
+    background-color: @bg;
+    h2, h3 {
+      color: fade(contrast( @bg, desaturate(darken( @bg,  75%), 100%), desaturate(lighten( @bg,  75%), 50%)), 100%);
+    }
+    .t-Alert-body {
+      color: fade(contrast(@bg, desaturate(darken(@bg,  50%), 100%), desaturate(lighten(@bg,  50%), 50%)), 100%);
+    }
+  }
+  &.t-Alert--info {
+    @bg: lighten(@g_Info-BG,42%);
+    background-color: @bg;
+    h2, h3 {
+      color: fade(contrast( @bg, desaturate(darken( @bg,  75%), 100%), desaturate(lighten( @bg,  75%), 50%)), 100%);
+    }
+    .t-Alert-body {
+      color: fade(contrast(  @bg, desaturate(darken(  @bg,  50%), 100%), desaturate(lighten(  @bg,  50%), 50%)), 100%);
+    }
+  }
+}
+
+
+/**
+ * Modifier: Warning
+ */
+.t-Alert--warning,
+.t-Alert--yellow {
+  .t-Alert-icon {
+    color: @g_Warning-BG;
+  }
+  &.t-Alert--horizontal .t-Alert-icon {
+    @bg: lighten(@g_Warning-BG,45%);
+    background-color: @bg;
+  }
+}
+
+
+/**
+ * Modifier: Success
+ */
+.t-Alert--success {
+  .t-Alert-icon {
+    color: @g_Success-BG;
+  }
+  &.t-Alert--horizontal .t-Alert-icon {
+    @bg: lighten(@g_Success-BG,38%);
+    background-color: @bg;
+  }
+}
+
+/**
+ * Modifier: Information
+ */
+.t-Alert--info {
+  .t-Alert-icon {
+    color: @g_Info-BG;
+  }
+  &.t-Alert--horizontal .t-Alert-icon {
+    @bg: lighten(@g_Info-BG,42%);
+    background-color: @bg;
+  }
+}
+
+/**
+ * Modifier: Success
+ */
+.t-Alert--danger,
+.t-Alert--red {
+  .t-Alert-icon {
+    color: @g_Danger-BG;
+  }
+  &.t-Alert--horizontal .t-Alert-icon {
+    @bg: lighten(@g_Danger-BG,50%);
+    background-color: @bg;
+  }
+}
+
+
+.t-Alert--wizard {
+  .t-Alert-inset {
+    border-radius: 2px;
+  }
+}
+
+.t-Alert--horizontal, .t-Alert--wizard {
+  border-radius: 2px;
+  background-color: @g_Region-BG;
+  color: @g_Region-FG;
+}
+.t-Alert--page {
+  .t-Body-alert & {box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) inset;}
+  &.t-Alert--success {
+    border-radius: 0;
+    background-color: rgba(74, 170, 44, 0.9);
+    .t-Icon,
+    .t-Alert-title {
+      color: #FFF;
+    }
+    .respond-to(xs-small-screens-out) {
+      border-radius: 2px;
+    }
+  }
+  .t-Button--closeAlert {
+    color: rgba(0,0,0,.5);
+  }
+}
+
+
+.t-Alert--horizontal {
+  .t-Alert-body {
+    font-size: 1.3rem;
+  }
+}
+
+.t-Alert--page {
+  &.t-Alert--success {
+    .t-Alert-title {
+      font-size: 1.3rem;
+    }
+  }
+  .aErrMsgTitle {
+    font-size: 1.3rem;
+  }
+}

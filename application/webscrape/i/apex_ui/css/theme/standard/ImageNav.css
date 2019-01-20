@@ -1,0 +1,33 @@
+/**  Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/* ========================================================================== Image Navigation List ========================================================================== */
+.a-ImageNav-link { border-radius: 2px; }
+
+.a-ImageNav-item:first-child .a-ImageNav-link { border-left: none; }
+
+.a-ImageNav-link:hover { background-color: #F8F8F8; box-shadow: 0 0 0 1px #EDEDED inset; }
+
+.a-ImageNav-link:hover .a-ImageNav-img { background-color: #E0E0E0; }
+
+.a-ImageNav-link:focus { outline: none; background-color: #F8F8F8; box-shadow: 0 0 0 1px #0572ce inset; }
+
+.a-ImageNav-img { background-color: #E0E0E0; }
+
+.a-ImageNav-label { color: #707070; }
+
+/* ========================================================================== Context Colors ========================================================================== */
+.a-ImageNav.app-builder .a-ImageNav-img, .a-ImageNav-link.app-builder .a-ImageNav-img { background-color: #399BEA; }
+
+.a-ImageNav.pkg-apps .a-ImageNav-img, .a-ImageNav-link.pkg-apps .a-ImageNav-img { background-color: #F54B21; }
+
+.a-ImageNav.sql-workshop .a-ImageNav-img, .a-ImageNav-link.sql-workshop .a-ImageNav-img { background-color: #24CB7F; }
+
+.a-ImageNav.team-dev .a-ImageNav-img, .a-ImageNav-link.team-dev .a-ImageNav-img { background-color: #FFBE2A; }
+
+.a-ImageNav.instance-admin .a-ImageNav-img, .a-ImageNav-link.instance-admin .a-ImageNav-img { background-color: #BDC3C7; }
+
+.a-ImageNav.workspace-admin .a-ImageNav-img, .a-ImageNav-link.workspace-admin .a-ImageNav-img { background-color: #BDC3C7; }

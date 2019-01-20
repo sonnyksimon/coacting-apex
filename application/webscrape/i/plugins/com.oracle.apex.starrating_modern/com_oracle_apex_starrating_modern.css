@@ -1,0 +1,77 @@
+.star-rating-item .star-rating {
+    padding: 2px 4px;
+}
+
+.star-rating-inner, .star-rating-clear {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-align: left;
+}
+
+
+.u-RTL .star-rating-inner {
+    text-align: right;
+}
+
+.star-rating-clear {
+    margin-right: 4px;
+}
+
+.star-rating-inner.is-focused {
+    background-color: fff !important;
+    border-color: #0572ce !important;
+}
+
+.star-rating input,
+.star-rating input:focus,
+.a-GV-columnItem .star-rating input,
+.a-GV-columnItem .star-rating input:focus {
+    width:0 !important;
+    height:0 !important;
+    padding: 0 !important;
+    border-width: 0 !important;
+}
+
+.star-rating-stars, .star-rating-bg {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+}
+
+.star-rating-stars {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* inactive stars */
+.star-rating-bg .star-rating-star {
+    color: #e0e0e0;
+}
+
+/* inactive stars in Interactive Grid "non-edit" mode */
+.star-rating-grid .star-rating-bg .star-rating-star {
+    color: #e0e0e0;
+}
+
+/* active stars; colored display only for item and IG "edit mode"  */
+.star-rating-enabled .star-rating-stars .star-rating-star {
+    color: red;
+}
+
+/* inactive stars for disabled item */
+.star-rating-disabled .star-rating-bg .star-rating-star {
+    color: #e0e0e0;
+}
+
+/* don't display "clear" button for disabled item */
+.star-rating-disabled .star-rating-clear {
+    display: none;
+}
+
+/* don't show any stars when value is NULL */
+.star-rating-is-null .star-rating-star {
+    visibility: hidden;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "oj-bind-text",
+  "version": "4.2.0",
+  "jetVersion": "4.2.0",
+  "displayName": "Bind Text",
+  "preview": true,
+  "description": "ojBindText",
+  "properties": {
+    "value": {
+      "description": "The value of the text node.",
+      "type": "string",
+      "displayName": "Value"
+    }
+  }
+}

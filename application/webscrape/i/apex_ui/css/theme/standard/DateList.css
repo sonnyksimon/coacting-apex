@@ -1,0 +1,26 @@
+/**  Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/* ========================================================================== Date List ========================================================================== */
+.a-DateList-item { box-shadow: 0 -1px 0 #F8F8F8 inset; }
+
+.a-DateList-item:hover { background-color: #FAFAFA; }
+
+.a-DateList-icon { background-color: #FFF; }
+
+.a-DateList-icon--warning .a-Icon { color: #FACB09; }
+
+.a-DateList-icon--danger { background-color: #FA0000; border-color: #CA0000; }
+
+.a-DateList-icon--danger .a-Icon { color: #FFFFFF; }
+
+.a-DateList-day { color: #404040; }
+
+.a-DateList-month { color: #EA0000; }
+
+.a-DateList-desc { color: #404040; }
+
+.a-DateList-attribute { color: #707070; }

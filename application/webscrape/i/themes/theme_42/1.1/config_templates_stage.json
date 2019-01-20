@@ -1,0 +1,4 @@
+{
+    "name": "stage",
+    "connection": "#INTERNAL#config/51stage.json"
+}

@@ -1,0 +1,28 @@
+/* ========================================================================== Grid Layout Editor ========================================================================== */
+.a-GridLayout { padding: 8px; }
+
+.a-GridLayout-page > h3, .a-GridLayout-region > h3, .a-GridLayout-pageItem > h3, .a-GridLayout-button > h3 { margin: 0; }
+
+.a-GridLayout-region > h3.is-draggable, .a-GridLayout-pageItem > h3.is-draggable, .a-GridLayout-button > h3.is-draggable { cursor: move; }
+
+.a-GridLayout-flow .a-GridLayout-button, .a-GridLayout-flow .a-GridLayout-pageItem, .a-GridLayout-flow .a-GridLayout-placeholder, .a-GridLayout-buttonGroup > .a-GridLayout-buttonContainer { float: left; }
+
+.a-GridLayout-flow .a-GridLayout-placeholder, .a-GridLayout-buttonGroup > .a-GridLayout-buttonContainer { width: 30px; }
+
+.a-GridLayout-regions.is-active, .a-GridLayout-items.is-active, .a-GridLayout-buttons.is-active { overflow: hidden; }
+
+.a-GridLayout-regions.is-active, .a-GridLayout-items.is-active, .a-GridLayout-buttons.is-active { padding: 4px; min-height: 8px; }
+
+.a-GridLayout-grid, .a-GridLayout-templateGrid, .a-GridLayout-buttonRow { border-collapse: collapse; border-spacing: 0; width: 100%; table-layout: fixed; }
+
+.a-GridLayout-grid td, .a-GridLayout-templateGrid td { vertical-align: top; }
+
+.a-GridLayout-grid.is-active { border-collapse: separate; padding: 0; }
+
+.a-GridLayout-grid.is-active td { border: 1px solid; padding: 2px !important; }
+
+.a-GridLayout-grid.is-active .a-GridLayout-pageItem, .a-GridLayout-grid.is-active .a-GridLayout-region, .a-GridLayout-grid.is-active .a-GridLayout-button { margin: 0 !important; }
+
+.a-GridLayout-buttonGroup { overflow: hidden; }
+
+.a-GridLayout-flow .a-GridLayout-placeholder, .a-GridLayout-buttonGroup > .a-GridLayout-buttonContainer { min-width: 60px; width: auto; }

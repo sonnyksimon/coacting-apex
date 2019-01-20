@@ -1,0 +1,15 @@
+/** Import Compass */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/******************************************************************************
+
+File Name:    Icon.scss
+Purpose:      Custom APEX Icons
+
+******************************************************************************/
+/* Report Edit Icons -- APEX uses the <img> tag to embed edit icons for report columns. To support  high resolution displays, the .png files for these icons are sized at  32x32, however to display them at their intended size, we must use CSS to  set the dimensions and display of these icons. ========================================================================== */
+.apex-edit-pencil, .apex-edit-pencil-alt, .apex-edit-page, .apex-edit-view { width: 16px; height: 16px; display: inline-block; }

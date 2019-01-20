@@ -1,0 +1,52 @@
+/**  Import Compass and Theme Variables */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/******************************************************************************
+Splitter Images
+******************************************************************************/
+.a-Splitter-barV.is-focused.is-collapsed .a-Splitter-thumb, .a-Splitter-barV.is-focused.a-Splitter--end .a-Splitter-thumb { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgMjQgOCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEyIDZsLTQtNGg4eiIvPjwvc3ZnPg=="); }
+
+.a-Splitter-barH.is-focused .a-Splitter-thumb, .a-Splitter-barH.is-focused.a-Splitter--end.is-collapsed .a-Splitter-thumb { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgOCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIgMTJsNC00djh6Ii8+PC9zdmc+"); }
+
+.a-Splitter-barH.is-focused.is-collapsed .a-Splitter-thumb, .a-Splitter-barH.is-focused.a-Splitter--end .a-Splitter-thumb { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgOCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTYgMTJsLTQgNHYtOHoiLz48L3N2Zz4="); }
+
+.a-Splitter-barV.is-focused .a-Splitter-thumb, .a-Splitter-barV.is-focused.a-Splitter--end.is-collapsed .a-Splitter-thumb { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgMjQgOCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEyIDJsNCA0aC04eiIvPjwvc3ZnPg=="); }
+
+/******************************************************************************
+Splitter Styles
+******************************************************************************/
+/** Splitter Bar */
+.a-Splitter-barH, .a-Splitter-barV, .a-Splitter-barH.is-disabled:hover, .a-Splitter-barV.is-disabled:hover { background-color: #EAEAEA; }
+
+.a-Splitter-barH { box-shadow: 1px 0 0 #E0E0E0 inset, -1px 0 0 #E0E0E0 inset; }
+
+.a-Splitter-barV { box-shadow: 0 1px 0 #E0E0E0 inset, 0 -1px 0 #E0E0E0 inset; }
+
+/** Splitter Bar Hover and Focus States */
+.a-Splitter-barH:hover, .a-Splitter-barV:hover { background-color: #FFF; }
+
+.a-Splitter-barH.is-active, .a-Splitter-barV.is-active { box-shadow: 0 0 0 1px #399bea inset, 0 0 2px rgba(0, 0, 0, 0.1) !important; background-color: #FFF; z-index: 1000; }
+
+.a-Splitter-barH.is-focused, .a-Splitter-barV.is-focused { box-shadow: 0 0 0 1px #399bea inset, 0 0 2px rgba(0, 0, 0, 0.1) !important; background-color: #399BEA; }
+
+.a-Splitter-barH.is-disabled .a-Splitter-thumb, .a-Splitter-barV.is-disabled .a-Splitter-thumb { background-image: none !important; }
+
+/** Splitter Bar Button Focus and Hovers */
+.a-Splitter-barH button:hover, .a-Splitter-barV button:hover, .a-Splitter-barH button:hover:focus, .a-Splitter-barV button:hover:focus { box-shadow: 0 0 0 1px #399bea inset; background-color: #FFF; }
+
+.a-Splitter-barH button:focus, .a-Splitter-barV button:focus { outline: none; }
+
+.a-Splitter-barH button:focus { box-shadow: 1px 0 0 #399BEA inset, -1px 0 0 #399BEA inset; }
+
+.a-Splitter-barV button:focus { box-shadow: 0 1px 0 #399BEA inset, 0 -1px 0 #399BEA inset; }
+
+.a-Splitter-barH.is-focused button:hover, .a-Splitter-barV.is-focused button:hover { background-color: rgba(0, 0, 0, 0.25); }
+
+.a-Splitter-barH.is-disabled button:hover, .a-Splitter-barV.is-disabled button:hover { background-color: transparent; box-shadow: none; }

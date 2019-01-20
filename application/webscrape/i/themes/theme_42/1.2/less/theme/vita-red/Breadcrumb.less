@@ -1,0 +1,42 @@
+/**
+ * Import Compass
+ */
+
+@import "_variables";
+
+/* ==========================================================================
+   Breadcrumb
+   ========================================================================== */
+.t-Breadcrumb-item {
+  &:after {
+    color: fadeout(@g_Body-Text,25%);
+  }
+  &, a {
+    color: fade(contrast(@g_Body-BG, desaturate(darken(@g_Body-BG,  65%), 100%), desaturate(lighten(@g_Body-BG,  65%), 50%)), 100%)
+  }
+  a:hover,
+  a:focus {
+    color: @g_Link-Base;
+    text-decoration: underline;
+    outline: none;
+  }
+}
+.t-Body-title-shrink .t-BreadcrumbRegion--useBreadcrumbTitle .t-Breadcrumb-item.is-active,
+.t-Body-title-shrink .t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-titleText {
+  color: fade(contrast(@g_Body-BG, desaturate(darken(@g_Body-BG,  75%), 100%), desaturate(lighten(@g_Body-BG,  75%), 50%)), 100%)
+}
+@media only screen and (max-width: 640px) {
+  .t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-titleText {
+    color: fade(contrast(@g_Body-BG, desaturate(darken(@g_Body-BG,  75%), 100%), desaturate(lighten(@g_Body-BG,  75%), 50%)), 100%)
+  }
+}
+.t-Breadcrumb-item .t-Icon {
+  &:hover {
+    color: @g_Accent-BG;
+  }
+}
+
+.t-BreadcrumbRegion--useBreadcrumbTitle .t-Breadcrumb-item.is-active,
+.t-BreadcrumbRegion-titleText {
+      color: @g_Body-Title-FG;
+}

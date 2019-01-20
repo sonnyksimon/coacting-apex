@@ -1,0 +1,29 @@
+/** Import Compass and Theme Variables */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/* Variables ========================================================================== */
+/* Toolbar Wrapper ========================================================================== */
+/* Toolbar Groups ========================================================================== */
+.a-Toolbar-group { border-color: #F0F0F0; }
+
+/* Toolbar Text Input ========================================================================== */
+.a-Toolbar-inputText { box-shadow: 0 0 0 1px #E4E4E4 inset; }
+
+.a-Toolbar-inputText:focus { outline: 1px dotted; }
+
+/* Toolbar Select Lists ========================================================================== */
+.a-Toolbar-selectList { border-color: #E4E4E4; background-color: #F4F4F4; color: #404040; }
+
+/* Toolbar Buttons ========================================================================== */
+/* Toolbar Radios ========================================================================== */

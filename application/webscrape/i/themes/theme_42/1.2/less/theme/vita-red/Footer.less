@@ -1,0 +1,15 @@
+/** 
+ * Import Compass and Theme Variables
+ */
+
+@import "_variables";
+
+/* Footer Top Button
+   ========================================================================== */
+.t-Footer-topButton {
+  background-color: @g_Region-BG;
+  color: contrast(@g_Body-Text, darken(@g_Body-Text,  20%), lighten(@g_Body-Text,  20%),  43%);
+  &:focus {
+    box-shadow: 0 0 0 1px @g_Focus inset;
+  }
+}

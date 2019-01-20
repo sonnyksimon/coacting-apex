@@ -1,0 +1,58 @@
+/** Import Compass and Theme Variables */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/* ========================================================================== Interactive Grid Dialog ========================================================================== */
+/* Variables ========================================================================== */
+/* Containers ========================================================================== */
+/* Region ========================================================================== */
+.a-IGDialog-header, .a-IGDialog-footer, .a-IGDialog-side { border-color: #E8E8E8; }
+
+/* Titles and Text ========================================================================== */
+/* Dialog List ========================================================================== */
+.a-IGDialog-list-item { border-bottom: 1px solid rgba(0, 0, 0, 0.075); background-clip: padding-box; transition: .1s ease; }
+
+.a-IGDialog-list-item:hover { background-color: rgba(0, 0, 0, 0.05); }
+
+.a-IGDialog-list-item.is-active { background-color: rgba(0, 0, 0, 0.075); }
+
+.a-IGDialog-list-link { color: #404040; }
+
+/* Fancy Checkbox ========================================================================== */
+.a-IGDialog-label-checkbox { border: 1px solid #C0C0C0; }
+
+.a-IGDialog-label-checkbox:before { color: #404040; }
+
+.a-IGDialog-label-checkbox:active { background-color: #E0E0E0; }
+
+.a-IGDialog-input-checkbox:focus + .a-IGDialog-label-checkbox { border-color: #4696fc; box-shadow: 0 0 2px 0 rgba(70, 150, 252, 0.5); }
+
+/* Forms ========================================================================== */
+.a-IGDialog .a-Button--helpButton { opacity: .25; }
+
+.a-IGDialog .a-Button--helpButton:hover { opacity: 1; }
+
+/* Toolbars ========================================================================== */
+.a-IGDialog-toolbar--primary .a-Toolbar-buttonGroup .a-Toolbar-button { border: 1px solid transparent; }
+
+.a-IGDialog-toolbar--primary .a-Toolbar-buttonGroup .a-Toolbar-input:checked + .a-Toolbar-button { box-shadow: none; background-color: #FFF; border: 1px solid #E0E0E0; margin-bottom: -1px; border-bottom-color: #FFF; }
+
+/* Main Header ========================================================================== */
+/* Toolbar Radios ========================================================================== */
+.a-IGDialog-buttonGroup .a-IGDialog-input:checked + .a-IGDialog-button { box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1) inset, 0 0 0 1px rgba(0, 0, 0, 0.1) inset; background-color: #D0D0D0; }
+
+/* IGDialog Buttons ========================================================================== */
+.a-Button.a-IGDialog-button { box-shadow: 0 0 0 1px #E4E4E4 inset; background-color: #F4F4F4; }
+
+/* Side Bottom Toolbar ========================================================================== */
+.a-IGDialog-side .a-Toolbar { border-color: rgba(0, 0, 0, 0.1); }

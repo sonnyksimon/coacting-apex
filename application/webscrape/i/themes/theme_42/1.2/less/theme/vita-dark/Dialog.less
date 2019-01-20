@@ -1,0 +1,17 @@
+@import "_variables";
+
+.t-Dialog {
+  background-color: @g_Region-BG;
+}
+
+/* Scrollbars
+   ========================================================================== */
+.t-Dialog {
+  ::-webkit-scrollbar-thumb {
+    background-color: contrast(@g_Region-BG, darken(@g_Region-BG,  25%), lighten(@g_Region-BG,  25%),  43%);
+    &:hover { background-color: contrast(@g_Region-BG, darken(@g_Region-BG,  30%), lighten(@g_Region-BG,  30%),  43%) }
+  }
+  &::-webkit-scrollbar-track {
+    background-color: @g_Region-BG;
+  }
+}

@@ -1,0 +1,35 @@
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Page Footer ========================================================================== */
+.t-Footer { flex-shrink: 0; border-top: 1px solid rgba(0, 0, 0, 0.05); background-color: rgba(0, 0, 0, 0.025); padding: 16px; display: flex; flex-direction: row; align-items: center; }
+
+/* Footer Body ========================================================================== */
+.t-Footer-body { flex-grow: 1; margin-right: 16px; }
+
+.u-RTL .t-Footer-body { margin-right: 0; margin-left: 1.6rem; }
+
+.t-Footer-content:empty { display: none; }
+
+/* APEX Footer ========================================================================== */
+.t-Footer-apex { font-size: 1.2rem; line-height: 2.0rem; }
+
+.t-Footer-apex a:hover { text-decoration: underline; }
+
+.t-Footer-version, .t-Footer-customize, .t-Footer-srMode { display: inline-block; margin-right: 0.8rem; }
+
+.t-Footer-version:last-child, .t-Footer-customize:last-child, .t-Footer-srMode:last-child { margin-right: 0; }
+
+.u-RTL .t-Footer-version, .u-RTL .t-Footer-customize, .u-RTL .t-Footer-srMode { margin-right: 0; margin-left: 0.8rem; }
+
+.u-RTL .t-Footer-version:last-child, .u-RTL .t-Footer-customize:last-child, .u-RTL .t-Footer-srMode:last-child { margin-left: 0; }
+
+/* Footer Top Button ========================================================================== */
+.t-Footer-top { flex-shrink: 0; }
+
+.t-Footer-topButton { display: block; width: 40px; height: 40px; padding: 12px; border-radius: 100%; transition: .1s ease; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset; opacity: .75; }
+
+.t-Footer-topButton:hover { opacity: 1; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 2px 4px rgba(0, 0, 0, 0.05); }
+
+.t-Footer-topButton:focus { outline: none; }
+
+@media only screen and (max-width: 640px) { .t-Footer { flex-direction: column; } .t-Footer-body { text-align: center; width: 100%; margin-right: 0; margin-left: 0; } .t-Footer-apex { text-align: center; } .t-Footer-top { margin-top: 16px; } }

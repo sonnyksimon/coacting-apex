@@ -1,0 +1,23 @@
+@import "_variables";
+
+
+.t-Dialog-body {
+  background:
+    linear-gradient(fade(@g_Region-BG,100%) 40%, fade(@g_Region-BG,0%)),
+    linear-gradient(fade(@g_Region-BG,0%), fade(@g_Region-BG,100%) 60%) 0 100%,
+    linear-gradient(rgba(0,0,0,.025), rgba(0,0,0,0)),
+    linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.025)) 0 100%;
+  background-color: @g_Region-BG;
+}
+
+
+body .ui-dialog.t-Dialog--wizard {
+  .ui-dialog-content {
+    font-size: 1.3rem;
+  }
+  .ui-dialog-buttonpane {
+    .ui-button {
+      font-size: 1.3rem;
+    }
+  }
+}

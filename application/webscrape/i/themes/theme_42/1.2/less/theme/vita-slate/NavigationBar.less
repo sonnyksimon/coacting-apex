@@ -1,0 +1,27 @@
+/* ====== scss/compiled/core_removed/NavigationBar.scss ====== */
+
+@import "_variables";
+
+@bg: darken(@g_Accent-BG,15%);
+// @l_Menu-Active-FG: contrast(@bg, darken(@bg,  75), lighten(@bg,  75),  43%);
+@l_Menu-Active-FG: fade(contrast(@bg, desaturate(darken(@bg,  75%), 100%), desaturate(lighten(@bg,  75%), 50%)), 100%);
+
+.t-NavigationBar-menu {
+  .a-Menu-content {
+    border-radius: 0 0 2px 2px;
+    background-color: @bg;
+    border-width: 0;
+  }
+  .a-Menu-item.is-focused,
+  .a-Menu-item.is-expanded {
+    background-color: contrast(@bg, darken(@bg,   10%), lighten(@bg,   10%),  43%) !important;
+    & > .a-Menu-label {
+      color: @l_Menu-Active-FG !important;
+    }
+  }
+  .a-Menu-item .a-Menu-label,
+  &.a-Menu .a-Menu-item a,
+  &.a-Menu .a-Menu-item .a-Menu-statusCol {
+    color: @g_Accent-FG !important;
+  }
+}

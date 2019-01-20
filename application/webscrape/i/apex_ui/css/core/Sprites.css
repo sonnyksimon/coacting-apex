@@ -1,0 +1,48 @@
+.iconTiny, .iconMini, .iconSmall, .iconMedium, .iconLarge { background-repeat: no-repeat; background-color: transparent; }
+
+/******************************************************************************
+
+File Name:    aPD-Sprites.scss
+Purpose:      Contains all sprites and images used for Page Designer
+
+Outline:
+  1. Extendible Sprite Class
+  2. Sprite Mixin
+
+******************************************************************************/
+/******************************************************************************
+Import Relevant SCSS Config
+******************************************************************************/
+.iconTiny, .iconMini, .iconSmall, .iconMedium, .iconLarge { background-repeat: no-repeat; background-color: transparent; }
+
+/******************************************************************************
+Generic Sprite Sizes
+******************************************************************************/
+.iconTiny { width: 16px; height: 16px; }
+
+.iconMini { width: 20px; height: 20px; }
+
+.iconSmall { width: 24px; height: 24px; }
+
+.iconMedium { width: 32px; height: 32px; }
+
+.iconLarge { width: 48px; height: 48px; }
+
+/******************************************************************************
+16x16 Sprites
+******************************************************************************/
+.a-Icon.menuDropdown { background-position: -0px -36px ; }
+
+.gi-Icon { width: 128px; height: 128px; background-size: 128px; }
+
+.gi-Icon--medium { width: 96px; height: 96px; background-size: 96px; }
+
+.gi-Icon--small { width: 64px; height: 64px; background-size: 64px; }
+
+.a-WizardIcon { display: inline-block; width: 96px; height: 96px; background-size: 96px; }
+
+.a-Form--smIcons .a-WizardIcon { width: 64px; height: 48px; background-size: 64px; }
+
+.a-WizardIconLarge { display: inline-block; width: 128px; height: 128px; background-size: 128px; }
+
+.a-WizardIconMedium { display: inline-block; width: 128px; height: 96px; margin: 0 36px; background-size: 128px; }

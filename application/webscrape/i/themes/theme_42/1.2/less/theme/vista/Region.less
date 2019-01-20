@@ -1,0 +1,170 @@
+/**
+ * Import Compass and Theme Variables
+ */
+
+@import "_variables";
+
+/* ==========================================================================
+   Region
+   ========================================================================== */
+
+//@Region__bg:                        @_base-bg;
+//@Region__border:                    @_base-dark-border;
+//@Region-header__bg:                 #FFF;
+//@Region-title__text:                @_base-text;
+//@Region-title-badge__bg:            @_danger-bg;
+//@Region-title-badge__text:          @_danger-text;
+//@Region-accordion-active__shadow:   @_focus-shadow;
+//
+//@Region--helpRegion__bg:            @_warning-bg;
+//@Region--helpRegion__border:        @_warning-dim-border;
+//@Region--helpRegion-header__bg:     @_warning-dim-bg;
+//@Region--helpRegion-title__text:    @_warning-text;
+
+
+@g_Region-BG: #FFF;
+.t-Region {
+  background-color: @g_Region-BG;
+  border-radius: @g_Container-BorderRadius;
+  box-shadow: none;
+  border: 1px solid @g_Alta-Border;
+  margin-bottom: 20px;
+}
+
+.t-ContentBlock--lightBG .t-ContentBlock-body {
+  background-color: @g_Region-BG;
+}
+
+
+.fielddata b {
+    .text-dark();
+}
+
+.regionHeader(@bg, @fg) {
+  background-color: @bg;
+  border-bottom: 0px;
+  .t-Region-title {
+    color: @fg;
+  }
+}
+
+
+.t-Region-header {
+  font-weight: bold;
+  border-width: 0;
+  .t-Body-actions & {
+      background: transparent;
+  }
+}
+
+.t-Region--stacked {
+  border-radius: 0 !important;
+  & > .t-Region-header {
+    border-radius: 0 !important;
+  }
+}
+
+.t-Region--accent1 {
+  background-color: #EFF2F5;
+  border-color: #D6DFE6;
+}
+.t-Region--accent2 {
+  background-color: #E8F2FB;
+  border-color: #D1E6F9;
+}
+.t-Region--accent3 {
+  background-color: #FEF9E8;
+  border-color: #FEF3CE;
+}
+.t-Region--accent4 {
+  background-color: #FFE4E1;
+  border-color: #FFCDC7;
+}
+.t-Region--accent5 {
+  background-color: #FCE8FE;
+  border-color: #FACEFE;
+}
+
+.t-Region-header {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+//  background-color: @g_Body-BG;
+}
+.t-Region h2.t-Region-title {
+  color: @g_Region-Header-FG;
+}
+.t-Region-body {
+  color: @g_Region-FG;
+  font-size:1.3rem;
+}
+.t-Region--hideShow {
+  // &.is-collapsed {
+  //   border-bottom-color: transparent;
+  // }
+}
+
+.t-Region--shadowScroll > .t-Region-bodyWrap > .t-Region-body {
+  background-color: @g_Region-BG;
+}
+.t-Body-actions {
+  .t-Region {
+    background-color: transparent;
+  }
+  .t-Region-header {
+    background-color: transparent;
+  }
+}
+
+body .t-Body-side {
+  .t-Region {background-color: transparent;}
+  .t-Region-header {background-color: #FAFAFA;}
+}
+.t-Region,.t-Region-header {
+  border-radius: @g_Container-BorderRadius;
+}
+.t-Region--noBG {
+  background-color: transparent;
+}
+.t-Body-actions {
+  .t-Region {
+    background-color: transparent;
+  }
+}
+.t-Region--carousel {
+  .a-Tabs-button {
+    background-color: transparent;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,.25);
+    color: #FFF;
+    &:hover {
+      background-color: rgba(0,0,0,.5);
+    }
+    &:active,    &:active:focus {
+      background-color: rgba(0,0,0,.75);
+    }
+  }
+  .a-Tabs-next-region{
+    border-radius: 2px 0 0 2px;
+  }
+  .a-Tabs-previous-region{
+    border-radius: 0 2px 2px 0;
+  }
+  .a-Region-carouselNavItem {
+    &.a-Tabs-selected .a-Region-carouselLink {
+      background-color: rgba(0,0,0,.45);
+      &:focus {
+        background-color: @g_Accent-BG
+      }
+    }
+  }
+  .a-Region-carouselLink {
+    background-color: rgba(0,0,0,.15);
+    border-radius: 100%;
+  }
+}
+
+.t-Body-actions {
+  .t-Region-header {
+    font-size: 1.3rem;
+  }
+}

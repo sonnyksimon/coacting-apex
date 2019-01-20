@@ -1,0 +1,27 @@
+/** Import Compass */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Dialog Styles ========================================================================== */
+.ui-dialog--apex.ui-dialog .ui-dialog-content { /* set overflow to hidden to fix double-scrollbar issue when resizing */ overflow: hidden; }
+
+.ui-dialog--notification { width: 400px !important; }
+
+body .ui-dialog--notification.ui-dialog .ui-dialog-titlebar { border-width: 0; }
+
+body .ui-dialog--notification.ui-dialog .ui-dialog-content { min-height: auto !important; padding: 0 32px 36px 32px; }
+
+.ui-dialog--notification .ui-dialog-content p { margin: 0; }
+
+.ui-dialog--notificationLarge { width: 640px !important; }
+
+body .ui-dialog--notificationLarge.ui-dialog .ui-dialog-titlebar { border-width: 0; }
+
+body .ui-dialog--notificationLarge.ui-dialog .ui-dialog-content { min-height: auto !important; padding: 0 32px 36px 32px; }
+
+.ui-dialog--notificationLarge .a-Notification-details { font-size: 11px; line-height: 16px; }
+
+.ui-dialog--notificationLarge .a-Notification--pre { font-family: monospace; white-space: pre-wrap; font-size: 11px; line-height: 14px; }

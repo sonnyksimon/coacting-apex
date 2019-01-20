@@ -1,0 +1,45 @@
+@import "_variables";
+
+@comment_icon_bg: contrast(@g_Region-BG, darken(@g_Region-BG,   5%), lighten(@g_Region-BG,   5%),  43%);
+
+@comment_BG:  #dfe4e7;
+@comment_FG:  #333;
+
+@comment_basic_BG: #dfe4e7;
+
+@active_comment_BG:  #dfe4e7;
+@active_comment_FG:  #333;
+
+
+.t-Comments--chat {
+  .t-Comments-comment {
+    background-color: @comment_BG;
+    color: @comment_FG;
+    &:after {
+      border-right-color: @comment_BG;
+    }
+  }
+  .t-Comments-item.is-active .t-Comments-comment {
+    background-color: @active_comment_BG;
+    color: @active_comment_FG;
+    &:after {
+      border-right-color: @active_comment_BG;
+    }
+  }
+}
+
+.t-Comments--basic {
+  .t-Comments-item.is-active {
+    background-color: @comment_basic_BG;
+  }
+}
+
+.t-Comments-item.is-systemMessage {
+  background-color: contrast(@comment_BG, darken(@comment_BG,   5%), lighten(@comment_BG,   5%),  43%);
+}
+.t-Comments-info {
+  color: fade(contrast(@comment_BG, desaturate(darken(@comment_BG,  60%), 100%), desaturate(lighten(@comment_BG,  60%), 50%)), 100%);
+}
+.t-Comments-comment {
+  color: fade(contrast(@comment_BG, desaturate(darken(@comment_BG,  100%), 100%), desaturate(lighten(@comment_BG,  100%), 50%)), 100%);
+}

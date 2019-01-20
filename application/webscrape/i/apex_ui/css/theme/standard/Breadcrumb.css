@@ -1,0 +1,26 @@
+/**  Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/* ========================================================================== Breadcrumb Top Icon ========================================================================== */
+.apex-app-builder .a-Breadcrumb-label .a-Icon.icon-breadcrumb-previous { color: #7C8791; background-color: #FFF; box-shadow: 0 0 0 1px #399BEA; }
+
+.apex-app-builder .a-Breadcrumb-label:hover .a-Icon.icon-breadcrumb-previous { background-color: #399BEA; color: #FFF; }
+
+.apex-sql-workshop .a-Breadcrumb-label .a-Icon.icon-breadcrumb-previous { color: #7C8791; background-color: #FFF; box-shadow: 0 0 0 1px #24CB7F; }
+
+.apex-sql-workshop .a-Breadcrumb-label:hover .a-Icon.icon-breadcrumb-previous { background-color: #24CB7F; color: #FFF; }
+
+.apex-team-dev .a-Breadcrumb-label .a-Icon.icon-breadcrumb-previous { color: #7C8791; background-color: #FFF; box-shadow: 0 0 0 1px #FFBE2A; }
+
+.apex-team-dev .a-Breadcrumb-label:hover .a-Icon.icon-breadcrumb-previous { background-color: #FFBE2A; color: #FFF; }
+
+.apex-workspace-admin .a-Breadcrumb-label .a-Icon.icon-breadcrumb-previous, .apex-instance-admin .a-Breadcrumb-label .a-Icon.icon-breadcrumb-previous { color: #7C8791; background-color: #FFF; box-shadow: 0 0 0 1px #BDC3C7; }
+
+.apex-workspace-admin .a-Breadcrumb-label:hover .a-Icon.icon-breadcrumb-previous, .apex-instance-admin .a-Breadcrumb-label:hover .a-Icon.icon-breadcrumb-previous { background-color: #BDC3C7; color: #FFF; }
+
+.apex-pkg-apps .a-Breadcrumb-label .a-Icon.icon-breadcrumb-previous { color: #7C8791; background-color: #FFF; box-shadow: 0 0 0 1px #F54B21; }
+
+.apex-pkg-apps .a-Breadcrumb-label:hover .a-Icon.icon-breadcrumb-previous { background-color: #F54B21; color: #FFF; }

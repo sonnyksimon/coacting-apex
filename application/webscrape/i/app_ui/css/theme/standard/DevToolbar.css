@@ -1,0 +1,21 @@
+/**  Import Compass and Theme Variables */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+.a-DevToolbar-list { overflow: hidden; }
+
+.a-DevToolbar .a-Button.a-Button--devToolbar { background-color: rgba(0, 0, 0, 0.75); color: #FFF; border-radius: 0; }
+
+.a-DevToolbar .a-Button.a-Button--devToolbar.is-active, .a-DevToolbar .a-Button.a-Button--devToolbar:active, .a-DevToolbar .a-Button.a-Button--devToolbar:focus, .a-DevToolbar .a-Button.a-Button--devToolbar:hover { color: #FFF; background-color: rgba(0, 0, 0, 0.9) !important; }
+
+.a-DevToolbar-uiSelector { border-color: #0572CE; border-radius: 2px; }

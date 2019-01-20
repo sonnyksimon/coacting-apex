@@ -1,0 +1,80 @@
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/* ========================================================================== Popup LOV ========================================================================== */
+.a-PopupLOV { display: flex; flex-direction: column; height: 100%; overflow: hidden; }
+
+.a-PopupLOV-search { padding: 8px; }
+
+.a-PopupLOV-filters { border-bottom: 1px solid; }
+
+.a-PopupLOV-filterGroup, .a-PopupLOV-filterButton { padding: 8px; }
+
+.a-PopupLOV-filterGroup { border-bottom: 1px solid; }
+
+.a-PopupLOV-filterGroup--lineFilter { display: table; width: 100%; }
+
+.a-PopupLOV-filterGroup--lineFilter .a-PopupLOV-filterLabel { white-space: nowrap; width: 40%; padding-right: 8px; }
+
+.a-PopupLOV-filterGroup--lineFilter .a-PopupLOV-filterLabel, .a-PopupLOV-filterGroup--lineFilter .a-PopupLOV-filterItem { display: table-cell; vertical-align: top; }
+
+.a-PopupLOV-filterGroup--lineFilter .a-PopupLOV-filterItem-select, .a-PopupLOV-filterGroup--lineFilter .a-PopupLOV-filterItem-text { display: block; width: 100%; }
+
+.a-PopupLOV-filterItem .ui-buttonset { width: 100%; display: table; }
+
+.a-PopupLOV-filterItem .ui-buttonset .ui-button-container { display: table-cell; width: 25%; }
+
+.a-PopupLOV-filterItem .ui-buttonset .ui-button { display: block; }
+
+.a-PopupLOV-results { flex: 1 1; overflow: auto; }
+
+.a-PopupLOV-resultsSet { width: 100%; border-collapse: collapse; border-spacing: 0; }
+
+.a-PopupLOV-resultsSet th, .a-PopupLOV-resultsSet td { padding: 8px; font-size: 12px; line-height: 16px; text-align: left; }
+
+.a-PopupLOV-resultsSet tr td:first-child { padding: 0; }
+
+.a-PopupLOV-resultsSet th { font-weight: bold; border-bottom: 2px solid #F0F0F0; }
+
+.a-PopupLOV-resultsSet tr:hover td { background-color: #ECF2FB !important; }
+
+.a-PopupLOV-resultsSet tr:nth-child(2n) td { background-color: #FAFAFA; }
+
+.a-PopupLOV-resultsSet-link, .ui-widget-content a.a-PopupLOV-resultsSet-link { display: block; padding: 8px; color: #2E79C9; text-decoration: none; }
+
+.a-PopupLOV-resultsSet-link:hover, .ui-widget-content a.a-PopupLOV-resultsSet-link:hover { text-decoration: underline; }
+
+.a-Page--popupLOV { background-color: #FFF; min-width: 0; margin-top: 48px; }
+
+.a-PopupLOV-actions { position: fixed; top: 0; left: 0; right: 0; padding: 8px 12px; width: 100%; background-color: #F8F8F8; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.15) inset; }
+
+.a-PopupLOV-links { padding: 0; }
+
+.a-PopupLOV-links br { display: none; }
+
+.a-PopupLOV-links a { display: block; padding: 8px; border-bottom: 1px solid #F0F0F0; color: #404040; font-size: 1.2rem; line-height: 1.6rem; }
+
+.a-PopupLOV-links a:hover { background-color: #0572CE; color: #fff; text-decoration: none; }
+
+.a-PopupLOV-links a:focus { outline: none; box-shadow: 0 0 0 1px #0572CE inset; }
+
+.a-PopupLOV-pagination { padding: 8px; color: #707070; font-size: 1.2rem; text-align: center; }
+
+.a-PopupLOV-button { margin: 8px; }
+
+/* Results Grid Used in Page Designer for Icons ========================================================================== */
+.a-PopupLOV-resultsGrid { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; width: 100%; }
+
+.a-PopupLOV-iconGrid-item { width: 20%; border: 1px solid rgba(0, 0, 0, 0.075); border-left-width: 0; border-top-width: 0; }
+
+.a-PopupLOV-resultsGrid a.a-PopupLOV-resultsSet-link { text-align: center; color: #707070; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 12px 8px; }
+
+.a-PopupLOV-resultsGrid .fa { display: block; margin: 4px; color: #404040; pointer-events: none; }
+
+.a-PopupLOV-resultsGrid a.a-PopupLOV-resultsSet-link:hover, .a-PopupLOV-resultsGrid a.a-PopupLOV-resultsSet-link:focus { text-decoration: none; background-color: rgba(0, 0, 0, 0.05); }
+
+.a-PopupLOV-resultsGrid a.a-PopupLOV-resultsSet-link:focus { outline: none; box-shadow: 0 0 0 1px #0572CE inset; }
+
+@media only screen and (max-width: 315px) { .a-Page--popupLOV { margin-top: 96px; } }

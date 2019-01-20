@@ -1,0 +1,63 @@
+@import "../_variables";
+
+.MiniCal(@background, @foreground) {
+  /* Calendar Wrapper
+     ========================================================================== */
+  .a-MiniCal {
+    border: 1px solid contrast(@background, darken(@background,   10%), lighten(@background,   10%),  43%);
+    border-radius: @g_Container-BorderRadius;
+    background-color: @background;
+  }
+  /* Calendar Header
+     ========================================================================== */
+
+  .a-MiniCal-title {
+    color:  @foreground;
+  }
+
+  /* Month Calendar
+     ========================================================================== */
+  .a-MiniCal-dayOfWeek {
+    color: fade(contrast(@background, desaturate(darken(@background,  50%), 100%), desaturate(lighten(@background,  50%), 50%)), 100%);
+  }
+  .a-MiniCal-date {
+  }
+  .a-MiniCal-day {
+    border-color: contrast(@background, darken(@background,   2.5%), lighten(@background,   2.5%),  43%);
+    color: fade(contrast(@background, desaturate(darken(@background,  75%), 100%), desaturate(lighten(@background,  75%), 50%)), 100%);
+    &.is-today {
+      .a-MiniCal-date {
+        background-color: @g_Accent-BG;
+        color: @g_Accent-FG;
+      }
+    }
+    &.is-active {
+      .a-MiniCal-date {
+        background-color: @g_Warning-BG;
+        color: @g_Warning-FG;
+      }
+    }
+    &.is-weekend {
+      background-color: contrast(@background, darken(@background,   2%), lighten(@background,   2%),  43%);
+    }
+    &.is-null {
+      background-color: contrast(@background, darken(@background,   4%), lighten(@background,   4%),  43%);
+    }
+  }
+}
+
+
+.t-Body {
+  .MiniCal(@g_Body-BG, @g_Body-Text);
+}
+
+.t-Region {
+  .MiniCal(@g_Region-BG, @g_Region-FG);
+}
+
+.t-Body-actions {
+  .MiniCal(@g_Actions-Col-BG, @g_Actions-Col-Text);
+}
+.t-Body-info {
+  .MiniCal(@g_Body-Title-BG, @g_Body-Title-FG);
+}

@@ -1,0 +1,121 @@
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Badge List ========================================================================== */
+.t-BadgeList { padding: 0; margin: 0; list-style: none; overflow: hidden; display: flex; flex-wrap: wrap; }
+
+.t-BadgeList a { text-decoration: none; outline: none; }
+
+.t-BadgeList-item { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; flex-grow: 1; text-align: center; position: relative; padding: 1.2rem; }
+
+.t-BadgeList-wrap { width: 100%; display: flex; flex-direction: column; }
+
+.t-BadgeList-label { line-height: 1.5; order: 2; }
+
+.t-BadgeList-value { order: 1; display: block; margin: 0 auto; font-weight: 500; }
+
+.t-BadgeList-value a { display: block; }
+
+.t-BadgeList-value a:hover { text-decoration: none; }
+
+/* ========================================================================== Circular ========================================================================== */
+.t-BadgeList--circular a.t-BadgeList-wrap:hover .t-BadgeList-value { box-shadow: 0 0 0 0.4rem rgba(0, 0, 0, 0.1) inset; }
+
+.t-BadgeList--circular .t-BadgeList-value { border-radius: 128px; }
+
+.t-BadgeList--circular .t-BadgeList-value a { border-radius: 128px; outline: none; }
+
+.t-BadgeList--circular .t-BadgeList-label { padding-top: .8rem; }
+
+.t-BadgeList--circular.t-BadgeList--small .t-BadgeList-value { width: 32px; height: 32px; line-height: 32px; font-size: 12px; }
+
+.t-BadgeList--circular.t-BadgeList--small .t-BadgeList-label { font-size: 10px; }
+
+.t-BadgeList--dash.t-BadgeList--small .t-BadgeList-label { font-size: 10px; }
+
+.t-BadgeList--dash.t-BadgeList--small .t-BadgeList-value { font-size: 16px; line-height: 1.5; }
+
+.t-BadgeList--circular.t-BadgeList--medium .t-BadgeList-value { width: 48px; height: 48px; line-height: 48px; font-size: 16px; }
+
+.t-BadgeList--circular.t-BadgeList--medium .t-BadgeList-label { font-size: 12px; }
+
+.t-BadgeList--dash.t-BadgeList--medium .t-BadgeList-label { font-size: 12px; }
+
+.t-BadgeList--dash.t-BadgeList--medium .t-BadgeList-value { font-size: 24px; line-height: 1.5; }
+
+.t-BadgeList--circular.t-BadgeList--large .t-BadgeList-value { width: 64px; height: 64px; line-height: 64px; font-size: 20px; }
+
+.t-BadgeList--circular.t-BadgeList--large .t-BadgeList-label { font-size: 14px; }
+
+.t-BadgeList--dash.t-BadgeList--large .t-BadgeList-label { font-size: 14px; }
+
+.t-BadgeList--dash.t-BadgeList--large .t-BadgeList-value { font-size: 32px; line-height: 1.5; }
+
+.t-BadgeList--circular.t-BadgeList--xlarge .t-BadgeList-value { width: 96px; height: 96px; line-height: 96px; font-size: 24px; }
+
+.t-BadgeList--circular.t-BadgeList--xlarge .t-BadgeList-label { font-size: 16px; }
+
+.t-BadgeList--dash.t-BadgeList--xlarge .t-BadgeList-label { font-size: 16px; }
+
+.t-BadgeList--dash.t-BadgeList--xlarge .t-BadgeList-value { font-size: 48px; line-height: 1.5; }
+
+.t-BadgeList--circular.t-BadgeList--xxlarge .t-BadgeList-value { width: 128px; height: 128px; line-height: 128px; font-size: 32px; }
+
+.t-BadgeList--circular.t-BadgeList--xxlarge .t-BadgeList-label { font-size: 20px; }
+
+.t-BadgeList--dash.t-BadgeList--xxlarge .t-BadgeList-label { font-size: 20px; }
+
+.t-BadgeList--dash.t-BadgeList--xxlarge .t-BadgeList-value { font-size: 64px; line-height: 1.5; }
+
+/* ========================================================================== Dashboard ========================================================================== */
+.t-BadgeList--dash .t-BadgeList-label { font-size: 1.4rem; line-height: 2.0rem; }
+
+.t-BadgeList--dash .t-BadgeList-value { font-size: 3.2rem; line-height: 1.5; width: 100%; }
+
+.t-BadgeList--dash .t-BadgeList-wrap { padding: 1.2rem; }
+
+.t-BadgeList--dash a.t-BadgeList-wrap:hover:before { content: ''; position: absolute; top: 12px; left: 12px; right: 12px; bottom: 12px; background-color: rgba(0, 0, 0, 0.1); pointer-events: none; z-index: 1; }
+
+/* ========================================================================== Layout Modifiers ========================================================================== */
+.t-BadgeList-item:after { content: ''; position: absolute; top: 0; bottom: 0; width: 1px; right: -1px; z-index: 10; }
+
+.t-BadgeList-item:before { content: ''; position: absolute; left: 0; right: 0; height: 1px; bottom: -1px; z-index: 11; }
+
+.t-BadgeList-item:after, .t-BadgeList-item:before { background-color: rgba(0, 0, 0, 0.05); }
+
+.t-Body-actions .t-BadgeList-item:after, .t-Body-actions .t-BadgeList-item:before { display: none; }
+
+/* ========================================================================== Floated ========================================================================== */
+.t-BadgeList--float .t-BadgeList-item { flex-basis: auto; }
+
+/* ========================================================================== Stacked ========================================================================== */
+.t-BadgeList--stacked .t-BadgeList-item { flex-basis: 100%; }
+
+.t-BadgeList--stacked .t-BadgeList-item:after { display: none; }
+
+/* ========================================================================== Flexed ========================================================================== */
+.t-BadgeList--flex { align-items: stretch; align-content: stretch; }
+
+.t-BadgeList--flex .t-BadgeList-item { flex-basis: auto; }
+
+/* ========================================================================== Columns ========================================================================== */
+.t-BadgeList--cols .t-BadgeList-item { flex-basis: 50%; }
+
+.t-BadgeList--3cols .t-BadgeList-item { flex-basis: 33.33%; }
+
+.t-BadgeList--4cols .t-BadgeList-item { flex-basis: 25%; }
+
+.t-BadgeList--5cols .t-BadgeList-item { flex-basis: 20%; }
+
+/* ========================================================================== Fluid ========================================================================== */
+.t-BadgeList--fixed { display: table; table-layout: fixed; width: 100%; }
+
+.t-BadgeList--fixed .t-BadgeList-item { display: table-cell; }
+
+/* Color Modifiers ========================================================================== */
+.t-BadgeList.u-colors.t-BadgeList--circular .t-BadgeList-wrap:before { content: ''; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; position: absolute; }
+
+.t-BadgeList.u-colors.t-BadgeList--circular .t-BadgeList-value { background-color: inherit; color: inherit; position: relative; z-index: 2; }
+
+.t-BadgeList.u-colors.t-BadgeList--circular .t-BadgeList-label { z-index: 3; }
+
+@media (max-width: 480px) { .t-BadgeList--5cols .t-BadgeList-item, .t-BadgeList--4cols .t-BadgeList-item, .t-BadgeList--3cols .t-BadgeList-item { flex-basis: 50%; } }

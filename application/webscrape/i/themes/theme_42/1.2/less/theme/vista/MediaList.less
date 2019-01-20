@@ -1,0 +1,62 @@
+/**
+ * Import Compass and Theme Variables
+ */
+
+@import "_variables";
+/******************************************************************************
+Color Variables
+******************************************************************************/
+
+@g_Border-Outer:            contrast(@g_Region-BG, darken(@g_Region-BG,   15%), lighten(@g_Region-BG,   15%),  43%);
+
+.t-MediaList {
+  border-color: @g_Border-Outer;
+  background-color: @g_Region-BG;
+}
+.t-MediaList-item {
+  border-color: @g_Border-Outer;
+}
+
+.t-MediaList-item.is-active {
+  background-color: rgba(0,0,0,.05);
+}
+
+.t-MediaList--horizontal .t-MediaList-item {
+  border-right: 1px solid @g_Border-Outer;
+}
+
+
+/* ==========================================================================
+   Link
+   ========================================================================== */
+.t-MediaList-icon {
+  background-color: lighten(@g_Region-FG-Light,25%);
+  color: #FFF;
+}
+
+a.t-MediaList-itemWrap {
+  color: @g_Link-Base;
+  &:hover {
+    background-color: contrast(@g_Region-BG, darken(@g_Region-BG,   5%), lighten(@g_Region-BG,   5%),  43%);
+    color: @g_Link-Base;
+    .t-MediaList-badge {
+    }
+  }
+}
+
+.t-MediaList-itemWrap {
+  color: @g_Region-FG;
+}
+.t-MediaList-badge,
+.t-MediaList-desc {
+  color: @g_Region-FG-Light;
+  font-size: 1.3rem;
+}
+.t-MediaList--cols {
+  .t-MediaList-item {
+    &:before,
+    &:after {
+      background-color: contrast(@g_Region-BG, darken(@g_Region-BG,   10%), lighten(@g_Region-BG,   10%),  43%);
+    }
+  }
+}

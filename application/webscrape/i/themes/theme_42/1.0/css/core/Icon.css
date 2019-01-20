@@ -1,0 +1,35 @@
+/** 
+ * Import Compass
+ */
+/* ==========================================================================
+   Icons
+   ========================================================================== */
+.t-Icon[class^='fa-'], .t-Icon[class*=' fa-'] {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  font-size: 14px; }
+
+.t-Alert--defaultIcons .t-Alert-icon .t-Icon, .t-Alert .t-Icon.icon-close:before {
+  font-family: "apex-5-icon-font";
+  display: inline-block;
+  vertical-align: top; }
+
+.t-Alert--defaultIcons.t-Alert--warning .t-Alert-icon .t-Icon:before, .t-Alert--defaultIcons.t-Alert--yellow .t-Alert-icon .t-Icon:before {
+  content: "\e017"; }
+.t-Alert--defaultIcons.t-Alert--success .t-Alert-icon .t-Icon:before {
+  content: "\e007"; }
+.t-Alert--defaultIcons.t-Alert--red .t-Alert-icon .t-Icon:before, .t-Alert--defaultIcons.t-Alert--danger .t-Alert-icon .t-Icon:before {
+  content: "\e0a2"; }
+.t-Alert--defaultIcons.t-Alert--info .t-Alert-icon .t-Icon:before {
+  content: "\e023"; }
+
+.t-Alert .t-Icon.icon-close:before {
+  line-height: 16px;
+  font-size: 16px;
+  content: "\e0a2"; }

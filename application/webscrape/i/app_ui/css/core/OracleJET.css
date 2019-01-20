@@ -1,0 +1,57 @@
+/* ========================================================================== Oracle JET support in APEX 5.1 --- The following styles are necessary to set the font-sizes for several  Oracle JET charting components. Without these styles, the fonts have a very small font size. ========================================================================== */
+/* Chart Font Sizes ========================================================================== */
+.oj-html { font-size: 14px; }
+
+.oj-chart-data-label { font-size: 12px; }
+
+.oj-chart-footnote { font-size: 12px; }
+
+.oj-chart-pie-center-label, .oj-chart-xaxis-title, .oj-chart-yaxis-title, .oj-chart-y2axis-title { font-size: 14px; }
+
+.oj-chart-stack-label { font-size: 12px; }
+
+.oj-chart-subtitle { font-size: 16px; }
+
+.oj-chart-title { font-size: 16px; }
+
+.oj-chart-xaxis-tick-label, .oj-chart-yaxis-tick-label, .oj-chart-y2axis-tick-label { font-size: 12px; }
+
+.oj-dvt-datatip { font-size: 12px; }
+
+.oj-dvt-tooltip { font-size: 14px; }
+
+.oj-legend { font-size: 12px; }
+
+.oj-legend-section-title { font-size: 12px; }
+
+.oj-legend-title { font-size: 12px; }
+
+.oj-timeline-major-axis-label { font-size: 14px; }
+
+.oj-timeline-minor-axis-label { font-size: 12px; }
+
+.oj-treemap { font-size: 12px; }
+
+.oj-treemap-attribute-type-text { font-size: 14px; }
+
+.oj-treemap-attribute-value-text { font-size: 14px; }
+
+.oj-treemap-current-text { font-size: 14px; }
+
+.oj-treemap-node { font-size: 12px; }
+
+.oj-treemap-node-header { font-size: 12px; }
+
+.oj-sunburst { font-size: 12px; }
+
+.oj-sunburst-attribute-type-text { font-size: 14px; }
+
+.oj-sunburst-attribute-value-text { font-size: 14px; }
+
+.oj-sunburst-current-text { font-size: 14px; }
+
+.oj-sunburst-node { font-size: 12px; }
+
+.oj-diagram-link-label { font-size: 14px; }
+
+.oj-diagram-node-label { font-size: 14px; }

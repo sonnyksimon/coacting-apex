@@ -1,0 +1,38 @@
+/*===============================================
+=            Legacy Button Overrides            =
+===============================================*/
+.a-IRR-container button.a-Button span,
+.a-DevToolbar button span,
+.a-IRR-dialogTable button span,
+button.a-Button > span {
+  padding: 0;
+}
+
+span.lov img {
+  vertical-align: top;
+}
+
+.a-Button.a-Button--calendar {
+  margin-left: 0;
+  padding: 2px 4px;
+  vertical-align: top;
+}
+
+.a-DevToolbar button span {
+  display: inline-block;
+}
+
+.a-Button.a-Button--devToolbar {
+  background-color: #404040 !important;
+  color: #EEE !important;
+}
+.a-Button.a-Button--devToolbar:hover {
+  background-color: #606060 !important;
+  color: #FFF !important;
+}
+.a-Button.a-Button--devToolbar.is-active, .a-Button.a-Button--devToolbar:active, .a-Button.a-Button--devToolbar:focus {
+  color: #FFF !important;
+  background-color: #202020 !important;
+}
+
+/*-----  End of Legacy Button Overrides  ------*/

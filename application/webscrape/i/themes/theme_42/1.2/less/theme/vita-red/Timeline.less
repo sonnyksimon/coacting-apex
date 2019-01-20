@@ -1,0 +1,41 @@
+@import "_variables";
+
+.t-Timeline {
+  color: @g_Region-FG;
+}
+// .t-Timeline-item {
+//   background-color: @g_Region-BG;
+// }
+
+.t-Timeline-username,
+.t-Timeline-date,
+.t-Timeline-desc {
+  color: @g_Region-FG-Light;
+}
+.t-Timeline-wrap {
+  color: @g_Region-FG;
+}
+.t-Timeline-type {
+  background-color: darken(@g_Region-Header-BG,4%);
+  color: @g_Region-Header-FG;
+}
+
+.t-Timeline-type.is-new {
+  background-color: @g_Success-BG;
+  color: #FFF;
+}
+
+.t-Timeline-type.is-updated {
+  background-color: @g_Info-BG;
+  color: #FFF;
+}
+
+.t-Timeline-type.is-removed {
+  background-color: @g_Danger-BG;
+  color: #FFF;
+}
+
+.t-Timeline-wrap:focus {
+  outline: none;
+  box-shadow:0 0 0 1px @g_Focus inset;
+}

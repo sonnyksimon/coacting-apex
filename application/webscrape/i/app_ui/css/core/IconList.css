@@ -1,0 +1,31 @@
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Icon List ========================================================================== */
+/** Icon List Container (UL) */
+.a-IconList { list-style: none; margin: 0; padding: 0; *zoom: 1; }
+
+.a-IconList:before, .a-IconList:after { content: " "; display: table; }
+
+.a-IconList:after { clear: both; }
+
+/** Right to Left Support */
+.a-IconList.u-RTL .a-IconList-item { float: right; }
+
+/** Icon List Item (LI) */
+.a-IconList-item { display: block; float: left; }
+
+/** Icon Display (A) Can be clickable when applied to an anchor tag. */
+.a-IconList-item { display: block; text-decoration: none; float: left; cursor: default; }
+
+.a-IconList-item.is-draggable { cursor: copy; }
+
+/** Icon Name (SPAN) */
+.a-IconList-iconName { display: block; overflow: hidden; text-overflow: ellipsis; text-align: center; white-space: normal; }
+
+.a-IconList { list-style: none outside none; margin: 0px; padding: 4px; overflow: hidden; }
+
+.a-IconList .fielddata { display: block; text-align: center; overflow: hidden; text-overflow: ellipsis; }

@@ -1,0 +1,143 @@
+/**
+ * Import Compass and Theme Variables
+ */
+
+@import "_variables";
+
+/* ==========================================================================
+   Menu Bar
+   ========================================================================== */
+
+//@g_Nav-Active-FG: contrast(@g_Nav-BG, darken(@g_Nav-BG,   75%), lighten(@g_Nav-BG,   75%),  43%);
+
+.MenuBar(@menuActiveFG, @menuBG) {
+  .a-MenuBar-label {
+    color: @menuActiveFG;
+    vertical-align: top;
+  }
+  .a-MenuBar-item {
+    vertical-align: top;
+  }
+  /* Focus + Hover State */
+  .a-MenuBar-item.is-focused,
+  .a-MenuBar-item:hover {
+    background-color: contrast(@menuBG, darken(@menuBG,  10%), lighten(@menuBG,  10%),  43%) !important;
+  }
+
+
+  /* Active + Focus State */
+  .a-MenuBar-item.a-Menu--current,
+  .a-MenuBar-item.a-Menu--current.is-focused {
+    background-color: contrast(@menuBG, darken(@menuBG,  10%), lighten(@menuBG,  10%),  43%) !important;
+    .a-MenuBar-label {
+      color: @menuActiveFG !important;
+      font-weight: bold;
+    }
+  }
+  /* Expanded State */
+  /* Active + Expanded State */
+  .a-MenuBar-item.is-expanded,
+  .a-MenuBar-item.a-Menu--current.is-expanded {
+    background-color: contrast(@menuBG, darken(@menuBG,  10%), lighten(@menuBG,  10%),  43%) !important;
+  }
+  /* Sub Menu Drop Down */
+  .a-MenuBar-item {
+    & > .a-Menu-subMenuCol .a-Icon {
+      color: fade(@menuActiveFG, 80%);
+      border-color: lighten(@menuBG,15%);
+      border-radius: 100%;
+    }
+    &.a-Menu--current.is-focused > .a-Menu-subMenuCol .a-Icon,
+    & > .a-Menu-subMenuCol:hover .a-Icon {
+      @hoverBg: contrast(@menuBG, darken(@menuBG,  25%), lighten(@menuBG,  25%),  43%);
+      background-color: @hoverBg;
+      border-color: @hoverBg;
+      color: contrast(@hoverBg, darken(@hoverBg,   75%), lighten(@hoverBg,   75%),  43%);
+    }
+  }
+  .a-MenuBar-item.a-Menu--current {
+    & > .a-Menu-subMenuCol .a-Icon {
+      color: lighten(@menuBG,30%);
+      border-color: lighten(@menuBG,30%);
+    }
+  }
+  .a-MenuBar-item.a-Menu--current.is-expanded {
+    & > .a-Menu-subMenuCol .a-Icon {
+      background-color: @menuActiveFG;
+      border-color: @menuActiveFG;
+      color: contrast(@menuActiveFG, darken(@menuActiveFG,  75%), lighten(@menuActiveFG,  75%),  43%);
+    }
+  }
+  .a-MenuBar-item.is-expanded {
+    & > .a-Menu-subMenuCol .a-Icon {
+      background-color: lighten(@menuBG,47%);
+      border-color: lighten(@menuBG,47%);
+      color: darken(@menuBG,10%);
+    }
+  }
+  // Expanded Menu Contents
+  .a-Menu-content {
+    border-width: 0;
+    background-color: contrast(@menuBG, darken(@menuBG,  10%), lighten(@menuBG,  10%),  43%);
+  }
+  .a-Menu .a-Menu-item, {
+    color: @menuActiveFG;
+  }
+  .a-Menu-accel {
+    color: fade(@menuActiveFG, 75%);
+  }
+  .a-Menu .a-Menu-item.is-focused,
+  .a-Menu .a-Menu-item.is-expanded {
+    background-color: contrast(@menuBG, darken(@menuBG,  5%), lighten(@menuBG,  5%),  43%) !important;
+  }
+  /* Menu Bar Item */
+
+}
+
+.t-Header {
+  .MenuBar( @g_Accent-OG, darken(@g_Accent-BG,15%) );
+}
+
+.t-Body {
+  .MenuBar( @g_Body-Text, @g_Body-BG );
+  .a-MenuBar > ul {
+    background-color: contrast(@g_Region-BG, darken(@g_Region-BG,  10%), lighten(@g_Region-BG,  10%),  43%)
+  }
+  .a-MenuBar-item {//@_border:
+    border-color: contrast(@g_Body-BG, darken(@g_Body-BG,   10%), lighten(@g_Body-BG,   10%),  43%);
+    &.is-focused {
+      box-shadow: none;
+    }
+  }
+}
+
+.t-Region {
+  .MenuBar( @g_Region-FG, @g_Region-BG );
+  .a-MenuBar > ul {
+    background-color: contrast(@g_Region-BG, darken(@g_Region-BG,  10%), lighten(@g_Region-BG,  10%),  43%)
+  }
+  .a-MenuBar-item {
+    border-color: contrast( @g_Region-BG, darken( @g_Region-BG,   10%), lighten( @g_Region-BG,   10%),  43%);
+    &.is-focused {
+      box-shadow: none;
+    }
+  }
+}
+
+
+.t-Header-userMenu {
+  .a-Menu-content {
+    border-width: 0;
+    background-color: contrast(@g_Nav-BG, darken(@g_Nav-BG,  10%), lighten(@g_Nav-BG,  10%),  43%);
+  }
+  .a-Menu-item.is-focused,
+  .a-Menu-item.is-expanded {
+    background-color: contrast(@g_Nav-BG, darken(@g_Nav-BG,  5%), lighten(@g_Nav-BG,  5%),  43%) !important;
+  }
+  &.a-Menu .a-Menu-item .a-Menu-label {
+    color: @g_Nav-Active-FG;
+  }
+}
+
+
+

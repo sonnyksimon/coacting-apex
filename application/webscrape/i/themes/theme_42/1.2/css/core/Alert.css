@@ -1,0 +1,156 @@
+/** Import Compass */
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Alert ========================================================================== */
+/* Zoom Animation ========================================================================== */
+@-webkit-keyframes zoomFade { from { -webkit-transform: scale(0.75); transform: scale(0.75);
+    opacity: .0; }
+  to { -webkit-transform: scale(1); transform: scale(1);
+    opacity: 1; } }
+@keyframes zoomFade { from { -webkit-transform: scale(0.75); transform: scale(0.75);
+    opacity: .0; }
+  to { -webkit-transform: scale(1); transform: scale(1);
+    opacity: 1; } }
+
+/* Wizard Alert ========================================================================== */
+.t-Alert--wizard { margin: 1.6rem auto; max-width: 76rem; padding: 0; /** Media Queries */ }
+
+.t-Dialog-body .t-Alert--wizard { width: auto; max-width: 100%; box-shadow: none; border-width: 0; }
+
+.t-Alert--wizard .t-Alert-wrap { margin: 3.2rem 0; }
+
+.t-Alert--wizard .t-Alert-icon, .t-Alert--wizard .t-Alert-content, .t-Alert--wizard .t-Alert-buttons { margin: 1.6rem 3.2rem; }
+
+.t-Alert--wizard .t-Alert-icon { text-align: center; }
+
+.t-Alert--wizard .t-Alert-icon .t-Icon { font-size: 3.2rem; line-height: 64px; width: 64px; text-align: center; border-radius: 100%; }
+
+.t-Alert--wizard .t-Alert-title { text-align: center; font-size: 2.4rem; line-height: 1.5; margin: 0; }
+
+.t-Alert--wizard .t-Alert-body { margin: 16px 0; font-size: 1.6rem; line-height: 1.5; }
+
+.t-Alert--wizard .t-Alert-body:empty { display: none; }
+
+.t-Alert--wizard .t-Alert-buttons { margin-top: 3.2rem; text-align: center; }
+
+.t-Alert--wizard .t-Alert-buttons:empty { display: none; }
+
+.t-Alert--wizard .t-Alert-inset { border-radius: 0.2rem; padding: 1.2rem 1.6rem; }
+
+.t-Alert--wizard .t-Alert-inset ul { list-style: decimal; margin: 1.2rem 0 1.2rem 2.4rem; font-size: 1.2rem; line-height: 1.6rem; }
+
+.t-Alert--wizard .t-Alert-inset li { margin-bottom: 0.4rem; }
+
+.t-Alert--wizard .t-Alert-inset pre { font-size: 1rem; line-height: 1.6rem; }
+
+/* Horizontal Alert ========================================================================== */
+.t-Alert--horizontal { margin-bottom: 1.6rem; position: relative; }
+
+.t-Alert--horizontal .t-Alert-wrap { display: flex; flex-direction: row; }
+
+.t-Alert--horizontal .t-Alert-icon { flex-shrink: 0; padding: 1.6rem; display: flex; align-items: center; }
+
+.t-Alert--horizontal .t-Alert-content { padding: 16px; flex: 1 0; display: flex; flex-direction: column; justify-content: center; }
+
+.t-Alert--horizontal .t-Alert-buttons { flex-shrink: 0; text-align: right; white-space: nowrap; padding-right: 1.6rem; display: flex; align-items: center; }
+
+.u-RTL .t-Alert--horizontal .t-Alert-buttons { padding-right: 0; padding-left: 1.6rem; }
+
+.t-Alert--horizontal .t-Alert-buttons:empty { display: none; }
+
+.t-Alert--horizontal .t-Alert-title { font-size: 2.0rem; line-height: 2.4rem; margin-bottom: 0; }
+
+.t-Alert--horizontal .t-Alert-body { margin-top: 4px; }
+
+.t-Alert--horizontal .t-Alert-body:empty { display: none; }
+
+.t-Alert--horizontal .t-Alert-icon .t-Icon { width: 32px; text-align: center; height: 32px; border-radius: 100%; line-height: 32px; }
+
+/* ========================================================================== Common Properties ========================================================================== */
+.t-Alert--wizard, .t-Alert--horizontal { border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.075); }
+
+/** Default Icons */
+.apex-icons-fontawesome .t-Alert--defaultIcons.t-Alert--horizontal .t-Alert-icon .t-Icon { line-height: 2.8rem; }
+
+.apex-icons-fontapex .t-Alert--defaultIcons.t-Alert--horizontal .t-Alert-icon .t-Icon { line-height: 3.2rem; }
+
+.apex-icons-fontawesome .t-Alert--defaultIcons.t-Alert--wizard .t-Alert-icon .t-Icon { line-height: 5.6rem; }
+
+.apex-icons-fontapex .t-Alert--defaultIcons.t-Alert--wizard .t-Alert-icon .t-Icon { line-height: 6.4rem; }
+
+/** Modifier: No Icon */
+.t-Alert--noIcon.t-Alert--wizard .t-Alert-icon { padding-top: 0; line-height: 0; }
+
+.t-Alert--noIcon.t-Alert--horizontal .t-Alert-icon { display: none !important; }
+
+.t-Alert--noIcon .t-Alert-icon .t-Icon { display: none; }
+
+.t-Body-alert { margin: 0; }
+
+.t-Body-alert .t-Alert { margin-bottom: 0; }
+
+/* Page Notification (Success or Message) ========================================================================== */
+.t-Alert--page { /* Set Border Radius to 0 as message exists within content */ /* For very small screens, fit the message to the top of the screen */ transition: .2s ease-out; max-width: 448px; min-width: 320px; position: fixed; top: 1.6rem; right: 1.6rem; z-index: 1000; /* Error Message Overrides ========================================================================== */ border-width: 0; box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1) inset, 0 3px 9px -2px rgba(0, 0, 0, 0.1); /* Scrollbars */ }
+
+.t-Alert--page.t-Alert { border-radius: 0; }
+
+.u-RTL .t-Alert--page { right: auto; left: 1.6rem; }
+
+.t-Alert--page.t-Alert--success .t-Alert-icon .t-Icon { font-size: 24px; background-color: transparent !important; }
+
+.t-Alert--page.t-Alert--warning .t-Alert-icon { padding: 8px; }
+
+.t-Alert--page.t-Alert--warning .a-Notification-title { font-size: 1.4rem; line-height: 2rem; font-weight: 500; margin: 12px 12px 8px 12px; }
+
+.t-Alert--page.t-Alert--warning .a-Notification-list { max-height: 128px; }
+
+.t-Alert--page.t-Alert--warning .t-Alert-content { padding: 0; }
+
+.t-Alert--page.t-Alert--warning .t-Alert-buttons { padding-right: 0; }
+
+.t-Alert--page.t-Alert--warning .t-Button--closeAlert { top: 10px; right: 10px; padding: 4px; background-color: rgba(0, 0, 0, 0.75) !important; color: #FFF !important; }
+
+.t-Alert--page.t-Alert { border-radius: 0.2rem; }
+
+.t-Alert--page .t-Button--closeAlert { position: absolute; right: 16px; top: 16px; min-width: 0; }
+
+.u-RTL .t-Alert--page .t-Button--closeAlert { right: auto; left: 16px; }
+
+.t-Alert--page .a-Notification-list { max-height: 96px; overflow: auto; }
+
+.t-Alert--page .a-Notification-link:hover { text-decoration: underline; }
+
+.t-Alert--page ::-webkit-scrollbar { width: 8px; height: 8px; }
+
+.t-Alert--page ::-webkit-scrollbar-thumb { background-color: rgba(0, 0, 0, 0.25); }
+
+.t-Alert--page ::-webkit-scrollbar-track { background-color: rgba(0, 0, 0, 0.05); }
+
+.t-Alert--page .t-Alert-body { margin-top: 0; }
+
+.t-Alert--page .t-Alert-title { display: block; font-weight: 400; font-size: 2.0rem; line-height: 3.2rem; margin-bottom: 0; margin-right: 48px; }
+
+.t-Alert--page .a-Notification-list { margin: 0; padding: 0 0 8px 0; list-style: none; }
+
+.t-Alert--page .a-Notification-item { padding-left: 24px; position: relative; font-size: 14px; line-height: 20px; margin-bottom: 4px; /* Extra Small Screens */ }
+
+.t-Alert--page .a-Notification-item:before { content: ''; position: absolute; margin: 8px 8px 8px 12px; top: 0; left: 0; width: 4px; height: 4px; border-radius: 100%; background-color: rgba(0, 0, 0, 0.5); }
+
+.t-Alert--page .a-Notification-item .a-Button--notification { padding: 2px; opacity: .75; vertical-align: top; }
+
+.t-Alert--page .htmldbOraErr { margin-top: 0.8rem; display: block; font-size: 1.1rem; line-height: 1.6rem; font-family: 'Menlo', 'Consolas', monospace, serif; white-space: pre-line; }
+
+.apex-page-success, .apex-page-error { display: block; }
+
+/* Accessible Heading ========================================================================== */
+.t-Alert--accessibleHeading .t-Alert-title { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Hidden Heading (Not Accessible) ========================================================================== */
+.t-Alert--removeHeading .t-Alert-title { display: none; }
+
+/* Handling Button Regions for Alerts ========================================================================== */
+.t-Alert .t-ButtonRegion { margin-bottom: 0; margin-top: 2.4rem; }
+
+.t-Alert .col .t-ButtonRegion:only-child { margin-bottom: 0; }
+
+@media (max-width: 480px) { .t-Alert--wizard { width: auto; } .t-Alert--page { left: 1.6rem; min-width: 0; max-width: none; } .t-Alert--page.t-Alert--warning .t-Button--closeAlert { top: 4px; right: 4px; padding: 2px; } .t-Alert--page .a-Notification-item { font-size: 12px; } }

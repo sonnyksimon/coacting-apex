@@ -1,0 +1,232 @@
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Cards Container ========================================================================== */
+.t-Cards { list-style: none; padding: 0; margin: -8px; overflow: hidden; display: flex; flex-wrap: wrap; }
+
+.t-Cards-item { position: relative; display: flex; }
+
+/* ========================================================================== Card Unit ========================================================================== */
+.t-Card { position: relative; display: flex; transition: all .1s ease-out; border-radius: 3px; box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.075); width: calc(100% - 16px); margin: 8px; }
+
+.t-Card-wrap { position: relative; text-decoration: none; border-radius: 3px; border: 1px solid rgba(0, 0, 0, 0.075); background-clip: padding-box; width: 100%; }
+
+.t-Card-wrap:focus { outline: none; }
+
+.t-Card-wrap:hover { text-decoration: none; }
+
+.t-Card-icon { position: relative; /* Needed for animations */ display: none; border-radius: 100%; }
+
+.t-Card-icon .t-Icon { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; border-radius: inherit; }
+
+.t-Card-initials { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.t-Card-initials img { width: 100%; height: 100%; border-radius: 100%; }
+
+.t-Card-body { flex-grow: 1; display: flex; flex-direction: column; }
+
+.t-Card-desc { display: block; flex-grow: 1; }
+
+.t-Card-desc:empty { display: none; }
+
+.t-Card-desc:empty + .t-Card-info { margin-top: 0; }
+
+.t-Card-info { font-size: 1.1rem; line-height: 1.6rem; margin-top: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.t-Card-info:empty { display: none; }
+
+/* Card Subtitle is hidden by default.  It is only dislpayed when the template option is checked. ========================================================================== */
+.t-Card-subtitle { display: none; }
+
+/* Basic Style (Icon in Header) ========================================================================== */
+.t-Cards--basic .t-Card-wrap { display: flex; flex-direction: column; overflow: hidden; }
+
+.t-Cards--basic .t-Card-icon { position: absolute; right: 16px; top: 16px; width: 32px; height: 32px; line-height: 32px; }
+
+.u-RTL .t-Cards--basic .t-Card-icon { right: auto; left: 16px; }
+
+.t-Cards--basic .t-Card-initials { font-size: 12px; font-weight: 500; }
+
+.t-Cards--basic .t-Card-titleWrap { display: flex; flex-direction: column; justify-content: center; padding: 12px 64px 12px 16px; min-height: 64px; box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05) inset; }
+
+.u-RTL .t-Cards--basic .t-Card-titleWrap { padding-left: 64px; padding-right: 16px; }
+
+.t-Cards--basic .t-Card-title { font-size: 1.6rem; line-height: 2.0rem; margin: 0; font-weight: 500; overflow: hidden; text-overflow: ellipsis; }
+
+.t-Cards--basic.t-Cards--displaySubtitle .t-Card-subtitle { display: block; font-size: 12px; margin: 4px 0 0 0; line-height: 16px; font-weight: normal; }
+
+.t-Cards--basic .t-Card-body { padding: 16px; }
+
+.t-Cards--basic .t-Card-desc { font-size: 14px; line-height: 20px; }
+
+/* Compact Cards ========================================================================== */
+.t-Cards--compact .t-Card-wrap { display: flex; flex-direction: column; overflow: hidden; }
+
+.t-Cards--compact .t-Card-icon { position: absolute; right: 8px; top: 8px; width: 32px; height: 32px; line-height: 32px; }
+
+.u-RTL .t-Cards--compact .t-Card-icon { right: auto; left: 12px; }
+
+.t-Cards--compact .t-Card-initials { font-size: 12px; font-weight: 500; }
+
+.t-Cards--compact .t-Card-titleWrap { display: flex; flex-direction: column; justify-content: center; padding: 8px 48px 8px 8px; min-height: 48px; box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05) inset; }
+
+.u-RTL .t-Cards--compact .t-Card-titleWrap { padding-left: 48px; padding-right: 12px; }
+
+.t-Cards--compact .t-Card-title { font-size: 1.4rem; line-height: 1.6rem; margin: 0; font-weight: 500; overflow: hidden; text-overflow: ellipsis; }
+
+.t-Cards--compact.t-Cards--displaySubtitle .t-Card-subtitle { display: block; font-size: 11px; margin: 4px 0 0 0; line-height: 12px; font-weight: normal; }
+
+.t-Cards--compact .t-Card-body { padding: 8px; }
+
+.t-Cards--compact .t-Card-desc { font-size: 12px; line-height: 16px; }
+
+/* Featured Style (Centered Icon and Title) ========================================================================== */
+.t-Cards--featured .t-Card-wrap { display: flex; flex-direction: column; overflow: hidden; }
+
+.t-Cards--featured .t-Card-icon { margin: 24px auto 16px auto; width: 64px; height: 64px; }
+
+.t-Cards--featured .t-Card-initials { font-size: 20px; font-weight: 400; }
+
+.t-Cards--featured .t-Card-titleWrap { padding-top: 24px; font-size: 16px; font-weight: 500; text-align: center; display: flex; align-items: center; justify-content: center; padding-right: 16px; padding-left: 16px; padding-bottom: 24px; flex-direction: column; }
+
+.t-Cards--featured .t-Card-titleWrap h3 { font-size: inherit; margin-bottom: 0; }
+
+.t-Cards--featured .t-Card-body { border-top: 1px solid rgba(0, 0, 0, 0.075); padding: 16px; }
+
+.t-Cards--featured.t-Cards--displaySubtitle .t-Card-subtitle { display: block; font-size: 12px; margin: 4px 0 0 0; line-height: 16px; font-weight: normal; }
+
+.t-Cards--featured.t-Cards--displayIcons .t-Card-titleWrap, .t-Cards--featured.t-Cards--displayInitials .t-Card-titleWrap { padding-top: 0; }
+
+.t-Cards--featured .t-Card-desc { font-size: 14px; line-height: 20px; }
+
+/* Block Style ========================================================================== */
+.t-Cards--block .t-Card-icon { display: flex; align-items: center; justify-content: center; margin: 0; padding: 24px; border-radius: 0; width: auto; height: auto; }
+
+.t-Cards--block .t-Icon { width: 64px; height: 64px; background-color: rgba(0, 0, 0, 0.1); border-radius: 100%; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+
+.t-Cards--block .t-Card-titleWrap { padding-bottom: 24px; }
+
+.t-Cards--block.t-Cards--displayIcons .t-Card-titleWrap, .t-Cards--block.t-Cards--displayInitials .t-Card-titleWrap { padding-top: 24px; }
+
+/* Display Icon / Initials ========================================================================== */
+.t-Cards--displayIcons .t-Card-icon, .t-Cards--displayInitials .t-Card-icon { display: flex; }
+
+/* Display Icon ========================================================================== */
+.t-Cards--displayIcons .t-Card-initials { display: none; }
+
+/* Display Initials ========================================================================== */
+.t-Cards--displayInitials .t-Card-icon .t-Icon:before { content: none; }
+
+/* Body Text Height ========================================================================== */
+.t-Cards--desc-2ln .t-Card-desc, .t-Cards--desc-3ln .t-Card-desc, .t-Cards--desc-4ln .t-Card-desc { overflow: hidden; text-overflow: ellipsis; }
+
+.t-Cards--desc-2ln .t-Card, .t-Cards--desc-2ln .t-Card-wrap, .t-Cards--desc-3ln .t-Card, .t-Cards--desc-3ln .t-Card-wrap, .t-Cards--desc-4ln .t-Card, .t-Cards--desc-4ln .t-Card-wrap { height: auto; }
+
+/* 2 Lines ========================================================================== */
+.t-Cards--desc-2ln.t-Cards--compact .t-Card-desc { height: 3.2rem; }
+
+.t-Cards--desc-2ln .t-Card-desc { height: 4.0rem; }
+
+/* 3 Lines ========================================================================== */
+.t-Cards--desc-3ln.t-Cards--compact .t-Card-desc { height: 4.8rem; }
+
+.t-Cards--desc-3ln .t-Card-desc { height: 6.0rem; }
+
+/* 4 Lines ========================================================================== */
+.t-Cards--desc-4ln.t-Cards--compact .t-Card-desc { height: 6.4rem; }
+
+.t-Cards--desc-4ln .t-Card-desc { height: 8.0rem; }
+
+/* ========================================================================== Hide Body ========================================================================== */
+.t-Cards--hideBody .t-Card-body { display: none; }
+
+/* ========================================================================== Layout ========================================================================== */
+.t-Region-body > .t-Cards { margin: 0; }
+
+/* ========================================================================== Floated ========================================================================== */
+.t-Cards--float .t-Cards-item { max-width: 320px; }
+
+/* ========================================================================== Stacked ========================================================================== */
+.t-Cards--stacked .t-Cards-item:after { content: ''; position: absolute; left: 0; right: 0; height: 1px; bottom: -1px; }
+
+/* ========================================================================== Columns ========================================================================== */
+.t-Cards--cols .t-Cards-item { width: 50%; }
+
+.t-Cards--3cols .t-Cards-item { width: 33.33%; }
+
+.t-Cards--4cols .t-Cards-item { width: 25%; }
+
+.t-Cards--5cols .t-Cards-item { width: 20%; }
+
+/* ========================================================================== Fluid ========================================================================== */
+.t-Cards--spanHorizontally { display: table; table-layout: fixed; width: 100%; }
+
+.t-Cards--spanHorizontally .t-Cards-item { display: table-cell; }
+
+/* ========================================================================== Hover Animations ========================================================================== */
+/* Modifier: Animation - Color Fill ========================================================================== */
+.t-Cards--animColorFill .t-Card .t-Card-icon:before { content: ''; background-color: inherit; position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: 0; -webkit-transform: none; transform: none; border-radius: 100%; transition: .2s opacity ease-in-out, .35s transform ease-in-out; pointer-events: none; }
+
+.t-Cards--animColorFill .t-Card:hover .t-Card-icon:before, .t-Cards--animColorFill .t-Card-wrap:focus .t-Card-icon:before { -webkit-transform: scale(5); transform: scale(5); -webkit-animation: 0.35s ease-in-out 1 forwards rippleOutFade; animation: 0.35s ease-in-out 1 forwards rippleOutFade; }
+
+.t-Cards--animColorFill .t-Card:hover .t-Card-colorFill:before, .t-Cards--animColorFill .t-Card-wrap:focus .t-Card-colorFill:before { height: 100%; opacity: .1; left: 0; right: 0; border-radius: 0; }
+
+@-webkit-keyframes rippleOutFade { from { opacity: 0.15; }
+  to { opacity: 0; } }
+
+@keyframes rippleOutFade { from { opacity: 0.15; }
+  to { opacity: 0; } }
+
+/* Modifier: Aanimation - Raise Card ========================================================================== */
+.t-Cards--animRaiseCard .t-Card:hover { -webkit-transform: translateY(-8px); transform: translateY(-8px); box-shadow: 0 10px 4px -4px rgba(0, 0, 0, 0.05); }
+
+.t-Cards--animRaiseCard.t-Cards--compact .t-Card:hover { -webkit-transform: translateY(-4px); transform: translateY(-4px); }
+
+/* Color Fill Block ========================================================================== */
+.t-Card-colorFill { pointer-events: none; }
+
+.t-Cards.u-colors .t-Card-colorFill { display: block; }
+
+.t-Cards--displayIcons.u-colors .t-Card-colorFill, .t-Cards--displayInitials.u-colors .t-Card-colorFill { display: block; }
+
+.t-Cards--displayIcons.u-colors .t-Card-colorFill:after, .t-Cards--displayInitials.u-colors .t-Card-colorFill:after { display: none; }
+
+.t-Cards--displayIcons.u-colors .t-Card-colorFill:before, .t-Cards--displayInitials.u-colors .t-Card-colorFill:before { left: 0; right: 0; width: 100%; height: 100%; border-radius: 0; transition: opacity .35s ease-in-out; }
+
+.t-Card-colorFill:before, .t-Card-colorFill:after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: block; background-color: inherit; pointer-events: none; }
+
+.t-Card-colorFill:after { height: 2px; margin: 2px; }
+
+.t-Card-colorFill:before { background-color: inherit; opacity: 0; transition: .25s opacity ease-in-out; }
+
+/* Animation: Color Fill (when not applying theme colors) ========================================================================== */
+.t-Cards:not(.u-colors) .t-Card-colorFill:after { display: none; }
+
+/* Override Color Palette, and force white icons ========================================================================== */
+.t-Cards.u-colors .t-Card-icon { color: #FFF !important; }
+
+/* Sample Footer ========================================================================== */
+.t-Cards--sampleAppsFooter { margin-top: 32px; }
+
+.t-Cards--sampleAppsFooter .t-Card { box-shadow: none; }
+
+.t-Cards--sampleAppsFooter .t-Cards-item { display: block; flex-grow: 1; width: 25%; }
+
+.t-Cards--sampleAppsFooter .t-Card-wrap, .t-Cards--sampleAppsFooter .t-Card-icon { background-color: transparent; border-color: transparent; }
+
+.t-Cards--sampleAppsFooter .t-Card-icon { transition: .2s ease; }
+
+.t-Cards--sampleAppsFooter .t-Icon { background-color: #FFF; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset; }
+
+.t-Cards--sampleAppsFooter.t-Cards--featured .t-Card-titleWrap { font-size: 12px; line-height: 1.5; }
+
+.t-Cards--sampleAppsFooter .t-Card-wrap:hover .t-Card-icon, .t-Cards--sampleAppsFooter .t-Card-wrap:focus .t-Card-icon { -webkit-transform: scale(1.25); transform: scale(1.25); }
+
+@media (min-width: 769px) and (max-width: 991px) { .t-Cards--5cols .t-Cards-item { width: 25%; clear: none; }
+  .t-Cards--5cols .t-Cards-item:nth-child(5n+1) { clear: none; }
+  .t-Cards--5cols .t-Cards-item:nth-child(4n+1) { clear: both; } }
+
+@media (max-width: 768px) { .t-Cards--5cols .t-Cards-item, .t-Cards--4cols .t-Cards-item { width: 33.33%; } }
+
+@media (max-width: 640px) { .t-Cards--5cols .t-Cards-item, .t-Cards--4cols .t-Cards-item, .t-Cards--3cols .t-Cards-item { width: 50%; } }
+
+@media (max-width: 480px) { .t-Cards--5cols .t-Cards-item, .t-Cards--4cols .t-Cards-item, .t-Cards--3cols .t-Cards-item, .t-Cards--cols .t-Cards-item { width: 100%; } .t-Cards--sampleAppsFooter .t-Cards-item { width: 50%; } }

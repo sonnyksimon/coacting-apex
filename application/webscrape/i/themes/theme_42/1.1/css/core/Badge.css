@@ -1,0 +1,79 @@
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Badges ========================================================================== */
+.t-Badge { color: inherit; display: inline-block; font: inherit; margin: 0; position: relative; text-align: center; white-space: nowrap; line-height: 1.6rem; }
+
+.t-Badge .t-Icon { margin-right: 0.4rem; }
+
+/* ========================================================================== Badge Modifiers ========================================================================== */
+.t-Badge--basic { box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.025) inset; border-radius: 0.2rem; }
+
+.t-Badge--orb { border-radius: 0; box-shadow: none; }
+
+.t-Badge--orb:before { vertical-align: top; content: ''; display: inline-block; border-radius: 100%; width: 1rem; height: 1rem; margin: 0.3rem 0.4rem 0.3rem 0.3rem; box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.05) inset; }
+
+/* ========================================================================== Badge Sizes ========================================================================== */
+/* Base (Normal Size) ========================================================================== */
+.t-Badge { font-size: 1.2rem; }
+
+.t-Badge.t-Badge--basic { padding: .8rem 1.2rem; }
+
+/* Large ========================================================================== */
+.t-Badge--large { font-size: 1.4rem; }
+
+.t-Badge--large.t-Badge--basic { padding: 1.6rem; }
+
+.t-Badge--large.t-Badge--orb:before { width: 1.2rem; height: 1.2rem; margin: 0.2rem 0.4rem 0.2rem 0.2rem; }
+
+/* Small ========================================================================== */
+.t-Badge--small { font-size: 1.1rem; }
+
+.t-Badge--small.t-Badge--basic { padding: .4rem .8rem; }
+
+/* X Small ========================================================================== */
+.t-Badge--xsmall { font-size: 1.1rem; }
+
+.t-Badge--xsmall.t-Badge--basic { padding: 0 .8rem; }
+
+.t-Badge--xsmall.t-Badge--orb:before { width: 0.8rem; height: 0.8rem; margin: 0.4rem; }
+
+.t-Badge--xsmall .t-Icon { width: 1.2rem; height: 1.2rem; line-height: 1.6rem; }
+
+.t-Badge--xsmall .t-Icon:before { font-size: 1.2rem; }
+
+/* ========================================================================== Badge States ========================================================================== */
+/* Default (Normal) ========================================================================== */
+/* Primary ========================================================================== */
+.t-Badge--orb.is-primary:before { background-color: #AAC7DA; }
+
+.t-Badge--basic.is-primary { background-color: #fcfdfe; color: #404040; }
+
+/* Info ========================================================================== */
+.t-Badge--orb.is-info:before { background-color: #8ABCEB; }
+
+.t-Badge--basic.is-info { background-color: #eef5fc; color: #404040; }
+
+/* Warning ========================================================================== */
+.t-Badge--orb.is-warning:before { background-color: #FFBE2A; }
+
+.t-Badge--basic.is-warning { background-color: #fff4dd; color: #775200; }
+
+/* Success ========================================================================== */
+.t-Badge--orb.is-success:before { background-color: #2ECC71; }
+
+.t-Badge--basic.is-success { background-color: #d1f5e0; color: #0d3a20; }
+
+/* Danger ========================================================================== */
+.t-Badge--orb.is-danger:before { background-color: #F54B21; }
+
+.t-Badge--basic.is-danger { background-color: #fdd5cc; color: #5f1604; }
+
+/* Complete ========================================================================== */
+.t-Badge--orb.is-complete:before { background-color: #E0E0E0; }
+
+.t-Badge--basic.is-complete { background-color: #E0E0E0; color: #404040; }
+
+/* Null / Unknown ========================================================================== */
+.t-Badge--orb.is-null:before { color: #707070; }
+
+.t-Badge--basic.is-null { color: #707070; }

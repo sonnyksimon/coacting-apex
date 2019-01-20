@@ -1,0 +1,243 @@
+/** Import Compass */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Interactive Grid ========================================================================== */
+.a-IG { border: 1px solid; position: relative; }
+
+.a-IG * { box-sizing: border-box; }
+
+.a-IG-header { padding: 8px 8px 0 8px; border-bottom: 1px solid; }
+
+.a-IG-controls { display: table-cell; vertical-align: top; }
+
+.a-IG-contentContainer { overflow: hidden; margin-top: -1px; }
+
+/* ========================================================================== IG Type Colors ========================================================================== */
+/* ========================================================================== IG Controls ========================================================================== */
+.a-IG-controlsContainer { padding: 8px; border-bottom: 1px solid #E0E0E0; overflow: hidden; }
+
+.a-IG-button.a-IG-button--controls { padding: 8px; box-shadow: none; background-color: #FFF; }
+
+.a-IG-controls { margin: 0; padding: 0; list-style: none; }
+
+.a-IG-controls-item { display: block; overflow: hidden; margin-bottom: 4px; }
+
+.a-IG-controls-item:last-child { margin-bottom: 0; }
+
+.a-IG-controls-item .a-IG-button.a-IG-button--remove { opacity: .65; }
+
+.a-IG-controls-item:hover .a-IG-button.a-IG-button--remove, .a-IG-controls-item .a-IG-button.a-IG-button--remove:focus { opacity: 1; }
+
+.a-IG-controls-item.is-error .a-IG-controlsLabel { background-color: #FFE6E6; }
+
+.a-IG-controls-item.is-error .a-IG-controls-cell:nth-child(2) { background-color: #FF3B30; }
+
+.a-IG-controls-item.is-error .a-IG-controlsIcon { color: #FFF; }
+
+.a-IG-controls-item.is-error .a-IG-controlsLabel { color: #FF3B30; }
+
+.a-IG-controlsIcon { color: #FFF; }
+
+.a-IG-controls-item--savedReport a.a-IG-controlsLabel:hover { background-color: #ecf5fd; }
+
+.a-IG-controls-item--savedReport .a-IG-controls-cell:nth-child(2) { background-color: #4AA4EC; }
+
+.a-IG-controls-item--search a.a-IG-controlsLabel:hover { background-color: #ecf5fd; }
+
+.a-IG-controls-item--search .a-IG-controls-cell:nth-child(2) { background-color: #4AA4EC; }
+
+.a-IG-controls-item--filter a.a-IG-controlsLabel:hover { background-color: #dcf9ec; }
+
+.a-IG-controls-item--filter .a-IG-controls-cell:nth-child(2) { background-color: #24CB7F; }
+
+.a-IG-controls-item--controlBreak a.a-IG-controlsLabel:hover { background-color: #e6f0f7; }
+
+.a-IG-controls-item--controlBreak .a-IG-controls-cell:nth-child(2) { background-color: #3B83BD; }
+
+.a-IG-controls-item--groupBy a.a-IG-controlsLabel:hover { background-color: #e6f0f7; }
+
+.a-IG-controls-item--groupBy .a-IG-controls-cell:nth-child(2) { background-color: #3B83BD; }
+
+.a-IG-controls-item--aggregate a.a-IG-controlsLabel:hover { background-color: #e6f0f7; }
+
+.a-IG-controls-item--aggregate .a-IG-controls-cell:nth-child(2) { background-color: #3B83BD; }
+
+.a-IG-controls-item--highlight a.a-IG-controlsLabel:hover { background-color: #fff0cd; }
+
+.a-IG-controls-item--highlight .a-IG-controls-cell:nth-child(2) { background-color: #FFBE2A; }
+
+.a-IG-controls-item--flashback a.a-IG-controlsLabel:hover { background-color: #d5d9dc; }
+
+.a-IG-controls-item--flashback .a-IG-controls-cell:nth-child(2) { background-color: #9EA7AD; }
+
+.a-IG-controls-item--chart a.a-IG-controlsLabel:hover { background-color: #85b4d9; }
+
+.a-IG-controls-item--chart .a-IG-controls-cell:nth-child(2) { background-color: #3B83BD; }
+
+.a-IG-controls-item--pivot a.a-IG-controlsLabel:hover { background-color: #d5d9dc; }
+
+.a-IG-controls-item--pivot .a-IG-controls-cell:nth-child(2) { background-color: #9EA7AD; }
+
+.a-IG-controls-item--invalidSettings a.a-IG-controlsLabel:hover { background-color: #f4f5f6; }
+
+.a-IG-controls-item--invalidSettings .a-IG-controls-cell:nth-child(2) { background-color: #BDC3C7; }
+
+.a-IG-controls-item--inactiveSettings a.a-IG-controlsLabel:hover { background-color: #f4f5f6; }
+
+.a-IG-controls-item--inactiveSettings .a-IG-controls-cell:nth-child(2) { background-color: #BDC3C7; }
+
+.a-IG-controls-cell { display: block; float: left; padding: 8px; transition: background-color .1s; background-clip: padding-box; line-height: 16px; }
+
+.a-IG-controls-cell:first-child { padding-left: 8px; min-width: 32px; }
+
+.a-IG-controls-cell:nth-child(2) { border-radius: 2px 0 0 2px; background-color: #F0F0F0; padding: 8px 9px 8px 8px; }
+
+.u-RTL .a-IG-controls-cell:nth-child(2) { border-radius: 0 2px 2px 0; }
+
+.a-IG-controls-cell:last-child { padding-right: 8px; }
+
+.u-RTL .a-IG-controls-cell { float: right; }
+
+.a-IG-controls-cell--label { width: 300px; padding: 0; border-radius: 0 2px 2px 0; overflow: hidden; }
+
+.a-IG-controls-cell--remove { padding: 4px 8px; }
+
+.a-IG-button.a-IG-button--remove { display: block; padding: 4px; background-color: transparent; box-shadow: none; color: #A0A0A0; }
+
+.a-IG-button.a-IG-button--remove:hover { color: #F00; }
+
+.a-IG-controlsLabel { display: block; font-size: 12px; line-height: 16px; vertical-align: top; text-decoration: none; padding: 7px 7px 7px 8px; border: 1px solid rgba(0, 0, 0, 0.075); border-left-width: none; background-clip: border-box; transition: background-color .1s; background-color: #FFF; }
+
+.u-RTL .a-IG-controlsLabel { border-left-width: 1px; border-right-width: 0; }
+
+a.a-IG-controlsLabel:focus { outline: none; box-shadow: 0 0 0 1px #4696fc inset; }
+
+.a-IG-controlsLabel--highlight { border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset; }
+
+.a-IG-controlsCheckboxLabel { position: relative; width: 16px; height: 16px; border: 1px solid #C0C0C0; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset; background-color: #FFF; padding: 1px; border-radius: 2px; display: block; font-family: "apex-5-icon-font" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.a-IG-controlsCheckboxLabel:before { font-size: 12px; width: 12px; height: 12px; content: "\e007"; display: block; color: #404040; position: absolute; opacity: 0; transition: opacity .2s; }
+
+.ie7 .a-IG-controlsCheckboxLabel:before { background-image: url(""); }
+
+.a-IG-controlsCheckboxLabel:hover:before { opacity: .15; }
+
+.a-IG-controlsCheckboxLabel:active { background-color: #E0E0E0; }
+
+.a-IG-controlsCheckboxLabel:active:before { opacity: .75; }
+
+.a-IG-controls .a-IG-controlsCheckbox { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+.a-IG-controls .a-IG-controlsCheckbox:checked + .a-IG-controlsCheckboxLabel { position: relative; }
+
+.a-IG-controls .a-IG-controlsCheckbox:checked + .a-IG-controlsCheckboxLabel:before { opacity: 1; }
+
+.a-IG-controls .a-IG-controlsCheckbox:focus + .a-IG-controlsCheckboxLabel { border-color: #4696fc; box-shadow: 0 0 2px 0 rgba(70, 150, 252, 0.5); }
+
+.a-IG-controls .a-IG-controlsCheckbox:disabled + .a-IG-controlsCheckboxLabel { opacity: .35; pointer-events: none; }
+
+/* ========================================================================== Report Summary ========================================================================== */
+.a-IG-reportSummaryContainer { overflow: hidden; }
+
+.a-IG-reportSummary { list-style: none; margin: 0; overflow: hidden; margin-bottom: -4px; }
+
+.a-IG-reportSummary-item { display: block; float: left; margin-bottom: 4px; margin-right: 8px; }
+
+.u-RTL .a-IG-reportSummary-item { float: right; }
+
+.a-IG-reportSummary-item--savedReport .a-IG-reportSummary-label:hover { background-color: #ecf5fd; }
+
+.a-IG-reportSummary-item--savedReport .a-IG-reportSummary-icon { background-color: #4AA4EC; }
+
+.a-IG-reportSummary-item--search .a-IG-reportSummary-label:hover { background-color: #ecf5fd; }
+
+.a-IG-reportSummary-item--search .a-IG-reportSummary-icon { background-color: #4AA4EC; }
+
+.a-IG-reportSummary-item--filter .a-IG-reportSummary-label:hover { background-color: #dcf9ec; }
+
+.a-IG-reportSummary-item--filter .a-IG-reportSummary-icon { background-color: #24CB7F; }
+
+.a-IG-reportSummary-item--controlBreak .a-IG-reportSummary-label:hover { background-color: #e6f0f7; }
+
+.a-IG-reportSummary-item--controlBreak .a-IG-reportSummary-icon { background-color: #3B83BD; }
+
+.a-IG-reportSummary-item--groupBy .a-IG-reportSummary-label:hover { background-color: #e6f0f7; }
+
+.a-IG-reportSummary-item--groupBy .a-IG-reportSummary-icon { background-color: #3B83BD; }
+
+.a-IG-reportSummary-item--aggregate .a-IG-reportSummary-label:hover { background-color: #e6f0f7; }
+
+.a-IG-reportSummary-item--aggregate .a-IG-reportSummary-icon { background-color: #3B83BD; }
+
+.a-IG-reportSummary-item--highlight .a-IG-reportSummary-label:hover { background-color: #fff0cd; }
+
+.a-IG-reportSummary-item--highlight .a-IG-reportSummary-icon { background-color: #FFBE2A; }
+
+.a-IG-reportSummary-item--flashback .a-IG-reportSummary-label:hover { background-color: #d5d9dc; }
+
+.a-IG-reportSummary-item--flashback .a-IG-reportSummary-icon { background-color: #9EA7AD; }
+
+.a-IG-reportSummary-item--chart .a-IG-reportSummary-label:hover { background-color: #85b4d9; }
+
+.a-IG-reportSummary-item--chart .a-IG-reportSummary-icon { background-color: #3B83BD; }
+
+.a-IG-reportSummary-item--pivot .a-IG-reportSummary-label:hover { background-color: #d5d9dc; }
+
+.a-IG-reportSummary-item--pivot .a-IG-reportSummary-icon { background-color: #9EA7AD; }
+
+.a-IG-reportSummary-item--invalidSettings .a-IG-reportSummary-label:hover { background-color: #f4f5f6; }
+
+.a-IG-reportSummary-item--invalidSettings .a-IG-reportSummary-icon { background-color: #BDC3C7; }
+
+.a-IG-reportSummary-item--inactiveSettings .a-IG-reportSummary-label:hover { background-color: #f4f5f6; }
+
+.a-IG-reportSummary-item--inactiveSettings .a-IG-reportSummary-icon { background-color: #BDC3C7; }
+
+.a-IG-reportSummary-label { display: block; padding: 0; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.075) inset; border-radius: 2px; overflow: hidden; color: #404040; background-color: #fff; transition: box-shadow .1s, background-color .1s; }
+
+.a-IG-reportSummary-label:hover { text-decoration: none; background-color: #F8F8F8; }
+
+.a-IG-reportSummary-label:focus, .a-IG-reportSummary-label:focus .a-IG-reportSummary-icon { outline: none; box-shadow: 0 0 0 1px #4696fc inset; }
+
+.a-IG-reportSummary-icon, .a-IG-reportSummary-value, .a-IG-reportSummary-count { transition: background-color .1s; display: inline-block; padding: 8px; font-size: 12px; line-height: 16px; vertical-align: top; }
+
+.a-IG-reportSummary-icon { color: #FFF; }
+
+.a-IG-reportSummary-value { min-width: 32px; text-align: center; color: #404040; }
+
+.a-IG-reportSummary-count { padding: 0; margin-left: 4px; font-size: 12px; line-height: 16px; }
+
+/* Deletable Collapsed Filters ========================================================================== */
+.a-IG-reportSummary-item.has-delete { position: relative; }
+
+.a-IG-reportSummary-item.has-delete .a-IG-reportSummary-label { padding-right: 24px; }
+
+.a-IG-reportSummary-item.has-delete .a-IRR-button.a-IRR-button--remove { position: absolute; right: 0; top: 0; width: 24px; height: 24px; margin: 4px; }
+
+/* ========================================================================== Grid View ========================================================================== */
+.a-IG-gridView { margin-left: -1px; }
+
+.a-IG-gridView .a-GV-footer { border-left: 1px solid; }
+
+/* Sort Widget ========================================================================== */
+.a-IG .a-IRR-sortWidget .a-IRR-sortWidget-actions { overflow: hidden; border-radius: 2px 2px 0 0; border-bottom-width: 0; }
+
+.a-IG .a-IRR-sortWidget .a-IRR-sortWidget-search { border-radius: 0 0 2px 2px; overflow: hidden; }
+
+/* Icon View ========================================================================== */
+.a-IG-iconView .a-IconList-item { overflow: hidden; }
+
+/* Default Icon View Styling ========================================================================== */
+.a-TMV-defaultIconView .a-IconList-item { padding: 8px; width: 128px; height: 128px; display: flex; align-items: center; justify-content: center; margin: 4px; }
+
+.a-TMV-defaultIconView .a-IconList-item a:focus { outline: none; }
+
+.a-TMV-defaultIconView .a-IconList-item .is-selected, .a-TMV-defaultIconView .a-IconList-item .is-selected.is-focused { background-color: #ecf3ff; }
+
+.a-TMV-defaultIconView .a-IconList-icon { display: block; text-align: center; }
+
+.a-TMV-defaultIconView .a-IconList-label { display: block; text-align: center; font-size: 12px; line-height: 16px; }

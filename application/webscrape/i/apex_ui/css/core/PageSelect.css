@@ -1,0 +1,26 @@
+/* ========================================================================== Page Select Widget ========================================================================== */
+.a-PageSelect { display: inline-block; border-width: 1px 0 1px 1px; border-style: solid; vertical-align: top; position: relative; background-clip: padding-box; border-top-left-radius: 2px; border-bottom-left-radius: 2px; }
+
+.a-PageSelect--separate { border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-right-width: 1px; }
+
+.a-PageSelect--readOnly { padding: 7px 12px; line-height: 16px; color: #707070; }
+
+.a-PageSelect--readOnly .a-Icon { color: #707070; margin-right: 4px; }
+
+.a-PageSelect-input { padding: 4px 8px 4px 36px; margin: 0; border: none; line-height: 22px; width: 86px; color: #404040; height: 30px; font-size: 14px; border-top-left-radius: 1px; border-bottom-left-radius: 1px; background-color: transparent; text-align: right; }
+
+.a-PageSelect-input:focus, .a-PageSelect-input.is-focused { outline: none; position: relative; z-index: 10; }
+
+.a-Button.a-Button--withIcon.a-PageSelect-menuButton { position: absolute; top: 0; padding: 1px; }
+
+.a-Button.a-PageSelect-menuButton { position: absolute; top: 0; left: 0; padding: 3px; border-radius: 2px; height: 22px; margin: 4px; z-index: 11; }
+
+/* Page Navigation ========================================================================== */
+.a-PageSelect-buttons { display: inline-block; vertical-align: top; padding: 1px 2px 1px 1px; border-left: 1px solid #F0F0F0; }
+
+/* Page Selection Buttons */
+.a-Button.a-Button--pageNav { display: block; padding: 1px 4px; line-height: 12px; box-shadow: none; background-color: transparent; }
+
+.a-Button.a-Button--pageNav .a-Icon { line-height: 12px; width: 12px; height: 12px; }
+
+.a-Button.a-Button--pageNav .a-Icon:before { font-size: 12px; }

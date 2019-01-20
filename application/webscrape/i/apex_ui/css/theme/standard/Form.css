@@ -1,0 +1,21 @@
+/**  Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/* Button Groups ========================================================================== */
+.apex-button-group table.radio-group input:checked + label { background-color: transparent; }
+
+.apex-button-group table.radio-group label { transition: background-color .2s ease, box-shadow .2s ease, color .2s ease; }
+
+.apex-button-group table.radio-group label:first-of-type { border-radius: 2px 0 0 2px; }
+
+.apex-button-group table.radio-group label:last-of-type { border-radius: 0 2px 2px 0; }
+
+.apex-button-group table.radio-group label:only-of-type { border-radius: 2px; }
+
+.apex-button-group input:active + label, .apex-button-group input:focus + label { box-shadow: 0 0 0 1px #0572CE inset !important; outline: none; }

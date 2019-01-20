@@ -1,0 +1,77 @@
+/** Import Compass */
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Hero Region --- Hero Region is used for homepages to introduce / onboard the user. ========================================================================== */
+/* Base Styles ========================================================================== */
+.t-HeroRegion { position: relative; overflow: hidden; }
+
+/* Hero Region Wrapper ========================================================================== */
+.t-HeroRegion-wrap { padding: 16px; display: flex; flex-direction: row; align-items: center; }
+
+/* Title ========================================================================== */
+.t-HeroRegion-title { font-size: 3.2rem; line-height: 4.0rem; margin: 0; font-weight: 500; }
+
+/* Columns ========================================================================== */
+/* Contains Icon */
+.t-HeroRegion-col--left { flex-shrink: 0; }
+
+/* Contains Title + Text */
+.t-HeroRegion-col--content { flex-grow: 1; font-size: 1.6rem; line-height: 2.4rem; }
+
+.t-HeroRegion-col--content > p { font-size: inherit; line-height: inherit; margin: 0; }
+
+/* Contains Buttons and Form Items */
+.t-HeroRegion-col--right { text-align: right; display: flex; flex-direction: row; align-items: center; justify-content: flex-end; flex-grow: 1; flex-shrink: 0; }
+
+/* Icon ========================================================================== */
+.t-HeroRegion-icon { width: 64px; height: 64px; display: block; border-radius: 4px; text-align: center; line-height: 6.4rem; margin-right: 16px; font-size: 32px; }
+
+.u-RTL .t-HeroRegion-icon { margin-right: 0; margin-left: 16px; }
+
+/* Form Sub Region ========================================================================== */
+.t-HeroRegion-form { margin-left: 16px; }
+
+.u-RTL .t-HeroRegion-form { margin-right: 16px; margin-left: 0; }
+
+.t-HeroRegion-form .t-Form-labelContainer, .t-HeroRegion-form .t-Form-inputContainer { padding: 0; }
+
+.t-HeroRegion-form .t-Form-searchField[type=text] { width: 100%; max-width: 320px; }
+
+/* Buttons ========================================================================== */
+.t-HeroRegion-buttons { flex-shrink: 0; white-space: nowrap; }
+
+.t-HeroRegion-buttons:empty { display: none; }
+
+/* ========================================================================== Featured (larger icon + text) ========================================================================== */
+.t-HeroRegion--featured .t-HeroRegion-icon { display: inline-block; vertical-align: top; width: 128px; height: 128px; line-height: 128px; text-align: center; font-size: 64px; }
+
+.apex-icons-fontapex .t-HeroRegion--featured .t-HeroRegion-icon:before, .apex-icons-fontapex .t-HeroRegion--featured .t-HeroRegion-icon:after { font-family: 'Font APEX Large' !important; }
+
+/* ========================================================================== Featured (stacked) ========================================================================== */
+.t-HeroRegion--featured.t-HeroRegion--centered .t-HeroRegion-wrap { flex-direction: column; text-align: center; }
+
+.t-HeroRegion--featured.t-HeroRegion--centered .t-HeroRegion-icon, .t-HeroRegion--featured.t-HeroRegion--centered .t-HeroRegion-form { margin-left: 0; margin-right: 0; }
+
+.t-HeroRegion--featured.t-HeroRegion--centered .t-HeroRegion-col { padding-right: 0; padding-left: 0; }
+
+.t-HeroRegion--featured.t-HeroRegion--centered .t-HeroRegion-col--left { margin-bottom: 16px; }
+
+.t-HeroRegion--featured.t-HeroRegion--centered .t-HeroRegion-col--right { margin-top: 16px; }
+
+/* ========================================================================== Modifier: Hide Icons ========================================================================== */
+.t-HeroRegion--hideIcon .t-HeroRegion-col--left, .t-HeroRegion--hideIcon .t-HeroRegion-icon { display: none; }
+
+/* ========================================================================== Modifier: Remove Padding ========================================================================== */
+.t-HeroRegion--noPadding .t-HeroRegion-wrap { padding: 0; }
+
+/* Responsive Styles ========================================================================== */
+
+@media (max-width: 640px) { .t-HeroRegion-wrap { flex-wrap: wrap; } .t-HeroRegion-icon { margin-right: 8px; }
+  .u-RTL .t-HeroRegion-icon { margin-right: 0; margin-left: 8px; } .t-HeroRegion-form { margin-left: 0; width: 100%; }
+  .u-RTL .t-HeroRegion-form { margin-right: 0; } .t-HeroRegion-form .t-Form-searchField[type=text] { max-width: 100%; } .t-HeroRegion-wrap { padding: 8px; }
+  .t-HeroRegion--featured .t-HeroRegion-icon, .t-HeroRegion-icon { width: 32px; height: 32px; line-height: 32px; font-size: 16px; }
+  .apex-icons-fontapex .t-HeroRegion--featured .t-HeroRegion-icon:before, .apex-icons-fontapex .t-HeroRegion--featured .t-HeroRegion-icon:after, .apex-icons-fontapex .t-HeroRegion-icon:before, .apex-icons-fontapex .t-HeroRegion-icon:after { font-family: 'Font APEX Small' !important; }
+  .t-HeroRegion-title { font-size: 1.6rem !important; line-height: 2.4rem !important; font-weight: 500; }
+  .t-HeroRegion-col--content { font-size: 1.2rem; line-height: 1.6rem; } }
+
+@media (min-width: 641px) and (max-width: 767px) { .t-HeroRegion--featured .t-HeroRegion-icon { width: 96px; height: 96px; line-height: 96px; font-size: 48px; } }

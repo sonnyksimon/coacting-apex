@@ -1,0 +1,880 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-4b1198f5ca42af4e618012d474ec21a8d5b46e261b8b9a143787aa27ed277f0c.css" integrity="sha256-SxGY9cpCr05hgBLUdOwhqNW0biYbi5oUN4eqJ+0nfww=" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-21f8759fbb61e32add47042d2c73f9650a65b4cc6d9c01ccada4d44d61c2de55.css" integrity="sha256-Ifh1n7th4yrdRwQtLHP5ZQpltMxtnAHMraTUTWHC3lU=" media="all" rel="stylesheet" />
+    
+    
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-293f92180d0a619a750fa2b5eae9e36740f5723a59c0ec308972c70d24e834fc.css" integrity="sha256-KT+SGA0KYZp1D6K16unjZ0D1cjpZwOwwiXLHDSToNPw=" media="all" rel="stylesheet" />
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>hammer.js/hammer.min.map at master · hammerjs/hammer.js · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars0.githubusercontent.com/u/7997161?v=3&amp;s=400" name="twitter:image:src" /><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="hammerjs/hammer.js" name="twitter:title" /><meta content="hammer.js - A javascript library for multi-touch gestures :// You can touch this" name="twitter:description" />
+      <meta content="https://avatars0.githubusercontent.com/u/7997161?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="hammerjs/hammer.js" property="og:title" /><meta content="https://github.com/hammerjs/hammer.js" property="og:url" /><meta content="hammer.js - A javascript library for multi-touch gestures :// You can touch this" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+    <meta name="request-id" content="8D8FD4E8:1D96:346C49D:586D325A" data-pjax-transient>
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="8D8FD4E8:1D96:346C49D:586D325A" name="octolytics-dimension-request_id" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="Y2NhM2JkYTIzMmI1MDAyYTdmNGJhMWMzMmI3ZTM1MTZmZDNjZDdhYWE4OWI5M2Y1ZmM2MDllZWM3ZDMxNjVmMHx7InJlbW90ZV9hZGRyZXNzIjoiMTQxLjE0My4yMTIuMjMyIiwicmVxdWVzdF9pZCI6IjhEOEZENEU4OjFEOTY6MzQ2QzQ5RDo1ODZEMzI1QSIsInRpbWVzdGFtcCI6MTQ4MzU1MTMyMywiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta name="html-safe-nonce" content="6f4136f7e0d52dac0f914e9d527abab6f64d9f12">
+
+    <meta http-equiv="x-pjax-version" content="32e95263d86be3c7c2d018019b7ff48e">
+    
+
+      
+  <meta name="description" content="hammer.js - A javascript library for multi-touch gestures :// You can touch this">
+  <meta name="go-import" content="github.com/hammerjs/hammer.js git https://github.com/hammerjs/hammer.js.git">
+
+  <meta content="7997161" name="octolytics-dimension-user_id" /><meta content="hammerjs" name="octolytics-dimension-user_login" /><meta content="3602123" name="octolytics-dimension-repository_id" /><meta content="hammerjs/hammer.js" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="3602123" name="octolytics-dimension-repository_network_root_id" /><meta content="hammerjs/hammer.js" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/hammerjs/hammer.js/commits/master.atom" rel="alternate" title="Recent Commits to hammer.js:master" type="application/atom+xml">
+
+
+      <link rel="canonical" href="https://github.com/hammerjs/hammer.js/blob/master/hammer.min.map" data-pjax-transient>
+  </head>
+
+
+  <body class="logged-out  env-production windows vis-public page-blob">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+          <header class="site-header js-details-container" role="banner">
+  <div class="container-responsive">
+    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+    </a>
+
+    <button class="btn-link float-right site-header-toggle js-details-target" type="button" aria-label="Toggle navigation">
+      <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+    </button>
+
+    <div class="site-header-menu">
+      <nav class="site-header-nav site-header-nav-main">
+        <a href="/personal" class="js-selected-navigation-item nav-item nav-item-personal" data-ga-click="Header, click, Nav menu - item:personal" data-selected-links="/personal /personal">
+          Personal
+</a>        <a href="/open-source" class="js-selected-navigation-item nav-item nav-item-opensource" data-ga-click="Header, click, Nav menu - item:opensource" data-selected-links="/open-source /open-source">
+          Open source
+</a>        <a href="/business" class="js-selected-navigation-item nav-item nav-item-business" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/partners /business/features /business/customers /business">
+          Business
+</a>        <a href="/explore" class="js-selected-navigation-item nav-item nav-item-explore" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship /showcases /explore">
+          Explore
+</a>      </nav>
+
+      <div class="site-header-actions">
+            <a class="btn btn-primary site-header-actions-btn" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+          <a class="btn site-header-actions-btn mr-1" href="/login?return_to=%2Fhammerjs%2Fhammer.js%2Fblob%2Fmaster%2Fhammer.min.map" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+      </div>
+
+        <nav class="site-header-nav site-header-nav-secondary mr-md-3">
+          <a class="nav-item" href="/pricing">Pricing</a>
+          <a class="nav-item" href="/blog">Blog</a>
+          <a class="nav-item" href="https://help.github.com">Support</a>
+          <a class="nav-item header-search-link" href="https://github.com/search">Search GitHub</a>
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/hammerjs/hammer.js/search" class="js-site-search-form" data-scoped-search-url="/hammerjs/hammer.js/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+    </label>
+</form></div>
+
+        </nav>
+    </div>
+  </div>
+</header>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fhammerjs%2Fhammer.js"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/hammerjs/hammer.js/watchers"
+     aria-label="573 users are watching this repository">
+    573
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fhammerjs%2Fhammer.js"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/hammerjs/hammer.js/stargazers"
+      aria-label="15322 users starred this repository">
+      15,322
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fhammerjs%2Fhammer.js"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/hammerjs/hammer.js/network" class="social-count"
+       aria-label="2215 users forked this repository">
+      2,215
+    </a>
+  </li>
+</ul>
+
+    <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/hammerjs" class="url fn" rel="author">hammerjs</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/hammerjs/hammer.js" data-pjax="#js-repo-pjax-container">hammer.js</a></strong>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/hammerjs/hammer.js" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /hammerjs/hammer.js" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/hammerjs/hammer.js/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /hammerjs/hammer.js/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">119</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/hammerjs/hammer.js/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /hammerjs/hammer.js/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">21</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+  <a href="/hammerjs/hammer.js/projects" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /hammerjs/hammer.js/projects">
+    <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+    Projects
+    <span class="counter">0</span>
+</a>
+    <a href="/hammerjs/hammer.js/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /hammerjs/hammer.js/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+
+  <a href="/hammerjs/hammer.js/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /hammerjs/hammer.js/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z"/></svg>
+    Pulse
+</a>
+  <a href="/hammerjs/hammer.js/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /hammerjs/hammer.js/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+
+<a href="/hammerjs/hammer.js/blob/17a543b6ac47540a43dff455a362efa959b65026/hammer.min.map" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:03fc00e919e402006ec0f9198f4b9dcc -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/hammerjs/hammer.js/blob/1.1.x/hammer.min.map"
+               data-name="1.1.x"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                1.1.x
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/hammerjs/hammer.js/blob/2.0.5-alpha/hammer.min.map"
+               data-name="2.0.5-alpha"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                2.0.5-alpha
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/hammerjs/hammer.js/blob/develop/hammer.min.map"
+               data-name="develop"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                develop
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/hammerjs/hammer.js/blob/es2015/hammer.min.map"
+               data-name="es2015"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                es2015
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/hammerjs/hammer.js/blob/feat/es6/hammer.min.map"
+               data-name="feat/es6"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                feat/es6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/hammerjs/hammer.js/blob/feat/es2015/hammer.min.map"
+               data-name="feat/es2015"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                feat/es2015
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/hammerjs/hammer.js/blob/feat/hammer-3/hammer.min.map"
+               data-name="feat/hammer-3"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                feat/hammer-3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/hammerjs/hammer.js/blob/fix-ios93/hammer.min.map"
+               data-name="fix-ios93"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                fix-ios93
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/hammerjs/hammer.js/blob/master/hammer.min.map"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/v2.0.8/hammer.min.map"
+              data-name="v2.0.8"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v2.0.8">
+                v2.0.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/v2.0.7/hammer.min.map"
+              data-name="v2.0.7"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v2.0.7">
+                v2.0.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/v2.0.6/hammer.min.map"
+              data-name="v2.0.6"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v2.0.6">
+                v2.0.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/v2.0.5/hammer.min.map"
+              data-name="v2.0.5"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v2.0.5">
+                v2.0.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/v1.0.5/hammer.min.map"
+              data-name="v1.0.5"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.0.5">
+                v1.0.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/v1.0.4/hammer.min.map"
+              data-name="v1.0.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.0.4">
+                v1.0.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/v1.0.3/hammer.min.map"
+              data-name="v1.0.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.0.3">
+                v1.0.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/v1.0.2/hammer.min.map"
+              data-name="v1.0.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.0.2">
+                v1.0.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/v1.0.1/hammer.min.map"
+              data-name="v1.0.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.0.1">
+                v1.0.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/v1.0.0/hammer.min.map"
+              data-name="v1.0.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.0.0">
+                v1.0.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/2.0.4/hammer.min.map"
+              data-name="2.0.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.4">
+                2.0.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/2.0.3/hammer.min.map"
+              data-name="2.0.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.3">
+                2.0.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/2.0.2/hammer.min.map"
+              data-name="2.0.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.2">
+                2.0.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/2.0.1/hammer.min.map"
+              data-name="2.0.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.1">
+                2.0.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/2.0.0/hammer.min.map"
+              data-name="2.0.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2.0.0">
+                2.0.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/1.1.3/hammer.min.map"
+              data-name="1.1.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.1.3">
+                1.1.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/1.1.2/hammer.min.map"
+              data-name="1.1.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.1.2">
+                1.1.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/1.1.1/hammer.min.map"
+              data-name="1.1.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.1.1">
+                1.1.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/1.1.0/hammer.min.map"
+              data-name="1.1.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.1.0">
+                1.1.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/1.0.11/hammer.min.map"
+              data-name="1.0.11"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.11">
+                1.0.11
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/1.0.10/hammer.min.map"
+              data-name="1.0.10"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.10">
+                1.0.10
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/1.0.9/hammer.min.map"
+              data-name="1.0.9"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.9">
+                1.0.9
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/1.0.8/hammer.min.map"
+              data-name="1.0.8"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.8">
+                1.0.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/1.0.7/hammer.min.map"
+              data-name="1.0.7"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.7">
+                1.0.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/hammerjs/hammer.js/tree/1.0.6/hammer.min.map"
+              data-name="1.0.6"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="1.0.6">
+                1.0.6
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="BtnGroup float-right">
+    <a href="/hammerjs/hammer.js/find/master"
+          class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+          data-pjax
+          data-hotkey="t">
+      Find file
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+  </div>
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/hammerjs/hammer.js"><span>hammer.js</span></a></span></span><span class="separator">/</span><strong class="final-path">hammer.min.map</strong>
+  </div>
+</div>
+
+
+  <div class="commit-tease">
+      <span class="float-right">
+        <a class="commit-tease-sha" href="/hammerjs/hammer.js/commit/06d31f5bb30bfa815b095e34750b956bf539de71" data-pjax>
+          06d31f5
+        </a>
+        <relative-time datetime="2015-12-24T01:23:33Z">Dec 24, 2015</relative-time>
+      </span>
+      <div>
+        <img alt="@arschmitz" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/462993?v=3&amp;s=40" width="20" />
+        <a href="/arschmitz" class="user-mention" rel="contributor">arschmitz</a>
+          <a href="/hammerjs/hammer.js/commit/06d31f5bb30bfa815b095e34750b956bf539de71" class="message" data-pjax="true" title="Build: Prepare 2.0.6 release">Build: Prepare 2.0.6 release</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>4</strong>
+         contributors
+      </button>
+          <a class="avatar-link tooltipped tooltipped-s" aria-label="jtangelder" href="/hammerjs/hammer.js/commits/master/hammer.min.map?author=jtangelder"><img alt="@jtangelder" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/1243901?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="ppcano" href="/hammerjs/hammer.js/commits/master/hammer.min.map?author=ppcano"><img alt="@ppcano" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/825430?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="arschmitz" href="/hammerjs/hammer.js/commits/master/hammer.min.map?author=arschmitz"><img alt="@arschmitz" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/462993?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="sithmel" href="/hammerjs/hammer.js/commits/master/hammer.min.map?author=sithmel"><img alt="@sithmel" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/460811?v=3&amp;s=40" width="20" /> </a>
+
+
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <img alt="@jtangelder" height="24" src="https://avatars3.githubusercontent.com/u/1243901?v=3&amp;s=48" width="24" />
+            <a href="/jtangelder">jtangelder</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@ppcano" height="24" src="https://avatars1.githubusercontent.com/u/825430?v=3&amp;s=48" width="24" />
+            <a href="/ppcano">ppcano</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@arschmitz" height="24" src="https://avatars3.githubusercontent.com/u/462993?v=3&amp;s=48" width="24" />
+            <a href="/arschmitz">arschmitz</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@sithmel" height="24" src="https://avatars3.githubusercontent.com/u/460811?v=3&amp;s=48" width="24" />
+            <a href="/sithmel">sithmel</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+
+<div class="file">
+  <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a href="/hammerjs/hammer.js/raw/master/hammer.min.map" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/hammerjs/hammer.js/blame/master/hammer.min.map" class="btn btn-sm js-update-url-with-hash BtnGroup-item">Blame</a>
+      <a href="/hammerjs/hammer.js/commits/master/hammer.min.map" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="https://windows.github.com"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:windows">
+            <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+        </a>
+
+        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+        </button>
+        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+        </button>
+  </div>
+
+  <div class="file-info">
+      1 lines (1 sloc)
+      <span class="file-info-divider"></span>
+    29.9 KB
+  </div>
+</div>
+
+  
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="2">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line">{&quot;version&quot;:3,&quot;file&quot;:&quot;hammer.min.js&quot;,&quot;sources&quot;:[&quot;hammer.js&quot;],&quot;names&quot;:[&quot;window&quot;,&quot;document&quot;,&quot;exportName&quot;,&quot;undefined&quot;,&quot;setTimeoutContext&quot;,&quot;fn&quot;,&quot;timeout&quot;,&quot;context&quot;,&quot;setTimeout&quot;,&quot;bindFn&quot;,&quot;invokeArrayArg&quot;,&quot;arg&quot;,&quot;Array&quot;,&quot;isArray&quot;,&quot;each&quot;,&quot;obj&quot;,&quot;iterator&quot;,&quot;i&quot;,&quot;forEach&quot;,&quot;length&quot;,&quot;call&quot;,&quot;hasOwnProperty&quot;,&quot;deprecate&quot;,&quot;method&quot;,&quot;name&quot;,&quot;message&quot;,&quot;deprecationMessage&quot;,&quot;e&quot;,&quot;Error&quot;,&quot;stack&quot;,&quot;replace&quot;,&quot;log&quot;,&quot;console&quot;,&quot;warn&quot;,&quot;apply&quot;,&quot;this&quot;,&quot;arguments&quot;,&quot;inherit&quot;,&quot;child&quot;,&quot;base&quot;,&quot;properties&quot;,&quot;childP&quot;,&quot;baseP&quot;,&quot;prototype&quot;,&quot;Object&quot;,&quot;create&quot;,&quot;constructor&quot;,&quot;_super&quot;,&quot;assign&quot;,&quot;boolOrFn&quot;,&quot;val&quot;,&quot;args&quot;,&quot;TYPE_FUNCTION&quot;,&quot;ifUndefined&quot;,&quot;val1&quot;,&quot;val2&quot;,&quot;addEventListeners&quot;,&quot;target&quot;,&quot;types&quot;,&quot;handler&quot;,&quot;splitStr&quot;,&quot;type&quot;,&quot;addEventListener&quot;,&quot;removeEventListeners&quot;,&quot;removeEventListener&quot;,&quot;hasParent&quot;,&quot;node&quot;,&quot;parent&quot;,&quot;parentNode&quot;,&quot;inStr&quot;,&quot;str&quot;,&quot;find&quot;,&quot;indexOf&quot;,&quot;trim&quot;,&quot;split&quot;,&quot;inArray&quot;,&quot;src&quot;,&quot;findByKey&quot;,&quot;toArray&quot;,&quot;slice&quot;,&quot;uniqueArray&quot;,&quot;key&quot;,&quot;sort&quot;,&quot;results&quot;,&quot;values&quot;,&quot;push&quot;,&quot;a&quot;,&quot;b&quot;,&quot;prefixed&quot;,&quot;property&quot;,&quot;prefix&quot;,&quot;prop&quot;,&quot;camelProp&quot;,&quot;toUpperCase&quot;,&quot;VENDOR_PREFIXES&quot;,&quot;uniqueId&quot;,&quot;_uniqueId&quot;,&quot;getWindowForElement&quot;,&quot;element&quot;,&quot;doc&quot;,&quot;ownerDocument&quot;,&quot;defaultView&quot;,&quot;parentWindow&quot;,&quot;Input&quot;,&quot;manager&quot;,&quot;callback&quot;,&quot;self&quot;,&quot;options&quot;,&quot;inputTarget&quot;,&quot;domHandler&quot;,&quot;ev&quot;,&quot;enable&quot;,&quot;init&quot;,&quot;createInputInstance&quot;,&quot;Type&quot;,&quot;inputClass&quot;,&quot;SUPPORT_POINTER_EVENTS&quot;,&quot;PointerEventInput&quot;,&quot;SUPPORT_ONLY_TOUCH&quot;,&quot;TouchInput&quot;,&quot;SUPPORT_TOUCH&quot;,&quot;TouchMouseInput&quot;,&quot;MouseInput&quot;,&quot;inputHandler&quot;,&quot;eventType&quot;,&quot;input&quot;,&quot;pointersLen&quot;,&quot;pointers&quot;,&quot;changedPointersLen&quot;,&quot;changedPointers&quot;,&quot;isFirst&quot;,&quot;INPUT_START&quot;,&quot;isFinal&quot;,&quot;INPUT_END&quot;,&quot;INPUT_CANCEL&quot;,&quot;session&quot;,&quot;computeInputData&quot;,&quot;emit&quot;,&quot;recognize&quot;,&quot;prevInput&quot;,&quot;pointersLength&quot;,&quot;firstInput&quot;,&quot;simpleCloneInputData&quot;,&quot;firstMultiple&quot;,&quot;offsetCenter&quot;,&quot;center&quot;,&quot;getCenter&quot;,&quot;timeStamp&quot;,&quot;now&quot;,&quot;deltaTime&quot;,&quot;angle&quot;,&quot;getAngle&quot;,&quot;distance&quot;,&quot;getDistance&quot;,&quot;computeDeltaXY&quot;,&quot;offsetDirection&quot;,&quot;getDirection&quot;,&quot;deltaX&quot;,&quot;deltaY&quot;,&quot;overallVelocity&quot;,&quot;getVelocity&quot;,&quot;overallVelocityX&quot;,&quot;x&quot;,&quot;overallVelocityY&quot;,&quot;y&quot;,&quot;abs&quot;,&quot;scale&quot;,&quot;getScale&quot;,&quot;rotation&quot;,&quot;getRotation&quot;,&quot;maxPointers&quot;,&quot;computeIntervalInputData&quot;,&quot;srcEvent&quot;,&quot;offset&quot;,&quot;offsetDelta&quot;,&quot;prevDelta&quot;,&quot;velocity&quot;,&quot;velocityX&quot;,&quot;velocityY&quot;,&quot;direction&quot;,&quot;last&quot;,&quot;lastInterval&quot;,&quot;COMPUTE_INTERVAL&quot;,&quot;v&quot;,&quot;clientX&quot;,&quot;round&quot;,&quot;clientY&quot;,&quot;DIRECTION_NONE&quot;,&quot;DIRECTION_LEFT&quot;,&quot;DIRECTION_RIGHT&quot;,&quot;DIRECTION_UP&quot;,&quot;DIRECTION_DOWN&quot;,&quot;p1&quot;,&quot;p2&quot;,&quot;props&quot;,&quot;PROPS_XY&quot;,&quot;Math&quot;,&quot;sqrt&quot;,&quot;atan2&quot;,&quot;PI&quot;,&quot;start&quot;,&quot;end&quot;,&quot;PROPS_CLIENT_XY&quot;,&quot;evEl&quot;,&quot;MOUSE_ELEMENT_EVENTS&quot;,&quot;evWin&quot;,&quot;MOUSE_WINDOW_EVENTS&quot;,&quot;allow&quot;,&quot;pressed&quot;,&quot;POINTER_ELEMENT_EVENTS&quot;,&quot;POINTER_WINDOW_EVENTS&quot;,&quot;store&quot;,&quot;pointerEvents&quot;,&quot;SingleTouchInput&quot;,&quot;evTarget&quot;,&quot;SINGLE_TOUCH_TARGET_EVENTS&quot;,&quot;SINGLE_TOUCH_WINDOW_EVENTS&quot;,&quot;started&quot;,&quot;normalizeSingleTouches&quot;,&quot;all&quot;,&quot;touches&quot;,&quot;changed&quot;,&quot;changedTouches&quot;,&quot;concat&quot;,&quot;TOUCH_TARGET_EVENTS&quot;,&quot;targetIds&quot;,&quot;getTouches&quot;,&quot;allTouches&quot;,&quot;INPUT_MOVE&quot;,&quot;identifier&quot;,&quot;targetTouches&quot;,&quot;changedTargetTouches&quot;,&quot;filter&quot;,&quot;touch&quot;,&quot;mouse&quot;,&quot;TouchAction&quot;,&quot;value&quot;,&quot;set&quot;,&quot;cleanTouchActions&quot;,&quot;actions&quot;,&quot;TOUCH_ACTION_NONE&quot;,&quot;hasPanX&quot;,&quot;TOUCH_ACTION_PAN_X&quot;,&quot;hasPanY&quot;,&quot;TOUCH_ACTION_PAN_Y&quot;,&quot;TOUCH_ACTION_MANIPULATION&quot;,&quot;TOUCH_ACTION_AUTO&quot;,&quot;Recognizer&quot;,&quot;defaults&quot;,&quot;id&quot;,&quot;state&quot;,&quot;STATE_POSSIBLE&quot;,&quot;simultaneous&quot;,&quot;requireFail&quot;,&quot;stateStr&quot;,&quot;STATE_CANCELLED&quot;,&quot;STATE_ENDED&quot;,&quot;STATE_CHANGED&quot;,&quot;STATE_BEGAN&quot;,&quot;directionStr&quot;,&quot;getRecognizerByNameIfManager&quot;,&quot;otherRecognizer&quot;,&quot;recognizer&quot;,&quot;get&quot;,&quot;AttrRecognizer&quot;,&quot;PanRecognizer&quot;,&quot;pX&quot;,&quot;pY&quot;,&quot;PinchRecognizer&quot;,&quot;PressRecognizer&quot;,&quot;_timer&quot;,&quot;_input&quot;,&quot;RotateRecognizer&quot;,&quot;SwipeRecognizer&quot;,&quot;TapRecognizer&quot;,&quot;pTime&quot;,&quot;pCenter&quot;,&quot;count&quot;,&quot;Hammer&quot;,&quot;recognizers&quot;,&quot;preset&quot;,&quot;Manager&quot;,&quot;handlers&quot;,&quot;touchAction&quot;,&quot;toggleCssProps&quot;,&quot;item&quot;,&quot;add&quot;,&quot;recognizeWith&quot;,&quot;requireFailure&quot;,&quot;style&quot;,&quot;cssProps&quot;,&quot;triggerDomEvent&quot;,&quot;event&quot;,&quot;data&quot;,&quot;gestureEvent&quot;,&quot;createEvent&quot;,&quot;initEvent&quot;,&quot;gesture&quot;,&quot;dispatchEvent&quot;,&quot;TEST_ELEMENT&quot;,&quot;createElement&quot;,&quot;Date&quot;,&quot;TypeError&quot;,&quot;output&quot;,&quot;index&quot;,&quot;source&quot;,&quot;nextKey&quot;,&quot;extend&quot;,&quot;dest&quot;,&quot;merge&quot;,&quot;keys&quot;,&quot;MOBILE_REGEX&quot;,&quot;test&quot;,&quot;navigator&quot;,&quot;userAgent&quot;,&quot;INPUT_TYPE_TOUCH&quot;,&quot;INPUT_TYPE_PEN&quot;,&quot;INPUT_TYPE_MOUSE&quot;,&quot;INPUT_TYPE_KINECT&quot;,&quot;DIRECTION_HORIZONTAL&quot;,&quot;DIRECTION_VERTICAL&quot;,&quot;DIRECTION_ALL&quot;,&quot;destroy&quot;,&quot;MOUSE_INPUT_MAP&quot;,&quot;mousedown&quot;,&quot;mousemove&quot;,&quot;mouseup&quot;,&quot;button&quot;,&quot;which&quot;,&quot;pointerType&quot;,&quot;POINTER_INPUT_MAP&quot;,&quot;pointerdown&quot;,&quot;pointermove&quot;,&quot;pointerup&quot;,&quot;pointercancel&quot;,&quot;pointerout&quot;,&quot;IE10_POINTER_TYPE_ENUM&quot;,2,3,4,5,&quot;MSPointerEvent&quot;,&quot;PointerEvent&quot;,&quot;removePointer&quot;,&quot;eventTypeNormalized&quot;,&quot;toLowerCase&quot;,&quot;isTouch&quot;,&quot;storeIndex&quot;,&quot;pointerId&quot;,&quot;splice&quot;,&quot;SINGLE_TOUCH_INPUT_MAP&quot;,&quot;touchstart&quot;,&quot;touchmove&quot;,&quot;touchend&quot;,&quot;touchcancel&quot;,&quot;TOUCH_INPUT_MAP&quot;,&quot;inputEvent&quot;,&quot;inputData&quot;,&quot;isMouse&quot;,&quot;PREFIXED_TOUCH_ACTION&quot;,&quot;NATIVE_TOUCH_ACTION&quot;,&quot;TOUCH_ACTION_COMPUTE&quot;,&quot;compute&quot;,&quot;update&quot;,&quot;getTouchAction&quot;,&quot;join&quot;,&quot;preventDefaults&quot;,&quot;prevented&quot;,&quot;preventDefault&quot;,&quot;hasNone&quot;,&quot;isTapPointer&quot;,&quot;isTapMovement&quot;,&quot;isTapTouchTime&quot;,&quot;preventSrc&quot;,&quot;STATE_RECOGNIZED&quot;,&quot;STATE_FAILED&quot;,&quot;dropRecognizeWith&quot;,&quot;dropRequireFailure&quot;,&quot;hasRequireFailures&quot;,&quot;canRecognizeWith&quot;,&quot;additionalEvent&quot;,&quot;tryEmit&quot;,&quot;canEmit&quot;,&quot;inputDataClone&quot;,&quot;process&quot;,&quot;reset&quot;,&quot;attrTest&quot;,&quot;optionPointers&quot;,&quot;isRecognized&quot;,&quot;isValid&quot;,&quot;threshold&quot;,&quot;directionTest&quot;,&quot;hasMoved&quot;,&quot;inOut&quot;,&quot;time&quot;,&quot;validPointers&quot;,&quot;validMovement&quot;,&quot;validTime&quot;,&quot;clearTimeout&quot;,&quot;taps&quot;,&quot;interval&quot;,&quot;posThreshold&quot;,&quot;validTouchTime&quot;,&quot;failTimeout&quot;,&quot;validInterval&quot;,&quot;validMultiTap&quot;,&quot;tapCount&quot;,&quot;VERSION&quot;,&quot;domEvents&quot;,&quot;userSelect&quot;,&quot;touchSelect&quot;,&quot;touchCallout&quot;,&quot;contentZooming&quot;,&quot;userDrag&quot;,&quot;tapHighlightColor&quot;,&quot;STOP&quot;,&quot;FORCED_STOP&quot;,&quot;stop&quot;,&quot;force&quot;,&quot;stopped&quot;,&quot;curRecognizer&quot;,&quot;existing&quot;,&quot;remove&quot;,&quot;on&quot;,&quot;events&quot;,&quot;off&quot;,&quot;Tap&quot;,&quot;Pan&quot;,&quot;Swipe&quot;,&quot;Pinch&quot;,&quot;Rotate&quot;,&quot;Press&quot;,&quot;freeGlobal&quot;,&quot;define&quot;,&quot;amd&quot;,&quot;module&quot;,&quot;exports&quot;],&quot;mappings&quot;:&quot;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&quot;}</td>
+      </tr>
+</table>
+
+  </div>
+
+</div>
+
+<button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+<div id="jump-to-line" style="display:none">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+    <button type="submit" class="btn">Go</button>
+</form></div>
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links float-right">
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2017 <span title="0.07283s from github-fe129-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+      </button>
+      You can't perform that action at this time.
+    </div>
+
+
+      
+      <script crossorigin="anonymous" integrity="sha256-ms83xOg2RIrlBasYYhooeAygj1P5S82HGgqZUu4KXEw=" src="https://assets-cdn.github.com/assets/frameworks-9acf37c4e836448ae505ab18621a28780ca08f53f94bcd871a0a9952ee0a5c4c.js"></script>
+      <script async="async" crossorigin="anonymous" integrity="sha256-vn7tQcMDxxhUAcjYrcyCY8h6KRZdRcLb8VQP2aXxu4Q=" src="https://assets-cdn.github.com/assets/github-be7eed41c303c7185401c8d8adcc8263c87a29165d45c2dbf1540fd9a5f1bb84.js"></script>
+      
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+  </body>
+</html>
+

@@ -1,0 +1,101 @@
+/** Import Compass */
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Breadcrumb Region ========================================================================== */
+.t-BreadcrumbRegion { display: flex; align-items: flex-end; }
+
+.t-BreadcrumbRegion + div > .apex-rds-container { margin-top: -16px; }
+
+.t-BreadcrumbRegion-body, .t-BreadcrumbRegion-title { overflow: hidden; }
+
+.t-BreadcrumbRegion-breadcrumb { display: none; }
+
+.t-BreadcrumbRegion-body { flex-grow: 1; line-height: 1.6rem; }
+
+.t-BreadcrumbRegion-buttons { line-height: 4.8rem; }
+
+.t-BreadcrumbRegion--useBreadcrumbTitle .t-Breadcrumb-item.is-active, .t-BreadcrumbRegion-titleText { font-weight: 500; }
+
+/* Shrinking Title ========================================================================== */
+.t-Body-title-shrink .t-BreadcrumbRegion-buttons { line-height: 3.2rem; }
+
+/* Responsive Layout
+========================================================================== */
+
+/** Modifier: Show Breadcrumb Use's the breadcrumb region's title */
+.t-BreadcrumbRegion--showBreadcrumb .t-BreadcrumbRegion-breadcrumb { display: block; }
+
+/** Modifier: Use Region Title Use's the breadcrumb region's title */
+.t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-breadcrumb:empty, .t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-buttons:empty { display: none; }
+
+/** Modifier: Compact Display Always display the breadcrumb in a compact style */
+.t-BreadcrumbRegion--compactTitle .t-BreadcrumbRegion-breadcrumb, .t-BreadcrumbRegion--compactTitle .t-BreadcrumbRegion-title { display: inline-block; vertical-align: top; }
+
+.t-BreadcrumbRegion--compactTitle .t-BreadcrumbRegion-titleText { font-size: 1.4rem; line-height: 1.6rem; }
+
+.t-BreadcrumbRegion--compactTitle .t-BreadcrumbRegion-buttons .t-Button { vertical-align: top; }
+
+.t-BreadcrumbRegion--compactTitle .t-BreadcrumbRegion-buttons { line-height: 3.2rem; }
+
+/** Modifier: Use Breadcrumb Title Uses the last item in the breadcrumb as the title */
+.t-BreadcrumbRegion--useBreadcrumbTitle .t-BreadcrumbRegion-title { display: none !important; }
+
+/* ========================================================================== Breadcrumb ========================================================================== */
+.t-Breadcrumb { list-style: none; padding: 0; margin: 0; vertical-align: top; line-height: 1; }
+
+.t-Breadcrumb:empty { display: none; }
+
+.t-Breadcrumb-item { display: inline-block; font-size: 1.4rem; line-height: 1.6rem; vertical-align: top; font-weight: 400; }
+
+.t-Breadcrumb-item:after { opacity: .5; content: '\\'; margin-left: 8px; margin-right: 6px; }
+
+.u-RTL .t-Breadcrumb-item:after { content: '/'; }
+
+.t-BreadcrumbRegion--useBreadcrumbTitle .t-Breadcrumb-item:last-child:after { display: none; }
+
+.t-Breadcrumb-label { font-size: inherit; line-height: inherit; margin: inherit; display: inherit; font-weight: inherit; }
+
+.t-Breadcrumb--hideLast .t-Breadcrumb-item:last-child { display: none; }
+
+.t-BreadcrumbRegion--useBreadcrumbTitle .t-Breadcrumb-item:last-child { position: relative; }
+
+.t-BreadcrumbRegion--useBreadcrumbTitle .t-Breadcrumb-item:last-child .t-Breadcrumb-label { overflow: hidden; display: block; }
+
+/* Breadcrumb Region Specific Overrides ========================================================================== */
+.t-BreadcrumbRegion { padding: 16px; }
+
+/** Modifier: Compact Display for Breadcrumb Title Always display the breadcrumb in a compact style */
+.no-anim .t-MenuBar { height: 40px !important; }
+
+.no-anim .t-MenuBar ul { display: none; }
+
+@media (max-width: 640px) { .t-BreadcrumbRegion { flex-wrap: wrap; }
+  .t-BreadcrumbRegion .t-BreadcrumbRegion-buttons { line-height: 3.2rem; } }
+
+@media (max-width: 480px) { .t-BreadcrumbRegion .t-BreadcrumbRegion-buttons { display: flex; flex-direction: row; flex-wrap: wrap; margin: -4px; }
+  .t-BreadcrumbRegion .t-BreadcrumbRegion-buttons button { flex-grow: 1; margin: 4px; } }
+
+@media only screen and (min-width: 641px) { .t-Body-title-shrink .t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-breadcrumb, .t-Body-title-shrink .t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-title { display: inline-block; vertical-align: top; }
+  .t-Body-title-shrink .t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-titleText { font-size: 1.4rem; line-height: 1.6rem; }
+  .t-Body-title-shrink .t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-buttons .t-Button { vertical-align: top; }
+  .t-Body-title-shrink .t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-buttons { line-height: 3.2rem; } .t-Body-title-shrink .t-BreadcrumbRegion { padding-top: 8px; padding-bottom: 8px; }
+  .t-Body-title-shrink .t-BreadcrumbRegion-body { padding: 8px 0; }
+  .js-rightCollapsed .t-Body-title-shrink .t-BreadcrumbRegion-buttons, .js-rightExpanded .t-Body-title-shrink .t-BreadcrumbRegion-buttons { padding-right: 32px; }
+  .u-RTL .js-rightCollapsed .t-Body-title-shrink .t-BreadcrumbRegion-buttons, .u-RTL .js-rightExpanded .t-Body-title-shrink .t-BreadcrumbRegion-buttons { padding-right: 0; padding-left: 32px; }
+  .t-Body-title-shrink .t-Breadcrumb-item { display: inline-block; }
+  .t-Body-title-shrink .t-BreadcrumbRegion--useBreadcrumbTitle .t-Breadcrumb-item:last-child { height: auto; display: inline-block; position: relative; overflow: visible; font-size: 1.2rem; line-height: 1.6rem; }
+  .t-Body-title-shrink .t-BreadcrumbRegion--useBreadcrumbTitle .t-Breadcrumb-item:last-child .t-Breadcrumb-label { font-size: 1.4rem; height: auto; display: inline; } }
+
+@media only screen and (max-width: 640px) { .t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-breadcrumb, .t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-title { display: inline-block; vertical-align: top; }
+  .t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-titleText { font-size: 1.4rem; line-height: 1.6rem; }
+  .t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-buttons .t-Button { vertical-align: top; }
+  .t-BreadcrumbRegion--useRegionTitle .t-BreadcrumbRegion-buttons { line-height: 3.2rem; } .t-BreadcrumbRegion { padding-top: 8px; padding-bottom: 8px; }
+  .t-BreadcrumbRegion-body { padding: 8px 0; }
+  .js-rightCollapsed .t-BreadcrumbRegion-buttons, .js-rightExpanded .t-BreadcrumbRegion-buttons { padding-right: 32px; }
+  .u-RTL .js-rightCollapsed .t-BreadcrumbRegion-buttons, .u-RTL .js-rightExpanded .t-BreadcrumbRegion-buttons { padding-right: 0; padding-left: 32px; }
+  .t-Breadcrumb-item { display: inline-block; }
+  .t-BreadcrumbRegion--useBreadcrumbTitle .t-Breadcrumb-item:last-child { height: auto; display: inline-block; position: relative; overflow: visible; font-size: 1.2rem; line-height: 1.6rem; }
+  .t-BreadcrumbRegion--useBreadcrumbTitle .t-Breadcrumb-item:last-child .t-Breadcrumb-label { font-size: 1.4rem; height: auto; display: inline; }
+  .t-BreadcrumbRegion + div > .apex-rds-container { margin-top: -8px; } }
+
+@media (min-width: 641px) { .t-Body-title:not(.t-Body-title-shrink) .t-BreadcrumbRegion--useBreadcrumbTitle:not(.t-BreadcrumbRegion--compactTitle) .t-Breadcrumb-item:last-child, .t-BreadcrumbRegion-titleText { margin: 0; display: block; font-size: 3.2rem; line-height: 4.8rem; text-overflow: ellipsis; overflow: hidden; font-weight: 500; } }

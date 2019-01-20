@@ -1,0 +1,16 @@
+/* ========================================================================== Icon Panel ========================================================================== */
+.a-IconPanel { margin: 24px 12px; }
+
+.a-IconPanel-icon { background-color: #A0A0A0; color: #FFF; display: block; text-align: center; margin: 12px auto; width: 64px; height: 64px; line-height: 64px; border-radius: 100%; }
+
+.a-IconPanel-icon.icon-status-failure { background-color: #e72018; }
+
+.a-IconPanel-icon.icon-status-success { background-color: #3ADD69; }
+
+.a-IconPanel-icon.icon-status-warning { background-color: #FDB309; }
+
+.a-IconPanel-icon:before { font-size: 32px; line-height: 2; }
+
+.a-IconPanel-setting, .a-IconPanel-status { color: rgba(0, 0, 0, 0.55); display: block; text-align: center; font-size: 1.4rem; line-height: 2.0rem; }
+
+.a-IconPanel-status { color: rgba(0, 0, 0, 0.75); font-weight: bold; }

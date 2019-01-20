@@ -1,0 +1,48 @@
+/* ====== scss/compiled/core_removed/Wizard.scss ====== */
+
+@import "_variables";
+
+
+@l_Wizard-BG: @g_Region-BG;
+
+.t-Dialog-page--wizard {
+  border: contrast(@l_Wizard-BG, darken(@l_Wizard-BG,   10%), lighten(@l_Wizard-BG,   10%),  43%);
+}
+
+.t-Wizard {
+  background-color: @l_Wizard-BG;
+  border-radius: @g_Container-BorderRadius;
+  border-color: contrast(@l_Wizard-BG, darken(@l_Wizard-BG,   10%), lighten(@l_Wizard-BG,   10%),  43%);
+  .t-Wizard-title {
+    color: fade(contrast(@l_Wizard-BG, desaturate(darken(@l_Wizard-BG,  75%), 100%), desaturate(lighten(@l_Wizard-BG,  75%), 50%)), 100%);
+  }
+  .t-Wizard-header {
+    @headerBg: contrast(@l_Wizard-BG, darken(@l_Wizard-BG,   2%), lighten(@l_Wizard-BG,   2%),  43%);
+    background-color: @headerBg;
+    border-color: contrast(@headerBg, darken(@headerBg,   5%), lighten(@headerBg,   5%),  43%);
+  }
+}
+
+
+.t-WizardSteps-wrap {
+  &:after {
+    background-color: contrast(@l_Wizard-BG, darken(@l_Wizard-BG,   10%), lighten(@l_Wizard-BG,   10%),  43%);
+  }
+}
+.t-WizardSteps-step .t-WizardSteps-marker {
+  background-color: contrast(@l_Wizard-BG, darken(@l_Wizard-BG,   20%), lighten(@l_Wizard-BG,   20%),  43%);
+}
+.t-WizardSteps-step.is-complete .t-WizardSteps-marker {
+  background-color: @g_Success-BG;
+  color: #FFF;
+}
+.t-WizardSteps-step.is-active .t-WizardSteps-marker {
+  background-color: @g_Accent-BG;
+  // color: @g_Accent-FG;
+}
+.t-WizardSteps-label {
+  color: fade(contrast(@l_Wizard-BG, desaturate(darken(@l_Wizard-BG,  60%), 100%), desaturate(lighten(@l_Wizard-BG,  60%), 50%)), 100%);
+}
+.t-WizardSteps-step.is-active .t-WizardSteps-label {
+  color: fade(contrast(@l_Wizard-BG, desaturate(darken(@l_Wizard-BG,  75%), 100%), desaturate(lighten(@l_Wizard-BG,  75%), 50%)), 100%);
+}

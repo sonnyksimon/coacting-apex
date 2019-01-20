@@ -1,0 +1,50 @@
+/**  Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/* ========================================================================== Interactive Report Styles ========================================================================== */
+.a-IRR-header.is-active .a-IRR-headerLink { color: #FFF; }
+
+.a-IRR-header.is-active .a-IRR-headerSort { color: #FFF; }
+
+.a-IRR-sortWidget { border-color: #0464b5; }
+
+.a-IRR-sortWidget-actions { border-collapse: separate; padding: 4px; border-bottom-color: #04569c; }
+
+.a-IRR-sortWidget-actions-item { border: none; }
+
+.a-IRR-button.a-IRR-sortWidget-button { background-color: transparent; color: #58b0fb; border-radius: 2px; padding: 10px 0; }
+
+.a-IRR-button.a-IRR-sortWidget-button.is-active, .a-IRR-button.a-IRR-sortWidget-button:focus { background-color: transparent; color: #FFF; }
+
+.a-IRR-button.a-IRR-sortWidget-button.is-active, .a-IRR-button.a-IRR-sortWidget-button.is-active:hover { background-color: rgba(0, 0, 0, 0.25) !important; box-shadow: inherit; }
+
+.a-IRR-button.a-IRR-sortWidget-button:hover, .a-IRR-button.a-IRR-sortWidget-button:active:focus { background-color: rgba(0, 0, 0, 0.25); color: #FFF; box-shadow: none; }
+
+.a-IRR-header.is-active, .a-IRR-sortWidget-actions, .a-IRR-sortWidget-actions-item, .a-IRR-sortWidget-search > .a-IRR-sortWidget-searchField[type="text"] { background-color: #0464b5; }
+
+.a-IRR-sortWidget-search > .a-IRR-sortWidget-searchField[type="text"]::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.75); }
+
+.a-IRR-sortWidget-search > .a-IRR-sortWidget-searchField[type="text"]::-moz-placeholder { color: rgba(255, 255, 255, 0.75); }
+
+.a-IRR-sortWidget-search > .a-IRR-sortWidget-searchField[type="text"]:-ms-input-placeholder { color: rgba(255, 255, 255, 0.75); }
+
+.a-IRR-sortWidget-search > .a-IRR-sortWidget-searchField[type="text"] { color: #FFF; border-bottom: 1px solid #04569c; }
+
+.a-IRR-sortWidget-searchLabel:before { color: #FFF; }
+
+.a-IRR-sortWidget-rows { background-color: #0572CE; border-top-width: 0; background: linear-gradient(#0572ce 30%, rgba(5, 114, 206, 0)), linear-gradient(rgba(5, 114, 206, 0), #0572ce 70%) 0 100%, linear-gradient(rgba(0, 0, 0, 0.1), transparent), linear-gradient(transparent, rgba(0, 0, 0, 0.1)) 0 100%; background-repeat: no-repeat; background-color: #0572ce; background-size: 100% 12px, 100% 12px, 100% 6px, 100% 6px; background-attachment: local, local, scroll, scroll; }
+
+.a-IRR-sortWidget-row { color: #FFF; box-shadow: 0 -1px 0 #0464b5 inset; }
+
+.a-IRR-sortWidget-row:hover { background-color: #0680e7; }
+
+.a-IRR-table tr:nth-child(even) td { background-color: #FAFAFA; }
+
+.a-IRR-table tr:hover td, .a-IRR-table tr:nth-child(even):hover td { background-color: #F4F4F4; }
+
+.a-IRR-search-field:focus { border-color: #0572CE; box-shadow: 1px 0 0 #0572CE inset, -1px 0 0 #0572CE inset; }
+
+.a-IRR-headerLink:focus { box-shadow: 0 0 0 1px #0572CE inset; }

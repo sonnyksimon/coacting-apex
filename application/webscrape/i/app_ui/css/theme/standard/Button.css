@@ -1,0 +1,58 @@
+/** Import Compass and Theme Variables */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/******************************************************************************
+Button for Theme
+******************************************************************************/
+.a-Button { border: none; color: #444444; border-radius: 2px; background-clip: padding-box; background-color: #F4F4F4; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset; -webkit-font-smoothing: antialiased; }
+
+.a-Button:hover { z-index: 100; }
+
+.a-Button:focus { z-index: 110; }
+
+.a-Button:active { z-index: 100; }
+
+.a-Button.is-active, .a-Button.is-active:active { z-index: 100; }
+
+.a-Button--hot { font-weight: bold; }
+
+.a-Button--noUI, .a-Button--noUI:hover, .a-Button--noUI:active { background-color: transparent; box-shadow: none; text-shadow: none; }
+
+.a-Button.a-Button--popupLOV { padding: 4px 8px; color: #404040; }
+
+.a-Button.a-Button--calendar, .a-Button.a-Button--listManager { padding: 4px 8px; }
+
+.a-Button.a-Button--shuttle { padding: 2px 4px; }
+
+.a-Button--listManager { background: #F0F0F0; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset; margin-left: 4px; }
+
+.a-Button.a-Button--calendar { margin-left: -1px; }
+
+.a-Button { font-size: 12px; line-height: 16px; padding: 8px 12px; }
+
+.a-Button .a-Icon--pullRight { float: right !important; margin-left: 4px; margin-right: 0 !important; }
+
+.a-Button--withIcon { padding: 8px 10px; line-height: 16px; }
+
+.a-Button--withIcon .a-Icon { margin-right: 4px; }
+
+.u-RTL .a-Button--withIcon .a-Icon { margin-right: 0; margin-left: 4px; }
+
+.a-Button--withIcon.a-Button--shuttle .a-Icon { margin: 0 4px; }
+
+.a-Button--withIcon.a-Button--slim { padding-right: 8px; padding-left: 8px; }
+
+.a-Button--iconTextButton { padding-right: 8px; }
+
+.a-Button--noLabel .a-FAIcon, .a-Button--noLabel .a-Icon { margin-right: 0; }

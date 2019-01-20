@@ -1,0 +1,21 @@
+.a-LiveTemplateOptions { -webkit-font-smoothing: antialiased !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
+
+.a-LiveTemplateOptions.ui-dialog .ui-dialog-content { padding: 0px !important; }
+
+.a-LiveTemplateOptions.ui-dialog .a-PropertyEditor { max-height: none !important; overflow: hidden !important; background-color: #404040; }
+
+.a-LiveTemplateOptions .ui-widget-overlay { opacity: .35; }
+
+.a-LiveTemplateOptions .ui-widget-content { overflow: auto !important; }
+
+.a-DevToolbar-liveTemplateOptions { position: absolute; border: 0px; z-index: 9999; background: #404040; color: #EEE; padding: 5px; display: block; vertical-align: top; width: 32px; height: 32px; font-size: 12px; line-height: 16px; }
+
+.a-DevToolbar-liveTemplateOptions:hover { cursor: pointer !important; background: #303030; }
+
+.a-DevToolbar-liveTemplateOptions:hover span { cursor: pointer !important; }
+
+.a-LiveTemplateOptions .apex-rds { padding-left: 8px; visibility: visible !important; }
+
+.a-LiveTemplateOptions--inner-message { padding: 8px; }
+
+.a-LiveTemplateOptions .apex-rds-container { transition: none; }

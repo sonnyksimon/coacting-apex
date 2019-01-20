@@ -1,0 +1,83 @@
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Tree Navigation ========================================================================== */
+.a-TreeView { min-height: 99%; }
+
+.lt-ie10 .a-TreeView { min-height: 90%; }
+
+.t-TreeNav { width: 100%; }
+
+.t-TreeNav .a-TreeView-label:hover { text-decoration: none; }
+
+.t-TreeNav .a-TreeView-node--topLevel { padding-left: 0; margin-left: 0; }
+
+.t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-row { height: 40px; box-shadow: none; }
+
+.t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-content { padding: 0; line-height: 40px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-content .fa { vertical-align: top; width: 40px; height: 40px; line-height: 40px; text-align: center; transition: width .2s ease; }
+
+.js-navCollapsed .t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-content .fa { width: 48px; }
+
+.t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-content .a-TreeView-label { line-height: 40px; padding: 0; margin: 0; font-size: 14px; transition: opacity .1s; }
+
+.js-navCollapsed .t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-content .a-TreeView-label { position: fixed; left: 0; visibility: hidden; width: 48px; }
+
+.u-RTL .js-navCollapsed .t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-content .a-TreeView-label { right: 0; left: auto; }
+
+.js-navCollapsed .t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-content .a-TreeView-label .a-TreeView-badge { visibility: visible; padding: 0 4px; display: block; margin: 4px; border-radius: 12px; box-shadow: none; min-width: 12px; font-size: 10px; text-align: center; line-height: 14px; max-width: 32px; text-overflow: ellipsis; overflow: hidden; }
+
+.t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-toggle { margin: 0; width: 24px; height: 40px; padding: 12px 8px 12px 0; }
+
+.u-RTL .t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-toggle { padding: 12px 0px 12px 8px; }
+
+.t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-content .a-TreeView-badge { margin: 10px 8px 10px 4px; padding: 2px 6px; font-size: 11px; line-height: 16px; }
+
+.u-RTL .t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-content .a-TreeView-badge { margin: 10px 4px 10px 8px; }
+
+.t-TreeNav .a-TreeView-badge { margin: 6px 8px 6px 4px; padding: 2px 6px; font-size: 11px; line-height: 16px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25); position: absolute; right: 0; top: 0; }
+
+.u-RTL .t-TreeNav .a-TreeView-badge { margin: 10px 4px 10px 8px; left: 0; right: auto; }
+
+.t-TreeNav > .a-TreeView-toggle { margin: 0; width: 24px; height: 40px; padding: 12px 8px 12px 0; }
+
+.u-RTL .t-TreeNav > .a-TreeView-toggle { padding: 12px 0px 12px 8px; }
+
+.t-TreeNav .a-TreeView-toggle { float: right; position: relative; z-index: 1; }
+
+.u-RTL .t-TreeNav .a-TreeView-toggle { float: left; }
+
+.t-TreeNav .a-TreeView-node--topLevel ul { padding-bottom: 0; }
+
+.t-TreeNav .a-TreeView-node--topLevel ul .a-TreeView-row { height: 32px; box-shadow: none; }
+
+.t-TreeNav .a-TreeView-node--topLevel ul .a-TreeView-label { line-height: 32px; }
+
+.t-TreeNav .a-TreeView-node--topLevel ul .a-TreeView-content { padding: 0; line-height: 32px; overflow: hidden; text-overflow: ellipsis; }
+
+.t-TreeNav .a-TreeView-node--topLevel ul .a-TreeView-toggle { width: 24px; height: 32px; padding: 8px 8px 8px 0; margin: 0; }
+
+.t-TreeNav .a-TreeView-node--topLevel > ul { padding: 8px 0; }
+
+.t-TreeNav .a-TreeView-node--topLevel > ul > .a-TreeView-node { padding-left: 24px; }
+
+.u-RTL .t-TreeNav .a-TreeView-node--topLevel > ul > .a-TreeView-node { padding-right: 24px; padding-left: 0px; }
+
+.t-TreeNav .a-TreeView-row { transition: background-color .1s; }
+
+.t-TreeNav.a-TreeView .is-expandable > .a-TreeView-toggle:before { content: "\e0c2"; }
+
+.t-TreeNav.a-TreeView .is-collapsible > .a-TreeView-toggle:before { content: "\e0c2"; }
+
+.t-TreeNav .a-TreeView-node, .t-TreeNav .a-TreeView-label, .t-TreeNav .a-TreeView-content .fa { cursor: pointer; }
+
+/* Scrollbars ========================================================================== */
+.apex-side-nav.js-navCollapsed .t-Body-nav { overflow-x: hidden; }
+
+.t-PageBody--leftNav .t-Body-nav::-webkit-scrollbar { width: 4px; height: 4px; }
+
+.t-PageBody--leftNav .t-Body-nav .t-PageBody--leftNav .t-Body-nav:hover::-webkit-scrollbar { width: 8px; height: 8px; }
+
+/* Tree View RTL Handling ========================================================================== */
+.t-TreeNav.u-RTL .a-TreeView-node--topLevel { padding-right: 0; }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .a-TreeView { min-height: 90%; } }

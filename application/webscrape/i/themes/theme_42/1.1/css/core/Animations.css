@@ -1,0 +1,31 @@
+/* ========================================================================== Animations ========================================================================== */
+@-webkit-keyframes anim-dialogOpen { 0% { opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  .01% { opacity: 0;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75); }
+  100% { opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+@keyframes anim-dialogOpen { 0% { opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  .01% { opacity: 0;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75); }
+  100% { opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes anim-spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); transform: rotate(359deg); } }
+
+@keyframes anim-spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); transform: rotate(359deg); } }
+
+@-webkit-keyframes anim-fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@keyframes anim-fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }

@@ -1,0 +1,28 @@
+/**  Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+.a-Toolbar--insetShadow, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav { border-color: #E0E0E0; background-color: #F4F4F4; box-shadow: inset 0 -1px 0 #E0E0E0; border-radius: 0; }
+
+.ui-tabs--subTabButtons > .a-Tabs-toolbar { background-color: #FFF; border-color: #E0E0E0; padding-bottom: 1px; box-shadow: inset 0 -1px 0 #F0F0F0; }
+
+.a-Tabs-toolbar { overflow: hidden; background-color: #F4F4F4; box-shadow: inset 0 -1px 0 #E0E0E0; }
+
+.a-Tabs-toolbar .a-Toolbar-items { padding: 4px; }
+
+.a-Toolbar--simple .a-Button.a-Button--gapLeft:before, .a-Toolbar--simple .a-Button.a-Button--gapRight:before { content: ''; position: absolute; top: 0; bottom: 0; }
+
+.a-Toolbar--simple .a-Button.a-Button--gapLeft { margin-left: 15px !important; }
+
+.a-Toolbar--simple .a-Button.a-Button--gapRight { margin-right: 15px !important; }
+
+.a-Toolbar--simple .a-Button.a-Button--gapLeft:before { left: 0; margin-left: -8px; border-left: 1px solid rgba(0, 0, 0, 0.1); }
+
+.a-Toolbar--simple .a-Button.a-Button--gapRight:before { right: 0; margin-right: -8px; border-right: 1px solid rgba(0, 0, 0, 0.1); }
+
+.a-Toolbar--simple .a-Button + .a-Button { margin-left: 0; }

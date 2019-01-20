@@ -1,0 +1,219 @@
+/* ========================================================================== Regions ========================================================================== */
+/** Region Component This is a region component which provides a container to place other components in. Using a region will provide you with a header and body which you can style and use within your UI.   Example HTML: <div class="a-Region [modifiers]"> <div class="a-Region-header"> <h2 class="a-Region-title">Region Title</h2> </div> <div class="a-Region-body"> Body </div> </div> <div class="a-Region [modifiers]"> <div class="a-Region-header"> <div class="a-Region-headerItems a-Region-headerItems--left"> <h2 class="a-Region-title">Region Title</h2> </div> <div class="a-Region-headerItems a-Region-headerItems--right"> [Optional Buttons] </div> </div> <div class="a-Region-body"> Body </div> </div> */
+/* ========================================================================== Region ========================================================================== */
+.a-Region, .ui-dialog { display: block; border: 1px solid; background-clip: padding-box; }
+
+/** Modifier: No Padding Sets Region Padding to 0 */
+.a-Region--noPadding > .a-Region-body { padding: 0; }
+
+/** Modifier: Padded Region This applies a 12px padding to the region body */
+.a-Region--padded .a-Region-body { padding: 12px; }
+
+/** Modifier: Slim Padded Region This applies a 4px padding to the region body */
+.a-Region--slimPadded .a-Region-body { padding: 4px; }
+
+/** Modifier: No Border Remove borders and shadows from the region. */
+.a-Region--noBorder { border-width: 0 !important; box-shadow: none; }
+
+.a-Region--noBorder > .a-Region-header { background: none !important; border-bottom: none !important; box-shadow: none !important; }
+
+.a-Region--noBorder.a-Region--hideShow > .a-Region-header { padding-left: 0; }
+
+.a-Region--noBorder > .a-Region-body { border: none !important; }
+
+/** Modifier: Show Top Button Shows a button to right of region header to jump to top of page */
+.a-Region--showTopButton .a-Button--goToTop { display: inline-block; }
+
+/** Modifier: Stacked Regions Remove side borders and shadows.  This is useful for accordions, and regions that can be grouped togehter into stacks. */
+.a-Side .a-Region:first-child { border-top-width: 0; }
+
+/** Modifier: Region with Icon This region contains an icon-based icon */
+.a-Region--hasIcon .a-Icon.a-Icon--regionIcon { width: 32px; height: 32px; color: #B6BCC1; }
+
+.a-Region--hasIcon .a-Icon.a-Icon--regionIcon:before { font-size: 32px; }
+
+.a-Region--hasIcon .listwithicon { margin-left: 0; }
+
+/** Modifier: Flush Region Removes padding from region body */
+.ui-dialog.ui-dialog-flushBody .ui-dialog-content { padding: 0; }
+
+/** Region Header */
+.a-Region-header, .ui-dialog-titlebar { border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; border-bottom: 1px solid; display: table; /* 1 */ table-layout: auto; width: 100%; }
+
+.a-Region-headerItems { display: table-cell; vertical-align: middle; }
+
+.a-Region-headerItems--title { text-align: left; }
+
+.a-Region-headerItems--buttons { text-align: right; }
+
+.a-Region-body { padding: 12px; }
+
+.a-Region-bodyHeader { padding: 12px; }
+
+.lte-ie9 .a-Region-bodyHeader, .ie8 .a-Region-bodyHeader, .ie7 .a-Region-bodyHeader, .ie6 .a-Region-bodyHeader { padding: 0px; }
+
+.a-Region-bodyHeader:empty { display: none; }
+
+.a-Region-body--noBorder { border: none !important; }
+
+.a-Region--scrollAuto > .a-Region-body { overflow: auto; }
+
+.a-Region--shadowScroll.a-Region--heightFix > .a-Region-body { position: initial; }
+
+.a-Region--shadowScroll { position: relative; overflow: hidden; }
+
+.a-Region--shadowScroll > .a-Region-body { position: absolute; top: 40px; bottom: 0; width: 100%; background: linear-gradient(white 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, linear-gradient(rgba(0, 0, 0, 0.025), transparent), linear-gradient(transparent, rgba(0, 0, 0, 0.025)) 0 100%; background-repeat: no-repeat; background-color: white; background-size: 100% 12px, 100% 12px, 100% 6px, 100% 6px; /* Opera doesn't support this in the shorthand */ background-attachment: local, local, scroll, scroll; overflow: auto; }
+
+.a-Region { box-shadow: none; border-width: 1px 0 1px 0; border-radius: 0; margin-bottom: -1px; }
+
+.a-Region, .a-Region .a-Region-body { border-color: #E0E0E0; border-top-width: 1px; border-top-style: solid; }
+
+.a-Region .a-Region-header { border-radius: 0; border-bottom-width: 0; background-color: #FAFAFA; box-shadow: none; }
+
+.a-Region .a-Region-title { font-size: 14px; font-weight: normal; padding: 12px 0; color: #404040; }
+
+.a-Region .a-Region-body { font-size: 12px; color: #707070; line-height: 16px; }
+
+.a-Region--leftBorder, .a-Region--borderLeft { border-left-width: 1px; }
+
+.a-Region--rightBorder { border-right-width: 1px; }
+
+.a-Region--topBorder { border-top-width: 1px; }
+
+.a-Region--bottomBorder { border-bottom-width: 1px; margin-bottom: 0; }
+
+.a-Region--noTopBorder { border-top-width: 0; }
+
+.a-Region--touchTop { margin-top: -1px !important; }
+
+.a-Region--touchBottom { margin-bottom: -1px !important; }
+
+.a-Region--hideShow { margin: 12px 0; }
+
+.a-Region--hideShow.a-Region--noBorder { margin-left: 12px; margin-right: 12px; }
+
+.a-Region--hideShow > .a-Region-header .a-Region-headerIcon { transition: -webkit-transform .2s; transition: transform .2s; transition: transform .2s, -webkit-transform .2s; -webkit-transition: -webkit-transform 0.2s; }
+
+.a-Region--hideShow > .a-Region-header .a-Region-headerIcon:before { padding-left: 1px; }
+
+.a-Region--hideShow > .a-Region-header .a-Button--hideShow { border-radius: 100%; padding: 4px; margin: 4px 4px 4px 0; }
+
+.a-Region--hideShow > .a-Region-header .a-Region-headerIcon:before { content: "\e016"; }
+
+.a-Region--hideShow.is-expanded > .a-Region-body { display: block; height: auto; }
+
+.a-Region--hideShow.is-expanded > .a-Region-header .a-Button--hideShow:hover .a-Region-headerIcon { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+
+.a-Region--hideShow.is-expanded > .a-Region-header .a-Region-headerIcon { -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+
+.a-Region--hideShow.is-collapsed > .a-Region-body { height: 0; overflow: hidden; padding: 0; border-width: 0; }
+
+.a-Region--hideShow.is-collapsed > .a-Region-header .a-Button--hideShow:hover .a-Region-headerIcon { -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+
+.a-Region--hideShow > .a-Region-header .a-Region-headerItems--title { padding-left: 4px; width: 100%; }
+
+.a-Region--hideHeader > .a-Region-header { display: none; }
+
+.a-Region--accessibleHeader > .a-Region-header { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+.a-Region--hideHeader > .a-Region-body, .a-Region--accessibleHeader > .a-Region-body { border-top-width: 0; }
+
+.a-Region--iframe { border-color: #E0E0E0; }
+
+.a-Region--iframe .a-Region-header { border-color: #E0E0E0; }
+
+.a-Region--iframe .a-Region-title { font-size: 14px; font-weight: normal; padding: 12px 0; color: #404040; }
+
+.a-Region--iframe .a-Region-body { font-size: 12px; color: #707070; line-height: 20px; }
+
+.a-Region--iframe .a-ButtonRegion { margin-bottom: 0; border-width: 1px 0 0 0; background-color: #FAFAFA; border-color: #F0F0F0; }
+
+.a-Region-regionDesc { background: #FDFDFD; border-bottom: 1px solid #F0F0F0; padding: 14px 12px; font-size: 1.2rem; color: #707070; }
+
+.a-Region--simple { margin-top: 12px; }
+
+.a-Region--simple + .a-Region--simple { margin-top: 0; }
+
+.a-Region--simple > .a-Region-header { background-color: transparent; border-width: 0; background-image: linear-gradient(rgba(0, 0, 0, 0.025), transparent 50%); }
+
+.a-Region--simple > .a-Region-body { border-top-width: 0; }
+
+.a-Region--sideRegion > .a-Region-body { color: #646464; }
+
+.a-Region--carousel { overflow: hidden; }
+
+.a-Region--carousel .a-Region-carouselNav { position: absolute; bottom: 0; left: 0; width: 100%; z-index: 110; margin: 8px 0; text-align: center; }
+
+.a-Region--carousel .a-Region-carouselItems { overflow: hidden; position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: 0; }
+
+.a-Region--carousel .a-Region-carouselItem { overflow: hidden; position: absolute; opacity: 0; top: 0; left: 0; right: 0; }
+
+.ie8 .a-Region--carousel .a-Region-carouselItem, .lt-ie9 .a-Region--carousel .a-Region-carouselItem { display: none; }
+
+.a-Region--carousel .a-Region-carouselItem { transition: all .5s ease; }
+
+.a-Region--carousel .a-Region-carouselItem.a-Tabs-element-selected { opacity: 1; z-index: 10; }
+
+.ie8 .a-Region--carousel .a-Region-carouselItem.a-Tabs-element-selected, .lt-ie9 .a-Region--carousel .a-Region-carouselItem.a-Tabs-element-selected { display: block; }
+
+.a-Region--carousel.a-Region--carouselSlide .a-Region-carouselItem.apex-rds-before { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+
+.a-Region--carousel.a-Region--carouselSlide .a-Region-carouselItem.apex-rds-after { -webkit-transform: translateX(100%); transform: translateX(100%); }
+
+.a-Region--carousel.a-Region--carouselSlide .a-Region-carouselItem.apex-rds-element-selected { -webkit-transform: translateX(0); transform: translateX(0); }
+
+.a-Region--carousel.a-Region--carouselSpin .a-Region-carouselItem.apex-rds-before { -webkit-transform: rotateY(90deg); transform: rotateY(90deg); }
+
+.a-Region--carousel.a-Region--carouselSpin .a-Region-carouselItem.apex-rds-after { -webkit-transform: rotateY(-90deg); transform: rotateY(-90deg); }
+
+.a-Region--carousel.a-Region--carouselSpin .a-Region-carouselItem.apex-rds-element-selected { -webkit-transform: rotateY(0); transform: rotateY(0); }
+
+.a-Region--carousel .a-Tabs-button { border: none; display: block; background-color: transparent; position: absolute; top: 50%; width: 24px; height: 64px; padding: 16px 4px; border-radius: 2px; background-color: rgba(0, 0, 0, 0.25); box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset; color: #FFF; margin-top: -32px; z-index: 100; opacity: .75; transition: all .2s ease; }
+
+.a-Region--carousel .a-Tabs-button:hover { opacity: 1; background-color: rgba(0, 0, 0, 0.5); box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 1px rgba(0, 0, 0, 0.05); -webkit-transform: translateX(0); transform: translateX(0); }
+
+.a-Region--carousel .a-Tabs-button:active, .a-Region--carousel .a-Tabs-button:active:focus { opacity: 1; background-color: rgba(0, 0, 0, 0.75); box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px 1px rgba(0, 0, 0, 0.05) inset; }
+
+.a-Region--carousel .a-Tabs-button:focus { opacity: 1; box-shadow: 0 0 0 1px #4696FC; outline: none; }
+
+.a-Region--carousel .a-Tabs-button.a-Tabs-next-region { right: -1px; border-radius: 2px 0 0 2px; -webkit-transform: translateX(16px); transform: translateX(16px); }
+
+.a-Region--carousel .a-Tabs-button.a-Tabs-previous-region { left: -1px; border-radius: 0 2px 2px 0; -webkit-transform: translateX(-16px); transform: translateX(-16px); }
+
+.a-Region--carousel .a-Region-carouselNavItem { display: inline-block; margin: 0 4px; }
+
+.a-Region--carousel .a-Region-carouselNavItem.apex-rds-selected .a-Region-carouselLink { background-color: rgba(0, 0, 0, 0.45); }
+
+.a-Region--carousel .a-Region-carouselNavItem.apex-rds-selected .a-Region-carouselLink:focus { outline: none; background-color: #4696FC; box-shadow: 0 0 1px 1px #4696FC; }
+
+.a-Region--carousel .a-Region-carouselLink { display: block; width: 8px; height: 8px; background-color: rgba(0, 0, 0, 0.15); box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset; border-radius: 100%; }
+
+.a-Region--carousel .a-Region-carouselLabel { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Featured App Container Region (4750:1) ========================================================================== */
+.a-Region--featuredApps.a-Region--carousel .a-Tabs-button { width: 40px; top: 68px; -webkit-transform: none; transform: none; background: rgba(255, 255, 255, 0.5); box-shadow: none; color: #A0A0A0; }
+
+.a-Region--featuredApps.a-Region--carousel .a-Tabs-button:hover { background: rgba(0, 0, 0, 0.05); box-shadow: none; }
+
+.a-Region--featuredApps.a-Region--carousel .a-Tabs-button:active, .a-Region--featuredApps.a-Region--carousel .a-Tabs-button:active:focus { background: rgba(0, 0, 0, 0.1); color: #A0A0A0; }
+
+.a-Region--featuredApps.a-Region--carousel .a-Tabs-button .a-Icon { width: 32px; height: 32px; line-height: 32px; }
+
+.a-Region--featuredApps.a-Region--carousel .a-Tabs-button .a-Icon:before { font-size: 32px; line-height: 32px; }
+
+.a-Region--featuredApps .a-Region-carouselNav { display: none; }
+
+/* Modifier: textContent (Used for 4000:30 Page Designer Get Started Modal) ========================================================================== */
+.a-Region--textContent { margin: 16px 0; }
+
+.a-Region--textContent .a-Region-header { padding: 0; margin-bottom: 16px; }
+
+.a-Region--textContent .a-Region-title { font-weight: 500; font-size: 20px; line-height: 1.5; color: #000; padding: 0; }
+
+.a-Region--textContent .a-Region-body { font-size: 14px; line-height: 1.5; color: rgba(0, 0, 0, 0.75); }
+
+.a-Region--textContent ul:not([class]) { margin-left: 24px; }
+
+.a-Region--textContent ul:not([class]) li:not(:last-child) { margin-bottom: 12px; }
+
+.a-Region--textContent ul:not([class]) br { line-height: 2; }

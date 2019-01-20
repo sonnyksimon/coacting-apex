@@ -1,0 +1,84 @@
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Timeline ========================================================================== */
+.t-Timeline { margin: 0; padding: 0; list-style: none; }
+
+.t-Timeline-item { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.t-Timeline-item:last-child { border-bottom-width: 0; }
+
+a.t-Timeline-wrap { text-decoration: none; transition: all .1s; }
+
+a.t-Timeline-wrap:hover, a.t-Timeline-wrap:focus { background-color: rgba(0, 0, 0, 0.035); box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.05), 0 2px 8px -2px rgba(0, 0, 0, 0.1); position: relative; z-index: 10; }
+
+.t-Timeline-wrap, .t-Timeline-content { display: table; width: 100%; border-collapse: collapse; table-layout: fixed; }
+
+.t-Timeline-user, .t-Timeline-typeWrap, .t-Timeline-body { display: table-cell; vertical-align: middle; }
+
+.t-Timeline-username, .t-Timeline-date, .t-Timeline-desc, .t-Timeline-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* User Block ========================================================================== */
+.t-Timeline-user { width: 30%; padding: 0 0 0 12px; }
+
+.t-Timeline-avatar { width: 40px; height: 40px; overflow: hidden; border-radius: 100%; float: left; line-height: 40px; font-size: 14px; margin-right: 12px; box-shadow: 0 0 0 1px inset; text-align: center; background-color: #FFF; }
+
+.t-Timeline-avatar img { display: block; width: 100%; height: 100%; }
+
+.t-Timeline-userinfo { overflow: hidden; padding: 4px 0; }
+
+.t-Timeline-username { font-size: 1.2rem; line-height: 1.6rem; display: block; }
+
+.t-Timeline-date { display: block; font-size: 1.1rem; line-height: 1.6rem; }
+
+/* Type Block ========================================================================== */
+.t-Timeline-typeWrap { width: 35%; padding: 4px 12px; position: relative; overflow: hidden; }
+
+.t-Timeline-type { padding: 12px 12px; border-radius: 2px; min-height: 40px; }
+
+.t-Timeline .t-Icon { display: block; line-height: 1.6rem; width: 16px; height: 16px; float: left; margin-right: 6px; }
+
+.t-Timeline-typename { display: block; font-size: 1.2rem; line-height: 1.6rem; font-weight: bold; overflow: hidden; }
+
+/* Body Block ========================================================================== */
+.t-Timeline-body { padding: 16px 12px 16px 0; }
+
+.t-Timeline-title { font-size: 16px; line-height: 20px; margin: 2px 0 0 0; }
+
+.t-Timeline-desc { font-size: 11px; line-height: 16px; margin: 0 0 2px 0; }
+
+/* Small Screens ========================================================================== */
+
+.t-Timeline--compact .t-Timeline-content { padding: 12px 8px; display: table-cell; width: 70%; vertical-align: top; }
+
+.t-Timeline--compact .t-Timeline-user { padding: 12px 8px; vertical-align: top; }
+
+.t-Timeline--compact .t-Timeline-typeWrap, .t-Timeline--compact .t-Timeline-body { padding: 0; width: auto; }
+
+.t-Timeline--compact .t-Timeline-type { display: inline-block; padding: 2px 6px 2px 4px; min-height: 0; }
+
+.t-Timeline--compact .t-Timeline-typename { font-size: 11px; font-weight: normal; }
+
+.t-Timeline--compact .t-Timeline-body { padding-top: 4px; display: block; }
+
+/* Mobile Screens ========================================================================== */
+
+/* ========================================================================== Timeline Pagination ========================================================================== */
+.t-Timeline + .t-Report-pagination { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+@media (max-width: 768px) { .t-Timeline-content { padding: 12px 8px; display: table-cell; width: 70%; vertical-align: top; }
+  .t-Timeline-user { padding: 12px 8px; vertical-align: top; }
+  .t-Timeline-typeWrap, .t-Timeline-body { padding: 0; width: auto; }
+  .t-Timeline-type { display: inline-block; padding: 2px 6px 2px 4px; min-height: 0; }
+  .t-Timeline-typename { font-size: 11px; font-weight: normal; }
+  .t-Timeline-body { padding-top: 0px; display: block; } }
+@media (max-width: 480px) { .t-Timeline .t-Timeline-content, .t-Timeline .t-Timeline-user { display: block; width: auto; }
+  .t-Timeline .t-Timeline-user { padding: 8px; }
+  .t-Timeline .t-Timeline-content { padding: 0 8px 8px 8px; }
+  .t-Timeline .t-Timeline-avatar { font-size: 11px; width: 24px; height: 24px; line-height: 24px; margin-right: 8px; }
+  .t-Timeline .t-Timeline-userinfo { padding: 0; }
+  .t-Timeline .t-Timeline-type { padding: 2px 8px; }
+  .t-Timeline .t-Timeline-typename { font-weight: normal; font-size: 10px; }
+  .t-Timeline .t-Timeline-body { padding-top: 4px; }
+  .t-Timeline .t-Icon { display: none; }
+  .t-Timeline .t-Timeline-username { line-height: 24px; float: left; width: 70%; }
+  .t-Timeline .t-Timeline-date { line-height: 24px; float: right; width: 30%; text-align: right; }
+  .t-Timeline .t-Timeline-desc { font-size: 12px; } }

@@ -1,0 +1,22 @@
+/**  Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/* ========================================================================== Page Select Widget ========================================================================== */
+.a-PageSelect { border-color: rgba(0, 0, 0, 0.15); background-color: #fff; }
+
+.a-PageSelect .a-Icon.icon-down-arrow { margin-left: -2px; }
+
+.a-PageSelect--readOnly { border-color: transparent; }
+
+.a-PageSelect-input { color: #404040; background-color: transparent; }
+
+.a-PageSelect-input:focus, .a-PageSelect-input.is-focused { box-shadow: 0 0 0 1px #0572CE, 0 2px 4px rgba(0, 0, 0, 0.2); }
+
+.a-Button.a-PageSelect-menuButton:hover, .a-Button.a-PageSelect-menuButton:focus, .a-Button.a-Button--pageNav:hover, .a-Button.a-Button--pageNav:focus { background-color: #0572CE; color: #FFF; }
+
+.a-Button.a-PageSelect-menuButton:active, .a-Button.a-Button--pageNav:active { background-color: #235DB2; }
+
+.a-Button.a-Button--pageNav, .a-Button.a-PageSelect-menuButton { color: #707070; }

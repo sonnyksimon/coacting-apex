@@ -1,0 +1,54 @@
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Navigation Tabs (for Top Navigation Position) ========================================================================== */
+/* Template Options - Badges: Show Badges / Hide Badges - Mobile Display: Icons and Labels, Icons Only ========================================================================== */
+.t-NavTabs { margin: 0; padding: 0; list-style: none; overflow-y: hidden; display: flex; flex-wrap: nowrap; overflow-x: auto; }
+
+.t-NavTabs::-webkit-scrollbar { width: 4px; height: 4px; }
+
+/* Tab Item ========================================================================== */
+.t-NavTabs-item { padding: 0; font-size: 1.4rem; line-height: 2.4rem; }
+
+.t-NavTabs-item.is-active { font-weight: 500; }
+
+/* Tab Link ========================================================================== */
+.t-NavTabs-link { color: inherit; display: flex; padding: 8px 12px; align-items: center; justify-content: center; }
+
+/* Tab Icon ========================================================================== */
+.t-NavTabs-item .t-Icon { padding: 4px; margin-right: 4px; border-radius: 2px; flex-shrink: 0; flex-grow: 0; }
+
+.u-RTL .t-NavTabs-item .t-Icon { margin-left: 4px; margin-right: 0; }
+
+/* Label ========================================================================== */
+.t-NavTabs-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 1; }
+
+/* Badge ========================================================================== */
+.t-NavTabs-badge { border-radius: 2px; font-size: 11px; line-height: 16px; min-width: 16px; margin-left: 4px; padding: 0 6px; flex-shrink: 0; flex-grow: 0; }
+
+.t-NavTabs-badge:empty { display: none; }
+
+.u-RTL .t-NavTabs-badge { margin-left: 0; margin-right: 4px; }
+
+/* ========================================================================== Modifier: Large Screens ========================================================================== */
+
+/* Mobile Display (Responsive) ========================================================================== */
+
+/* Modifier: Icons Only ========================================================================== */
+/* Hide Labels for Large / Desktop Screens */
+
+/* Hide Labels for Small / Mobile Screens */
+
+@media (min-width: 769px) { .t-NavTabs-item { flex: 1; width: 10%; justify-content: center; border-right: 1px solid; }
+  .t-NavTabs-item:last-child { border-right-width: 0; }
+  .t-NavTabs--stacked .t-NavTabs-item { text-align: center; min-width: 64px; }
+  .t-NavTabs--stacked .t-NavTabs-link { display: flex; flex-direction: column; padding: 8px 0; border-radius: 0 !important; position: relative; overflow: hidden; }
+  .t-NavTabs--stacked .t-NavTabs-label { padding: 0 8px; font-size: 12px; line-height: 16px; width: 100%; }
+  .t-NavTabs--stacked .t-NavTabs-item .t-Icon { margin: 4px auto; }
+  .t-NavTabs--stacked .t-NavTabs-badge { padding: 0 4px; margin: 0; position: absolute; top: 4px; right: 50%; margin-right: -24px; font-size: 8px; border-radius: 8px; line-height: 16px; min-width: 16px; } .t-NavTabs--hiddenLabels-lg .t-NavTabs-label { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; } }
+
+@media (max-width: 768px) { .t-NavTabs { position: fixed; bottom: 0; left: 0; right: 0; box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1); z-index: 100; display: flex; }
+  .t-NavTabs-item { flex: 1; width: 10%; text-align: center; }
+  .t-NavTabs-link { display: flex; flex-direction: column; padding: 8px 0; border-radius: 0 !important; position: relative; }
+  .t-NavTabs-label { padding: 0 4px; font-size: 9px; line-height: 12px; font-weight: 500; width: 100%; }
+  .t-NavTabs-item .t-Icon { margin: 4px auto; }
+  .t-NavTabs-badge { padding: 0 4px; margin: 0; position: absolute; top: 4px; right: 50%; margin-right: -24px; font-size: 8px; border-radius: 8px; line-height: 16px; min-width: 16px; } .t-NavTabs--hiddenLabels-sm .t-NavTabs-label { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; } }

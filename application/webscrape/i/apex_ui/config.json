@@ -1,0 +1,48 @@
+{
+  "build_root": "apex_ui/",
+  "dir": {
+    "core": {
+      "src":  [
+        "modules/*.scss",
+        "core/Base.scss",
+        "core/Body.scss",
+        "core/**/*.scss",
+        "../img/gi-Icons.svg.css"
+      ],
+      "name": "Core",
+      "watch": ["core/**/*.scss", "modules/**/*.scss", "util/**/*.scss"],
+      "paths": [
+        [".*gi-Icons.svg", "core/gi-Icons.svg"],
+        [".*gi-PkgApp-Icons.svg", "core/gi-PkgApp-Icons.svg"],
+        [".*\/modules\/(.*)", "core/$1"]
+      ]
+    },
+    "theme": {
+      "src":  ["theme/**/*.scss"],
+      "shouldFlatten": true,
+      "name": "Theme-Standard",
+      "watch": ["theme/**/*.scss"]
+    }
+  },
+  "scripts": {
+    "concat": {
+      "filename": "f4000_p4500_all.min.js",
+      "files": [
+          "js/minified/pe.model.min.js",
+          "js/minified/pe.callbacks.min.js",
+          "js/minified/widget.peMessagesView.min.js",
+          "js/minified/widget.peSearch.min.js",
+          "js/minified/widget.codeEditor.min.js",
+          "js/minified/f4000_p4500.gallery.min.js",
+          "js/minified/f4000_p4500.min.js",
+          "js/minified/f4000_p4500.tree.min.js",
+          "js/minified/f4000_p4500.dump.min.js",
+          "js/minified/widget.propertyEditor.min.js",
+          "js/minified/widget.lovDialog.min.js",
+          "js/minified/f4000_p4500.pe.min.js",
+          "js/minified/gridlayout.min.js",
+          "js/minified/f4000_p4500.glv.min.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,131 @@
+@import "_variables";
+
+.treeMe(@nav-Icon, @nav-FG, @nav-Active-BG, @nav-Active-FG, @nav-Icon-Active) {
+  .a-TreeView-node--topLevel {
+    .a-TreeView-row.is-focused {
+      box-shadow: 0 0 0 1px @g_Focus inset;
+      background-color: transparent;
+    }
+    .a-TreeView-row.is-current,
+    .a-TreeView-row.is-selected,
+    .a-TreeView-row.is-current--top.is-selected {
+      background-color: contrast(@nav-Active-BG, darken(@nav-Active-BG,  3%), lighten(@nav-Active-BG,  3%),  43%);
+    }
+    .a-TreeView-row.is-current--top,
+    &.is-collapsible > .a-TreeView-row,
+    ul {
+      background-color:  @nav-Active-BG;
+    }
+    .a-TreeView-row.is-hover {
+      background-color: contrast(@nav-Active-BG, darken(@nav-Active-BG,  6%), lighten(@nav-Active-BG,  6%),  43%) !important;
+    }
+    .a-TreeView-row.is-hover + .a-TreeView-toggle,
+    &.is-collapsible .a-TreeView-toggle {
+      color: fadeout(@nav-Active-FG, 25%);
+      &:hover{
+        color: @nav-Active-FG !important;
+      }
+    }
+    .a-TreeView-content.is-hover {
+      color: @nav-Active-FG !important;
+    }
+    .a-TreeView-content {
+      color: @nav-FG;
+      .fa, .a-Icon {
+        color:@nav-Icon;
+        &:before {
+          color: inherit;
+        }
+      }
+    }
+    .a-TreeView-content.is-hover,
+    .a-TreeView-content.is-current--top {
+      .fa,.a-Icon {
+        color: @nav-Icon-Active;
+      }
+    }
+    .a-TreeView-label {
+      color: inherit;
+    }
+    .a-TreeView-content.is-current,
+    .a-TreeView-content.is-selected,
+    .a-TreeView-content.is-current--top {
+      color: @nav-Active-FG;
+    }
+    .a-TreeView-toggle {
+      color: fadeout(@nav-FG, 25%);
+      &:hover{
+        color: @nav-FG !important;
+      }
+    }
+    .a-TreeView-row {
+      // transition: background-color .1s;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .t-Body-nav {
+    background-color: @g_Nav-BG;
+  }
+}
+.t-TreeNav {
+  background-color: @g_Nav-BG;
+}
+
+.t-PageBody--leftNav {
+  .t-Body-nav::-webkit-scrollbar-thumb {
+      background-color: contrast(@g_Nav-Active-BG, darken(@g_Nav-Active-BG,  3%), lighten(@g_Nav-Active-BG,  3%),  43%);
+      box-shadow: inset 1px 0 0 0 @g_Nav-BG;
+      &:hover {
+        background-color: contrast(@g_Nav-Active-BG, darken(@g_Nav-Active-BG,  15%), lighten(@g_Nav-Active-BG,  15%),  43%);
+      }
+  }
+
+  .t-Body-nav::-webkit-scrollbar-track {
+      background: @g_Nav-BG;
+      &:hover {
+        background-color: contrast(@g_Nav-BG, darken(@g_Nav-BG,  15%), lighten(@g_Nav-BG,  15%),  43%);
+      }
+  }
+}
+
+.t-Region {
+  .treeMe(fade(@g_Region-FG, 95%), @g_Region-FG, @g_Region-BG, @g_Region-FG, @g_Region-FG);
+  /* Ensuring that the top level maintains is-selected state */
+  .a-TreeView-node--topLevel.is-collapsible > .a-TreeView-row.is-selected,
+  .a-TreeView-node--topLevel.is-collapsible > .a-TreeView-row.is-focused {
+    background-color: contrast(@g_Region-BG, darken(@g_Region-BG,  3%), lighten(@g_Region-BG,  3%),  43%);
+  }
+}
+
+.t-TreeNav {
+  .treeMe(@g_Nav-Icon, @g_Nav-FG, @g_Nav-Active-BG, @g_Nav-Active-FG, @g_Nav-Icon-Active);
+  .a-TreeView-node--topLevel.is-collapsible .a-TreeView-content .fa,
+  .a-TreeView-node--topLevel.is-collapsible .a-TreeView-content .a-Icon {
+    color: @g_Nav-Icon-Active;
+  }
+  .a-TreeView-node--topLevel.is-collapsible .a-TreeView-content {
+    color: @g_Nav-Active-FG;
+  }
+  .js-navCollapsed & .a-TreeView-node--topLevel > .a-TreeView-content .a-TreeView-label .a-TreeView-badge {
+    background: darken(@g_Nav-BG,15%);
+    color: @g_Nav-Active-FG;
+  }
+  .a-TreeView-badge {
+    box-shadow: 0 0 0 1px fadeout(@g_Nav-Active-FG,90%);
+    font-weight: 400;
+  }
+  .a-TreeView-content.is-current,
+  .a-TreeView-content.is-current--top {
+    .a-TreeView-label {
+      font-weight: 500;
+    }
+  }
+}
+
+/**
+ *
+ * Scroll Bars
+ *
+ */

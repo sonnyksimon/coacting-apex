@@ -1,0 +1,147 @@
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/* ========================================================================== Bar Chart ========================================================================== */
+.a-BarChart { margin: 0; padding: 0; list-style: none; }
+
+.a-BarChart-item { display: block; position: relative; padding: 16px 12px; box-shadow: 0 -1px 0 #F8F8F8 inset; }
+
+.a-BarChart-item:first-child { border-top: none; }
+
+.a-BarChart-item:hover { background-color: #FAFAFA; }
+
+.a-BarChart-item:hover .a-BarChart-bar { background-color: #fff; }
+
+.a-BarChart-item:hover .a-BarChart-filled { background-color: rgba(5, 114, 206, 0.75); }
+
+.a-BarChart-image { border-radius: 100%; width: 32px; background-color: #FFF; }
+
+.a-BarChart-link:hover { text-decoration: none; }
+
+.a-BarChart-icon { display: block; background-color: #D0D0D0; color: #FFF; border-radius: 100%; width: 32px; height: 32px; font-size: 32px; }
+
+.a-BarChart-icon.a-BarChart-icon--square { border-radius: 2px; }
+
+.a-BarChart-icon.a-BarChart-icon--img { background-repeat: no-repeat; background-size: contain; background-position: 50%; }
+
+.a-BarChart-initials { display: block; border-radius: 100%; font-size: 14px; width: 32px; height: 32px; line-height: 30px; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; text-transform: uppercase; border: 1px solid; -webkit-font-smoothing: antialiased; font-weight: 400; }
+
+.a-BarChart-label, .a-BarChart-value { font-size: 12px; line-height: 20px; }
+
+.a-BarChart-label a, .a-BarChart-value a { text-decoration: none; }
+
+.a-BarChart-label a:hover, .a-BarChart-value a:hover { text-decoration: underline; }
+
+.a-BarChart-label { display: block; font-weight: normal; margin: 0; padding: 0; color: #404040; overflow: hidden; }
+
+.a-BarChart-value { float: right; }
+
+.a-BarChart-value, .a-BarChart-value a { color: #707070; }
+
+.a-BarChart-bar { height: 8px; border-radius: 1px; overflow: hidden; margin: 2px 0; background-color: #F8F8F8; }
+
+.a-BarChart-barLink { display: block; }
+
+.a-BarChart-filled { height: 8px; background-color: #0572CE; background-color: rgba(5, 114, 206, 0.75); border-radius: 1px; }
+
+.u-HCM .a-BarChart-filled { border-bottom: 8px solid; }
+
+.a-BarChart-bar, .a-BarChart-filled { transition: background-color .2s; }
+
+.a-BarChart-item:hover .a-BarChart-bar { background-color: rgba(0, 0, 0, 0.05); }
+
+/* Classic Bar Chart ========================================================================== */
+.a-BarChart--classic { display: table; width: 100%; }
+
+.a-BarChart--classic .a-BarChart-item { display: table-row; padding: 0; }
+
+.a-BarChart--classic .a-BarChart-label, .a-BarChart--classic .a-BarChart-barLink, .a-BarChart--classic .a-BarChart-value { padding-top: 12px; padding-bottom: 12px; display: table-cell; vertical-align: top; white-space: nowrap; box-shadow: 0 -1px 0 #F0F0F0 inset; }
+
+.a-BarChart--classic .a-BarChart-barLink { width: 80%; }
+
+.a-BarChart--classic .a-BarChart-value { width: 5%; float: none; text-align: right; padding-left: 8px; padding-right: 12px; }
+
+.a-BarChart--classic .a-BarChart-label { padding-right: 8px; padding-left: 12px; }
+
+.a-BarChart--classic .a-BarChart-bar { margin: 4px 0; }
+
+.a-BarChart--classic .a-BarChart-filled { opacity: .75; }
+
+.a-BarChart--classic .a-BarChart-filled, .a-BarChart--classic .a-BarChart-bar { height: 12px; }
+
+/* Bar Charts for Apps ========================================================================== */
+.a-BarChart--apps .a-BarChart-initials { border-radius: 2px; color: #FFF; border-width: 0; line-height: 32px; }
+
+/* Bar Charts for Users ========================================================================== */
+.a-BarChart--users { margin: 0; padding: 0; list-style: none; }
+
+.a-BarChart--users .a-BarChart-initials { background-color: #fff; }
+
+.a-BarChart--users .u-ColorBG--1 { border-color: #5856D6; color: #5856D6; }
+
+.a-BarChart--users .u-ColorBG--2 { border-color: #007aff; color: #007aff; }
+
+.a-BarChart--users .u-ColorBG--3 { border-color: #34aadc; color: #34aadc; }
+
+.a-BarChart--users .u-ColorBG--4 { border-color: #5ac8fa; color: #5ac8fa; }
+
+.a-BarChart--users .u-ColorBG--5 { border-color: #4cd964; color: #4cd964; }
+
+.a-BarChart--users .u-ColorBG--6 { border-color: #ff2d55; color: #ff2d55; }
+
+.a-BarChart--users .u-ColorBG--7 { border-color: #ff3b30; color: #ff3b30; }
+
+.a-BarChart--users .u-ColorBG--8 { border-color: #ff9500; color: #ff9500; }
+
+.a-BarChart--users .u-ColorBG--9 { border-color: #ffcc00; color: #ffcc00; }
+
+.a-BarChart--users .u-ColorBG--10 { border-color: #8e8e93; color: #8e8e93; }
+
+.a-BarChart--users .u-ColorBG--11 { border-color: #7978de; color: #7978de; }
+
+.a-BarChart--users .u-ColorBG--12 { border-color: #3395ff; color: #3395ff; }
+
+.a-BarChart--users .u-ColorBG--13 { border-color: #5dbbe3; color: #5dbbe3; }
+
+.a-BarChart--users .u-ColorBG--14 { border-color: #7bd3fb; color: #7bd3fb; }
+
+.a-BarChart--users .u-ColorBG--15 { border-color: #70e183; color: #70e183; }
+
+.a-BarChart--users .u-ColorBG--16 { border-color: #ff5777; color: #ff5777; }
+
+.a-BarChart--users .u-ColorBG--17 { border-color: #ff6259; color: #ff6259; }
+
+.a-BarChart--users .u-ColorBG--18 { border-color: #ffaa33; color: #ffaa33; }
+
+.a-BarChart--users .u-ColorBG--19 { border-color: #ffd633; color: #ffd633; }
+
+.a-BarChart--users .u-ColorBG--20 { border-color: #a5a5a9; color: #a5a5a9; }
+
+.a-BarChart--users .u-ColorBG--21 { border-color: #4f4dc1; color: #4f4dc1; }
+
+.a-BarChart--users .u-ColorBG--22 { border-color: #006ee6; color: #006ee6; }
+
+.a-BarChart--users .u-ColorBG--23 { border-color: #2f99c6; color: #2f99c6; }
+
+.a-BarChart--users .u-ColorBG--24 { border-color: #51b4e1; color: #51b4e1; }
+
+.a-BarChart--users .u-ColorBG--25 { border-color: #44c35a; color: #44c35a; }
+
+.a-BarChart--users .u-ColorBG--26 { border-color: #e6294d; color: #e6294d; }
+
+.a-BarChart--users .u-ColorBG--27 { border-color: #e6352b; color: #e6352b; }
+
+.a-BarChart--users .u-ColorBG--28 { border-color: #e68600; color: #e68600; }
+
+.a-BarChart--users .u-ColorBG--29 { border-color: #e6b800; color: #e6b800; }
+
+.a-BarChart--users .u-ColorBG--30 { border-color: #808084; color: #808084; }
+
+/* Modern Bar Charts (For Apps / Users) ========================================================================== */
+.a-BarChart--modern .a-BarChart-labelContainer { display: table; width: 100%; }
+
+.a-BarChart--modern .a-BarChart-label, .a-BarChart--modern .a-BarChart-value { display: table-cell; float: none; vertical-align: top; }
+
+.a-BarChart--modern .a-BarChart-value { text-align: right; }

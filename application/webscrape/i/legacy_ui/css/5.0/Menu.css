@@ -1,0 +1,20 @@
+.a-Menu-item .a-Menu-subMenuCol {
+  padding: 4px 4px 4px 0;
+  height: 24px;
+}
+
+.a-Menu button.a-Menu-label {
+  line-height: 24px;
+}
+
+.a-Menu-content .a-Menu-statusCol {
+  padding: 4px 8px;
+}
+
+.a-Menu .a-Menu-item {
+  line-height: 24px;
+}
+
+.a-Menu-content {
+  padding: 4px 0;
+}

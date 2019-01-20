@@ -1,0 +1,262 @@
+/**
+ * Import Compass and Theme Variables
+ */
+
+@import "_variables";
+
+/* ==========================================================================
+   Region
+   ========================================================================== */
+
+.t-Region,
+.t-ContentBlock--lightBG .t-ContentBlock-body {
+  background-color: @g_Region-BG;
+}
+.fielddata b {
+  .text-dark();
+}
+
+.regionHeader(@bg, @fg) {
+  background-color: @bg;
+  color: @fg;
+  // border-bottom: 1px solid contrast(@bg, darken(@bg,   10%), lighten(@bg,   10%),  43%);
+  .t-Button--noUI,.t-Button--link {
+    color: @fg;
+  }
+}
+
+
+.t-Region-header {
+  .regionHeader(@g_Region-Header-BG, @g_Region-Header-FG);
+  .t-Body-actions & {
+      background: transparent;
+      color: @g_Actions-Col-Text;
+  }
+}
+
+.t-Region--stacked {
+  border-radius: 0 !important;
+  & > .t-Region-header {
+    // border-radius: 0 !important;
+  }
+}
+
+.t-Region--noBorder {
+  & > .t-Region-header {
+    .regionHeader(@g_Region-BG, @g_Region-FG);
+  }
+}
+
+/* Accent 1 */
+.t-Region--accent1 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-1, @g_Color-Palette-1-FG);
+  }
+}
+.t-Region--accent1.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-1;
+}
+/* Accent 2 */
+.t-Region--accent2 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-2, @g_Color-Palette-2-FG);
+  }
+}
+.t-Region--accent2.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-2;
+}
+/* Accent 3 */
+.t-Region--accent3 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-3, @g_Color-Palette-3-FG);
+  }
+}
+.t-Region--accent3.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-3;
+}
+/* Accent 4 */
+.t-Region--accent4 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-4, @g_Color-Palette-4-FG);
+  }
+}
+.t-Region--accent4.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-4;
+}
+/* Accent 5 */
+.t-Region--accent5 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-5, @g_Color-Palette-5-FG);
+  }
+}
+.t-Region--accent5.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-5;
+}
+
+/* Accent 6 */
+.t-Region--accent6 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-6, @g_Color-Palette-6-FG);
+  }
+}
+.t-Region--accent6.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-6;
+}
+
+/* Accent 7 */
+.t-Region--accent7 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-7, @g_Color-Palette-7-FG);
+  }
+}
+.t-Region--accent7.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-7;
+}
+
+/* Accent 8 */
+.t-Region--accent8 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-8, @g_Color-Palette-8-FG);
+  }
+}
+.t-Region--accent8.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-8;
+}
+
+/* Accent 9 */
+.t-Region--accent9 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-9, @g_Color-Palette-9-FG);
+  }
+}
+.t-Region--accent9.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-9;
+}
+
+/* Accent 10 */
+.t-Region--accent10 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-10, @g_Color-Palette-10-FG);
+  }
+}
+.t-Region--accent10.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-10;
+}
+
+/* Accent 11 */
+.t-Region--accent11 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-11, @g_Color-Palette-11-FG);
+  }
+}
+.t-Region--accent11.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-11;
+}
+
+/* Accent 12 */
+.t-Region--accent12 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-12, @g_Color-Palette-12-FG);
+  }
+}
+.t-Region--accent12.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-12;
+}
+
+/* Accent 13 */
+.t-Region--accent13 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-13, @g_Color-Palette-13-FG);
+  }
+}
+.t-Region--accent13.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-13;
+}
+
+/* Accent 14 */
+.t-Region--accent14 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-14, @g_Color-Palette-14-FG);
+  }
+}
+.t-Region--accent14.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-14;
+}
+
+/* Accent 15 */
+.t-Region--accent15 {
+  & > .t-Region-header {
+    .regionHeader(@g_Color-Palette-15, @g_Color-Palette-15-FG);
+  }
+}
+.t-Region--accent15.t-Region--textContent > .t-Region-header {
+  color: @g_Color-Palette-15;
+}
+
+.t-Region-header {
+}
+.t-Region-body {
+  color: @g_Region-FG;
+}
+.t-Region--hideShow {
+  &.is-collapsed {
+    border-bottom-color: transparent;
+  }
+}
+
+.t-Region--scrollBody > .t-Region-bodyWrap > .t-Region-body {
+}
+.t-Body-actions {
+  .t-Region {
+    background-color: transparent;
+  }
+  .t-Region-header {
+    background-color: transparent;
+  }
+}
+.t-Body-side {
+  .t-Region {background-color: transparent;}
+}
+.t-Region,.t-Region-header {
+  border-radius: @g_Container-BorderRadius;
+}
+.t-Region--noBG {
+  background-color: transparent;
+}
+.t-Body-actions {
+  .t-Region {
+    background-color: transparent;
+  }
+}
+.t-Region--carousel {
+  .a-Tabs-button {
+    background-color: transparent;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,.25);
+    color: #FFF;
+    &:hover {
+      background-color: rgba(0,0,0,.5);
+    }
+    &:active,    &:active:focus {
+      background-color: rgba(0,0,0,.75);
+    }
+  }
+  .a-Tabs-next-region{
+    border-radius: 2px 0 0 2px;
+  }
+  .a-Tabs-previous-region{
+    border-radius: 0 2px 2px 0;
+  }
+  .a-Region-carouselNavItem {
+    &.a-Tabs-selected .a-Region-carouselLink {
+      background-color: rgba(0,0,0,.45);
+      &:focus {
+        background-color: @g_Accent-BG
+      }
+    }
+  }
+  .a-Region-carouselLink {
+    background-color: rgba(0,0,0,.15);
+    border-radius: 100%;
+  }
+}

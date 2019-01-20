@@ -1,0 +1,314 @@
+
+@import "_variables";
+
+/*
+{
+  "var" : "@irrBg",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.INTERACTIVE_REPORTS"
+}
+*/
+@irrBg: @g_Region-BG;
+
+/*
+{
+  "var" : "@menu_Tabs-Active-BG",
+  "name" : "UTR.LESS.BACKGROUND",
+  "type" : "color",
+  "group": "UTR.LESS.INTERACTIVE_REPORTS",
+  "subgroup": "UTR.LESS.MENU"
+}
+*/
+@menu_Tabs-Active-BG:       darken( @g_Accent-BG,5%);
+
+/*
+{
+  "var" : "@menu_Tabs-Active-Text",
+  "name" : "UTR.LESS.TEXT",
+  "type" : "color",
+  "group": "UTR.LESS.INTERACTIVE_REPORTS",
+  "subgroup": "UTR.LESS.MENU"
+}
+*/
+@menu_Tabs-Active-Text:     fade(contrast( @g_Accent-BG, darken( @g_Accent-BG,  50%), lighten( @g_Accent-BG,  50%)), 100%);
+
+/*
+{
+  "var" : "@menu_Tabs-Hover-BG",
+  "name" : "UTR.LESS.HOVER_STATE",
+  "type" : "color",
+  "group": "UTR.LESS.INTERACTIVE_REPORTS"
+}
+*/
+@menu_Tabs-Hover-BG:        darken( @g_Accent-BG,15%);
+
+
+
+@menu_Tabs-Text:            contrast( @g_Accent-BG);
+
+
+.a-IRR {
+  border-radius: @g_Container-BorderRadius;
+  border-color: rgba(0,0,0,.1);
+  background-color: @irrBg;
+  .a-IRR-pagination-label {
+    color: fade(contrast(@irrBg, desaturate(darken(@irrBg, 55%), 100%), desaturate(lighten(@irrBg, 55%), 50%)), 100%);
+  }
+}
+
+.a-IRR-reportSummary-value {
+  color: fade(contrast(@irrBg, desaturate(darken(@irrBg,  75%), 100%), desaturate(lighten(@irrBg,  75%), 50%)), 100%);
+}
+
+.a-IRR-controlsContainer {
+  border-top-color: contrast(@irrBg, darken(@irrBg,   4%), lighten(@irrBg,   4%),  43%);
+  background-color: contrast(@irrBg, darken(@irrBg,   2%), lighten(@irrBg,   2%),  43%);
+}
+
+.a-IRR-fullView {
+  background-color: @irrBg;
+}
+
+.a-IRR-button.a-IRR-button--controls {
+  background-color: transparent;
+  // background-color: contrast(@irrBg, darken(@irrBg,   10%), lighten(@irrBg,   10%),  43%);
+  // &:hover {
+  //   background-color: contrast(@irrBg, darken(@irrBg,   25%), lighten(@irrBg,   25%),  43%);
+  // }
+}
+
+// .a-IRR-sortWidget {
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+// }
+
+.a-IRR-toolbar {
+  background: @g_Region-Header-BG;
+  border-color: contrast(@g_Region-Header-BG, darken(@g_Region-Header-BG,   10%), lighten(@g_Region-Header-BG,   10%),  43%);
+}
+@l_Progress-BG: @g_Accent-BG;
+.a-Report-percentChart-fill {
+  background-color: @l_Progress-BG;
+}
+.a-Report-percentChart {
+  background-color: contrast(@l_Progress-BG, darken(@l_Progress-BG,  50%), lighten(@l_Progress-BG,  50%),  43%);
+}
+
+.a-IRR-button--colSearch {
+  -webkit-border-top-right-radius: 0px !important;
+  -webkit-border-bottom-right-radius: 0px !important;
+  -moz-border-radius-topright: 0px  !important;
+  -moz-border-radius-bottomright: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.a-IRR-iconViewTable,
+.a-IRR-chartView,
+.a-IRR-pivotView,
+.a-IRR-groupByView,
+.a-IRR-detailView {
+  border-top-color: contrast(@irrBg, darken(@irrBg,  4%), lighten(@irrBg,  4%),  43%);
+}
+.a-IRR-toolbar--singleRow {
+  border-bottom-color: contrast(@irrBg, darken(@irrBg,  6%), lighten(@irrBg,  6%),  43%);
+}
+.a-IRR-header {
+  background-color: contrast(@irrBg, darken(@irrBg,   2%), lighten(@irrBg,   2%),  43%);
+  border-top: 1px solid contrast(@irrBg, darken(@irrBg,   10%), lighten(@irrBg,   10%),  43%);
+  box-shadow: inset 1px 0 0 0 contrast(@irrBg, darken(@irrBg,   10%), lighten(@irrBg,   10%),  43%);
+  &:hover {
+    background-color: contrast(@irrBg, darken(@irrBg,   5%), lighten(@irrBg,   5%),  43%);
+  }
+  &.is-active {
+    a {
+      color: inherit;
+    }
+    .a-IRR-headerSort {
+      color: inherit;
+    }
+  }
+}
+
+.a-IRR-header.is-active,
+.a-GV-header.is-active {
+  background-color: rgba(32,32,32,1);
+  color: #FFF;
+}
+
+.a-IRR-header--group {
+  background-color: contrast(@irrBg, darken(@irrBg,   4%), lighten(@irrBg,   4%),  43%);
+}
+.a-IRR-table tr td {
+  background-color: @irrBg;
+  color: fade(contrast(@irrBg, desaturate(darken(@irrBg,  75%), 100%), desaturate(lighten(@irrBg,  75%), 50%)), 100%);
+}
+
+.a-IRR-table {
+  border-collapse: separate;
+}
+
+.a-IRR-table tr:nth-child(even):hover td {
+//  .text-contrast(@_light_hover_bg);
+}
+
+.a-IRR-table tr:hover td {
+  background-color: contrast(@irrBg, darken(@irrBg,   2.5%), lighten(@irrBg,   2.5%),  43%);
+}
+
+.t-IRR-region--noBorders {
+  .a-IRR {
+    border-radius: @g_Container-BorderRadius;
+  }
+}
+
+.a-IRR-table td {
+  border-left: 1px solid darken(@irrBg, 5%);
+  border-top: 1px solid darken(@irrBg, 5%);
+}
+
+.a-IRR-headerLink:focus {
+  box-shadow: 0 0 0 1px @g_Focus inset;
+}
+
+.a-IRR-search-field:focus {
+  border-color: @g_Focus;
+  box-shadow: -1px 0 0 @g_Focus inset, 1px 0 0 @g_Focus inset;
+}
+
+
+.a-IRR-singleRow-name,
+.a-IRR-singleRow-value {
+  border-bottom-color: contrast(@irrBg, darken(@irrBg,  6%), lighten(@irrBg,  6%),  43%);
+  color: contrast(@irrBg, darken(@irrBg,   75%), lighten(@irrBg,   75%),  43%);
+
+}
+
+.a-IRR-singleRow-value {
+  background-color: @irrBg;
+  .a-IRR-singleRow-row:hover & {
+    background-color: contrast(@irrBg, darken(@irrBg,   3%), lighten(@irrBg,   3%),  43%);
+  }
+}
+
+.a-IRR-singleRow-name {
+  background-color: contrast(@irrBg, darken(@irrBg,   3%), lighten(@irrBg,   3%),  43%);
+  .a-IRR-singleRow-row:hover & {
+    background-color: contrast(@irrBg, darken(@irrBg,   6%), lighten(@irrBg,   6%),  43%);
+  }
+}
+
+.a-IRR-button.a-IRR-button--pagination:hover {
+  background-color: @g_Focus;
+}
+
+
+.a-IRR-reportSummary-label,
+.a-IRR-controlsLabel {
+  background-color: @irrBg;
+}
+
+@media only screen and (min-width: 769px) {
+  .is-maximized.t-IRR-region {
+    .t-fht-thead .a-IRR-header {
+      border-bottom: 1px solid contrast(@irrBg, darken(@irrBg,   10%), lighten(@irrBg,   10%),  43%);;
+    }
+  }
+}
+
+.ui-widget-content .a-IRR-iconList-link {
+  color: fade(contrast(@irrBg, desaturate(darken(@irrBg,  75%), 100%), desaturate(lighten(@irrBg,  75%), 50%)), 100%);
+  background-color: @irrBg;
+}
+.a-IRR-iconList-link:hover {
+  background-color: contrast(@irrBg, darken(@irrBg,  3%), lighten(@irrBg,  3%),  43%);
+}
+
+/* Override app_ui styles
+   ========================================================================== */
+.a-IRR-button:focus {
+  box-shadow: inherit;
+}
+
+/* Sort Widget
+   ========================================================================== */
+
+.a-IRR-sortWidget {
+  background-color: rgba(32,32,32,.95);
+  -webkit-backdrop-filter: blur(4px);
+  color: #FFF;
+  border-width: 0;
+  box-shadow: 0 2px 4px -2px rgba(0,0,0,.5), 0 8px 16px -4px rgba(0,0,0,.15);
+  ::-webkit-scrollbar {
+    width:  8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,.5);
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgba(255,255,255,.25);
+  }
+}
+/* Clear Backgrounds */
+.a-IRR-sortWidget-help {
+  background-color: transparent;
+}
+
+/* Buttons */
+.a-IRR-sortWidget-actions {
+  padding: 8px;
+  border-radius: 2px;
+  width: auto;
+  border-bottom-width: 0;
+}
+.a-IRR-sortWidget-actions-item {
+  border-right-width: 0;
+}
+.a-IRR-button.a-IRR-sortWidget-button {
+  background-color: transparent;
+  color: #FFF;
+  border-radius: 2px;
+  &:hover {
+    background-color: rgba(0,0,0,.5);
+  }
+  &:focus {
+    box-shadow: 0 0 0 1px @g_Focus inset;
+  }
+  &.is-active,
+  &:active:focus {
+    background-color: rgba(0,0,0,.5);
+  }
+}
+.a-IRR-sortWidget-searchLabel {
+  height: 40px;
+  padding: 12px 8px;
+  &:before {color: #FFF;}
+}
+.a-IRR-sortWidget-search > .a-IRR-sortWidget-searchField[type="text"] {
+  background-color: transparent;
+  appearance: none;
+  background-color: rgba(255,255,255,.1);
+  height: 40px;
+  color: #FFF;
+  &:focus {
+    box-shadow: 0 0 0 1px @g_Focus inset;
+  }
+}
+.a-IRR-sortWidget-rows {
+  border-top-width: 0;
+}
+.a-IRR-sortWidget-row {
+  color: #FFF;
+  box-shadow: none;
+  &:hover {
+    background-color: rgba(255,255,255,.15);
+  }
+  &:focus {
+    box-shadow: 0 0 0 1px @g_Focus inset;
+  }
+}
+
+.a-IG .a-IRR-sortWidget:before {
+  color: rgba(32,32,32,.95);
+}

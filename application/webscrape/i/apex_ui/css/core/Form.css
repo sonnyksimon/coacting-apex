@@ -1,0 +1,361 @@
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/* ========================================================================== Forms ========================================================================== */
+.a-Form-fieldContainer { border-spacing: 0; width: 100%; clear: both; overflow: hidden; }
+
+.a-Form-labelContainer, .a-Form-inputContainer { padding: 8px; }
+
+.a-Form-itemWrapper { display: inline-block; vertical-align: top; }
+
+.a-Form-labelContainer { width: 30%; text-align: right; float: left; }
+
+.a-Form-inputContainer { overflow: hidden; }
+
+.a-Form-inputContainer input::-webkit-input-placeholder, input.a-SearchBox-input::-webkit-input-placeholder { color: rgba(0, 0, 0, 0.55); }
+
+.a-Form-inputContainer input::-moz-placeholder, input.a-SearchBox-input::-moz-placeholder { opacity: .55; color: #000; }
+
+.a-Form-inputContainer input:-ms-input-placeholder, input.a-SearchBox-input:-ms-input-placeholder { opacity: .55; color: #000; }
+
+.a-CodeEditor-searchBar-label, .a-Form-label { color: #404040; padding: 4px 0; line-height: 16px; display: inline-block; vertical-align: top; font-size: 12px; }
+
+.a-CodeEditor-searchBar-textInput, .a-Form-field, .a-Form-select, .a-Report-report input[type="text"], .a-Form-inputContainer input[type="text"], .a-Form-inputContainer select[size="1"].selectlist, .a-Form-inputContainer select.yes_no, .a-Form-inputContainer input.text_field, .a-Form-inputContainer input.password, .a-Form-inputContainer input.datepicker, .a-Form-inputContainer span.display_only, .a-Form-inputContainer input.popup_lov { height: 24px; }
+
+.a-Form-inputContainer span.display_only { height: auto; min-height: 24px; }
+
+.a-CodeEditor-searchBar-textInput, .a-Report-report input[type="text"], .a-Form-field, .a-Form-select, .a-Form-inputContainer input[type="text"], .a-Form-inputContainer select.selectlist, .a-Form-inputContainer select.yes_no, .a-Form-inputContainer input.text_field, .a-Form-inputContainer input.password, .a-Form-inputContainer textarea.textarea, .a-Form-inputContainer input.datepicker, .a-Form-inputContainer span.display_only, .a-Form-inputContainer input.popup_lov, .a-Form-inputContainer select[multiple], .a-Form-textarea { display: inline-block; font-size: 12px; vertical-align: top; line-height: 16px; padding: 3px; border: 1px solid #E0E0E0; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) inset; border-radius: 2px; color: #202020; background-color: #FAFAFA; max-width: 100%; }
+
+.a-CodeEditor-searchBar-textInput:focus, .a-Report-report input[type="text"]:focus, .a-Form-field:focus, .a-Form-select:focus, .a-Form-inputContainer input[type="text"]:focus, .a-Form-inputContainer select.selectlist:focus, .a-Form-inputContainer select.yes_no:focus, .a-Form-inputContainer input.text_field:focus, .a-Form-inputContainer input.password:focus, .a-Form-inputContainer textarea.textarea:focus, .a-Form-inputContainer input.datepicker:focus, .a-Form-inputContainer span.display_only:focus, .a-Form-inputContainer input.popup_lov:focus, .a-Form-inputContainer select[multiple]:focus, .a-Form-textarea:focus { outline: none; border-color: #0572CE; background-color: #fff !important; color: black !important; }
+
+.a-CodeEditor-searchBar-textInput:focus::-ms-value, .a-Report-report input[type="text"]:focus::-ms-value, .a-Form-field:focus::-ms-value, .a-Form-select:focus::-ms-value, .a-Form-inputContainer input[type="text"]:focus::-ms-value, .a-Form-inputContainer select.selectlist:focus::-ms-value, .a-Form-inputContainer select.yes_no:focus::-ms-value, .a-Form-inputContainer input.text_field:focus::-ms-value, .a-Form-inputContainer input.password:focus::-ms-value, .a-Form-inputContainer textarea.textarea:focus::-ms-value, .a-Form-inputContainer input.datepicker:focus::-ms-value, .a-Form-inputContainer span.display_only:focus::-ms-value, .a-Form-inputContainer input.popup_lov:focus::-ms-value, .a-Form-inputContainer select[multiple]:focus::-ms-value, .a-Form-textarea:focus::-ms-value { color: black; /* the -ms-value defaults in a select list focus defaults to white, so we need to override the value for the text to be visible */ }
+
+.a-CodeEditor-searchBar-textInput:hover, .a-Report-report input[type="text"]:hover, .a-Form-field:hover, .a-Form-select:hover, .a-Form-inputContainer input[type="text"]:hover, .a-Form-inputContainer select.selectlist:hover, .a-Form-inputContainer select.yes_no:hover, .a-Form-inputContainer input.text_field:hover, .a-Form-inputContainer input.password:hover, .a-Form-inputContainer textarea.textarea:hover, .a-Form-inputContainer input.datepicker:hover, .a-Form-inputContainer span.display_only:hover, .a-Form-inputContainer input.popup_lov:hover, .a-Form-inputContainer select[multiple]:hover, .a-Form-textarea:hover { background-color: #fff; }
+
+.a-Form input.file { display: inline-block; font-size: 14px; vertical-align: middle; line-height: 16px; color: #404040; }
+
+.a-Form-select, .a-Form-inputContainer select.yes_no, .a-Form-inputContainer select[multiple], .a-Form-inputContainer select.selectlist { padding-top: 0px; padding-bottom: 0px; }
+
+.a-Form-inputContainer textarea.textarea { min-height: 64px; font-family: 'Consolas', 'Menlo', monospace; }
+
+.a-Form-searchField { background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBkPSJNMTQuNyAxNC43Yy0uNC40LTEgLjQtMS40IDBsLTMuNi0zLjZjLS45LjYtMiAuOS0zLjEuOS0zLjEgMC01LjYtMi41LTUuNi01LjVzMi41LTUuNSA1LjUtNS41IDUuNSAyLjUgNS41IDUuNWMwIDEuMi0uMyAyLjItLjkgMy4xbDMuNiAzLjZjLjQuNS40IDEuMSAwIDEuNXptLTguMi0xMS43Yy0xLjkgMC0zLjUgMS42LTMuNSAzLjVzMS42IDMuNSAzLjUgMy41IDMuNS0xLjYgMy41LTMuNS0xLjYtMy41LTMuNS0zLjV6IiBvcGFjaXR5PSIuNSIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiMyMzFGMjAiLz48L3N2Zz4=); background-position: .3rem .3rem; background-repeat: no-repeat; padding-left: 2.4rem; background-size: 1.6rem; }
+
+input[type=text].a-Form-searchField { padding-left: 2.4rem; }
+
+.a-Form-inputContainer span.display_only { border-color: transparent; background-color: transparent; box-shadow: none; font-weight: bold; }
+
+.a-Form-select, .a-Report-report select[size="1"], .a-Form-inputContainer select[size="1"].selectlist, .a-Form-inputContainer select.yes_no { -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; background-repeat: no-repeat; background-position: 100% 50%; background-size: 32px 16px; color: #404040; padding-right: 26px; text-overflow: ' '; overflow: hidden; }
+
+body:not(:-moz-handler-blocked) .a-Form-select { padding: 2px 24px 2px 2px; }
+
+.a-Form-select, .a-Report-report select[size="1"], .a-Form-inputContainer select[size="1"].selectlist, .a-Form-inputContainer select.yes_no, .a-Property-field--select { background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSItOTkuNSAwLjUgNDAwIDIwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAtOTkuNSAwLjUgNDAwIDIwMCI+PHBhdGggZmlsbD0iIzQ0NCIgZD0iTTE1Ni4yNSA3My43YzAgMS42LS42MTIgMy4yLTEuODI1IDQuNDI1bC01NC40MjUgNTQuNDI1LTU0LjQyNS01NC40MjVjLTIuNDM4LTIuNDM4LTIuNDM4LTYuNCAwLTguODM3czYuNC0yLjQzOCA4LjgzNyAwbDQ1LjU4OCA0NS41NzQgNDUuNTc1LTQ1LjU3NWMyLjQzOC0yLjQzOCA2LjM5OS0yLjQzOCA4LjgzNyAwIDEuMjI2IDEuMjI2IDEuODM4IDIuODI1IDEuODM4IDQuNDEzeiIvPjwvc3ZnPg==); background-position: right; }
+
+.ie9 .a-Form-select, .lt-ie9 .a-Form-select, .lt-ie10 .a-Form-select, .ie9 .a-Report-report select[size="1"], .lt-ie9 .a-Report-report select[size="1"], .lt-ie10 .a-Report-report select[size="1"], .ie9 .a-Form-inputContainer select[size="1"].selectlist, .lt-ie9 .a-Form-inputContainer select[size="1"].selectlist, .lt-ie10 .a-Form-inputContainer select[size="1"].selectlist, .ie9 .a-Form-inputContainer select.yes_no, .lt-ie9 .a-Form-inputContainer select.yes_no, .lt-ie10 .a-Form-inputContainer select.yes_no, .ie9 .a-Property-field--select, .lt-ie9 .a-Property-field--select, .lt-ie10 .a-Property-field--select { background-image: none; padding-right: 0px; }
+
+.a-Form-inputContainer .a-Button.a-Button--helpButton, .a-Form-inputContainer .a-Button.a-Button--calendar, .a-Form-labelContainer .a-Button.a-Button--helpButton, .a-Form-labelContainer .a-Button.a-Button--calendar { padding: 4px 8px; }
+
+.u-HCM .a-Form-inputContainer .a-Button.a-Button--helpButton, .u-HCM .a-Form-inputContainer .a-Button.a-Button--calendar, .u-HCM .a-Form-labelContainer .a-Button.a-Button--helpButton, .u-HCM .a-Form-labelContainer .a-Button.a-Button--calendar { border-width: 0 !important; }
+
+.a-Form-inputContainer select + .a-Button--helpButton, .a-Form-inputContainer input + .a-Button--helpButton, .a-Form-inputContainer fieldset + .a-Button--helpButton { vertical-align: top; }
+
+.RegionQuickLinks { float: left; display: inline-block; }
+
+.a-Form-field--readOnly { border: none; box-shadow: none; background-color: transparent; font-weight: bold; }
+
+.hasDatepicker { margin: 0; }
+
+/* ========================================================================== Select List Width ========================================================================== */
+.a-Form-inputContainer fieldset.radio_group, .a-Form-inputContainer fieldset.checkbox_group { line-height: 24px; }
+
+.a-Form-inputContainer fieldset.radio_group br, .a-Form-inputContainer fieldset.checkbox_group br { line-height: 20px; }
+
+.a-Form-inputContainer fieldset.radio_group:focus, .a-Form-inputContainer fieldset.checkbox_group:focus { outline: none; }
+
+.a-Form-inputContainer fieldset.radio_group table td, .a-Form-inputContainer fieldset.checkbox_group table td { padding-right: 16px; }
+
+.a-Form-inputContainer fieldset table { border-spacing: 0; }
+
+.a-Form-radioLabel, .a-Form-inputContainer .radio_group label, .a-Form-checkboxLabel, .a-Form-inputContainer .checkbox_group label { font-size: 12px; line-height: 16px; padding-left: 8px; color: #404040; }
+
+.a-Form-radio + .a-Form-error, .a-Form-inputContainer fieldset.radio_group + .a-Form-error, .a-Form-checkbox + .a-Form-error, .a-Form-inputContainer fieldset.checkbox-group + .a-Form-error { margin-top: 8px; }
+
+.a-Form-inputContainer .radio_group input[type=radio]:checked + label, .a-Form-inputContainer .checkbox_group input[type=checkbox]:checked + label, .a-Form-checkbox:checked + label { font-weight: bold; }
+
+.a-Form-fieldContainer--boxLabels input[type=radio] { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+.a-Form-fieldContainer--boxLabels fieldset label { display: inline-block; width: 31%; min-height: 76px; vertical-align: top; padding: 12px; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.075) inset; background-color: #FAFAFA; border-radius: 2px; margin: 0 1%; }
+
+.a-Form-fieldContainer--boxLabels fieldset label:hover { background-color: #FFF; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.075) inset, 0 2px 4px rgba(0, 0, 0, 0.05); }
+
+.a-Form-fieldContainer--boxLabels fieldset br { display: none; }
+
+.a-Form-fieldContainer--boxLabels .a-Form-inputContainer input:checked + label, .a-Form-fieldContainer--boxLabels .a-Form-inputContainer input:checked + .fielddata label { background-color: #FAFAFA; box-shadow: 0 0 0 1px #0572CE inset; font-weight: normal; font-weight: bold; }
+
+.a-Form-fieldContainer--boxLabels .a-Form-inputContainer input:checked + label .a-Form-radioLabel-desc, .a-Form-fieldContainer--boxLabels .a-Form-inputContainer input:checked + .fielddata label .a-Form-radioLabel-desc { font-weight: bold; }
+
+.a-Form-fieldContainer--boxLabels .a-Form-inputContainer input:focus + label, .a-Form-fieldContainer--boxLabels .a-Form-inputContainer input:focus + .fielddata label { box-shadow: 0 0 0 1px #0572CE inset, 0 0 0 1px #0572CE, 0 0 2px 2px rgba(5, 114, 206, 0.5) !important; }
+
+.a-Form-radioLabel-title { display: block; font-size: 14px; line-height: 20px; }
+
+.a-Form-radioLabel-desc { display: block; font-size: 12px; line-height: 16px; font-weight: normal; color: #707070; }
+
+.a-Form-postText, .a-Form-inputContainer input + span.fielddata { margin-left: 8px; color: #707070; font-size: 1.2rem; }
+
+.a-Form-quickPicks { display: inline-block; font-size: 1.1rem; line-height: 2.4rem; padding: 0 .8rem; vertical-align: top; }
+
+.a-Form-quickPicks.display_only { font-weight: normal !important; }
+
+.a-Form-quickPicks a { margin-right: 8px; }
+
+/* ========================================================================== Image Preview (4000:601) ========================================================================== */
+.a-Form-iconPreview { padding: 0; margin: 0; }
+
+/* ========================================================================== Select List Width ========================================================================== */
+.a-Form-inputContainer select[size="1"].selectlist { min-width: 180px; max-width: 100%; }
+
+.a-Form-inputContainer select[size="1"].selectlist.is-small { min-width: 80px; }
+
+.a-Side .a-Form-inputContainer select[size="1"].selectlist { min-width: 0; }
+
+.a-Form-select--multi { width: 350px; min-height: 120px; color: #606060; }
+
+.a-Form-select--conditions { max-width: 480px; }
+
+.a-Form-select--conditions + .a-Form-quickPicks { display: block; }
+
+/* ========================================================================== Validations ========================================================================== */
+.a-Form-error { font-size: 11px; line-height: 16px; color: #e91D1D; display: block; }
+
+/* ========================================================================== Help Button ========================================================================== */
+/* ========================================================================== Large Form ========================================================================== */
+.a-Form--large .a-Form-label { padding: 6px 0; line-height: 16px; font-size: 14px; }
+
+.a-Form--large .a-Form-field, .a-Form--large .a-Form-select, .a-Form--large select[size="1"].selectlist, .a-Form--large select.yes_no, .a-Form--large input.text_field, .a-Form--large input.password, .a-Form--large input.datepicker, .a-Form--large span.display_only, .a-Form--large input.popup_lov { font-size: 14px; padding: 7px; height: 32px; }
+
+.a-Form--large span.display_only { height: auto; min-height: 32px; }
+
+.a-Form--large .a-Button.a-Button--helpButton, .a-Form--large .a-Button.a-Button--calendar { padding: 8px 12px; }
+
+.a-Form--large .a-Form-radioLabel, .a-Form--large .radio_group label, .a-Form--large .a-Form-checkboxLabel, .a-Form--large .checkbox_group label, .a-Form--large select[multiple] { font-size: 14px; line-height: 20px; }
+
+.a-Form--large .a-Form-searchField { background-size: 1.6rem; background-position: .8rem; }
+
+.a-Form--large input[type=text].a-Form-searchField { padding-left: 3.0rem; }
+
+/* ========================================================================== Slim Padding ========================================================================== */
+.a-Form--slimPadding .a-Form-inputContainer, .a-Form--slimPadding .a-Form-labelContainer { padding: 0; }
+
+/* ========================================================================== Table Based ========================================================================== */
+.a-Form--tableBased .a-Form-labelContainer { width: auto; margin-right: 8px; }
+
+.a-Form--tableBased .a-Form-select, .a-Form--tableBased select.selectlist { max-width: 100%; }
+
+/* ========================================================================== Table Based ========================================================================== */
+.a-Form--schemaSelect { float: right; white-space: nowrap; }
+
+.a-Form--schemaSelect .a-Form-labelContainer { width: auto; }
+
+.a-Form--schemaSelect .a-Form-labelContainer, .a-Form--schemaSelect .a-Form-inputContainer { padding: 4px 8px; }
+
+.a-Form--schemaSelect .a-Form-select, .a-Form--schemaSelect select.selectlist { width: 180px; }
+
+.a-Form--schemaSelect .a-Form-inputContainer { float: left; }
+
+.a-Form--schemaSelect .a-Form-select, .a-Form--schemaSelect .a-Button--helpButton { display: block; float: left; }
+
+/* ========================================================================== Wizard ========================================================================== */
+.a-Form--wizard .a-Form-field, .a-Form--wizard .a-Form-select, .a-Form--wizard select.selectlist, .a-Form--wizard input.text_field { min-width: 320px; max-width: 520px; }
+
+/* ========================================================================== Labels Above ========================================================================== */
+.a-Form--labelsAbove .a-Form-fieldContainer .a-Button--helpButton, .a-Form-fieldContainer--stacked .a-Button--helpButton { vertical-align: top; }
+
+.a-Form--labelsAbove .a-Form-fieldContainer .a-Form-labelContainer, .a-Form--labelsAbove .a-Form-fieldContainer .a-Form-inputContainer, .a-Form-fieldContainer--stacked .a-Form-labelContainer, .a-Form-fieldContainer--stacked .a-Form-inputContainer { display: block; }
+
+.a-Form--labelsAbove .a-Form-fieldContainer .a-Form-labelContainer, .a-Form-fieldContainer--stacked .a-Form-labelContainer { width: auto; text-align: left; float: none; padding-bottom: 0; }
+
+.a-Form--labelsAbove .a-Form-fieldContainer .a-Form-inputContainer, .a-Form-fieldContainer--stacked .a-Form-inputContainer { padding-top: 0; }
+
+.a-Form--labelsAbove .a-Form-fieldContainer .a-Form-select, .a-Form--labelsAbove .a-Form-fieldContainer select.selectlist, .a-Form-fieldContainer--stacked .a-Form-select, .a-Form-fieldContainer--stacked select.selectlist { max-width: 100%; }
+
+.a-Form--labelsAbove .a-Form-fieldContainer .a-Form-radio, .a-Form--labelsAbove .a-Form-fieldContainer .a-Form fieldset.radio_group, .a-Form-fieldContainer--stacked .a-Form-radio, .a-Form-fieldContainer--stacked .a-Form fieldset.radio_group { display: block; margin-left: 24px; }
+
+.a-Form--labelsAbove .a-Form-fieldContainer .a-Form-labelContainer--visuallyhidden, .a-Form-fieldContainer--stacked .a-Form-labelContainer--visuallyhidden { padding: 0; min-width: 0; }
+
+/* ========================================================================== Field Modifiers ========================================================================== */
+/* ========================================================================== Modifier: Stretch Input Field --- Stretches input to 100% ========================================================================== */
+.a-Form--stretchInputs .a-Form-fieldContainer .a-Form-inputContainer input[type="text"], .a-Form--stretchInputs .a-Form-fieldContainer .a-Form-inputContainer input[type="password"], .a-Form--stretchInputs .a-Form-fieldContainer .a-Form-inputContainer select, .a-Form--stretchInputs .a-Form-fieldContainer .a-Form-inputContainer textarea, .a-Form-fieldContainer--stretch .a-Form-inputContainer input[type="text"], .a-Form-fieldContainer--stretch .a-Form-inputContainer input[type="password"], .a-Form-fieldContainer--stretch .a-Form-inputContainer select, .a-Form-fieldContainer--stretch .a-Form-inputContainer textarea { width: 100% !important; min-width: 0 !important; }
+
+.a-Form--stretchInputs .a-Form-fieldContainer fieldset.shuttle, .a-Form--stretchInputs .a-Form-fieldContainer table.shuttle, .a-Form-fieldContainer--stretch fieldset.shuttle, .a-Form-fieldContainer--stretch table.shuttle { width: 100%; }
+
+.a-Form--stretchInputs .a-Form-fieldContainer fieldset.shuttle td.shuttleSelect1, .a-Form--stretchInputs .a-Form-fieldContainer fieldset.shuttle td.shuttleSelect2, .a-Form-fieldContainer--stretch fieldset.shuttle td.shuttleSelect1, .a-Form-fieldContainer--stretch fieldset.shuttle td.shuttleSelect2 { width: 50%; }
+
+.a-Form--stretchInputs .a-Form-fieldContainer fieldset.shuttle select.shuttle_left, .a-Form--stretchInputs .a-Form-fieldContainer fieldset.shuttle select.shuttle_right, .a-Form-fieldContainer--stretch fieldset.shuttle select.shuttle_left, .a-Form-fieldContainer--stretch fieldset.shuttle select.shuttle_right { max-width: 100%; }
+
+/* ========================================================================== Modifier: Make Fieldset Stretch --- Makes Fieldset (for textareas, and others) use display b lock ========================================================================== */
+.a-Form-fieldContainer--fieldsetBlock fieldset.textarea { display: block; }
+
+/* ========================================================================== Modifier: Post Item Text --- ========================================================================== */
+.a-Form-fieldContainer--postItemText .a-Form-labelContainer, .a-Form-fieldContainer--postItemText .a-Form-inputContainer { padding-top: 0; left: 0; min-height: 0; }
+
+.a-Form-fieldContainer--postItemText .a-Form-inputContainer span.display_only { font-weight: normal; color: #707070; padding: 0; min-height: 0; border-width: 0; }
+
+/* ========================================================================== Modifier: Auto Width Label --- Sets label width to be auto (default is 30%) ========================================================================== */
+.a-Form-fieldContainer--autoLabelWidth .a-Form-labelContainer { width: auto !important; }
+
+.a-Form-fieldContainer--autoLabelWidth .a-Form-labelContainer--visuallyhidden { padding: 0; min-width: 0; }
+
+/* ========================================================================== Modifier: Hide Label --- Hides labelContainer for the given field ========================================================================== */
+.a-Form--floatColsLeft .a-Form-fieldContainer.a-Form-fieldContainer--valueAsLabel { width: 256px; }
+
+.a-Form-fieldContainer--valueAsLabel .a-Form-labelContainer { display: none !important; }
+
+.a-Form-fieldContainer--valueAsLabel .a-Form-inputContainer { text-align: right; }
+
+.a-Form-fieldContainer--valueAsLabel .a-Form-inputContainer span.display_only { font-weight: normal; padding: 4px 0; line-height: 16px; vertical-align: top; }
+
+/* ========================================================================== Modifier: Hide Label --- Hides labelContainer for the given field ========================================================================== */
+.a-Form-fieldContainer--hideLabel .a-Form-labelContainer { display: none !important; }
+
+/* ========================================================================== Modifier: Hide Field --- Hides inputContainer for the given field ========================================================================== */
+.a-Form-fieldContainer--hideField .a-Form-inputContainer { display: none !important; }
+
+/* ========================================================================== Modifier: Column-based label --- Used when you have a column of labels only ========================================================================== */
+.a-Form-fieldContainer--colLabel .a-Form-labelContainer { padding: 0 8px; text-align: right !important; }
+
+.a-Form-fieldContainer--colLabel .a-Form-inputContainer { display: none !important; }
+
+/* ========================================================================== Modifier: Hidden Label Checkbox --- Reduces padding for checkboxes that have no labels ========================================================================== */
+.a-Form-fieldContainer--noLabelCheckbox .a-Form-inputContainer { padding-top: 0; padding-bottom: 0; }
+
+/* ========================================================================== Modifier: Hidden Label Checkbox --- Reduces padding for checkboxes that have no labels ========================================================================== */
+.a-Form-fieldContainer--largeDisplayOnlyText .a-Form-inputContainer span.display_only { font-weight: normal; }
+
+/* ========================================================================== List Manager ========================================================================== */
+fieldset.listmanager table { border-collapse: collapse; }
+
+fieldset.listmanager td { padding: 0 !important; }
+
+fieldset.listmanager select.listmanager { margin-top: 8px; }
+
+/* ========================================================================== Shuttles ========================================================================== */
+.apex-item-group--shuttle { width: 100%; }
+
+.apex-item-group--shuttle table.shuttle { width: 100%; border-collapse: collapse; }
+
+.apex-item-group--shuttle td { vertical-align: top; }
+
+.apex-item-group--shuttle .shuttleControl, .apex-item-group--shuttle .shuttleSort2 { width: 1%; }
+
+.apex-item-group--shuttle .shuttleSelect1, .apex-item-group--shuttle .shuttleSelect2 { width: 49%; }
+
+.apex-item-group--shuttle select.shuttle_left, .apex-item-group--shuttle select.shuttle_right { width: 100%; min-height: 14.0rem; margin: .4rem 0; }
+
+/* ========================================================================== Textarea ========================================================================== */
+.a-Form-fieldContainer--stacked fieldset.textarea { display: block; }
+
+fieldset.textarea { max-width: 100%; }
+
+.a-Form-textarea--code { font-family: 'Consolas', 'Menlo', monospace; font-size: 12px; line-height: 16px; color: #404040; padding: 8px; }
+
+/* ========================================================================== Popup LOV ========================================================================== */
+fieldset.lov { display: inline; }
+
+/* ========================================================================== Popup LOV ========================================================================== */
+fieldset.color_picker { display: inline-block; }
+
+/* ========================================================================== Fieldsets ========================================================================== */
+.a-Form-inputContainer fieldset:focus { outline: none; }
+
+/* ========================================================================== Left Aligned Field Container ========================================================================== */
+.a-Form-fieldContainer--floatLeft { width: auto; float: left; clear: none; }
+
+/* ========================================================================== Form Alignment ========================================================================== */
+.a-Form-col--2 .a-Form-labelContainer { width: 15%; }
+
+.a-Form-col--3 .a-Form-labelContainer { width: 10%; }
+
+.a-Form--alignLeft .a-Form-fieldContainer { width: auto; display: inline-block; vertical-align: top; }
+
+.a-Form--floatFieldsLeft { overflow: hidden; }
+
+.a-Form--floatFieldsLeft .a-Form-fieldContainer { width: auto; float: left; clear: none; }
+
+.a-Form--floatColsLeft { overflow: hidden; }
+
+.a-Form--floatColsLeft .apex-col { width: auto; }
+
+.a-Form--floatColsLeft .a-Form-fieldContainer { width: auto; float: left; clear: none; }
+
+.a-Form--leftLabels .a-Form-labelContainer { text-align: left; }
+
+.a-Form--autoWidthLabels .a-Form-labelContainer { width: auto; }
+
+.a-Form--fixedLabelsSmall .a-Form-labelContainer { width: 120px; }
+
+.a-Form--fixedLabels .a-Form-labelContainer { width: 160px; }
+
+.a-Form--fixedLabelsMedium .a-Form-labelContainer { width: 200px; }
+
+.a-Form--fixedLabelsLarge .a-Form-labelContainer { width: 300px; }
+
+/* ========================================================================== Form using table.formlayout ========================================================================== */
+.a-Form table.formlayout { table-layout: auto; border-collapse: collapse; border-spacing: 0; }
+
+.a-Form table.formlayout .a-Form-labelContainer { float: none; padding: 0; }
+
+.a-Form table.formlayout .a-Form-inputContainer { padding: 0; float: left; }
+
+.a-Form table.formlayout .a-Form-inputContainer + button { float: left; }
+
+.a-Form table.formlayout tbody > tr > td { padding: 8px; }
+
+.a-Form table.formlayout .a-Form-labelContainer + br { display: none; }
+
+table.formlayout .a-Form-labelContainer { float: none; width: auto; min-width: 120px; }
+
+/* Radio Alignment ========================================================================== */
+.apex-item-group--rc { vertical-align: top; display: inline-block; }
+
+.apex-item-group--rc input + label { padding-right: 8px; }
+
+/* Button Group ========================================================================== */
+/* Radio Button Pills ========================================================================== */
+.apex-button-group label { min-width: 48px; }
+
+.apex-button-group table.radio_group td + td { margin-left: -1px; }
+
+.apex-button-group table.radio_group tr td { padding: 0; }
+
+.apex-button-group table.radio_group input + label { padding: 4px 12px; width: 100%; text-align: center; }
+
+.apex-button-group table.radio_group input + label:before, .apex-button-group table.radio_group input + label:after { display: none; }
+
+.apex-button-group table.radio_group td label { border-radius: 2px; margin: 0; display: block; }
+
+.apex-button-group table.radio_group td:first-child label { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+
+.apex-button-group table.radio_group td:last-child label { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+
+.apex-button-group table.radio_group td:not(:last-child):not(:first-child) label { border-radius: 0; }
+
+.apex-button-group input + label .t-Icon { vertical-align: top; }
+
+/* Page Specific Overrides ========================================================================== */
+/* Create / Edit Text Message -- 4000:4009 */
+#F4000_P4009_FLOW_ID_CONTAINER .a-Form-labelContainer, #F4000_P4009_NAME_CONTAINER .a-Form-labelContainer, #F4000_P4009_MESSAGE_LANGUAGE_CONTAINER .a-Form-labelContainer, #P4009_IS_JS_MESSAGE_CONTAINER .a-Form-labelContainer, #F4000_P4009_MESSAGE_TEXT_CONTAINER .a-Form-labelContainer { width: 15%; }
+
+#F4000_P4009_MESSAGE_TEXT_fieldset { width: 100%; }
+
+.a-Form-postTextInlineHelp { font-size: 14px; line-height: 20px; margin-top: 8px; color: #747474; }
+
+.a-Form-postTextInlineHelp code { font-size: 12px; color: #404040; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .a-Form-select, .a-Report-report select[size="1"], .a-Form-inputContainer select[size="1"].selectlist, .a-Form-inputContainer select.yes_no, .a-Property-field--select { -moz-appearance: menulist; }
+  .a-Form-select::-ms-expand, .a-Report-report select[size="1"]::-ms-expand, .a-Form-inputContainer select[size="1"].selectlist::-ms-expand, .a-Form-inputContainer select.yes_no::-ms-expand, .a-Property-field--select::-ms-expand { display: none !important; }
+  .u-HCM .a-Form-select::-ms-expand, .u-HCM .a-Report-report select[size="1"]::-ms-expand, .u-HCM .a-Form-inputContainer select[size="1"].selectlist::-ms-expand, .u-HCM .a-Form-inputContainer select.yes_no::-ms-expand, .u-HCM .a-Property-field--select::-ms-expand { display: inline-block !important; }
+  .a-Form-select:focus::-ms-value, .a-Report-report select[size="1"]:focus::-ms-value, .a-Form-inputContainer select[size="1"].selectlist:focus::-ms-value, .a-Form-inputContainer select.yes_no:focus::-ms-value, .a-Property-field--select:focus::-ms-value { background: transparent !important; color: black !important; }
+  .u-HCM .a-Form-select:focus::-ms-value, .u-HCM .a-Report-report select[size="1"]:focus::-ms-value, .u-HCM .a-Form-inputContainer select[size="1"].selectlist:focus::-ms-value, .u-HCM .a-Form-inputContainer select.yes_no:focus::-ms-value, .u-HCM .a-Property-field--select:focus::-ms-value { color: white !important; }
+  .a-Form-select, .a-Report-report select[size="1"], .a-Form-inputContainer select[size="1"].selectlist, .a-Form-inputContainer select.yes_no, .a-Property-field--select { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAHlBMVEXf39++vr7p6emAgIDh4eHPz89vb2/Z2dlmZmby8vLFd+SnAAAAm0lEQVR42u3WsQ6AIAxFUSuC8v8/bDQmd2CgzUtwKfs9E7Rs57l15SSQQAI+wEwD7LpMAJ4eIQLQI4QA+lIQAgD9viMEAPreESIAPUIEoEeIAfQIfoB+IgBMegQn8PWD4Aba2w9CcwNHpUeoR460BDjCRZKvsvyY5OesDhR1pKlDVR3r6mKRV5u+XNevdwT75YuDYDnSEkhgDXAD/8yIgY19CJcAAAAASUVORK5CYII=); background-size: contain; }
+  .u-HCM .a-Form-select, .u-HCM .a-Report-report select[size="1"], .u-HCM .a-Form-inputContainer select[size="1"].selectlist, .u-HCM .a-Form-inputContainer select.yes_no, .u-HCM .a-Property-field--select { background-image: none; padding-right: 0px; } }

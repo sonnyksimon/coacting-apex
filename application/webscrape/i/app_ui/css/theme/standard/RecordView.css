@@ -1,0 +1,19 @@
+/** Import Compass and Theme Variables */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/******************************************************************************
+
+File Name:    RecordView.scss
+Purpose:      Base styles for Record View (used in Interactive Grid component)
+
+******************************************************************************/
+/* Toolbar -- Based on the Toolbar Component ========================================================================== */
+.a-RV-toolbar { border-color: #D0D0D0; }

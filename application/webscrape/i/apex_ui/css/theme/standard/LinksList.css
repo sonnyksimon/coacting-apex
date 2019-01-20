@@ -1,0 +1,48 @@
+/**  Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/* ========================================================================== Links List ========================================================================== */
+.a-LinksList-item { border-color: #F0F0F0; }
+
+.a-LinksList-item.is-expanded .a-LinksList-link:hover:before { color: rgba(255, 255, 255, 0.5); }
+
+.a-LinksList-icon { color: #A0A0A0; }
+
+.a-LinksList-link:hover, .a-LinksList--report a:hover { background-color: #0572CE; color: #FFF; }
+
+.a-LinksList-link:hover .a-LinksList-icon, .a-LinksList--report a:hover .a-LinksList-icon { color: rgba(255, 255, 255, 0.75); }
+
+/** Modifier: Go To Arrow Show Go To Arrow on right */
+.a-LinksList--showArrow .a-LinksList-link:hover:before { color: rgba(255, 255, 255, 0.5); }
+
+.a-LinksList--showArrow .a-LinksList-link:before { color: rgba(0, 0, 0, 0.15); }
+
+/** Modifier: Show Badge Show Badge on Right */
+.a-LinksList--showBadge .a-LinksList-badge { background-color: #F8F8F8; color: #707070; }
+
+.a-LinksList--showBadge .a-LinksList-link:hover .a-LinksList-badge { background-color: #FFF; }
+
+.a-LinksList--showBadge.a-LinksList--brightHover .a-LinksList-link:hover .a-LinksList-badge { background-color: rgba(0, 0, 0, 0.15); color: #FFF; }
+
+.a-LinksList--showBadge .a-LinksList-item.is-expanded > .a-LinksList-link .a-LinksList-badge { background-color: rgba(0, 0, 0, 0.05); }
+
+/** Modifier: Bright Hover Show Bright */
+.a-LinksList--brightHover .a-LinksList-link:hover, .a-LinksList--brightHover.a-LinksList--report a:hover { color: #0572CE; background-color: #F1F7FD; }
+
+.a-LinksList--brightHover .a-LinksList-link:hover .a-LinksList-icon, .a-LinksList--brightHover.a-LinksList--report a:hover .a-LinksList-icon { color: #0572CE; }
+
+/* ========================================================================== Icon-based Links List ========================================================================== */
+.a-LinksList--iconOnly .a-LinksList-link { color: #707070; }
+
+.a-LinksList--iconOnly .a-LinksList-link:hover, .a-LinksList--iconOnly .a-LinksList-link:focus { background-color: #FFF; color: #404040; }
+
+.a-LinksList--iconOnly .a-LinksList-icon { background-color: #FFF; border: 1px solid rgba(208, 208, 208, 0.5); }
+
+.a-LinksList--iconOnly .a-LinksList-link:hover, .a-LinksList--iconOnly .a-LinksList-link:focus { background-color: #0d8df9; }
+
+.a-LinksList--iconOnly .a-LinksList-link:hover .a-LinksList-icon, .a-LinksList--iconOnly .a-LinksList-link:focus .a-LinksList-icon { background-color: #fff; border-color: #FFF; color: #0572CE; }
+
+.a-LinksList--iconOnly .is-current .a-LinksList-icon { background-color: #0572CE; border-color: #0572CE; color: #FFF; }

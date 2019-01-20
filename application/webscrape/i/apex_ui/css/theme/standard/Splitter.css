@@ -1,0 +1,16 @@
+/**  Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+.a-Splitter-barH.is-focused, .a-Splitter-barV.is-focused { box-shadow: 0 0 0 1px #0572ce inset, 0 0 2px rgba(0, 0, 0, 0.1) !important; background-color: #0572CE; }
+
+.a-Splitter-barH button:hover, .a-Splitter-barV button:hover, .a-Splitter-barH button:hover:focus, .a-Splitter-barV button:hover:focus { box-shadow: 0 0 0 1px #0572ce inset; }
+
+.a-Splitter-barH button:focus { box-shadow: 1px 0 0 #0572CE inset, -1px 0 0 #0572CE inset; }
+
+.a-Splitter-barV button:focus { box-shadow: 0 1px 0 #0572CE inset, 0 -1px 0 #0572CE inset; }

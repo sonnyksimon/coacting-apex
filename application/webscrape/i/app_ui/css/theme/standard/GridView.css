@@ -1,0 +1,145 @@
+/** Import Compass and Theme Variables */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/******************************************************************************
+
+File Name:    GridView.scss
+Purpose:      Base styles for Grid View (used in Interactive Grid component)
+
+******************************************************************************/
+/* ========================================================================== Color Variables ========================================================================== */
+/* Table Container ========================================================================== */
+.a-GV-w-frozen .a-GV-table, .a-GV-w-hdr .a-GV-table { border-color: #E0E0E0 !important; }
+
+.a-GV-table .a-GV-cell { border-color: #EAEAEA; }
+
+.a-GV-header, .a-GV-headerGroup { border-color: #E0E0E0; }
+
+.a-GV-table tr.is-selected .a-GV-cell { background-color: #ecf3ff; }
+
+.a-GV-table .a-GV-cell.is-focused, .a-GV-table .a-GV-header.is-focused, .a-GV-table .a-GV-headerGroup.is-focused, .a-GV-table .a-GV-controlBreakHeader.is-focused { box-shadow: 0 0 0 1px #0572CE inset; }
+
+/* Column Header ========================================================================== */
+.a-GV-columnControls .a-Button { background-color: #F4F4F4; color: #707070; }
+
+.a-GV-columnControls .a-Button.is-active { background-color: #E0E0E0; border-color: rgba(0, 0, 0, 0.2); }
+
+.a-GV-header.is-active { background-color: #FFF; }
+
+/* Control Breaks ========================================================================== */
+.a-GV-controlBreakHeader .a-Button span { color: #707070; }
+
+.a-GV-table th.a-GV-controlBreakHeader { background-color: #F4F4F4; border-color: #EAEAEA; color: #707070; }
+
+/* Aggregates ========================================================================== */
+.is-aggregate .a-GV-cell { background-color: #F8F8F8; }
+
+.is-aggregate .a-GV-rowHeader { color: #707070; }
+
+/* Overall Aggregate ========================================================================== */
+.is-grandTotal .a-GV-cell { background-color: #E0E0E0; }
+
+/* Modifiers ========================================================================== */
+.a-GV--hideDeleted .a-GV-table tr.is-deleted { display: none; }
+
+/* Footer ========================================================================== */
+.a-GV-footer { border-color: #E0E0E0; background-color: #FFFFFF; }
+
+/* Column Move Handle ========================================================================== */
+.a-GV-header-dragHelper { color: #404040; background-color: #F4F4F4; border-color: #E0E0E0; }
+
+.a-GV-header-dragHelper.ui-draggable-dragging { background-color: rgba(255, 255, 255, 0.9); border-color: #0572CE; }
+
+.a-GV-colMoveMarker { background-color: rgba(0, 0, 0, 0.3); }
+
+.a-GV-hdr { background-color: #F4F4F4; }
+
+.a-GV-bdy { background-color: #FFFFFF; }
+
+/* Row Selector (checkbox) ========================================================================== */
+.a-GV-rowSelector:before { color: #404040; }
+
+.is-selected .a-GV-rowSelector { border-color: rgba(0, 0, 0, 0.2); }
+
+.a-GV-rownum { color: #707070; }
+
+/* Selected Cells ========================================================================== */
+.a-GV.a-GV--selectCells .a-GV-cell.is-selected { background-color: #D9E9F7; }
+
+/* Todo also don't want border around checkbox when a-GV--selectCells */
+.a-GV.a-GV--selectCells .is-selected .a-GV-rowSelector:before, .a-GV.a-GV--selectCells .a-GV-rowSelector:hover:before, .a-GV.a-GV--selectCells .is-hover .a-GV-rowSelector:before { opacity: 0; }
+
+/* Editing ========================================================================== */
+.a-GV-table .a-GV-cell.is-active { padding: 0; background-color: #E8E8E8; }
+
+.a-GV-cell .a-GV-columnItem input:not([type="radio"]):not([type="checkbox"]):focus, .a-GV-cell .a-GV-columnItem select[size='1']:focus { outline: none; background-color: #FFFFFF; box-shadow: 0 0 0 1px #0572CE inset; }
+
+.a-GV-floatingItem:not(.is-expanded) { background-color: #FFFFFF; box-shadow: 0 0 0 1px #0572CE inset; }
+
+.a-GV-floatingItem:not(.is-expanded) .a-GV-expandCollapse { background-color: #FFFFFF; }
+
+.a-GV-floatingItem:not(.is-expanded) .a-GV-expandCollapse:hover { background-color: #F4F4F4; }
+
+.a-GV-floatingItem.is-expanded { border-color: #0572CE; }
+
+.a-GV-floatingItem.is-expanded .a-GV-expandCollapse { background-color: #404040; color: #FFF; }
+
+/* Read Only Rows ========================================================================== */
+.a-GV--editMode .a-GV-row.is-readonly .a-GV-cell, .a-GV--editMode .a-GV-cell.is-readonly { background-color: #F8F8F8; color: #707070; }
+
+/* Updated and Changed States ========================================================================== */
+.a-GV-row.is-updated .a-GV-cell { background-color: rgba(5, 114, 206, 0.05); }
+
+.a-GV-cell.is-changed:not(.is-active):before, .a-GV-row.is-updated .a-GV-selHeader:before { color: #0572CE; }
+
+/* Row Inserted ========================================================================== */
+.a-GV-row.is-inserted .a-GV-cell { background-color: rgba(76, 217, 100, 0.1); }
+
+/* Required, Error Indicator ========================================================================== */
+.a-GV-row.is-updated.is-error .a-GV-rowHeader .a-GV-rownum, .a-GV-row.is-updated.is-error .a-GV-selHeader:before, .a-GV--editMode .a-GV-header.is-required:before { color: red; }
+
+/* Warning Indicator and Icon ========================================================================== */
+.a-GV-cell.is-warning:not(.is-active), .a-GV-cell.is-warning:not(.is-active):before { color: #FDB309; }
+
+.a-GV-cell.is-error:not(.is-active), .a-GV-cell.is-error:not(.is-active):before { color: #FC181B; }
+
+/* Status ========================================================================== */
+.a-GV-status { color: #707070; }
+
+/* Pagination ========================================================================== */
+.a-GV-pageButton { color: #404040; }
+
+.a-GV-pageButton:hover { background-color: #F4F4F4; }
+
+.a-GV-pageButton:focus { outline: none; box-shadow: 0 0 0 1px #0572CE inset; }
+
+.a-GV-pageSelector-item.is-selected .a-GV-pageButton { background-color: #E0E0E0; }
+
+.a-GV-pageRange { color: #707070; }
+
+/* Load More ========================================================================== */
+.a-GV-loadMoreButton { background-color: #FFFFFF; color: #707070; border: 1px solid rgba(0, 0, 0, 0.1); }
+
+/* Tooltips ========================================================================== */
+.a-GV-tooltip.ui-tooltip { background: rgba(0, 0, 0, 0.9); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); color: #D0D0D0; }
+
+.a-GV-tooltip.ui-tooltip.arrow-right:before, .a-GV-tooltip.ui-tooltip.arrow-left:before, .a-GV-tooltip.ui-tooltip.arrow-top:before, .a-GV-tooltip.ui-tooltip.arrow-bottom:before { color: rgba(0, 0, 0, 0.9); }
+
+.a-GV-tooltip.ui-tooltip.is-error { background-color: #EA1818; color: #FFFFFF; }
+
+.a-GV-tooltip.ui-tooltip.is-error.arrow-right:before, .a-GV-tooltip.ui-tooltip.is-error.arrow-left:before, .a-GV-tooltip.ui-tooltip.is-error.arrow-top:before, .a-GV-tooltip.ui-tooltip.is-error.arrow-bottom:before { color: #EA1818; }
+
+.a-GV-tooltip.ui-tooltip.is-warning { background-color: #FFF8DF; color: #463403; }
+
+.a-GV-tooltip.ui-tooltip.is-warning.arrow-right:before, .a-GV-tooltip.ui-tooltip.is-warning.arrow-left:before, .a-GV-tooltip.ui-tooltip.is-warning.arrow-top:before, .a-GV-tooltip.ui-tooltip.is-warning.arrow-bottom:before { color: #FFF8DF; }
+
+/* Messages ========================================================================== */
+.a-GV-altMessage-text { color: #707070; }

@@ -1,0 +1,64 @@
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Attribute Value Pair List ========================================================================== */
+.t-AVPList { margin: 0; padding: 0; list-style: none; }
+
+.t-AVPList-item { display: table; width: 100%; box-shadow: 0 -0.1rem rgba(0, 0, 0, 0.05) inset; transition: background-color .1s; }
+
+.t-AVPList-label, .t-AVPList-value { min-height: 3.6rem; display: block; vertical-align: top; font-size: 1.4rem; line-height: 2.0rem; padding: .8rem 1.2rem; margin: 0; box-shadow: 0 0.1rem rgba(0, 0, 0, 0.05) inset; transition: background-color .1s; }
+
+.u-RTL .t-AVPList-label, .u-RTL .t-AVPList-value { float: right; }
+
+.t-AVPList-label:first-of-type, .t-AVPList-value:first-of-type { box-shadow: none; }
+
+.t-AVPList-value { overflow: hidden; }
+
+.t-AVPList-label { clear: both; float: left; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.u-RTL .t-AVPList-label { float: right; }
+
+.t-AVPList--leftAligned .t-AVPList-label { padding-left: 1.2rem; width: 30%; text-align: left; }
+
+.t-AVPList--leftAligned .t-AVPList-value { padding-right: 1.2rem; text-align: left; width: 70%; }
+
+.u-RTL .t-AVPList--leftAligned .t-AVPList-value { text-align: right; }
+
+.t-AVPList--rightAligned .t-AVPList-label { width: 70%; }
+
+.t-AVPList--rightAligned .t-AVPList-value { text-align: right; overflow: hidden; width: 30%; }
+
+.u-RTL .t-AVPList--rightAligned .t-AVPList-value { text-align: left; }
+
+.t-Body-info .t-AVPList-label { padding-left: 1.6rem; }
+
+.t-Body-info .t-AVPList-value { padding-right: 1.6rem; }
+
+/* ========================================================================== Widths ========================================================================== */
+/* Fixed - Small ========================================================================== */
+.t-AVPList--fixedLabelSmall .t-AVPList-label { width: 16rem; }
+
+.t-AVPList--fixedLabelSmall .t-AVPList-value { width: auto; }
+
+/* Fixed - Medium ========================================================================== */
+.t-AVPList--fixedLabelMedium .t-AVPList-label { width: 22rem; }
+
+/* Fixed - Large ========================================================================== */
+.t-AVPList--fixedLabelLarge .t-AVPList-label { width: 26rem; }
+
+/* Variable - Small ========================================================================== */
+.t-AVPList--variableLabelSmall .t-AVPList-label { width: 20%; }
+
+.t-AVPList--variableLabelSmall .t-AVPList-value { width: 80%; }
+
+/* Variable - Medium ========================================================================== */
+.t-AVPList--variableLabelMedium .t-AVPList-label { width: 30%; }
+
+.t-AVPList--variableLabelMedium .t-AVPList-value { width: 70%; }
+
+/* Variable - Large ========================================================================== */
+.t-AVPList--variableLabelLarge .t-AVPList-label { width: 40%; }
+
+.t-AVPList--variableLabelLarge .t-AVPList-value { width: 60%; }
+
+/* ========================================================================== Timeline Pagination ========================================================================== */
+.t-AVPList + .t-Report-pagination { border-top: 0.1rem solid rgba(0, 0, 0, 0.05); }

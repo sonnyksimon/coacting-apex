@@ -1,0 +1,87 @@
+/** Import Compass and Theme Variables */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/******************************************************************************
+Calendar
+******************************************************************************/
+.fc-event.fc-apex-events-default { background-color: #2578CF; border-color: #2578CF; color: #FFF; }
+
+.fc-event.fc-apex-events-gcal { background-color: #01DF01; border-color: #01DF01; color: #4F4F4F; }
+
+.fc-event.fc-apex-events-webservice { background-color: #FAB252; border-color: #FAB252; color: #4F4F4F; }
+
+.fc .fc-event.apex-cal-black { background-color: #303030; border-color: #303030; color: #FFFFFF; }
+
+.fc .fc-event.apex-cal-blue { background-color: #4183D7; border-color: #4183D7; color: #FFFFFF; }
+
+.fc .fc-event.apex-cal-bluesky { background-color: #6BB9F0; border-color: #6BB9F0; color: #FFFFFF; }
+
+.fc .fc-event.apex-cal-brown { background-color: #D88935; border-color: #D88935; color: #FFFFFF; }
+
+.fc .fc-event.apex-cal-cyan { background-color: #1ABC9C; border-color: #1ABC9C; color: #404040; }
+
+.fc .fc-event.apex-cal-darkblue { background-color: #1F5F97; border-color: #1F5F97; color: #FFFFFF; }
+
+.fc .fc-event.apex-cal-gray { background-color: #A0A0A0; border-color: #A0A0A0; color: #404040; }
+
+.fc .fc-event.apex-cal-green { background-color: #2ECC71; border-color: #2ECC71; color: #FFFFFF; }
+
+.fc .fc-event.apex-cal-lime { background-color: #28A346; border-color: #28A346; color: #FFFFFF; }
+
+.fc .fc-event.apex-cal-orange { background-color: #F39C12; border-color: #F39C12; color: #FFFFFF; }
+
+.fc .fc-event.apex-cal-red { background-color: #D91E18; border-color: #D91E18; color: #FFFFFF; }
+
+.fc .fc-event.apex-cal-silver { background-color: #BDC3C7; border-color: #BDC3C7; color: #404040; }
+
+.fc .fc-event.apex-cal-white { background-color: #F0F0F0; border-color: #F0F0F0; color: #404040; }
+
+.fc .fc-event.apex-cal-yellow { background-color: #F1C40F; border-color: #F1C40F; color: #404040; }
+
+.fc .fc-helper { background-color: #4183D7                !important; border-color: #0572CE !important; color: #FFFFFF                           !important; opacity: 0.5; }
+
+.fc .ui-button:active, .fc .ui-button:focus, .fc-view:active, .fc-view:focus { outline: 1px solid #0572CE; }
+
+.fc-event:active, .fc-event:focus { background-color: #4183D7                !important; border-color: #0572CE !important; color: #FFFFFF                           !important; opacity: 0.5; }
+
+.fc-list-item.fc-apex-events-default .fc-event-dot { background-color: #2578CF; }
+
+.fc-list-item.fc-apex-events-gcal .fc-event-dot { background-color: #01DF01; }
+
+.fc-list-item.fc-apex-events-webservice .fc-event-dot { background-color: #FAB252; }
+
+.fc-list-item.apex-cal-black .fc-event-dot { background-color: #303030; }
+
+.fc-list-item.apex-cal-blue .fc-event-dot { background-color: #4183D7; }
+
+.fc-list-item.apex-cal-bluesky .fc-event-dot { background-color: #6BB9F0; }
+
+.fc-list-item.apex-cal-brown .fc-event-dot { background-color: #D88935; }
+
+.fc-list-item.apex-cal-cyan .fc-event-dot { background-color: #1ABC9C; }
+
+.fc-list-item.apex-cal-darkblue .fc-event-dot { background-color: #1F5F97; }
+
+.fc-list-item.apex-cal-gray .fc-event-dot { background-color: #A0A0A0; }
+
+.fc-list-item.apex-cal-green .fc-event-dot { background-color: #2ECC71; }
+
+.fc-list-item.apex-cal-lime .fc-event-dot { background-color: #28A346; }
+
+.fc-list-item.apex-cal-orange .fc-event-dot { background-color: #F39C12; }
+
+.fc-list-item.apex-cal-red .fc-event-dot { background-color: #D91E18; }
+
+.fc-list-item.apex-cal-silver .fc-event-dot { background-color: #BDC3C7; }
+
+.fc-list-item.apex-cal-white .fc-event-dot { background-color: #F0F0F0; }
+
+.fc-list-item.apex-cal-yellow .fc-event-dot { background-color: #F1C40F; }

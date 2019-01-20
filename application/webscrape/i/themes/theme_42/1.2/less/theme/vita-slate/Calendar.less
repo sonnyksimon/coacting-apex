@@ -1,0 +1,90 @@
+/**
+ * Import Compass and Theme Variables
+ */
+
+@import "_variables";
+
+/* ==========================================================================
+   Classic Calendar
+   ========================================================================== */
+
+@fc-Border:          contrast(@g_Region-BG, darken(@g_Region-BG,  8%), lighten(@g_Region-BG,  8%),  43%);
+@fc-Body-BG:       @g_Region-BG;
+@fc-Body-FG:       @g_Region-FG;
+
+@fc-CalHeader-BG:    @g_Region-Header-BG;
+@fc-CalHeader-FG:    @g_Region-Header-FG;
+
+@fc-BorderRadius:    @g_Container-BorderRadius;
+
+/* Calendar Header
+   ========================================================================== */
+.fc.ui-widget {
+  background-color: @fc-Body-BG;
+}
+
+.fc-toolbar {
+  border-color: @fc-Border;
+  background-color: @fc-Body-BG;
+  border-radius: @fc-BorderRadius @fc-BorderRadius 0 0;
+}
+.fc-toolbar h2,
+.fc .fc-basic-view td.fc-day-number, 
+.fc .fc-day-number {
+  color: @fc-Body-FG;
+}
+
+.fc-day-header.ui-widget-header,
+.fc-view .ui-widget-header {
+  background-color: contrast(@fc-CalHeader-BG, darken(@fc-CalHeader-BG,  5%), lighten(@fc-CalHeader-BG,  5%),  43%);
+  color: @fc-CalHeader-FG;
+  border-color: contrast(@fc-CalHeader-BG, darken(@fc-CalHeader-BG,  10%), lighten(@fc-CalHeader-BG,  10%),  43%);
+}
+
+div.fc-agendaList {
+  background-color: @fc-Body-BG;
+  border-color: @fc-Border;
+  color: @fc-Body-FG;
+}
+
+.fc .fc-agendaList-dayHeader {
+  background-color: contrast(@fc-CalHeader-BG, darken(@fc-CalHeader-BG,  15%), lighten(@fc-CalHeader-BG,  15%),  43%);
+  color: @fc-CalHeader-FG;
+  border-color: contrast(@fc-Body-BG, darken(@fc-Body-BG,  2%), lighten(@fc-Body-BG,  2%),  43%);
+}
+.fc .fc-agendaList-day {
+  color: @fc-CalHeader-FG;
+}
+
+.fc .fc-agendaList-date {
+  color: contrast(@fc-CalHeader-FG, darken(@fc-CalHeader-FG,  15%), lighten(@fc-CalHeader-FG,  15%),  43%);
+}
+
+.fc .fc-agendaList .fc-event-start-time, 
+.fc .fc-agendaList .fc-event-all-day {
+  color: contrast(@fc-Body-FG, darken(@fc-Body-FG,  15%), lighten(@fc-Body-FG,  15%),  43%); 
+}
+
+body .fc td.fc-today,
+body .fc .ui-widget-content {
+  border-color: contrast(@fc-Body-BG, darken(@fc-Body-BG,  10%), lighten(@fc-Body-BG,  10%),  43%);
+  color: @fc-Body-FG;
+}
+
+body .ui-widget-content.fc-today.ui-state-highlight {
+  background-color: contrast(@fc-Body-BG, darken(@fc-Body-BG,  5%), lighten(@fc-Body-BG,  5%),  43%);
+}
+
+.fc .fc-agendaList-item {
+  border-color: contrast(@fc-Body-BG, darken(@fc-Body-BG,  2%), lighten(@fc-Body-BG,  2%),  43%);
+}
+
+.fc .ui-button:active, .fc .ui-button:focus, .fc-view:active, .fc-view:focus {
+  outline: 1px solid @g_Focus;
+}
+.fc-view-container > .fc-view {
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

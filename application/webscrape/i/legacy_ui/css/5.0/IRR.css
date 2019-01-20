@@ -1,0 +1,86 @@
+/*==========  APEX 5.0 Core Overrides  ==========*/
+.a-IRR-dialogTable th, .a-IRR-dialogTable td {
+  white-space: nowrap;
+}
+
+.a-IRR-container button.a-Button span {
+  display: inline-block;
+}
+
+/*==========  APEX 5.0 IRR Core Overrides  ==========*/
+.a-IRR-fullView,
+.a-IRR-reportView {
+  float: left;
+}
+
+.a-IRR-toolbar--singleRow + .a-IRR-content {
+  background-color: #FFF;
+  border: 1px solid #D0D0D0;
+  -moz-border-radius: 2px;
+       border-radius: 2px;
+  margin-bottom: 8px;
+}
+
+.a-IRR-buttons,
+.a-IRR-controls {
+  display: block;
+  float: left;
+}
+
+.a-IRR-buttons {
+  margin-left: 8px;
+  line-height: 32px;
+  vertical-align: middle;
+}
+
+.a-IRR {
+  border-width: 0;
+}
+
+.a-IRR-table {
+  width: auto;
+  border: 1px solid #D0D0D0;
+}
+
+.a-IRR-toolbar {
+  display: block;
+  float: left;
+  width: auto;
+  margin-bottom: 8px;
+  -moz-border-radius: 2px;
+       border-radius: 2px;
+  border-collapse: separate;
+  border: 1px solid #C0C0C0;
+  background-image: -webkit-linear-gradient(#F4F4F4, #E4E4E4);
+  background-image: -moz-linear-gradient(#F4F4F4, #E4E4E4);
+  background-image: linear-gradient(#F4F4F4, #E4E4E4);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.a-IRR {
+  border: none;
+}
+
+.a-IRR-paginationWrap--bottom {
+  border-top-width: 0;
+}
+
+.a-IRR-table td,
+.a-IRR-singleRow-name, .a-IRR-singleRow-value {
+  padding: 4px 8px;
+}
+
+.a-IRR-headerLink, .a-IRR-headerLabel {
+  padding: 8px;
+  white-space: nowrap;
+}
+
+.a-IRR-table tr:nth-child(even) td {
+  background-color: #F8F8F8;
+}
+
+.a-IRR-table tr:hover td,
+.a-IRR-table tr:nth-child(even):hover td {
+  background-color: #F0F0F0;
+}

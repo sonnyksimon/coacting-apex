@@ -1,0 +1,12 @@
+/* ========================================================================== Main Content Container ========================================================================== */
+.a-Main { display: flex; flex-direction: column; flex: 1; align-items: stretch; }
+
+.a-Side { border-left: 1px solid #E0E0E0; width: 200px; background-color: #F4F4F4; }
+
+.a-Side--left { border-left-width: 0; border-right: 1px solid #E0E0E0; }
+
+.a-Side--large { width: 400px; }
+
+.a-Side--large { width: 400px; }
+
+.a-Page--webservices .a-Side { background-color: #FFF; overflow: auto; }

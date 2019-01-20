@@ -1,0 +1,142 @@
+{
+  "name": "oj-accordion",
+  "version": "4.2.0",
+  "jetVersion": "4.2.0",
+  "displayName": "Accordion",
+  "preview": true,
+  "roles": [
+    "group"
+  ],
+  "description": "Displays a set of Collapsible child elements.",
+  "properties": {
+    "expanded": {
+      "description": "A list of expanded child collapsibles.",
+      "type": "Array",
+      "displayName": "Expanded",
+      "value": "null\n\nNote: expanded is default to null<p>\nwhich means that accordion doesnt modify the state on the collapsible children.<p>\nIf specified, it overrides the children expanded setting.",
+      "writeback": true
+    },
+    "multiple": {
+      "description": "Specifies whether multiple collapsibles can be open at the same time.",
+      "type": "boolean",
+      "displayName": "Multiple",
+      "value": false
+    },
+    "translations": {
+      "description": "A collection of translated resources from the translation bundle, or null if this\ncomponent has no resources. Resources may be accessed and overridden individually or collectively, as seen in the examples.\n\nIf this component has translations, their documentation immediately follows this doc entry.",
+      "type": "Object",
+      "displayName": "Translations",
+      "value": null
+    }
+  },
+  "methods": {
+    "refresh": {
+      "description": "Refreshes the visual state of the accordion. \n\nThis method does not accept any arguments."
+    },
+    "setProperty": {
+      "description": "Sets a property or a single subproperty for complex properties and notifies the component\nof the change, triggering a [property]Changed event.",
+      "params": [
+        {
+          "name": "property",
+          "description": "The property name to set. Supports dot notation for subproperty access.",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "description": "The new value to set the property to.",
+          "type": "*"
+        }
+      ]
+    },
+    "getProperty": {
+      "description": "Retrieves a value for a property or a single subproperty for complex properties.",
+      "params": [
+        {
+          "name": "property",
+          "description": "The property name to get. Supports dot notation for subproperty access.",
+          "type": "string"
+        }
+      ],
+      "return": "*"
+    },
+    "setProperties": {
+      "description": "Performs a batch set of properties.",
+      "params": [
+        {
+          "name": "properties",
+          "description": "An object containing the property and value pairs to set.",
+          "type": "Object"
+        }
+      ]
+    }
+  },
+  "events": {
+    "ojBeforeExpand": {
+      "description": "Triggered immediately before any collapsible in the accordion is expanded.",
+      "bubbles": true,
+      "cancelable": true,
+      "detail": {
+        "toCollapsible": {
+          "description": "The collapsible being expanded.",
+          "type": "Element"
+        },
+        "fromCollapsible": {
+          "description": "The collapsible being collapsed.",
+          "type": "Element"
+        }
+      }
+    },
+    "ojExpand": {
+      "description": "Triggered after any collapsible in the accordion is expanded.",
+      "bubbles": true,
+      "detail": {
+        "toCollapsible": {
+          "description": "The collapsible being expanded.",
+          "type": "Element"
+        },
+        "fromCollapsible": {
+          "description": "The collapsible being collapsed.",
+          "type": "Element"
+        }
+      }
+    },
+    "ojBeforeCollapse": {
+      "description": "Triggered immediately before any collapsible in the accordion is collapsed.",
+      "bubbles": true,
+      "cancelable": true,
+      "detail": {
+        "toCollapsible": {
+          "description": "The collapsible being expanded.",
+          "type": "Element"
+        },
+        "fromCollapsible": {
+          "description": "The collapsible being collapsed.",
+          "type": "Element"
+        }
+      }
+    },
+    "ojCollapse": {
+      "description": "Triggered after any collapsible in the accordion has been collapsed.",
+      "bubbles": true,
+      "detail": {
+        "toCollapsible": {
+          "description": "The collapsible being expanded.",
+          "type": "Element"
+        },
+        "fromCollapsible": {
+          "description": "The collapsible being collapsed.",
+          "type": "Element"
+        }
+      }
+    }
+  },
+  "slots": {
+    "": {
+      "description": "The <oj-accordion> element accepts one or more <oj-collapsible> elements as children.",
+      "displayName": "default"
+    },
+    "contextMenu": {
+      "description": "The contextMenu slot is set on the oj-menu within this element. \nThis is used to designate the JET Menu that this component should launch as a context menu on right-click, Shift-F10, Press & Hold, or component-specific gesture. \nIf specified, the browser's native context menu will be replaced by the JET Menu specified in this slot.\n\nThe application can register a listener for the Menu's ojBeforeOpen event. The listener can cancel the launch via event.preventDefault(), \nor it can customize the menu contents by editing the menu DOM directly, and then calling refresh() on the Menu.\n\nTo help determine whether it's appropriate to cancel the launch or customize the menu, the ojBeforeOpen listener can use component API's to determine which \ntable cell, chart item, etc., is the target of the context menu. See the JSDoc and demos of the individual components for details. \n\nKeep in mind that any such logic must work whether the context menu was launched via right-click, Shift-F10, Press & Hold, or component-specific touch gesture."
+    }
+  }
+}

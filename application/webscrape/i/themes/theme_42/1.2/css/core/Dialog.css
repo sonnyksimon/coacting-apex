@@ -1,0 +1,61 @@
+/** Import Compass */
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Generic Modal Styles ========================================================================== */
+/* ========================================================================== Standard Dialog ========================================================================== */
+/* Dialog Title Bar ========================================================================== */
+.t-Dialog-page .t-Alert--page.t-Alert--success.is-visible { -webkit-transform: translateY(0); transform: translateY(0); }
+
+body .ui-dialog.t-Dialog-page--wizard { border-radius: 3px; }
+
+body .ui-dialog.t-Dialog-page--wizard .ui-dialog-titlebar { padding: 12px 16px; border-bottom: none; }
+
+body .ui-dialog.t-Dialog-page--wizard .ui-dialog-title { line-height: 32px; font-size: 2.0rem; font-weight: 500; text-align: center; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; float: none; display: block; margin-right: 24px; width: auto; }
+
+.u-RTL body .ui-dialog.t-Dialog-page--wizard .ui-dialog-title { margin-right: 0px; margin-left: 24px; }
+
+body .ui-dialog.t-Dialog-page--wizard .ui-dialog-titlebar-close { right: 16px; top: 16px; }
+
+body .ui-dialog.t-Dialog-page--wizard .ui-dialog-content { border: 0; padding: 0; font-size: 1.4rem; }
+
+body .ui-dialog.t-Dialog-page--wizard .ui-dialog-buttonpane { padding: 16px; border-top-width: 0; }
+
+body .ui-dialog.t-Dialog-page--wizard .ui-dialog-buttonpane .ui-button { padding: 10px 8px; font-size: 1.4rem; line-height: 1.6rem; min-width: 64px; }
+
+/* ========================================================================== Automatic Dialog Height ========================================================================== */
+.ui-dialog.t-Dialog-page--wizard, .ui-dialog.t-Dialog-page--standard { display: flex; flex-direction: column; flex: none; max-height: 100%; }
+
+.ui-dialog.t-Dialog-page--wizard .ui-dialog-titlebar, .ui-dialog.t-Dialog-page--standard .ui-dialog-titlebar { flex-shrink: 0; }
+
+.ui-dialog.t-Dialog-page--wizard .ui-dialog-content, .ui-dialog.t-Dialog-page--standard .ui-dialog-content { position: relative; flex: 1 0 auto; }
+
+.ui-dialog.t-Dialog-page--wizard .ui-dialog-content:not(.js-dialogReady):before, .ui-dialog.t-Dialog-page--standard .ui-dialog-content:not(.js-dialogReady):before { content: "\e01e"; position: absolute; left: 50%; top: 50%; margin-top: -16px; margin-left: -16px; width: 32px; height: 32px; font-size: 32px; font-family: "apex-5-icon-font" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; opacity: 0; -webkit-animation: anim-spin-stop 2s 1 linear; animation: anim-spin-stop 2s 1 linear; -webkit-animation-delay: .2s; animation-delay: .2s; }
+
+.t-Dialog, .t-Dialog-page, .t-Dialog-page #wwvFlowForm { display: flex; flex-direction: column; flex: 1 0 100%; height: 100vh; }
+
+.t-Dialog-page { opacity: 0; }
+
+.t-Dialog-page.js-dialogReady { opacity: 1; transition: opacity .2s ease; }
+
+.t-Dialog-header, .t-Dialog-footer { flex-shrink: 0; overflow: hidden; }
+
+.t-Dialog-body { padding: 12px; }
+
+.t-Dialog-bodyWrapperOut { position: relative; flex: 1 0; }
+
+.t-Dialog-bodyWrapperIn { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: auto; -webkit-overflow-scrolling: touch; }
+
+.t-Dialog-page--wizard.ui-dialog--apex, .t-Dialog-page--standard.ui-dialog--apex { box-sizing: content-box; -webkit-transform-origin: center bottom; transform-origin: center bottom; -webkit-animation: anim-dialogOpen .2s ease 1; animation: anim-dialogOpen .2s ease 1; }
+
+.t-Dialog-page--wizard.ui-dialog--apex iframe, .t-Dialog-page--standard.ui-dialog--apex iframe { position: absolute; top: 0; bottom: 0; }
+
+.t-Dialog-page--wizard.ui-dialog--apex .t-Wizard-body, .t-Dialog-page--standard.ui-dialog--apex .t-Wizard-body { transition: all; }
+
+/* Scrollbars ========================================================================== */
+.t-Dialog ::-webkit-scrollbar { width: 8px; height: 8px; }
+
+/* Remove Padding from Dialog Body ========================================================================== */
+.t-Dialog--noPadding .t-Dialog-body { padding: 0; overflow: hidden; }
+
+/* Help Dialog ========================================================================== */
+#apex_popup_field_help { outline: none; }

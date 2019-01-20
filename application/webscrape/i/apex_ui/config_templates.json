@@ -1,0 +1,49 @@
+{
+    "connection": "#INTERNAL#config/51internal.json",
+    "ignore_html": [
+        "APPLICATION_NAME",
+        "WORKSPACE",
+        "WORKSPACE_DISPLAY_NAME",
+        "COMPONENT_SIGNATURE",
+        "THEME_NUMBER",
+        "MAX_LEVELS",
+        "START_WITH",
+        "THEME_CLASS",
+        "START_WITH_NODE",
+        "DEFAULT_LABEL_ALIGNMENT"
+    ],
+    "tables": {
+        "BC": {
+            "source_table": "WWV_FLOW_MENU_TEMPLATES",
+            "template_name": "NAME"
+        },
+        "BUTTON": {
+            "source_table": "WWV_FLOW_button_TEMPLATES",
+            "template_name": "TEMPLATE_NAME"
+        },
+        "LABEL": {
+            "source_table": "WWV_FLOW_FIELD_TEMPLATES",
+            "template_name": "TEMPLATE_NAME"
+        },
+        "LIST": {
+            "source_table": "WWV_FLOW_LIST_TEMPLATES",
+            "template_name": "LIST_TEMPLATE_NAME"
+        },
+        "PAGE": {
+            "source_table": "wwv_flow_templates",
+            "template_name": "NAME"
+        },
+        "POPUPLOV":{
+            "source_table": "WWV_FLOW_POPUP_LOV_TEMPLATE",
+            "template_name": "TEMPLATE_NAME"
+        },
+        "REGION":{
+            "source_table": "WWV_FLOW_PAGE_PLUG_TEMPLATES",
+            "template_name": "PAGE_PLUG_TEMPLATE_NAME"
+        },
+        "REPORT": {
+            "source_table": "WWV_FLOW_ROW_TEMPLATES",
+            "template_name": "ROW_TEMPLATE_NAME"
+        }
+    }
+}

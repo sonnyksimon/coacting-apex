@@ -1,0 +1,153 @@
+/** Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/* ========================================================================== Tree Component ========================================================================== */
+/* Tree Node that is not important (used for Attributes / etc) */
+.a-TreeView-content.is-not-important .a-TreeView-label { color: rgba(0, 0, 0, 0.55); }
+
+/* Populated Tree Node */
+.a-TreeView-content.is-populated .a-TreeView-label { font-weight: bold; }
+
+/* Header Styles */
+.a-TreeView-content.is-selected.is-header, .a-TreeView-content.is-selected.is-not-important .a-TreeView-label { color: white; }
+
+.a-TreeView-content.is-header { color: #505050; }
+
+/* Tree Node -- Conditional ========================================================================== */
+.a-TreeView-content.is-conditional .a-Icon { position: relative; }
+
+.a-TreeView-content.is-conditional .a-Icon:after { position: absolute; right: -3px; bottom: -3px; display: inline-block; width: 8px; height: 8px; content: ''; border: 1px solid #fff; border-radius: 100%; background-color: #bd609a; }
+
+.a-TreeView-content.is-conditional .a-TreeView-label { font-style: italic; }
+
+/* Tree Node -- Never Condition ========================================================================== */
+.a-TreeView-content.is-never .a-Icon { opacity: .5; }
+
+.a-TreeView-content.is-never .a-TreeView-label { text-decoration: line-through; }
+
+/* ========================================================================== Tree Nodes ========================================================================== */
+.a-PageDesigner-treeWrap { /* Additional color coded tree icons ========================================================================== */ /* Selected State ========================================================================== */ /* Node Selector ========================================================================== */ }
+
+.a-PageDesigner-treeWrap .a-TreeView-content { color: #B0B0B0; padding: 2px 4px; }
+
+.a-PageDesigner-treeWrap .a-Icon { background-color: #E8E8E8; color: #B0B0B0; }
+
+.a-PageDesigner-treeWrap .a-Icon.icon-tree-region, .a-PageDesigner-treeWrap .a-Icon[class*="icon-region-"] { color: #FFF; background-color: rgba(127, 190, 242, 0.75); }
+
+.a-PageDesigner-treeWrap .a-Icon.icon-tree-item, .a-PageDesigner-treeWrap span.a-Icon[class*="icon-item-"] { color: #FFF; background-color: rgba(151, 156, 159, 0.75); }
+
+.a-PageDesigner-treeWrap .a-Icon.icon-tree-button, .a-PageDesigner-treeWrap span.a-Icon[class*="icon-button-"] { color: #FFF; background-color: rgba(86, 212, 154, 0.75); }
+
+.a-PageDesigner-treeWrap .a-Icon.icon-tree-attributes, .a-PageDesigner-treeWrap .a-Icon.icon-tree-folder { color: #B0B0B0 !important; background-color: #FAFAFA; }
+
+.a-PageDesigner-treeWrap .a-Icon.icon-tree-page { color: #FFF; background-color: rgba(160, 160, 160, 0.75); }
+
+.a-PageDesigner-treeWrap .a-Icon.icon-tree-validation, .a-PageDesigner-treeWrap .a-Icon.icon-tree-authorization { color: #FFF; background-color: rgba(36, 203, 127, 0.5); }
+
+.a-PageDesigner-treeWrap .a-Icon.icon-tree-branch { color: #FFF; background-color: rgba(255, 45, 85, 0.5); }
+
+.a-PageDesigner-treeWrap .a-Icon.icon-tree-process, .a-PageDesigner-treeWrap .a-Icon.icon-tree-computation { color: #FFF; background-color: rgba(230, 126, 33, 0.5); }
+
+.a-PageDesigner-treeWrap .a-Icon.icon-tree-da-event, .a-PageDesigner-treeWrap .a-Icon.icon-tree-da-action { color: #FFF; background-color: rgba(155, 89, 182, 0.5); }
+
+.a-PageDesigner-treeWrap .a-TreeView-content.is-selected .a-Icon { color: #0466B8 !important; background-color: rgba(255, 255, 255, 0.75) !important; }
+
+.a-PageDesigner-treeWrap .a-TreeView-content .u-selector { margin: 3px; }
+
+.a-TreeView-content.is-error .a-TreeView-label, .a-TreeView-content.is-warning .a-TreeView-label { margin-right: 20px; }
+
+.a-TreeView-content.is-error .a-TreeView-label .a-Icon, .a-TreeView-content.is-warning .a-TreeView-label .a-Icon { display: none; }
+
+.a-TreeView-content.is-error > .a-Icon:before { content: "\e0a2"; }
+
+.a-TreeView-content.is-warning > .a-Icon:before { content: "\e017"; }
+
+.a-TreeView-content .a-Icon.icon-warning, .a-TreeView-content .a-Icon.icon-error { float: right; }
+
+/* Warning */
+.a-TreeView-row.is-warning { background-color: #FFF2C3; }
+
+/* Error */
+.a-TreeView-row.is-error { background-color: #FFC3C3; }
+
+.a-TreeView-content.is-selected.is-error .a-TreeView-toggle, .a-TreeView-content.is-selected.is-warning .a-TreeView-toggle { color: rgba(0, 0, 0, 0.2); }
+
+.a-TreeView-content.is-warning .a-Icon { color: #FFF !important; background-color: #FDB309 !important; }
+
+.a-TreeView-content.is-error .a-Icon { color: #FFF !important; background-color: #f22f2f !important; }
+
+.a-TreeView-content.is-selected.is-error .a-Icon, .a-TreeView-content.is-selected.is-warning .a-Icon { background-color: rgba(255, 255, 255, 0.75) !important; }
+
+.a-TreeView-row.is-focused { box-shadow: 0 0 1px rgba(5, 114, 206, 0.5); background-color: #3fa4fa; }
+
+.a-TreeView-row.is-focused ~ .a-TreeView-content .a-TreeView-label { color: #FFF; }
+
+.a-TreeView-row.is-selected, .a-TreeView-row.is-selected.is-hover { background-color: #0466B8; }
+
+.a-TreeView-row.is-focused, .a-TreeView-row.is-selected.is-focused { background-color: #0572CE; }
+
+/* Page Designer Tree ========================================================================== */
+.a-TreeView-label { color: rgba(0, 0, 0, 0.55); margin-left: 0; }
+
+.a-Icon + .a-TreeView-label { color: rgba(0, 0, 0, 0.75); margin-left: 4px; }
+
+.a-PageDesigner-treeWrap { /* Remove left margin when no icon */ /* Set new line height */ }
+
+.a-PageDesigner-treeWrap .a-TreeView-node { padding-left: 22px; }
+
+.a-PageDesigner-treeWrap .a-TreeView-node.a-TreeView--noCollapse { padding-left: 0; }
+
+.a-PageDesigner-treeWrap .a-TreeView-label { line-height: 22px; }
+
+.a-PageDesigner-treeWrap .a-TreeView-content .a-Icon { width: 20px; height: 20px; line-height: 20px; padding: 2px; margin: 1px; border-radius: 2px; }
+
+.a-PageDesigner-treeWrap .a-TreeView-row { height: 26px; }
+
+.a-PageDesigner-treeWrap .a-TreeView-toggle { height: 22px; width: 22px; padding: 3px; text-align: center; margin-left: -22px; margin-top: 3px; color: rgba(0, 0, 0, 0.5); }
+
+/* Override Arrow Icons ========================================================================== */
+.a-TreeView .is-expandable > .a-TreeView-toggle:before { content: "\E0D8"; }
+
+.a-TreeView .is-collapsible > .a-TreeView-toggle:before { content: "\e0c2"; }
+
+/* Is Chagned Indicator ========================================================================== */
+.a-TreeView-content.is-changed:before { content: ''; position: absolute; left: 0; top: 2px; bottom: 2px; width: 2px; background: rgba(4, 103, 184, 0.75); }
+
+.a-TreeView-content.is-selected.is-changed:before { background-color: rgba(255, 255, 255, 0.75); }
+
+/* Dragging Placeholder ========================================================================== */
+.a-TreeView-placeholder > .a-TreeView-row { background-color: #fff7b9; }
+
+.a-TreeView-placeholder > .a-TreeView-content:after { background-color: #F3D061; }
+
+/* ========================================================================== ORDS Tree (also inherits from Page Designer Styles) ========================================================================== */
+.a-TreeView--ords { /* Colors ========================================================================== */ }
+
+.a-TreeView--ords .a-TreeView-label:hover { text-decoration: none; }
+
+.a-TreeView--ords .a-Icon { color: #FFF; }
+
+.a-TreeView--ords .a-Icon.icon-rest-services { background-color: #dc5547; }
+
+.a-TreeView--ords .a-Icon.icon-rest-modules { background-color: rgba(230, 190, 55, 0.75); }
+
+.a-TreeView--ords .a-Icon.icon-rest-module { background-color: rgba(230, 190, 55, 0.75); }
+
+.a-TreeView--ords .a-Icon.icon-rest-template { background-color: rgba(40, 177, 150, 0.75); }
+
+.a-TreeView--ords .a-Icon.icon-rest-handler { background-color: rgba(52, 161, 177, 0.75); }
+
+.a-TreeView--ords .a-Icon.icon-rest-parameter { background-color: rgba(104, 136, 157, 0.75); }
+
+.a-TreeView--ords .a-Icon.icon-rest-privileges { background-color: rgba(218, 127, 45, 0.75); }
+
+.a-TreeView--ords .a-Icon.icon-rest-privilege { background-color: rgba(218, 127, 45, 0.75); }
+
+.a-TreeView--ords .a-Icon.icon-rest-roles { background-color: rgba(220, 85, 71, 0.75); }
+
+.a-TreeView--ords .a-Icon.icon-rest-role { background-color: rgba(220, 85, 71, 0.75); }
+
+.a-TreeView--ords .a-Icon.icon-rest-object { background-color: rgba(158, 158, 158, 0.75); }

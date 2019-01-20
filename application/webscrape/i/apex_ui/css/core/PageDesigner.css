@@ -1,0 +1,157 @@
+/******************************************************************************
+
+File Name:    aPageDesigner.scss
+Purpose:      APEX 5.0 Page Designer CSS
+
+
+Outline:
+  1. General Structure
+  2. Common Elements
+  3. Property Editor Module
+
+******************************************************************************/
+/******************************************************************************
+Import Relevant SCSS Config
+******************************************************************************/
+/******************************************************************************
+2.0  Page Designer Skeleton
+******************************************************************************/
+.a-PageDesigner #sp_main_content { transition: opacity .4s; }
+
+.a-PageDesigner.is-processing #sp_main_content { opacity: .25; pointer-events: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+#a-PageDesignerSplitter { width: 100%; }
+
+#a-PageDesignerSplitter, #a-PageDesigner-EditorsSplitter, #a-PageDesigner-MainColSplitter { height: 900px; overflow: hidden; }
+
+#a-PageDesigner-GridLayoutSplitter { height: 900px; overflow: hidden; }
+
+/******************************************************************************
+2.2  Column Header and Heading
+******************************************************************************/
+.a-PageColumn-heading { margin: 0; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; background-clip: padding-box; }
+
+/******************************************************************************
+Inline Styles from P4500 -- TODO: Refactor into proper CSS
+******************************************************************************/
+/* xxx begin placeholder text editor styles */
+#codeEditorTitle { font-size: 12px; line-height: 16px; padding: 8px 4px 0 4px; color: #404040; }
+
+#codeEditorTitle .CodeMirror { border: none; border-radius: 0; box-shadow: none; }
+
+/* xxx end placeholder text editor styles */
+/* xxx begin pe styles to move */
+.a-Property.js-showAll, .a-PropertyEditor-propertyGroup.js-showAll { display: none; }
+
+.a-PropertyEditor.js-showAll .a-Property.js-showAll, .a-PropertyEditor.js-showAll .a-PropertyEditor-propertyGroup.js-showAll { display: block; }
+
+/* xxx end pe styles to move */
+.a-GridLayout-grid.first { border-top: 0; }
+
+.a-GridLayout-grid thead td, .a-GridLayout-grid.is-active thead td { height: 0; border: 0; padding: 0 !important; }
+
+.a-GridLayout--z75 { width: 75%; margin: 0 auto; }
+
+.a-GridLayout--z75 .a-GridLayout-page > h3 { font-size: 10px; line-height: 12px; }
+
+.a-GridLayout--z75 .a-GridLayout-region > h3 .a-GridLayout-label { font-size: 8px; }
+
+.a-GridLayout--z75 .a-GridLayout-label { font-size: 8px; }
+
+.a-GridLayout--z100 { width: 100%; }
+
+/* xxx todo 125 */
+.a-GridLayout--z150 { width: 200%; }
+
+.a-GridLayout--z150 .a-GridLayout-page > h3 { font-size: 16px; line-height: 18px; }
+
+.a-GridLayout--z150 .a-GridLayout-region > h3 .a-GridLayout-label { font-size: 14px; }
+
+.a-GridLayout--z150 .a-GridLayout-label { font-size: 12px; }
+
+/* xxx todo 175 */
+.a-GridLayout--z200 { width: 200%; }
+
+.a-GridLayout--z200 .a-GridLayout-page > h3 { font-size: 18px; line-height: 24px; }
+
+.a-GridLayout--z200 .a-GridLayout-region > h3 .a-GridLayout-label { font-size: 16px; }
+
+.a-GridLayout--z200 .a-GridLayout-label { font-size: 14px; }
+
+/* xxx end gridlayout styles to move */
+/* xxx end tree styles */
+#editorDlg-codeEditor { height: 400px; }
+
+/* xxx todo move this utility class to a proper place, rename if needed */
+.u-ScrollingViewport { overflow: auto; }
+
+#sp_main { overflow: hidden; }
+
+#sp_main, #sp_right, #sp_middle, #sp_right_middle { width: 100%; height: 100px; }
+
+#sp_middle_content, #sp_right_content { width: 100%; height: 600px; }
+
+#cg-regions, #grid_layout, #renderTree_container, #procTree_container, #dynActTree_container, #sharedComp_container, #peComponentProperties { overflow: hidden !important; }
+
+/* Styles for jsTree */
+body .tree-classic li a.clicked, body .tree-classic li a.clicked:hover, body .tree-classic li span.clicked { background: #0572CE; border: none !important; padding: 4px !important; height: 24px; border-radius: 2px; }
+
+body .tree li a, body .tree li span { height: 24px; padding: 4px !important; color: #202020; }
+
+/* End styles for jsTree */
+body .ui-dialog.ui-dialog--pageDesignerAlert .ui-dialog-content, body .ui-dialog.ui-dialog--pageDesignerLock .ui-dialog-content { padding: 8px; }
+
+/******************************************************************************
+2.0  Page Designer Skeleton
+******************************************************************************/
+.a-Tabs--pageDesignerTabs .ui-tabs-nav { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.a-Tabs--pageDesignerTabs > .a-Tabs-toolbar .a-Toolbar-items--right { display: none; }
+
+.a-Tabs--pageDesignerTabs .ui-helper-clearfix:before, .a-Tabs--pageDesignerTabs .ui-helper-clearfix:after { display: none !important; }
+
+.a-Tabs--pageDesignerTabs > .a-Tabs-toolbar > .ui-tabs-nav { display: table; table-layout: fixed; width: 100%; }
+
+.a-Tabs--pageDesignerTabs > .a-Tabs-toolbar > .ui-tabs-nav.ui-tabs--single li { width: 50%; border-right: 1px solid #E0E0E0; display: inline-block; vertical-align: top; }
+
+.a-Tabs--pageDesignerTabs .ui-tabs-nav .ui-state-default { transition: opacity .1s ease, -webkit-transform .1s ease; transition: opacity .1s ease, transform .1s ease; transition: opacity .1s ease, transform .1s ease, -webkit-transform .1s ease; }
+
+.a-Tabs--pageDesignerTabs .ui-tabs-nav .ui-sortable-helper { opacity: .75; box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.15) !important; -webkit-transform: translateY(16px); transform: translateY(16px); background-color: #FFF !important; }
+
+.a-Tabs--pageDesignerTabs .ui-tabs-nav .ui-sortable-placeholder { background-color: rgba(0, 0, 0, 0.15) !important; visibility: visible !important; }
+
+.a-Tabs--pageDesignerTabs > .a-Tabs-toolbar > .ui-tabs-nav .ui-state-default { display: table-cell; float: none; }
+
+.a-Tabs--pageDesignerTabs > .a-Tabs-toolbar > .ui-tabs-nav li:last-child a.ui-tabs-anchor { border-right-width: 0; }
+
+.a-Tabs--pageDesignerTabs > .a-Tabs-toolbar > .ui-tabs-nav a.ui-tabs-anchor { display: block; text-align: center; float: none; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+.a-Tabs--pageDesignerTabs .ui-tabs-anchor .a-Icon { color: #505050; height: 24px; }
+
+.a-Tabs--pageDesignerTabs .ui-tabs-anchor .a-Icon:before { line-height: 24px; }
+
+.a-PageDesigner-treeWrap { padding: 8px 0; }
+
+.a-PageDesigner-treeTitle { font-size: 12px; font-weight: normal; }
+
+.a-Toolbar--treeRegion .a-Toolbar-items--left { vertical-align: middle; }
+
+.a-PageDesigner-treeWrap:focus { box-shadow: 0 0 0 2px #0572CE inset; }
+
+@-moz-document url-prefix() { .a-PropertyEditor:focus:after { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; box-shadow: 0 0 0 1px #0572CE inset !important; z-index: 100; } }
+
+/******************************************************************************
+Scrollbar Styles for Grid Layout + Component View
+******************************************************************************/
+.dark-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+
+.dark-scroll::-webkit-scrollbar-thumb { background: #A0A0A0; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
+.dark-scroll::-webkit-scrollbar-thumb:hover { background-color: #707070; }
+
+.dark-scroll::-webkit-scrollbar-track { background: #D0D0D0; }
+
+.dark-scroll::-webkit-scrollbar-track:hover { background-color: #C8C8C8; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) inset; }
+
+/* ========================================================================== Shortcut Display ========================================================================== */
+#apexActionKeyDisplay { position: fixed; bottom: 24px; left: 8px; z-index: 100; border-radius: 2px; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); background-color: rgba(0, 0, 0, 0.75); color: rgba(255, 255, 255, 0.75); font-weight: 500; font-size: 12px; font-weight: 20px; padding: 6px 12px; }

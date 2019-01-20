@@ -1,0 +1,67 @@
+/* ========================================================================== Property Editor ========================================================================== */
+.a-PropertyEditor-wrapper .a-PropertyEditor-propertyGroup:first-child { margin-top: 8px; }
+
+.ui-dialog .a-PropertyEditor { max-height: 400px; overflow: auto; background-color: transparent; }
+
+/* Property Editor Groups ========================================================================== */
+.a-PropertyEditor-propertyGroup { margin-top: -1px; display: block; background-clip: padding-box; }
+
+.a-PropertyEditor-propertyGroup.is-collapsed .a-PropertyEditor-propertyGroup-header { border-bottom: none; }
+
+.a-PropertyEditor-propertyGroup.is-collapsed .a-PropertyEditor-propertyGroup-body { display: none; }
+
+.a-PropertyEditor-propertyGroup-header { margin-top: 16px; border-width: 0; transition: margin .1s ease; }
+
+.a-PropertyEditor-propertyGroup-header .a-Icon { margin: 2px 6px 2px 0; }
+
+.a-PropertyEditor-propertyGroup-header .a-Icon.icon-right-arrow:before { content: "\E0D8"; }
+
+.a-PropertyEditor-propertyGroup-header .a-Icon.icon-down-arrow:before { content: "\e0c2"; }
+
+/* Reducing margin when collapsed */
+.a-PropertyEditor-propertyGroup:not(.is-expanded) + .a-PropertyEditor-propertyGroup.is-expanded .a-PropertyEditor-propertyGroup-header, .a-PropertyEditor-propertyGroup:not(.is-expanded) .a-PropertyEditor-propertyGroup-header { margin-top: 8px; }
+
+.a-PropertyEditor-propertyGroup-title { display: inline-block; margin: 0; padding: 0; font-weight: 500; line-height: 20px; font-size: 14px; -webkit-font-smoothing: antialiased; vertical-align: top; }
+
+/** Modifier: is-empty Used when an error message is displayed */
+.a-PropertyEditor.is-empty { height: 100%; overflow: hidden; display: flex; align-items: center; }
+
+.a-PropertyEditor-message { text-align: center; padding: 12px; color: #909090; width: 100%; }
+
+.a-PropertyEditor-messageText { color: #404040; margin: 0; }
+
+.a-PropertyEditor-editParent { text-align: center; padding: 6px 8px; }
+
+/* Filtering ========================================================================== */
+.a-PropertyEditor-filter { padding: 0; position: relative; display: flex; }
+
+.a-PropertyEditor-filter .a-PropertyEditor-filter-icon { position: absolute; margin: 8px; pointer-events: none; opacity: .5; top: 0; left: 0; transition: .1s ease; color: #000; }
+
+.a-PropertyEditor-filter .a-Property-field:not(.a-Property-field--text) { padding-left: 24px; box-shadow: none; padding: 8px 8px 8px 32px; line-height: 32px; height: 32px; box-sizing: border-box; border-radius: 2px; }
+
+.a-PropertyEditor-filter .a-Property-field:not(.a-Property-field--text):focus + .a-Icon { color: #0466B8; opacity: 1; }
+
+.a-PropertyEditor-filter .a-Button--stickyFilter { position: absolute; right: 0; top: 0; bottom: 0; opacity: 0; z-index: 10; margin: 4px; padding: 4px; transition: opacity .1s ease; }
+
+.a-PropertyEditor-filter .a-Button--stickyFilter:focus, .a-PropertyEditor-filter .a-Button--stickyFilter:hover { background-color: #FFF !important; color: #0572CE; box-shadow: none; }
+
+.a-PropertyEditor-filter .a-Button--stickyFilter.is-active { background-color: #FDB309 !important; color: #FFF; box-shadow: none; }
+
+.a-PropertyEditor-filter .a-Button--stickyFilter.is-active:focus, .a-PropertyEditor-filter .a-Button--stickyFilter.is-active:focus:active, .a-PropertyEditor-filter .a-Button--stickyFilter.is-active:hover { background-color: #FDB309 !important; color: #FFF; box-shadow: 0 0 0 1px #0572CE inset; }
+
+.a-PropertyEditor-filter:focus-within .a-Property-field { background-color: #FFF; box-shadow: 0 0 0 1px #0572CE inset, 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+.a-PropertyEditor-filter:focus-within .a-Property-field + .a-Icon { color: #0466B8; opacity: 1; }
+
+.a-PropertyEditor-filter .a-Property-field:focus ~ .a-Button--stickyFilter, .a-PropertyEditor-filter .a-Button--stickyFilter.is-active, .a-PropertyEditor-filter .a-Button--stickyFilter:focus { opacity: 1; }
+
+.a-Property-highlight { background-color: #ffef9a; padding: 2px 0; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) inset, 0 1px 1px -1px rgba(0, 0, 0, 0.1); border-radius: 2px; transition: .1s ease; }
+
+/* Property Filter Not Found ========================================================================== */
+.a-Property-notFound { padding: 1.6rem; text-align: center; color: #707070; }
+
+.a-Property-notFound .a-Icon { margin-bottom: 8px; }
+
+@media only screen and (max-width: 1024px) { .a-PropertyEditor-editParent { padding: 2px 8px; } }
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) { .a-PropertyEditor-editParent { padding: 4px 8px; } }

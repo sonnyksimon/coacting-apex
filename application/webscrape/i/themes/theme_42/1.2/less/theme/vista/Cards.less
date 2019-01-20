@@ -1,0 +1,75 @@
+@import "_variables";
+
+/* ==========================================================================
+   Cards Container
+   ========================================================================== */
+
+.t-Card-wrap {
+  border-radius: 2px;
+  &:focus {
+    border-color: @g_Focus;
+  }
+}
+.t-Card-icon .t-Icon,
+.t-Card-initials {
+  color: #FFF;
+}
+
+@l_Card-BG: contrast(@g_Region-BG, darken(@g_Region-BG,   1.25%), lighten(@g_Region-BG,   1.25%),  43%);
+
+.t-Card-desc {
+  color: fade(contrast(@l_Card-BG, desaturate(darken(@l_Card-BG,  75%), 100%), desaturate(lighten(@l_Card-BG,  75%), 50%)), 100%);
+  font-size: 1.3rem;
+}
+.t-Cards--compact .t-Card-desc {
+  color: fade(contrast(@l_Card-BG, desaturate(darken(@l_Card-BG,  60%), 100%), desaturate(lighten(@l_Card-BG,  60%), 50%)), 100%);
+}
+
+.t-Card-info {
+  color: fade(contrast(@l_Card-BG, desaturate(darken(@l_Card-BG,  60%), 100%), desaturate(lighten(@l_Card-BG,  60%), 50%)), 100%);
+}
+.t-Card-title {
+  color: fade(contrast(@l_Card-BG, darken(@l_Card-BG,  75%), lighten(@l_Card-BG,  75%)), 100%);
+}
+.t-Cards--compact .t-Card-wrap {
+  background-color: #FFF;
+}
+.t-Cards--basic .t-Card {
+  .t-Card-wrap {
+    background-color: @l_Card-BG;
+  }
+  .t-Card-icon {
+    background-color: #A0A0A0;
+    .t-Icon {
+      border-radius: 2px;
+    }
+  }
+  .t-Card-titleWrap {
+    background-color: @g_Region-Header-BG;
+  }
+}
+.t-Cards--featured .t-Card,.t-Card--featured {
+  .t-Card-wrap {
+    background-color: @l_Card-BG;
+  }
+  .t-Card-icon {
+    .t-Icon {
+      border-radius: 100px;
+      color: #FFF;
+    }
+  }
+  .t-Card-body {
+    background-color: transparent;
+  }
+}
+
+.t-Card a {
+  box-shadow: none;
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.t-Card .u-color {
+  background-color: #A0A0A0;
+}

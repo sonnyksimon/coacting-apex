@@ -1,0 +1,88 @@
+/** Import Compass */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/******************************************************************************
+
+File Name:    CustomizeDialog.scss
+Purpose:      Base styles for the customize dialog used for selecting a theme 
+              style or selecting which regions to display
+
+******************************************************************************/
+.a-Customize { display: flex; flex-direction: column; flex: 1 0 100%; height: 100vh; }
+
+.a-Customize-html { font-size: 62.5%; }
+
+.a-Customize-page { background-color: #FFF; font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 1.4rem; line-height: 2.0rem; margin: 0; }
+
+.u-RTL .a-Customize-page { direction: rtl; }
+
+.a-Customize-page h1 { font-size: 2.4rem; margin: 0 0 1.6rem 0; }
+
+.a-Customize-page h2 { font-size: 2.0rem; margin: 0 0 1.2rem 0; color: #404040; }
+
+.a-Customize-page h1, .a-Customize-page h2 { font-weight: 300; line-height: 1.5; }
+
+.a-Customize-page p { color: #404040; }
+
+/* Layout Mechanics ========================================================================== */
+.a-Customize-header { border-bottom: 1px solid; }
+
+.a-Customize-footer { border-top: 1px solid; text-align: right; }
+
+.u-RTL .a-Customize-footer { text-align: left; }
+
+.a-Customize-header, .a-Customize-footer { flex-shrink: 0; padding: 16px; border-color: rgba(0, 0, 0, 0.1); }
+
+.a-Customize-body { flex-grow: 1; padding: 16px; }
+
+.a-Customize-bodyWrapperOut { position: relative; flex: 1 0; }
+
+.a-Customize-bodyWrapperIn { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: auto; }
+
+.a-Customize-setting { padding-bottom: 16px; }
+
+.a-Customize-setting:last-child { padding-bottom: 0; }
+
+/* Header ========================================================================== */
+.a-Customize-header h1 { margin: 0; }
+
+/* Selection ========================================================================== */
+.a-Customize-selection { list-style: none; padding: 0; margin: 0; overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1); background-color: #FFF; }
+
+.a-Customize-selection-item { padding: 0; display: block; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.a-Customize-selection-item:last-child { border-bottom-width: 0; }
+
+.a-Customize-selection-input { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+.a-Customize-selection-input:checked + label { font-weight: bold; background-color: #F0F0F0; }
+
+.a-Customize-selection-input:checked + label .a-Customize-badge { background-color: #FFF; }
+
+.a-Customize-selection-label { display: block; position: relative; padding: 12px; line-height: 2.4rem; cursor: pointer; transition: background-color .2s ease; }
+
+.a-Customize-selection-label:hover { background-color: #F8F8F8; }
+
+.a-Customize-selection-label:hover .a-Customize-badge { background-color: #FFF; }
+
+.a-Customize-badges { float: right; }
+
+.u-RTL .a-Customize-badges { float: left; }
+
+.a-Customize-badge { display: inline-block; font-size: 11px; line-height: 1.6rem; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); padding: 4px 8px; border-radius: 2px; font-weight: normal; color: #707070; }
+
+.a-Customize-badge + .a-Customize-badge { margin-left: 4px; }
+
+.u-RTL .a-Customize-badge + .a-Customize-badge { margin-left: 0; margin-right: 4px; }
+
+.a-Customize-button.a-Button--hot { background-color: #2D7BBB; color: #FFFFFF; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) inset; }
+
+.a-Customize-button.a-Button--hot:focus, .a-Customize-button.a-Button--hot:hover { background-color: #399BEA; }
+
+.a-Customize-button.a-Button--hot:focus { box-shadow: 0 0 0 1px #399bea inset, 0 1px 2px rgba(0, 0, 0, 0.1); outline: none; }
+
+.a-Customize-button.a-Button--hot:active { box-shadow: 0 0 0 1px #399bea inset, 0 2px 2px rgba(0, 0, 0, 0.1) inset !important; }

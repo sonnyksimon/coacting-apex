@@ -1,0 +1,166 @@
+@import "../../theme/vita/_variables";
+
+// ios-inspired 7 colors
+// .u-colors(@index) when (@index > 0) {
+//   .u-colors(@index - 1);
+//   @selector: ~".u-ColorBG--@{index}";
+//   @{selector} {
+//     background-color: extract(@_colors, @index);
+//   };
+//   @selectorz: ~".u-ColorFG--@{index}";
+//   @{selectorz} {
+//      color: extract(@_colors, @index);
+//   };
+// }
+// .u-colors(length(@_colors));
+
+// .a_GlobalColorRules(45, 10);
+
+// /* Rules 11-30
+//    ========================================================================== */
+
+// .a_GlobalColorRules(@counter, @varNumber) when (@counter > @varNumber) {
+//   .a_GlobalColorRules(@counter - 1, @varNumber);
+
+//   // Must keep in sync with UT's LESS!
+//   @accentNumber : mod(@counter - 1, @varNumber) + 1;
+//   @varName : 		%("g_Color-Palette-%s", @accentNumber);
+//   @varName2 :		%("g_Color-Palette-%s-FG", @accentNumber);
+//   @darkenPct : 	(floor((@counter - 1) / @varNumber / 2) + 1) * 10%;
+
+//   // 1 or -1
+//   @darkenFactor : 2 * ( sin( 1rad * floor((@counter - 1) / @varNumber) * pi() / 2 ) - 0.5 );
+
+//   .u-Color-@{counter}-BG {
+//     &--txt 			{ color : darken(@@varName, @darkenPct * @darkenFactor); }
+//     &--bg 			{ background-color : darken(@@varName, @darkenPct * @darkenFactor); }
+//     &--fill 		{ fill : darken(@@varName, @darkenPct * @darkenFactor); }
+//     &--br 			{ stroke : darken(@@varName, @darkenPct * @darkenFactor); border-color : darken(@@varName, @darkenPct * @darkenFactor); }
+//   }
+//   .u-Color-@{counter}-FG {
+//     &--txt 			{ color : lighten(@@varName2, @darkenPct); }
+//     &--bg 			{ background-color : lighten(@@varName2, @darkenPct); }
+//     &--fill 		{ fill : lighten(@@varName2, @darkenPct); }
+//     &--br 			{ stroke : lighten(@@varName2, @darkenPct); border-color : lighten(@@varName2, @darkenPct); }
+//   }
+// }
+
+/* Rules 1-10
+   ========================================================================== */
+
+// .a_GlobalColorRules(@counter, @varNumber) when (@counter <= @varNumber) and (@counter > 0) {
+//   .a_GlobalColorRules(@counter - 1, @varNumber);
+
+//   // Must keep in sync with UT's LESS!
+//   @accentNumber : mod(@counter - 1, @varNumber) + 1;
+//   @varName : %("g_Color-Palette-%s", @accentNumber);
+//   @varName2 : %("g_Color-Palette-%s-FG", @accentNumber);
+
+//   .u-Color-@{counter}-BG {
+//     &--txt {
+//       color: @@varName;
+//     }
+//     &--bg {
+//       background-color: @@varName;
+//     }
+//     &--fill {
+//       fill: @@varName;
+//     }
+//     &--br {
+//       stroke: @@varName;
+//       border-color: @@varName;
+//     }
+//   }
+//   .u-Color-@{counter}-FG {
+//     &--txt {
+//       color: @@varName2;
+//     }
+//     &--bg {
+//       background-color: @@varName2;
+//     }
+//     &--fill {
+//       fill: @@varName2;
+//     }
+//     &--br {
+//       stroke: @@varName2;
+//       border-color: @@varName2;
+//     }
+//   }
+// }
+
+/* ==========================================================================
+   Cycle Colors for Lists 
+   ========================================================================== */
+
+.color-cycle(@n, @i: 1) when (@i =< @n) {
+  & > :nth-child(45n+@{i}) {
+    .u-color {
+      background-color: extract(@_colors, @i);
+      fill: extract(@_colors, @i);
+      color: extract(@_colors_FG, @i);
+    }
+    .u-color-bg,
+    .u-color-background {
+      background-color: extract(@_colors, @i);
+    }
+    .u-color-txt,
+    .u-color-text {
+      color: extract(@_colors, @i);
+    }
+    .u-color-bd,
+    .u-color-border {
+      border-color: extract(@_colors, @i);
+      stroke: extract(@_colors, @i);
+    }
+  }
+  .color-cycle(@n, (@i + 1));
+}
+
+.u-colors {
+  .color-cycle(45);
+}
+
+/* ==========================================================================
+   Pallete Colors
+   ========================================================================== */
+.color-palette(@n, @i: 1) when (@i =< @n) {
+  .u-color-@{i} {
+    background-color: extract(@_colors, @i) !important;
+    fill: extract(@_colors, @i) !important;
+    color: extract(@_colors_FG, @i) !important;
+  }
+  .u-color-@{i}-bg,
+  .u-color-@{i}-background {
+    background-color: extract(@_colors, @i) !important;
+    fill: extract(@_colors, @i) !important;
+  }
+  .u-color-@{i}-txt,
+  .u-color-@{i}-text {
+    color: extract(@_colors, @i) !important;
+  }
+  .u-color-@{i}-bd,
+  .u-color-@{i}-border {
+    border-color: extract(@_colors, @i) !important;
+    stroke: extract(@_colors, @i) !important;
+  }
+  .color-palette(@n, (@i + 1));
+}
+.color-palette(45);
+
+/* Transparent Colors
+   ========================================================================== */
+.u-color-transparent {
+  background-color: transparent !important;
+  color: transparent !important;
+}
+.u-color-transparent-bg {
+  background-color: transparent !important;
+}
+.u-color-transparent-txt,
+.u-color-transparent-text {
+  color: transparent !important;
+}
+.u-color-transparent-bd,
+.u-color-transparent-border {
+  border-color: transparent !important;
+}

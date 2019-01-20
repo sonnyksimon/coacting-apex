@@ -1,0 +1,54 @@
+/**
+ * Import Compass
+ */
+
+@import "_variables";
+
+/* ==========================================================================
+   Login Page + Region
+   ========================================================================== */
+
+
+.t-Login-container {
+
+}
+
+.t-Login-text {
+  font-size: 1.3rem;
+}
+
+.t-Login-iconValidation {
+  background: @g_Success-BG;
+  color: white;
+}
+
+@l_Form-FG: contrast(@g_Region-FG, darken(@g_Region-FG,   5%), lighten(@g_Region-FG,   5%),  43%);
+
+body .t-Login-title {
+	color: @g_Region-FG;
+}
+.t-Login-region {
+  background-color: @g_Region-BG;
+  box-shadow: none;
+  border: 1px solid @g_Alta-Border;
+}
+.t-Login-region .t-Login-body {
+  input[type=text],
+  input.password {
+    &::-webkit-input-placeholder{
+	    color: @l_Form-FG;
+    }
+    &::-moz-placeholder{
+	    color: @l_Form-FG;
+    }
+    &:-ms-input-placeholder{
+	    color: @l_Form-FG;
+    }
+  }
+}
+
+.t-Login-logo {
+  &.fa {
+    color: #878c90;
+  }
+}

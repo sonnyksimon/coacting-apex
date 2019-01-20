@@ -1,0 +1,85 @@
+/**  Import Compass */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/* jQuery UI CSS Framework 1.10.4 http://jqueryui.com Copyright 2014 jQuery Foundation and other contributors Released under the MIT license. http://jquery.org/license http://api.jqueryui.com/category/theming/ To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault='Helvetica%20Neue'%2C%20Helvetica%2C%20Arial%2C%20sans-serif&fwDefault=normal&fsDefault=14px&cornerRadius=2px&bgColorHeader=%23F8F8F8&bgTextureHeader=flat&bgImgOpacityHeader=0&borderColorHeader=%23E0E0E0&fcHeader=%23404040&iconColorHeader=%23404040&bgColorContent=%23ffffff&bgTextureContent=flat&bgImgOpacityContent=0&borderColorContent=%23E0E0E0&fcContent=%23404040&iconColorContent=%23404040&bgColorDefault=%23F0F0F0&bgTextureDefault=flat&bgImgOpacityDefault=0&borderColorDefault=%23E0E0E0&fcDefault=%23404040&iconColorDefault=%23404040&bgColorHover=%232580D4&bgTextureHover=flat&bgImgOpacityHover=0&borderColorHover=%232580D4&fcHover=%23FFFFFF&iconColorHover=%23FFFFFF&bgColorActive=%23FFFFFF&bgTextureActive=flat&bgImgOpacityActive=0&borderColorActive=%23E0E0E0&fcActive=%23404040&iconColorActive=%23404040&bgColorHighlight=%23F1F7FD&bgTextureHighlight=flat&bgImgOpacityHighlight=0&borderColorHighlight=%23E0E0E0&fcHighlight=%23404040&iconColorHighlight=%232580D4&bgColorError=%23fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=%23cd0a0a&fcError=%23cd0a0a&iconColorError=%23cd0a0a&bgColorOverlay=%23000000&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=15&bgColorShadow=%23000000&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=2&offsetTopShadow=2&offsetLeftShadow=0&cornerRadiusShadow=0 */
+/* Component containers
+----------------------------------*/
+body .ui-widget { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; }
+
+body .ui-widget .ui-widget { font-size: 12px; }
+
+body .ui-widget input, body .ui-widget select, body .ui-widget textarea, body .ui-widget button { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.2rem; }
+
+body .ui-widget-content { border: 1px solid #E0E0E0; background: none #ffffff; color: #404040; }
+
+body .ui-widget-header { border: 1px solid #E0E0E0; background: none #F8F8F8; color: #404040; font-weight: bold; }
+
+body .ui-widget-header a { color: #404040; }
+
+/* Interaction states
+----------------------------------*/
+body .ui-state-default, body .ui-widget-content .ui-state-default, body .ui-widget-header .ui-state-default, body .ui-button { border: none; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.125) inset; background: none #F9F9F9; font-weight: normal; color: #505050; }
+
+body .ui-state-default a, body .ui-state-default a:link, body .ui-state-default a:visited { color: #505050; text-decoration: none; }
+
+body .ui-state-hover, body .ui-widget-content .ui-state-hover, body .ui-widget-header .ui-state-hover, body .ui-button:hover { box-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.125) inset; border: none; background: none #FFF; font-weight: normal; color: #505050; }
+
+body .ui-state-focus, body .ui-widget-content .ui-state-focus, body .ui-widget-header .ui-state-focus, body .ui-button:focus { outline: none; border: none; background: none #FFF; font-weight: normal; box-shadow: 0 0 0 1px #0572ce inset, 0 0 0 1px #0572ce, 0 0 2px 2px rgba(5, 114, 206, 0.5); color: #505050; }
+
+body .ui-state-hover a, body .ui-state-hover a:hover, body .ui-state-hover a:link, body .ui-state-hover a:visited, body .ui-state-focus a, body .ui-state-focus a:hover, body .ui-state-focus a:link, body .ui-state-focus a:visited { color: #505050; text-decoration: none; }
+
+body .ui-state-active, body .ui-widget-content .ui-state-active, body .ui-widget-header .ui-state-active, body .ui-button:active { border: none; background: none #F2F2F2; box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05) inset, 0 0 0 1px rgba(0, 0, 0, 0.125) inset; font-weight: normal; color: #505050; }
+
+body .ui-state-active a, body .ui-state-active a:link, body .ui-state-active a:visited { color: #505050; text-decoration: none; }
+
+/* Interaction Cues
+----------------------------------*/
+body .ui-state-highlight, body .ui-widget-content .ui-state-highlight, body .ui-widget-header .ui-state-highlight { border: none; background: none #F1F7FD; color: #404040; }
+
+body .ui-state-highlight a, body .ui-widget-content .ui-state-highlight a, body .ui-widget-header .ui-state-highlight a { color: #404040; }
+
+body .ui-state-error, body .ui-widget-content .ui-state-error, body .ui-widget-header .ui-state-error { border: none; background: none #fef1ec; color: #cd0a0a; }
+
+body .ui-state-error a, body .ui-widget-content .ui-state-error a, body .ui-widget-header .ui-state-error a { color: #cd0a0a; }
+
+body .ui-state-error-text, body .ui-widget-content .ui-state-error-text, body .ui-widget-header .ui-state-error-text { color: #cd0a0a; }
+
+body .ui-priority-primary, body .ui-widget-content .ui-priority-primary, body .ui-widget-header .ui-priority-primary { font-weight: bold; }
+
+body .ui-priority-secondary, body .ui-widget-content .ui-priority-secondary, body .ui-widget-header .ui-priority-secondary { opacity: .7; filter: Alpha(Opacity=70); font-weight: normal; }
+
+body .ui-state-disabled, body .ui-widget-content .ui-state-disabled, body .ui-widget-header .ui-state-disabled { opacity: .35; filter: Alpha(Opacity=35); background-image: none; }
+
+body .ui-state-disabled .ui-icon { filter: Alpha(Opacity=35); /* For IE8 - See #6059 */ }
+
+/* Icons
+----------------------------------*/
+/* states and images */
+body .ui-icon { width: 16px; height: 16px; }
+
+body .ui-icon-circle-triangle-e, body .ui-icon-circle-triangle-w, body .ui-icon-closethick { display: inline-block; background-image: none !important; text-indent: 0; width: 16px; height: 16px; overflow: hidden; }
+
+body .ui-icon-circle-triangle-e:before, body .ui-icon-circle-triangle-w:before, body .ui-icon-closethick:before { font-family: "apex-5-icon-font" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 16px; width: 16px; height: 16px; vertical-align: top; }
+
+body .ui-icon-circle-triangle-e:before { content: "\E0D8"; }
+
+body .ui-icon-closethick:before { content: "\e0a2"; }
+
+body .ui-icon-circle-triangle-w:before { content: "\E0CA"; }
+
+/* Misc visuals
+----------------------------------*/
+/* Corner radius */
+body .ui-corner-all, body .ui-corner-top, body .ui-corner-left, body .ui-corner-tl { border-top-left-radius: 2px; }
+
+body .ui-corner-all, body .ui-corner-top, body .ui-corner-right, body .ui-corner-tr { border-top-right-radius: 2px; }
+
+body .ui-corner-all, body .ui-corner-bottom, body .ui-corner-left, body .ui-corner-bl { border-bottom-left-radius: 2px; }
+
+body .ui-corner-all, body .ui-corner-bottom, body .ui-corner-right, body .ui-corner-br { border-bottom-right-radius: 2px; }
+
+/* Overlays */
+body .ui-widget-overlay { background: none #000000; opacity: .15; filter: Alpha(Opacity=15); }

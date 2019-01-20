@@ -1,0 +1,5 @@
+/* ========================================================================== Region Group ========================================================================== */
+/** Core Region Group This component contains multiple regions and allows you to create groups of regions that appear together.  It allows you to group regions together for any given context. */
+.a-RegionGroup .a-Region--stacked:last-child { border-width: 1px 0 1px 0 !important; }
+
+.a-RegionGroup.a-RegionGroup--columnContained, .a-RegionGroup.a-RegionGroup--columnContained .a-Region--stacked:first-child { border-top-width: 0 !important; }

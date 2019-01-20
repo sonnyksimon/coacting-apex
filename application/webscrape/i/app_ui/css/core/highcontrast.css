@@ -1,0 +1,10 @@
+/* ========================================================================== High Contrast Mode ========================================================================== */
+.u-HCM .a-Button, .u-HCM .a-IRR-views .a-IRR-button, .u-HCM .a-Button.a-Button--devToolbar, .u-HCM .a-TreeView-row.is-selected { border: 1px solid !important; }
+
+.u-HCM .a-Button:focus, .u-HCM .a-TreeView-row.is-focused, .u-HCM .a-Menu-item.is-focused { outline: 1px dotted !important; }
+
+.u-HCM .a-IRR-search-field { height: 34px; }
+
+.u-HCM .a-DevToolbar-list { overflow: visible; }
+
+.u-HCM .a-Button.a-Button--devToolbar:focus { outline: 1px dotted; }

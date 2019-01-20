@@ -1,0 +1,29 @@
+@import "_variables";
+
+.t-AVPList-value {
+  color: contrast(@g_Body-Text, darken(@g_Body-Text,   15%), lighten(@g_Body-Text,   15%),  43%);
+  .t-Body-info & {
+    @value-tmp: @g_Body-Title-FG;
+    color: contrast(@value-tmp, darken(@value-tmp,   15%), lighten(@value-tmp,   15%),  43%);
+  }
+  .t-Region & {
+    color: contrast(@g_Region-FG, darken(@g_Region-FG,   15%), lighten(@g_Region-FG,   15%),  43%);
+  }
+}
+.t-AVPList-label {
+  color: contrast(@g_Body-Text, darken(@g_Body-Text,   5%), lighten(@g_Body-Text,   5%),  43%);
+  .t-Body-info & {
+    @value-tmp2: @g_Body-Title-FG;
+    color: contrast(@value-tmp2, darken(@value-tmp2,   5%), lighten(@value-tmp2,   5%),  43%);
+  }
+  .t-Region & {
+    color: contrast(@g_Region-FG, darken(@g_Region-FG,   5%), lighten(@g_Region-FG,   5%),  43%);
+  }
+}
+
+
+
+
+
+
+

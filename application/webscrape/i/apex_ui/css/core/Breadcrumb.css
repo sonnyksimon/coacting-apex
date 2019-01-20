@@ -1,0 +1,27 @@
+/* ========================================================================== Breadcrumbs ========================================================================== */
+.a-Breadcrumb { margin: 0; padding: 0; list-style: none; display: inline-block; white-space: nowrap; }
+
+.a-Breadcrumb-item { margin: 0; padding: 0; display: inline-block; position: relative; height: 48px; }
+
+.a-Breadcrumb-item:first-child:after { display: none; }
+
+.a-Breadcrumb-item:last-child:after { display: none; }
+
+.a-Breadcrumb-item:after { border: solid transparent; pointer-events: none; content: '\\'; color: #CCC; font-size: 16px; line-height: 40px; vertical-align: top; display: inline-block; }
+
+.a-Breadcrumb-item:first-child .a-Breadcrumb-label { padding-right: 2px; padding-left: 12px; }
+
+.u-HCM .a-Breadcrumb-item:first-child .a-Breadcrumb-label { padding-left: 0; }
+
+.a-Breadcrumb-item:last-child .a-Breadcrumb-label { font-weight: bold; }
+
+.a-Breadcrumb-label { display: inline-block; font-size: 12px; line-height: 16px; padding: 16px 4px; vertical-align: top; text-decoration: none; color: #707070; }
+
+a.a-Breadcrumb-label { color: #404040; }
+
+a.a-Breadcrumb-label:hover { text-decoration: underline; color: #267CD8; }
+
+a.a-Breadcrumb-label:focus { outline: none; box-shadow: 0 0 0 1px rgba(5, 114, 206, 0.5) inset; }
+
+/* ========================================================================== Breadcrumb Top Icon ========================================================================== */
+.a-Breadcrumb-label .a-Icon.icon-breadcrumb-previous { padding: 2px 2px 2px 2px; width: 20px; height: 20px; margin-top: -2px; margin-bottom: -2px; border-radius: 100%; }

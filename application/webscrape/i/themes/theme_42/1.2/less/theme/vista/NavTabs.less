@@ -1,0 +1,42 @@
+@import "_variables";
+
+@Tabs-BG:        #323334;
+@Tabs-FG:        #c0c4c8;
+@Tabs-Active-BG: #0572ce;
+@Tabs-Active-FG: #FFFFFF;
+
+.t-NavTabs {
+  background-color: @Tabs-BG;
+  &::-webkit-scrollbar-thumb {
+      background-color: contrast(@Tabs-Active-BG, darken(@Tabs-Active-BG,  3%), lighten(@Tabs-Active-BG,  3%),  43%);
+      box-shadow: inset 1px 0 0 0 @Tabs-BG;
+      &:hover {background-color: contrast(@Tabs-Active-BG, darken(@Tabs-Active-BG,  15%), lighten(@Tabs-Active-BG,  15%),  43%);}
+  }
+  &::-webkit-scrollbar-track {
+      background: @Tabs-BG;
+      &:hover {background-color: contrast(@Tabs-BG, darken(@Tabs-BG,  15%), lighten(@Tabs-BG,  15%),  43%);}
+  }
+}
+.t-NavTabs-item {
+  color: @Tabs-FG;
+  border-color: #323334;
+  &:hover,
+  &.is-active {
+    background-color: @Tabs-Active-BG;
+    color: @Tabs-Active-FG;
+  }
+}
+.t-NavTabs-badge {
+  background-color: @Tabs-Active-FG;
+  color: @Tabs-Active-BG;
+}
+
+
+/* Navigation Tab Positioning Overrides
+   ========================================================================== */
+@media (min-width: 769px) {
+  .t-Header-nav .t-NavTabs {
+    margin: 0 20px;
+    border-radius: 2px;
+  }  
+}

@@ -1,0 +1,78 @@
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+fieldset { border: 0; margin: 0; padding: 0; }
+
+fieldset.checkbox_group, fieldset.datepicker, fieldset.lov, fieldset.radio_group, fieldset.textarea, fieldset.shuttle, fieldset.color_picker, fieldset.html_editor, fieldset.listmanager { display: inline-block; }
+
+.hideMeButHearMe { position: absolute; top: -999px; }
+
+.shuttleSelect1 select, .shuttleSelect2 select { min-width: 120px; }
+
+.apex-slider-container { width: 100%; }
+
+.apex-slider-control { width: 70%; display: inline-block; vertical-align: top; margin: 8px 0; }
+
+.apex-slider-value { display: inline-block; vertical-align: top; line-height: 26px; margin-left: 8px; font-size: 12px; }
+
+/* Visually Hidden for Accessibility */
+.apex-grid-nbsp { line-height: 1px; height: 1px; font-size: 1px; overflow: hidden; }
+
+button[disabled] { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; cursor: default; pointer-events: none; }
+
+.apex_disabled { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; cursor: default; pointer-events: none; }
+
+br { clear: both !important; }
+
+.apex_size_bar { background: #EEEEEE; background-image: none; border-color: #DDDDDD; border-style: solid; border-width: 0 0 1px 1px; cursor: s-resize; height: 9px; overflow: hidden; }
+
+.apex_size_grip { background: #EEEEEE url(../../../widgets/size_grip.png) no-repeat scroll right top; border-color: #DDDDDD; border-style: solid; border-width: 0 1px 0 0; cursor: se-resize; height: 9px; width: 9px; float: right; overflow: hidden; }
+
+.clearfix:after { *zoom: 1; }
+
+.clearfix:after:before, .clearfix:after:after { content: " "; display: table; }
+
+.clearfix:after:after { clear: both; }
+
+/** item type autocomplete (based on jquery.autocomplete.css) */
+.ac_results { padding: 0; border: 1px solid black; background-color: white; overflow: hidden; z-index: 99999; }
+
+.ac_results ul { width: 100%; list-style-position: outside; list-style: none; padding: 0; margin: 0; }
+
+.ac_results li { margin: 0; padding: 2px 5px; cursor: default; display: block; /* if width will be 100% horizontal scrollbar will apear when scroll mode will be used */ /*
+
+width: 100%;*/ font: menu; font-size: 12px; /*it is very important, if line-height not setted or setted in relative units scroll will be broken in firefox */ line-height: 16px; overflow: hidden; }
+
+.ac_results li { margin: 0; padding: 2px 5px; cursor: default; display: block; /* if width will be 100% horizontal scrollbar will apear when scroll mode will be used */ /*
+
+width: 100%;*/ font-size: 12px; /*it is very important, if line-height not setted or setted in relative units scroll will be broken in firefox */ line-height: 16px; overflow: hidden; }
+
+.ac_loading { background: white url("../../../apex_ui/img/legacy/loading16x16.gif") right center no-repeat; }
+
+.ac_odd { background-color: #eee; }
+
+.ac_over { background-color: #0A246A; color: white; }
+
+img { border: 0; }
+
+/* IR Help Window ========================================================================== */
+body#ir_help { padding: 16px; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+body#ir_help h1, body#ir_help h2, body#ir_help h3 { margin-bottom: 12px; line-height: 1.5; }
+
+body#ir_help h1 { font-size: 32px; }
+
+body#ir_help h2 { font-size: 24px; }
+
+body#ir_help h3 { font-size: 16px; }
+
+body#ir_help p { margin-bottom: 8px; font-size: 14px; line-height: 1.5; }
+
+body#ir_help li { font-size: 14px; line-height: 1.5; margin-bottom: 4px; }
+
+body#ir_help li:last-child { margin-bottom: 0; }
+
+body#ir_help code { color: #606060; }

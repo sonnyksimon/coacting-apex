@@ -1,0 +1,113 @@
+/* ========================================================================== Report --- Report Templates (Classic and Interactive) ========================================================================== */
+.a-Report-pagination, .a-Report-pagination table, .a-Report-report { border-collapse: collapse; table-layout: auto; border-spacing: 0; }
+
+/* ========================================================================== Report Container ========================================================================== */
+.a-Report { display: block; overflow: auto; *zoom: 1; }
+
+.sql-workshop-iframe-page .a-Report { overflow: visible; }
+
+.a-Report:before, .a-Report:after { content: " "; display: table; }
+
+.a-Report:after { clear: both; }
+
+/* ========================================================================== Report Pagination ========================================================================== */
+.a-Report-pagination { width: 100%; }
+
+.a-Report-pagination td.pagination { padding: 4px; }
+
+.a-Report-pagination td:empty { display: none; }
+
+.a-Report-paginationText { color: #707070; font-size: 1.2rem; line-height: 1.6rem; padding: 0px 8px; }
+
+/** Bottom Pagination */
+/** Pagination Link */
+.a-Report-paginationLink { display: inline-block; font-size: 1.2rem; line-height: 1.6rem; }
+
+/* ========================================================================== Report Links --- External link and CSV link ========================================================================== */
+.a-Report-links { clear: both; display: block; border: 1px solid #F0F0F0; border-top-width: 0; padding: 8px; background: #FAFAFA; }
+
+.a-Report-links:empty { display: none; }
+
+/* ========================================================================== Report Wrapper ========================================================================== */
+.a-Report-wrap { float: left; }
+
+/* ========================================================================== Report ========================================================================== */
+/** Column Header */
+.a-Report-colHead { background-color: #F8F8F8; vertical-align: bottom; padding: 12px; color: #404040; font-weight: bold; -webkit-font-smoothing: antialiased; }
+
+.a-Report-cell--header { background-color: #F8F8F8 !important; font-weight: bold; white-space: nowrap; }
+
+/** Table Cell */
+.a-Report-cell { padding: 8px 12px; color: #404040; transition: background-color .1s; background-color: #fff; }
+
+.a-Report-report tr:nth-child(even) .a-Report-cell { background-color: #FAFAFA; }
+
+/* ========================================================================== .a-Report --- Standard Report (Bordered) ========================================================================== */
+.a-Report-cell, .a-Report-colHead { border-left: 1px solid #F0F0F0; border-top: 1px solid #F0F0F0; }
+
+.a-Report-report tr .a-Report-cell:last-child, .a-Report-report tr .a-Report-colHead:last-child { border-right: 1px solid #F0F0F0; }
+
+.a-Report-report tr:last-child .a-Report-cell { border-bottom: 1px solid #F0F0F0; }
+
+/* ========================================================================== .a-Report--noBorders --- Borderless Report ========================================================================== */
+.a-Report--noBorders .a-Report-links { background-color: transparent; border-width: 0; }
+
+.a-Report--noBorders .a-Report-cell, .a-Report--noBorders .a-Report-colHead { border-left-width: 0; border-top-width: 0; }
+
+.a-Report--noBorders .a-Report-report tr .a-Report-cell:last-child, .a-Report--noBorders .a-Report-report tr .a-Report-colHead:last-child { border-right-width: 0; }
+
+.a-Report--noBorders .a-Report-report tr:last-child .a-Report-cell { border-bottom-width: 0; }
+
+/* ========================================================================== .a-Report--stretch --- Stertch report to 100% width of container ========================================================================== */
+.a-Report--stretch .a-Report-wrap, .a-Report--stretch .a-Report-report { width: 100%; }
+
+/* ========================================================================== .a-Report--confirmReport --- Used for wizard confirmation reports ========================================================================== */
+.a-Report--confirmReport { width: 60%; margin-left: auto; margin-right: auto; }
+
+.a-Report--confirmReport .a-Report-cell, .a-Report--confirmReport .a-Report-colHead { padding: 12px; }
+
+.a-Report--confirmReport .a-Report-cell--header { width: 50%; }
+
+/* ========================================================================== .a-Report--inline --- Remove outer borders and header background color ========================================================================== */
+.a-Report--inline .a-Report-links { border-left-width: 0; border-right-width: 0; }
+
+.a-Report--inline .a-Report-colHead { border-top-width: 0; background-color: #FFF; border-bottom: 1px solid #F0F0F0; }
+
+.a-Report--inline .a-Report-report tr .a-Report-cell:first-child, .a-Report--inline .a-Report-report tr .a-Report-colHead:first-child { border-left-width: 0; }
+
+.a-Report--inline .a-Report-report tr .a-Report-cell:last-child, .a-Report--inline .a-Report-report tr .a-Report-colHead:last-child { border-right-width: 0; }
+
+/* ========================================================================== .a-Report--staticRowColors --- Stertch report to 100% width of container ========================================================================== */
+.a-Report--staticRowColors .a-Report-report tr:nth-child(even) .a-Report-cell { background-color: #FFF; }
+
+/* ========================================================================== .a-Report--horizontalBorders --- Stertch report to 100% width of container ========================================================================== */
+.a-Report--horizontalBorders .a-Report-cell, .a-Report--horizontalBorders .a-Report-colHead { border-left-width: 0; }
+
+.a-Report--horizontalBorders .a-Report-report tr .a-Report-cell:first-child, .a-Report--horizontalBorders .a-Report-report tr .a-Report-colHead:first-child { border-left-width: 1px; }
+
+.a-Report--horizontalBorders .a-Report-report tr .a-Report-cell:last-child, .a-Report--horizontalBorders .a-Report-report tr .a-Report-colHead:last-child { border-right-width: 1px; }
+
+/* ========================================================================== .a-Report--verticalBorders --- Stertch report to 100% width of container ========================================================================== */
+.a-Report--verticalBorders .a-Report-cell { border-top-width: 0; }
+
+.a-Report--verticalBorders .a-Report-report tr:first-child .a-Report-cell { border-top-width: 1px; }
+
+/* ========================================================================== .a-Report--rowHighlight --- Stertch report to 100% width of container ========================================================================== */
+.a-Report--rowHighlight .a-Report-report tr:hover .a-Report-cell, .a-Report--rowHighlight .a-Report-report tr:nth-child(even):hover .a-Report-cell { background-color: #F4F4F4; }
+
+/* ========================================================================== .a-Report--condensed --- Condensed Report (Smaller fonts + smaller padding) ========================================================================== */
+.a-Report--condensed .a-Report-colHead { padding: 8px; }
+
+.a-Report--condensed .a-Report-cell { padding: 4px 8px; }
+
+/* ========================================================================== .a-Report--vertical --- Vertical Report for showing key / value pairs ========================================================================== */
+.a-Report--vertical.a-Report--stretch .a-Report-cell--header { width: 20%; }
+
+.a-Report--vertical.a-Report--inline tr:first-child td { border-top-width: 0; }
+
+.a-Report--vertical.a-Report--inline tr:last-child td { border-bottom-width: 0; }
+
+.t-fht-thead.is-stuck:after { content: ' '; position: absolute; left: 0; bottom: 0; width: 100%; height: 8px; margin-bottom: -8px; background-image: linear-gradient(rgba(0, 0, 0, 0.05), transparent); z-index: 100; }
+
+/* ========================================================================== Percent Chart (Format Mask) ========================================================================== */
+.a-Report-percentChart-fill { background-color: #0572CE; }

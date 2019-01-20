@@ -1,0 +1,58 @@
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Comments ========================================================================== */
+/* Comments Container ========================================================================== */
+.t-Comments { list-style: none; margin: 0; padding: 0; }
+
+/* Comment Item ========================================================================== */
+.t-Comments-item { margin-bottom: 16px; display: flex; }
+
+.t-Comments .t-Comments-item:last-child { margin-bottom: 0; }
+
+/* Icon ========================================================================== */
+.t-Comments-icon { flex-shrink: 0; margin-right: 12px; }
+
+.t-Comments-userIcon, .t-Comments-userImg { display: block; border-radius: 100%; width: 32px; height: 32px; display: block; }
+
+.t-Comments-userIcon { font-size: 12px; font-weight: 500; line-height: 32px; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-transform: uppercase; }
+
+/* Body ========================================================================== */
+.t-Comments-body { flex-grow: 1; }
+
+/* Comment Info (User, Time, Actions) ========================================================================== */
+.t-Comments-info { font-size: 12px; }
+
+.t-Comments-info a:hover { text-decoration: underline; }
+
+.t-Comments-user { margin-right: 8px; }
+
+.t-Comments-date:before { content: '\00b7\00a0'; /* middot */ opacity: .5; }
+
+.t-Comments-date:empty { display: none; }
+
+/* Comment Text ========================================================================== */
+.t-Comments-comment { font-size: 14px; line-height: 20px; }
+
+/* Comment Text?? ========================================================================== */
+.t-Comments-text--prevValue { text-decoration: line-through; }
+
+.t-Comments-text--newValue { font-weight: bold; }
+
+/* Chat Message Style ========================================================================== */
+.t-Comments--chat .t-Comments-body { display: flex; flex-direction: column; align-items: flex-start; }
+
+.t-Comments--chat .t-Comments-info { margin-top: 4px; order: 2; }
+
+.t-Comments--chat .t-Comments-comment { order: 1; position: relative; padding: 6px 8px; border-radius: 4px; }
+
+.t-Comments--chat .t-Comments-comment:after { right: 100%; top: 16px; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 6px; margin-top: -6px; }
+
+.t-Comments--chat .t-Comments-actions { float: none; }
+
+/* Basic Message Style ========================================================================== */
+.t-Comments--basic .t-Comments-item.is-active { border-radius: 2px; padding: 8px 0; }
+
+.t-Comments-item.is-systemMessage .t-Comments-userIcon { display: none; }
+
+/* No User Icon ========================================================================== */
+.t-Comments--noUserIcon .t-Comments-icon, .t-Comments-item--noUserIcon .t-Comments-icon { display: none; }

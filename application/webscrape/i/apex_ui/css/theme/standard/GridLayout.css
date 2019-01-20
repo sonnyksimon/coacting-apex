@@ -1,0 +1,162 @@
+/** Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/* ========================================================================== Grid Layout Theme ========================================================================== */
+.a-GridLayout-wrapper { background-color: #F8F8F8; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+/* ========================================================================== Containers ========================================================================== */
+/* ========================================================================== Page ========================================================================== */
+.a-GridLayout-page > h3 { font-size: 12px; line-height: 16px; height: 32px; background-color: #FFF; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.05); border-radius: 2px; margin: 8px; color: rgba(0, 0, 0, 0.75); }
+
+.a-GridLayout-page > h3 .a-GridLayout-label { line-height: 32px; }
+
+.a-GridLayout-page > h3 > .a-Icon { display: block; float: left; color: #FFF; background-color: rgba(160, 160, 160, 0.75); border-radius: 2px; width: 22px; height: 22px; padding: 3px; margin: 5px; }
+
+.a-GridLayout-page > h3 > .a-Icon:before { line-height: 16px; }
+
+/* ========================================================================== Containers ========================================================================== */
+td > .a-GridLayout-regionContainer, .a-GridLayout-page > .a-GridLayout-regionContainer, .a-GridLayout-regionContainer.a-GridLayout--legacy { margin: 0; padding: 4px; }
+
+td > .a-GridLayout-regionContainer > h3, .a-GridLayout-page > .a-GridLayout-regionContainer > h3, .a-GridLayout-regionContainer.a-GridLayout--legacy > h3 { color: rgba(0, 0, 0, 0.55); }
+
+/* ========================================================================== Button, Item and Region Container ========================================================================== */
+.a-GridLayout-region .a-GridLayout-regionContainer, .a-GridLayout-region .a-GridLayout-buttonContainer, .a-GridLayout-region .a-GridLayout-itemContainer, .a-GridLayout-region .a-GridLayout-regionContent { padding: 4px; color: rgba(0, 0, 0, 0.75); margin: 4px 8px; border-radius: 2px; cursor: normal; }
+
+.a-GridLayout-region .a-GridLayout-regionContainer:hover, .a-GridLayout-region .a-GridLayout-buttonContainer:hover, .a-GridLayout-region .a-GridLayout-itemContainer:hover, .a-GridLayout-region .a-GridLayout-regionContent:hover { background-color: rgba(254, 237, 185, 0.15); box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) inset; }
+
+.a-GridLayout-regionContainer > h3, .a-GridLayout-itemContainer > h3, .a-GridLayout-regionContent > h3, .a-GridLayout-buttonContainer > h3 { padding: 0; margin: 0; font-size: 10px; line-height: 12px; font-weight: normal; text-transform: uppercase; color: rgba(0, 0, 0, 0.55); }
+
+.a-GridLayout-page > .a-GridLayout-regionContainer > h3, td > .a-GridLayout-regionContainer > h3 { padding: 0 4px; }
+
+.a-GridLayout-buttonGroup { margin: 4px; }
+
+.a-GridLayout-buttonGroup .a-GridLayout-buttonContainer { margin: 0 4px; }
+
+.a-GridLayout-buttonGroup + .a-GridLayout-itemContainer, .a-GridLayout-buttonGroup + .a-GridLayout-itemContainer + .a-GridLayout-regionContent, .a-GridLayout-buttonGroup + .a-GridLayout-regionContainer { margin-top: 4px; }
+
+.a-GridLayout-regionContainer + .a-GridLayout-buttonGroup .a-GridLayout-buttonContainer { margin-top: 0; margin-bottom: 4px; }
+
+.a-GridLayout-buttonRow td:first-child { border-right: 1px dashed #CFE6FA; }
+
+.a-GridLayout-grid { border-top: 1px dashed #CFE6FA; }
+
+/* ========================================================================== Region Content ========================================================================== */
+.a-GridLayout-regionContent { overflow: hidden; }
+
+.a-GridLayout-regionContent > h3 { float: left; }
+
+.a-GridLayout-regionContent > .a-GridLayout-buttonContainer { float: right; margin: 4px; }
+
+/* ========================================================================== Regions ========================================================================== */
+.a-GridLayout-region { border: 1px solid rgba(0, 0, 0, 0.15); background-color: #FFF; border-radius: 2px; background-clip: padding-box; padding: 0 0 4px 0; }
+
+.a-GridLayout-region + .a-GridLayout-region { margin-top: 8px !important; }
+
+.a-GridLayout-regions > .a-GridLayout-region { margin: 4px; }
+
+.a-GridLayout-region > h3 { background-color: rgba(208, 231, 251, 0.5); border-bottom: 1px solid rgba(0, 0, 0, 0.05); font-size: 12px; line-height: 32px; height: 32px; color: rgba(0, 0, 0, 0.75); }
+
+.a-GridLayout-region > h3 .a-Icon { display: block; float: left; color: #FFF; background-color: rgba(127, 190, 242, 0.75); border-radius: 2px; width: 22px; height: 22px; padding: 3px; margin: 5px; }
+
+.a-GridLayout-region > h3 .a-Icon:before { line-height: 16px; }
+
+.a-GridLayout-region > h3 .a-GridLayout-label { line-height: 20px; overflow: hidden; display: block; padding: 6px 0; }
+
+/* ========================================================================== Icons + Label ========================================================================== */
+.a-GridLayout-pageItem .a-Icon { display: inline-block; margin-right: 4px; vertical-align: top; height: 22px; width: 22px; padding: 3px; }
+
+.a-GridLayout-label { font-weight: normal; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 22px; }
+
+.a-GridLayout-label .a-Icon { display: none !important; }
+
+/* ========================================================================== Items + Buttons ========================================================================== */
+.a-GridLayout-pageItem { border: 1px solid rgba(0, 0, 0, 0.05); background-color: #EDEDED; border-radius: 2px; margin: 4px; padding: 0; }
+
+.a-GridLayout-pageItem .a-Icon { color: #FFF; background-color: rgba(151, 156, 159, 0.75); border-radius: 2px; }
+
+.a-GridLayout-button { background-color: rgba(86, 212, 154, 0.5); border-radius: 24px; margin: 4px; padding: 0; }
+
+.a-GridLayout-button .a-Icon { display: none; }
+
+.a-GridLayout-button .a-GridLayout-label { padding: 0 8px; }
+
+.a-GridLayout-button.is-error h3 > .a-Icon, .a-GridLayout-button.is-warning h3 > .a-Icon { display: inline-block; margin: 3px 0 3px 4px; }
+
+.a-GridLayout-button.is-error .a-GridLayout-label, .a-GridLayout-button.is-warning .a-GridLayout-label { padding-left: 0; }
+
+.a-GridLayout-button.a-GridLayout--conditional { position: relative; }
+
+.a-GridLayout-button.a-GridLayout--conditional:before { content: ''; position: absolute; width: 8px; height: 8px; border-radius: 100%; background-color: #bd609a; border: 1px solid #FFF; right: 0; bottom: 0; }
+
+.a-GridLayout-pageItem > h3, .a-GridLayout-button > h3 { font-size: 12px; line-height: 16px; padding: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* ========================================================================== Conditionality ========================================================================== */
+.a-GridLayout-pageItem.a-GridLayout--conditional .a-Icon, .a-GridLayout-region.a-GridLayout--conditional > h3 .a-Icon { position: relative; }
+
+.a-GridLayout-pageItem.a-GridLayout--conditional .a-Icon:after, .a-GridLayout-region.a-GridLayout--conditional > h3 .a-Icon:after { content: ''; position: absolute; width: 8px; height: 8px; border-radius: 100%; background-color: #bd609a; border: 1px solid #FFF; right: -3px; bottom: -3px; }
+
+/* ========================================================================== Stateful Selectors ========================================================================== */
+.a-GridLayout-regions.is-active, .a-GridLayout-items.is-active, .a-GridLayout-buttons.is-active { background-color: #fff7b9; }
+
+.a-GridLayout-grid.is-active td { border-color: rgba(0, 0, 0, 0.1); }
+
+.a-GridLayout-placeholder { background-color: #F3D061; border-radius: 2px; }
+
+.a-GridLayout-region.is-focused, .a-GridLayout-pageItem.is-focused, .a-GridLayout-button.is-focused { border-color: #81AAD6; box-shadow: 0 0 0 1px #81aad6, 0 0 2px 2px rgba(129, 170, 214, 0.25); outline: none; }
+
+/* Selection State ========================================================================== */
+.a-GridLayout-page.is-selected > h3, .a-GridLayout-region.is-selected > h3 { background-color: #0466B8; border-color: #0466B8; color: #FFF; }
+
+.a-GridLayout-page.is-selected > h3 .a-Icon, .a-GridLayout-region.is-selected > h3 .a-Icon { color: #FFF; }
+
+.a-GridLayout-page.is-selected.is-focused, .a-GridLayout-region.is-selected.is-focused { border-color: #0572CE; }
+
+.a-GridLayout-page.is-selected.is-focused > h3, .a-GridLayout-region.is-selected.is-focused > h3 { background-color: #0572CE; border-color: #0572CE; }
+
+.a-GridLayout-pageItem.is-selected, .a-GridLayout-button.is-selected { border-color: #0466B8; background-color: #0466B8; color: #FFF; }
+
+.a-GridLayout-pageItem.is-focused, .a-GridLayout-button.is-focused { box-shadow: 0 0 0 1px #0572ce, 0 0 2px 2px rgba(5, 114, 206, 0.25); }
+
+/* Selected State -- Icon Handling ========================================================================== */
+.a-GridLayout-region.is-selected > h3 > .a-Icon, .a-GridLayout-pageItem.is-selected > h3 > .a-Icon, .a-GridLayout-page.is-selected > h3 > .a-Icon { color: #0466B8; background-color: rgba(255, 255, 255, 0.75); }
+
+.a-GridLayout-region.is-selected { border-color: #0572CE; }
+
+.a-GridLayout-page.is-focused { outline: none; }
+
+.a-GridLayout-region.is-focused, .a-GridLayout-page.is-focused > h3 { border-color: #0572CE; box-shadow: 0 0 0 1px #0572ce, 0 0 2px 2px rgba(5, 114, 206, 0.25); }
+
+/* Warnings and Errors ========================================================================== */
+.a-GridLayout-page.is-error > h3, .a-GridLayout-region.is-error > h3, .a-GridLayout-pageItem.is-error, .a-GridLayout-button.is-error { background-color: #FAB1B6; }
+
+.a-GridLayout-page.is-error > h3 .a-Icon, .a-GridLayout-region.is-error > h3 .a-Icon, .a-GridLayout-pageItem.is-error .a-Icon, .a-GridLayout-button.is-error .a-Icon { color: #FFF; background-color: #f22f2f; }
+
+.a-GridLayout-page.is-error > h3 .a-Icon:before, .a-GridLayout-region.is-error > h3 .a-Icon:before, .a-GridLayout-pageItem.is-error .a-Icon:before, .a-GridLayout-button.is-error .a-Icon:before { content: "\e0a2"; }
+
+.a-GridLayout-page.is-warning > h3, .a-GridLayout-region.is-warning > h3, .a-GridLayout-pageItem.is-warning, .a-GridLayout-button.is-warning { background-color: #FAB1B6; }
+
+.a-GridLayout-page.is-warning > h3 .a-Icon, .a-GridLayout-region.is-warning > h3 .a-Icon, .a-GridLayout-pageItem.is-warning .a-Icon, .a-GridLayout-button.is-warning .a-Icon { color: #FFF; background-color: #FFD746; }
+
+.a-GridLayout-page.is-warning > h3 .a-Icon:before, .a-GridLayout-region.is-warning > h3 .a-Icon:before, .a-GridLayout-pageItem.is-warning .a-Icon:before, .a-GridLayout-button.is-warning .a-Icon:before { content: "\e017"; }
+
+.u-HCM .a-GridLayout-region.is-focused, .u-HCM .a-GridLayout-pageItem.is-focused, .u-HCM .a-GridLayout-button.is-focused { outline: 1px dotted !important; }
+
+.u-HCM .a-GridLayout-region.is-selected, .u-HCM .a-GridLayout-pageItem.is-selected, .u-HCM .a-GridLayout-button.is-selected { outline: 1px solid !important; }
+
+.u-HCM .a-GridLayout-region.is-selected.is-focused, .u-HCM .a-GridLayout-pageItem.is-selected.is-focused, .u-HCM .a-GridLayout-button.is-selected.is-focused { outline: 1px dotted !important; }
+
+.u-HCM .a-GridLayout-region.is-selected > h3 .a-GridLayout-label, .u-HCM .a-GridLayout-pageItem.is-selected > h3 .a-GridLayout-label, .u-HCM .a-GridLayout-button.is-selected > h3 .a-GridLayout-label { font-weight: bold !important; }
+
+.u-HCM .a-GridLayout-page.is-focused > h3 { outline: 1px dotted !important; }
+
+.u-HCM .a-GridLayout-page.is-selected > h3 { outline: 1px solid !important; }
+
+.u-HCM .a-GridLayout-page.is-selected.is-focused > h3 { outline: 1px dotted !important; }
+
+.u-HCM .a-GridLayout-page.is-selected > h3 .a-GridLayout-label { font-weight: bold !important; }

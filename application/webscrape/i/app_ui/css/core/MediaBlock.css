@@ -1,0 +1,21 @@
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Media Block ========================================================================== */
+/** Media Block Component This is a generic media block component used whenever there is a graphic or image on the left or right, and a content region that fills the remainder of its parent element. Example HTML: <div class="a-MediaBlock"> <div class="a-MediaBlock-graphic"> <img src="foo.jpg" alt=""> </div> <div class="a-MediaBlock-content"> Content here </div> </div> */
+.a-MediaBlock { *zoom: 1; }
+
+.a-MediaBlock-graphic { float: left; margin-right: 8px; }
+
+.u-RTL .a-MediaBlock-graphic { float: right; }
+
+.a-MediaBlock-graphic img { display: block; }
+
+.a-MediaBlock-graphic--right { margin-left: 8px; float: right; }
+
+.u-RTL .a-MediaBlock-graphic--right { margin-left: 0; margin-right: 8px; display: inline; }
+
+.a-MediaBlock-content { overflow: hidden; _overflow: visible; *zoom: 1; }

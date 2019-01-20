@@ -1,0 +1,81 @@
+@import "_variables";
+
+/* ==========================================================================
+   Color Utility Classes
+   ========================================================================== */
+@l_Button-Hot-BG: @g_Accent-BG;
+@l_Button-Hot-Text: contrast(@l_Button-Hot-BG, darken(@l_Button-Hot-BG,   85%), lighten(@l_Button-Hot-BG,   85%),  43%);
+
+/* Warning State
+   ========================================================================== */
+.u-warning {
+  background-color: @g_Warning-BG !important;
+  color: @g_Warning-FG;
+  &-text { color: @g_Warning-BG !important; }
+  &-bg { background-color: @g_Warning-BG !important;}
+  &-border { border-color: @g_Warning-BG !important;}
+}
+
+/* Success State
+   ========================================================================== */
+.u-success {
+  background-color: @g_Success-BG !important;
+  color: @g_Success-FG;
+  &-text { color: @g_Success-BG !important; }
+  &-bg { background-color: @g_Success-BG !important;}
+  &-border { border-color: @g_Success-BG !important;}
+}
+
+/* Danger State
+   ========================================================================== */
+.u-danger {
+  background-color: @g_Danger-BG !important;
+  color: @g_Danger-FG;
+  &-text { color: @g_Danger-BG !important; }
+  &-bg { background-color: @g_Danger-BG !important;}
+  &-border { border-color: @g_Danger-BG !important;}
+}
+
+/* Info State
+   ========================================================================== */
+.u-info {
+  background-color: @g_Info-BG !important;
+  color: @g_Info-FG;
+  &-text { color: @g_Info-BG !important; }
+  &-bg { background-color: @g_Info-BG !important;}
+  &-border { border-color: @g_Info-BG !important;}
+}
+
+/* Hot State
+   ========================================================================== */
+.u-hot {
+  background-color: @l_Button-Hot-BG !important;
+  color: @l_Button-Hot-Text;
+  &-text { color: @l_Button-Hot-BG !important; }
+  &-bg { background-color: @l_Button-Hot-BG !important;}
+  &-border { border-color: @l_Button-Hot-BG !important;}
+}
+
+/* Normal State
+   ========================================================================== */
+.u-normal {
+  background-color: @g_Body-BG !important;
+  color: @g_Body-Text;
+  &-text { color: @g_Body-Text !important; }
+  &-bg { background-color: @g_Body-Text !important;}
+  &-border { border-color: @g_Body-Text !important;}
+}
+
+// /* ==========================================================================
+//    Cycle Colors for Lists 
+//    ========================================================================== */
+
+// .color-cycle(@counter) when (@counter > 0) {
+//   .color-cycle(@counter - 1);
+//   li:nth-child(@{i}) {
+//     color: @color@{i};
+//   }  
+// }
+// .u-color-cycle {
+//   .color-cycle(30);
+// }

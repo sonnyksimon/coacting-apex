@@ -1,0 +1,32 @@
+/* ========================================================================== High Contrast Mode ========================================================================== */
+.u-HCM .a-Header-accountDialog { border-top: 1px solid !important; }
+
+.u-HCM .a-Header, .u-HCM .a-BarChart-item, .u-HCM .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-anchor, .u-HCM .ui-tabs--subTabButtons > .a-Tabs-toolbar { border-bottom: 1px solid !important; }
+
+.u-HCM .ui-tabs--subTabButtons > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-anchor, .u-HCM .a-BarChart-initials, .u-HCM .a-DateList-icon, .u-HCM .a-AppCards-icon, .u-HCM .a-Icon.icon-breadcrumb-previous, .u-HCM select, .u-HCM .a-Property-field, .u-HCM .ui-button { border: 1px solid !important; }
+
+.u-HCM .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-active.ui-state-focus, .u-HCM .ui-tabs--subTabButtons > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-focus, .u-HCM .a-Button:focus, .u-HCM button:focus, .u-HCM input:focus, .u-HCM textarea:focus, .u-HCM select:focus, .u-HCM .ui-widget .ui-state-focus, .u-HCM .apex-rds-item:focus a, .u-HCM .ui-button.ui-state-focus { outline: 1px dotted !important; }
+
+.u-HCM .a-Header-navLinks .a-Button--navLink { padding-top: 11px; padding-bottom: 11px; margin-right: -1px; }
+
+.u-HCM .a-Header-navLinks .a-Button--accountMenu { padding-top: 7px !important; padding-bottom: 7px !important; }
+
+.u-HCM .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-active .ui-tabs-anchor { border-bottom-width: 0 !important; border-top: 2px solid !important; font-weight: bold !important; }
+
+.u-HCM .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-active.ui-state-focus { border: 2px solid !important; }
+
+.u-HCM .ui-tabs--subTabButtons > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-anchor { border-radius: 2px; }
+
+.u-HCM .ui-tabs--subTabButtons > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-active { font-weight: bold; outline: 1px solid !important; }
+
+.u-HCM .a-Header-tabsContainer.a-MenuBar .a-Menu--current { border-top: 2px solid !important; height: 38px !important; }
+
+.u-HCM .a-Header-tabsContainer.a-MenuBar .a-Menu--current .a-MenuBar-label { font-weight: bold; }
+
+.u-HCM .a-PageSelect-input { height: 32px; }
+
+.u-HCM .apex-rds { border-bottom: 1px solid !important; }
+
+.u-HCM .apex-rds-selected a { border: 1px solid; border-bottom-width: 0; font-weight: bold; }
+
+.u-HCM .apex-rds-item--hint a { font-weight: bold; border-top: 1px solid !important; }

@@ -1,0 +1,47 @@
+/**
+ * Import Compass and Theme Variables
+ */
+
+@import "_variables";
+
+/* ==========================================================================
+   Popup LOV
+   ========================================================================== */
+
+.t-PopupLOV-links {
+  a {
+    &:hover {
+      background-color: @g_Link-Base;
+      color: contrast(@g_Link-Base, darken(@g_Link-Base,  75%), lighten(@g_Link-Base,  75%),  43%);
+    }
+  }
+}
+.t-PopupLOV-resultsSet {
+  tr:hover td {
+    background-color: #ECF2FB !important;
+  }
+  tr:nth-child(2n) td {
+    background-color: #FAFAFA;
+  }
+}
+.t-PopupLOV-resultsSet-link,.ui-widget-content a.t-PopupLOV-resultsSet-link{
+  color: @g_Link-Base;
+}
+.t-Page--popupLOV {
+  background-color: #FFF;
+}
+.t-PopupLOV-actions {
+  background-color: @g_Accent-OG;
+}
+.t-PopupLOV-links {
+  a {
+    .text-dark();
+    &:hover {
+      background-color: contrast(@g_Link-Base, darken(@g_Link-Base,   10%), lighten(@g_Link-Base,   10%),  43%);
+      color: contrast(@g_Link-Base, darken(@g_Link-Base,  75%), lighten(@g_Link-Base,  75%),  43%);
+    }
+  }
+}
+.t-PopupLOV-pagination {
+  color: #666;
+}

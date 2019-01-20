@@ -1,0 +1,62 @@
+/**
+ * Import Compass and Theme Variables
+ */
+@import "_variables";
+
+/* ==========================================================================
+   Badge List
+   ========================================================================== */
+
+.t-BadgeList,
+.t-BadgeList:not(.u-colors) a .t-BadgeList-label {
+  color: @g_Region-FG;
+}
+.t-BadgeList--circular {
+  .t-BadgeList-value {
+    box-shadow: 0 0 0 1px fadeout(@g_Region-FG,90%) inset;
+    background-color: @g_Region-BG;
+  }
+  a.t-BadgeList-wrap:hover .t-BadgeList-value {
+    box-shadow: 0 0 0 4px @g_Accent-BG inset;
+    background-color: @g_Accent-BG;
+    color: @g_Accent-FG;
+  }
+}
+
+.t-BadgeList--dash a.t-BadgeList-wrap:focus,
+.t-BadgeList--dash .t-BadgeList-wrap:focus-within,
+.t-BadgeList--circular a.t-BadgeList-wrap:focus .t-BadgeList-value,
+.t-BadgeList--circular .t-BadgeList-value a:focus {
+  box-shadow: 0 0 0 1px @g_Focus inset, 0 0 0 2px @g_Region-BG inset;
+  background-color: @g_Accent-BG;
+  color: @g_Accent-FG;
+}
+.t-BadgeList--dash .t-BadgeList-wrap:focus-within,
+.t-BadgeList--circular .t-BadgeList-value a:hover {
+  background-color: @g_Accent-BG !important;
+  color: @g_Accent-FG !important;
+}
+.t-BadgeList--dash .t-BadgeList-value a:focus,
+.t-BadgeList--dash a.t-BadgeList-wrap:focus-within .t-BadgeList-label {
+  color: @g_Accent-FG;
+}
+
+/* ==========================================================================
+   Layout Modifiers
+   ========================================================================== */
+
+/* Color Handling
+   ========================================================================== */
+.t-BadgeList.u-colors {
+  &.t-BadgeList--circular {
+    .t-BadgeList-wrap:before {
+      background-color: @g_Region-BG;
+    }
+    .t-BadgeList-label {
+      color: @g_Region-FG;
+    }
+  }
+  .t-BadgeList-value a {
+    color: inherit;
+  }
+}

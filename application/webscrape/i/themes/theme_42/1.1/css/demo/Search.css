@@ -1,0 +1,40 @@
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Search Component (used for Icon Search) ========================================================================== */
+.dm-Search:empty:before { content: 'No Results'; font-size: 14px; text-align: left; padding: 16px 0; color: rgba(0, 0, 0, 0.5); display: block; }
+
+/* Search Field ========================================================================== */
+input#P4000_SEARCH { background: #FFF; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); border: 1px solid rgba(0, 0, 0, 0.075); padding: 8px 16px; margin-bottom: 8px; height: 48px !important; }
+
+#P4000_SEARCH + .apex-item-icon { padding: 16px; left: 48px; margin-left: -48px; margin-top: 1px; }
+
+/* Search Category Container ========================================================================== */
+.dm-Search-category { display: block; background: #FFF; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); border: 1px solid rgba(0, 0, 0, 0.075); border-radius: 2px; padding: 16px; margin-bottom: 16px; }
+
+.dm-Search-title { text-transform: capitalize; margin-bottom: 0; padding: 8px; }
+
+.dm-Search-list { list-style: none; margin: 0; padding: 0; clear: both; overflow: hidden; }
+
+.dm-Search-list li { width: 25%; float: left; }
+
+.dm-Search-result { display: block; color: #404040; padding: 4px; cursor: pointer; border-radius: 2px; overflow: hidden; }
+
+.dm-Search-result:focus { outline: none; box-shadow: 0 0 0 1px #0572CE inset; background-color: #FFF; }
+
+.dm-Search-result:hover { background-color: #FFF; box-shadow: 0 0 0 1px #0572CE inset, 0 2px 1px rgba(0, 0, 0, 0.1); }
+
+.dm-Search-result:focus .t-Icon, .dm-Search-result:hover .t-Icon { -webkit-transform: scale(2); transform: scale(2); }
+
+.dm-Search-result:focus .dm-Search-info, .dm-Search-result:hover .dm-Search-info { -webkit-transform: translateX(16px); transform: translateX(16px); }
+
+.dm-Search-icon { float: left; padding: 8px 0 8px 8px; }
+
+.dm-Search-icon .t-Icon { transition: -webkit-transform 0.2s cubic-bezier(0.77, 0, 0.175, 1); transition: transform 0.2s cubic-bezier(0.77, 0, 0.175, 1); transition: transform 0.2s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 0.2s cubic-bezier(0.77, 0, 0.175, 1); -webkit-transform-origin: left; transform-origin: left; vertical-align: top; line-height: 24px; }
+
+.dm-Search-info { overflow: hidden; transition: -webkit-transform 0.2s cubic-bezier(0.77, 0, 0.175, 1); transition: transform 0.2s cubic-bezier(0.77, 0, 0.175, 1); transition: transform 0.2s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 0.2s cubic-bezier(0.77, 0, 0.175, 1); padding: 8px; }
+
+.dm-Search-class { font-size: 14px; line-height: 24px; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+@media only screen and (max-width: 768px) { .dm-Search-list li { width: 33.33%; } }
+
+@media only screen and (max-width: 640px) { .dm-Search-list li { width: 50%; } }

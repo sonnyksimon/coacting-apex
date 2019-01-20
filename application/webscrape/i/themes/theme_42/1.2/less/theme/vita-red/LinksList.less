@@ -1,0 +1,134 @@
+/** 
+ * Import Compass and Theme Variables
+ */
+
+@import "_variables";
+
+/* ==========================================================================
+   Links List
+   ========================================================================== */
+
+
+.t-LinksList-item,
+.t-LinksList-link {
+//  border-color: #F0F0F0;
+  border-color: contrast(@g_Region-BG, darken(@g_Region-BG,   10%), lighten(@g_Region-BG,   10%),  43%);
+}
+.t-LinksList-icon {
+  color: contrast(@g_Region-BG, darken(@g_Region-BG,  15%), lighten(@g_Region-BG,  15%),  43%);
+}
+.t-LinksList-link {
+  &:hover {
+    .region-hover();
+  }
+  &:focus {
+    box-shadow:0 0 0 1px @g_Focus inset;
+  }
+}
+
+
+/**
+ * Modifier: Go To Arrow
+ *
+ * Show Go To Arrow on right
+ */
+.t-LinksList--showArrow {
+  .t-LinksList-link {
+    // &:hover {
+    //   &:before {
+    //     color: @g_Accent-BG;
+    //   }
+    // }
+    &:before {
+      color: contrast(@g_Region-BG, darken(@g_Region-BG,  15%), lighten(@g_Region-BG,  15%),  43%);
+    }
+  }
+  // &.t-LinksList--brightHover .t-LinksList-link:hover:before {
+  //   color: rgba(255,255,255,.5);
+  // }
+}
+
+/**
+ * Modifier: Show Badge
+ *
+ * Show Badge on Right
+ */
+.t-LinksList--showBadge {
+  .t-LinksList-badge {
+    background-color: contrast(@g_Region-BG, darken(@g_Region-BG,  4%), lighten(@g_Region-BG,  4%),  43%);
+    color: @g_Region-FG;
+  }
+  .t-LinksList-link:hover .t-LinksList-badge {
+    background-color: contrast(@g_Region-BG, darken(@g_Region-BG,  8%), lighten(@g_Region-BG,  8%),  43%);
+  }
+  // &.t-LinksList--brightHover {
+  //   .t-LinksList-link:hover .t-LinksList-badge {
+  //     background-color: rgba(0,0,0,.15);
+  //     color: #FFF;
+  //   }
+  // }
+  .t-LinksList-item.is-expanded > .t-LinksList-link .t-LinksList-badge {
+    background-color: contrast(@g_Region-BG, darken(@g_Region-BG,   25%), lighten(@g_Region-BG,   25%),  43%);
+//    background-color: rgba(0,0,0,.1);
+  }
+}
+
+/**
+ * Modifier: Bright Hover
+ *
+ * Show Bright
+ */
+.t-LinksList--brightHover {
+  .t-LinksList-item.is-expanded .t-LinksList-link:hover:before {
+    color: rgba(255,255,255,.5);
+  }
+  .t-LinksList-link {
+    &:hover {
+      background-color: @g_Accent-BG;
+      color: contrast(@g_Accent-BG, darken(@g_Accent-BG,   75%), lighten(@g_Accent-BG,   75%),  43%);
+      .t-LinksList-icon {
+        color: rgba(255,255,255,.75);
+      }
+    }
+  }
+}
+
+.t-LinksList-item.is-expanded  {
+  background-color: #FCFCFC;
+  background: linear-gradient(rgba(0,0,0,.015),rgba(0,0,0,0)), linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.015));
+  .t-LinksList-link:hover:before {
+    color: @g_Accent-BG;
+  }
+  .t-LinksList-link:before {
+    color: rgba(0,0,0,.25)
+  }
+}
+.t-LinksList--showBadge {
+  .t-LinksList-badge {
+    border-radius: 4px;
+  }
+}
+.t-LinksList--iconOnly {
+  .t-LinksList-icon {
+    border-radius: 100%;
+  }
+}
+.t-LinksList--actions {
+  .t-LinksList-label {
+    color: @g_Actions-Col-Text;
+  }
+  .t-LinksList-icon {
+    color: @g_Actions-Col-Text;
+  }
+  .t-LinksList-link:hover {
+    .t-LinksList-icon, .t-LinksList-label, .t-LinksList-badge {
+      color: contrast(@g_Accent-OG, darken(@g_Accent-OG,   75%), lighten(@g_Accent-OG,   75%),  43%);
+    }
+  }
+}
+
+.t-Body-actions .t-LinksList-link {
+  &:hover {
+    background-color: contrast(@g_Actions-Col-BG, darken(@g_Actions-Col-BG,   5%), lighten(@g_Actions-Col-BG,   5%),  43%);
+  }
+}

@@ -1,0 +1,120 @@
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Property Editor ========================================================================== */
+.a-LiveTemplateOptions { /* ========================================================================== Property Editor ========================================================================== */ /* Property Editor Groups ========================================================================== */ /****************************************************************************** Color Variables */ /******************************************************************************
+Properties
+******************************************************************************/ /* Property Editor Select List ========================================================================== */ /* Text Area ========================================================================== */ /******************************************************************************
+Property Editor in Dialogs
+******************************************************************************/ /******************************************************************************
+Color Variables
+******************************************************************************/ /******************************************************************************
+Property Group Styles
+******************************************************************************/ }
+
+.a-LiveTemplateOptions .a-LiveTemplateOptions--info { display: none; float: left; color: #79AAC1; }
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup, .a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-header, .a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-body { border-color: #6B6B6B !important; }
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup { background-color: #262626 !important; }
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-header .a-Icon { color: #c3c3c3; }
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-header { background-color: #393939 !important; padding: 12px 8px; margin: 0 !important; }
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-title { display: inline-block; margin: 0; padding: 0; font-weight: normal; line-height: 16px; font-size: 12px; color: #c3c3c3 !important; -webkit-font-smoothing: antialiased; vertical-align: top; }
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-body .a-Property { border-color: #323232 !important; }
+
+.a-LiveTemplateOptions .a-PropertyEditor-propertyGroup-header.is-focused { box-shadow: 2px -1px 0 0 #399bea inset, -2px 1px 0 0 #399bea inset, 0 0 0px 1px #399bea, 0 0 1px 2px rgba(57, 155, 234, 0.25) !important; outline: none; z-index: 100; position: relative; border-color: #399BEA; }
+
+.a-LiveTemplateOptions .a-Property { transition: box-shadow .1s; }
+
+.a-LiveTemplateOptions .a-Property.is-active { background-color: #393e46; }
+
+.a-LiveTemplateOptions .a-Property.is-active .a-Property-field { box-shadow: 0 0 0 1px rgba(57, 155, 234, 0.5) inset; }
+
+.a-LiveTemplateOptions .a-Property.is-focused { border-color: rgba(57, 155, 234, 0.5) !important; z-index: 100; position: relative; }
+
+.a-LiveTemplateOptions .a-Property-buttonContainer, .a-LiveTemplateOptions .a-Property-labelContainer, .a-LiveTemplateOptions .a-Property-fieldContainer, .a-LiveTemplateOptions .a-Property-unitContainer, .a-LiveTemplateOptions .a-PropertyEditor--stacked .a-Property-labelContainer .a-Property-label { padding: 6px 8px; }
+
+.a-LiveTemplateOptions .a-PropertyEditor--stacked .a-Property--stacked .a-Property-labelContainer .a-Property-label { padding: 4px 0 !important; }
+
+.a-LiveTemplateOptions .a-PropertyEditor--stacked .a-Property-labelContainer .a-Property-label { padding-bottom: 0 !important; }
+
+.a-LiveTemplateOptions .a-Property.is-error { background-color: #FFEFEF !important; }
+
+.a-LiveTemplateOptions .a-Property.is-error .a-Property-label { color: #4C4242; }
+
+.a-LiveTemplateOptions .a-Property.is-error .a-Property-field { background-color: #FFF; }
+
+.a-LiveTemplateOptions .a-Property.is-error.is-focused { background-color: #FEDFDF !important; box-shadow: 0 1px 2px 0px rgba(252, 24, 27, 0.25), 0 -1px 2px 0px rgba(252, 24, 27, 0.25), 0 1px 0 0 rgba(255, 255, 255, 0.25) inset !important; border-color: #FC181B !important; }
+
+.a-LiveTemplateOptions .a-Property.is-error .a-Property-labelContainer .a-Icon { margin-right: 4px; color: #FC181B !important; }
+
+.a-LiveTemplateOptions .a-Property.is-warning { background-color: #FFF8DF !important; }
+
+.a-LiveTemplateOptions .a-Property.is-warning .a-Property-label { color: #463403; }
+
+.a-LiveTemplateOptions .a-Property.is-warning .a-Property-field { background-color: #FFF; }
+
+.a-LiveTemplateOptions .a-Property.is-warning.is-focused { background-color: #FEEDB9 !important; box-shadow: 0 1px 2px 0px rgba(253, 179, 9, 0.25), 0 -1px 2px 0px rgba(253, 179, 9, 0.25), 0 1px 0 0 rgba(255, 255, 255, 0.25) inset !important; border-color: #FDB309 !important; }
+
+.a-LiveTemplateOptions .a-Property.is-warning .a-Property-labelContainer .a-Icon { margin-right: 4px; color: #F69F00 !important; }
+
+.a-LiveTemplateOptions .a-Property-label, .a-LiveTemplateOptions .a-Property-setItemsHeader-header, .a-LiveTemplateOptions .a-Property-unit { font-size: 12px; line-height: 16px; padding: 4px 0; color: darkgray; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35); }
+
+.a-LiveTemplateOptions .a-Property-checkbox-label, .a-LiveTemplateOptions .a-Property-radio { font-size: 12px; line-height: 16px; color: darkgray; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35); }
+
+.a-LiveTemplateOptions .a-Property-unit { font-size: 11px; }
+
+.a-LiveTemplateOptions .a-Property-label--withIcon { line-height: 16px; padding: 4px 0; }
+
+.a-LiveTemplateOptions .a-Property-field { font-size: 12px; line-height: 16px; padding: 4px; height: 24px; background-color: #262626; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) inset, 0 1px 1px rgba(0, 0, 0, 0.1) inset; border-radius: 2px; border: none; }
+
+.a-LiveTemplateOptions .a-Property-field:focus { box-shadow: 0 0 0px 1px #399bea inset !important; outline: none; /* 1 */ background-color: #262626; }
+
+.a-LiveTemplateOptions .a-Property.is-variable.is-active .a-Icon.icon-variable { color: #404040; }
+
+.a-LiveTemplateOptions .a-Property.is-variable .a-Icon.icon-variable { color: #A0A0A0; margin-right: 4px; }
+
+.a-LiveTemplateOptions .a-Property-field.is-variable { background-color: #DFEBFB; }
+
+.a-LiveTemplateOptions .a-Property.is-warning .a-Property-field:focus { box-shadow: 0 0 0px 1px rgba(253, 179, 9, 0.75) inset !important; }
+
+.a-LiveTemplateOptions .a-Property.is-error .a-Property-field:focus { box-shadow: 0 0 0px 1px rgba(252, 24, 27, 0.5) inset !important; }
+
+.a-LiveTemplateOptions .a-Property-field--select { text-indent: 0.01px; background-repeat: no-repeat; background-position: 100% 0; color: #e5e5e5; padding-right: 30px; text-overflow: ' '; overflow: hidden; border: 1px solid #4c4c4c; box-shadow: none !important; background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xMy4zNTUgNS4yMTZjLS4xOTYtLjE5Ni0uNTEyLS4xOTctLjcwOC0uMDAybC00LjYxMyA0LjU4MS00LjY4Mi00LjY1Yy0uMTk1LS4xOTQtLjUxMS0uMTkyLS43MDcuMDAyLS4xOTQuMTk3LS4xOTMuNTEzLjAwMi43MDhsNS4wMzQgNWMuMDk4LjA5Ny4yMjYuMTQ1LjM1My4xNDVzLjI1NS0uMDQ4LjM1My0uMTQ1bDQuOTY2LTQuOTMyYy4xOTUtLjE5NC4xOTYtLjUxMS4wMDItLjcwN3oiLz48L3N2Zz4="); background-position: 99% 50%; background-size: 16px; background-repeat: no-repeat; -webkit-appearance: none !important; }
+
+.a-LiveTemplateOptions body:not(:-moz-handler-blocked) .a-Property-field--select { padding: 2px 24px 2px 2px; }
+
+.a-LiveTemplateOptions .is-changed .a-Property-field--select { background: #243223 !important; color: #F5F5F5 !important; border-color: #2c3c2b !important; }
+
+.a-LiveTemplateOptions .has-warning .a-Property-field--select { background: #323200 !important; color: #F5F5F5 !important; border-color: #3c3c00 !important; }
+
+.a-LiveTemplateOptions .a-Property-readOnly { font-size: 12px; line-height: 2; font-weight: bold; color: darkgray; }
+
+.a-LiveTemplateOptions .a-Property-field--readOnly { box-shadow: none; }
+
+.a-LiveTemplateOptions .a-Property-setItemsTable-header { font-weight: normal; }
+
+.a-LiveTemplateOptions .a-Property-setItemsTable .a-Property-field { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+
+.a-LiveTemplateOptions .ui-dialog .a-Property { border-color: #3c3c3c; }
+
+.a-LiveTemplateOptions .a-PropertyGroup-item { border-top-color: #505050; }
+
+.a-LiveTemplateOptions ul.apex-rds li { margin-right: 1px; margin-left: 0; background: #191919; border-top-left-radius: 2px; border-top-right-radius: 2px; margin-top: 8px; }
+
+.a-LiveTemplateOptions ul.apex-rds li a { padding: 12px 8px; color: #E0E0E0; }
+
+.a-LiveTemplateOptions li.apex-rds-selected { background: #393939 !important; }
+
+.a-LiveTemplateOptions ul.apex-rds li.apex-rds-selected { background: #393939 !important; }
+
+.a-LiveTemplateOptions ul.apex-rds .apex-rds-selected a { box-shadow: none !important; }
+
+.a-LiveTemplateOptions--inner-message { background-color: #393939; }

@@ -1,0 +1,68 @@
+/**  Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+/******************************************************************************
+Icon List
+******************************************************************************/
+.a-Gallery .a-IconList-item { width: 96px; height: 90px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.a-IconList-item { color: #6F6F6F; }
+
+.a-IconList-item:hover { color: #202020; background-color: #FAFAFA; }
+
+.a-IconList-item:focus { box-shadow: 0 0 0 1px #0572ce inset; }
+
+.a-IconList-item.is-selected { background-color: #F2F2F2; box-shadow: 0 0 0 1px #e4e4e4 inset; }
+
+.a-IconList-item.is-selected.is-focused { color: #202020; box-shadow: 0 0 0 1px #0572ce inset, 0 1px 2px rgba(0, 0, 0, 0.1); background-color: #FFF; }
+
+.a-Gallery-componentName { font-size: 11px; line-height: 14px; text-align: center; height: 42px; }
+
+.a-Gallery .a-Icon { display: block; margin: 0 auto; width: 32px; height: 32px; line-height: 1; }
+
+.a-Gallery .a-Icon:before { font-size: 32px; vertical-align: top; }
+
+.a-Gallery-region .a-Icon { color: #7FBEF2; }
+
+.a-Gallery-pageItem .a-Icon { color: #979C9F; }
+
+.a-Gallery-button .a-Icon { color: #56D49A; }
+
+.a-IconList--featured { margin: 0 auto; text-align: center; }
+
+.a-IconList--featured .a-IconList-item { display: inline-block; float: none; width: 172px; height: auto; padding: 8px; vertical-align: top; margin: 0; }
+
+.a-IconList--featured .a-Icon { margin: 16px auto 8px auto; width: 96px; height: 96px; background-color: #399BEA; border-radius: 2px; }
+
+.a-IconList--featured .a-IconList-iconName { font-size: 14px; line-height: 20px; height: auto; margin-bottom: 8px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.a-IconList--featured--wide .a-IconList-item { width: 240px; }
+
+/* ========================================================================== Wizard Icon List ========================================================================== */
+.wizard-selection .a-IconList { margin: 8px; }
+
+.wizard-selection .a-IconList-item { width: 200px; height: 150px; }
+
+.a-IconList--wizard { margin: 0; }
+
+.a-IconList--wizard .a-IconList-item { /* Base Styles */ /* Clear Hover, Active, Focus Styles */ }
+
+.a-IconList--wizard .a-IconList-item:hover, .a-IconList--wizard .a-IconList-item:active, .a-IconList--wizard .a-IconList-item:focus, .a-IconList--wizard .a-IconList-item.is-selected, .a-IconList--wizard .a-IconList-item.is-selected.is-focused { box-shadow: none; background-color: transparent; }
+
+.a-IconList--wizard .a-IconList-item .a-Icon { box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.075) inset; transition: .1s; }
+
+.a-IconList--wizard .a-IconList-item:hover .a-Icon { background-color: #F2F2F2; color: #6F6F6F; }
+
+.a-IconList--wizard .a-IconList-item.is-selected .a-Icon { background-color: #0572CE; box-shadow: none; color: #FFF; }
+
+.a-IconList--wizard .a-IconList-item.is-selected.is-focused .a-Icon { box-shadow: 0 0 0 1px #0572ce inset, 0 1px 2px rgba(0, 0, 0, 0.1); outline: none; background-color: #FFF; color: #0572CE; }
+
+@media only screen and (min-width: 1281px) { .a-IconList--featured .a-Icon { width: 108px; height: 108px; } }
+
+@media only screen and (max-height: 600px) { .a-IconList--featured .a-Icon { width: 72px; height: 72px; } }

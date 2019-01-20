@@ -1,0 +1,77 @@
+/** Import Compass */
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Header ========================================================================== */
+.t-Header { border: none; z-index: 100; }
+
+.t-Header-navBar { margin-right: 8px; }
+
+.u-RTL .t-Header-navBar { margin-right: 0px; margin-left: 8px; }
+
+/* Branding ========================================================================== */
+.t-Header-branding { z-index: 795; position: relative; padding: 0; overflow: hidden; display: flex; flex-direction: row; align-items: center; }
+
+.t-Header-controls { margin-right: -8px; margin-left: 8px; }
+
+.u-RTL .t-Header-controls { margin-right: 0px; margin-left: -8px; }
+
+.u-RTL .t-Header-controls { margin-left: 0px; margin-right: 8px; }
+
+.apex-top-nav .t-Button--headerTree, .t-PageBody--noNav .t-Button--headerTree { display: none; }
+
+.t-Header-logo { flex-grow: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 2.0rem; line-height: 2.4rem; padding: 0 8px; }
+
+.t-Header-logo-link { padding: 4px 8px; vertical-align: top; display: inline-block; overflow: hidden; text-overflow: ellipsis; }
+
+.t-Header-logo-link:hover { text-decoration: none; }
+
+.t-Header-logo-link img { max-height: 4.0rem; display: block; }
+
+.t-Header-navBar { text-align: right; flex-shrink: 0; }
+
+.u-RTL .t-Header-navBar { text-align: left; }
+
+/* Header Navigation Container ========================================================================== */
+.t-Header-nav { overflow: hidden; }
+
+/* Navigation List Menu ========================================================================== */
+.t-Header { z-index: 800; }
+
+.t-Header .t-Header-nav { z-index: 790; transition: .1s all; }
+
+.t-Header .a-MenuBar-item { display: block; float: left; padding: 0; border-width: 0; box-shadow: none; }
+
+.u-RTL .t-Header .a-MenuBar-item { float: right; }
+
+.t-Header .a-MenuBar-item.is-expanded { box-shadow: none; outline: none; }
+
+.t-Header .a-MenuBar.u-RTL .a-MenuBar-item { float: right; }
+
+.t-Header .a-MenuBar-item > .a-Menu-subMenuCol { vertical-align: top; padding: 9px 12px 9px 2px; border: none; margin: 0; }
+
+.t-Header .a-MenuBar-item > .a-Menu-subMenuCol .a-Icon { padding: 2px; width: 22px; height: 22px; border: 1px solid; border-radius: 100%; }
+
+.t-Header .a-MenuBar.u-RTL .a-MenuBar-item > .a-Menu-subMenuCol { padding-right: 2px; padding-left: 12px; }
+
+.t-Header .a-MenuBar-label { display: inline-block; font-size: 1.4rem; line-height: 1.6rem; padding: 12px; text-decoration: none; }
+
+.a-Header-tabItem--withIcon .t-Header .a-MenuBar-label { padding-right: 12px; padding-left: 12px; }
+
+.t-Header .a-MenuBar-label:hover { background-clip: padding-box; text-decoration: none; }
+
+.t-Header .a-Header-tabLabel { margin-left: 4px; }
+
+.t-Header-nav-list { float: left; }
+
+.t-Header .a-MenuBar.a-MenuBar--overflow { overflow: hidden; width: 100%; }
+
+.t-Header .a-MenuBar-item--overflow { width: 40px; height: 40px; float: right; }
+
+.t-Header .a-MenuBar-item--overflow > .a-MenuBar-label { padding: 12px; }
+
+.u-RTL .t-Header .a-MenuBar-item--overflow { float: left; }
+
+/* Header Icon Navigation ========================================================================== */
+.t-Header-iconNav { float: right; }
+@media only screen and (max-width: 920px) { .t-Header .a-Header-tabLabel { display: none; } }
+@media only screen and (max-width: 480px) { .t-Header-nav-list { float: none; } }

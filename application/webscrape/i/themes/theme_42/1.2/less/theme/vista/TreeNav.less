@@ -1,0 +1,103 @@
+@import "_variables";
+
+.treeMe(@nav-Icon, @nav-FG, @nav-Active-BG, @nav-Active-FG, @nav-Icon-Active) {
+  .a-TreeView-node--topLevel {
+    .a-TreeView-row.is-focused {
+      box-shadow: 0 0 0 1px contrast(@nav-Active-BG, darken(@nav-Active-BG,  9%), lighten(@nav-Active-BG,  9%),  43%) inset;
+      background-color: transparent;
+    }
+    .a-TreeView-row.is-current,
+    .a-TreeView-row.is-selected,
+    .a-TreeView-row.is-current--top.is-selected {
+      background-color: contrast(@nav-Active-BG, darken(@nav-Active-BG,  3%), lighten(@nav-Active-BG,  3%),  43%);
+    }
+    .a-TreeView-row.is-current--top,
+    &.is-collapsible > .a-TreeView-row,
+    ul {
+      background-color:  @nav-Active-BG;
+    }
+    .a-TreeView-row.is-hover {
+      background-color: contrast(@nav-Active-BG, darken(@nav-Active-BG,  6%), lighten(@nav-Active-BG,  6%),  43%) !important;
+    }
+    .a-TreeView-row.is-hover + .a-TreeView-toggle,
+    &.is-collapsible .a-TreeView-toggle {
+      color: fadeout(@nav-Active-FG, 25%);
+      &:hover{
+        color: @nav-Active-FG !important;
+      }
+    }
+    .a-TreeView-content.is-hover {
+      color: @nav-Active-FG !important;
+    }
+    .a-TreeView-content {
+      color: @nav-FG;
+      .fa, .a-Icon {
+        color:@nav-Icon;
+      }
+    }
+    .a-TreeView-content.is-hover,
+    .a-TreeView-content.is-current--top {
+      .fa,.a-Icon {
+        color: @nav-Icon-Active;
+      }
+    }
+    .a-TreeView-label {
+      color: inherit;
+    }
+    .a-TreeView-content.is-current,
+    .a-TreeView-content.is-selected,
+    .a-TreeView-content.is-current--top {
+      color: @nav-Active-FG;
+    }
+    .a-TreeView-toggle {
+      color: fadeout(@nav-FG, 25%);
+      &:hover{
+        color: @nav-FG !important;
+      }
+    }
+    .a-TreeView-row {
+      transition: background-color .1s;
+    }
+  }
+}
+
+.t-TreeNav {
+  .treeMe(@g_Nav-Icon, #333, #E0E0E0, #333, @g_Nav-Icon);
+}
+
+.t-PageBody--leftNav {
+  .t-Body-nav {
+    background-color: @g_Nav-BG;
+  }
+}
+
+//, .t-Body-side
+.t-Body-nav {
+  box-shadow: inset -1px 0 0 rgba(0,0,0,.1);
+  .u-RTL & {
+    box-shadow: inset 1px 0 0 rgba(0,0,0,.1);
+  }
+}
+
+.t-Body-actionsContent {
+}
+
+.a-TreeView-node--topLevel > .a-TreeView-content > .a-TreeView-label  {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.a-TreeView-row.is-selected, .a-TreeView-row.is-selected.is-hover {
+  background-color: fade(@g_Nav-FG, 15%);
+}
+
+.a-TreeView-content.is-selected {
+}
+
+.t-TreeNav .a-TreeView-node--topLevel > ul > .a-TreeView-node {
+  padding-bottom: 5px;
+}
+
+.t-TreeNav .a-TreeView-node--topLevel > .a-TreeView-content .a-TreeView-badge {
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+}

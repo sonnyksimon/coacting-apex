@@ -1,0 +1,75 @@
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Oracle JET Charts in APEX 5.1 ========================================================================== */
+/* Chart Font Sizes ========================================================================== */
+.oj-html { font-size: 1.4rem; }
+
+.oj-chart-data-label { font-size: 1.2rem; }
+
+.oj-chart-footnote { font-size: 1.2rem; }
+
+.oj-chart-pie-center-label, .oj-chart-xaxis-title, .oj-chart-yaxis-title, .oj-chart-y2axis-title { font-size: 1.4rem; }
+
+.oj-chart-stack-label { font-size: 1.2rem; }
+
+.oj-chart-subtitle { font-size: 1.6rem; }
+
+.oj-chart-title { font-size: 1.6rem; }
+
+.oj-chart-xaxis-tick-label, .oj-chart-yaxis-tick-label, .oj-chart-y2axis-tick-label { font-size: 1.2rem; }
+
+.oj-dvt-datatip { font-size: 1.2rem; }
+
+.oj-dvt-tooltip { font-size: 1.4rem; }
+
+.oj-legend { font-size: 1.2rem; }
+
+.oj-legend-section-title { font-size: 1.2rem; }
+
+.oj-legend-title { font-size: 1.2rem; }
+
+.oj-timeline-major-axis-label { font-size: 1.4rem; }
+
+.oj-timeline-minor-axis-label { font-size: 1.2rem; }
+
+.oj-treemap { font-size: 1.2rem; }
+
+.oj-treemap-attribute-type-text { font-size: 1.4rem; }
+
+.oj-treemap-attribute-value-text { font-size: 1.4rem; }
+
+.oj-treemap-current-text { font-size: 1.4rem; }
+
+.oj-treemap-node { font-size: 1.2rem; }
+
+.oj-treemap-node-header { font-size: 1.2rem; }
+
+.oj-sunburst { font-size: 1.2rem; }
+
+.oj-sunburst-attribute-type-text { font-size: 1.4rem; }
+
+.oj-sunburst-attribute-value-text { font-size: 1.4rem; }
+
+.oj-sunburst-current-text { font-size: 1.4rem; }
+
+.oj-sunburst-node { font-size: 1.2rem; }
+
+.oj-diagram-link-label { font-size: 1.4rem; }
+
+.oj-diagram-node-label { font-size: 1.4rem; }
+
+/* Gantt Chart ========================================================================== */
+.oj-gantt-no-data-message { font-size: 1.2rem; }
+
+.oj-gantt-row-label { font-size: 1.4rem; }
+
+.oj-gantt-task-label { font-size: 1.2rem; }
+
+.oj-gantt-major-axis-label { font-size: 1.4rem; }
+
+.oj-gantt-minor-axis-label { font-size: 1.2rem; }
+
+.oj-gantt-tooltip-label { font-size: 1.2rem; }
+
+/* SVG Inline Scroll Issue ========================================================================== */
+.oj-chart svg { display: block; }

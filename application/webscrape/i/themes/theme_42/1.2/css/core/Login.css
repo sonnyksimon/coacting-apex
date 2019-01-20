@@ -1,0 +1,122 @@
+/** Import Compass */
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Login Page + Region ========================================================================== */
+.t-Login-page { margin-top: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+
+@-webkit-keyframes loginFade { from { -webkit-transform: translateY(24px) scale(0.85); transform: translateY(24px) scale(0.85);
+    opacity: .0; }
+  to { -webkit-transform: translateY(0) scale(1); transform: translateY(0) scale(1);
+    opacity: 1; } }
+
+@keyframes loginFade { from { -webkit-transform: translateY(24px) scale(0.85); transform: translateY(24px) scale(0.85);
+    opacity: .0; }
+  to { -webkit-transform: translateY(0) scale(1); transform: translateY(0) scale(1);
+    opacity: 1; } }
+
+/* Login Container Width ========================================================================== */
+.t-Login-container, .t-PageBody--login .t-Body-alert { width: 460px; }
+
+.t-Login-container { position: relative; z-index: 100; margin: 0 auto; -webkit-animation: loginFade ease-in-out 1; animation: loginFade ease-in-out 1; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/ -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-duration: .25s; animation-duration: .25s; }
+
+.t-Login-container > .container, .t-Login-container > .container > .row { overflow: visible; }
+
+.t-Login-region { border-radius: 2px; box-shadow: 0 3px 9px -2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.075); overflow: hidden; padding: 32px; }
+
+/* Alerts ========================================================================== */
+
+.t-Login-header { padding: 24px 0; }
+
+.t-Login-title, .t-Login-subTitle, .t-Login-text { font-weight: normal; text-align: center; }
+
+.t-Login-title { font-size: 24px; margin: 16px 0; }
+
+.t-Login-subTitle { font-weight: normal; font-weight: 400; font-size: 20px; line-height: 32px; margin: 0 0 16px 0; }
+
+.t-Login-subTitle .t-Icon { width: 32px; height: 32px; border-radius: 100%; box-shadow: 0 0 0 1px #A0A0A0 inset; }
+
+.t-Login-subTitle .t-Icon:before { font-size: 32px; }
+
+.t-Login-text { font-weight: 400; margin: 0 0 16px 0; font-size: 14px; }
+
+.t-Login-text--large { font-size: 16px; line-height: 20px; }
+
+.t-Login-logo { width: 64px; height: 64px; line-height: 64px; display: block; margin: 0 auto; border-radius: 4px; text-align: center; }
+
+.apex-icons-fontawesome .t-Login-logo { font-size: 42px; }
+
+.apex-icons-fontapex .t-Login-logo { font-size: 48px; }
+
+/* Item Icons ========================================================================== */
+.t-Login-body .t-Form-fieldContainer .apex-item-icon { padding: 12px; left: 40px; margin-left: -40px; }
+
+.u-RTL .t-Login-body .t-Form-fieldContainer .apex-item-icon { left: auto; right: 40px; }
+
+.u-RTL .t-Login-body .t-Form-fieldContainer .apex-item-icon { margin-left: 0px; margin-right: -40px; }
+
+.t-Login-body .apex-item-has-icon { text-indent: 0; }
+
+/* TODO: remove the following styles for icons as we have item icon support in 5.1 */
+.t-Login-body .t-Form-inputContainer:before { position: absolute; left: 0; top: 0; font-family: "apex-5-icon-font" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; z-index: 10; font-size: 24px; margin: 8px; pointer-events: none; }
+
+.u-RTL .t-Login-body .t-Form-inputContainer:before { right: 0; left: auto; }
+
+.t-Login-body { /* TODO: Remove the following four icon classes as now we have item icon support in 5.1 */ }
+
+.t-Login-body .icon-login-workspace .t-Form-inputContainer:before { content: "\e0f6"; }
+
+.t-Login-body .icon-login-username .t-Form-inputContainer:before { content: "\e0f5"; }
+
+.t-Login-body .icon-login-email .t-Form-inputContainer:before { content: "\e03a"; }
+
+.t-Login-body .icon-login-password .t-Form-inputContainer:before { content: "\e08f"; }
+
+.t-Login-body .t-Form-inputContainer { padding-bottom: 16px; position: relative; }
+
+.t-Login-body small { font-size: 1.1rem; line-height: 2.0rem; display: block; }
+
+.t-Login-body p { margin-top: 0; margin-bottom: 1,2rem; }
+
+.t-Login-body p + p { margin-bottom: 2.4rem; }
+
+.t-Login-region .t-Login-body .apex-item-text { font-size: 16px; padding: 4px 36px; height: 40px; }
+
+.t-Login-region .t-Login-body .apex-item-text:required:valid ~ .t-Form-itemText .t-Login-iconValidation { opacity: 1; }
+
+.t-Login-inputIcon, .t-Login-iconLabel { position: absolute; width: 32px; height: 32px; margin: 4px; overflow: hidden; }
+
+.t-Login-inputIcon:before, .t-Login-iconLabel:before { font-size: 32px; }
+
+.t-Login-iconValidation { position: absolute; top: 0; right: 0; z-index: 3; margin: 8px; border-radius: 100%; padding: 4px; width: 24px; height: 24px; opacity: 0; transition: opacity .2s; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.u-RTL .t-Login-iconValidation { right: auto; left: 0; }
+
+.t-Login-region .t-Form-labelContainer--hiddenLabel { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+.t-Login-region .t-Form-inputContainer, .t-Login-region .t-Form-labelContainer { padding: 0 0 1.6rem 0; }
+
+.t-Login-buttons { padding: 0; }
+
+.t-Login-buttons .t-Button { display: block; width: 100%; }
+
+.t-Login-buttons .t-Button + .t-Button { margin-top: 8px; }
+
+.t-Login-buttons .t-Button { padding: 16px 24px; font-size: 16px; line-height: 16px; }
+
+.t-Login-buttons .t-Button--hot { font-weight: bold; }
+
+.t-Login-buttons .t-Button + .t-Button { margin-left: 0; }
+
+/* Responsive Behavior ========================================================================== */
+
+@media (max-width: 480px) { .t-Login-container, .t-PageBody--login .t-Body-alert { width: auto; } .t-PageBody--login .t-Alert.t-Alert--page { box-shadow: none; border-width: 0 0 1px 0; border-radius: 0; } .t-PageBody--login .t-Body { display: block; }
+  .t-PageBody--login .t-Body-wrap { margin: 0; }
+  .t-Login-Container { -webkit-animation: none; animation: none; }
+  .t-Login-region { box-shadow: none; padding: 16px; } }
+
+@media (min-width: 769px) { .t-PageBody--login .t-Alert { position: static; top: 0; left: 0; min-width: auto; }
+  .t-PageBody--login .t-Alert .t-Alert-buttons { padding: 16px 16px 16px 0; }
+  .t-PageBody--login .t-Alert .t-Button--closeAlert { position: relative; top: auto; right: auto; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .t-PageBody--login .t-Body { width: 100%; }
+  .t-PageBody--login .t-Body-wrap { margin: 0; display: block; } }

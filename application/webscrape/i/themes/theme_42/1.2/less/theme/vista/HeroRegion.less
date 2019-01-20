@@ -1,0 +1,35 @@
+
+
+@import "_variables";
+.t-HeroRegion {
+  .t-Body-title & {
+    background-color: @g_Body-Title-BG;
+  }
+  color: contrast(@g_Body-Title-BG, darken(@g_Body-Title-BG,   75%), lighten(@g_Body-Title-BG,   75%),  43%);
+}
+.t-HeroRegion-title {
+  color: contrast(@g_Body-Title-BG, darken(@g_Body-Title-BG,   75%), lighten(@g_Body-Title-BG,   75%),  43%);
+}
+.t-HeroRegion-icon {
+  border-radius: 4px;
+  background-color: #878c90;
+  color: #FFF;
+}
+
+.t-HeroRegion--featured {
+    background-color: transparent;
+  &,
+  .t-HeroRegion-title {
+    color: contrast(@g_Region-BG, darken(@g_Region-BG,   75%), lighten(@g_Region-BG,   75%),  43%);
+  }
+}
+
+
+.t-HeroRegion-title {
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+.t-HeroRegion-title + p {
+  font-weight: normal;
+  font-size: 1.3rem;
+}

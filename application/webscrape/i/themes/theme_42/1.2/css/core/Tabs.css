@@ -1,0 +1,134 @@
+/** Import Compass */
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Tabs ========================================================================== */
+.t-Tabs, .apex-rds { margin: 0; padding: 0; list-style: none; overflow-y: hidden; }
+
+.u-RTL .t-Tabs, .u-RTL .apex-rds { text-align: right; }
+
+.t-Tabs-item { padding: 0; display: inline-block; vertical-align: top; }
+
+.t-Tabs-item .t-Icon { display: none; margin-right: 4px; }
+
+.t-Tabs-link { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: top; text-align: center; display: inline-block; padding: 12px; font-size: 1.4rem; line-height: 1.6rem; }
+
+.t-Tabs-link:focus { outline: none; z-index: 110; position: relative; }
+
+/* ========================================================================== Modifier: Pill --- Simple Tab Style ========================================================================== */
+.t-Tabs--pill { border: 1px solid rgba(0, 0, 0, 0.1); background-clip: padding-box; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); border-radius: 2px; margin-bottom: 8px; }
+
+.t-Tabs--pill .t-Tabs-link { border-left: 1px solid #E0E0E0; }
+
+.t-Tabs--pill .t-Tabs-link:hover { text-decoration: none; }
+
+.t-Tabs--pill .t-Tabs-link:active { box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05) inset; }
+
+.t-Tabs--pill .t-Tabs-item:first-child .t-Tabs-link { border-left-width: 0; border-radius: 2px 0 0 2px; }
+
+.t-Tabs--pill .t-Tabs-item:last-child .t-Tabs-link { border-right: 1px solid #E0E0E0; }
+
+/* ========================================================================== Modifier: Tabs --- Modern Tabs ========================================================================== */
+.t-Tabs--simple .t-Tabs-link:hover { text-decoration: none; }
+
+/* ========================================================================== Modifier: Icons Above --- Places icons above label ========================================================================== */
+.t-Tabs--iconsAbove .t-Icon { display: block; margin: 2px auto; }
+
+/* ========================================================================== Modifier: Fixed Width Labels --- Fix Label Width ========================================================================== */
+.t-Tabs--fixedLabels .t-Tabs-link { width: 120px; }
+
+/* ========================================================================== Modifier: Fit Labels --- Stretch tabs to fit in horizontal space ========================================================================== */
+.t-Tabs--fitLabels { display: flex; width: 100%; }
+
+.t-Tabs--fitLabels .t-Tabs-item { display: block; flex-grow: 1; flex-basis: 100%; }
+
+.t-Tabs--fitLabels .t-Tabs-link { display: block; }
+
+/* ========================================================================== Modifier: Fill Labels --- Stretch tabs to fit in horizontal space ========================================================================== */
+.t-Tabs--fillLabels { display: flex; width: 100%; }
+
+.t-Tabs--fillLabels .t-Tabs-item { display: block; flex-grow: 1; }
+
+.t-Tabs--fillLabels .t-Tabs-item:first-child .t-Tabs-link { border-left-width: 0; border-radius: 2px 0 0 2px; }
+
+.t-Tabs--fillLabels .t-Tabs-item:last-child .t-Tabs-link { border-right-width: 0; border-radius: 0 2px 2px 0; }
+
+.t-Tabs--fillLabels .t-Tabs-link { display: block; }
+
+/* ========================================================================== Modifier: Large Icons --- Stretch tabs to fit in horizontal space ========================================================================== */
+.t-Tabs--largeIcons .t-Icon { font-size: 2.8rem; }
+
+/* ========================================================================== Modifier: Show Inline Icons --- Display Inline Icons ========================================================================== */
+.t-Tabs--inlineIcons .t-Icon { display: inline-block; }
+
+/* ========================================================================== Modifier: Icons Only --- Stretch tabs to fit in horizontal space ========================================================================== */
+.t-Tabs--iconsOnly .t-Icon { display: inline-block; }
+
+.t-Tabs--iconsOnly .t-Tabs-label { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* ========================================================================== Modifier: Large Padding --- Larger Padding ========================================================================== */
+.t-Tabs--large .t-Tabs-link { font-size: 1.4rem; padding: 16px 24px; }
+
+/* ========================================================================== Modifier: Large Padding --- Larger Padding ========================================================================== */
+.t-Tabs--small .t-Tabs-link { font-size: 1.1rem; padding: 8px; }
+
+/* ========================================================================== Tabs Region --- Use carousel as basis for creating region-based tabs ========================================================================== */
+.t-TabsRegion { overflow: hidden; }
+
+.t-TabsRegion > .t-TabsRegion-items > .a-Region-carouselItems > .a-Region-carouselItem { display: none; }
+
+.t-TabsRegion > .t-TabsRegion-items > .a-Region-carouselItems > .a-Region-carouselItem.apex-rds-element-selected { display: block; }
+
+.t-TabsRegion .a-Region-carouselItem { transition: all .5s ease; }
+
+.t-TabsRegion .apex-rds-button { display: none; }
+
+/* ========================================================================== Region Display Selector TODO: fix positioning of left / right hover slider when used in title bar ========================================================================== */
+.t-Body-title .apex-rds-container { margin: 0 8px; }
+
+.apex-rds li { display: inline-block; vertical-align: top; }
+
+.apex-rds a { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: top; text-align: center; display: inline-block; padding: 0 8px; font-size: 1.4rem; line-height: 1.6rem; }
+
+.apex-rds a:focus { outline: none; z-index: 110; position: relative; }
+
+.apex-rds a span { display: block; padding: 12px 0; }
+
+.apex-rds a:hover { text-decoration: none; }
+
+.apex-rds-item--hint a span { box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset; }
+
+.apex-rds-hover { transition: all .2s; display: none; }
+
+.apex-rds-hover a { width: 48px; height: 39px; float: left; position: relative; top: 0px; }
+
+.apex-rds-hover a span { margin: 12px; }
+
+.apex-rds-hover.left a { text-align: left; }
+
+.apex-rds-hover.left a span { margin-left: 8px; }
+
+.apex-rds-hover.right a { float: right; text-align: right; }
+
+.apex-rds-hover.right a span { margin-right: 8px; }
+
+.apex-rds-slider { height: 0px; width: 100%; position: absolute; }
+
+/* Marquee Page Region Display Selector ========================================================================== */
+.t-Body-info .apex-rds { padding-right: 40px; }
+
+.t-Body-info .apex-rds { padding: 0.8rem 0.8rem 0 0.8rem; }
+
+.t-Body-info .apex-rds-hover a { margin-top: 8px; }
+
+/* Vertical Region Display Selector ========================================================================== */
+.vertical-rds .apex-rds li, .t-Body-side .apex-rds li { display: block; }
+
+.vertical-rds .apex-rds a, .t-Body-side .apex-rds a { display: block; text-align: left; padding: 0; }
+
+.vertical-rds .apex-rds .apex-rds-selected span, .t-Body-side .apex-rds .apex-rds-selected span { box-shadow: 4px 0 0 currentColor inset; }
+
+.u-RTL .vertical-rds .apex-rds .apex-rds-selected span, .u-RTL .t-Body-side .apex-rds .apex-rds-selected span { box-shadow: -4px 0 0 currentColor inset; }
+
+.vertical-rds .apex-rds .apex-rds-item--hint a span, .t-Body-side .apex-rds .apex-rds-item--hint a span { box-shadow: none; }
+
+.vertical-rds .apex-rds .apex-rds-item span, .t-Body-side .apex-rds .apex-rds-item span { padding: 8px 12px; }

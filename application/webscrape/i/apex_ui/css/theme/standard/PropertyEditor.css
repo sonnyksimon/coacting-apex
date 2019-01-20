@@ -1,0 +1,38 @@
+/**  Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/* ========================================================================== Property Editor ========================================================================== */
+/* ========================================================================== Property Editor ========================================================================== */
+.a-PropertyEditor { background-color: #F0F0F0; }
+
+/* Property Editor Groups ========================================================================== */
+.a-PropertyEditor-propertyGroup, .a-PropertyEditor-propertyGroup-header, .a-PropertyEditor-propertyGroup-body { border-color: #E0E0E0; }
+
+.a-PropertyEditor-propertyGroup { background-color: #FFFFFF; transition: background-color 0.1s ease, box-shadow 0.1s ease; }
+
+.a-PropertyEditor-propertyGroup:focus-within { background-color: #f3faff; box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05) inset, 0 -1px 0 0 rgba(0, 0, 0, 0.05) inset; }
+
+.a-PropertyEditor-propertyGroup-header .a-Icon { background-color: rgba(0, 0, 0, 0.35); color: #FFF; opacity: 0.5; transition: .2s ease; border-radius: 2px; }
+
+.a-PropertyEditor-propertyGroup-header { padding: 12px 8px; }
+
+.a-PropertyEditor-propertyGroup-header:hover .a-Icon { opacity: 1; }
+
+.a-PropertyEditor-propertyGroup-title { color: #202020; }
+
+.a-PropertyEditor-propertyGroup-body .a-Property { border-color: #E0E0E0; }
+
+.a-PropertyEditor-propertyGroup-header.is-focused { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 0 1px #0572CE inset; outline: none; z-index: 100; position: relative; border-color: #0572CE; }
+
+.a-PropertyEditor-propertyGroup-header.is-focused .a-Icon { background-color: #0572CE; opacity: 1; }
+
+.a-PropertyEditor .a-PropertyEditor-propertyGroup:first-child { margin-top: 4px; }
+
+@media only screen and (max-width: 1024px) { .a-PropertyEditor-propertyGroup-header { padding-top: 4px; padding-bottom: 4px; } }
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) { .a-PropertyEditor-propertyGroup-header { padding-top: 6px; padding-bottom: 6px; } }
+
+@media only screen and (min-width: 1281px) and (max-width: 1679px) { .a-PropertyEditor-propertyGroup-header { padding-top: 8px; padding-bottom: 8px; } }

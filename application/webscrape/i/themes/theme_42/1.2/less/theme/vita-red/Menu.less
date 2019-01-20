@@ -1,0 +1,135 @@
+
+@import "_variables";
+
+.Menu(@l_Menu-BG, @l_Menu-Accent) {
+  .a-MenuBar-label {
+    color:  contrast(@l_Menu-BG, darken(@l_Menu-BG,   75%), lighten(@l_Menu-BG,   75%),  43%);
+    line-height: 20px;
+  }
+  .a-MenuBar-item > .a-Menu-subMenuCol {
+    display: inline-block;
+    padding: 8px 0;
+    vertical-align: top;
+    margin-right: 8px;
+    margin-left: -4px;
+  }
+
+
+  .a-MenuBar-item {
+    background: @l_Menu-BG;
+    border-right: 1px solid contrast(@l_Menu-BG, darken(@l_Menu-BG,   10%), lighten(@l_Menu-BG,   10%),  43%);
+    border-left: 1px solid contrast(@l_Menu-BG, darken(@l_Menu-BG,   10%), lighten(@l_Menu-BG,   10%),  43%);
+    margin-left: -1px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .a-MenuBar-item.a-Menu--split > .a-Menu-subMenuCol,
+  .a-MenuBar.u-RTL .a-MenuBar-item.a-Menu--split > .a-Menu-subMenuCol {
+    border: none;
+    margin-right: 0;
+    padding: 8px 8px 8px 4px;
+  }
+  .a-MenuBar-item.is-disabled {
+    .a-MenuBar-label {
+        @color:  contrast(@l_Menu-BG, darken(@l_Menu-BG,   75%), lighten(@l_Menu-BG,   75%),  43%);
+        color: fade(@color, 50%);
+    }
+  }
+
+  .a-MenuBar-item:hover {
+    background-color: contrast(@l_Menu-BG, darken(@l_Menu-BG,   10%), lighten(@l_Menu-BG,   10%),  43%);
+  }
+  .a-MenuBar-item.is-expanded {
+    background-color: contrast(@l_Menu-BG, darken(@l_Menu-BG,   10%), lighten(@l_Menu-BG,   10%),  43%);
+  }
+
+  /* ==========================================================================
+     Menu Badge
+     ========================================================================== */
+
+  .t-Menu-badge {
+    display: inline-block;
+    border-radius: 2px;
+    padding: 0 6px;
+    font-size: 11px;
+    font-weight: normal;
+    vertical-align: top;
+    background-color: rgba(0,0,0,.25);
+    .a-Menu-labelContainer & {
+      line-height: 16px;
+      margin-left: 4px;
+      margin-top: 8px;
+    }
+  }
+
+  /* ==========================================================================
+     Menu
+     ========================================================================== */
+  .a-Menu-content {
+    border-radius: 2px;
+  }
+
+
+  @fontColor: contrast(@l_Menu-Accent, darken(@l_Menu-Accent,   75%), lighten(@l_Menu-Accent,   75%),  43%);
+  .a-Menu .a-Menu-item {
+    color: @fontColor;
+  }
+  .a-Menu-hSeparator {
+    border-color: rgba(0,0,0,.15);
+  }
+  .a-Menu--current {
+    background-color: contrast(@l_Menu-BG, darken(@l_Menu-BG,   20%), lighten(@l_Menu-BG,   20%),  43%);
+  }
+
+  .a-Menu .a-Menu-item.is-disabled.is-focused {
+    background-color: @l_Menu-Accent;
+    &>.a-Menu-inner .a-Menu-subMenuCol {
+      color: fade(contrast(@l_Menu-Accent, desaturate(darken(@l_Menu-Accent,  75%), 100%), desaturate(lighten(@l_Menu-Accent,  75%), 50%)), 100%);
+    }
+    &>.a-Menu-inner .a-Menu-accel {
+      color: fade(contrast(@l_Menu-Accent, desaturate(darken(@l_Menu-Accent,  50%), 100%), desaturate(lighten(@l_Menu-Accent,  50%), 50%)), 100%);
+    }
+  }
+
+  .a-Menu .a-Menu-item.is-focused, 
+  .a-Menu .a-Menu-item.is-expanded {
+    background-color: @l_Menu-BG;
+    color: contrast(@l_Menu-BG, darken(@l_Menu-BG,   75%), lighten(@l_Menu-BG,   75%),  43%);
+    &>.a-Menu-inner .a-Menu-statusCol,
+    &>.a-Menu-inner .a-Menu-subMenuCol,
+    &>.a-Menu-inner .a-Menu-accel {
+      color: contrast(@l_Menu-BG, darken(@l_Menu-BG,   75%), lighten(@l_Menu-BG,   75%),  43%);
+    }
+  }
+
+  .a-Menu {
+    .a-Menu-accel {
+      color: fade(@fontColor, 75%);
+    }
+  }
+
+  .a-Menu-content {
+    background-color: fadeout(@l_Menu-Accent, 5%);
+    border-color: contrast(@l_Menu-Accent, darken(@l_Menu-Accent,   10%), lighten(@l_Menu-Accent,   10%),  43%);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  }
+}
+
+.Menu(@g_Accent-BG, @g_Accent-OG);
+
+.a-MenuBar {
+  background-color: transparent;
+}
+.t-Header-nav-list,
+.t-Header .a-MenuBar {
+  background-color: @g_Accent-BG;
+}
+
+// .t-Body {
+//   .Menu(darken(@g_Body-BG, 5%), @g_Accent-OG);
+// }
+
+.t-Region {
+  .Menu(darken(@g_Region-BG, 5%), @g_Region-Header-BG);
+}

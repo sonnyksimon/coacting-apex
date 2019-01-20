@@ -1,0 +1,138 @@
+/** Import Compass */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/******************************************************************************
+
+File Name:    Form.scss
+Purpose:      Base form styles for all apex applications.
+              Extended in 5.1 to provide default styling for generic form components.
+
+******************************************************************************/
+.apex-tabular-form-error { border-color: #E92020; }
+
+.apex-tabular-highlight { border-color: #ffcc00; }
+
+/* ========================================================================== Form Containers ========================================================================== */
+.u-Form * { box-sizing: border-box; }
+
+/** Field Container */
+.u-Form-fieldContainer { position: relative; display: flex; clear: both; }
+
+.u-Form-fieldContainer.is-focused { outline: 1px dotted; }
+
+/** Label and Input Containers */
+.u-Form-labelContainer, .u-Form-inputContainer { padding: 4px 8px; min-height: 32px; outline: none; line-height: 24px; }
+
+.u-Form-labelContainer { width: 30%; flex-shrink: 0; }
+
+.u-Form-inputContainer { flex: 1 0 auto; flex-shrink: 1; overflow: hidden; }
+
+.u-Form-inputContainer input { /** Placeholder Styles */ }
+
+.u-Form-inputContainer input::-webkit-input-placeholder { color: rgba(0, 0, 0, 0.55); text-transform: lowercase; }
+
+.u-Form-inputContainer input::-moz-placeholder { opacity: .55; text-transform: lowercase; color: #000; }
+
+.u-Form-inputContainer input:-ms-input-placeholder { opacity: .55; text-transform: lowercase; color: #000; }
+
+/** Label */
+.u-Form-label { color: #404040; padding: 4px 0; line-height: 16px; display: inline-block; vertical-align: top; font-size: 12px; }
+
+/** Help Buttons */
+.u-Form-labelContainer .a-Button--helpButton { padding: 4px; margin-left: 4px; }
+
+/** Inputs and Items */
+.u-Form-inputContainer input, .u-Form-inputContainer select { height: 24px; }
+
+.u-Form-inputContainer input, .u-Form-inputContainer select, .u-Form-inputContainer textarea { border: 1px solid #D0D0D0; display: inline-block; max-width: 100%; border-radius: 2px; }
+
+/* ========================================================================== Errors and Other States ========================================================================== */
+.t-Form-error { color: red; }
+
+/* ========================================================================== Form Modifiers ========================================================================== */
+/** Labels Above */
+.u-Form--labelsAbove .u-Form-fieldContainer { flex-direction: column; }
+
+.u-Form--labelsAbove .u-Form-labelContainer { width: auto; padding-bottom: 0; }
+
+.u-Form--labelsAbove .u-Form-inputContainer { padding-top: 0; }
+
+/** Labels Above */
+.u-Form--stretchInputs .u-Form-labelContainer { width: auto; }
+
+.u-Form--stretchInputs .u-Form-inputContainer input:not([type=checkbox]):not([type=radio]), .u-Form--stretchInputs .u-Form-inputContainer select, .u-Form--stretchInputs .u-Form-inputContainer textarea { width: 100%; }
+
+/* Labels Above ========================================================================== */
+.u-Form--labelsAbove .u-Form-fieldContainer { flex-direction: column; }
+
+.u-Form--labelsAbove .u-Form-inputContainer { width: auto; }
+
+.u-Form--labelsAbove .u-Form-labelContainer { min-height: 0; padding: 8px 8px 0 8px; }
+
+.u-Form--labelsAbove .u-Form-label { padding: 0; line-height: 24px; }
+
+/* Stretch Inputs ========================================================================== */
+.u-Form-stretchInputs .u-Form-inputContainer .a-GV-columnItem select, .u-Form-stretchInputs .u-Form-inputContainer .a-GV-columnItem input, .u-Form-stretchInputs .u-Form-inputContainer .a-GV-columnItem textarea { width: 100%; }
+
+/* Item Icon Support ========================================================================== */
+.apex-item-has-icon:disabled + .apex-item-icon { opacity: .5; }
+
+.apex-item-icon { float: left; padding: 4px; }
+
+.u-RTL .apex-item-icon { float: right; }
+
+/* Percent Chart Item ========================================================================== */
+.apex-item-pct-graph { min-width: 150px; }
+
+/* APEX Quick Picks Wrapper ========================================================================== */
+.apex-quick-picks { display: block; }
+
+/* Item Grid Layout (for Checkboxes + Radios) ========================================================================== */
+.apex-item-grid { display: table; }
+
+.apex-item-grid-row { display: table-row; }
+
+.apex-item-grid-row .apex-item-option { display: table-cell; vertical-align: top; }
+
+/* Popup LOV ========================================================================== */
+.apex-item-group--popup-lov { display: inline-flex; vertical-align: top; }
+
+.apex-item-group--popup-lov .apex-item-popup-lov { flex-grow: 1; width: 100%; }
+
+.apex-item-group--popup-lov .a-Button--popupLOV { flex-shrink: 0; }
+
+/* Generic Selector (u-selector) ========================================================================== */
+.u-selector { display: inline-block; vertical-align: top; position: relative; width: 16px; height: 16px; border: 1px solid #C0C0C0; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset; background-color: #FFF; padding: 1px; border-radius: 2px; cursor: pointer; font-family: "apex-5-icon-font" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.u-selector:before { font-size: 12px; width: 12px; height: 12px; content: "\e007"; display: block; color: #404040; position: absolute; opacity: 0; transition: opacity .2s; }
+
+.u-selector:hover:before { opacity: .15; }
+
+.u-selector:active { background-color: #E0E0E0; }
+
+.u-selector:active:before { opacity: .75; }
+
+.u-selector:focus { outline: none; border-color: #0572CE; }
+
+.u-selector:focus:before { opacity: .15; }
+
+.u-selector.is-selected:before { opacity: 1; }
+
+.u-selector.is-mixed:before { opacity: 1; content: ''; width: 8px; height: 1px; background-color: rgba(0, 0, 0, 0.45); margin: 6px 2px; }
+
+.u-selector--single { border-radius: 24px; }
+
+.u-selector--single:before { content: ''; background-color: rgba(0, 0, 0, 0.65); border-radius: 24px; width: 8px; height: 8px; margin: 2px; }
+
+/* Text Area Counter ========================================================================== */
+.apex-item-textarea-counter { font-size: 10px; line-height: 1.2; }
+
+/* Shuttle Min Height ========================================================================== */
+.apex-item-group--shuttle .apex-item-select { min-height: 140px; background-image: none; }
+
+/* JET Auto Complete JET sets a max-width and min-width for the form item container preventing the size property from adjusting the width of the field. ========================================================================== */
+.apex-item-group--auto-complete .oj-form-control { max-width: none; min-width: 0; }

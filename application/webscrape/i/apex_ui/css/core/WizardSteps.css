@@ -1,0 +1,208 @@
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/* ========================================================================== Wizard Container ========================================================================== */
+.a-Wizard-buttons { vertical-align: middle; white-space: nowrap; }
+
+.a-Wizard-buttons--center { text-align: center; }
+
+.a-Wizard-regionBody p { color: #707070; font-size: 14px; line-height: 20px; }
+
+/* ========================================================================== Wizard Steps ========================================================================== */
+.a-WizardSteps { margin: 0; padding: 0; list-style: none; display: table; table-layout: fixed; width: 100%; }
+
+.a-WizardSteps--displayCurrentLabelOnly .a-WizardSteps-step:not(.is-active) .a-WizardSteps-label { border: 0; clip: rect(0 0 0 0); height: 1px; overflow: hidden; padding: 0; width: 1px; }
+
+.a-WizardSteps-step { display: table-cell; vertical-align: top; }
+
+.a-WizardSteps-wrap { float: left; width: 100%; height: 100%; position: relative; }
+
+.a-WizardSteps-wrap:after { content: ''; position: absolute; width: 100%; top: 16px; height: 2px; margin-top: -1px; background-color: #F0F0F0; }
+
+.a-WizardSteps-step:first-child .a-WizardSteps-wrap:after { left: 50%; right: 0; width: 50%; }
+
+.a-WizardSteps-step:last-child .a-WizardSteps-wrap:after { right: 50%; left: 0; width: 50%; }
+
+.a-WizardSteps-step .a-WizardSteps-marker { display: block; text-align: center; width: 12px; height: 12px; margin-top: -6px; margin-left: -6px; top: 16px; left: 50%; position: absolute; z-index: 1; border: none; padding: 0; border-radius: 100%; cursor: default; transition: -webkit-transform .4s ease-in-out; transition: transform .4s ease-in-out; transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out; background-color: #E8E8E8; }
+
+.a-WizardSteps-step .a-WizardSteps-marker .a-Icon { display: none; }
+
+.a-WizardSteps-step.is-complete .a-WizardSteps-marker { display: block; text-align: center; width: 20px; height: 20px; margin-top: -10px; margin-left: -10px; top: 16px; left: 50%; position: absolute; z-index: 1; padding: 2px; border-radius: 100%; background-color: #24CB7F; color: #FFF; }
+
+.a-WizardSteps-step.is-complete .a-WizardSteps-marker .a-Icon { display: block; }
+
+.a-WizardSteps-step.is-active .a-WizardSteps-marker { display: block; text-align: center; width: 28px; height: 28px; margin-top: -14px; margin-left: -14px; padding: 8px; top: 16px; left: 50%; position: absolute; z-index: 1; padding: 8px; border-radius: 100%; background-color: #0572CE; color: #FFF; }
+
+.a-WizardSteps-step.is-active .a-Icon { -webkit-animation: u-animate-spin 1s 1 linear; animation: u-animate-spin 1s 1 linear; }
+
+.a-WizardSteps-label { display: block; text-align: center; margin-top: 32px; padding: 4px 8px 0 8px; line-height: 18px; font-size: 12px; color: #707070; cursor: default; overflow: hidden; text-overflow: ellipsis; }
+
+.a-WizardSteps-labelState { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+.a-WizardSteps-step.is-active .a-WizardSteps-label { font-weight: bold; color: #404040; }
+
+/* ========================================================================== Request Workspace Wizard ========================================================================== */
+@-webkit-keyframes fadeIn { from { -webkit-transform: translateY(24px) scale(0.75);
+    opacity: .25; }
+  to { -webkit-transform: translateY(0) scale(1);
+    opacity: 1; } }
+
+@keyframes fadeIn { from { -webkit-transform: translateY(24px) scale(0.75); transform: translateY(24px) scale(0.75);
+    opacity: .25; }
+  to { -webkit-transform: translateY(0) scale(1); transform: translateY(0) scale(1);
+    opacity: 1; } }
+
+.a-Page--wizard .u-Layout { background-color: #FFF; }
+
+.a-Wizard { display: flex; flex-grow: 1; flex-direction: column; background-color: #FFF; background-clip: border-box; width: 1024px; margin: 0 auto; }
+
+.a-Wizard-controls { padding: 24px 32px; }
+
+.a-Wizard-controls:empty { display: none; }
+
+.a-Wizard-title { font-weight: 500; font-size: 32px; line-height: 1; margin: 48px 0 16px 0; color: #000; text-align: center; }
+
+.a-Wizard-buttons { background-color: rgba(255, 255, 255, 0.95); padding: 0; vertical-align: middle; white-space: nowrap; }
+
+.a-Wizard-buttons:empty { display: none; }
+
+.a-Wizard-body { padding: 0 8px; flex-grow: 1; }
+
+.a-Page--createApp .a-Wizard-body { padding: 0 32px; }
+
+.a-Wizard-warning { background-color: #FFF8DF; border-radius: 2px; padding: 12px; }
+
+.a-Wizard-warning .a-Wizard-text { margin-bottom: 0; }
+
+.a-Wizard-warning .a-Wizard-icon { color: #FDB309; }
+
+.a-Wizard-verification { background-color: #FFF8DF; border-radius: 2px; padding: 12px; }
+
+.a-Wizard-verification p { font-size: 14px; line-height: 20px; color: #404040; }
+
+.a-Wizard-verification .htmldbStandard3 { text-align: center; width: 100%; border: 1px solid #E0E0E0; margin-bottom: 8px; }
+
+.a-Wizard-verification table.htmldbMinReport td, .a-Wizard-verification table.htmldbStandard3 td { border-bottom: none; }
+
+.a-Wizard-success { padding: 12px; margin: 36px 0 24px 0; }
+
+.a-Wizard-success .a-Wizard-text { margin-bottom: 0; }
+
+.a-Wizard-success .a-Wizard-icon { color: #FFF; width: 80px; height: 80px; padding: 8px; margin: 0 auto 32px auto; border-radius: 100%; background-color: #3ADD69; }
+
+.a-Wizard-success .a-Wizard-icon .a-Icon { width: 64px; height: 64px; }
+
+.a-Wizard-success .a-Wizard-icon .a-Icon:before { font-size: 64px; }
+
+.a-Wizard-agreement { font-size: 12px; vertical-align: top; line-height: 16px; padding: 8px; border: 1px solid #E0E0E0; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) inset; border-radius: 2px; color: #404040; background-color: #FAFAFA; font-family: Menlo, Consolas, Courier, monospace; max-height: 180px; overflow: auto; margin-bottom: 16px; }
+
+.a-Wizard-icon { text-align: center; margin-bottom: 12px; }
+
+.a-Wizard-subTitle { font-size: 16px; color: #404040; line-height: 24px; font-weight: normal; margin: 16px 0 8px 0; }
+
+.a-Wizard-text { display: block; font-size: 14px; line-height: 20px; color: #707070; margin-bottom: 16px; }
+
+p.a-Wizard-text--pre { margin-bottom: 24px; }
+
+p.a-Wizard-text--post { margin-top: 24px; margin-bottom: 24px; }
+
+.a-Wizard-regionHeader, .a-Wizard-regionFooter { padding: 0 8px; font-size: 14px; line-height: 20px; color: #404040; }
+
+.a-Wizard-regionHeader:empty, .a-Wizard-regionFooter:empty { display: none; }
+
+.a-Wizard-regionHeader p, .a-Wizard-regionFooter p { font-size: inherit; }
+
+.a-Wizard-regionHeader p:last-child, .a-Wizard-regionFooter p:last-child { margin-bottom: 0; }
+
+.a-Wizard-regionHeader { padding: 12px; }
+
+p.a-Wizard-subHeading { font-size: 16px; line-height: 1.5; text-align: center; font-weight: 500; }
+
+.a-Wizard-regionFooter { padding: 12px; }
+
+.a-Wizard--requestWorkspace { width: 720px; background-color: #fff; }
+
+/* ========================================================================== Modifier: Slim Wizard Steps ========================================================================== */
+.a-WizardSteps--slim { padding: 0; margin: 0; }
+
+.a-WizardSteps--slim .a-WizardSteps-step.is-inactive .a-WizardSteps-label { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+.a-WizardSteps--slim .a-WizardSteps-label { padding: 0 0 8px 0; }
+
+.a-WizardSteps--slim .a-WizardSteps-step.is-active .a-WizardSteps-label { display: block; }
+
+.a-WizardSteps--slim .a-WizardSteps-wrap:after { background-color: #F8F8F8; }
+
+.a-WizardSteps--slim .a-WizardSteps-step .a-WizardSteps-marker { width: 8px; height: 8px; margin-top: -4px; margin-left: -4px; top: 16px; left: 50%; }
+
+.a-WizardSteps--slim .a-WizardSteps-step.is-complete .a-WizardSteps-marker { width: 16px; height: 16px; margin-top: -8px; margin-left: -8px; top: 16px; padding: 2px; }
+
+.a-WizardSteps--slim .a-WizardSteps-step.is-complete .a-WizardSteps-marker .a-Icon { width: 12px; height: 12px; line-height: 12px; }
+
+.a-WizardSteps--slim .a-WizardSteps-step.is-complete .a-WizardSteps-marker .a-Icon:before { font-size: 12px; }
+
+.a-WizardSteps--slim .a-WizardSteps-step.is-active .a-WizardSteps-marker { width: 20px; height: 20px; margin-top: -10px; margin-left: -10px; padding: 8px; top: 16px; padding: 8px; }
+
+.a-Wizard-controls, .a-Wizard-body, .a-Wizard-buttons, .a-Wizard-title { transition: padding .2s, margin .2s, font-size .2s; }
+
+/* Shame ========================================================================== */
+textarea#P448_EXCEL_DATA { min-height: calc(100vh - 660px); }
+
+/* Request Workspace Page Specific Styles */
+.a-Page--simpleWizard.a-Page--requestWorkspace { min-width: 320px; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Header { background-color: #fff; box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0 0, rgba(0, 0, 0, 0.05) 0 6px 12px; text-align: center; position: relative; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Header-logo { padding: 14px 16px; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Header-apexLogo { background-size: contain; width: 156px; height: 24px; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .u-Layout { background-color: transparent; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Wizard--requestWorkspace { max-width: 720px; width: 100%; flex-grow: 0; box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 1px, rgba(0, 0, 0, 0.05) 0 12px 24px; border-radius: 2px; margin-top: 16px; margin-bottom: 16px; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Wizard-body { padding-left: 32px; padding-right: 32px; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Wizard-controls:last-child { border-top: 1px solid rgba(0, 0, 0, 0.05); margin-top: 20px; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Wizard-success { margin-top: 24px; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Wizard-subTitle { font-size: 20px; line-height: 28px; max-width: 480px; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Wizard-successCustomMessage { color: rgba(0, 0, 0, 0.5); margin: 16px 0 8px 0; font-size: 14px; line-height: 20px; max-width: 480px; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-fieldContainer { display: flex; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-fieldContainer.a-Form-fieldContainer--stacked { flex-direction: column; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-fieldContainer.a-Form-fieldContainer--stacked .a-Form-labelContainer { display: flex; align-items: center; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-fieldContainer:not(.a-Form-fieldContainer--stacked) .a-Form-labelContainer { width: 20%; padding-top: 14px; padding-bottom: 14px; flex-shrink: 0; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-fieldContainer:not(.a-Form-fieldContainer--stacked) .a-Form-labelContainer .a-Form-required:first-child { display: inline; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-labelContainer { float: none; padding-bottom: 8px; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-labelContainer .a-Form-required:first-child { display: inline; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-labelContainer.a-Form-labelContainer--visuallyhidden + .a-Form-inputContainer { width: 100%; }
+
+.a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-label { display: inline; }
+
+@media only screen and (max-width: 800px) { .a-WizardSteps { margin: 6px 0; } }
+
+@media only screen and (min-width: 1281px) { .a-WizardSteps-step .a-WizardSteps-marker { -webkit-transform: scale(1.2); transform: scale(1.2); } }
+
+@media only screen and (max-width: 1024px) { .a-Wizard { width: 100%; } .a-Wizard-controls { padding: 12px 16px; }
+  .a-Wizard-body { padding: 0 48px; }
+  .a-Wizard-buttons { padding: 0; }
+  .a-Wizard-title { margin: 32px 0 8px 0; font-size: 28px; } .a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-fieldContainer:not(.a-Form-fieldContainer--stacked) .a-Form-labelContainer { padding-top: 6px; padding-bottom: 6px; } .a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-fieldContainer { margin-bottom: 8px; flex-direction: column; }
+  .a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-labelContainer, .a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-inputContainer, .a-Page--simpleWizard.a-Page--requestWorkspace .display_only { float: none; width: 100%; text-align: left; padding: 0; }
+  .a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-labelContainer { display: flex; align-items: center; }
+  .a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-labelContainer .a-Form-label { flex-order: 1; }
+  .a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-labelContainer .a-Form-required { order: 2; }
+  .a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-inputContainer { display: flex; flex-wrap: wrap; }
+  .a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-error, .a-Page--simpleWizard.a-Page--requestWorkspace .a-Form-postTextInlineHelp { width: 100%; }
+  .a-Page--simpleWizard.a-Page--requestWorkspace .apex-item-textarea, .a-Page--simpleWizard.a-Page--requestWorkspace .apex-item-text, .a-Page--simpleWizard.a-Page--requestWorkspace .apex-item-select { width: 100%; } }

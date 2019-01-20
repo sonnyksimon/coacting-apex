@@ -1,0 +1,61 @@
+
+@import "_variables";
+/* ==========================================================================
+  .t-Report
+  ---
+  Standard Report (Bordered)
+  ========================================================================== */
+
+@reportBg: #FFF;
+
+.t-Report-cell {
+  border-left: 1px solid contrast(@reportBg, darken(@reportBg,   10%), lighten(@reportBg,   10%),  43%);
+  border-top: 1px solid contrast(@reportBg, darken(@reportBg,   10%), lighten(@reportBg,   10%),  43%);
+//  box-shadow: 0 -1px rgba(0, 0, 0, 0.1) inset
+}
+.t-Report-colHead {
+  background-color: #F2F4F7;
+  border-left: 1px solid contrast(#F2F4F7, darken(#F2F4F7,   10%), lighten(#F2F4F7,   10%),  43%);
+  border-top: 1px solid contrast(#F2F4F7, darken(#F2F4F7,   10%), lighten(#F2F4F7,   10%),  43%);
+}
+.t-Report-report tr .t-Report-cell:last-child {
+  border-right: 1px solid contrast(@reportBg, darken(@reportBg,   10%), lighten(@reportBg,   10%),  43%);
+}
+.t-Report-report tr .t-Report-colHead:last-child {
+  border-right: 1px solid contrast(#F2F4F7, darken(#F2F4F7,   10%), lighten(#F2F4F7,   10%),  43%);
+}
+.t-Report-report tr:last-child .t-Report-cell {
+  border-bottom: 1px solid contrast(@reportBg, darken(@reportBg,   10%), lighten(@reportBg,   10%),  43%);
+}
+
+.t-Report .is-stuck .t-Report-colHead {
+  background-color: #F2F4F7;
+  border-bottom: 1px solid contrast(#F2F4F7, darken(#F2F4F7,   10%), lighten(#F2F4F7,   10%),  43%);
+}
+
+
+
+
+.t-Report--rowHighlight {
+  .t-Report-report tr:hover .t-Report-cell,
+  .t-Report-report tr:nth-child(odd):hover .t-Report-cell {
+//    background-color: contrast(@reportBg, darken(@reportBg,   2%), lighten(@reportBg,   2%),  43%) !important;
+  }
+}
+
+.t-Report--staticRowColors {
+  .t-Report-report tr:nth-child(odd) .t-Report-cell {
+    background-color: transparent;
+  }
+}
+
+/* ==========================================================================
+   .t-Report--altRowsDefault
+   ---
+   Alternate Report Rows
+   ========================================================================== */
+.t-Report--altRowsDefault {
+  .t-Report-report tr:nth-child(odd) .t-Report-cell {
+    background-color: contrast(@reportBg, darken(@reportBg,   1%), lighten(@reportBg,   1%),  43%);
+  }
+}

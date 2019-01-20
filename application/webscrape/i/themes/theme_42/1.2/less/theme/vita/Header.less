@@ -1,0 +1,61 @@
+/**
+ * Import Compass and Theme Variables
+ */
+
+@import "_variables";
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+
+.t-Header-branding {
+  background-color: @g_Header-BG;
+}
+
+.t-Header-logo,
+.t-Header .t-Button--header.is-active,
+.t-Header .t-Button--header {
+  color: @g_Header-FG;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.t-Header-logo-link {
+  color: inherit;
+  // border-radius: 2px;
+  &:focus,
+  &:active:focus {
+    outline: none;
+    box-shadow:
+    0 0 0 1px lighten(@g_Focus,15%) inset;
+  }
+}
+
+.t-Header-nav {
+  background-color: @g_Nav-BG;
+}
+
+.t-Header {
+  .a-MenuBar-item {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .a-MenuBar-item > .a-Menu-subMenuCol {
+    .a-Icon {
+      border-radius: 100%;
+    }
+  }
+  .a-Menu.a-Menu--top > .a-Menu-content {
+    border-top-width: 0;
+  }
+  .a-Menu-content {
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+  }
+}
+.t-Header-nav-list {
+  background-color: transparent;
+}
+
+

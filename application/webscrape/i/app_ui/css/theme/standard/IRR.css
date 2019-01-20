@@ -1,0 +1,29 @@
+/**  Import Compass and Theme Variables */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/******************************************************************************
+Interactive Report
+******************************************************************************/
+.a-IRR { border-color: #E0E0E0; background-color: #FFF; }
+
+.a-IRR-toolbar { border-color: #E0E0E0; background-color: #F0F0F0; }
+
+/* ========================================================================== Search Field + Button ========================================================================== */
+.a-IRR-search-field { border-top: 1px solid #E0E0E0; border-bottom: 1px solid #E0E0E0; border-left-width: 0; border-right-width: 0; }
+
+.a-IRR-search-field:focus { border-color: #4696fc; box-shadow: 0 0 0 1px #4696fc inset, -2px 0 0 #4696fc inset, 2px 0 0 #4696fc inset, 0 0 2px 0 rgba(70, 150, 252, 0.5); }
+
+.a-IRR-button--search { vertical-align: top; }
+
+/* ========================================================================== Select Lists (Rows and Saved Reports) ========================================================================== */
+.a-IRR-selectList { border-color: #E0E0E0; }
+
+.a-IRR-selectList:focus { border-color: #4696fc; box-shadow: 0 0 0 1px #4696fc, 0 0 2px 0 rgba(70, 150, 252, 0.5); }

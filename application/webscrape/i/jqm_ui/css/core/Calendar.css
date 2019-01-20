@@ -1,0 +1,69 @@
+/** Import Compass */
+/* ========================================================================== Calendar Container ========================================================================== */
+/* Calendar Wrapper ========================================================================== */
+.m-Calendar { font-family: 'Helvetica Neue', Helvetica, sans-serif; -webkit-font-smoothing: antialiased; border: 1px solid #E8E8E8; border-radius: 2px; }
+
+/** Modifier: Yearly Calenadr Used for year-view */
+.m-Calendar--year { overflow: hidden; }
+
+.m-Calendar-monthContainer { display: block; float: left; width: 33.333%; padding: 8px 16px; }
+.m-Calendar-monthContainer:nth-child(3n+1) { clear: both; }
+@media only screen and (max-width: 400px) { .m-Calendar-monthContainer:nth-child(3n+1) { clear: none; } }
+@media only screen and (max-width: 400px) { .m-Calendar-monthContainer:nth-child(2n+1) { clear: both; } }
+@media only screen and (max-width: 400px) { .m-Calendar-monthContainer { width: 50%; } }
+
+.m-Calendar-monthTitle { font-size: 16px; line-height: 1; color: #2286C8; margin: 0 0 4px 8px; font-weight: normal; font-weight: 300; }
+
+.m-Calendar-month { width: 100%; display: table; table-layout: fixed; text-align: center; border-collapse: collapse; border-spacing: 0; }
+
+/* Month Calendar in Year View ========================================================================== */
+.m-Calendar--year .m-Calendar-month { font-size: 8px; }
+.m-Calendar--year .m-Calendar-dayOfWeek { font-weight: normal; color: #707070; line-height: 12px; text-transform: uppercase; font-weight: 300; }
+.m-Calendar--year .m-Calendar-date { display: inline-block; width: 16px; height: 16px; font-weight: normal; }
+.m-Calendar--year .m-Calendar-day { color: #000000; line-height: 16px; }
+.m-Calendar--year .m-Calendar-day.has-events .m-Calendar-date { border-radius: 100%; background-color: #E8E8E8; opacity: 1; }
+.m-Calendar--year .m-Calendar-day.is-today .m-Calendar-date { border-radius: 100%; background-color: #2286C8; color: #FFF; }
+.m-Calendar--year .m-Calendar-day.is-weekend { opacity: .5; }
+
+/* Month Calendar ========================================================================== */
+.m-Calendar--month .m-Calendar-month { font-size: 12px; }
+.m-Calendar--month .m-Calendar-dayOfWeek { font-weight: normal; font-weight: 300; text-transform: uppercase; color: #707070; line-height: 20px; font-size: 12px; }
+.m-Calendar--month .m-Calendar-date { display: inline-block; width: 20px; height: 20px; line-height: 20px; font-weight: normal; }
+.m-Calendar--month .m-Calendar-day { height: 40px; vertical-align: top; border-top: 1px solid #F0F0F0; padding: 6px 0; color: #404040; }
+.m-Calendar--month .m-Calendar-day.has-events { position: relative; }
+.m-Calendar--month .m-Calendar-day.has-events:after { content: ''; position: absolute; left: 50%; margin-left: -2px; display: block; width: 4px; height: 4px; margin-top: 2px; background-color: #3f9fde; border-radius: 100%; }
+.m-Calendar--month .m-Calendar-day.is-today .m-Calendar-date { border-radius: 100%; background-color: #2286C8; color: #FFF; font-weight: bold; opacity: 1; text-shadow: none; }
+.m-Calendar--month .m-Calendar-day.is-weekend { background-color: #F8F8F8; }
+.m-Calendar--month .m-Calendar-day.is-weekend .m-Calendar-date { opacity: .5; }
+.m-Calendar--month .m-Calendar-day.is-null { background-color: #FCFCFC; }
+.m-Calendar--month .m-Calendar-day.is-null .m-Calendar-date { opacity: .25; }
+.m-Calendar--month .m-Calendar-day.is-active { background-color: #EEF6FC; }
+
+/* Calendar Navigation ========================================================================== */
+.m-Calendar-nav { margin: 0; padding: 0; list-style: none; display: table; table-layout: fixed; width: 100%; }
+
+.m-Calendar-nav-item { display: table-cell; }
+.m-Calendar-nav-item.is-active .m-Calendar-nav-link { box-shadow: none; background-color: #FFF; }
+
+.m-Calendar-nav-item:last-child .m-Calendar-nav-link { border-right-width: 0; }
+
+.m-Calendar-nav-link { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowap; color: #404040; padding: 0; font-size: 14px; line-height: 32px; text-align: center; border-right: 1px solid #E8E8E8; text-decoration: none; box-shadow: 0 -1px 0 #E8E8E8 inset; background-color: #F0F0F0; }
+.m-Calendar-nav-link:hover { background-color: #F8F8F8; }
+
+.m-Calendar-navBar { padding: 8px 48px; text-align: center; position: relative; }
+
+.m-Calendar-button { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; /* 1 */ -webkit-appearance: none; /* 2 */ background: transparent; border: 1px solid; color: inherit; /* 3 */ cursor: pointer; display: inline-block; font: inherit; /* 4 */ line-height: normal; /* 5 */ margin: 0; padding: 0; position: relative; text-align: center; text-decoration: none; -moz-user-select: none; -ms-user-select: none; -webkit-user-select: none; user-select: none; /* 6 */ vertical-align: top; white-space: nowrap; /* 7 */ border-radius: 2px; border: none; padding: 4px 12px; color: #707070; font-size: 12px; line-height: 24px; }
+
+.m-Calendar-button--prev, .m-Calendar-button--next { position: absolute; top: 0; margin: 8px; }
+
+.m-Calendar-button--prev { left: 0; }
+
+.m-Calendar-button--next { right: 0; }
+
+.m-Calendar-title { vertical-align: top; line-height: 32px; display: inline-block; color: #404040; }
+
+.m-Calendar-button--today { background-color: #FFF; box-shadow: 0 0 0 1px rgba(34, 134, 200, 0.5) inset; padding: 0px 8px; margin: 4px 0 4px 8px; color: #707070; font-size: 11px; color: #2286C8; }
+
+.m-Calendar-Data a.ui-link { color: #FFF; text-shadow: none; text-decoration: none; padding: 4px; display: block; text-align: left; }
+
+.m-Calendar .m-Calendar-Day-Holder .m-Calendar-Data, .m-Calendar .m-Calendar-Week-Holder .m-Calendar-Data { background-color: rgba(34, 134, 200, 0.95); border: none; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 0 0 1px rgba(255, 255, 255, 0.5); border-radius: 2px; }

@@ -1,0 +1,50 @@
+/** Import Compass */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/******************************************************************************
+
+File Name:    Grid.scss
+Purpose:      Very basic grid used in Interactive Grid components
+
+******************************************************************************/
+.apex-grid-container { overflow: hidden; *zoom: 1; }
+
+.apex-grid-container:before, .apex-grid-container:after { content: " "; display: table; }
+
+.apex-grid-container:after { clear: both; }
+
+.apex-row { overflow: hidden; *zoom: 1; }
+
+.apex-row:before, .apex-row:after { content: " "; display: table; }
+
+.apex-row:after { clear: both; }
+
+.apex-col { float: left; min-height: 1px; position: relative; }
+
+.apex-col-12 { width: 100%; }
+
+.apex-col-11 { width: 91.66666666666666%; }
+
+.apex-col-10 { width: 83.33333333333334%; }
+
+.apex-col-9 { width: 75%; }
+
+.apex-col-8 { width: 66.66666666666666%; }
+
+.apex-col-7 { width: 58.333333333333336%; }
+
+.apex-col-6 { width: 50%; }
+
+.apex-col-5 { width: 41.66666666666667%; }
+
+.apex-col-4 { width: 33.33333333333333%; }
+
+.apex-col-3 { width: 25%; }
+
+.apex-col-2 { width: 16.666666666666664%; }
+
+.apex-col-1 { width: 8.333333333333332%; }

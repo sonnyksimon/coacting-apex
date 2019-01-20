@@ -1,0 +1,123 @@
+/** Import Compass */
+.a-LinksList-link:before, .a-LinksList--report a:before { font-family: "apex-5-icon-font" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* ========================================================================== Links List ========================================================================== */
+.a-LinksList { margin: 0; padding: 0; list-style: none; line-height: 16px; }
+
+.a-LinksList-item { display: block; position: relative; margin-bottom: -1px; border-top: 1px solid; border-bottom: 1px solid; }
+
+.a-LinksList-item:last-child { margin-bottom: 0; border-bottom-width: 0; }
+
+.a-LinksList-item:first-child { border-top-width: 0; }
+
+.a-LinksList-item.has-arrow .a-LinksList-link:before { display: block; right: 8px; }
+
+.a-LinksList-item.has-arrow .a-LinksList-link:hover:before { color: rgba(255, 255, 255, 0.5); }
+
+.a-LinksList-item.is-external-link .a-LinksList-link:before { display: block; right: 12px; content: '\E04D'; }
+
+.a-LinksList-item.is-external-link .a-LinksList-link:hover:before { color: rgba(255, 255, 255, 0.5); -webkit-transform: none; transform: none; }
+
+.a-LinksList-badge { display: none; vertical-align: top; }
+
+.a-LinksList-label { display: inline-block; vertical-align: top; padding: 8px 12px; }
+
+.a-LinksList-icon { display: none; vertical-align: top; margin-right: -6px; min-width: 2.8rem; text-align: center; padding: 8px 0 8px 12px; transition: color .1s; }
+
+.a-LinksList-link, .a-LinksList--report a { display: block; position: relative; transition: background-color .1s, color .1s; }
+
+.a-LinksList-link:focus, .a-LinksList--report a:focus { outline: none; box-shadow: 0 0 0 1px #2580D4 inset; }
+
+.a-LinksList-link:hover, .a-LinksList--report a:hover { text-decoration: none; }
+
+.a-LinksList-link:before, .a-LinksList--report a:before { display: none; content: ''; position: absolute; right: 12px; width: 16px; height: 16px; font-size: 16px; content: '\e016'; color: rgba(0, 0, 0, 0.15); transition: color .1s, -webkit-transform .1s; transition: transform .1s, color .1s; transition: transform .1s, color .1s, -webkit-transform .1s; -webkit-transition: -webkit-transform .1s, color .1s; top: 8px; }
+
+.a-LinksList-item.is-current > a { font-weight: bold; }
+
+.a-LinksList--report a { padding: 8px 12px; }
+
+/* Languages ========================================================================== */
+.a-LinksList--lang .a-LinksList-item { border: none; margin: 0; display: inline; }
+
+.a-LinksList--lang .a-LinksList-item.is-active { font-weight: bold; }
+
+.a-LinksList--lang .a-LinksList-item:after { content: ' \b7 '; color: #A0A0A0; }
+
+.a-LinksList--lang .a-LinksList-item:last-child:after { display: none; }
+
+.a-LinksList--lang .a-LinksList-link { display: inline; transition: none; font-weight: inherit; white-space: nowrap; }
+
+.a-LinksList--lang .a-LinksList-link:hover { background-color: inherit; color: inherit; text-decoration: underline; }
+
+/* Sub-Lists ========================================================================== */
+.a-LinksList-item.is-expanded { background-color: #FCFCFC; background-image: linear-gradient(rgba(0, 0, 0, 0.015), transparent), linear-gradient(transparent, rgba(0, 0, 0, 0.015)); background-size: 100% 4px, 100% 4px; background-position: 0 0, 0 100%; background-repeat: no-repeat; }
+
+.a-LinksList-item.is-expanded .a-LinksList-list { display: block; }
+
+.a-LinksList-item.is-expanded .a-LinksList-link:hover:before { -webkit-transform: none; transform: none; color: #2580D4; }
+
+.a-LinksList-item.is-expanded .a-LinksList-link:before { content: '\f078'; display: block; color: rgba(0, 0, 0, 0.25); }
+
+.a-LinksList-list { display: none; padding: 0; }
+
+.a-LinksList-list .a-LinksList-item { padding-left: 24px; border: none; }
+
+.a-LinksList-list .a-LinksList-link { border-top: 1px solid #F0F0F0; }
+
+.a-LinksList-list .a-LinksList-link:before { display: none !important; }
+
+/** Modifier: Show Icons Show all Icons */
+.a-LinksList--showIcons .a-LinksList-icon { display: inline-block; }
+
+/** Modifier: Show Top Icons Only Only show icons for top level items */
+.a-LinksList--showTopIcons .a-LinksList-icon { display: inline-block; }
+
+.a-LinksList--showTopIcons .a-LinksList-list .a-LinksList-icon { display: none; }
+
+/** Modifier: Go To Arrow Show Go To Arrow on right */
+.a-LinksList--showArrow .a-LinksList-link { padding-right: 32px; }
+
+.a-LinksList--showArrow .a-LinksList-link:hover:before { -webkit-transform: translateX(8px); transform: translateX(8px); }
+
+.a-LinksList--showArrow .a-LinksList-link:before { display: block; }
+
+/** Modifier: No Wrap Disable Text Wrapping */
+.a-LinksList--nowrap.a-LinksList--report a { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.a-LinksList--nowrap .a-LinksList-item { white-space: nowrap; }
+
+.a-LinksList--nowrap .a-LinksList-icon { vertical-align: top; }
+
+.a-LinksList--nowrap .a-LinksList-label { max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/** Modifier: Show Badge Show Badge on Right */
+.a-LinksList--showBadge .a-LinksList-badge:empty { display: none; }
+
+.a-LinksList--showBadge .a-LinksList-label { padding-right: 48px; }
+
+.a-LinksList--showBadge.a-LinksList--showIcons .a-LinksList-label { padding-right: 64px; }
+
+.a-LinksList--showBadge .a-LinksList-badge { position: absolute; display: block; font-size: 12px; line-height: 20px; padding: 0 8px; margin: 6px 12px 6px 0; border-radius: 4px; height: 20px; min-width: 20px; text-align: center; right: 0; top: 0; transition: background-color .1s, color .1s; }
+
+.a-LinksList--showBadge.a-LinksList--showArrow .a-LinksList-badge, .a-LinksList--showBadge .a-LinksList-item.is-expanded > .a-LinksList-link .a-LinksList-badge { right: 24px; }
+
+/** Modifier: Bright Hover Show Bright */
+/** Modifier: No Borders Remove Borders */
+.a-LinksList--noBorders .a-LinksList-item { border-top-width: 0; border-bottom-width: 0; }
+
+/* ========================================================================== Icon-based Links List ========================================================================== */
+.a-LinksList--iconOnly { list-style: none; margin: 0; padding: 0; overflow: hidden; float: right; }
+
+.a-LinksList--iconOnly .a-LinksList-item { float: left; border: none; margin: 0; }
+
+.a-LinksList--iconOnly .a-LinksList-link { display: block; padding: 9px 12px; text-align: center; }
+
+.a-LinksList--iconOnly .a-LinksList-link:hover, .a-LinksList--iconOnly .a-LinksList-link:focus { text-decoration: none; }
+
+.a-LinksList--iconOnly .a-LinksList-icon, .a-LinksList--iconOnly .a-LinksList-label { line-height: 1.6rem; vertical-align: top; display: inline-block; }
+
+.a-LinksList--iconOnly .a-LinksList-label { font-size: 1.4rem; display: none; }
+
+.a-LinksList--iconOnly .a-LinksList-icon { text-align: center; padding: 2px; border-radius: 100%; width: 22px; min-width: 22px; height: 22px; margin: 0; }
+
+.a-LinksList--iconOnly .t-Icon { line-height: 1.6rem; }

@@ -1,0 +1,29 @@
+/**  Import Compass */
+/* ========================================================================== Legacy Classes ========================================================================== */
+.a-Error-details { margin: 1.6rem 0; overflow: hidden; border-radius: 2px; border: 1px solid rgba(0, 0, 0, 0.1); }
+
+.a-Error-details h2 { font-size: 1.4rem; line-height: 1.6rem; font-weight: normal; color: #404040; margin: 0; padding: 16px; border-bottom: 1px solid rgba(0, 0, 0, 0.1); background-color: #FAFAFA; font-weight: bold; }
+
+.a-Error-details ul { margin: 0; list-style: none; padding: 0; overflow: auto; font-family: 'Lucida Sans Console', 'Monaco', 'Menlo', monospace; font-size: 1.2rem; line-height: 1.5; color: #404040; background-color: #FFF; max-height: 30vh; overflow: auto; }
+
+.a-Error-details li { padding: 8px 16px; display: block; }
+
+.a-Error-details li:not(:last-child) { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.a-Error-details pre { font-family: inherit; line-height: inherit; font-size: 1.2rem; }
+
+.nodatafound { display: block; font-size: 1.2rem; color: #707070; padding: 8px; }
+
+.hierarchical_checkbox ul { list-style: none; }
+
+.hierarchical_checkbox input + label { margin-left: 4px; }
+
+.hierarchical_checkbox ul ul { margin-bottom: 8px; }
+
+.hierarchical_checkbox li:last-child ul { margin-bottom: 0; }
+
+#resultsHolder { margin: 8px; }
+
+#resultsHolder pre, #resultsHolder > .fielddata { font-size: 1.2rem; line-height: 1.6rem; color: #404040; display: block; }
+
+@media screen and (max-width: 768px), (max-height: 768px) { .a-Error-details ul { max-height: none; } }

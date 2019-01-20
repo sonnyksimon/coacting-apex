@@ -1,0 +1,67 @@
+/**  Import Compass and Theme Variables */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/* ========================================================================== Menu Bar ========================================================================== */
+.a-MenuBar { background-color: #F0F0F0; }
+
+.a-MenuBar-label { padding: 8px; color: #404040; }
+
+.a-MenuBar-item { border-right: 1px solid #D0D0D0; border-left: 1px solid #D0D0D0; margin-left: -1px; }
+
+.a-MenuBar-item:first-child { margin-left: 0; }
+
+.a-MenuBar-item.a-Menu--split > .a-Menu-subMenuCol, .a-MenuBar.u-rtl .a-MenuBar-item.a-Menu--split > .a-Menu-subMenuCol { border-color: #E0E0E0; cursor: pointer; }
+
+.a-MenuBar-item.is-disabled .a-MenuBar-label { color: #A0A0A0; }
+
+.a-MenuBar-item:hover { background-color: #FFF; }
+
+.a-MenuBar-item.is-expanded { background-color: #FFF; }
+
+.a-MenuBar-item.is-focused { box-shadow: 0 0 0 2px #0572ce inset; outline: none; }
+
+.lte-ie9 .a-MenuBar-item.is-focused, .lte-ie9 .a-Menu-item.is-focused, .ie9 .a-MenuBar-item.is-focused, .ie9 .a-Menu-item.is-focused { outline: 1px dotted; }
+
+/* ========================================================================== Menu  ========================================================================== */
+.a-Menu-content { border-color: #A0A0A0; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); border-radius: 2px; padding: 8px 0; }
+
+.a-Menu .a-Menu { margin-top: -9px; }
+
+.a-Menu .a-Menu-item { color: #404040; }
+
+.a-Menu-hSeparator { border-color: #F0F0F0; }
+
+.a-Menu--current { background-color: #fff; }
+
+.a-Menu .a-Menu-item.is-focused, .a-Menu .a-Menu-item.is-expanded { background-color: #0572CE; color: #FFF; }
+
+.a-Menu .a-Menu-item.is-focused > .a-Menu-inner .a-Menu-statusCol, .a-Menu .a-Menu-item.is-focused > .a-Menu-inner .a-Menu-accel, .a-Menu .a-Menu-item.is-expanded > .a-Menu-inner .a-Menu-statusCol, .a-Menu .a-Menu-item.is-expanded > .a-Menu-inner .a-Menu-accel { color: #FFF; }
+
+.a-Menu .a-Menu-item.is-disabled.is-focused { background-color: #F8F8F8; box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.15) inset; }
+
+.a-Menu .a-Menu-item.is-disabled.is-focused > .a-Menu-inner .a-Menu-statusCol, .a-Menu .a-Menu-item.is-disabled.is-focused > .a-Menu-inner .a-Menu-accel { color: #A0A0a0; color: rgba(64, 64, 64, 0.5); opacity: 1; }
+
+.a-Menu .a-Menu-item.a-Menu-item--default .a-Menu-label { font-weight: bold; }
+
+/* ========================================================================== Scrolling Buttons ========================================================================== */
+.a-Menu-scrollBtn { background-color: #F0F0F0; }
+
+.a-Menu-scrollBtn--up { box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
+
+.a-Menu-scrollBtn--down { box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15); }
+
+.a-Menu-scrollBtn.is-active { background-color: #0572CE; color: #FFF; }
+
+.a-Menu-scrollBtn.is-disabled { zoom: 1; filter: alpha(opacity=25); opacity: 0.25; }
+
+.a-Menu-scrollBtn .a-Icon { margin: 0 auto; display: block; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .a-MenuBar-item.is-focused, .a-Menu-item.is-focused { outline: 1px dotted; } }

@@ -1,0 +1,135 @@
+/* ====== scss/compiled/core_removed/Wizard.scss ====== */
+
+@import "_variables";
+//
+//.ui-dialog-titlebar, .t-Dialog-page, .t-Wizard--modal .t-Wizard-body {
+//  background-color:  lighten(@g_Region-BG, 10%);
+//}
+//.t-WizardSteps-step.is-active .t-WizardSteps-label {
+//  .region-text();
+//}
+//.t-Wizard-footer {
+//  t-Wizard-footer
+//}
+
+@l_Wizard-BG: @g_Region-BG;
+
+.t-Wizard,
+.t-Wizard-footer {
+  background-color: #FFF;
+}
+.t-Wizard .t-Wizard-header {
+  background-color: #FAFAFA;
+}
+
+.t-Dialog--wizard {
+  border: contrast(@l_Wizard-BG, darken(@l_Wizard-BG,   10%), lighten(@l_Wizard-BG,   10%),  43%);
+}
+
+.t-Wizard--default,
+.t-Wizard--headerBG {
+  background-color: @l_Wizard-BG;
+  border-radius: 2px;
+  .t-Wizard-title {
+    color: fade(contrast(@l_Wizard-BG, desaturate(darken(@l_Wizard-BG,  75%), 100%), desaturate(lighten(@l_Wizard-BG,  75%), 50%)), 100%);
+  }
+}
+body .t-Wizard--modal {
+  background: @l_Wizard-BG;
+  .t-Wizard-body {
+    background:
+      linear-gradient(fade(@l_Wizard-BG,100%) 40%, fade(@l_Wizard-BG,0%)),
+      linear-gradient(fade(@l_Wizard-BG,0%), fade(@l_Wizard-BG,100%) 60%) 0 100%,
+      linear-gradient(rgba(0,0,0,.025), rgba(0,0,0,0)),
+      linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.025)) 0 100%;
+    background-color: @l_Wizard-BG;
+  }
+  .t-Region {
+    background: @l_Wizard-BG;
+  }
+}
+
+.t-Wizard--headerBG {
+  border-color: contrast(@l_Wizard-BG, darken(@l_Wizard-BG,   10%), lighten(@l_Wizard-BG,   10%),  43%);
+  .t-Wizard-header {
+    @headerBg: contrast(@l_Wizard-BG, darken(@l_Wizard-BG,   5%), lighten(@l_Wizard-BG,   5%),  43%);
+    background-color: @headerBg;
+    border-color: contrast(@headerBg, darken(@headerBg,   5%), lighten(@headerBg,   5%),  43%);
+  }
+}
+
+
+.t-WizardSteps-wrap {
+  &:after {
+    background-color: contrast(@l_Wizard-BG, darken(@l_Wizard-BG,   10%), lighten(@l_Wizard-BG,   10%),  43%);
+  }
+}
+
+// Generic Marker
+
+.t-WizardSteps-step .t-WizardSteps-marker,
+.t-WizardSteps-step.is-complete .t-WizardSteps-marker, 
+.t-WizardSteps-step.is-active .t-WizardSteps-marker{
+  padding: 4px;
+  width: 22px;
+  height: 22px;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.t-WizardSteps-step {
+  .t-WizardSteps-wrap:after,
+  .t-WizardSteps-marker {
+    background-color: #F0F0F0;
+  }
+}
+
+.t-WizardSteps-step.is-complete, 
+.t-WizardSteps-step.is-active {
+  .t-WizardSteps-wrap:after,
+  .t-WizardSteps-marker {
+    background-color: #D6D7D8;
+  }
+}
+
+.t-WizardSteps-wrap:after {
+  height: 8px;
+  margin-top: 6px;
+  top: 7px;
+}
+
+
+
+.t-WizardSteps-step .t-WizardSteps-marker {
+  @media only screen and (min-width: 1201px) {
+    transform: none !important;
+  }
+}
+
+.t-WizardSteps-step .t-WizardSteps-marker .t-Icon {
+  display: none !important;
+}
+.t-WizardSteps-step .t-WizardSteps-marker:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #E4E8EA;
+  box-shadow: 0 0 0 1px #C5CED7 inset;
+}
+.t-WizardSteps-step.is-complete .t-WizardSteps-marker:before {
+  background-color: #fff;
+  box-shadow: 0 0 0 1px @g_Link-Base inset;
+}
+.t-WizardSteps-step.is-active .t-WizardSteps-marker:before {
+  background-color: @g_Link-Base;
+  box-shadow: none;
+}
+
+.t-WizardSteps-label {
+  color: fade(contrast(@l_Wizard-BG, desaturate(darken(@l_Wizard-BG,  50%), 100%), desaturate(lighten(@l_Wizard-BG,  50%), 50%)), 100%);
+}
+.t-WizardSteps-step.is-active .t-WizardSteps-label {
+  color: fade(contrast(@l_Wizard-BG, desaturate(darken(@l_Wizard-BG,  75%), 100%), desaturate(lighten(@l_Wizard-BG,  75%), 50%)), 100%);
+}

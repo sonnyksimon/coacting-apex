@@ -1,0 +1,1458 @@
+/* ========================================================================== Table Layout for Divs ========================================================================== */
+.u-Table { display: table; margin: 0; padding: 0; table-layout: auto; width: 100%; }
+
+.u-Table-fill, .u-Table-fit { display: table-cell; padding: 0; vertical-align: top; }
+
+.u-Table-fill { width: 100%; }
+
+.u-Table--middle .u-Table-fill, .u-Table--middle .u-Table-fit { vertical-align: middle; }
+
+.u-Table--bottom .u-Table-fill, .u-Table--bottom .u-Table-fit { vertical-align: bottom; }
+
+.u-Table--equal { table-layout: fixed; }
+
+.u-Table--equal > .u-Table-fill, .u-Table--equal > .u-Table-fit { width: auto; }
+
+.u-Table--withBorder > .u-Table-fit, .u-Table--withBorder > .u-Table-fill { border-left: 1px solid #F0F0F0; }
+
+.u-Table--withBorder > .u-Table-fit:first-child, .u-Table--withBorder > .u-Table-fill:first-child { border-left: none; }
+
+/** Import Compass */
+/* ========================================================================== Icon Library Mixin ========================================================================== */
+/* ========================================================================== Shadows ========================================================================== */
+/* ========================================================================== Height Utility Classes ========================================================================== */
+/** Increment by 10px Max Height: mxh[height] Min Height: mnh[height] Height: h[height] */
+/* ========================================================================== Height Modifier --- Example: .h200 will set the height to 200px ========================================================================== */
+.h10 { height: 10px; }
+
+.h20 { height: 20px; }
+
+.h30 { height: 30px; }
+
+.h40 { height: 40px; }
+
+.h50 { height: 50px; }
+
+.h60 { height: 60px; }
+
+.h70 { height: 70px; }
+
+.h80 { height: 80px; }
+
+.h90 { height: 90px; }
+
+.h100 { height: 100px; }
+
+.h110 { height: 110px; }
+
+.h120 { height: 120px; }
+
+.h130 { height: 130px; }
+
+.h140 { height: 140px; }
+
+.h150 { height: 150px; }
+
+.h160 { height: 160px; }
+
+.h170 { height: 170px; }
+
+.h180 { height: 180px; }
+
+.h190 { height: 190px; }
+
+.h200 { height: 200px; }
+
+.h210 { height: 210px; }
+
+.h220 { height: 220px; }
+
+.h230 { height: 230px; }
+
+.h240 { height: 240px; }
+
+.h250 { height: 250px; }
+
+.h260 { height: 260px; }
+
+.h270 { height: 270px; }
+
+.h280 { height: 280px; }
+
+.h290 { height: 290px; }
+
+.h300 { height: 300px; }
+
+.h310 { height: 310px; }
+
+.h320 { height: 320px; }
+
+.h330 { height: 330px; }
+
+.h340 { height: 340px; }
+
+.h350 { height: 350px; }
+
+.h360 { height: 360px; }
+
+.h370 { height: 370px; }
+
+.h380 { height: 380px; }
+
+.h390 { height: 390px; }
+
+.h400 { height: 400px; }
+
+.h410 { height: 410px; }
+
+.h420 { height: 420px; }
+
+.h430 { height: 430px; }
+
+.h440 { height: 440px; }
+
+.h450 { height: 450px; }
+
+.h460 { height: 460px; }
+
+.h470 { height: 470px; }
+
+.h480 { height: 480px; }
+
+.h490 { height: 490px; }
+
+.h500 { height: 500px; }
+
+.h510 { height: 510px; }
+
+.h520 { height: 520px; }
+
+.h530 { height: 530px; }
+
+.h540 { height: 540px; }
+
+.h550 { height: 550px; }
+
+.h560 { height: 560px; }
+
+.h570 { height: 570px; }
+
+.h580 { height: 580px; }
+
+.h590 { height: 590px; }
+
+.h600 { height: 600px; }
+
+.h610 { height: 610px; }
+
+.h620 { height: 620px; }
+
+.h630 { height: 630px; }
+
+.h640 { height: 640px; }
+
+.h650 { height: 650px; }
+
+.h660 { height: 660px; }
+
+.h670 { height: 670px; }
+
+.h680 { height: 680px; }
+
+.h690 { height: 690px; }
+
+.h700 { height: 700px; }
+
+.h710 { height: 710px; }
+
+.h720 { height: 720px; }
+
+.h730 { height: 730px; }
+
+.h740 { height: 740px; }
+
+.h750 { height: 750px; }
+
+.h760 { height: 760px; }
+
+.h770 { height: 770px; }
+
+.h780 { height: 780px; }
+
+.h790 { height: 790px; }
+
+.h800 { height: 800px; }
+
+/* ========================================================================== Max Height Modifier --- Example: .max200 will set the max-height to 200px ========================================================================== */
+.mxh10 { max-height: 10px; }
+
+.mxh20 { max-height: 20px; }
+
+.mxh30 { max-height: 30px; }
+
+.mxh40 { max-height: 40px; }
+
+.mxh50 { max-height: 50px; }
+
+.mxh60 { max-height: 60px; }
+
+.mxh70 { max-height: 70px; }
+
+.mxh80 { max-height: 80px; }
+
+.mxh90 { max-height: 90px; }
+
+.mxh100 { max-height: 100px; }
+
+.mxh110 { max-height: 110px; }
+
+.mxh120 { max-height: 120px; }
+
+.mxh130 { max-height: 130px; }
+
+.mxh140 { max-height: 140px; }
+
+.mxh150 { max-height: 150px; }
+
+.mxh160 { max-height: 160px; }
+
+.mxh170 { max-height: 170px; }
+
+.mxh180 { max-height: 180px; }
+
+.mxh190 { max-height: 190px; }
+
+.mxh200 { max-height: 200px; }
+
+.mxh210 { max-height: 210px; }
+
+.mxh220 { max-height: 220px; }
+
+.mxh230 { max-height: 230px; }
+
+.mxh240 { max-height: 240px; }
+
+.mxh250 { max-height: 250px; }
+
+.mxh260 { max-height: 260px; }
+
+.mxh270 { max-height: 270px; }
+
+.mxh280 { max-height: 280px; }
+
+.mxh290 { max-height: 290px; }
+
+.mxh300 { max-height: 300px; }
+
+.mxh310 { max-height: 310px; }
+
+.mxh320 { max-height: 320px; }
+
+.mxh330 { max-height: 330px; }
+
+.mxh340 { max-height: 340px; }
+
+.mxh350 { max-height: 350px; }
+
+.mxh360 { max-height: 360px; }
+
+.mxh370 { max-height: 370px; }
+
+.mxh380 { max-height: 380px; }
+
+.mxh390 { max-height: 390px; }
+
+.mxh400 { max-height: 400px; }
+
+.mxh410 { max-height: 410px; }
+
+.mxh420 { max-height: 420px; }
+
+.mxh430 { max-height: 430px; }
+
+.mxh440 { max-height: 440px; }
+
+.mxh450 { max-height: 450px; }
+
+.mxh460 { max-height: 460px; }
+
+.mxh470 { max-height: 470px; }
+
+.mxh480 { max-height: 480px; }
+
+.mxh490 { max-height: 490px; }
+
+.mxh500 { max-height: 500px; }
+
+.mxh510 { max-height: 510px; }
+
+.mxh520 { max-height: 520px; }
+
+.mxh530 { max-height: 530px; }
+
+.mxh540 { max-height: 540px; }
+
+.mxh550 { max-height: 550px; }
+
+.mxh560 { max-height: 560px; }
+
+.mxh570 { max-height: 570px; }
+
+.mxh580 { max-height: 580px; }
+
+.mxh590 { max-height: 590px; }
+
+.mxh600 { max-height: 600px; }
+
+.mxh610 { max-height: 610px; }
+
+.mxh620 { max-height: 620px; }
+
+.mxh630 { max-height: 630px; }
+
+.mxh640 { max-height: 640px; }
+
+.mxh650 { max-height: 650px; }
+
+.mxh660 { max-height: 660px; }
+
+.mxh670 { max-height: 670px; }
+
+.mxh680 { max-height: 680px; }
+
+.mxh690 { max-height: 690px; }
+
+.mxh700 { max-height: 700px; }
+
+.mxh710 { max-height: 710px; }
+
+.mxh720 { max-height: 720px; }
+
+.mxh730 { max-height: 730px; }
+
+.mxh740 { max-height: 740px; }
+
+.mxh750 { max-height: 750px; }
+
+.mxh760 { max-height: 760px; }
+
+.mxh770 { max-height: 770px; }
+
+.mxh780 { max-height: 780px; }
+
+.mxh790 { max-height: 790px; }
+
+.mxh800 { max-height: 800px; }
+
+/* ========================================================================== Height Modifier for Region Body --- Example: .i-h200 will set the height for the body to 200px ========================================================================== */
+.i-h10 > .t-Region-bodyWrap > .t-Region-body { height: 10px; }
+
+.i-h20 > .t-Region-bodyWrap > .t-Region-body { height: 20px; }
+
+.i-h30 > .t-Region-bodyWrap > .t-Region-body { height: 30px; }
+
+.i-h40 > .t-Region-bodyWrap > .t-Region-body { height: 40px; }
+
+.i-h50 > .t-Region-bodyWrap > .t-Region-body { height: 50px; }
+
+.i-h60 > .t-Region-bodyWrap > .t-Region-body { height: 60px; }
+
+.i-h70 > .t-Region-bodyWrap > .t-Region-body { height: 70px; }
+
+.i-h80 > .t-Region-bodyWrap > .t-Region-body { height: 80px; }
+
+.i-h90 > .t-Region-bodyWrap > .t-Region-body { height: 90px; }
+
+.i-h100 > .t-Region-bodyWrap > .t-Region-body { height: 100px; }
+
+.i-h110 > .t-Region-bodyWrap > .t-Region-body { height: 110px; }
+
+.i-h120 > .t-Region-bodyWrap > .t-Region-body { height: 120px; }
+
+.i-h130 > .t-Region-bodyWrap > .t-Region-body { height: 130px; }
+
+.i-h140 > .t-Region-bodyWrap > .t-Region-body { height: 140px; }
+
+.i-h150 > .t-Region-bodyWrap > .t-Region-body { height: 150px; }
+
+.i-h160 > .t-Region-bodyWrap > .t-Region-body { height: 160px; }
+
+.i-h170 > .t-Region-bodyWrap > .t-Region-body { height: 170px; }
+
+.i-h180 > .t-Region-bodyWrap > .t-Region-body { height: 180px; }
+
+.i-h190 > .t-Region-bodyWrap > .t-Region-body { height: 190px; }
+
+.i-h200 > .t-Region-bodyWrap > .t-Region-body { height: 200px; }
+
+.i-h210 > .t-Region-bodyWrap > .t-Region-body { height: 210px; }
+
+.i-h220 > .t-Region-bodyWrap > .t-Region-body { height: 220px; }
+
+.i-h230 > .t-Region-bodyWrap > .t-Region-body { height: 230px; }
+
+.i-h240 > .t-Region-bodyWrap > .t-Region-body { height: 240px; }
+
+.i-h250 > .t-Region-bodyWrap > .t-Region-body { height: 250px; }
+
+.i-h260 > .t-Region-bodyWrap > .t-Region-body { height: 260px; }
+
+.i-h270 > .t-Region-bodyWrap > .t-Region-body { height: 270px; }
+
+.i-h280 > .t-Region-bodyWrap > .t-Region-body { height: 280px; }
+
+.i-h290 > .t-Region-bodyWrap > .t-Region-body { height: 290px; }
+
+.i-h300 > .t-Region-bodyWrap > .t-Region-body { height: 300px; }
+
+.i-h310 > .t-Region-bodyWrap > .t-Region-body { height: 310px; }
+
+.i-h320 > .t-Region-bodyWrap > .t-Region-body { height: 320px; }
+
+.i-h330 > .t-Region-bodyWrap > .t-Region-body { height: 330px; }
+
+.i-h340 > .t-Region-bodyWrap > .t-Region-body { height: 340px; }
+
+.i-h350 > .t-Region-bodyWrap > .t-Region-body { height: 350px; }
+
+.i-h360 > .t-Region-bodyWrap > .t-Region-body { height: 360px; }
+
+.i-h370 > .t-Region-bodyWrap > .t-Region-body { height: 370px; }
+
+.i-h380 > .t-Region-bodyWrap > .t-Region-body { height: 380px; }
+
+.i-h390 > .t-Region-bodyWrap > .t-Region-body { height: 390px; }
+
+.i-h400 > .t-Region-bodyWrap > .t-Region-body { height: 400px; }
+
+.i-h410 > .t-Region-bodyWrap > .t-Region-body { height: 410px; }
+
+.i-h420 > .t-Region-bodyWrap > .t-Region-body { height: 420px; }
+
+.i-h430 > .t-Region-bodyWrap > .t-Region-body { height: 430px; }
+
+.i-h440 > .t-Region-bodyWrap > .t-Region-body { height: 440px; }
+
+.i-h450 > .t-Region-bodyWrap > .t-Region-body { height: 450px; }
+
+.i-h460 > .t-Region-bodyWrap > .t-Region-body { height: 460px; }
+
+.i-h470 > .t-Region-bodyWrap > .t-Region-body { height: 470px; }
+
+.i-h480 > .t-Region-bodyWrap > .t-Region-body { height: 480px; }
+
+.i-h490 > .t-Region-bodyWrap > .t-Region-body { height: 490px; }
+
+.i-h500 > .t-Region-bodyWrap > .t-Region-body { height: 500px; }
+
+.i-h510 > .t-Region-bodyWrap > .t-Region-body { height: 510px; }
+
+.i-h520 > .t-Region-bodyWrap > .t-Region-body { height: 520px; }
+
+.i-h530 > .t-Region-bodyWrap > .t-Region-body { height: 530px; }
+
+.i-h540 > .t-Region-bodyWrap > .t-Region-body { height: 540px; }
+
+.i-h550 > .t-Region-bodyWrap > .t-Region-body { height: 550px; }
+
+.i-h560 > .t-Region-bodyWrap > .t-Region-body { height: 560px; }
+
+.i-h570 > .t-Region-bodyWrap > .t-Region-body { height: 570px; }
+
+.i-h580 > .t-Region-bodyWrap > .t-Region-body { height: 580px; }
+
+.i-h590 > .t-Region-bodyWrap > .t-Region-body { height: 590px; }
+
+.i-h600 > .t-Region-bodyWrap > .t-Region-body { height: 600px; }
+
+.i-h610 > .t-Region-bodyWrap > .t-Region-body { height: 610px; }
+
+.i-h620 > .t-Region-bodyWrap > .t-Region-body { height: 620px; }
+
+.i-h630 > .t-Region-bodyWrap > .t-Region-body { height: 630px; }
+
+.i-h640 > .t-Region-bodyWrap > .t-Region-body { height: 640px; }
+
+.i-h650 > .t-Region-bodyWrap > .t-Region-body { height: 650px; }
+
+.i-h660 > .t-Region-bodyWrap > .t-Region-body { height: 660px; }
+
+.i-h670 > .t-Region-bodyWrap > .t-Region-body { height: 670px; }
+
+.i-h680 > .t-Region-bodyWrap > .t-Region-body { height: 680px; }
+
+.i-h690 > .t-Region-bodyWrap > .t-Region-body { height: 690px; }
+
+.i-h700 > .t-Region-bodyWrap > .t-Region-body { height: 700px; }
+
+.i-h710 > .t-Region-bodyWrap > .t-Region-body { height: 710px; }
+
+.i-h720 > .t-Region-bodyWrap > .t-Region-body { height: 720px; }
+
+.i-h730 > .t-Region-bodyWrap > .t-Region-body { height: 730px; }
+
+.i-h740 > .t-Region-bodyWrap > .t-Region-body { height: 740px; }
+
+.i-h750 > .t-Region-bodyWrap > .t-Region-body { height: 750px; }
+
+.i-h760 > .t-Region-bodyWrap > .t-Region-body { height: 760px; }
+
+.i-h770 > .t-Region-bodyWrap > .t-Region-body { height: 770px; }
+
+.i-h780 > .t-Region-bodyWrap > .t-Region-body { height: 780px; }
+
+.i-h790 > .t-Region-bodyWrap > .t-Region-body { height: 790px; }
+
+.i-h800 > .t-Region-bodyWrap > .t-Region-body { height: 800px; }
+
+/* ========================================================================== Max Height Modifier for Region Body --- Example: .i-mxh200 will set the max height for the body to 200px ========================================================================== */
+.i-mxh10 > .t-Region-bodyWrap > .t-Region-body { max-height: 10px; }
+
+.i-mxh20 > .t-Region-bodyWrap > .t-Region-body { max-height: 20px; }
+
+.i-mxh30 > .t-Region-bodyWrap > .t-Region-body { max-height: 30px; }
+
+.i-mxh40 > .t-Region-bodyWrap > .t-Region-body { max-height: 40px; }
+
+.i-mxh50 > .t-Region-bodyWrap > .t-Region-body { max-height: 50px; }
+
+.i-mxh60 > .t-Region-bodyWrap > .t-Region-body { max-height: 60px; }
+
+.i-mxh70 > .t-Region-bodyWrap > .t-Region-body { max-height: 70px; }
+
+.i-mxh80 > .t-Region-bodyWrap > .t-Region-body { max-height: 80px; }
+
+.i-mxh90 > .t-Region-bodyWrap > .t-Region-body { max-height: 90px; }
+
+.i-mxh100 > .t-Region-bodyWrap > .t-Region-body { max-height: 100px; }
+
+.i-mxh110 > .t-Region-bodyWrap > .t-Region-body { max-height: 110px; }
+
+.i-mxh120 > .t-Region-bodyWrap > .t-Region-body { max-height: 120px; }
+
+.i-mxh130 > .t-Region-bodyWrap > .t-Region-body { max-height: 130px; }
+
+.i-mxh140 > .t-Region-bodyWrap > .t-Region-body { max-height: 140px; }
+
+.i-mxh150 > .t-Region-bodyWrap > .t-Region-body { max-height: 150px; }
+
+.i-mxh160 > .t-Region-bodyWrap > .t-Region-body { max-height: 160px; }
+
+.i-mxh170 > .t-Region-bodyWrap > .t-Region-body { max-height: 170px; }
+
+.i-mxh180 > .t-Region-bodyWrap > .t-Region-body { max-height: 180px; }
+
+.i-mxh190 > .t-Region-bodyWrap > .t-Region-body { max-height: 190px; }
+
+.i-mxh200 > .t-Region-bodyWrap > .t-Region-body { max-height: 200px; }
+
+.i-mxh210 > .t-Region-bodyWrap > .t-Region-body { max-height: 210px; }
+
+.i-mxh220 > .t-Region-bodyWrap > .t-Region-body { max-height: 220px; }
+
+.i-mxh230 > .t-Region-bodyWrap > .t-Region-body { max-height: 230px; }
+
+.i-mxh240 > .t-Region-bodyWrap > .t-Region-body { max-height: 240px; }
+
+.i-mxh250 > .t-Region-bodyWrap > .t-Region-body { max-height: 250px; }
+
+.i-mxh260 > .t-Region-bodyWrap > .t-Region-body { max-height: 260px; }
+
+.i-mxh270 > .t-Region-bodyWrap > .t-Region-body { max-height: 270px; }
+
+.i-mxh280 > .t-Region-bodyWrap > .t-Region-body { max-height: 280px; }
+
+.i-mxh290 > .t-Region-bodyWrap > .t-Region-body { max-height: 290px; }
+
+.i-mxh300 > .t-Region-bodyWrap > .t-Region-body { max-height: 300px; }
+
+.i-mxh310 > .t-Region-bodyWrap > .t-Region-body { max-height: 310px; }
+
+.i-mxh320 > .t-Region-bodyWrap > .t-Region-body { max-height: 320px; }
+
+.i-mxh330 > .t-Region-bodyWrap > .t-Region-body { max-height: 330px; }
+
+.i-mxh340 > .t-Region-bodyWrap > .t-Region-body { max-height: 340px; }
+
+.i-mxh350 > .t-Region-bodyWrap > .t-Region-body { max-height: 350px; }
+
+.i-mxh360 > .t-Region-bodyWrap > .t-Region-body { max-height: 360px; }
+
+.i-mxh370 > .t-Region-bodyWrap > .t-Region-body { max-height: 370px; }
+
+.i-mxh380 > .t-Region-bodyWrap > .t-Region-body { max-height: 380px; }
+
+.i-mxh390 > .t-Region-bodyWrap > .t-Region-body { max-height: 390px; }
+
+.i-mxh400 > .t-Region-bodyWrap > .t-Region-body { max-height: 400px; }
+
+.i-mxh410 > .t-Region-bodyWrap > .t-Region-body { max-height: 410px; }
+
+.i-mxh420 > .t-Region-bodyWrap > .t-Region-body { max-height: 420px; }
+
+.i-mxh430 > .t-Region-bodyWrap > .t-Region-body { max-height: 430px; }
+
+.i-mxh440 > .t-Region-bodyWrap > .t-Region-body { max-height: 440px; }
+
+.i-mxh450 > .t-Region-bodyWrap > .t-Region-body { max-height: 450px; }
+
+.i-mxh460 > .t-Region-bodyWrap > .t-Region-body { max-height: 460px; }
+
+.i-mxh470 > .t-Region-bodyWrap > .t-Region-body { max-height: 470px; }
+
+.i-mxh480 > .t-Region-bodyWrap > .t-Region-body { max-height: 480px; }
+
+.i-mxh490 > .t-Region-bodyWrap > .t-Region-body { max-height: 490px; }
+
+.i-mxh500 > .t-Region-bodyWrap > .t-Region-body { max-height: 500px; }
+
+.i-mxh510 > .t-Region-bodyWrap > .t-Region-body { max-height: 510px; }
+
+.i-mxh520 > .t-Region-bodyWrap > .t-Region-body { max-height: 520px; }
+
+.i-mxh530 > .t-Region-bodyWrap > .t-Region-body { max-height: 530px; }
+
+.i-mxh540 > .t-Region-bodyWrap > .t-Region-body { max-height: 540px; }
+
+.i-mxh550 > .t-Region-bodyWrap > .t-Region-body { max-height: 550px; }
+
+.i-mxh560 > .t-Region-bodyWrap > .t-Region-body { max-height: 560px; }
+
+.i-mxh570 > .t-Region-bodyWrap > .t-Region-body { max-height: 570px; }
+
+.i-mxh580 > .t-Region-bodyWrap > .t-Region-body { max-height: 580px; }
+
+.i-mxh590 > .t-Region-bodyWrap > .t-Region-body { max-height: 590px; }
+
+.i-mxh600 > .t-Region-bodyWrap > .t-Region-body { max-height: 600px; }
+
+.i-mxh610 > .t-Region-bodyWrap > .t-Region-body { max-height: 610px; }
+
+.i-mxh620 > .t-Region-bodyWrap > .t-Region-body { max-height: 620px; }
+
+.i-mxh630 > .t-Region-bodyWrap > .t-Region-body { max-height: 630px; }
+
+.i-mxh640 > .t-Region-bodyWrap > .t-Region-body { max-height: 640px; }
+
+.i-mxh650 > .t-Region-bodyWrap > .t-Region-body { max-height: 650px; }
+
+.i-mxh660 > .t-Region-bodyWrap > .t-Region-body { max-height: 660px; }
+
+.i-mxh670 > .t-Region-bodyWrap > .t-Region-body { max-height: 670px; }
+
+.i-mxh680 > .t-Region-bodyWrap > .t-Region-body { max-height: 680px; }
+
+.i-mxh690 > .t-Region-bodyWrap > .t-Region-body { max-height: 690px; }
+
+.i-mxh700 > .t-Region-bodyWrap > .t-Region-body { max-height: 700px; }
+
+.i-mxh710 > .t-Region-bodyWrap > .t-Region-body { max-height: 710px; }
+
+.i-mxh720 > .t-Region-bodyWrap > .t-Region-body { max-height: 720px; }
+
+.i-mxh730 > .t-Region-bodyWrap > .t-Region-body { max-height: 730px; }
+
+.i-mxh740 > .t-Region-bodyWrap > .t-Region-body { max-height: 740px; }
+
+.i-mxh750 > .t-Region-bodyWrap > .t-Region-body { max-height: 750px; }
+
+.i-mxh760 > .t-Region-bodyWrap > .t-Region-body { max-height: 760px; }
+
+.i-mxh770 > .t-Region-bodyWrap > .t-Region-body { max-height: 770px; }
+
+.i-mxh780 > .t-Region-bodyWrap > .t-Region-body { max-height: 780px; }
+
+.i-mxh790 > .t-Region-bodyWrap > .t-Region-body { max-height: 790px; }
+
+.i-mxh800 > .t-Region-bodyWrap > .t-Region-body { max-height: 800px; }
+
+/* ========================================================================== width Utility Classes ========================================================================== */
+/** Increment by 10px Max width: mxw[width] Min width: mnw[width] width: w[width] */
+/* ========================================================================== width Modifier --- Example: .h200 will set the width to 200px ========================================================================== */
+.w10 { width: 10px; }
+
+.w20 { width: 20px; }
+
+.w30 { width: 30px; }
+
+.w40 { width: 40px; }
+
+.w50 { width: 50px; }
+
+.w60 { width: 60px; }
+
+.w70 { width: 70px; }
+
+.w80 { width: 80px; }
+
+.w90 { width: 90px; }
+
+.w100 { width: 100px; }
+
+.w110 { width: 110px; }
+
+.w120 { width: 120px; }
+
+.w130 { width: 130px; }
+
+.w140 { width: 140px; }
+
+.w150 { width: 150px; }
+
+.w160 { width: 160px; }
+
+.w170 { width: 170px; }
+
+.w180 { width: 180px; }
+
+.w190 { width: 190px; }
+
+.w200 { width: 200px; }
+
+.w210 { width: 210px; }
+
+.w220 { width: 220px; }
+
+.w230 { width: 230px; }
+
+.w240 { width: 240px; }
+
+.w250 { width: 250px; }
+
+.w260 { width: 260px; }
+
+.w270 { width: 270px; }
+
+.w280 { width: 280px; }
+
+.w290 { width: 290px; }
+
+.w300 { width: 300px; }
+
+.w310 { width: 310px; }
+
+.w320 { width: 320px; }
+
+.w330 { width: 330px; }
+
+.w340 { width: 340px; }
+
+.w350 { width: 350px; }
+
+.w360 { width: 360px; }
+
+.w370 { width: 370px; }
+
+.w380 { width: 380px; }
+
+.w390 { width: 390px; }
+
+.w400 { width: 400px; }
+
+.w410 { width: 410px; }
+
+.w420 { width: 420px; }
+
+.w430 { width: 430px; }
+
+.w440 { width: 440px; }
+
+.w450 { width: 450px; }
+
+.w460 { width: 460px; }
+
+.w470 { width: 470px; }
+
+.w480 { width: 480px; }
+
+.w490 { width: 490px; }
+
+.w500 { width: 500px; }
+
+.w510 { width: 510px; }
+
+.w520 { width: 520px; }
+
+.w530 { width: 530px; }
+
+.w540 { width: 540px; }
+
+.w550 { width: 550px; }
+
+.w560 { width: 560px; }
+
+.w570 { width: 570px; }
+
+.w580 { width: 580px; }
+
+.w590 { width: 590px; }
+
+.w600 { width: 600px; }
+
+.w610 { width: 610px; }
+
+.w620 { width: 620px; }
+
+.w630 { width: 630px; }
+
+.w640 { width: 640px; }
+
+.w650 { width: 650px; }
+
+.w660 { width: 660px; }
+
+.w670 { width: 670px; }
+
+.w680 { width: 680px; }
+
+.w690 { width: 690px; }
+
+.w700 { width: 700px; }
+
+.w710 { width: 710px; }
+
+.w720 { width: 720px; }
+
+.w730 { width: 730px; }
+
+.w740 { width: 740px; }
+
+.w750 { width: 750px; }
+
+.w760 { width: 760px; }
+
+.w770 { width: 770px; }
+
+.w780 { width: 780px; }
+
+.w790 { width: 790px; }
+
+.w800 { width: 800px; }
+
+.mnw10 { min-width: 10px; }
+
+.mnw20 { min-width: 20px; }
+
+.mnw30 { min-width: 30px; }
+
+.mnw40 { min-width: 40px; }
+
+.mnw50 { min-width: 50px; }
+
+.mnw60 { min-width: 60px; }
+
+.mnw70 { min-width: 70px; }
+
+.mnw80 { min-width: 80px; }
+
+.mnw90 { min-width: 90px; }
+
+.mnw100 { min-width: 100px; }
+
+.mnw110 { min-width: 110px; }
+
+.mnw120 { min-width: 120px; }
+
+.mnw130 { min-width: 130px; }
+
+.mnw140 { min-width: 140px; }
+
+.mnw150 { min-width: 150px; }
+
+.mnw160 { min-width: 160px; }
+
+.mnw170 { min-width: 170px; }
+
+.mnw180 { min-width: 180px; }
+
+.mnw190 { min-width: 190px; }
+
+.mnw200 { min-width: 200px; }
+
+.mnw210 { min-width: 210px; }
+
+.mnw220 { min-width: 220px; }
+
+.mnw230 { min-width: 230px; }
+
+.mnw240 { min-width: 240px; }
+
+.mnw250 { min-width: 250px; }
+
+.mnw260 { min-width: 260px; }
+
+.mnw270 { min-width: 270px; }
+
+.mnw280 { min-width: 280px; }
+
+.mnw290 { min-width: 290px; }
+
+.mnw300 { min-width: 300px; }
+
+.mnw310 { min-width: 310px; }
+
+.mnw320 { min-width: 320px; }
+
+.mnw330 { min-width: 330px; }
+
+.mnw340 { min-width: 340px; }
+
+.mnw350 { min-width: 350px; }
+
+.mnw360 { min-width: 360px; }
+
+.mnw370 { min-width: 370px; }
+
+.mnw380 { min-width: 380px; }
+
+.mnw390 { min-width: 390px; }
+
+.mnw400 { min-width: 400px; }
+
+.mnw410 { min-width: 410px; }
+
+.mnw420 { min-width: 420px; }
+
+.mnw430 { min-width: 430px; }
+
+.mnw440 { min-width: 440px; }
+
+.mnw450 { min-width: 450px; }
+
+.mnw460 { min-width: 460px; }
+
+.mnw470 { min-width: 470px; }
+
+.mnw480 { min-width: 480px; }
+
+.mnw490 { min-width: 490px; }
+
+.mnw500 { min-width: 500px; }
+
+.mnw510 { min-width: 510px; }
+
+.mnw520 { min-width: 520px; }
+
+.mnw530 { min-width: 530px; }
+
+.mnw540 { min-width: 540px; }
+
+.mnw550 { min-width: 550px; }
+
+.mnw560 { min-width: 560px; }
+
+.mnw570 { min-width: 570px; }
+
+.mnw580 { min-width: 580px; }
+
+.mnw590 { min-width: 590px; }
+
+.mnw600 { min-width: 600px; }
+
+.mnw610 { min-width: 610px; }
+
+.mnw620 { min-width: 620px; }
+
+.mnw630 { min-width: 630px; }
+
+.mnw640 { min-width: 640px; }
+
+.mnw650 { min-width: 650px; }
+
+.mnw660 { min-width: 660px; }
+
+.mnw670 { min-width: 670px; }
+
+.mnw680 { min-width: 680px; }
+
+.mnw690 { min-width: 690px; }
+
+.mnw700 { min-width: 700px; }
+
+.mnw710 { min-width: 710px; }
+
+.mnw720 { min-width: 720px; }
+
+.mnw730 { min-width: 730px; }
+
+.mnw740 { min-width: 740px; }
+
+.mnw750 { min-width: 750px; }
+
+.mnw760 { min-width: 760px; }
+
+.mnw770 { min-width: 770px; }
+
+.mnw780 { min-width: 780px; }
+
+.mnw790 { min-width: 790px; }
+
+.mnw800 { min-width: 800px; }
+
+.mxw10 { max-width: 10px; }
+
+.mxw20 { max-width: 20px; }
+
+.mxw30 { max-width: 30px; }
+
+.mxw40 { max-width: 40px; }
+
+.mxw50 { max-width: 50px; }
+
+.mxw60 { max-width: 60px; }
+
+.mxw70 { max-width: 70px; }
+
+.mxw80 { max-width: 80px; }
+
+.mxw90 { max-width: 90px; }
+
+.mxw100 { max-width: 100px; }
+
+.mxw110 { max-width: 110px; }
+
+.mxw120 { max-width: 120px; }
+
+.mxw130 { max-width: 130px; }
+
+.mxw140 { max-width: 140px; }
+
+.mxw150 { max-width: 150px; }
+
+.mxw160 { max-width: 160px; }
+
+.mxw170 { max-width: 170px; }
+
+.mxw180 { max-width: 180px; }
+
+.mxw190 { max-width: 190px; }
+
+.mxw200 { max-width: 200px; }
+
+.mxw210 { max-width: 210px; }
+
+.mxw220 { max-width: 220px; }
+
+.mxw230 { max-width: 230px; }
+
+.mxw240 { max-width: 240px; }
+
+.mxw250 { max-width: 250px; }
+
+.mxw260 { max-width: 260px; }
+
+.mxw270 { max-width: 270px; }
+
+.mxw280 { max-width: 280px; }
+
+.mxw290 { max-width: 290px; }
+
+.mxw300 { max-width: 300px; }
+
+.mxw310 { max-width: 310px; }
+
+.mxw320 { max-width: 320px; }
+
+.mxw330 { max-width: 330px; }
+
+.mxw340 { max-width: 340px; }
+
+.mxw350 { max-width: 350px; }
+
+.mxw360 { max-width: 360px; }
+
+.mxw370 { max-width: 370px; }
+
+.mxw380 { max-width: 380px; }
+
+.mxw390 { max-width: 390px; }
+
+.mxw400 { max-width: 400px; }
+
+.mxw410 { max-width: 410px; }
+
+.mxw420 { max-width: 420px; }
+
+.mxw430 { max-width: 430px; }
+
+.mxw440 { max-width: 440px; }
+
+.mxw450 { max-width: 450px; }
+
+.mxw460 { max-width: 460px; }
+
+.mxw470 { max-width: 470px; }
+
+.mxw480 { max-width: 480px; }
+
+.mxw490 { max-width: 490px; }
+
+.mxw500 { max-width: 500px; }
+
+.mxw510 { max-width: 510px; }
+
+.mxw520 { max-width: 520px; }
+
+.mxw530 { max-width: 530px; }
+
+.mxw540 { max-width: 540px; }
+
+.mxw550 { max-width: 550px; }
+
+.mxw560 { max-width: 560px; }
+
+.mxw570 { max-width: 570px; }
+
+.mxw580 { max-width: 580px; }
+
+.mxw590 { max-width: 590px; }
+
+.mxw600 { max-width: 600px; }
+
+.mxw610 { max-width: 610px; }
+
+.mxw620 { max-width: 620px; }
+
+.mxw630 { max-width: 630px; }
+
+.mxw640 { max-width: 640px; }
+
+.mxw650 { max-width: 650px; }
+
+.mxw660 { max-width: 660px; }
+
+.mxw670 { max-width: 670px; }
+
+.mxw680 { max-width: 680px; }
+
+.mxw690 { max-width: 690px; }
+
+.mxw700 { max-width: 700px; }
+
+.mxw710 { max-width: 710px; }
+
+.mxw720 { max-width: 720px; }
+
+.mxw730 { max-width: 730px; }
+
+.mxw740 { max-width: 740px; }
+
+.mxw750 { max-width: 750px; }
+
+.mxw760 { max-width: 760px; }
+
+.mxw770 { max-width: 770px; }
+
+.mxw780 { max-width: 780px; }
+
+.mxw790 { max-width: 790px; }
+
+.mxw800 { max-width: 800px; }
+
+.w0p { width: 0%; }
+
+.w5p { width: 5%; }
+
+.w10p { width: 10%; }
+
+.w15p { width: 15%; }
+
+.w20p { width: 20%; }
+
+.w25p { width: 25%; }
+
+.w30p { width: 30%; }
+
+.w35p { width: 35%; }
+
+.w40p { width: 40%; }
+
+.w45p { width: 45%; }
+
+.w50p { width: 50%; }
+
+.w55p { width: 55%; }
+
+.w60p { width: 60%; }
+
+.w65p { width: 65%; }
+
+.w70p { width: 70%; }
+
+.w75p { width: 75%; }
+
+.w80p { width: 80%; }
+
+.w85p { width: 85%; }
+
+.w90p { width: 90%; }
+
+.w95p { width: 95%; }
+
+.w100p { width: 100%; }
+
+/* ========================================================================== Block Utility Classes ========================================================================== */
+.padding-sm { padding: 8px !important; }
+
+.padding-top-sm { padding-top: 8px !important; }
+
+.padding-left-sm { padding-left: 8px !important; }
+
+.padding-right-sm { padding-right: 8px !important; }
+
+.padding-bottom-sm { padding-bottom: 8px !important; }
+
+.margin-sm { margin: 8px !important; }
+
+.margin-top-sm { margin-top: 8px !important; }
+
+.margin-left-sm { margin-left: 8px !important; }
+
+.margin-right-sm { margin-right: 8px !important; }
+
+.margin-bottom-sm { margin-bottom: 8px !important; }
+
+.padding-md { padding: 16px !important; }
+
+.padding-top-md { padding-top: 16px !important; }
+
+.padding-left-md { padding-left: 16px !important; }
+
+.padding-right-md { padding-right: 16px !important; }
+
+.padding-bottom-md { padding-bottom: 16px !important; }
+
+.margin-md { margin: 16px !important; }
+
+.margin-top-md { margin-top: 16px !important; }
+
+.margin-left-md { margin-left: 16px !important; }
+
+.margin-right-md { margin-right: 16px !important; }
+
+.margin-bottom-md { margin-bottom: 16px !important; }
+
+.padding-lg { padding: 32px !important; }
+
+.padding-top-lg { padding-top: 32px !important; }
+
+.padding-left-lg { padding-left: 32px !important; }
+
+.padding-right-lg { padding-right: 32px !important; }
+
+.padding-bottom-lg { padding-bottom: 32px !important; }
+
+.margin-lg { margin: 32px !important; }
+
+.margin-top-lg { margin-top: 32px !important; }
+
+.margin-left-lg { margin-left: 32px !important; }
+
+.margin-right-lg { margin-right: 32px !important; }
+
+.margin-bottom-lg { margin-bottom: 32px !important; }
+
+.padding-none { padding: 0 !important; }
+
+.padding-top-none { padding-top: 0 !important; }
+
+.padding-left-none { padding-left: 0 !important; }
+
+.padding-right-none { padding-right: 0 !important; }
+
+.padding-bottom-none { padding-bottom: 0 !important; }
+
+.margin-none { margin: 0 !important; }
+
+.margin-top-none { margin-top: 0 !important; }
+
+.margin-left-none { margin-left: 0 !important; }
+
+.margin-right-none { margin-right: 0 !important; }
+
+.margin-bottom-none { margin-bottom: 0 !important; }
+
+.margin-auto { margin-right: auto; margin-left: auto; }
+
+.app-apex-application-archive { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-apex-application-archive.svg"); background-repeat: no-repeat; }
+
+.app-application-standards-tracker { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-application-standards-tracker.svg"); background-repeat: no-repeat; }
+
+.app-artwork-catalog { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-artwork-catalog.svg"); background-repeat: no-repeat; }
+
+.app-bug-tracking { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-bug-tracking.svg"); background-repeat: no-repeat; }
+
+.app-checklist-manager { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-checklist-manager.svg"); background-repeat: no-repeat; }
+
+.app-community-requests { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-community-requests.svg"); background-repeat: no-repeat; }
+
+.app-customer-tracker { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-customer-tracker.svg"); background-repeat: no-repeat; }
+
+.app-data-reporter { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-data-reporter.svg"); background-repeat: no-repeat; }
+
+.app-decision-manager { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-decision-manager.svg"); background-repeat: no-repeat; }
+
+.app-expertise-tracker { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-expertise-tracker.svg"); background-repeat: no-repeat; }
+
+.app-feedback { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-feedback.svg"); background-repeat: no-repeat; }
+
+.app-go-live-checklist { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-go-live-checklist.svg"); background-repeat: no-repeat; }
+
+.app-group-calendar { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-group-calendar.svg"); background-repeat: no-repeat; }
+
+.app-incident-tracking { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-incident-tracking.svg"); background-repeat: no-repeat; }
+
+.app-issue-tracker { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-issue-tracker.svg"); background-repeat: no-repeat; }
+
+.app-live-poll { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-live-poll.svg"); background-repeat: no-repeat; }
+
+.app-meeting-minutes { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-meeting-minutes.svg"); background-repeat: no-repeat; }
+
+.app-opportunity-tracker { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-opportunity-tracker.svg"); background-repeat: no-repeat; }
+
+.app-p-track { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-p-track.svg"); background-repeat: no-repeat; }
+
+.app-sample-brookstrut { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-brookstrut.svg"); background-repeat: no-repeat; }
+
+.app-sample-calendar { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-calendar.svg"); background-repeat: no-repeat; }
+
+.app-sample-charts { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-charts.svg"); background-repeat: no-repeat; }
+
+.app-sample-collections { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-collections.svg"); background-repeat: no-repeat; }
+
+.app-sample-data-loading { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-data-loading.svg"); background-repeat: no-repeat; }
+
+.app-sample-database-application { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-database-application.svg"); background-repeat: no-repeat; }
+
+.app-sample-dialog { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-dialog.svg"); background-repeat: no-repeat; }
+
+.app-sample-dynamic-actions { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-dynamic-actions.svg"); background-repeat: no-repeat; }
+
+.app-sample-file-upload-download { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-file-upload-download.svg"); background-repeat: no-repeat; }
+
+.app-sample-forms { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-forms.svg"); background-repeat: no-repeat; }
+
+.app-sample-geolocation { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-geolocation.svg"); background-repeat: no-repeat; }
+
+.app-sample-lists { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-lists.svg"); background-repeat: no-repeat; }
+
+.app-sample-master-detail { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-master-detail.svg"); background-repeat: no-repeat; }
+
+.app-sample-reporting { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-reporting.svg"); background-repeat: no-repeat; }
+
+.app-sample-search { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-search.svg"); background-repeat: no-repeat; }
+
+.app-sample-trees { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-trees.svg"); background-repeat: no-repeat; }
+
+.app-sample-universal-theme { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-universal-theme.svg"); background-repeat: no-repeat; }
+
+.app-sample-websheet-anyco { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-websheet-anyco.svg"); background-repeat: no-repeat; }
+
+.app-sample-wizard { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-sample-wizard.svg"); background-repeat: no-repeat; }
+
+.app-survey-builder { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-survey-builder.svg"); background-repeat: no-repeat; }
+
+.app-systems-catalog { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-systems-catalog.svg"); background-repeat: no-repeat; }
+
+.app-use-case-status { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-use-case-status.svg"); background-repeat: no-repeat; }
+
+.app-websheet-any-co { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-websheet-any-co.svg"); background-repeat: no-repeat; }
+
+.app-websheet-big-cats { background-image: url("../../../../apex_ui/img/icons_src/pkg-apps/app-websheet-big-cats.svg"); background-repeat: no-repeat; }
+
+/* ========================================================================== Packaged App Icons ========================================================================== */
+/* Light Blue */
+.app-apex-application-archive, .app-customer-tracker, .app-data-reporter, .app-group-calendar, .app-sample-search, .app-websheet-any-co { background-color: #4FA5E9 !important; }
+
+/* Dark Blue */
+.app-feedback, .app-issue-tracker, .app-sample-dialog, .app-sample-lists, .app-sample-calendar { background-color: #3F84BB !important; }
+
+/* Darker Blue */
+.app-artwork-catalog, .app-checklist-manager, .app-go-live-checklist, .app-opportunity-tracker, .app-p-track, .app-sample-data-loading, .app-sample-forms, .app-sample-reporting, .app-sample-wizard, .app-use-case-status, .app-sample-universal-theme { background-color: #3E566D !important; }
+
+/* Light Gray */
+.app-application-standards-tracker, .app-sample-database-application, .app-sample-geolocation { background-color: #E5E7E9 !important; }
+
+/* Dark Gray */
+.app-sample-collections, .app-meeting-minutes { background-color: #4C4E50 !important; }
+
+/* Orange */
+.app-sample-brookstrut, .app-incident-tracking, .app-sample-charts, .app-sample-file-upload-download, .app-systems-catalog, .app-community-requests, .app-live-poll { background-color: #FDBD3E !important; }
+
+/* Green */
+.app-bug-tracking, .app-decision-manager, .app-sample-dynamic-actions, .app-sample-master-detail, .app-sample-trees { background-color: #27A168 !important; }
+
+/* Red */
+.app-expertise-tracker, .app-survey-builder, .app-websheet-big-cats { background-color: #F64434 !important; }
+
+/* ========================================================================== Headings ========================================================================== */
+h1 { font-size: 3.2rem; margin: 0 0 1.6rem 0; }
+
+h1 + h2 { margin-top: 1.6em; }
+
+h2 { font-size: 2.4rem; margin: 0 0 1.2rem 0; }
+
+h2 + h3 { margin-top: 1.2em; }
+
+h3 { font-size: 2.0rem; margin: 0 0 1.2rem 0; }
+
+h3 + h4 { margin-top: 0.8em; }
+
+h4 { font-size: 1.6rem; margin: 0 0 0.8rem 0; font-weight: 500; }
+
+h4 + h5 { margin-top: 0.8em; }
+
+h5 { font-size: 1.4rem; margin: 0 0 0.8rem 0; font-weight: 500; }
+
+h5 + h6 { margin-top: 0.8em; }
+
+h6 { font-size: 1.2rem; margin: 0 0 0.8rem 0; font-weight: normal; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: 500; line-height: 1.5; }
+
+/* ========================================================================== Paragraphs ========================================================================== */
+p { font-size: inherit; line-height: inherit; margin: 0 0 1.6rem 0; }
+
+p:last-child { margin-bottom: 0; }
+
+/* ========================================================================== Lists ========================================================================== */
+ol, ul { margin: 1.2rem 3.2rem; padding: 0; }
+
+ul { list-style-type: disc; }
+
+ol { list-style-type: decimal; }
+
+li { font-size: 1.4rem; line-height: 2.0rem; }
+
+/* ========================================================================== Miscellaneous ========================================================================== */
+code, pre { font-family: 'Menlo','Consolas',mono-space; white-space: pre; font-size: 1.2rem; line-height: 1.5; }
+
+small { font-size: 1.1rem; }
+
+big { font-size: 1.6rem; }
+
+.nodatafound { display: block; padding: 12px; font-size: 11px; }
+
+.nodatafound:empty { display: none; }
+
+body .ui-widget.utr { position: fixed !important; }
+
+/* Wait Overlay Styles ========================================================================== */
+.apex_wait_overlay { background: rgba(255, 255, 255, 0.5); z-index: 1900; position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* Commonly Used Colors ========================================================================== */
+.u-file-icon { padding: 4px 8px; text-align: center; color: #FFF; border-radius: 2px; vertical-align: top; }
+
+.u-file-icon.fa-file-powerpoint-o { background-color: #D24726; }
+
+.u-file-icon.fa-file-excel-o { background-color: #217345; }
+
+.u-file-icon.fa-file-word-o { background-color: #2A579A; }
+
+.u-file-icon.fa-file-pdf-o { background-color: #F40700; }
+
+.u-file-icon.fa-file-image-o { background-color: #F6BB32; }
+
+.u-file-icon.fa-file-o { background-color: #A5ADB8; }
+
+@media only screen and (max-width: 567px) { .t-Region-bodyWrap > .t-Region-body { height: auto !important; max-height: auto !important; } }

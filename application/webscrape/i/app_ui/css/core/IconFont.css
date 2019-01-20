@@ -1,0 +1,391 @@
+/** Import Compass */
+/******************************************************************************
+Sprite Mixin
+******************************************************************************/
+/******************************************************************************
+Extendible Sprite Class
+******************************************************************************/
+/******************************************************************************
+
+File Name:    FontIcon.scss
+Purpose:      Custom APEX 5 Font Icon
+
+Outline:
+  1. Font Import
+  2. Icon Classes
+
+******************************************************************************/
+@font-face { font-family: "apex-5-icon-font"; src: url("../../font/apex-5-icon-font.woff2") format("woff2"), url("../../font/apex-5-icon-font.woff") format("woff"), url("../../font/apex-5-icon-font.ttf?v1.0") format("truetype"), url("../../font/apex-5-icon-font.svg?v1.0#apex-5-icon-font") format("svg"); font-weight: normal; font-style: normal; }
+
+.a-Icon { display: inline-block; vertical-align: top; width: 16px; height: 16px; line-height: 16px; }
+
+.a-Icon:before { font-size: 16px; }
+
+.ie7 .a-Icon { font-size: 16px; }
+
+.a-Icon:before { font-family: "apex-5-icon-font" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.ie7 .a-Icon { font-family: "apex-5-icon-font" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.a-Icon.a-Icon--medium { width: 24px; height: 24px; }
+
+.a-Icon.a-Icon--medium:before { font-size: 24px; }
+
+.ie7 .a-Icon.a-Icon--medium { font-size: 24px; }
+
+.a-Icon.a-Icon--large { width: 32px; height: 32px; }
+
+.a-Icon.a-Icon--large:before { font-size: 32px; }
+
+.ie7 .a-Icon.a-Icon--large { font-size: 32px; }
+
+.a-Icon.a-Icon--xl { width: 48px; height: 48px; }
+
+.a-Icon.a-Icon--xl:before { font-size: 48px; }
+
+.ie7 .a-Icon.a-Icon--xl { font-size: 48px; }
+
+/* Developer Toolbar Icons */
+.a-Icon.icon-home:before { content: "\e014"; }
+
+.a-Icon.icon-debug:before, .a-Icon.icon-bug:before { content: "\e050"; }
+
+.a-Icon.icon-quick-edit:before { content: "\e057"; }
+
+.a-Icon.icon-edit-page:before, .a-Icon.icon-edit-page-alt:before { content: "\e049"; }
+
+.a-Icon.icon-irr-ws-history:before, .a-Icon.icon-page-session:before, .a-Icon.icon-coming-soon:before { content: "\e108"; }
+
+.a-Icon.icon-open-in-dialog:before, .a-Icon.icon-page-debug:before { content: "\e04d"; }
+
+.a-Icon.icon-irr-ws-properties:before, .a-Icon.icon-grid-layout:before { content: "\e107"; }
+
+.a-Icon.icon-theme-roller:before { content: "\e037"; }
+
+.a-Icon.icon-gear:before { content: "\e001"; }
+
+.a-Icon.icon-edit-app:before { content: "\e051"; }
+
+.a-Icon.icon-asterisk:before { content: "\e058"; color: red; }
+
+.a-Icon.icon-gears-alt:before { content: "\e059"; }
+
+.a-Icon.icon-mobile:before { content: "\e067"; }
+
+.a-Icon.icon-help:before, .a-Icon.icon-ig-help:before, .a-Icon.icon-irr-help:before { content: "\e04f"; }
+
+.a-Icon.icon-user:before { content: "\e024"; }
+
+.sample-apex:before { content: "\e153"; }
+
+.sample-otn:before { content: "\e154"; }
+
+.a-Icon.icon-toolbar-all:before { content: "\e008"; }
+
+.a-Icon.icon-toolbar-common:before { content: "\e009"; }
+
+.a-Icon.icon-tr-redo:before, .a-Icon.icon-redo:before { content: "\e01d"; }
+
+.a-Icon.icon-tr-undo:before, .a-Icon.icon-undo:before { content: "\e01b"; }
+
+.a-Icon.icon-refresh:before, .a-Icon.icon-shuttle-reset:before, .a-Icon.icon-ig-reset:before, .a-Icon.icon-irr-reset:before, .a-Icon.icon-tr-reset:before { content: "\e14d"; }
+
+.a-Icon.icon-tr-close:before, .a-Icon.icon-tr-fail:before, .a-Icon.icon-remove:before { content: "\e0a2"; }
+
+.a-Icon.icon-shuttle-move-all:before { content: "\e028"; }
+
+.u-RTL .a-Icon.icon-shuttle-move-all:before { content: "\e029"; }
+
+.a-Icon.icon-last:before { content: "\e180"; }
+
+.u-RTL .a-Icon.icon-last:before { content: "\e17f"; }
+
+.a-Icon.icon-shuttle-bottom:before, .a-Icon.icon-tr-collapse:before, .a-Icon.icon-install:before { content: "\e021"; }
+
+.a-Icon.icon-shuttle-down:before { content: "\e026"; }
+
+.a-Icon.icon-shuttle-top:before, .a-Icon.icon-tr-expand:before { content: "\e064"; }
+
+.a-Icon.icon-shuttle-up:before, .a-Icon.icon-breadcrumb-previous:before { content: "\e01a"; }
+
+.a-Icon.icon-shuttle-remove-all:before { content: "\e029"; }
+
+.u-RTL .a-Icon.icon-shuttle-remove-all:before { content: "\e028"; }
+
+.a-Icon.icon-top:before { content: "\e181"; }
+
+.a-Icon.icon-bottom:before { content: "\e17e"; }
+
+.a-Icon.icon-first:before { content: "\e17F"; }
+
+.u-RTL .a-Icon.icon-first:before { content: "\e180"; }
+
+.a-Icon.icon-tr-contrast:before { content: "\e065"; }
+
+.a-Icon.icon-menu-scroll-up:before { content: "\e0e5"; }
+
+.a-Icon.icon-menu-drop-down:before, .a-Icon.icon-menu-scroll-down:before { content: "\e0c2"; }
+
+.a-Icon.icon-down-arrow:before, .a-Collapsible.is-expanded .a-Collapsible-icon:before, .a-Icon.icon-ig-collapse-row:before, .a-Icon.icon-irr-collapse-row:before { content: "\e123"; }
+
+.a-Icon.icon-menu-sub-rtl:before, .a-Icon.icon-paginate-prev:before { content: "\E0CA"; }
+
+.a-Icon.icon-menu-sub:before, .a-Icon.icon-paginate-next:before { content: "\e0d8"; }
+
+.a-Icon.icon-color-picker:before { content: "\e063"; }
+
+.a-Icon.icon-right-arrow:before, .a-Icon.icon-ig-expand-row:before, .a-Collapsible.is-collapsed .a-Collapsible-icon:before { content: "\e126"; }
+
+.u-RTL .a-Icon.icon-right-arrow:before, .u-RTL .a-Icon.icon-ig-expand-row:before, .u-RTL .a-Collapsible.is-collapsed .a-Collapsible-icon:before { content: "\e002"; }
+
+.a-Icon.icon-left-arrow:before, .a-Collapsible-icon:before { content: "\e002"; }
+
+.u-RTL .a-Icon.icon-left-arrow:before, .u-RTL .a-Collapsible-icon:before { content: "\e126"; }
+
+.a-Icon.icon-circle:before { content: "\e14e"; }
+
+.a-Icon.icon-irr-ws-validation:before, .a-Icon.icon-check:before, .a-Icon.icon-tr-pass:before, .a-Icon.icon-menu-check:before, .a-Icon.icon-wizard-step-complete:before { content: "\e007"; }
+
+.a-Icon.icon-warning:before, .a-Icon.icon-tr-warning:before, .a-Icon.icon-ig-invalid-settings:before, .a-Icon.icon-irr-invalid-settings:before { content: "\e017"; }
+
+.a-Icon.icon-info:before, .a-Icon.icon-tr-contrast:before, .a-Icon.icon-ig-inactive-settings:before, .a-Icon.icon-irr-inactive-settings:before { content: "\e023"; }
+
+.a-Icon.icon-quick-pick:before, .a-Icon.icon-irr-ws-lov:before { content: "\e0a6"; }
+
+.a-Icon.icon-ig-no-results:before, .a-Icon.icon-irr-no-results:before, .a-Icon.icon-search:before, .a-Icon.icon-cm-find:before { content: "\e022"; }
+
+.a-Icon.icon-tools:before, .a-Icon.icon-util:before, .a-Icon.icon-cm-build-query:before, .a-Icon.icon-ig-format:before, .a-Icon.icon-irr-format:before { content: "\e0a3"; }
+
+.a-Icon.icon-ig-add-row:before, .a-Icon.icon-plus:before, .a-Icon.icon-irr-ws-row-add:before, .a-Icon.icon-irr-ws-col-add:before { content: "\e069"; }
+
+.a-Icon.icon-minus:before { content: "\e167"; }
+
+.a-Icon.icon-calculator:before, .a-Icon.icon-ig-calculator:before, .a-Icon.icon-ig-compute:before, .a-Icon.icon-irr-calculator:before, .a-Icon.icon-irr-compute:before, .a-Icon.icon-tree-computation:before { content: "\e05d"; }
+
+.a-Icon.icon-ig-chart:before, .a-Icon.icon-irr-chart:before { content: "\e0e9"; }
+
+.a-Icon.icon-ig-control-break:before, .a-Icon.icon-irr-control-break:before { content: "\e0ea"; }
+
+.a-Icon.icon-ig-details:before, .a-Icon.icon-irr-details:before { content: "\e05c"; }
+
+.a-Icon.icon-ig-group-by:before, .a-Icon.icon-irr-group-by:before { content: "\e0ec"; }
+
+.a-Icon.icon-ig-icons:before, .a-Icon.icon-irr-icons:before, .a-Icon.icon-ws-page-dir:before { content: "\e0ff"; }
+
+.a-Icon.icon-ig-pivot:before, .a-Icon.icon-irr-pivot:before { content: "\e0ef"; }
+
+.a-Icon.icon-ig-remove-col:before, .a-Icon.icon-irr-remove-col:before { content: "\e0f0"; }
+
+.a-Icon.icon-ig-report:before, .a-Icon.icon-irr-report:before { content: "\e0f1"; }
+
+.a-Icon.icon-ig-sort-asc:before, .a-Icon.icon-irr-sort-asc:before, .a-Icon.icon-rpt-sort-asc:before { content: "\e0f2"; }
+
+.a-Icon.icon-ig-sort-desc:before, .a-Icon.icon-irr-sort-desc:before, .a-Icon.icon-rpt-sort-desc:before { content: "\e0f3"; }
+
+.a-Icon.icon-ig-filter:before, .a-Icon.icon-irr-filter:before { content: "\e0f4"; }
+
+.a-Icon.icon-ig-flashback:before, .a-Icon.icon-irr-flashback:before { content: "\e0f7"; }
+
+.a-Icon.icon-ig-highlight:before, .a-Icon.icon-irr-highlight:before { content: "\e0f8"; }
+
+.a-Icon.icon-download:before, .a-Icon.icon-ig-download:before, .a-Icon.icon-irr-download:before { content: "\e0fb"; }
+
+.a-Icon.icon-upload:before { content: "\e1a6"; }
+
+.a-Icon.icon-ig-search:before, .a-Icon.icon-irr-search:before { content: "\e0fa"; }
+
+.a-Icon.icon-ig-saved-report:before, .a-Icon.icon-irr-saved-report:before, .a-Icon.icon-tree-saved-report:before { content: "\e0f9"; }
+
+.a-Icon.icon-ws-file:before { content: "\e0fc"; }
+
+.a-Icon.icon-ws-image:before { content: "\e0fd"; }
+
+.a-Icon.icon-ws-note:before { content: "\e0fe"; }
+
+.a-Icon.icon-irr-ws-col:before, .a-Icon.icon-ig-select-cols:before, .a-Icon.icon-irr-select-cols:before, .a-Icon.icon-tree-report-column:before { content: "\e102"; }
+
+.a-Icon.icon-irr-ws-toggle-checkboxes:before { content: "\e103"; }
+
+.a-Icon.icon-cm-replace:before, .a-Icon.icon-irr-ws-row-replace:before { content: "\e104"; }
+
+.a-Icon.icon-irr-ws-row-fill:before { content: "\e105"; }
+
+.a-Icon.icon-ig-rows:before, .a-Icon.icon-irr-rows:before, .a-Icon.icon-irr-ws-row:before { content: "\e106"; }
+
+.a-Icon.icon-ig-aggregate:before, .a-Icon.icon-irr-aggregate:before { content: "\e124"; }
+
+.a-Icon.icon-ig-sort:before, .a-Icon.icon-irr-sort:before { content: "\e125"; }
+
+.a-Icon.icon-ig-subscription:before, .a-Icon.icon-irr-subscription:before { content: "\e02b"; }
+
+.a-Icon.icon-irr-ws-properties:before, .a-Icon.icon-grid-layout:before { content: "\e107"; }
+
+.a-Icon.icon-irr-ws-history:before, .a-Icon.icon-page-session:before, .a-Icon.icon-coming-soon:before { content: "\e108"; }
+
+.a-Icon.icon-copy:before, .a-Icon.icon-irr-ws-copy:before { content: "\e109"; }
+
+.a-Icon.icon-irr-ws-col-pros:before, .a-Icon.icon-irr-ws-col-values:before { content: "\e10a"; }
+
+.a-Icon.icon-irr-ws-col-groups:before { content: "\e10b"; }
+
+.a-Icon.icon-irr-ws-dg-delete:before, .a-Icon.icon-irr-ws-col-delete:before, .a-Icon.icon-irr-ws-row-delete:before { content: "\e10c"; }
+
+.a-Icon.icon-right-chevron:before, .a-Icon.icon-go-to-component:before, .a-Icon.icon-shuttle-move:before, .a-Icon.icon-next:before { content: "\e016"; }
+
+.u-RTL .a-Icon.icon-right-chevron:before, .u-RTL .a-Icon.icon-shuttle-move:before, .u-RTL .a-Icon.icon-next:before { content: "\e013"; }
+
+.a-Icon.icon-left-chevron:before, .a-Icon.icon-shuttle-remove:before, .a-Icon.icon-prev:before { content: "\e013"; }
+
+.u-RTL .a-Icon.icon-left-chevron:before, .u-RTL .a-Icon.icon-shuttle-remove:before, .u-RTL .a-Icon.icon-prev:before { content: "\e016"; }
+
+.a-Icon.icon-maximize:before { content: "\e00f"; }
+
+.a-Icon.icon-up-chevron:before, .a-Icon.icon-popup-lov:before { content: "\e012"; }
+
+.a-Icon.icon-down-chevron:before, .a-Icon.icon-menu-split-drop-down:before { content: "\e015"; }
+
+.a-Icon.icon-region-native-calendar:before, .a-Icon.icon-template-calendar:before, .a-Icon.icon-item-native-date-picker-classic:before { content: "\e071"; }
+
+.a-Icon.icon-calendar:before { content: "\e137"; }
+
+.a-Icon.icon-restore:before { content: "\e025"; }
+
+.a-Icon.icon-menu-radio:before { content: "\E080"; }
+
+.a-Icon.icon-irr-dl-email:before { content: "\e183"; }
+
+.a-Icon.icon-irr-dl-doc:before { content: "\e184"; }
+
+.a-Icon.icon-ig-dl-html:before, .a-Icon.icon-irr-dl-html:before { content: "\e185"; }
+
+.a-Icon.icon-irr-dl-pdf:before { content: "\e186"; }
+
+.a-Icon.icon-ig-dl-xls:before, .a-Icon.icon-irr-dl-xls:before { content: "\e187"; }
+
+.a-Icon.icon-ig-actions:before { content: "\e066"; }
+
+.a-Icon.icon-ig-expand:before { content: "\e04d"; }
+
+.a-Icon.icon-ig-restore:before { content: "\e0a2"; }
+
+/* IG Icons */
+.a-Icon.icon-ig-data:before { content: "\E0F1"; }
+
+.a-Icon.icon-ig-report-settings:before { content: "\E001"; }
+
+.a-Icon.icon-ig-save:before { content: "\E0CB"; }
+
+.a-Icon.icon-ig-save-as:before { content: "\E0E4"; }
+
+.a-Icon.icon-ig-edit:before { content: "\E049"; }
+
+.a-Icon.icon-ig-duplicate:before { content: "\E109"; }
+
+.a-Icon.icon-ig-delete:before { content: "\E0C8"; }
+
+.a-Icon.icon-ig-revert:before { content: "\E01B"; }
+
+.a-Icon.icon-ig-refresh:before { content: "\E01E"; }
+
+.a-Icon.icon-ig-single-row-view:before { content: "\E0A5"; }
+
+.a-Icon.icon-ig-frozen-column:before { content: "\E0DB"; }
+
+.a-Icon.icon-ig-selection:before { content: "\E193"; }
+
+.a-Icon.icon-ig-select-row:before { content: "\E192"; }
+
+.a-Icon.icon-ig-select-column:before { content: "\E191"; }
+
+.a-Icon.icon-ig-select-cell:before { content: "\E190"; }
+
+.a-Icon.icon-ig-fill:before { content: "\E18D"; }
+
+.a-Icon.icon-ig-copy:before { content: "\E18E"; }
+
+.a-Icon.icon-ig-clear:before { content: "\E18C"; }
+
+.a-Icon.icon-ig-copy-down:before { content: "\E19F"; }
+
+/* Tree Icons */
+.a-Icon.icon-tree-folder:before { content: "\e0da"; }
+
+.a-Icon.icon-tree-folder-open:before { content: "\e0d7"; }
+
+/* IG Icons */
+/* IRR Chart Icons */
+/******************************************************************************
+Chart Icons
+******************************************************************************/
+.a-Icon.icon-region-chart-area:before { content: "\e158"; }
+
+.a-Icon.icon-region-chart-bar:before { content: "\e164"; }
+
+.a-Icon.icon-region-chart-bubble:before { content: "\e15a"; }
+
+.a-Icon.icon-region-chart-column:before { content: "\e159"; }
+
+.a-Icon.icon-region-chart-combo:before { content: "\e15b"; }
+
+.a-Icon.icon-region-chart-dial:before { content: "\e15c"; }
+
+.a-Icon.icon-region-chart-donut:before { content: "\e166"; }
+
+.a-Icon.icon-region-chart-funnel:before { content: "\e15d"; }
+
+.a-Icon.icon-region-chart-gantt:before { content: "\e165"; }
+
+.a-Icon.icon-region-chart-line-area:before { content: "\e053"; }
+
+.a-Icon.icon-region-chart-line:before { content: "\e156"; }
+
+.a-Icon.icon-region-chart-pie:before { content: "\e15f"; }
+
+.a-Icon.icon-region-chart-polar:before { content: "\e160"; }
+
+.a-Icon.icon-region-chart-radar:before { content: "\e161"; }
+
+.a-Icon.icon-region-chart-range-area:before { content: "\e162"; }
+
+.a-Icon.icon-region-chart-range-bar:before { content: "\e163"; }
+
+.a-Icon.icon-region-chart-scatter:before { content: "\e15e"; }
+
+.a-Icon.icon-region-chart-stock:before { content: "\e157"; }
+
+/* Social and Brand Icons ========================================================================== */
+body .fa.fa-facebook:before, body .fa.fa-facebook-square:before, body .fa.fa-github:before, body .fa.fa-github-square:before, body .fa.fa-google:before, body .fa.fa-google-plus:before, body .fa.fa-google-plus-square:before, body .fa.fa-linkedin:before, body .fa.fa-linkedin-square:before, body .fa.fa-oracle:before, body .fa.fa-oracle-o:before, body .fa.fa-oracle-o-square:before, body .fa.fa-twitter:before, body .fa.fa-twitter-square:before, body .fa.fa-youtube:before, body .fa.fa-youtube-play:before, body .fa.fa-youtube-square:before { font-family: "apex-5-icon-font" !important; }
+
+.fa.fa-facebook:before { content: "\e1b0"; }
+
+.fa.fa-facebook-square:before { content: "\e1b1"; }
+
+.fa.fa-github:before { content: "\e1b2"; }
+
+.fa.fa-github-square:before { content: "\e1b3"; }
+
+.fa.fa-google:before { content: "\e1b4"; }
+
+.fa.fa-google-plus:before { content: "\e1b5"; }
+
+.fa.fa-google-plus-square:before { content: "\e1b6"; }
+
+.fa.fa-linkedin:before { content: "\e1b7"; }
+
+.fa.fa-linkedin-square:before { content: "\e1b8"; }
+
+.fa.fa-oracle:before { content: "\e1b9"; }
+
+.fa.fa-oracle-o:before { content: "\e1ba"; }
+
+.fa.fa-oracle-o-square:before { content: "\e1bb"; }
+
+.fa.fa-twitter:before { content: "\e1bc"; }
+
+.fa.fa-twitter-square:before { content: "\e1bd"; }
+
+.fa.fa-youtube:before { content: "\e1be"; }
+
+.fa.fa-youtube-play:before { content: "\e1bf"; }
+
+.fa.fa-youtube-square:before { content: "\e1c0"; }

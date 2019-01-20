@@ -1,0 +1,20 @@
+/* ========================================================================== Tabs ========================================================================== */
+/** Core Tabs This component renders the tabs UI control. */
+.ui-tabs.ui-widget-content { border-radius: 0; border: 0; }
+
+.a-Tabs { list-style: none; margin: 0; padding: 0; *zoom: 1; border: 1px solid; border-radius: 0; }
+
+.a-Tabs:before, .a-Tabs:after { content: " "; display: table; }
+
+.a-Tabs:after { clear: both; }
+
+.a-Tabs-item { float: left; display: block; }
+
+.a-Tabs-link { display: block; text-decoration: none; border-radius: 0; }
+
+.a-Tabs-item.is-active { font-weight: bold !important; }
+
+/* Tab Label ========================================================================== */
+.a-Tabs--pageDesignerTabs .a-Icon + .a-Tabs-label { margin-left: 4px; }
+
+.ui-tabs--iconOnly .a-Tabs-label { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }

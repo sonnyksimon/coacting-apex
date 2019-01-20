@@ -1,0 +1,49 @@
+/**  Import Compass and Theme Variables */
+/* ========================================================================== Circular Badges ========================================================================== */
+.a-BadgeChart { display: block; text-align: center; position: relative; padding: 16px; }
+
+.a-BadgeChart-value, .a-BadgeChart-label { display: block; transition: color .1s; }
+
+.a-BadgeChart-value { margin: 0 auto; font-size: 32px; font-weight: 400; line-height: 94px; white-space: nowrap; text-align: center; cursor: default; transition: background-color ease .3s, border-color .1s; }
+
+.a-BadgeChart-text { display: block; text-align: center; margin-top: 12px; }
+
+.a-BadgeChart-label { font-weight: 400; font-size: 16px; line-height: 16px; display: block; margin-bottom: 8px; text-transform: capitalize; }
+
+.a-BadgeChart-desc { font-size: 12px; line-height: 16px; }
+
+.a-BadgeChart-link { display: block; text-decoration: none; }
+
+.a-BadgeChart-link:hover { text-decoration: none; }
+
+.a-BadgeChart-link .a-BadgeChart-label { color: inherit; }
+
+.a-BadgeChart-link .a-BadgeChart-label:hover { text-decoration: underline; }
+
+.a-BadgeChart-link .a-BadgeChart-value { cursor: pointer; }
+
+/* ========================================================================== Full Height Label Bottom ========================================================================== */
+.a-BadgeChart--labelBelow { height: 100%; }
+
+.a-BadgeChart--labelBelow .a-BadgeChart-wrap { margin: 0 0 48px 0; }
+
+.a-BadgeChart--labelBelow .a-BadgeChart-text { position: absolute; right: 0; left: 0; bottom: 0; margin: 8px; background-image: linear-gradient(rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.75) 0.25); }
+
+/* ========================================================================== JustGage ========================================================================== */
+.a-BadgeChart--justGage { padding: 0; }
+
+.a-BadgeChart--justGage .a-BadgeChart-text { margin-top: -5px; }
+
+.a-BadgeChart--justGage svg { margin-top: -1px; }
+
+.a-BadgeChart--justGage svg tspan { font-size: 32px; font-weight: 400; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.a-BadgeChart--justGageLike { padding-top: 20px; }
+
+.a-BadgeChart--justGageLike .a-BadgeChart-link { display: inline-block; }
+
+.a-BadgeChart--justGageLike .a-BadgeChart-value { width: 96px; height: 96px; border-radius: 100%; border: 2px solid; transition: box-shadow .2s, background-color ease .3s, border-color .1s, color .3s; }
+
+.a-BadgeChart--justGage, .a-BadgeChart--justGageLike { padding-bottom: 0; }
+
+@media only screen and (max-width: 800px) { .a-BadgeChart-text { margin-top: 4px; } .a-BadgeChart-label { font-size: 12px; margin-bottom: 4px; } .a-BadgeChart-desc { font-size: 11px; line-height: 14px; } .a-BadgeChart--justGageLike { padding-top: 10px; } }

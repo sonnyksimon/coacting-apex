@@ -1,0 +1,73 @@
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+html { font-size: 62.5%; }
+
+body { font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-size: 1.2rem; line-height: 1.6rem; min-width: 768px; min-height: 100vh; }
+
+body.a-Page--secondary { background-color: #F8F8F8; }
+
+body.a-Page--simpleWizard { background-color: #F8F8F8; }
+
+body.a-Page--wizard { background-color: #F8F8F8; }
+
+body.a-Page--finalWizardStep .u-Layout { background-color: #FFF; max-width: 720px; margin: 0 auto; flex-direction: row; align-items: center; flex-grow: 1; }
+
+body.a-Page--finalWizardStep .a-Wizard--requestWorkspace { display: block; }
+
+body.a-Page--finalWizardStep .a-Button--wizardFinish { padding: 16px; }
+
+p { margin: 0 0 8px 0; }
+
+p:only-child { margin-bottom: 0; }
+
+#wwvFlowForm { min-height: 100vh; /* OLD - iOS 6-, Safari 3.1-6 */ /* OLD - Firefox 19- (buggy but mostly works) */ /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ flex-direction: column; }
+
+.ie10 html, .ie10 body, .ie10 #wwvFlowForm { height: 100%; }
+
+.ie10 #wwvFlowForm { -ms-flex: 1 0 auto; }
+
+.a-Body { display: flex; flex-direction: row; flex: 1; align-items: stretch; justify-content: space-between; clear: both; -ms-flex: 0 1 auto; }
+
+.lt-ie11 .a-Body, .ie10 .a-Body, .ie9 .a-Body, .ie8 .a-Body, .ie7 .a-Body, .ie6 .a-Body { display: table; width: 100%; }
+
+.lt-ie11 .a-Body > *, .ie10 .a-Body > *, .ie9 .a-Body > *, .ie8 .a-Body > *, .ie7 .a-Body > *, .ie6 .a-Body > * { display: table-cell !important; vertical-align: top !important; }
+
+body.apex-resize-block .resize { display: block !important; }
+
+.a-SystemMessage { background-color: #FDF5D9; border-bottom: 1px solid #EBDFB1; border-top: 1px solid #EBDFB1; overflow: hidden; padding: 8px 12px; color: #333024; font-size: 14px; line-height: 22px; min-height: 41px; }
+
+.a-SystemMessage--info { background-color: #e7f3ff; border-color: #d2e6ff; }
+
+.ebaLaunchPadRegion * { box-sizing: content-box; }
+
+.a-LinkBlockList { display: block; list-style: none; margin: 0; padding: 0; }
+
+.a-LinkBlockList-item { padding: 0; }
+
+.a-LinkBlockList-link { display: block; padding: 12px; margin: 12px; text-decoration: none; border-radius: 2px; background-color: #FFF; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075); transition: background-color .2s, border-color .2s, box-shadow .1s; }
+
+.a-LinkBlockList-link:hover { text-decoration: none; border-color: #D0D0D0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.075), 0 0 0 1px #0572CE inset; }
+
+.a-LinkBlockList-label { font-size: 16px; line-height: 1; padding-bottom: 4px; display: block; }
+
+.a-LinkBlockList-info { overflow: hidden; display: block; font-size: 10px; line-height: 12px; }
+
+.a-LinkBlockList-text { color: #707070; }
+
+.a-LinkBlockList-text--right { float: right; margin-left: 8px; }
+
+.justGageContainer { margin: 0 auto; }
+
+/** Scroll Bars */
+::-webkit-Scrollbar { width: 8px; height: 8px; }
+
+::-webkit-scrollbar-thumb { background: #A0A0A0; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
+::-webkit-scrollbar-thumb:hover { background-color: #707070; }
+
+::-webkit-scrollbar-track { background: #FFF; }
+
+::-webkit-scrollbar-track:hover { background-color: #F0F0F0; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) inset; }

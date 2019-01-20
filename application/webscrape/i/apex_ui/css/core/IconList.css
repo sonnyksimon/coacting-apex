@@ -1,0 +1,45 @@
+/* ========================================================================== Icon List ========================================================================== */
+/** Icon Name (SPAN) */
+.a-Gallery-componentName { display: block; overflow: hidden; text-overflow: ellipsis; text-align: center; white-space: normal; }
+
+/* ========================================================================== Wizard Icon List ========================================================================== */
+.a-IconList--wizard { padding: 8px 0 0 0; }
+
+.a-IconList--wizard .a-IconList-item { box-shadow: none; background-color: transparent; width: 112px; height: 128px; margin-bottom: 8px; margin-right: 8px; padding: 0; }
+
+.a-IconList--wizard .a-IconList-iconName { font-size: 12px; line-height: 16px; color: #707070; height: 48px; /* 3 lines tall */ }
+
+.a-IconList--wizard .a-Icon { display: block; margin: 0 auto 8px; font-size: 32px; width: 32px; height: 32px; padding: 20px 32px; box-sizing: content-box; border-radius: 2px; }
+
+.a-IconList--wizard .a-Icon:before { font-size: 32px; }
+
+/* Modifier: Horizontal Icon List ========================================================================== */
+.a-IconList--horizontal { margin: 16px auto; width: 480px; padding: 0; }
+
+.a-IconList--horizontal .a-IconList-item { width: 100%; height: auto; display: flex; align-items: center; margin: 0 0 16px 0; padding: 8px; cursor: pointer; }
+
+.a-IconList--horizontal .a-Icon { margin: 0 8px 0 0; text-align: center; line-height: 16px; font-size: 16px; padding: 8px; border-radius: 2px; width: 32px; height: 32px; color: #FFF; }
+
+.a-IconList--horizontal .a-Icon.icon-clipboard { background-color: #399BEA; }
+
+.a-IconList--horizontal .a-Icon.icon-file-upload { background-color: #24CB7F; }
+
+.a-IconList--horizontal .a-Icon.icon-sample-data { background-color: #FFBE2A; }
+
+.a-IconList--horizontal .a-Icon.icon-sample-dataset { background-color: #7C8791; }
+
+.a-IconList--horizontal .a-IconList-iconName { height: auto; flex-grow: 1; text-align: left; font-size: 14px; color: rgba(0, 0, 0, 0.75); }
+
+/* Modifier: Horizontally Centered Align Icons ========================================================================== */
+.a-IconList--alignCenter .a-IconList--wizard { text-align: center; }
+
+.a-IconList--alignCenter .a-IconList--wizard .a-IconList-item { margin-right: 0; float: none; display: inline-block; }
+
+/* Modifier: Layouts (for 96x64px size layouts) ========================================================================== */
+.a-IconList--layouts .a-IconList--wizard { text-align: center; }
+
+.a-IconList--layouts .a-IconList--wizard .a-IconList-item { display: inline-block; vertical-align: top; float: none; width: 128px; height: auto; margin: 0 8px 8px 8px; }
+
+.a-IconList--layouts .a-IconList--wizard .a-IconList-item:hover .a-Icon, .a-IconList--layouts .a-IconList--wizard .a-IconList-item.is-selected.is-focused .a-Icon { background-color: #C7CBCD; }
+
+.a-IconList--layouts .a-IconList--wizard .a-Icon { width: 104px; height: 80px; padding: 0; }

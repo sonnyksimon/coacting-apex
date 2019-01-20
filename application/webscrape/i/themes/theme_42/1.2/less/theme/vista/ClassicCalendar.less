@@ -1,0 +1,93 @@
+/**
+ * Import Compass and Theme Variables
+ */
+
+@import "_variables";
+
+/* ==========================================================================
+   Classic Calendar
+   ========================================================================== */
+
+.t-ClassicCalendar {
+}
+
+.t-ClassicCalendar-monthTitle {
+	color: @g_Region-FG;
+}
+.t-ClassicCalendar-dayColumn {
+  background-color: contrast(@g_Region-BG, darken(@g_Region-BG,  2%), lighten(@g_Region-BG,  2%),  43%);
+  vertical-align: top;
+  border-color: contrast(@g_Region-BG, darken(@g_Region-BG,  5%), lighten(@g_Region-BG,  5%),  43%);
+  color: contrast(@g_Region-FG, darken(@g_Region-FG,  15%), lighten(@g_Region-FG,  15%),  43%);
+}
+.t-ClassicCalendar-day {
+	border-color: contrast(@g_Region-BG, darken(@g_Region-BG,  5%), lighten(@g_Region-BG,  5%),  43%);
+  &.is-inactive .t-ClassicCalendar-date{
+    opacity: .5;
+  }
+  &.is-weekend,
+  &.is-inactive {
+    background-color: contrast(@g_Region-BG, darken(@g_Region-BG,  1%), lighten(@g_Region-BG,  1%),  43%);
+  }
+  &.is-today {
+    .t-ClassicCalendar-date {
+      background-color: @g_Accent-BG;
+      color: @g_Accent-FG;
+    }
+  }
+}
+.t-ClassicCalendar-date {
+  color: contrast(@g_Region-FG, darken(@g_Region-FG,  25%), lighten(@g_Region-FG,  25%),  43%);
+}
+.t-ClassicCalendar-event {
+  background-color: contrast(@g_Region-BG, darken(@g_Region-BG,  5%), lighten(@g_Region-BG,  5%),  43%)
+}
+
+.t-ClassicCalendar-event {
+  color: @g_Region-FG;
+  a {
+  background-color: @g_Accent-BG;
+  color: @g_Accent-FG;
+  }
+}
+
+
+//
+// Weekly Calendar
+//
+.t-ClassicCalendar--weekly,
+.t-ClassicCalendar--daily {
+  .t-ClassicCalendar-timeCol {
+    background-color: contrast(@g_Region-BG, darken(@g_Region-BG,  2%), lighten(@g_Region-BG,  2%),  43%);
+  }
+  .t-ClassicCalendar-dayEvents {
+    color: @g_Region-FG;
+  }
+  .t-ClassicCalendar-dayEvents a {
+    background-color: @g_Accent-BG;
+    color: @g_Accent-FG;
+  }
+  .t-ClassicCalendar-day {
+    &.is-today {
+      background-color: contrast(@g_Accent-BG, darken(@g_Accent-BG,  50%), lighten(@g_Accent-BG,  50%),  43%);
+    }
+  }
+}
+
+//
+// List Calendar
+//
+.t-ClassicCalendar-list {
+  border-color: contrast(@g_Region-BG, darken(@g_Region-BG,  5%), lighten(@g_Region-BG,  5%),  43%);
+}
+.t-ClassicCalendar-listTitle,
+.t-ClassicCalendar-listEvent {
+  border-color: contrast(@g_Region-BG, darken(@g_Region-BG,  5%), lighten(@g_Region-BG,  5%),  43%);
+}
+.t-ClassicCalendar-listTitle {
+  background-color: contrast(@g_Region-BG, darken(@g_Region-BG,  2%), lighten(@g_Region-BG,  2%),  43%);
+  color: contrast(@g_Region-FG, darken(@g_Region-FG,  15%), lighten(@g_Region-FG,  15%),  43%);
+}
+.t-ClassicCalendar-listEvent {
+  color: @g_Region-FG;
+}

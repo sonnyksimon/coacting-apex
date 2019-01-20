@@ -1,0 +1,92 @@
+/**  Import Compass and Theme Variables */
+/* ========================================================================== Theme Configuration File ========================================================================== */
+/** Base Colors Description: Provides a base for the UI. Usage: General UI Background, Region Headers, Buttons */
+/** Highlight Colors Description: Used for providing emphasis or importance to UI components. Usage: Region Headers, Primary / Hot Buttons */
+/** Accent and Status Colors Description: Used for indicating state-based UI components, status, or accents. Usage: Warnings, Errors, Danger Text, Success, Focus */
+/** Application Based Colors Description: Used for applications within APEX development */
+/******************************************************************************
+Color Variables
+******************************************************************************/
+.a-Tabs--simple { border: none; background-color: #F4F4F4; box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset; }
+
+.a-Tabs--simple .a-Tabs-link { padding: 8px 12px; font-size: 12px; line-height: 24px; color: #202020; border-right: 1px solid #E0E0E0; }
+
+.a-Tabs--simple .a-Tabs-link:hover { background-color: #FFFFFF; box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); }
+
+.a-Tabs--simple .a-Tabs-link:active { background-color: #D0D0D0; box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25); text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+
+.a-Tabs--simple .a-Tabs-item.is-active .a-Tabs-link { background-color: #FFFFFF; }
+
+.a-Tabs--simple .a-Tabs-item.is-active .a-Tabs-link:hover, .a-Tabs--simple .a-Tabs-item.is-active .a-Tabs-link:active, .a-Tabs--simple .a-Tabs-item.is-active .a-Tabs-link:focus { background-color: #FFFFFF; box-shadow: none; }
+
+.a-Tabs--simpleInset, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav { border: none; height: 40px; }
+
+.a-Tabs--simpleInset .a-Tabs-link, .a-Tabs--simpleInset .ui-tabs-anchor, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .a-Tabs-link, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-anchor { padding: 8px 8px 9px 8px; font-size: 12px; line-height: 24px; color: #202020; border-right: 1px solid #E0E0E0; }
+
+.a-Tabs--simpleInset .a-Tabs-link:hover, .a-Tabs--simpleInset .a-Tabs-link:focus, .a-Tabs--simpleInset .ui-state-hover .ui-tabs-anchor, .a-Tabs--simpleInset .ui-state-focus .ui-tabs-anchor, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .a-Tabs-link:hover, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .a-Tabs-link:focus, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-state-hover .ui-tabs-anchor, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-state-focus .ui-tabs-anchor { background-color: #FFFFFF; box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); outline: none; }
+
+.a-Tabs--simpleInset .a-Tabs-link:focus, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .a-Tabs-link:focus { box-shadow: 0 0 0 2px #0572ce inset; }
+
+.a-Tabs--simpleInset .a-Tabs-link:active, .a-Tabs--simpleInset li.ui-state-hover:not(.ui-tabs-active):active .ui-tabs-anchor, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .a-Tabs-link:active, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav li.ui-state-hover:not(.ui-tabs-active):active .ui-tabs-anchor { background-color: #E4E4E4; box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(0, 0, 0, 0.25); margin-left: -1px; border-left: 1px solid #BBBBBB; border-right-color: #BBBBBB; }
+
+.a-Tabs--simpleInset .a-Tabs-item.is-active .a-Tabs-link, .a-Tabs--simpleInset .ui-tabs-active .ui-tabs-anchor, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .a-Tabs-item.is-active .a-Tabs-link, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-active .ui-tabs-anchor { background-color: #FFFFFF; color: #202020; box-shadow: none; }
+
+.a-Tabs--simpleInset .a-Tabs-item.is-active .a-Tabs-link:hover, .a-Tabs--simpleInset .a-Tabs-item.is-active .a-Tabs-link:active, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .a-Tabs-item.is-active .a-Tabs-link:hover, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .a-Tabs-item.is-active .a-Tabs-link:active { background-color: #FFFFFF; box-shadow: none; }
+
+.a-Tabs--simpleInset .a-Tabs-item.is-active .a-Tabs-link:focus, .a-Tabs--simpleInset .ui-state-default:focus .ui-tabs-anchor, .a-Tabs--simpleInset .ui-state-focus .ui-tabs-anchor, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .a-Tabs-item.is-active .a-Tabs-link:focus, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-state-default:focus .ui-tabs-anchor, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-state-focus .ui-tabs-anchor { background-color: #FFFFFF; box-shadow: 0 0 0 1px #0572ce inset; }
+
+.ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-state-default { border: none; background-image: none; background-color: transparent; border-radius: 0; box-shadow: none; }
+
+.ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-state-default:focus { outline: none; }
+
+.ui-tabs--simpleInset.ui-tabs--componentLibrary .ui-tabs-nav { border-top: 1px solid #BBBBBB !important; }
+
+.a-Tabs--subTabButtons { border: none; padding: 8px; background-color: transparent; box-shadow: none; }
+
+.a-Tabs--subTabButtons .a-Tabs-item:focus { outline: none; }
+
+.a-Tabs--subTabButtons .a-Tabs-link { padding: 0 12px; font-size: 12px; line-height: 2; color: #6F6F6F; border-radius: 2px; margin-right: 8px; border-right: none; }
+
+.a-Tabs--subTabButtons .a-Tabs-link:hover, .a-Tabs--subTabButtons .a-Tabs-link:focus { color: #202020; background-color: #FFF; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.13) inset, 0 2px 0 rgba(255, 255, 255, 0.75) inset, 0 1px 4px rgba(0, 0, 0, 0.07); outline: none; text-decoration: none; }
+
+.a-Tabs--subTabButtons .a-Tabs-link:focus { box-shadow: 0 0 0 1px #0572ce inset, 0 0 1px 1px rgba(5, 114, 206, 0.25) !important; }
+
+.a-Tabs--subTabButtons .a-Tabs-link:active { background-color: #E4E4E4; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25) inset, 0 1px 1px rgba(0, 0, 0, 0.25) inset; }
+
+.a-Tabs--subTabButtons .a-Tabs-item.is-active .a-Tabs-link { background-color: #CFE6FA; color: #202020; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset; }
+
+.ui-tabs--subTabButtons > .a-Tabs-toolbar > .ui-tabs-nav { padding: 8px; }
+
+.ui-tabs--subTabButtons > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-anchor { line-height: 2; padding: 0 12px; outline: none; }
+
+.ui-tabs--subTabButtons > .a-Tabs-toolbar > .ui-tabs-nav li { margin-right: 8px; border-radius: 2px; }
+
+.ui-tabs--subTabButtons > .a-Tabs-toolbar > .ui-tabs-nav .ui-state-focus, .ui-tabs--subTabButtons > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-active.ui-state-focus { box-shadow: 0 0 0 1px #0572ce inset; }
+
+.ui-tabs--subTabButtons > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-active { background-color: #CFE6FA; color: #202020; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 1px 1px rgba(0, 0, 0, 0.25) inset; }
+
+.a-Tabs--fill { border: none; background-color: #F4F4F4; box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset; }
+
+.a-Tabs--fill .a-Tabs-link { padding: 8px 12px; font-size: 12px; line-height: 24px; color: #202020; border-right: 1px solid #E0E0E0; }
+
+.a-Tabs--fill .a-Tabs-link:hover { background-color: #FFFFFF; box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); }
+
+.a-Tabs--fill .a-Tabs-link:active { background-color: #D0D0D0; box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15), inset 0 1px 1px 1px rgba(0, 0, 0, 0.25); text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+
+.a-Tabs--fill .a-Tabs-item.is-active .a-Tabs-link { background-color: #FFFFFF; }
+
+.a-Tabs--fill .a-Tabs-item.is-active .a-Tabs-link:hover, .a-Tabs--fill .a-Tabs-item.is-active .a-Tabs-link:active, .a-Tabs--fill .a-Tabs-item.is-active .a-Tabs-link:focus { background-color: #FFFFFF; box-shadow: none; }
+
+.a-Tabs--forComponentLibraryFilters, .ui-tabs--forComponentLibraryFilters > .ui-tabs-nav { border-bottom: 1px solid #E0E0E0; padding: 8px 4px 0 12px; }
+
+.a-TabsContainer { background-color: #FFFFFF; }
+
+.a-TabsContainer--subTabs { border-bottom: 1px solid #E0E0E0; }
+
+.a-TabsContainer--subTabs .a-Tabs--subTabButtons .a-Tabs-link { color: #0572CE; }
+
+@media only screen and (max-width: 1024px) { .a-Tabs--simpleInset, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav { height: 28px; } .a-Tabs--simpleInset .a-Tabs-link, .a-Tabs--simpleInset .ui-tabs-anchor, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .a-Tabs-link, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-anchor { padding-top: 2px; padding-bottom: 2px; } }
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) { .a-Tabs--simpleInset, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav { height: 32px; } .a-Tabs--simpleInset .a-Tabs-link, .a-Tabs--simpleInset .ui-tabs-anchor, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .a-Tabs-link, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-anchor { padding-top: 4px; padding-bottom: 4px; } }
+
+@media only screen and (min-width: 1281px) and (max-width: 1679px) { .a-Tabs--simpleInset, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav { height: 36px; } .a-Tabs--simpleInset .a-Tabs-link, .a-Tabs--simpleInset .ui-tabs-anchor, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .a-Tabs-link, .ui-tabs--simpleInset > .a-Tabs-toolbar > .ui-tabs-nav .ui-tabs-anchor { padding-top: 6px; padding-bottom: 6px; } }
