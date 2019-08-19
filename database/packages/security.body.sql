@@ -1,13 +1,19 @@
 create or replace PACKAGE BODY security AS
 
-  function hash_pw (in_pass varchar2, in_salt varchar2) return varchar2
-    AS LANGUAGE JAVA NAME 'BCrypt.hashpw(java.lang.String, java.lang.String) return String';
+  function hash_pw (in_pass varchar2, in_salt varchar2) return varchar2 as
+    begin
+      return sha256.hashpw(in_pass, in_salt);
+    end hash_pw;
 
-  function gen_salt return varchar2
-    AS LANGUAGE JAVA NAME 'BCrypt.gensalt() return String';
+  function gen_salt return varchar2 as
+    begin
+      return sha256.gensalt;
+    end gen_salt;
 
-  function check_pw (in_pass varchar2, in_hashed varchar2) return boolean
-    AS LANGUAGE JAVA NAME 'BCrypt.checkpw(java.lang.String, java.lang.String) return Boolean';
+  function check_pw (in_pass varchar2, in_hashed varchar2) return boolean as
+    begin
+      return sha256.checkpw(in_pass, in_hashed);
+    end check_pw;
 
     function authenticate (p_username varchar2, p_password varchar2) return boolean 
     as
