@@ -18,7 +18,7 @@ create or replace PACKAGE BODY security AS
     function authenticate (p_username varchar2, p_password varchar2) return boolean 
     as
         v_username varchar2(100);
-        v_password varchar2(100);
+        v_password varchar2(255);
 
     begin
 
