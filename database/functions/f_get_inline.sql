@@ -11,7 +11,7 @@ begin
     end;
 
     if p_type = 'APP_USER' and v_count=0 then
-        return f_get_config('BASE_URL')||f_get_config('DEFAULT_USER_IMG');
+        return f_get_config('DEFAULT_USER_IMG');
     else 
         return apex_util.prepare_url('f?p='||p_app_id||':inline:'||p_app_session||'::NO::FILE_ID,FILE_TYPE:'||p_id||','||p_type);
     end if;
