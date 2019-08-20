@@ -23,6 +23,6 @@ begin
         sys.wpg_docload.download_file(v_blob);
         apex_application.stop_apex_engine;
     else
-        apex_util.redirect_url('#APP_IMAGES#user.png');
+        apex_util.redirect_url('https://raw.githubusercontent.com/sonnyksimon/coacting-apex/master/application/webscrape/r/nexus_hacksolve/146/files/static/v6/user.png');
     end if;
 end blob2inline;
